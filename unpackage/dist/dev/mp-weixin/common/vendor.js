@@ -2645,9 +2645,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 15:
-/*!************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/index.js ***!
-  \************************************************************************************/
+/*!**************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/index.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2689,9 +2689,9 @@ function _default(name) {return new Promise(function (resolve) {return resolve(j
 /***/ }),
 
 /***/ 156:
-/*!*****************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/common/uqrcode.js ***!
-  \*****************************************************************************************/
+/*!*******************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/common/uqrcode.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4081,9 +4081,9 @@ uQRCode;exports.default = _default;
 /***/ }),
 
 /***/ 16:
-/*!***************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/packages.js ***!
-  \***************************************************************************************/
+/*!*****************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/packages.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6648,9 +6648,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 17:
-/*!************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/store.js ***!
-  \************************************************************************************/
+/*!**************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/store.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6705,9 +6705,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 18:
-/*!************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/goods.js ***!
-  \************************************************************************************/
+/*!**************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/goods.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13423,9 +13423,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 181:
-/*!******************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/points-flow.js ***!
-  \******************************************************************************************/
+/*!********************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/points-flow.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13584,9 +13584,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 19:
-/*!*********************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/level-benefits.js ***!
-  \*********************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/level-benefits.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19795,9 +19795,9 @@ internalMixin(Vue);
 /***/ }),
 
 /***/ 20:
-/*!*************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/member.js ***!
-  \*************************************************************************************/
+/*!***************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/member.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19843,9 +19843,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 21:
-/*!********************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/rechargeCards.js ***!
-  \********************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/rechargeCards.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19968,9 +19968,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 22:
-/*!****************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/addresses.js ***!
-  \****************************************************************************************/
+/*!******************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/addresses.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20025,9 +20025,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 23:
-/*!*****************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/attendance.js ***!
-  \*****************************************************************************************/
+/*!*******************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/attendance.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20070,9 +20070,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 24:
-/*!********************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/custom-points.js ***!
-  \********************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/custom-points.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20086,9 +20086,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 25:
-/*!******************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/points-mall.js ***!
-  \******************************************************************************************/
+/*!********************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/points-mall.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20878,10 +20878,76 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 253:
-/*!*****************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/components/uni-swipe-action-item/mpwxs.js ***!
-  \*****************************************************************************************************************/
+/***/ 26:
+/*!************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/attendance-list.js ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [{
+  "attendance_id": 1,
+  "updated_at": "2020-04-25 02:46:36",
+  "id": 1,
+  "created_at": "2020-04-25 02:46:36",
+  "attendance_coupon": 0,
+  "nickname": "tinypuppet",
+  "num": 0,
+  "reward_days": 1,
+  "user_id": "1",
+  "date": "2020-04-25",
+  "attendance_point": 1,
+  "store_id": 1 },
+
+{
+  "attendance_id": 1,
+  "updated_at": "2020-05-02 03:30:42",
+  "id": 2,
+  "created_at": "2020-05-02 03:30:42",
+  "attendance_coupon": 0,
+  "nickname": "tinypuppet",
+  "num": 0,
+  "reward_days": 1,
+  "user_id": "1",
+  "date": "2020-05-02",
+  "attendance_point": 1,
+  "store_id": 1 },
+
+{
+  "attendance_id": 1,
+  "updated_at": "2020-05-03 19:37:12",
+  "id": 3,
+  "created_at": "2020-05-03 19:37:12",
+  "attendance_coupon": 0,
+  "nickname": "tinypuppet",
+  "num": 0,
+  "reward_days": 1,
+  "user_id": "1",
+  "date": "2020-05-03",
+  "attendance_point": 1,
+  "store_id": 1 },
+
+{
+  "attendance_id": 1,
+  "updated_at": "2020-05-06 10:38:42",
+  "id": 4,
+  "created_at": "2020-05-06 10:38:42",
+  "attendance_coupon": 0,
+  "nickname": "tinypuppet",
+  "num": 0,
+  "reward_days": 1,
+  "user_id": "1",
+  "date": "2020-05-06",
+  "attendance_point": 1,
+  "store_id": 1 }];exports.default = _default;
+
+/***/ }),
+
+/***/ 260:
+/*!*******************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/uni-swipe-action-item/mpwxs.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20985,76 +21051,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 26:
-/*!**********************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/attendance-list.js ***!
-  \**********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [{
-  "attendance_id": 1,
-  "updated_at": "2020-04-25 02:46:36",
-  "id": 1,
-  "created_at": "2020-04-25 02:46:36",
-  "attendance_coupon": 0,
-  "nickname": "tinypuppet",
-  "num": 0,
-  "reward_days": 1,
-  "user_id": "1",
-  "date": "2020-04-25",
-  "attendance_point": 1,
-  "store_id": 1 },
-
-{
-  "attendance_id": 1,
-  "updated_at": "2020-05-02 03:30:42",
-  "id": 2,
-  "created_at": "2020-05-02 03:30:42",
-  "attendance_coupon": 0,
-  "nickname": "tinypuppet",
-  "num": 0,
-  "reward_days": 1,
-  "user_id": "1",
-  "date": "2020-05-02",
-  "attendance_point": 1,
-  "store_id": 1 },
-
-{
-  "attendance_id": 1,
-  "updated_at": "2020-05-03 19:37:12",
-  "id": 3,
-  "created_at": "2020-05-03 19:37:12",
-  "attendance_coupon": 0,
-  "nickname": "tinypuppet",
-  "num": 0,
-  "reward_days": 1,
-  "user_id": "1",
-  "date": "2020-05-03",
-  "attendance_point": 1,
-  "store_id": 1 },
-
-{
-  "attendance_id": 1,
-  "updated_at": "2020-05-06 10:38:42",
-  "id": 4,
-  "created_at": "2020-05-06 10:38:42",
-  "attendance_coupon": 0,
-  "nickname": "tinypuppet",
-  "num": 0,
-  "reward_days": 1,
-  "user_id": "1",
-  "date": "2020-05-06",
-  "attendance_point": 1,
-  "store_id": 1 }];exports.default = _default;
-
-/***/ }),
-
 /***/ 27:
-/*!***********************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/today-attendance.js ***!
-  \***********************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/today-attendance.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21082,905 +21082,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 275:
-/*!*************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/pages/attendance/uni-calendar/util.js ***!
-  \*************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 276));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
-
-Calendar = /*#__PURE__*/function () {
-  function Calendar()
-
-
-
-
-
-  {var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},date = _ref.date,selected = _ref.selected,startDate = _ref.startDate,endDate = _ref.endDate,range = _ref.range;_classCallCheck(this, Calendar);
-    // 当前日期
-    this.date = this.getDate(date); // 当前初入日期
-    // 打点信息
-    this.selected = selected || [];
-    // 范围开始
-    this.startDate = startDate;
-    // 范围结束
-    this.endDate = endDate;
-    this.range = range;
-    // 多选状态
-    this.multipleStatus = {
-      before: '',
-      after: '',
-      data: [] };
-
-    // 每周日期
-    this.weeks = {};
-
-    this._getWeek(this.date.fullDate);
-  }
-
-  /**
-     * 获取任意时间
-     */_createClass(Calendar, [{ key: "getDate", value: function getDate(
-    date) {var AddDayCount = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;var str = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'day';
-      if (!date) {
-        date = new Date();
-      }
-      if (typeof date !== 'object') {
-        date = date.replace(/-/g, '/');
-      }
-      var dd = new Date(date);
-      switch (str) {
-        case 'day':
-          dd.setDate(dd.getDate() + AddDayCount); // 获取AddDayCount天后的日期
-          break;
-        case 'month':
-          if (dd.getDate() === 31) {
-            dd.setDate(dd.getDate() + AddDayCount);
-          } else {
-            dd.setMonth(dd.getMonth() + AddDayCount); // 获取AddDayCount天后的日期
-          }
-          break;
-        case 'year':
-          dd.setFullYear(dd.getFullYear() + AddDayCount); // 获取AddDayCount天后的日期
-          break;}
-
-      var y = dd.getFullYear();
-      var m = dd.getMonth() + 1 < 10 ? '0' + (dd.getMonth() + 1) : dd.getMonth() + 1; // 获取当前月份的日期，不足10补0
-      var d = dd.getDate() < 10 ? '0' + dd.getDate() : dd.getDate(); // 获取当前几号，不足10补0
-      return {
-        fullDate: y + '-' + m + '-' + d,
-        year: y,
-        month: m,
-        date: d,
-        day: dd.getDay() };
-
-    }
-
-
-    /**
-       * 获取上月剩余天数
-       */ }, { key: "_getLastMonthDays", value: function _getLastMonthDays(
-    firstDay, full) {
-      var dateArr = [];
-      for (var i = firstDay; i > 0; i--) {
-        var beforeDate = new Date(full.year, full.month - 1, -i + 1).getDate();
-        dateArr.push({
-          date: beforeDate,
-          month: full.month - 1,
-          lunar: this.getlunar(full.year, full.month - 1, beforeDate),
-          disable: true });
-
-      }
-      return dateArr;
-    }
-    /**
-       * 获取本月天数
-       */ }, { key: "_currentMonthDys", value: function _currentMonthDys(
-    dateData, full) {var _this = this;
-      var dateArr = [];
-      var fullDate = this.date.fullDate;var _loop = function _loop(
-      i) {
-        var isinfo = false;
-        var nowDate = full.year + '-' + (full.month < 10 ?
-        full.month : full.month) + '-' + (i < 10 ?
-        '0' + i : i);
-        // 是否今天
-        var isDay = fullDate === nowDate;
-        // 获取打点信息
-        var info = _this.selected && _this.selected.find(function (item) {
-          if (_this.dateEqual(nowDate, item.date)) {
-            return item;
-          }
-        });
-
-        // 日期禁用
-        var disableBefore = true;
-        var disableAfter = true;
-        if (_this.startDate) {
-          var dateCompBefore = _this.dateCompare(_this.startDate, fullDate);
-          disableBefore = _this.dateCompare(dateCompBefore ? _this.startDate : fullDate, nowDate);
-        }
-
-        if (_this.endDate) {
-          var dateCompAfter = _this.dateCompare(fullDate, _this.endDate);
-          disableAfter = _this.dateCompare(nowDate, dateCompAfter ? _this.endDate : fullDate);
-        }
-
-        var multiples = _this.multipleStatus.data;
-        var checked = false;
-        var multiplesStatus = -1;
-        if (_this.range) {
-          if (multiples) {
-            multiplesStatus = multiples.findIndex(function (item) {
-              return _this.dateEqual(item, nowDate);
-            });
-          }
-          if (multiplesStatus !== -1) {
-            checked = true;
-          }
-        }
-
-        var data = {
-          fullDate: nowDate,
-          year: full.year,
-          date: i,
-          multiple: _this.range ? checked : false,
-          month: full.month,
-          lunar: _this.getlunar(full.year, full.month, i),
-          disable: !disableBefore || !disableAfter,
-          isDay: isDay };
-
-        if (info) {
-          data.extraInfo = info;
-        }
-
-        dateArr.push(data);};for (var i = 1; i <= dateData; i++) {_loop(i);
-      }
-      return dateArr;
-    }
-    /**
-       * 获取下月天数
-       */ }, { key: "_getNextMonthDays", value: function _getNextMonthDays(
-    surplus, full) {
-      var dateArr = [];
-      for (var i = 1; i < surplus + 1; i++) {
-        dateArr.push({
-          date: i,
-          month: Number(full.month) + 1,
-          lunar: this.getlunar(full.year, Number(full.month) + 1, i),
-          disable: true });
-
-      }
-      return dateArr;
-    }
-    /**
-       * 设置日期
-       * @param {Object} date
-       */ }, { key: "setDate", value: function setDate(
-    date) {
-      this._getWeek(date);
-    }
-    /**
-       * 获取当前日期详情
-       * @param {Object} date
-       */ }, { key: "getInfo", value: function getInfo(
-    date) {var _this2 = this;
-      if (!date) {
-        date = new Date();
-      }
-      var dateInfo = this.canlender.find(function (item) {return item.fullDate === _this2.getDate(date).fullDate;});
-      return dateInfo;
-    }
-
-    /**
-       * 比较时间大小
-       */ }, { key: "dateCompare", value: function dateCompare(
-    startDate, endDate) {
-      // 计算截止时间
-      startDate = new Date(startDate.replace('-', '/').replace('-', '/'));
-      // 计算详细项的截止时间
-      endDate = new Date(endDate.replace('-', '/').replace('-', '/'));
-      if (startDate <= endDate) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-
-    /**
-       * 比较时间是否相等
-       */ }, { key: "dateEqual", value: function dateEqual(
-    before, after) {
-      // 计算截止时间
-      before = new Date(before.replace('-', '/').replace('-', '/'));
-      // 计算详细项的截止时间
-      after = new Date(after.replace('-', '/').replace('-', '/'));
-      if (before.getTime() - after.getTime() === 0) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-
-
-    /**
-       * 获取日期范围内所有日期
-       * @param {Object} begin
-       * @param {Object} end
-       */ }, { key: "geDateAll", value: function geDateAll(
-    begin, end) {
-      var arr = [];
-      var ab = begin.split('-');
-      var ae = end.split('-');
-      var db = new Date();
-      db.setFullYear(ab[0], ab[1] - 1, ab[2]);
-      var de = new Date();
-      de.setFullYear(ae[0], ae[1] - 1, ae[2]);
-      var unixDb = db.getTime() - 24 * 60 * 60 * 1000;
-      var unixDe = de.getTime() - 24 * 60 * 60 * 1000;
-      for (var k = unixDb; k <= unixDe;) {
-        k = k + 24 * 60 * 60 * 1000;
-        arr.push(this.getDate(new Date(parseInt(k))).fullDate);
-      }
-      return arr;
-    }
-    /**
-       * 计算阴历日期显示
-       */ }, { key: "getlunar", value: function getlunar(
-    year, month, date) {
-      return _calendar.default.solar2lunar(year, month, date);
-    }
-    /**
-       * 设置打点
-       */ }, { key: "setSelectInfo", value: function setSelectInfo(
-    data, value) {
-      this.selected = value;
-      this._getWeek(data);
-    }
-
-    /**
-       *  获取多选状态
-       */ }, { key: "setMultiple", value: function setMultiple(
-    fullDate) {var _this$multipleStatus =
-
-
-
-      this.multipleStatus,before = _this$multipleStatus.before,after = _this$multipleStatus.after;
-      if (!this.range) return;
-      if (before && after) {
-        this.multipleStatus.before = '';
-        this.multipleStatus.after = '';
-        this.multipleStatus.data = [];
-        this._getWeek(fullDate);
-      } else {
-        if (!before) {
-          this.multipleStatus.before = fullDate;
-        } else {
-          this.multipleStatus.after = fullDate;
-          if (this.dateCompare(this.multipleStatus.before, this.multipleStatus.after)) {
-            this.multipleStatus.data = this.geDateAll(this.multipleStatus.before, this.multipleStatus.after);
-          } else {
-            this.multipleStatus.data = this.geDateAll(this.multipleStatus.after, this.multipleStatus.before);
-          }
-          this._getWeek(fullDate);
-        }
-      }
-    }
-
-    /**
-       * 获取每周数据
-       * @param {Object} dateData
-       */ }, { key: "_getWeek", value: function _getWeek(
-    dateData) {var _this$getDate =
-
-
-
-
-
-
-      this.getDate(dateData),fullDate = _this$getDate.fullDate,year = _this$getDate.year,month = _this$getDate.month,date = _this$getDate.date,day = _this$getDate.day;
-      var firstDay = new Date(year, month - 1, 1).getDay();
-      var currentDay = new Date(year, month, 0).getDate();
-      var dates = {
-        lastMonthDays: this._getLastMonthDays(firstDay, this.getDate(dateData)), // 上个月末尾几天
-        currentMonthDys: this._currentMonthDys(currentDay, this.getDate(dateData)), // 本月天数
-        nextMonthDays: [], // 下个月开始几天
-        weeks: [] };
-
-      var canlender = [];
-      var surplus = 42 - (dates.lastMonthDays.length + dates.currentMonthDys.length);
-      dates.nextMonthDays = this._getNextMonthDays(surplus, this.getDate(dateData));
-      canlender = canlender.concat(dates.lastMonthDays, dates.currentMonthDys, dates.nextMonthDays);
-      var weeks = {};
-      // 拼接数组  上个月开始几天 + 本月天数+ 下个月开始几天
-      for (var i = 0; i < canlender.length; i++) {
-        if (i % 7 === 0) {
-          weeks[parseInt(i / 7)] = new Array(7);
-        }
-        weeks[parseInt(i / 7)][i % 7] = canlender[i];
-      }
-      this.canlender = canlender;
-      this.weeks = weeks;
-    }
-
-    //静态方法
-    // static init(date) {
-    // 	if (!this.instance) {
-    // 		this.instance = new Calendar(date);
-    // 	}
-    // 	return this.instance;
-    // }
-  }]);return Calendar;}();var _default =
-
-
-Calendar;exports.default = _default;
-
-/***/ }),
-
-/***/ 276:
-/*!*****************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/pages/attendance/uni-calendar/calendar.js ***!
-  \*****************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
-                                                                                                     * @1900-2100区间内的公历、农历互转
-                                                                                                     * @charset UTF-8
-                                                                                                     * @github  https://github.com/jjonline/calendar.js
-                                                                                                     * @Author  Jea杨(JJonline@JJonline.Cn)
-                                                                                                     * @Time    2014-7-21
-                                                                                                     * @Time    2016-8-13 Fixed 2033hex、Attribution Annals
-                                                                                                     * @Time    2016-9-25 Fixed lunar LeapMonth Param Bug
-                                                                                                     * @Time    2017-7-24 Fixed use getTerm Func Param Error.use solar year,NOT lunar year
-                                                                                                     * @Version 1.0.3
-                                                                                                     * @公历转农历：calendar.solar2lunar(1987,11,01); //[you can ignore params of prefix 0]
-                                                                                                     * @农历转公历：calendar.lunar2solar(1987,09,10); //[you can ignore params of prefix 0]
-                                                                                                     */
-/* eslint-disable */
-var calendar = {
-
-  /**
-                     * 农历1900-2100的润大小信息表
-                     * @Array Of Property
-                     * @return Hex
-                     */
-  lunarInfo: [0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950, 0x16554, 0x056a0, 0x09ad0, 0x055d2, // 1900-1909
-  0x04ae0, 0x0a5b6, 0x0a4d0, 0x0d250, 0x1d255, 0x0b540, 0x0d6a0, 0x0ada2, 0x095b0, 0x14977, // 1910-1919
-  0x04970, 0x0a4b0, 0x0b4b5, 0x06a50, 0x06d40, 0x1ab54, 0x02b60, 0x09570, 0x052f2, 0x04970, // 1920-1929
-  0x06566, 0x0d4a0, 0x0ea50, 0x06e95, 0x05ad0, 0x02b60, 0x186e3, 0x092e0, 0x1c8d7, 0x0c950, // 1930-1939
-  0x0d4a0, 0x1d8a6, 0x0b550, 0x056a0, 0x1a5b4, 0x025d0, 0x092d0, 0x0d2b2, 0x0a950, 0x0b557, // 1940-1949
-  0x06ca0, 0x0b550, 0x15355, 0x04da0, 0x0a5b0, 0x14573, 0x052b0, 0x0a9a8, 0x0e950, 0x06aa0, // 1950-1959
-  0x0aea6, 0x0ab50, 0x04b60, 0x0aae4, 0x0a570, 0x05260, 0x0f263, 0x0d950, 0x05b57, 0x056a0, // 1960-1969
-  0x096d0, 0x04dd5, 0x04ad0, 0x0a4d0, 0x0d4d4, 0x0d250, 0x0d558, 0x0b540, 0x0b6a0, 0x195a6, // 1970-1979
-  0x095b0, 0x049b0, 0x0a974, 0x0a4b0, 0x0b27a, 0x06a50, 0x06d40, 0x0af46, 0x0ab60, 0x09570, // 1980-1989
-  0x04af5, 0x04970, 0x064b0, 0x074a3, 0x0ea50, 0x06b58, 0x05ac0, 0x0ab60, 0x096d5, 0x092e0, // 1990-1999
-  0x0c960, 0x0d954, 0x0d4a0, 0x0da50, 0x07552, 0x056a0, 0x0abb7, 0x025d0, 0x092d0, 0x0cab5, // 2000-2009
-  0x0a950, 0x0b4a0, 0x0baa4, 0x0ad50, 0x055d9, 0x04ba0, 0x0a5b0, 0x15176, 0x052b0, 0x0a930, // 2010-2019
-  0x07954, 0x06aa0, 0x0ad50, 0x05b52, 0x04b60, 0x0a6e6, 0x0a4e0, 0x0d260, 0x0ea65, 0x0d530, // 2020-2029
-  0x05aa0, 0x076a3, 0x096d0, 0x04afb, 0x04ad0, 0x0a4d0, 0x1d0b6, 0x0d250, 0x0d520, 0x0dd45, // 2030-2039
-  0x0b5a0, 0x056d0, 0x055b2, 0x049b0, 0x0a577, 0x0a4b0, 0x0aa50, 0x1b255, 0x06d20, 0x0ada0, // 2040-2049
-  /** Add By JJonline@JJonline.Cn**/
-  0x14b63, 0x09370, 0x049f8, 0x04970, 0x064b0, 0x168a6, 0x0ea50, 0x06b20, 0x1a6c4, 0x0aae0, // 2050-2059
-  0x0a2e0, 0x0d2e3, 0x0c960, 0x0d557, 0x0d4a0, 0x0da50, 0x05d55, 0x056a0, 0x0a6d0, 0x055d4, // 2060-2069
-  0x052d0, 0x0a9b8, 0x0a950, 0x0b4a0, 0x0b6a6, 0x0ad50, 0x055a0, 0x0aba4, 0x0a5b0, 0x052b0, // 2070-2079
-  0x0b273, 0x06930, 0x07337, 0x06aa0, 0x0ad50, 0x14b55, 0x04b60, 0x0a570, 0x054e4, 0x0d160, // 2080-2089
-  0x0e968, 0x0d520, 0x0daa0, 0x16aa6, 0x056d0, 0x04ae0, 0x0a9d4, 0x0a2d0, 0x0d150, 0x0f252, // 2090-2099
-  0x0d520], // 2100
-
-  /**
-      * 公历每个月份的天数普通表
-      * @Array Of Property
-      * @return Number
-      */
-  solarMonth: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
-
-  /**
-                                                                    * 天干地支之天干速查表
-                                                                    * @Array Of Property trans["甲","乙","丙","丁","戊","己","庚","辛","壬","癸"]
-                                                                    * @return Cn string
-                                                                    */
-  Gan: ["\u7532", "\u4E59", "\u4E19", "\u4E01", "\u620A", "\u5DF1", "\u5E9A", "\u8F9B", "\u58EC", "\u7678"],
-
-  /**
-                                                                                                                 * 天干地支之地支速查表
-                                                                                                                 * @Array Of Property
-                                                                                                                 * @trans["子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥"]
-                                                                                                                 * @return Cn string
-                                                                                                                 */
-  Zhi: ["\u5B50", "\u4E11", "\u5BC5", "\u536F", "\u8FB0", "\u5DF3", "\u5348", "\u672A", "\u7533", "\u9149", "\u620C", "\u4EA5"],
-
-  /**
-                                                                                                                                     * 天干地支之地支速查表<=>生肖
-                                                                                                                                     * @Array Of Property
-                                                                                                                                     * @trans["鼠","牛","虎","兔","龙","蛇","马","羊","猴","鸡","狗","猪"]
-                                                                                                                                     * @return Cn string
-                                                                                                                                     */
-  Animals: ["\u9F20", "\u725B", "\u864E", "\u5154", "\u9F99", "\u86C7", "\u9A6C", "\u7F8A", "\u7334", "\u9E21", "\u72D7", "\u732A"],
-
-  /**
-                                                                                                                                         * 24节气速查表
-                                                                                                                                         * @Array Of Property
-                                                                                                                                         * @trans["小寒","大寒","立春","雨水","惊蛰","春分","清明","谷雨","立夏","小满","芒种","夏至","小暑","大暑","立秋","处暑","白露","秋分","寒露","霜降","立冬","小雪","大雪","冬至"]
-                                                                                                                                         * @return Cn string
-                                                                                                                                         */
-  solarTerm: ["\u5C0F\u5BD2", "\u5927\u5BD2", "\u7ACB\u6625", "\u96E8\u6C34", "\u60CA\u86F0", "\u6625\u5206", "\u6E05\u660E", "\u8C37\u96E8", "\u7ACB\u590F", "\u5C0F\u6EE1", "\u8292\u79CD", "\u590F\u81F3", "\u5C0F\u6691", "\u5927\u6691", "\u7ACB\u79CB", "\u5904\u6691", "\u767D\u9732", "\u79CB\u5206", "\u5BD2\u9732", "\u971C\u964D", "\u7ACB\u51AC", "\u5C0F\u96EA", "\u5927\u96EA", "\u51AC\u81F3"],
-
-  /**
-                                                                                                                                                                                                                                                                                                                                                                                                                   * 1900-2100各年的24节气日期速查表
-                                                                                                                                                                                                                                                                                                                                                                                                                   * @Array Of Property
-                                                                                                                                                                                                                                                                                                                                                                                                                   * @return 0x string For splice
-                                                                                                                                                                                                                                                                                                                                                                                                                   */
-  sTermInfo: ['9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f',
-  '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
-  '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa',
-  '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f',
-  'b027097bd097c36b0b6fc9274c91aa', '9778397bd19801ec9210c965cc920e', '97b6b97bd19801ec95f8c965cc920f',
-  '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd197c36c9210c9274c91aa',
-  '97b6b97bd19801ec95f8c965cc920e', '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2',
-  '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec95f8c965cc920e', '97bcf97c3598082c95f8e1cfcc920f',
-  '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e',
-  '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722',
-  '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f',
-  '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
-  '97bcf97c359801ec95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd07f595b0b6fc920fb0722',
-  '9778397bd097c36b0b6fc9210c8dc2', '9778397bd19801ec9210c9274c920e', '97b6b97bd19801ec95f8c965cc920f',
-  '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e',
-  '97b6b97bd19801ec95f8c965cc920f', '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2',
-  '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bd07f1487f595b0b0bc920fb0722',
-  '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
-  '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722',
-  '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f531b0b0bb0b6fb0722',
-  '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
-  '97bcf7f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b97bd19801ec9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722',
-  '9778397bd097c36b0b6fc9210c91aa', '97b6b97bd197c36c9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722',
-  '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e',
-  '97b6b7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2',
-  '9778397bd097c36b0b70c9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722',
-  '7f0e397bd097c35b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721',
-  '7f0e27f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722',
-  '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722',
-  '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721',
-  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
-  '97b6b7f0e47f531b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722',
-  '9778397bd097c36b0b6fc9210c91aa', '97b6b7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722',
-  '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '977837f0e37f149b0723b0787b0721',
-  '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c35b0b6fc9210c8dc2',
-  '977837f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722',
-  '7f0e397bd097c35b0b6fc9210c8dc2', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
-  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '977837f0e37f14998082b0787b06bd',
-  '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722',
-  '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722',
-  '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
-  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd',
-  '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722',
-  '977837f0e37f14998082b0723b06bd', '7f07e7f0e37f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722',
-  '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721',
-  '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e37f0e37f14898082b0723b02d5',
-  '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f531b0b0bb0b6fb0722',
-  '7f0e37f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
-  '7f0e37f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd',
-  '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35',
-  '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722',
-  '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f149b0723b0787b0721',
-  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0723b06bd',
-  '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e37f0e366aa89801eb072297c35',
-  '7ec967f0e37f14998082b0723b06bd', '7f07e7f0e37f14998083b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722',
-  '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14898082b0723b02d5', '7f07e7f0e37f14998082b0787b0721',
-  '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66aa89801e9808297c35', '665f67f0e37f14898082b0723b02d5',
-  '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66a449801e9808297c35',
-  '665f67f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
-  '7f0e36665b66a449801e9808297c35', '665f67f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd',
-  '7f07e7f0e47f531b0723b0b6fb0721', '7f0e26665b66a449801e9808297c35', '665f67f0e37f1489801eb072297c35',
-  '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722'],
-
-  /**
-                                                                                                             * 数字转中文速查表
-                                                                                                             * @Array Of Property
-                                                                                                             * @trans ['日','一','二','三','四','五','六','七','八','九','十']
-                                                                                                             * @return Cn string
-                                                                                                             */
-  nStr1: ["\u65E5", "\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341"],
-
-  /**
-                                                                                                                             * 日期转农历称呼速查表
-                                                                                                                             * @Array Of Property
-                                                                                                                             * @trans ['初','十','廿','卅']
-                                                                                                                             * @return Cn string
-                                                                                                                             */
-  nStr2: ["\u521D", "\u5341", "\u5EFF", "\u5345"],
-
-  /**
-                                                       * 月份转农历称呼速查表
-                                                       * @Array Of Property
-                                                       * @trans ['正','一','二','三','四','五','六','七','八','九','十','冬','腊']
-                                                       * @return Cn string
-                                                       */
-  nStr3: ["\u6B63", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341", "\u51AC", "\u814A"],
-
-  /**
-                                                                                                                                       * 返回农历y年一整年的总天数
-                                                                                                                                       * @param lunar Year
-                                                                                                                                       * @return Number
-                                                                                                                                       * @eg:var count = calendar.lYearDays(1987) ;//count=387
-                                                                                                                                       */
-  lYearDays: function lYearDays(y) {
-    var i;var sum = 348;
-    for (i = 0x8000; i > 0x8; i >>= 1) {sum += this.lunarInfo[y - 1900] & i ? 1 : 0;}
-    return sum + this.leapDays(y);
-  },
-
-  /**
-         * 返回农历y年闰月是哪个月；若y年没有闰月 则返回0
-         * @param lunar Year
-         * @return Number (0-12)
-         * @eg:var leapMonth = calendar.leapMonth(1987) ;//leapMonth=6
-         */
-  leapMonth: function leapMonth(y) {// 闰字编码 \u95f0
-    return this.lunarInfo[y - 1900] & 0xf;
-  },
-
-  /**
-         * 返回农历y年闰月的天数 若该年没有闰月则返回0
-         * @param lunar Year
-         * @return Number (0、29、30)
-         * @eg:var leapMonthDay = calendar.leapDays(1987) ;//leapMonthDay=29
-         */
-  leapDays: function leapDays(y) {
-    if (this.leapMonth(y)) {
-      return this.lunarInfo[y - 1900] & 0x10000 ? 30 : 29;
-    }
-    return 0;
-  },
-
-  /**
-         * 返回农历y年m月（非闰月）的总天数，计算m为闰月时的天数请使用leapDays方法
-         * @param lunar Year
-         * @return Number (-1、29、30)
-         * @eg:var MonthDay = calendar.monthDays(1987,9) ;//MonthDay=29
-         */
-  monthDays: function monthDays(y, m) {
-    if (m > 12 || m < 1) {return -1;} // 月份参数从1至12，参数错误返回-1
-    return this.lunarInfo[y - 1900] & 0x10000 >> m ? 30 : 29;
-  },
-
-  /**
-         * 返回公历(!)y年m月的天数
-         * @param solar Year
-         * @return Number (-1、28、29、30、31)
-         * @eg:var solarMonthDay = calendar.leapDays(1987) ;//solarMonthDay=30
-         */
-  solarDays: function solarDays(y, m) {
-    if (m > 12 || m < 1) {return -1;} // 若参数错误 返回-1
-    var ms = m - 1;
-    if (ms == 1) {// 2月份的闰平规律测算后确认返回28或29
-      return y % 4 == 0 && y % 100 != 0 || y % 400 == 0 ? 29 : 28;
-    } else {
-      return this.solarMonth[ms];
-    }
-  },
-
-  /**
-        * 农历年份转换为干支纪年
-        * @param  lYear 农历年的年份数
-        * @return Cn string
-        */
-  toGanZhiYear: function toGanZhiYear(lYear) {
-    var ganKey = (lYear - 3) % 10;
-    var zhiKey = (lYear - 3) % 12;
-    if (ganKey == 0) ganKey = 10; // 如果余数为0则为最后一个天干
-    if (zhiKey == 0) zhiKey = 12; // 如果余数为0则为最后一个地支
-    return this.Gan[ganKey - 1] + this.Zhi[zhiKey - 1];
-  },
-
-  /**
-        * 公历月、日判断所属星座
-        * @param  cMonth [description]
-        * @param  cDay [description]
-        * @return Cn string
-        */
-  toAstro: function toAstro(cMonth, cDay) {
-    var s = "\u9B54\u7FAF\u6C34\u74F6\u53CC\u9C7C\u767D\u7F8A\u91D1\u725B\u53CC\u5B50\u5DE8\u87F9\u72EE\u5B50\u5904\u5973\u5929\u79E4\u5929\u874E\u5C04\u624B\u9B54\u7FAF";
-    var arr = [20, 19, 21, 21, 21, 22, 23, 23, 23, 23, 22, 22];
-    return s.substr(cMonth * 2 - (cDay < arr[cMonth - 1] ? 2 : 0), 2) + "\u5EA7"; // 座
-  },
-
-  /**
-         * 传入offset偏移量返回干支
-         * @param offset 相对甲子的偏移量
-         * @return Cn string
-         */
-  toGanZhi: function toGanZhi(offset) {
-    return this.Gan[offset % 10] + this.Zhi[offset % 12];
-  },
-
-  /**
-         * 传入公历(!)y年获得该年第n个节气的公历日期
-         * @param y公历年(1900-2100)；n二十四节气中的第几个节气(1~24)；从n=1(小寒)算起
-         * @return day Number
-         * @eg:var _24 = calendar.getTerm(1987,3) ;//_24=4;意即1987年2月4日立春
-         */
-  getTerm: function getTerm(y, n) {
-    if (y < 1900 || y > 2100) {return -1;}
-    if (n < 1 || n > 24) {return -1;}
-    var _table = this.sTermInfo[y - 1900];
-    var _info = [
-    parseInt('0x' + _table.substr(0, 5)).toString(),
-    parseInt('0x' + _table.substr(5, 5)).toString(),
-    parseInt('0x' + _table.substr(10, 5)).toString(),
-    parseInt('0x' + _table.substr(15, 5)).toString(),
-    parseInt('0x' + _table.substr(20, 5)).toString(),
-    parseInt('0x' + _table.substr(25, 5)).toString()];
-
-    var _calday = [
-    _info[0].substr(0, 1),
-    _info[0].substr(1, 2),
-    _info[0].substr(3, 1),
-    _info[0].substr(4, 2),
-
-    _info[1].substr(0, 1),
-    _info[1].substr(1, 2),
-    _info[1].substr(3, 1),
-    _info[1].substr(4, 2),
-
-    _info[2].substr(0, 1),
-    _info[2].substr(1, 2),
-    _info[2].substr(3, 1),
-    _info[2].substr(4, 2),
-
-    _info[3].substr(0, 1),
-    _info[3].substr(1, 2),
-    _info[3].substr(3, 1),
-    _info[3].substr(4, 2),
-
-    _info[4].substr(0, 1),
-    _info[4].substr(1, 2),
-    _info[4].substr(3, 1),
-    _info[4].substr(4, 2),
-
-    _info[5].substr(0, 1),
-    _info[5].substr(1, 2),
-    _info[5].substr(3, 1),
-    _info[5].substr(4, 2)];
-
-    return parseInt(_calday[n - 1]);
-  },
-
-  /**
-         * 传入农历数字月份返回汉语通俗表示法
-         * @param lunar month
-         * @return Cn string
-         * @eg:var cnMonth = calendar.toChinaMonth(12) ;//cnMonth='腊月'
-         */
-  toChinaMonth: function toChinaMonth(m) {// 月 => \u6708
-    if (m > 12 || m < 1) {return -1;} // 若参数错误 返回-1
-    var s = this.nStr3[m - 1];
-    s += "\u6708"; // 加上月字
-    return s;
-  },
-
-  /**
-         * 传入农历日期数字返回汉字表示法
-         * @param lunar day
-         * @return Cn string
-         * @eg:var cnDay = calendar.toChinaDay(21) ;//cnMonth='廿一'
-         */
-  toChinaDay: function toChinaDay(d) {// 日 => \u65e5
-    var s;
-    switch (d) {
-      case 10:
-        s = "\u521D\u5341";break;
-      case 20:
-        s = "\u4E8C\u5341";break;
-        break;
-      case 30:
-        s = "\u4E09\u5341";break;
-        break;
-      default:
-        s = this.nStr2[Math.floor(d / 10)];
-        s += this.nStr1[d % 10];}
-
-    return s;
-  },
-
-  /**
-         * 年份转生肖[!仅能大致转换] => 精确划分生肖分界线是“立春”
-         * @param y year
-         * @return Cn string
-         * @eg:var animal = calendar.getAnimal(1987) ;//animal='兔'
-         */
-  getAnimal: function getAnimal(y) {
-    return this.Animals[(y - 4) % 12];
-  },
-
-  /**
-         * 传入阳历年月日获得详细的公历、农历object信息 <=>JSON
-         * @param y  solar year
-         * @param m  solar month
-         * @param d  solar day
-         * @return JSON object
-         * @eg:console.log(calendar.solar2lunar(1987,11,01));
-         */
-  solar2lunar: function solar2lunar(y, m, d) {// 参数区间1900.1.31~2100.12.31
-    // 年份限定、上限
-    if (y < 1900 || y > 2100) {
-      return -1; // undefined转换为数字变为NaN
-    }
-    // 公历传参最下限
-    if (y == 1900 && m == 1 && d < 31) {
-      return -1;
-    }
-    // 未传参  获得当天
-    if (!y) {
-      var objDate = new Date();
-    } else {
-      var objDate = new Date(y, parseInt(m) - 1, d);
-    }
-    var i;var leap = 0;var temp = 0;
-    // 修正ymd参数
-    var y = objDate.getFullYear();
-    var m = objDate.getMonth() + 1;
-    var d = objDate.getDate();
-    var offset = (Date.UTC(objDate.getFullYear(), objDate.getMonth(), objDate.getDate()) - Date.UTC(1900, 0, 31)) / 86400000;
-    for (i = 1900; i < 2101 && offset > 0; i++) {
-      temp = this.lYearDays(i);
-      offset -= temp;
-    }
-    if (offset < 0) {
-      offset += temp;i--;
-    }
-
-    // 是否今天
-    var isTodayObj = new Date();
-    var isToday = false;
-    if (isTodayObj.getFullYear() == y && isTodayObj.getMonth() + 1 == m && isTodayObj.getDate() == d) {
-      isToday = true;
-    }
-    // 星期几
-    var nWeek = objDate.getDay();
-    var cWeek = this.nStr1[nWeek];
-    // 数字表示周几顺应天朝周一开始的惯例
-    if (nWeek == 0) {
-      nWeek = 7;
-    }
-    // 农历年
-    var year = i;
-    var leap = this.leapMonth(i); // 闰哪个月
-    var isLeap = false;
-
-    // 效验闰月
-    for (i = 1; i < 13 && offset > 0; i++) {
-      // 闰月
-      if (leap > 0 && i == leap + 1 && isLeap == false) {
-        --i;
-        isLeap = true;temp = this.leapDays(year); // 计算农历闰月天数
-      } else {
-        temp = this.monthDays(year, i); // 计算农历普通月天数
-      }
-      // 解除闰月
-      if (isLeap == true && i == leap + 1) {isLeap = false;}
-      offset -= temp;
-    }
-    // 闰月导致数组下标重叠取反
-    if (offset == 0 && leap > 0 && i == leap + 1) {
-      if (isLeap) {
-        isLeap = false;
-      } else {
-        isLeap = true;--i;
-      }
-    }
-    if (offset < 0) {
-      offset += temp;--i;
-    }
-    // 农历月
-    var month = i;
-    // 农历日
-    var day = offset + 1;
-    // 天干地支处理
-    var sm = m - 1;
-    var gzY = this.toGanZhiYear(year);
-
-    // 当月的两个节气
-    // bugfix-2017-7-24 11:03:38 use lunar Year Param `y` Not `year`
-    var firstNode = this.getTerm(y, m * 2 - 1); // 返回当月「节」为几日开始
-    var secondNode = this.getTerm(y, m * 2); // 返回当月「节」为几日开始
-
-    // 依据12节气修正干支月
-    var gzM = this.toGanZhi((y - 1900) * 12 + m + 11);
-    if (d >= firstNode) {
-      gzM = this.toGanZhi((y - 1900) * 12 + m + 12);
-    }
-
-    // 传入的日期的节气与否
-    var isTerm = false;
-    var Term = null;
-    if (firstNode == d) {
-      isTerm = true;
-      Term = this.solarTerm[m * 2 - 2];
-    }
-    if (secondNode == d) {
-      isTerm = true;
-      Term = this.solarTerm[m * 2 - 1];
-    }
-    // 日柱 当月一日与 1900/1/1 相差天数
-    var dayCyclical = Date.UTC(y, sm, 1, 0, 0, 0, 0) / 86400000 + 25567 + 10;
-    var gzD = this.toGanZhi(dayCyclical + d - 1);
-    // 该日期所属的星座
-    var astro = this.toAstro(m, d);
-
-    return { 'lYear': year, 'lMonth': month, 'lDay': day, 'Animal': this.getAnimal(year), 'IMonthCn': (isLeap ? "\u95F0" : '') + this.toChinaMonth(month), 'IDayCn': this.toChinaDay(day), 'cYear': y, 'cMonth': m, 'cDay': d, 'gzYear': gzY, 'gzMonth': gzM, 'gzDay': gzD, 'isToday': isToday, 'isLeap': isLeap, 'nWeek': nWeek, 'ncWeek': "\u661F\u671F" + cWeek, 'isTerm': isTerm, 'Term': Term, 'astro': astro };
-  },
-
-  /**
-         * 传入农历年月日以及传入的月份是否闰月获得详细的公历、农历object信息 <=>JSON
-         * @param y  lunar year
-         * @param m  lunar month
-         * @param d  lunar day
-         * @param isLeapMonth  lunar month is leap or not.[如果是农历闰月第四个参数赋值true即可]
-         * @return JSON object
-         * @eg:console.log(calendar.lunar2solar(1987,9,10));
-         */
-  lunar2solar: function lunar2solar(y, m, d, isLeapMonth) {// 参数区间1900.1.31~2100.12.1
-    var isLeapMonth = !!isLeapMonth;
-    var leapOffset = 0;
-    var leapMonth = this.leapMonth(y);
-    var leapDay = this.leapDays(y);
-    if (isLeapMonth && leapMonth != m) {return -1;} // 传参要求计算该闰月公历 但该年得出的闰月与传参的月份并不同
-    if (y == 2100 && m == 12 && d > 1 || y == 1900 && m == 1 && d < 31) {return -1;} // 超出了最大极限值
-    var day = this.monthDays(y, m);
-    var _day = day;
-    // bugFix 2016-9-25
-    // if month is leap, _day use leapDays method
-    if (isLeapMonth) {
-      _day = this.leapDays(y, m);
-    }
-    if (y < 1900 || y > 2100 || d > _day) {return -1;} // 参数合法性效验
-
-    // 计算农历的时间差
-    var offset = 0;
-    for (var i = 1900; i < y; i++) {
-      offset += this.lYearDays(i);
-    }
-    var leap = 0;var isAdd = false;
-    for (var i = 1; i < m; i++) {
-      leap = this.leapMonth(y);
-      if (!isAdd) {// 处理闰月
-        if (leap <= i && leap > 0) {
-          offset += this.leapDays(y);isAdd = true;
-        }
-      }
-      offset += this.monthDays(y, i);
-    }
-    // 转换闰月农历 需补充该年闰月的前一个月的时差
-    if (isLeapMonth) {offset += day;}
-    // 1900年农历正月一日的公历时间为1900年1月30日0时0分0秒(该时间也是本农历的最开始起始点)
-    var stmap = Date.UTC(1900, 1, 30, 0, 0, 0);
-    var calObj = new Date((offset + d - 31) * 86400000 + stmap);
-    var cY = calObj.getUTCFullYear();
-    var cM = calObj.getUTCMonth() + 1;
-    var cD = calObj.getUTCDate();
-
-    return this.solar2lunar(cY, cM, cD);
-  } };var _default =
-
-
-calendar;exports.default = _default;
-
-/***/ }),
-
 /***/ 28:
-/*!*************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/orders.js ***!
-  \*************************************************************************************/
+/*!***************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/orders.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22773,10 +21878,1017 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 284:
-/*!******************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/components/jyf-parser/libs/MpHtmlParser.js ***!
-  \******************************************************************************************************************/
+/***/ 282:
+/*!***************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/pages/attendance/uni-calendar/util.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 283));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
+
+Calendar = /*#__PURE__*/function () {
+  function Calendar()
+
+
+
+
+
+  {var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},date = _ref.date,selected = _ref.selected,startDate = _ref.startDate,endDate = _ref.endDate,range = _ref.range;_classCallCheck(this, Calendar);
+    // 当前日期
+    this.date = this.getDate(date); // 当前初入日期
+    // 打点信息
+    this.selected = selected || [];
+    // 范围开始
+    this.startDate = startDate;
+    // 范围结束
+    this.endDate = endDate;
+    this.range = range;
+    // 多选状态
+    this.multipleStatus = {
+      before: '',
+      after: '',
+      data: [] };
+
+    // 每周日期
+    this.weeks = {};
+
+    this._getWeek(this.date.fullDate);
+  }
+
+  /**
+     * 获取任意时间
+     */_createClass(Calendar, [{ key: "getDate", value: function getDate(
+    date) {var AddDayCount = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;var str = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'day';
+      if (!date) {
+        date = new Date();
+      }
+      if (typeof date !== 'object') {
+        date = date.replace(/-/g, '/');
+      }
+      var dd = new Date(date);
+      switch (str) {
+        case 'day':
+          dd.setDate(dd.getDate() + AddDayCount); // 获取AddDayCount天后的日期
+          break;
+        case 'month':
+          if (dd.getDate() === 31) {
+            dd.setDate(dd.getDate() + AddDayCount);
+          } else {
+            dd.setMonth(dd.getMonth() + AddDayCount); // 获取AddDayCount天后的日期
+          }
+          break;
+        case 'year':
+          dd.setFullYear(dd.getFullYear() + AddDayCount); // 获取AddDayCount天后的日期
+          break;}
+
+      var y = dd.getFullYear();
+      var m = dd.getMonth() + 1 < 10 ? '0' + (dd.getMonth() + 1) : dd.getMonth() + 1; // 获取当前月份的日期，不足10补0
+      var d = dd.getDate() < 10 ? '0' + dd.getDate() : dd.getDate(); // 获取当前几号，不足10补0
+      return {
+        fullDate: y + '-' + m + '-' + d,
+        year: y,
+        month: m,
+        date: d,
+        day: dd.getDay() };
+
+    }
+
+
+    /**
+       * 获取上月剩余天数
+       */ }, { key: "_getLastMonthDays", value: function _getLastMonthDays(
+    firstDay, full) {
+      var dateArr = [];
+      for (var i = firstDay; i > 0; i--) {
+        var beforeDate = new Date(full.year, full.month - 1, -i + 1).getDate();
+        dateArr.push({
+          date: beforeDate,
+          month: full.month - 1,
+          lunar: this.getlunar(full.year, full.month - 1, beforeDate),
+          disable: true });
+
+      }
+      return dateArr;
+    }
+    /**
+       * 获取本月天数
+       */ }, { key: "_currentMonthDys", value: function _currentMonthDys(
+    dateData, full) {var _this = this;
+      var dateArr = [];
+      var fullDate = this.date.fullDate;var _loop = function _loop(
+      i) {
+        var isinfo = false;
+        var nowDate = full.year + '-' + (full.month < 10 ?
+        full.month : full.month) + '-' + (i < 10 ?
+        '0' + i : i);
+        // 是否今天
+        var isDay = fullDate === nowDate;
+        // 获取打点信息
+        var info = _this.selected && _this.selected.find(function (item) {
+          if (_this.dateEqual(nowDate, item.date)) {
+            return item;
+          }
+        });
+
+        // 日期禁用
+        var disableBefore = true;
+        var disableAfter = true;
+        if (_this.startDate) {
+          var dateCompBefore = _this.dateCompare(_this.startDate, fullDate);
+          disableBefore = _this.dateCompare(dateCompBefore ? _this.startDate : fullDate, nowDate);
+        }
+
+        if (_this.endDate) {
+          var dateCompAfter = _this.dateCompare(fullDate, _this.endDate);
+          disableAfter = _this.dateCompare(nowDate, dateCompAfter ? _this.endDate : fullDate);
+        }
+
+        var multiples = _this.multipleStatus.data;
+        var checked = false;
+        var multiplesStatus = -1;
+        if (_this.range) {
+          if (multiples) {
+            multiplesStatus = multiples.findIndex(function (item) {
+              return _this.dateEqual(item, nowDate);
+            });
+          }
+          if (multiplesStatus !== -1) {
+            checked = true;
+          }
+        }
+
+        var data = {
+          fullDate: nowDate,
+          year: full.year,
+          date: i,
+          multiple: _this.range ? checked : false,
+          month: full.month,
+          lunar: _this.getlunar(full.year, full.month, i),
+          disable: !disableBefore || !disableAfter,
+          isDay: isDay };
+
+        if (info) {
+          data.extraInfo = info;
+        }
+
+        dateArr.push(data);};for (var i = 1; i <= dateData; i++) {_loop(i);
+      }
+      return dateArr;
+    }
+    /**
+       * 获取下月天数
+       */ }, { key: "_getNextMonthDays", value: function _getNextMonthDays(
+    surplus, full) {
+      var dateArr = [];
+      for (var i = 1; i < surplus + 1; i++) {
+        dateArr.push({
+          date: i,
+          month: Number(full.month) + 1,
+          lunar: this.getlunar(full.year, Number(full.month) + 1, i),
+          disable: true });
+
+      }
+      return dateArr;
+    }
+    /**
+       * 设置日期
+       * @param {Object} date
+       */ }, { key: "setDate", value: function setDate(
+    date) {
+      this._getWeek(date);
+    }
+    /**
+       * 获取当前日期详情
+       * @param {Object} date
+       */ }, { key: "getInfo", value: function getInfo(
+    date) {var _this2 = this;
+      if (!date) {
+        date = new Date();
+      }
+      var dateInfo = this.canlender.find(function (item) {return item.fullDate === _this2.getDate(date).fullDate;});
+      return dateInfo;
+    }
+
+    /**
+       * 比较时间大小
+       */ }, { key: "dateCompare", value: function dateCompare(
+    startDate, endDate) {
+      // 计算截止时间
+      startDate = new Date(startDate.replace('-', '/').replace('-', '/'));
+      // 计算详细项的截止时间
+      endDate = new Date(endDate.replace('-', '/').replace('-', '/'));
+      if (startDate <= endDate) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    /**
+       * 比较时间是否相等
+       */ }, { key: "dateEqual", value: function dateEqual(
+    before, after) {
+      // 计算截止时间
+      before = new Date(before.replace('-', '/').replace('-', '/'));
+      // 计算详细项的截止时间
+      after = new Date(after.replace('-', '/').replace('-', '/'));
+      if (before.getTime() - after.getTime() === 0) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+
+    /**
+       * 获取日期范围内所有日期
+       * @param {Object} begin
+       * @param {Object} end
+       */ }, { key: "geDateAll", value: function geDateAll(
+    begin, end) {
+      var arr = [];
+      var ab = begin.split('-');
+      var ae = end.split('-');
+      var db = new Date();
+      db.setFullYear(ab[0], ab[1] - 1, ab[2]);
+      var de = new Date();
+      de.setFullYear(ae[0], ae[1] - 1, ae[2]);
+      var unixDb = db.getTime() - 24 * 60 * 60 * 1000;
+      var unixDe = de.getTime() - 24 * 60 * 60 * 1000;
+      for (var k = unixDb; k <= unixDe;) {
+        k = k + 24 * 60 * 60 * 1000;
+        arr.push(this.getDate(new Date(parseInt(k))).fullDate);
+      }
+      return arr;
+    }
+    /**
+       * 计算阴历日期显示
+       */ }, { key: "getlunar", value: function getlunar(
+    year, month, date) {
+      return _calendar.default.solar2lunar(year, month, date);
+    }
+    /**
+       * 设置打点
+       */ }, { key: "setSelectInfo", value: function setSelectInfo(
+    data, value) {
+      this.selected = value;
+      this._getWeek(data);
+    }
+
+    /**
+       *  获取多选状态
+       */ }, { key: "setMultiple", value: function setMultiple(
+    fullDate) {var _this$multipleStatus =
+
+
+
+      this.multipleStatus,before = _this$multipleStatus.before,after = _this$multipleStatus.after;
+      if (!this.range) return;
+      if (before && after) {
+        this.multipleStatus.before = '';
+        this.multipleStatus.after = '';
+        this.multipleStatus.data = [];
+        this._getWeek(fullDate);
+      } else {
+        if (!before) {
+          this.multipleStatus.before = fullDate;
+        } else {
+          this.multipleStatus.after = fullDate;
+          if (this.dateCompare(this.multipleStatus.before, this.multipleStatus.after)) {
+            this.multipleStatus.data = this.geDateAll(this.multipleStatus.before, this.multipleStatus.after);
+          } else {
+            this.multipleStatus.data = this.geDateAll(this.multipleStatus.after, this.multipleStatus.before);
+          }
+          this._getWeek(fullDate);
+        }
+      }
+    }
+
+    /**
+       * 获取每周数据
+       * @param {Object} dateData
+       */ }, { key: "_getWeek", value: function _getWeek(
+    dateData) {var _this$getDate =
+
+
+
+
+
+
+      this.getDate(dateData),fullDate = _this$getDate.fullDate,year = _this$getDate.year,month = _this$getDate.month,date = _this$getDate.date,day = _this$getDate.day;
+      var firstDay = new Date(year, month - 1, 1).getDay();
+      var currentDay = new Date(year, month, 0).getDate();
+      var dates = {
+        lastMonthDays: this._getLastMonthDays(firstDay, this.getDate(dateData)), // 上个月末尾几天
+        currentMonthDys: this._currentMonthDys(currentDay, this.getDate(dateData)), // 本月天数
+        nextMonthDays: [], // 下个月开始几天
+        weeks: [] };
+
+      var canlender = [];
+      var surplus = 42 - (dates.lastMonthDays.length + dates.currentMonthDys.length);
+      dates.nextMonthDays = this._getNextMonthDays(surplus, this.getDate(dateData));
+      canlender = canlender.concat(dates.lastMonthDays, dates.currentMonthDys, dates.nextMonthDays);
+      var weeks = {};
+      // 拼接数组  上个月开始几天 + 本月天数+ 下个月开始几天
+      for (var i = 0; i < canlender.length; i++) {
+        if (i % 7 === 0) {
+          weeks[parseInt(i / 7)] = new Array(7);
+        }
+        weeks[parseInt(i / 7)][i % 7] = canlender[i];
+      }
+      this.canlender = canlender;
+      this.weeks = weeks;
+    }
+
+    //静态方法
+    // static init(date) {
+    // 	if (!this.instance) {
+    // 		this.instance = new Calendar(date);
+    // 	}
+    // 	return this.instance;
+    // }
+  }]);return Calendar;}();var _default =
+
+
+Calendar;exports.default = _default;
+
+/***/ }),
+
+/***/ 283:
+/*!*******************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/pages/attendance/uni-calendar/calendar.js ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
+                                                                                                     * @1900-2100区间内的公历、农历互转
+                                                                                                     * @charset UTF-8
+                                                                                                     * @github  https://github.com/jjonline/calendar.js
+                                                                                                     * @Author  Jea杨(JJonline@JJonline.Cn)
+                                                                                                     * @Time    2014-7-21
+                                                                                                     * @Time    2016-8-13 Fixed 2033hex、Attribution Annals
+                                                                                                     * @Time    2016-9-25 Fixed lunar LeapMonth Param Bug
+                                                                                                     * @Time    2017-7-24 Fixed use getTerm Func Param Error.use solar year,NOT lunar year
+                                                                                                     * @Version 1.0.3
+                                                                                                     * @公历转农历：calendar.solar2lunar(1987,11,01); //[you can ignore params of prefix 0]
+                                                                                                     * @农历转公历：calendar.lunar2solar(1987,09,10); //[you can ignore params of prefix 0]
+                                                                                                     */
+/* eslint-disable */
+var calendar = {
+
+  /**
+                     * 农历1900-2100的润大小信息表
+                     * @Array Of Property
+                     * @return Hex
+                     */
+  lunarInfo: [0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950, 0x16554, 0x056a0, 0x09ad0, 0x055d2, // 1900-1909
+  0x04ae0, 0x0a5b6, 0x0a4d0, 0x0d250, 0x1d255, 0x0b540, 0x0d6a0, 0x0ada2, 0x095b0, 0x14977, // 1910-1919
+  0x04970, 0x0a4b0, 0x0b4b5, 0x06a50, 0x06d40, 0x1ab54, 0x02b60, 0x09570, 0x052f2, 0x04970, // 1920-1929
+  0x06566, 0x0d4a0, 0x0ea50, 0x06e95, 0x05ad0, 0x02b60, 0x186e3, 0x092e0, 0x1c8d7, 0x0c950, // 1930-1939
+  0x0d4a0, 0x1d8a6, 0x0b550, 0x056a0, 0x1a5b4, 0x025d0, 0x092d0, 0x0d2b2, 0x0a950, 0x0b557, // 1940-1949
+  0x06ca0, 0x0b550, 0x15355, 0x04da0, 0x0a5b0, 0x14573, 0x052b0, 0x0a9a8, 0x0e950, 0x06aa0, // 1950-1959
+  0x0aea6, 0x0ab50, 0x04b60, 0x0aae4, 0x0a570, 0x05260, 0x0f263, 0x0d950, 0x05b57, 0x056a0, // 1960-1969
+  0x096d0, 0x04dd5, 0x04ad0, 0x0a4d0, 0x0d4d4, 0x0d250, 0x0d558, 0x0b540, 0x0b6a0, 0x195a6, // 1970-1979
+  0x095b0, 0x049b0, 0x0a974, 0x0a4b0, 0x0b27a, 0x06a50, 0x06d40, 0x0af46, 0x0ab60, 0x09570, // 1980-1989
+  0x04af5, 0x04970, 0x064b0, 0x074a3, 0x0ea50, 0x06b58, 0x05ac0, 0x0ab60, 0x096d5, 0x092e0, // 1990-1999
+  0x0c960, 0x0d954, 0x0d4a0, 0x0da50, 0x07552, 0x056a0, 0x0abb7, 0x025d0, 0x092d0, 0x0cab5, // 2000-2009
+  0x0a950, 0x0b4a0, 0x0baa4, 0x0ad50, 0x055d9, 0x04ba0, 0x0a5b0, 0x15176, 0x052b0, 0x0a930, // 2010-2019
+  0x07954, 0x06aa0, 0x0ad50, 0x05b52, 0x04b60, 0x0a6e6, 0x0a4e0, 0x0d260, 0x0ea65, 0x0d530, // 2020-2029
+  0x05aa0, 0x076a3, 0x096d0, 0x04afb, 0x04ad0, 0x0a4d0, 0x1d0b6, 0x0d250, 0x0d520, 0x0dd45, // 2030-2039
+  0x0b5a0, 0x056d0, 0x055b2, 0x049b0, 0x0a577, 0x0a4b0, 0x0aa50, 0x1b255, 0x06d20, 0x0ada0, // 2040-2049
+  /** Add By JJonline@JJonline.Cn**/
+  0x14b63, 0x09370, 0x049f8, 0x04970, 0x064b0, 0x168a6, 0x0ea50, 0x06b20, 0x1a6c4, 0x0aae0, // 2050-2059
+  0x0a2e0, 0x0d2e3, 0x0c960, 0x0d557, 0x0d4a0, 0x0da50, 0x05d55, 0x056a0, 0x0a6d0, 0x055d4, // 2060-2069
+  0x052d0, 0x0a9b8, 0x0a950, 0x0b4a0, 0x0b6a6, 0x0ad50, 0x055a0, 0x0aba4, 0x0a5b0, 0x052b0, // 2070-2079
+  0x0b273, 0x06930, 0x07337, 0x06aa0, 0x0ad50, 0x14b55, 0x04b60, 0x0a570, 0x054e4, 0x0d160, // 2080-2089
+  0x0e968, 0x0d520, 0x0daa0, 0x16aa6, 0x056d0, 0x04ae0, 0x0a9d4, 0x0a2d0, 0x0d150, 0x0f252, // 2090-2099
+  0x0d520], // 2100
+
+  /**
+      * 公历每个月份的天数普通表
+      * @Array Of Property
+      * @return Number
+      */
+  solarMonth: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+
+  /**
+                                                                    * 天干地支之天干速查表
+                                                                    * @Array Of Property trans["甲","乙","丙","丁","戊","己","庚","辛","壬","癸"]
+                                                                    * @return Cn string
+                                                                    */
+  Gan: ["\u7532", "\u4E59", "\u4E19", "\u4E01", "\u620A", "\u5DF1", "\u5E9A", "\u8F9B", "\u58EC", "\u7678"],
+
+  /**
+                                                                                                                 * 天干地支之地支速查表
+                                                                                                                 * @Array Of Property
+                                                                                                                 * @trans["子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥"]
+                                                                                                                 * @return Cn string
+                                                                                                                 */
+  Zhi: ["\u5B50", "\u4E11", "\u5BC5", "\u536F", "\u8FB0", "\u5DF3", "\u5348", "\u672A", "\u7533", "\u9149", "\u620C", "\u4EA5"],
+
+  /**
+                                                                                                                                     * 天干地支之地支速查表<=>生肖
+                                                                                                                                     * @Array Of Property
+                                                                                                                                     * @trans["鼠","牛","虎","兔","龙","蛇","马","羊","猴","鸡","狗","猪"]
+                                                                                                                                     * @return Cn string
+                                                                                                                                     */
+  Animals: ["\u9F20", "\u725B", "\u864E", "\u5154", "\u9F99", "\u86C7", "\u9A6C", "\u7F8A", "\u7334", "\u9E21", "\u72D7", "\u732A"],
+
+  /**
+                                                                                                                                         * 24节气速查表
+                                                                                                                                         * @Array Of Property
+                                                                                                                                         * @trans["小寒","大寒","立春","雨水","惊蛰","春分","清明","谷雨","立夏","小满","芒种","夏至","小暑","大暑","立秋","处暑","白露","秋分","寒露","霜降","立冬","小雪","大雪","冬至"]
+                                                                                                                                         * @return Cn string
+                                                                                                                                         */
+  solarTerm: ["\u5C0F\u5BD2", "\u5927\u5BD2", "\u7ACB\u6625", "\u96E8\u6C34", "\u60CA\u86F0", "\u6625\u5206", "\u6E05\u660E", "\u8C37\u96E8", "\u7ACB\u590F", "\u5C0F\u6EE1", "\u8292\u79CD", "\u590F\u81F3", "\u5C0F\u6691", "\u5927\u6691", "\u7ACB\u79CB", "\u5904\u6691", "\u767D\u9732", "\u79CB\u5206", "\u5BD2\u9732", "\u971C\u964D", "\u7ACB\u51AC", "\u5C0F\u96EA", "\u5927\u96EA", "\u51AC\u81F3"],
+
+  /**
+                                                                                                                                                                                                                                                                                                                                                                                                                   * 1900-2100各年的24节气日期速查表
+                                                                                                                                                                                                                                                                                                                                                                                                                   * @Array Of Property
+                                                                                                                                                                                                                                                                                                                                                                                                                   * @return 0x string For splice
+                                                                                                                                                                                                                                                                                                                                                                                                                   */
+  sTermInfo: ['9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f',
+  '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
+  '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa',
+  '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f',
+  'b027097bd097c36b0b6fc9274c91aa', '9778397bd19801ec9210c965cc920e', '97b6b97bd19801ec95f8c965cc920f',
+  '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd197c36c9210c9274c91aa',
+  '97b6b97bd19801ec95f8c965cc920e', '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2',
+  '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec95f8c965cc920e', '97bcf97c3598082c95f8e1cfcc920f',
+  '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e',
+  '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
+  '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722',
+  '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f',
+  '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
+  '97bcf97c359801ec95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
+  '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd07f595b0b6fc920fb0722',
+  '9778397bd097c36b0b6fc9210c8dc2', '9778397bd19801ec9210c9274c920e', '97b6b97bd19801ec95f8c965cc920f',
+  '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e',
+  '97b6b97bd19801ec95f8c965cc920f', '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2',
+  '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bd07f1487f595b0b0bc920fb0722',
+  '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
+  '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
+  '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722',
+  '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f531b0b0bb0b6fb0722',
+  '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e',
+  '97bcf7f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
+  '97b6b97bd19801ec9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722',
+  '9778397bd097c36b0b6fc9210c91aa', '97b6b97bd197c36c9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722',
+  '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e',
+  '97b6b7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2',
+  '9778397bd097c36b0b70c9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722',
+  '7f0e397bd097c35b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721',
+  '7f0e27f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
+  '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722',
+  '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722',
+  '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721',
+  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9274c91aa',
+  '97b6b7f0e47f531b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722',
+  '9778397bd097c36b0b6fc9210c91aa', '97b6b7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722',
+  '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '977837f0e37f149b0723b0787b0721',
+  '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c35b0b6fc9210c8dc2',
+  '977837f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722',
+  '7f0e397bd097c35b0b6fc9210c8dc2', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
+  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '977837f0e37f14998082b0787b06bd',
+  '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722',
+  '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722',
+  '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
+  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd',
+  '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722',
+  '977837f0e37f14998082b0723b06bd', '7f07e7f0e37f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722',
+  '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721',
+  '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e37f0e37f14898082b0723b02d5',
+  '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f531b0b0bb0b6fb0722',
+  '7f0e37f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
+  '7f0e37f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd',
+  '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35',
+  '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722',
+  '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f149b0723b0787b0721',
+  '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0723b06bd',
+  '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e37f0e366aa89801eb072297c35',
+  '7ec967f0e37f14998082b0723b06bd', '7f07e7f0e37f14998083b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722',
+  '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14898082b0723b02d5', '7f07e7f0e37f14998082b0787b0721',
+  '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66aa89801e9808297c35', '665f67f0e37f14898082b0723b02d5',
+  '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66a449801e9808297c35',
+  '665f67f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721',
+  '7f0e36665b66a449801e9808297c35', '665f67f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd',
+  '7f07e7f0e47f531b0723b0b6fb0721', '7f0e26665b66a449801e9808297c35', '665f67f0e37f1489801eb072297c35',
+  '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722'],
+
+  /**
+                                                                                                             * 数字转中文速查表
+                                                                                                             * @Array Of Property
+                                                                                                             * @trans ['日','一','二','三','四','五','六','七','八','九','十']
+                                                                                                             * @return Cn string
+                                                                                                             */
+  nStr1: ["\u65E5", "\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341"],
+
+  /**
+                                                                                                                             * 日期转农历称呼速查表
+                                                                                                                             * @Array Of Property
+                                                                                                                             * @trans ['初','十','廿','卅']
+                                                                                                                             * @return Cn string
+                                                                                                                             */
+  nStr2: ["\u521D", "\u5341", "\u5EFF", "\u5345"],
+
+  /**
+                                                       * 月份转农历称呼速查表
+                                                       * @Array Of Property
+                                                       * @trans ['正','一','二','三','四','五','六','七','八','九','十','冬','腊']
+                                                       * @return Cn string
+                                                       */
+  nStr3: ["\u6B63", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341", "\u51AC", "\u814A"],
+
+  /**
+                                                                                                                                       * 返回农历y年一整年的总天数
+                                                                                                                                       * @param lunar Year
+                                                                                                                                       * @return Number
+                                                                                                                                       * @eg:var count = calendar.lYearDays(1987) ;//count=387
+                                                                                                                                       */
+  lYearDays: function lYearDays(y) {
+    var i;var sum = 348;
+    for (i = 0x8000; i > 0x8; i >>= 1) {sum += this.lunarInfo[y - 1900] & i ? 1 : 0;}
+    return sum + this.leapDays(y);
+  },
+
+  /**
+         * 返回农历y年闰月是哪个月；若y年没有闰月 则返回0
+         * @param lunar Year
+         * @return Number (0-12)
+         * @eg:var leapMonth = calendar.leapMonth(1987) ;//leapMonth=6
+         */
+  leapMonth: function leapMonth(y) {// 闰字编码 \u95f0
+    return this.lunarInfo[y - 1900] & 0xf;
+  },
+
+  /**
+         * 返回农历y年闰月的天数 若该年没有闰月则返回0
+         * @param lunar Year
+         * @return Number (0、29、30)
+         * @eg:var leapMonthDay = calendar.leapDays(1987) ;//leapMonthDay=29
+         */
+  leapDays: function leapDays(y) {
+    if (this.leapMonth(y)) {
+      return this.lunarInfo[y - 1900] & 0x10000 ? 30 : 29;
+    }
+    return 0;
+  },
+
+  /**
+         * 返回农历y年m月（非闰月）的总天数，计算m为闰月时的天数请使用leapDays方法
+         * @param lunar Year
+         * @return Number (-1、29、30)
+         * @eg:var MonthDay = calendar.monthDays(1987,9) ;//MonthDay=29
+         */
+  monthDays: function monthDays(y, m) {
+    if (m > 12 || m < 1) {return -1;} // 月份参数从1至12，参数错误返回-1
+    return this.lunarInfo[y - 1900] & 0x10000 >> m ? 30 : 29;
+  },
+
+  /**
+         * 返回公历(!)y年m月的天数
+         * @param solar Year
+         * @return Number (-1、28、29、30、31)
+         * @eg:var solarMonthDay = calendar.leapDays(1987) ;//solarMonthDay=30
+         */
+  solarDays: function solarDays(y, m) {
+    if (m > 12 || m < 1) {return -1;} // 若参数错误 返回-1
+    var ms = m - 1;
+    if (ms == 1) {// 2月份的闰平规律测算后确认返回28或29
+      return y % 4 == 0 && y % 100 != 0 || y % 400 == 0 ? 29 : 28;
+    } else {
+      return this.solarMonth[ms];
+    }
+  },
+
+  /**
+        * 农历年份转换为干支纪年
+        * @param  lYear 农历年的年份数
+        * @return Cn string
+        */
+  toGanZhiYear: function toGanZhiYear(lYear) {
+    var ganKey = (lYear - 3) % 10;
+    var zhiKey = (lYear - 3) % 12;
+    if (ganKey == 0) ganKey = 10; // 如果余数为0则为最后一个天干
+    if (zhiKey == 0) zhiKey = 12; // 如果余数为0则为最后一个地支
+    return this.Gan[ganKey - 1] + this.Zhi[zhiKey - 1];
+  },
+
+  /**
+        * 公历月、日判断所属星座
+        * @param  cMonth [description]
+        * @param  cDay [description]
+        * @return Cn string
+        */
+  toAstro: function toAstro(cMonth, cDay) {
+    var s = "\u9B54\u7FAF\u6C34\u74F6\u53CC\u9C7C\u767D\u7F8A\u91D1\u725B\u53CC\u5B50\u5DE8\u87F9\u72EE\u5B50\u5904\u5973\u5929\u79E4\u5929\u874E\u5C04\u624B\u9B54\u7FAF";
+    var arr = [20, 19, 21, 21, 21, 22, 23, 23, 23, 23, 22, 22];
+    return s.substr(cMonth * 2 - (cDay < arr[cMonth - 1] ? 2 : 0), 2) + "\u5EA7"; // 座
+  },
+
+  /**
+         * 传入offset偏移量返回干支
+         * @param offset 相对甲子的偏移量
+         * @return Cn string
+         */
+  toGanZhi: function toGanZhi(offset) {
+    return this.Gan[offset % 10] + this.Zhi[offset % 12];
+  },
+
+  /**
+         * 传入公历(!)y年获得该年第n个节气的公历日期
+         * @param y公历年(1900-2100)；n二十四节气中的第几个节气(1~24)；从n=1(小寒)算起
+         * @return day Number
+         * @eg:var _24 = calendar.getTerm(1987,3) ;//_24=4;意即1987年2月4日立春
+         */
+  getTerm: function getTerm(y, n) {
+    if (y < 1900 || y > 2100) {return -1;}
+    if (n < 1 || n > 24) {return -1;}
+    var _table = this.sTermInfo[y - 1900];
+    var _info = [
+    parseInt('0x' + _table.substr(0, 5)).toString(),
+    parseInt('0x' + _table.substr(5, 5)).toString(),
+    parseInt('0x' + _table.substr(10, 5)).toString(),
+    parseInt('0x' + _table.substr(15, 5)).toString(),
+    parseInt('0x' + _table.substr(20, 5)).toString(),
+    parseInt('0x' + _table.substr(25, 5)).toString()];
+
+    var _calday = [
+    _info[0].substr(0, 1),
+    _info[0].substr(1, 2),
+    _info[0].substr(3, 1),
+    _info[0].substr(4, 2),
+
+    _info[1].substr(0, 1),
+    _info[1].substr(1, 2),
+    _info[1].substr(3, 1),
+    _info[1].substr(4, 2),
+
+    _info[2].substr(0, 1),
+    _info[2].substr(1, 2),
+    _info[2].substr(3, 1),
+    _info[2].substr(4, 2),
+
+    _info[3].substr(0, 1),
+    _info[3].substr(1, 2),
+    _info[3].substr(3, 1),
+    _info[3].substr(4, 2),
+
+    _info[4].substr(0, 1),
+    _info[4].substr(1, 2),
+    _info[4].substr(3, 1),
+    _info[4].substr(4, 2),
+
+    _info[5].substr(0, 1),
+    _info[5].substr(1, 2),
+    _info[5].substr(3, 1),
+    _info[5].substr(4, 2)];
+
+    return parseInt(_calday[n - 1]);
+  },
+
+  /**
+         * 传入农历数字月份返回汉语通俗表示法
+         * @param lunar month
+         * @return Cn string
+         * @eg:var cnMonth = calendar.toChinaMonth(12) ;//cnMonth='腊月'
+         */
+  toChinaMonth: function toChinaMonth(m) {// 月 => \u6708
+    if (m > 12 || m < 1) {return -1;} // 若参数错误 返回-1
+    var s = this.nStr3[m - 1];
+    s += "\u6708"; // 加上月字
+    return s;
+  },
+
+  /**
+         * 传入农历日期数字返回汉字表示法
+         * @param lunar day
+         * @return Cn string
+         * @eg:var cnDay = calendar.toChinaDay(21) ;//cnMonth='廿一'
+         */
+  toChinaDay: function toChinaDay(d) {// 日 => \u65e5
+    var s;
+    switch (d) {
+      case 10:
+        s = "\u521D\u5341";break;
+      case 20:
+        s = "\u4E8C\u5341";break;
+        break;
+      case 30:
+        s = "\u4E09\u5341";break;
+        break;
+      default:
+        s = this.nStr2[Math.floor(d / 10)];
+        s += this.nStr1[d % 10];}
+
+    return s;
+  },
+
+  /**
+         * 年份转生肖[!仅能大致转换] => 精确划分生肖分界线是“立春”
+         * @param y year
+         * @return Cn string
+         * @eg:var animal = calendar.getAnimal(1987) ;//animal='兔'
+         */
+  getAnimal: function getAnimal(y) {
+    return this.Animals[(y - 4) % 12];
+  },
+
+  /**
+         * 传入阳历年月日获得详细的公历、农历object信息 <=>JSON
+         * @param y  solar year
+         * @param m  solar month
+         * @param d  solar day
+         * @return JSON object
+         * @eg:console.log(calendar.solar2lunar(1987,11,01));
+         */
+  solar2lunar: function solar2lunar(y, m, d) {// 参数区间1900.1.31~2100.12.31
+    // 年份限定、上限
+    if (y < 1900 || y > 2100) {
+      return -1; // undefined转换为数字变为NaN
+    }
+    // 公历传参最下限
+    if (y == 1900 && m == 1 && d < 31) {
+      return -1;
+    }
+    // 未传参  获得当天
+    if (!y) {
+      var objDate = new Date();
+    } else {
+      var objDate = new Date(y, parseInt(m) - 1, d);
+    }
+    var i;var leap = 0;var temp = 0;
+    // 修正ymd参数
+    var y = objDate.getFullYear();
+    var m = objDate.getMonth() + 1;
+    var d = objDate.getDate();
+    var offset = (Date.UTC(objDate.getFullYear(), objDate.getMonth(), objDate.getDate()) - Date.UTC(1900, 0, 31)) / 86400000;
+    for (i = 1900; i < 2101 && offset > 0; i++) {
+      temp = this.lYearDays(i);
+      offset -= temp;
+    }
+    if (offset < 0) {
+      offset += temp;i--;
+    }
+
+    // 是否今天
+    var isTodayObj = new Date();
+    var isToday = false;
+    if (isTodayObj.getFullYear() == y && isTodayObj.getMonth() + 1 == m && isTodayObj.getDate() == d) {
+      isToday = true;
+    }
+    // 星期几
+    var nWeek = objDate.getDay();
+    var cWeek = this.nStr1[nWeek];
+    // 数字表示周几顺应天朝周一开始的惯例
+    if (nWeek == 0) {
+      nWeek = 7;
+    }
+    // 农历年
+    var year = i;
+    var leap = this.leapMonth(i); // 闰哪个月
+    var isLeap = false;
+
+    // 效验闰月
+    for (i = 1; i < 13 && offset > 0; i++) {
+      // 闰月
+      if (leap > 0 && i == leap + 1 && isLeap == false) {
+        --i;
+        isLeap = true;temp = this.leapDays(year); // 计算农历闰月天数
+      } else {
+        temp = this.monthDays(year, i); // 计算农历普通月天数
+      }
+      // 解除闰月
+      if (isLeap == true && i == leap + 1) {isLeap = false;}
+      offset -= temp;
+    }
+    // 闰月导致数组下标重叠取反
+    if (offset == 0 && leap > 0 && i == leap + 1) {
+      if (isLeap) {
+        isLeap = false;
+      } else {
+        isLeap = true;--i;
+      }
+    }
+    if (offset < 0) {
+      offset += temp;--i;
+    }
+    // 农历月
+    var month = i;
+    // 农历日
+    var day = offset + 1;
+    // 天干地支处理
+    var sm = m - 1;
+    var gzY = this.toGanZhiYear(year);
+
+    // 当月的两个节气
+    // bugfix-2017-7-24 11:03:38 use lunar Year Param `y` Not `year`
+    var firstNode = this.getTerm(y, m * 2 - 1); // 返回当月「节」为几日开始
+    var secondNode = this.getTerm(y, m * 2); // 返回当月「节」为几日开始
+
+    // 依据12节气修正干支月
+    var gzM = this.toGanZhi((y - 1900) * 12 + m + 11);
+    if (d >= firstNode) {
+      gzM = this.toGanZhi((y - 1900) * 12 + m + 12);
+    }
+
+    // 传入的日期的节气与否
+    var isTerm = false;
+    var Term = null;
+    if (firstNode == d) {
+      isTerm = true;
+      Term = this.solarTerm[m * 2 - 2];
+    }
+    if (secondNode == d) {
+      isTerm = true;
+      Term = this.solarTerm[m * 2 - 1];
+    }
+    // 日柱 当月一日与 1900/1/1 相差天数
+    var dayCyclical = Date.UTC(y, sm, 1, 0, 0, 0, 0) / 86400000 + 25567 + 10;
+    var gzD = this.toGanZhi(dayCyclical + d - 1);
+    // 该日期所属的星座
+    var astro = this.toAstro(m, d);
+
+    return { 'lYear': year, 'lMonth': month, 'lDay': day, 'Animal': this.getAnimal(year), 'IMonthCn': (isLeap ? "\u95F0" : '') + this.toChinaMonth(month), 'IDayCn': this.toChinaDay(day), 'cYear': y, 'cMonth': m, 'cDay': d, 'gzYear': gzY, 'gzMonth': gzM, 'gzDay': gzD, 'isToday': isToday, 'isLeap': isLeap, 'nWeek': nWeek, 'ncWeek': "\u661F\u671F" + cWeek, 'isTerm': isTerm, 'Term': Term, 'astro': astro };
+  },
+
+  /**
+         * 传入农历年月日以及传入的月份是否闰月获得详细的公历、农历object信息 <=>JSON
+         * @param y  lunar year
+         * @param m  lunar month
+         * @param d  lunar day
+         * @param isLeapMonth  lunar month is leap or not.[如果是农历闰月第四个参数赋值true即可]
+         * @return JSON object
+         * @eg:console.log(calendar.lunar2solar(1987,9,10));
+         */
+  lunar2solar: function lunar2solar(y, m, d, isLeapMonth) {// 参数区间1900.1.31~2100.12.1
+    var isLeapMonth = !!isLeapMonth;
+    var leapOffset = 0;
+    var leapMonth = this.leapMonth(y);
+    var leapDay = this.leapDays(y);
+    if (isLeapMonth && leapMonth != m) {return -1;} // 传参要求计算该闰月公历 但该年得出的闰月与传参的月份并不同
+    if (y == 2100 && m == 12 && d > 1 || y == 1900 && m == 1 && d < 31) {return -1;} // 超出了最大极限值
+    var day = this.monthDays(y, m);
+    var _day = day;
+    // bugFix 2016-9-25
+    // if month is leap, _day use leapDays method
+    if (isLeapMonth) {
+      _day = this.leapDays(y, m);
+    }
+    if (y < 1900 || y > 2100 || d > _day) {return -1;} // 参数合法性效验
+
+    // 计算农历的时间差
+    var offset = 0;
+    for (var i = 1900; i < y; i++) {
+      offset += this.lYearDays(i);
+    }
+    var leap = 0;var isAdd = false;
+    for (var i = 1; i < m; i++) {
+      leap = this.leapMonth(y);
+      if (!isAdd) {// 处理闰月
+        if (leap <= i && leap > 0) {
+          offset += this.leapDays(y);isAdd = true;
+        }
+      }
+      offset += this.monthDays(y, i);
+    }
+    // 转换闰月农历 需补充该年闰月的前一个月的时差
+    if (isLeapMonth) {offset += day;}
+    // 1900年农历正月一日的公历时间为1900年1月30日0时0分0秒(该时间也是本农历的最开始起始点)
+    var stmap = Date.UTC(1900, 1, 30, 0, 0, 0);
+    var calObj = new Date((offset + d - 31) * 86400000 + stmap);
+    var cY = calObj.getUTCFullYear();
+    var cM = calObj.getUTCMonth() + 1;
+    var cD = calObj.getUTCDate();
+
+    return this.solar2lunar(cY, cM, cD);
+  } };var _default =
+
+
+calendar;exports.default = _default;
+
+/***/ }),
+
+/***/ 29:
+/*!*************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/customer-coupons.js ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [
+{
+  "couponExplain": "<p>1. 在有效期内，凭此券在奈雪内地任意门店(机场店、奈雪梦工厂除外)及“奈雪点单”小程序免费兑换任意饮品或软欧包一份，菜单上标有红色雪花产品除外</p><p>2. 此券不可兑换现金，不设找零，优惠券抵扣金额不予积分</p><p>3. 此券每单仅限使用一张，不得与其他优惠券同时使用</p><p>4. 此券不适用于第三方外送服务</p><p>5. 券面图片仅供参考，产品以实物为准</p>",
+  "discountUnit": 1,
+  "imageUrl": "https://images.qmai.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
+  "id": "1",
+  "discountAmount": null,
+  "beginAt": "2020-05-10 00:00:00",
+  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
+  "endAt": "2020-06-08 23:59:59",
+  "createdAt": "2020-05-10 02:06:00",
+  "title": "生日免费券",
+  "couponId": "1",
+  "deletedAt": null,
+  "sellerName": "奈雪の茶",
+  "updatedAt": "2020-05-10 02:06:00",
+  "couponType": 1 },
+
+{
+  "couponExplain": "1. 适用商品：免费兑换生日特调鸡尾酒一杯\n2. 适用门店：仅限内地奈雪酒屋任意门店堂食使用\n3. 适用场景：线下门店出示会员码使用\n4. 本券仅限消费酒类产品，依法不支持未成年人使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
+  "discountUnit": null,
+  "imageUrl": "https://images.qmai.cn/s34747/2019/12/04/5d97da76e82bfe26d3.png",
+  "id": "2",
+  "discountAmount": null,
+  "beginAt": "2020-05-10 00:00:00",
+  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
+  "endAt": "2020-06-08 23:59:59",
+  "createdAt": "2020-05-10 02:06:00",
+  "title": "生日特调券",
+  "couponId": "2",
+  "deletedAt": null,
+  "sellerName": "奈雪酒屋",
+  "updatedAt": "2020-05-10 02:06:00",
+  "couponType": 2 },
+
+{
+  "couponExplain": "1. 使用条件：在有效期内，免费兑换鸡尾酒一杯，每周五、周六与法定节假日19点后不支持使用\n2. 适用商品：鸡尾酒/红葡萄酒/白葡萄酒，具体以门店营业信息为准\n3. 适用门店：仅限内地奈雪酒屋任意门店堂食使用\n4. 适用场景：线下门店出示会员码使用\n5. 本券仅限消费酒类产品，依法不支持未成年人使用\n6. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n7. 此券不适用于第三方外送服务8. 券面图片仅供参考，产品以实物为准",
+  "discountUnit": null,
+  "imageUrl": "https://images.qmai.cn/s34747/2019/12/04/5d97da76e82bfe26d3.png",
+  "id": "3",
+  "discountAmount": null,
+  "beginAt": "2020-05-08 00:00:00",
+  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
+  "endAt": "2020-06-06 23:59:59",
+  "createdAt": "2020-05-08 19:25:41",
+  "title": "酒屋特调券",
+  "couponId": "3",
+  "deletedAt": null,
+  "sellerName": "奈雪酒屋",
+  "updatedAt": "2020-05-08 19:25:41",
+  "couponType": 2 },
+
+{
+  "couponExplain": "<p>1. 在有效期内，凭此券可在奈雪内地任意门店(机场店、奈雪梦工厂除外)及“奈雪点单”小程序购买任意茶饮一杯，可免费获得软欧包一个（价格不高于茶饮），菜单上标有红色雪花产品除外</p><p>2. 此券不可兑换现金，不设找零，优惠券抵扣金额不予积分</p><p>3. 此券每单仅限使用一张，不得与其他优惠券同时使用</p><p>4. 此券不适用于第三方外送服务</p><p>5. 券面图片仅供参考，产品以实物为准</p>",
+  "discountUnit": 2,
+  "imageUrl": "https://images.qmai.cn/s23107/2019/10/10/8a8be6ddf7a4140944.jpg",
+  "id": "4",
+  "discountAmount": 0,
+  "beginAt": "2020-05-08 00:00:00",
+  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
+  "endAt": "2020-06-06 23:59:59",
+  "createdAt": "2020-05-08 19:25:41",
+  "title": "升级好友券",
+  "couponId": "4",
+  "deletedAt": null,
+  "sellerName": "奈雪の茶",
+  "updatedAt": "2020-05-08 19:25:41",
+  "couponType": 1 },
+
+{
+  "couponExplain": "<p>1. 在有效期内，凭此券可在奈雪内地任意门店(机场店、奈雪梦工厂除外)及“奈雪点单”小程序享受购买任意茶饮满两杯赠一杯（赠送产品价格不高于购买产品），菜单上标有红色雪花产品除外</p><p>2. 此券不可兑换现金，不设找零，优惠券抵扣金额不予积分</p><p>3. 此券每单仅限使用一张，不得与其他优惠券同时使用</p><p>4. 此券不适用于第三方外送服务</p><p>5. 券面图片仅供参考，产品以实物为准</p>",
+  "discountUnit": 2,
+  "imageUrl": "https://images.qmai.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
+  "id": "5",
+  "discountAmount": 0,
+  "beginAt": "2020-05-08 00:00:00",
+  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
+  "endAt": "2020-06-06 23:59:59",
+  "createdAt": "2020-05-08 19:25:41",
+  "title": "茶饮满二赠一券",
+  "couponId": "5",
+  "deletedAt": null,
+  "sellerName": "奈雪の茶",
+  "updatedAt": "2020-05-08 19:25:41",
+  "couponType": 1 },
+
+{
+  "couponExplain": "<p>1.&nbsp;在有效期内，凭此券可在“奈雪点单”小程序外卖(机场店、奈雪梦工厂除外)购买任意茶饮或软欧包减免5元优惠</p><p>2.&nbsp;此券不可兑换现金，不设找零，优惠券抵扣金额不予积分</p><p>3.&nbsp;此券每单仅限使用一张，不得与其他优惠券同时使用</p><p>4.&nbsp;此券不适用于第三方外送服务</p><p>5.&nbsp;券面图片仅供参考，产品以实物为准</p>",
+  "imageUrl": "https://images.qmai.cn/s23107/2019/12/04/fcb80e25ea8b39c1ac.jpg",
+  "id": "6",
+  "discountAmount": 5,
+  "beginAt": "2020-05-08 00:00:00",
+  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
+  "endAt": "2020-06-06 23:59:59",
+  "createdAt": "2020-05-08 19:25:40",
+  "title": "小程序外卖5元现金券",
+  "couponId": "6",
+  "deletedAt": null,
+  "sellerName": "奈雪の茶",
+  "updatedAt": "2020-05-08 19:25:40",
+  "couponType": 1 }];exports.default = _default;
+
+/***/ }),
+
+/***/ 291:
+/*!********************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/jyf-parser/libs/MpHtmlParser.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22787,9 +22899,9 @@ function _classCallCheck(instance, Constructor) {if (!(instance instanceof Const
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           author：JinYufeng
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           update：2020/05/08
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */
-var cfg = __webpack_require__(/*! ./config.js */ 285),
+var cfg = __webpack_require__(/*! ./config.js */ 292),
 blankChar = cfg.blankChar,
-CssHandler = __webpack_require__(/*! ./CssHandler.js */ 286),
+CssHandler = __webpack_require__(/*! ./CssHandler.js */ 293),
 screenWidth = wx.getSystemInfoSync().screenWidth;
 var emoji; // emoji 补丁包 https://jin-yufeng.github.io/Parser/#/instructions?id=emoji
 var MpHtmlParser = /*#__PURE__*/function () {"use strict";
@@ -23300,10 +23412,10 @@ module.exports = MpHtmlParser;
 
 /***/ }),
 
-/***/ 285:
-/*!************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/components/jyf-parser/libs/config.js ***!
-  \************************************************************************************************************/
+/***/ 292:
+/*!**************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/jyf-parser/libs/config.js ***!
+  \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -23406,10 +23518,10 @@ function makeMap(str) {
 
 /***/ }),
 
-/***/ 286:
-/*!****************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/components/jyf-parser/libs/CssHandler.js ***!
-  \****************************************************************************************************************/
+/***/ 293:
+/*!******************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/jyf-parser/libs/CssHandler.js ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23420,7 +23532,7 @@ function _classCallCheck(instance, Constructor) {if (!(instance instanceof Const
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           author：JinYufeng
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           update：2020/03/15
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */
-var cfg = __webpack_require__(/*! ./config.js */ 285);var
+var cfg = __webpack_require__(/*! ./config.js */ 292);var
 CssHandler = /*#__PURE__*/function () {"use strict";
   function CssHandler(tagStyle) {var _this = this;_classCallCheck(this, CssHandler);_defineProperty(this, "getStyle",
 
@@ -23517,118 +23629,6 @@ CssParser = /*#__PURE__*/function () {"use strict";
 
 /***/ }),
 
-/***/ 29:
-/*!***********************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/api/customer-coupons.js ***!
-  \***********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [
-{
-  "couponExplain": "<p>1. 在有效期内，凭此券在奈雪内地任意门店(机场店、奈雪梦工厂除外)及“奈雪点单”小程序免费兑换任意饮品或软欧包一份，菜单上标有红色雪花产品除外</p><p>2. 此券不可兑换现金，不设找零，优惠券抵扣金额不予积分</p><p>3. 此券每单仅限使用一张，不得与其他优惠券同时使用</p><p>4. 此券不适用于第三方外送服务</p><p>5. 券面图片仅供参考，产品以实物为准</p>",
-  "discountUnit": 1,
-  "imageUrl": "https://images.qmai.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-  "id": "1",
-  "discountAmount": null,
-  "beginAt": "2020-05-10 00:00:00",
-  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
-  "endAt": "2020-06-08 23:59:59",
-  "createdAt": "2020-05-10 02:06:00",
-  "title": "生日免费券",
-  "couponId": "1",
-  "deletedAt": null,
-  "sellerName": "奈雪の茶",
-  "updatedAt": "2020-05-10 02:06:00",
-  "couponType": 1 },
-
-{
-  "couponExplain": "1. 适用商品：免费兑换生日特调鸡尾酒一杯\n2. 适用门店：仅限内地奈雪酒屋任意门店堂食使用\n3. 适用场景：线下门店出示会员码使用\n4. 本券仅限消费酒类产品，依法不支持未成年人使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-  "discountUnit": null,
-  "imageUrl": "https://images.qmai.cn/s34747/2019/12/04/5d97da76e82bfe26d3.png",
-  "id": "2",
-  "discountAmount": null,
-  "beginAt": "2020-05-10 00:00:00",
-  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
-  "endAt": "2020-06-08 23:59:59",
-  "createdAt": "2020-05-10 02:06:00",
-  "title": "生日特调券",
-  "couponId": "2",
-  "deletedAt": null,
-  "sellerName": "奈雪酒屋",
-  "updatedAt": "2020-05-10 02:06:00",
-  "couponType": 2 },
-
-{
-  "couponExplain": "1. 使用条件：在有效期内，免费兑换鸡尾酒一杯，每周五、周六与法定节假日19点后不支持使用\n2. 适用商品：鸡尾酒/红葡萄酒/白葡萄酒，具体以门店营业信息为准\n3. 适用门店：仅限内地奈雪酒屋任意门店堂食使用\n4. 适用场景：线下门店出示会员码使用\n5. 本券仅限消费酒类产品，依法不支持未成年人使用\n6. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n7. 此券不适用于第三方外送服务8. 券面图片仅供参考，产品以实物为准",
-  "discountUnit": null,
-  "imageUrl": "https://images.qmai.cn/s34747/2019/12/04/5d97da76e82bfe26d3.png",
-  "id": "3",
-  "discountAmount": null,
-  "beginAt": "2020-05-08 00:00:00",
-  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
-  "endAt": "2020-06-06 23:59:59",
-  "createdAt": "2020-05-08 19:25:41",
-  "title": "酒屋特调券",
-  "couponId": "3",
-  "deletedAt": null,
-  "sellerName": "奈雪酒屋",
-  "updatedAt": "2020-05-08 19:25:41",
-  "couponType": 2 },
-
-{
-  "couponExplain": "<p>1. 在有效期内，凭此券可在奈雪内地任意门店(机场店、奈雪梦工厂除外)及“奈雪点单”小程序购买任意茶饮一杯，可免费获得软欧包一个（价格不高于茶饮），菜单上标有红色雪花产品除外</p><p>2. 此券不可兑换现金，不设找零，优惠券抵扣金额不予积分</p><p>3. 此券每单仅限使用一张，不得与其他优惠券同时使用</p><p>4. 此券不适用于第三方外送服务</p><p>5. 券面图片仅供参考，产品以实物为准</p>",
-  "discountUnit": 2,
-  "imageUrl": "https://images.qmai.cn/s23107/2019/10/10/8a8be6ddf7a4140944.jpg",
-  "id": "4",
-  "discountAmount": 0,
-  "beginAt": "2020-05-08 00:00:00",
-  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
-  "endAt": "2020-06-06 23:59:59",
-  "createdAt": "2020-05-08 19:25:41",
-  "title": "升级好友券",
-  "couponId": "4",
-  "deletedAt": null,
-  "sellerName": "奈雪の茶",
-  "updatedAt": "2020-05-08 19:25:41",
-  "couponType": 1 },
-
-{
-  "couponExplain": "<p>1. 在有效期内，凭此券可在奈雪内地任意门店(机场店、奈雪梦工厂除外)及“奈雪点单”小程序享受购买任意茶饮满两杯赠一杯（赠送产品价格不高于购买产品），菜单上标有红色雪花产品除外</p><p>2. 此券不可兑换现金，不设找零，优惠券抵扣金额不予积分</p><p>3. 此券每单仅限使用一张，不得与其他优惠券同时使用</p><p>4. 此券不适用于第三方外送服务</p><p>5. 券面图片仅供参考，产品以实物为准</p>",
-  "discountUnit": 2,
-  "imageUrl": "https://images.qmai.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-  "id": "5",
-  "discountAmount": 0,
-  "beginAt": "2020-05-08 00:00:00",
-  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
-  "endAt": "2020-06-06 23:59:59",
-  "createdAt": "2020-05-08 19:25:41",
-  "title": "茶饮满二赠一券",
-  "couponId": "5",
-  "deletedAt": null,
-  "sellerName": "奈雪の茶",
-  "updatedAt": "2020-05-08 19:25:41",
-  "couponType": 1 },
-
-{
-  "couponExplain": "<p>1.&nbsp;在有效期内，凭此券可在“奈雪点单”小程序外卖(机场店、奈雪梦工厂除外)购买任意茶饮或软欧包减免5元优惠</p><p>2.&nbsp;此券不可兑换现金，不设找零，优惠券抵扣金额不予积分</p><p>3.&nbsp;此券每单仅限使用一张，不得与其他优惠券同时使用</p><p>4.&nbsp;此券不适用于第三方外送服务</p><p>5.&nbsp;券面图片仅供参考，产品以实物为准</p>",
-  "imageUrl": "https://images.qmai.cn/s23107/2019/12/04/fcb80e25ea8b39c1ac.jpg",
-  "id": "6",
-  "discountAmount": 5,
-  "beginAt": "2020-05-08 00:00:00",
-  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
-  "endAt": "2020-06-06 23:59:59",
-  "createdAt": "2020-05-08 19:25:40",
-  "title": "小程序外卖5元现金券",
-  "couponId": "6",
-  "deletedAt": null,
-  "sellerName": "奈雪の茶",
-  "updatedAt": "2020-05-08 19:25:40",
-  "couponType": 1 }];exports.default = _default;
-
-/***/ }),
-
 /***/ 3:
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -23661,9 +23661,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 30:
-/*!**************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/common/util.js ***!
-  \**************************************************************************************/
+/*!****************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/common/util.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -23767,10 +23767,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ 301:
-/*!*****************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/components/uni-icons/icons.js ***!
-  \*****************************************************************************************************/
+/***/ 308:
+/*!*******************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/uni-icons/icons.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23874,9 +23874,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 31:
-/*!**************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/store/index.js ***!
-  \**************************************************************************************/
+/*!****************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/store/index.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24744,9 +24744,9 @@ if (hadRuntime) {
 /***/ }),
 
 /***/ 7:
-/*!**********************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/仿奈雪の茶前端模板（微信小程序+h5）/pages.json ***!
-  \**********************************************************************************/
+/*!************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/pages.json ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

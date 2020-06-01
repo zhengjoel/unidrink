@@ -72,7 +72,7 @@
 								</view>
 								<view class="d-flex flex-fill justify-content-between align-items-center text-color-base font-size-lg">
 									<view>x{{ item.number }}</view>
-									<view>￥{{ item.price }}</view>
+									<view>￥{{ item.sales_price }}</view>
 								</view>
 							</view>
 							<view class="text-truncate font-size-base text-color-assist">
@@ -97,16 +97,16 @@
 				</view>
 				<list-cell arrow @click="goToPackages">
 					<view class="flex-fill d-flex justify-content-between align-items-center">
-						<view class="text-color-base">奈雪券</view>
+						<view class="text-color-base">优惠券</view>
 						<view class="text-color-primary">超值购买优惠券大礼包</view>
 					</view>
 				</list-cell>
-				<list-cell arrow>
+				<!-- <list-cell arrow>
 					<view class="flex-fill d-flex justify-content-between align-items-center">
 						<view class="text-color-base">礼品卡</view>
 						<view class="text-color-primary">请选择</view>
 					</view>
-				</list-cell>
+				</list-cell> -->
 				<list-cell last>
 					<view class="flex-fill d-flex justify-content-end align-items-center">
 						<view>总计￥{{ total }},实付</view>

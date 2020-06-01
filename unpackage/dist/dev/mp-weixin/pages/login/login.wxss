@@ -28,152 +28,152 @@
   font-family: "iconfont";
   src: url("//at.alicdn.com/t/font_1789197_z1gzlwq7idq.ttf?t=1589441233693") format("truetype");
 }
-.iconfont.data-v-2fd9d643 {
+.iconfont.data-v-7179602c {
   font-family: "iconfont" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.iconshoucang.data-v-2fd9d643:before {
+.iconshoucang.data-v-7179602c:before {
   content: "\e667";
 }
-.iconshoucangfill.data-v-2fd9d643:before {
+.iconshoucangfill.data-v-7179602c:before {
   content: "\e6c9";
 }
-.iconjifen.data-v-2fd9d643:before {
+.iconjifen.data-v-7179602c:before {
   content: "\e642";
 }
-.iconradio-button-off.data-v-2fd9d643:before {
+.iconradio-button-off.data-v-7179602c:before {
   content: "\e688";
 }
-.iconradio-button-on.data-v-2fd9d643:before {
+.iconradio-button-on.data-v-7179602c:before {
   content: "\e689";
 }
-.iconhelp.data-v-2fd9d643:before {
+.iconhelp.data-v-7179602c:before {
   content: "\e752";
 }
-.iconwxpay.data-v-2fd9d643:before {
+.iconwxpay.data-v-7179602c:before {
   content: "\e611";
 }
-.iconbalance.data-v-2fd9d643:before {
+.iconbalance.data-v-7179602c:before {
   content: "\e619";
 }
-.iconadd-select.data-v-2fd9d643:before {
+.iconadd-select.data-v-7179602c:before {
   content: "\e7b0";
 }
-.iconsami-select.data-v-2fd9d643:before {
+.iconsami-select.data-v-7179602c:before {
   content: "\e7b1";
 }
-.iconmap.data-v-2fd9d643:before {
+.iconmap.data-v-7179602c:before {
   content: "\e758";
 }
-.iconsuccess.data-v-2fd9d643:before {
+.iconsuccess.data-v-7179602c:before {
   content: "\e767";
 }
-.iconsuccess-fill.data-v-2fd9d643:before {
+.iconsuccess-fill.data-v-7179602c:before {
   content: "\e78d";
 }
-.iconiconset0136.data-v-2fd9d643:before {
+.iconiconset0136.data-v-7179602c:before {
   content: "\e623";
 }
-.iconzan.data-v-2fd9d643:before {
+.iconzan.data-v-7179602c:before {
   content: "\e640";
 }
-.iconjifenqiandao.data-v-2fd9d643:before {
+.iconjifenqiandao.data-v-7179602c:before {
   content: "\e6a6";
 }
-.iconshouyeshouye.data-v-2fd9d643:before {
+.iconshouyeshouye.data-v-7179602c:before {
   content: "\e606";
 }
-.icondaohang.data-v-2fd9d643:before {
+.icondaohang.data-v-7179602c:before {
   content: "\e641";
 }
-.iconwodelianxikefu.data-v-2fd9d643:before {
+.iconwodelianxikefu.data-v-7179602c:before {
   content: "\e671";
 }
-.iconwodexinyuan.data-v-2fd9d643:before {
+.iconwodexinyuan.data-v-7179602c:before {
   content: "\e675";
 }
-.iconphone.data-v-2fd9d643:before {
+.iconphone.data-v-7179602c:before {
   content: "\e6dd";
 }
-.icondingdan.data-v-2fd9d643:before {
+.icondingdan.data-v-7179602c:before {
   content: "\e645";
 }
-.iconliwu.data-v-2fd9d643:before {
+.iconliwu.data-v-7179602c:before {
   content: "\e61c";
 }
-.iconyinpinyinliao.data-v-2fd9d643:before {
+.iconyinpinyinliao.data-v-7179602c:before {
   content: "\e60d";
 }
-.iconyinpin.data-v-2fd9d643:before {
+.iconyinpin.data-v-7179602c:before {
   content: "\e70b";
 }
-.iconwaimaixinxi.data-v-2fd9d643:before {
+.iconwaimaixinxi.data-v-7179602c:before {
   content: "\e685";
 }
-.iconico.data-v-2fd9d643:before {
+.iconico.data-v-7179602c:before {
   content: "\e646";
 }
-.iconwode.data-v-2fd9d643:before {
+.iconwode.data-v-7179602c:before {
   content: "\e616";
 }
-.icongengduofuwu.data-v-2fd9d643:before {
+.icongengduofuwu.data-v-7179602c:before {
   content: "\e607";
 }
-.iconqucan.data-v-2fd9d643:before {
+.iconqucan.data-v-7179602c:before {
   content: "\e625";
 }
-.iconyou.data-v-2fd9d643:before {
+.iconyou.data-v-7179602c:before {
   content: "\e618";
 }
-.iconshouhuodizhi.data-v-2fd9d643:before {
+.iconshouhuodizhi.data-v-7179602c:before {
   content: "\e666";
 }
-.iconshangcheng.data-v-2fd9d643:before {
+.iconshangcheng.data-v-7179602c:before {
   content: "\e63b";
 }
-.iconadd.data-v-2fd9d643:before {
+.iconadd.data-v-7179602c:before {
   content: "\e742";
 }
-.iconarrow-right.data-v-2fd9d643:before {
+.iconarrow-right.data-v-7179602c:before {
   content: "\e743";
 }
-.iconarrow-lift.data-v-2fd9d643:before {
+.iconarrow-lift.data-v-7179602c:before {
   content: "\e744";
 }
-.iconarrow-up.data-v-2fd9d643:before {
+.iconarrow-up.data-v-7179602c:before {
   content: "\e745";
 }
-.iconclose.data-v-2fd9d643:before {
+.iconclose.data-v-7179602c:before {
   content: "\e747";
 }
-.iconleftbutton.data-v-2fd9d643:before {
+.iconleftbutton.data-v-7179602c:before {
   content: "\e755";
 }
-.iconreduce.data-v-2fd9d643:before {
+.iconreduce.data-v-7179602c:before {
   content: "\e75e";
 }
-.iconseleted.data-v-2fd9d643:before {
+.iconseleted.data-v-7179602c:before {
   content: "\e763";
 }
-.iconRightbutton.data-v-2fd9d643:before {
+.iconRightbutton.data-v-7179602c:before {
   content: "\e765";
 }
-.iconleftbutton-fill.data-v-2fd9d643:before {
+.iconleftbutton-fill.data-v-7179602c:before {
   content: "\e782";
 }
-.iconRightbutton-fill.data-v-2fd9d643:before {
+.iconRightbutton-fill.data-v-7179602c:before {
   content: "\e78a";
 }
-.iconarrow-down.data-v-2fd9d643:before {
+.iconarrow-down.data-v-7179602c:before {
   content: "\e7b2";
 }
-.iconaixin1.data-v-2fd9d643:before {
+.iconaixin1.data-v-7179602c:before {
   content: "\e63c";
 }
-.intro.data-v-2fd9d643 {
+.intro.data-v-7179602c {
   width: 100%;
   height: 60vh;
   display: -webkit-box;
@@ -192,15 +192,15 @@
   font-size: 28rpx;
   color: #919293;
 }
-.intro image.data-v-2fd9d643 {
+.intro image.data-v-7179602c {
   width: 165rpx;
   height: 165rpx;
 }
-.intro .tips.data-v-2fd9d643 {
+.intro .tips.data-v-7179602c {
   line-height: 72rpx;
   text-align: center;
 }
-.bottom.data-v-2fd9d643 {
+.bottom.data-v-7179602c {
   height: 40vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -214,7 +214,7 @@
           justify-content: space-between;
   padding: 0 40rpx;
 }
-.bottom .login-btn.data-v-2fd9d643 {
+.bottom .login-btn.data-v-7179602c {
   width: 100%;
   border-radius: 50rem !important;
   display: -webkit-box;
@@ -228,15 +228,15 @@
           justify-content: center;
   padding: 10rpx 0;
 }
-.bottom .login-btn image.data-v-2fd9d643 {
+.bottom .login-btn image.data-v-7179602c {
   width: 36rpx;
   height: 30rpx;
   margin-right: 10rpx;
 }
-.bottom .row .grid.data-v-2fd9d643 {
+.bottom .row .grid.data-v-7179602c {
   width: 20%;
 }
-.bottom .row .grid image.data-v-2fd9d643 {
+.bottom .row .grid image.data-v-7179602c {
   width: 60rpx;
   height: 60rpx;
   margin-bottom: 10rpx;

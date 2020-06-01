@@ -1,9 +1,9 @@
 
-.spinner-inside.data-v-1893cd26 {
+.spinner-inside.data-v-9c2eb438 {
   margin: 25px auto;
   position: relative;
 }
-.double-bounce1.data-v-1893cd26, .double-bounce2.data-v-1893cd26 {
+.double-bounce1.data-v-9c2eb438, .double-bounce2.data-v-9c2eb438 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -12,20 +12,20 @@
   top: 0;
   left: 0;
    
-  -webkit-animation: bounce-data-v-1893cd26 2.0s infinite ease-in-out;
-  animation: bounce-data-v-1893cd26 2.0s infinite ease-in-out;
+  -webkit-animation: bounce-data-v-9c2eb438 2.0s infinite ease-in-out;
+  animation: bounce-data-v-9c2eb438 2.0s infinite ease-in-out;
 }
-.double-bounce2.data-v-1893cd26 {
+.double-bounce2.data-v-9c2eb438 {
   -webkit-animation-delay: -1.0s;
   animation-delay: -1.0s;
 }
-@-webkit-keyframes bounce-data-v-1893cd26 {
+@-webkit-keyframes bounce-data-v-9c2eb438 {
 0%, 100% { -webkit-transform: scale(0.0)
 }
 50% { -webkit-transform: scale(1.0)
 }
 }
-@keyframes bounce-data-v-1893cd26 {
+@keyframes bounce-data-v-9c2eb438 {
 0%, 100% {
     transform: scale(0.0);
     -webkit-transform: scale(0.0);

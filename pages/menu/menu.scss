@@ -336,6 +336,10 @@ page {
 							.name {
 								font-size: $font-size-base;
 								margin-bottom: 10rpx;
+								width: 100%;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								white-space: nowrap;	
 							}
 
 							.tips {

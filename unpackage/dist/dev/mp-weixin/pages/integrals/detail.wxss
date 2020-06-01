@@ -28,152 +28,152 @@
   font-family: "iconfont";
   src: url("//at.alicdn.com/t/font_1789197_z1gzlwq7idq.ttf?t=1589441233693") format("truetype");
 }
-.iconfont.data-v-ef93236e {
+.iconfont.data-v-7104a400 {
   font-family: "iconfont" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.iconshoucang.data-v-ef93236e:before {
+.iconshoucang.data-v-7104a400:before {
   content: "\e667";
 }
-.iconshoucangfill.data-v-ef93236e:before {
+.iconshoucangfill.data-v-7104a400:before {
   content: "\e6c9";
 }
-.iconjifen.data-v-ef93236e:before {
+.iconjifen.data-v-7104a400:before {
   content: "\e642";
 }
-.iconradio-button-off.data-v-ef93236e:before {
+.iconradio-button-off.data-v-7104a400:before {
   content: "\e688";
 }
-.iconradio-button-on.data-v-ef93236e:before {
+.iconradio-button-on.data-v-7104a400:before {
   content: "\e689";
 }
-.iconhelp.data-v-ef93236e:before {
+.iconhelp.data-v-7104a400:before {
   content: "\e752";
 }
-.iconwxpay.data-v-ef93236e:before {
+.iconwxpay.data-v-7104a400:before {
   content: "\e611";
 }
-.iconbalance.data-v-ef93236e:before {
+.iconbalance.data-v-7104a400:before {
   content: "\e619";
 }
-.iconadd-select.data-v-ef93236e:before {
+.iconadd-select.data-v-7104a400:before {
   content: "\e7b0";
 }
-.iconsami-select.data-v-ef93236e:before {
+.iconsami-select.data-v-7104a400:before {
   content: "\e7b1";
 }
-.iconmap.data-v-ef93236e:before {
+.iconmap.data-v-7104a400:before {
   content: "\e758";
 }
-.iconsuccess.data-v-ef93236e:before {
+.iconsuccess.data-v-7104a400:before {
   content: "\e767";
 }
-.iconsuccess-fill.data-v-ef93236e:before {
+.iconsuccess-fill.data-v-7104a400:before {
   content: "\e78d";
 }
-.iconiconset0136.data-v-ef93236e:before {
+.iconiconset0136.data-v-7104a400:before {
   content: "\e623";
 }
-.iconzan.data-v-ef93236e:before {
+.iconzan.data-v-7104a400:before {
   content: "\e640";
 }
-.iconjifenqiandao.data-v-ef93236e:before {
+.iconjifenqiandao.data-v-7104a400:before {
   content: "\e6a6";
 }
-.iconshouyeshouye.data-v-ef93236e:before {
+.iconshouyeshouye.data-v-7104a400:before {
   content: "\e606";
 }
-.icondaohang.data-v-ef93236e:before {
+.icondaohang.data-v-7104a400:before {
   content: "\e641";
 }
-.iconwodelianxikefu.data-v-ef93236e:before {
+.iconwodelianxikefu.data-v-7104a400:before {
   content: "\e671";
 }
-.iconwodexinyuan.data-v-ef93236e:before {
+.iconwodexinyuan.data-v-7104a400:before {
   content: "\e675";
 }
-.iconphone.data-v-ef93236e:before {
+.iconphone.data-v-7104a400:before {
   content: "\e6dd";
 }
-.icondingdan.data-v-ef93236e:before {
+.icondingdan.data-v-7104a400:before {
   content: "\e645";
 }
-.iconliwu.data-v-ef93236e:before {
+.iconliwu.data-v-7104a400:before {
   content: "\e61c";
 }
-.iconyinpinyinliao.data-v-ef93236e:before {
+.iconyinpinyinliao.data-v-7104a400:before {
   content: "\e60d";
 }
-.iconyinpin.data-v-ef93236e:before {
+.iconyinpin.data-v-7104a400:before {
   content: "\e70b";
 }
-.iconwaimaixinxi.data-v-ef93236e:before {
+.iconwaimaixinxi.data-v-7104a400:before {
   content: "\e685";
 }
-.iconico.data-v-ef93236e:before {
+.iconico.data-v-7104a400:before {
   content: "\e646";
 }
-.iconwode.data-v-ef93236e:before {
+.iconwode.data-v-7104a400:before {
   content: "\e616";
 }
-.icongengduofuwu.data-v-ef93236e:before {
+.icongengduofuwu.data-v-7104a400:before {
   content: "\e607";
 }
-.iconqucan.data-v-ef93236e:before {
+.iconqucan.data-v-7104a400:before {
   content: "\e625";
 }
-.iconyou.data-v-ef93236e:before {
+.iconyou.data-v-7104a400:before {
   content: "\e618";
 }
-.iconshouhuodizhi.data-v-ef93236e:before {
+.iconshouhuodizhi.data-v-7104a400:before {
   content: "\e666";
 }
-.iconshangcheng.data-v-ef93236e:before {
+.iconshangcheng.data-v-7104a400:before {
   content: "\e63b";
 }
-.iconadd.data-v-ef93236e:before {
+.iconadd.data-v-7104a400:before {
   content: "\e742";
 }
-.iconarrow-right.data-v-ef93236e:before {
+.iconarrow-right.data-v-7104a400:before {
   content: "\e743";
 }
-.iconarrow-lift.data-v-ef93236e:before {
+.iconarrow-lift.data-v-7104a400:before {
   content: "\e744";
 }
-.iconarrow-up.data-v-ef93236e:before {
+.iconarrow-up.data-v-7104a400:before {
   content: "\e745";
 }
-.iconclose.data-v-ef93236e:before {
+.iconclose.data-v-7104a400:before {
   content: "\e747";
 }
-.iconleftbutton.data-v-ef93236e:before {
+.iconleftbutton.data-v-7104a400:before {
   content: "\e755";
 }
-.iconreduce.data-v-ef93236e:before {
+.iconreduce.data-v-7104a400:before {
   content: "\e75e";
 }
-.iconseleted.data-v-ef93236e:before {
+.iconseleted.data-v-7104a400:before {
   content: "\e763";
 }
-.iconRightbutton.data-v-ef93236e:before {
+.iconRightbutton.data-v-7104a400:before {
   content: "\e765";
 }
-.iconleftbutton-fill.data-v-ef93236e:before {
+.iconleftbutton-fill.data-v-7104a400:before {
   content: "\e782";
 }
-.iconRightbutton-fill.data-v-ef93236e:before {
+.iconRightbutton-fill.data-v-7104a400:before {
   content: "\e78a";
 }
-.iconarrow-down.data-v-ef93236e:before {
+.iconarrow-down.data-v-7104a400:before {
   content: "\e7b2";
 }
-.iconaixin1.data-v-ef93236e:before {
+.iconaixin1.data-v-7104a400:before {
   content: "\e63c";
 }
-.btn-box.data-v-ef93236e {
+.btn-box.data-v-7104a400 {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -184,7 +184,7 @@
   background-color: #FFFFFF;
   box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
 }
-.btn-box button.data-v-ef93236e {
+.btn-box button.data-v-7104a400 {
   border-radius: 50rem !important;
   height: 100%;
   display: -webkit-box;
@@ -197,11 +197,11 @@
   -webkit-justify-content: center;
           justify-content: center;
 }
-.coupon-box.data-v-ef93236e {
+.coupon-box.data-v-7104a400 {
   width: 100%;
   padding: 30rpx 50rpx;
 }
-.coupon-box .coupon.data-v-ef93236e {
+.coupon-box .coupon.data-v-7104a400 {
   background-color: #FFFFFF;
   padding: 40rpx;
   border-radius: 10rpx;
@@ -213,12 +213,12 @@
           align-items: center;
   position: relative;
 }
-.coupon-box .coupon image.data-v-ef93236e {
+.coupon-box .coupon image.data-v-7104a400 {
   width: 180rpx;
   height: 120rpx;
   margin-right: 30rpx;
 }
-.coupon-box .coupon .intro.data-v-ef93236e {
+.coupon-box .coupon .intro.data-v-7104a400 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
@@ -230,16 +230,16 @@
   -webkit-flex-direction: column;
           flex-direction: column;
 }
-.coupon-box .coupon .intro .goods-name.data-v-ef93236e {
+.coupon-box .coupon .intro .goods-name.data-v-7104a400 {
   font-size: 32rpx;
   color: #5A5B5C;
   margin-bottom: 10rpx;
 }
-.coupon-box .coupon .intro .expire.data-v-ef93236e {
+.coupon-box .coupon .intro .expire.data-v-7104a400 {
   font-size: 22rpx;
   color: #919293;
 }
-.coupon-box .coupon.data-v-ef93236e::before {
+.coupon-box .coupon.data-v-7104a400::before {
   content: " ";
   position: absolute;
   background-color: #F1F8FA;
@@ -249,7 +249,7 @@
   border-radius: 100%;
   left: -20rpx;
 }
-.coupon-box .coupon.data-v-ef93236e::after {
+.coupon-box .coupon.data-v-7104a400::after {
   content: " ";
   position: absolute;
   background-color: #F1F8FA;
@@ -259,7 +259,7 @@
   border-radius: 100%;
   right: -20rpx;
 }
-.points-and-stocks.data-v-ef93236e {
+.points-and-stocks.data-v-7104a400 {
   padding: 0 50rpx;
   display: -webkit-box;
   display: -webkit-flex;
@@ -272,7 +272,7 @@
           align-items: center;
   margin-bottom: 30rpx;
 }
-.points-and-stocks .points.data-v-ef93236e {
+.points-and-stocks .points.data-v-7104a400 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;

@@ -28,173 +28,173 @@
   font-family: "iconfont";
   src: url("//at.alicdn.com/t/font_1789197_z1gzlwq7idq.ttf?t=1589441233693") format("truetype");
 }
-.iconfont.data-v-5d6d81e2 {
+.iconfont.data-v-800f8c90 {
   font-family: "iconfont" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.iconshoucang.data-v-5d6d81e2:before {
+.iconshoucang.data-v-800f8c90:before {
   content: "\e667";
 }
-.iconshoucangfill.data-v-5d6d81e2:before {
+.iconshoucangfill.data-v-800f8c90:before {
   content: "\e6c9";
 }
-.iconjifen.data-v-5d6d81e2:before {
+.iconjifen.data-v-800f8c90:before {
   content: "\e642";
 }
-.iconradio-button-off.data-v-5d6d81e2:before {
+.iconradio-button-off.data-v-800f8c90:before {
   content: "\e688";
 }
-.iconradio-button-on.data-v-5d6d81e2:before {
+.iconradio-button-on.data-v-800f8c90:before {
   content: "\e689";
 }
-.iconhelp.data-v-5d6d81e2:before {
+.iconhelp.data-v-800f8c90:before {
   content: "\e752";
 }
-.iconwxpay.data-v-5d6d81e2:before {
+.iconwxpay.data-v-800f8c90:before {
   content: "\e611";
 }
-.iconbalance.data-v-5d6d81e2:before {
+.iconbalance.data-v-800f8c90:before {
   content: "\e619";
 }
-.iconadd-select.data-v-5d6d81e2:before {
+.iconadd-select.data-v-800f8c90:before {
   content: "\e7b0";
 }
-.iconsami-select.data-v-5d6d81e2:before {
+.iconsami-select.data-v-800f8c90:before {
   content: "\e7b1";
 }
-.iconmap.data-v-5d6d81e2:before {
+.iconmap.data-v-800f8c90:before {
   content: "\e758";
 }
-.iconsuccess.data-v-5d6d81e2:before {
+.iconsuccess.data-v-800f8c90:before {
   content: "\e767";
 }
-.iconsuccess-fill.data-v-5d6d81e2:before {
+.iconsuccess-fill.data-v-800f8c90:before {
   content: "\e78d";
 }
-.iconiconset0136.data-v-5d6d81e2:before {
+.iconiconset0136.data-v-800f8c90:before {
   content: "\e623";
 }
-.iconzan.data-v-5d6d81e2:before {
+.iconzan.data-v-800f8c90:before {
   content: "\e640";
 }
-.iconjifenqiandao.data-v-5d6d81e2:before {
+.iconjifenqiandao.data-v-800f8c90:before {
   content: "\e6a6";
 }
-.iconshouyeshouye.data-v-5d6d81e2:before {
+.iconshouyeshouye.data-v-800f8c90:before {
   content: "\e606";
 }
-.icondaohang.data-v-5d6d81e2:before {
+.icondaohang.data-v-800f8c90:before {
   content: "\e641";
 }
-.iconwodelianxikefu.data-v-5d6d81e2:before {
+.iconwodelianxikefu.data-v-800f8c90:before {
   content: "\e671";
 }
-.iconwodexinyuan.data-v-5d6d81e2:before {
+.iconwodexinyuan.data-v-800f8c90:before {
   content: "\e675";
 }
-.iconphone.data-v-5d6d81e2:before {
+.iconphone.data-v-800f8c90:before {
   content: "\e6dd";
 }
-.icondingdan.data-v-5d6d81e2:before {
+.icondingdan.data-v-800f8c90:before {
   content: "\e645";
 }
-.iconliwu.data-v-5d6d81e2:before {
+.iconliwu.data-v-800f8c90:before {
   content: "\e61c";
 }
-.iconyinpinyinliao.data-v-5d6d81e2:before {
+.iconyinpinyinliao.data-v-800f8c90:before {
   content: "\e60d";
 }
-.iconyinpin.data-v-5d6d81e2:before {
+.iconyinpin.data-v-800f8c90:before {
   content: "\e70b";
 }
-.iconwaimaixinxi.data-v-5d6d81e2:before {
+.iconwaimaixinxi.data-v-800f8c90:before {
   content: "\e685";
 }
-.iconico.data-v-5d6d81e2:before {
+.iconico.data-v-800f8c90:before {
   content: "\e646";
 }
-.iconwode.data-v-5d6d81e2:before {
+.iconwode.data-v-800f8c90:before {
   content: "\e616";
 }
-.icongengduofuwu.data-v-5d6d81e2:before {
+.icongengduofuwu.data-v-800f8c90:before {
   content: "\e607";
 }
-.iconqucan.data-v-5d6d81e2:before {
+.iconqucan.data-v-800f8c90:before {
   content: "\e625";
 }
-.iconyou.data-v-5d6d81e2:before {
+.iconyou.data-v-800f8c90:before {
   content: "\e618";
 }
-.iconshouhuodizhi.data-v-5d6d81e2:before {
+.iconshouhuodizhi.data-v-800f8c90:before {
   content: "\e666";
 }
-.iconshangcheng.data-v-5d6d81e2:before {
+.iconshangcheng.data-v-800f8c90:before {
   content: "\e63b";
 }
-.iconadd.data-v-5d6d81e2:before {
+.iconadd.data-v-800f8c90:before {
   content: "\e742";
 }
-.iconarrow-right.data-v-5d6d81e2:before {
+.iconarrow-right.data-v-800f8c90:before {
   content: "\e743";
 }
-.iconarrow-lift.data-v-5d6d81e2:before {
+.iconarrow-lift.data-v-800f8c90:before {
   content: "\e744";
 }
-.iconarrow-up.data-v-5d6d81e2:before {
+.iconarrow-up.data-v-800f8c90:before {
   content: "\e745";
 }
-.iconclose.data-v-5d6d81e2:before {
+.iconclose.data-v-800f8c90:before {
   content: "\e747";
 }
-.iconleftbutton.data-v-5d6d81e2:before {
+.iconleftbutton.data-v-800f8c90:before {
   content: "\e755";
 }
-.iconreduce.data-v-5d6d81e2:before {
+.iconreduce.data-v-800f8c90:before {
   content: "\e75e";
 }
-.iconseleted.data-v-5d6d81e2:before {
+.iconseleted.data-v-800f8c90:before {
   content: "\e763";
 }
-.iconRightbutton.data-v-5d6d81e2:before {
+.iconRightbutton.data-v-800f8c90:before {
   content: "\e765";
 }
-.iconleftbutton-fill.data-v-5d6d81e2:before {
+.iconleftbutton-fill.data-v-800f8c90:before {
   content: "\e782";
 }
-.iconRightbutton-fill.data-v-5d6d81e2:before {
+.iconRightbutton-fill.data-v-800f8c90:before {
   content: "\e78a";
 }
-.iconarrow-down.data-v-5d6d81e2:before {
+.iconarrow-down.data-v-800f8c90:before {
   content: "\e7b2";
 }
-.iconaixin1.data-v-5d6d81e2:before {
+.iconaixin1.data-v-800f8c90:before {
   content: "\e63c";
 }
-.order-box.data-v-5d6d81e2 {
+.order-box.data-v-800f8c90 {
   padding: 20rpx;
 }
-.drinks-img.data-v-5d6d81e2 {
+.drinks-img.data-v-800f8c90 {
   width: 260rpx;
   height: 260rpx;
 }
-.tips.data-v-5d6d81e2 {
+.tips.data-v-800f8c90 {
   margin: 60rpx 0 80rpx;
   line-height: 48rpx;
 }
-.drink-btn.data-v-5d6d81e2 {
+.drink-btn.data-v-800f8c90 {
   width: 320rpx;
   border-radius: 50rem !important;
   margin-bottom: 40rpx;
   font-size: 28rpx;
   line-height: 3.0;
 }
-.section.data-v-5d6d81e2 {
+.section.data-v-800f8c90 {
   position: relative;
 }
-.section.data-v-5d6d81e2::before {
+.section.data-v-800f8c90::before {
   content: "";
   position: absolute;
   background-color: #F1F8FA;
@@ -205,7 +205,7 @@
   border-radius: 100%;
   left: -15rpx;
 }
-.section.data-v-5d6d81e2::after {
+.section.data-v-800f8c90::after {
   content: "";
   position: absolute;
   background-color: #F1F8FA;
@@ -216,7 +216,7 @@
   border-radius: 100%;
   right: -15rpx;
 }
-.pay-cell.data-v-5d6d81e2 {
+.pay-cell.data-v-800f8c90 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -231,22 +231,22 @@
   color: #5A5B5C;
   margin-bottom: 40rpx;
 }
-.pay-cell.data-v-5d6d81e2:nth-last-child(1) {
+.pay-cell.data-v-800f8c90:nth-last-child(1) {
   margin-bottom: 0;
 }
-.sort-num.data-v-5d6d81e2 {
+.sort-num.data-v-800f8c90 {
   font-size: 64rpx;
   font-weight: bold;
   color: #5A5B5C;
   line-height: 2;
 }
-.steps__img-column.data-v-5d6d81e2 {
+.steps__img-column.data-v-800f8c90 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   margin: 30rpx 0;
 }
-.steps__img-column .steps__img-column-item.data-v-5d6d81e2 {
+.steps__img-column .steps__img-column-item.data-v-800f8c90 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
@@ -260,17 +260,17 @@
   -webkit-justify-content: center;
           justify-content: center;
 }
-.steps__img-column .steps__img-column-item image.data-v-5d6d81e2 {
+.steps__img-column .steps__img-column-item image.data-v-800f8c90 {
   width: 80rpx;
   height: 80rpx;
 }
-.steps__text-column.data-v-5d6d81e2 {
+.steps__text-column.data-v-800f8c90 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   margin-bottom: 40rpx;
 }
-.steps__text-column .steps__text-column-item.data-v-5d6d81e2 {
+.steps__text-column .steps__text-column-item.data-v-800f8c90 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
@@ -289,14 +289,14 @@
   font-size: 28rpx;
   color: #919293;
 }
-.steps__text-column .steps__text-column-item.active.data-v-5d6d81e2 {
+.steps__text-column .steps__text-column-item.active.data-v-800f8c90 {
   color: #5A5B5C;
   font-weight: bold;
 }
-.steps__text-column .steps__text-column-item.active .steps__column-item-line.data-v-5d6d81e2 {
+.steps__text-column .steps__text-column-item.active .steps__column-item-line.data-v-800f8c90 {
   background-color: #5A5B5C;
 }
-.steps__text-column .steps__text-column-item .steps__column-item-line.data-v-5d6d81e2 {
+.steps__text-column .steps__text-column-item .steps__column-item-line.data-v-800f8c90 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
@@ -305,7 +305,7 @@
   -webkit-transform: scaleY(0.5);
           transform: scaleY(0.5);
 }
-.steps__text-column .steps__text-column-item .steps__text-column-item-text.data-v-5d6d81e2 {
+.steps__text-column .steps__text-column-item .steps__text-column-item-text.data-v-800f8c90 {
   margin: 0 8px;
 }
 

@@ -78,9 +78,9 @@
 										<image :src="good.image" class="image" @tap="showGoodDetailModal(item, good)"></image>
 										<view class="right">
 											<text class="name">{{ good.name }}</text>
-											<text class="tips">{{ good.content }}</text>
+											<text class="tips">{{ good.desc }}</text>
 											<view class="price_and_action">
-												<text class="price">￥{{ good.price }}</text>
+												<text class="price">￥{{ good.sales_price }}</text>
 												<view class="btn-group" v-if="good.use_spec">
 													<button type="primary" class="btn property_btn" hover-class="none"
 													 size="mini" @tap="showGoodDetailModal(item, good)">
@@ -129,9 +129,9 @@
 		<modal :show="goodDetailModalVisible" class="good-detail-modal" color="#5A5B5C" 
 				width="90%" custom padding="0rpx" radius="12rpx">
 			<view class="cover">
-				<image v-if="good.images" :src="good.images" class="image"></image>
+				<image v-if="good.image" :src="good.image" class="image"></image>
 				<view class="btn-group">
-					<image src="/static/images/menu/share-good.png"></image>
+					<!-- <image src="/static/images/menu/share-good.png"></image> --> 
 					<image src="/static/images/menu/close.png" @tap="closeGoodDetailModal"></image>
 				</view>
 			</view>
@@ -139,19 +139,19 @@
 				<view class="wrapper">
 					<view class="basic">
 						<view class="name">{{ good.name }}</view>
-						<view class="tips">{{ good.content }}</view>
+						<view class="tips">{{ good.desc }}</view>
 					</view>
-					<view class="properties" v-if="good.use_property">
-						<view class="property" v-for="(item, index) in good.property" :key="index">
+					<view class="properties" v-if="good.use_spec">
+						<view class="property" v-for="(item, index) in good.specList" :key="index">
 							<view class="title">
 								<text class="name">{{ item.name }}</text>
 								<view class="desc" v-if="item.desc">({{ item.desc }})</view>
 							</view>
 							<view class="values">
-								<view class="value" v-for="(value, key) in item.values" :key="key" 
-								:class="{'default': value.is_default}" 
+								<view class="value" v-for="(value, key) in item.child" :key="key" 
+								:class="{'default': item.default == value}" 
 								@tap="changePropertyDefault(index, key)">
-									{{ value.value }}
+									{{ value }}
 								</view>
 							</view>
 						</view>
@@ -160,7 +160,7 @@
 			</scroll-view>
 			<view class="action">
 				<view class="left">
-					<view class="price">￥{{ good.price }}</view>
+					<view class="price">￥{{ good.sales_price }}</view>
 					<view class="props" v-if="getGoodSelectedProps(good)">
 						{{ getGoodSelectedProps(good) }}
 					</view>
@@ -196,7 +196,7 @@
 								<view class="props">{{ item.props_text }}</view>
 							</view>
 							<view class="center">
-								<text>￥{{ item.price }}</text>
+								<text>￥{{ item.sales_price }}</text>
 							</view>
 							<view class="right">
 								<button type="default" plain size="mini" class="btn" hover-class="none"
@@ -299,7 +299,8 @@ export default {
 			return this.cart.reduce((acc, cur) => acc + cur.number, 0)
 		},
 		getCartGoodsPrice() {	//计算购物车总价
-			return this.cart.reduce((acc, cur) => acc + cur.number * cur.price, 0)
+			let price = this.cart.reduce((acc, cur) => acc + cur.number * cur.sales_price, 0);
+			return parseFloat(price).toFixed(2);
 		},
 		disabledPay() { //是否达到起送价
 			return this.orderType == 'takeout' && (this.getCartGoodsPrice < this.store.min_price) ? true : false
@@ -412,7 +413,7 @@ export default {
 		handleAddToCart(cate, good, num) {	//添加到购物车
 			const index = this.cart.findIndex(item => {
 				if(good.use_spec) {
-					return (item.id === good.id) && (item.props === good.props)
+					return (item.id === good.id) && (item.props_text === this.getGoodSelectedProps(good))
 				} else {
 					return item.id === good.id
 				}
@@ -424,12 +425,11 @@ export default {
 					id: good.id,
 					cate_id: cate.id,
 					name: good.name,
-					price: good.price,
+					sales_price: good.sales_price,
 					number: num,
-					image: good.images,
+					image: good.image,
 					use_property: good.use_spec,
-					props_text: good.use_spec ? this.getGoodSelectedProps(good) : '',
-					props: good.use_spec ? this.getGoodSelectedProps(good, 'ids') : []
+					props_text: good.use_spec ? this.getGoodSelectedProps(good) : ''
 				})
 			}
 		},
@@ -451,19 +451,29 @@ export default {
 			this.good = {}
 		},
 		changePropertyDefault(index, key) { //改变默认属性值
-			this.good.property[index].values.forEach(value => this.$set(value, 'is_default', 0))
-			this.good.property[index].values[key].is_default = 1
-			this.good.number = 1
+			this.good.specList[index].default = this.good.specList[index].child[key];
+			this.good.number = 1;
+			
+			let specSelectedName = [];
+			for (let item of this.good.specList) {
+				specSelectedName.push(item.default);
+			}
+			for (let item of this.good.specTableList) {
+				if (item.value.join(' ') == specSelectedName.join(' ')) {
+					this.good.market_price = parseFloat(item.market_price).toFixed(2);
+					this.good.sales_price = parseFloat(item.sales_price).toFixed(2);
+					this.good.stock = item.stock;	
+					this.good.image = item.image ? item.image : this.good.image;
+				}
+			}
 		},
 		getGoodSelectedProps(good, type = 'text') {	//计算当前饮品所选属性
-			if(good.use_property) {
+			if(good.use_spec) {
 				let props = []
-				good.property.forEach(({values}) => {
-					values.forEach(value => {
-						if(value.is_default) {
-							props.push(type === 'text' ? value.value : value.id)
-						}
-					})
+				good.specList.forEach(values => {
+					if(type === 'text') {
+						props.push(values.default)
+					}
 				})
 				return type === 'text' ? props.join('，') : props
 			}

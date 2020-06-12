@@ -173,6 +173,7 @@
 .iconaixin1.data-v-2977322a:before {
   content: "\e63c";
 }
+/* uni.scss */
 .avatar-wrapper.data-v-2977322a {
   width: 150rpx;
   height: 150rpx;

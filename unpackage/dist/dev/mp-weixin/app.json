@@ -3,6 +3,8 @@
     "pages/menu/menu",
     "pages/take-foods/take-foods",
     "pages/mine/mine",
+    "pages/mine/service",
+    "pages/mine/content",
     "pages/pay/pay",
     "pages/remark/remark",
     "pages/packages/index",
@@ -21,7 +23,8 @@
     "pages/integrals/flow",
     "pages/integrals/detail",
     "pages/review/review",
-    "pages/activities/invite"
+    "pages/activities/invite",
+    "pages/shop/shop"
   ],
   "subPackages": [],
   "window": {
@@ -61,5 +64,6 @@
       "desc": "定位最近的门店"
     }
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap57.json"
 }

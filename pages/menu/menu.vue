@@ -4,17 +4,17 @@
 			<view class="nav">
 				<view class="header">
 					<view class="left" v-if="orderType == 'takein'">
-						<view class="store-name">
-							<text>{{ store.name }}</text>
+						<view class="store-name" @click="selectShop()">
+							<text>{{ store.name }}</text> 
 							<view class="iconfont iconarrow-right"></view>
 						</view>
 						<view class="store-location">
 							<image src='/static/images/order/location.png' style="width: 30rpx; height: 30rpx;" class="mr-10"></image>
-							<text>距离您 {{ store.distance_text }}</text>
+							<text>距离您 {{ store.far_text }}</text>
 						</view>
 					</view>
 					<view class="left overflow-hidden" v-else>
-						<view class="d-flex align-items-center overflow-hidden">
+						<!-- <view class="d-flex align-items-center overflow-hidden">
 							<image src='/static/images/order/location.png' style="width: 30rpx; height: 30rpx;" class="mr-10"></image>
 							<view class="font-size-extra-lg text-color-base font-weight-bold text-truncate">
 								{{ address.address }}
@@ -22,15 +22,25 @@
 						</view>
 						<view class="font-size-sm text-color-assist overflow-hidden text-truncate">
 							由<text class="text-color-base" style="margin: 0 10rpx">{{ store.name }}</text>配送
+						</view> -->
+						<view class="store-name" @click="selectShop()">
+							<text>{{ store.name }}</text>
+							<view class="iconfont iconarrow-right"></view>
+						</view>
+						<view class="store-location">
+							<image src='/static/images/order/location.png' style="width: 30rpx; height: 30rpx;" class="mr-10"></image>
+							<text>{{ address.address }} ,距离您 {{ store.far_text }}</text>
 						</view>
 					</view>
 					<view class="right">
-						<view class="dinein" :class="{active: orderType == 'takein'}" @tap="SET_ORDER_TYPE('takein')">
+						<!-- <view class="dinein" :class="{active: orderType == 'takein'}" @tap="SET_ORDER_TYPE('takein')">
 							<text>自取</text>
 						</view>
 						<view class="takeout" :class="{active: orderType == 'takeout'}" @tap="takout">
 							<text>外卖</text>
-						</view>
+						</view> -->
+						<view v-if="store.distance > 0">配送距离:{{store.distance}}km</view>
+						<view v-else>外卖不配送</view>
 					</view>
 				</view>
 				<!-- <view class="coupon">
@@ -274,7 +284,7 @@ export default {
 		this.init()
 	},
 	async onLoad() {
-		this.init()
+		this.init();
 	},
 	computed: {
 		...mapState(['orderType', 'address', 'store']),
@@ -313,6 +323,12 @@ export default {
 	methods: {
 		...mapMutations(['SET_ORDER_TYPE', 'SET_STORE', 'SET_LOCATION']),
 		...mapActions(['getStore']),
+		selectShop(){
+			
+			uni.navigateTo({
+				url:'/pages/shop/shop'
+			})
+		},
 		async init() {	//页面初始化
 			this.loading = true;
 			
@@ -327,10 +343,16 @@ export default {
 				console.log('当前位置的纬度：' + res.latitude);
 				this.SET_LOCATION(res);
 				
+				let shop_id = 0;
+				if (this.store.id) {
+					shop_id = this.store.id;
+				}
+				
 				let shop = await this.$api.request('/shop/nearby', 'POST', {
 					lat : res.latitude,
-					lng : res.longitude
-				})
+					lng : res.longitude,
+					shop_id : shop_id
+				});
 				if (shop) {
 					//广告图
 					this.getAds(shop.id);
@@ -343,10 +365,27 @@ export default {
 					let goods = await this.$api.request('/menu/goods', 'POST', {shop_id:shop.id});
 					if (goods) {
 						this.goods = goods;
+						
+						this.cart = [];
+						let cart = uni.getStorageSync('cart') || [];
+						let tmpCart = [];
+						if (cart) {
+							for (let i in cart) {
+								for (let ii in goods) {
+									for (let iii in goods[ii].goods_list) {
+										if (cart[i].id == goods[ii].goods_list[iii].id) {
+											tmpCart.push(cart[i]);
+										}
+									}
+								}
+							}
+							this.cart = tmpCart;
+							this.cartPopupVisible = false;
+						}						
 					}
 					
 					this.loading = false
-					this.cart = uni.getStorageSync('cart') || []
+					
 					
 					uni.stopPullDownRefresh();
 				}

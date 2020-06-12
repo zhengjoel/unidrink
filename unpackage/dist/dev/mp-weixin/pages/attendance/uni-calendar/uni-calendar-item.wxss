@@ -173,6 +173,7 @@
 .iconaixin1.data-v-3ff141a0:before {
   content: "\e63c";
 }
+/* uni.scss */
 .uni-calendar-item__weeks-box.data-v-3ff141a0 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;

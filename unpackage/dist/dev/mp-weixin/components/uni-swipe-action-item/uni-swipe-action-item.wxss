@@ -173,6 +173,7 @@
 .iconaixin1.data-v-0232d768:before {
   content: "\e63c";
 }
+/* uni.scss */
 .uni-swipe.data-v-0232d768 {
   overflow: hidden;
 }

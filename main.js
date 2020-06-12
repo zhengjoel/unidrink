@@ -8,9 +8,14 @@ Vue.config.productionTip = false
 
 App.mpType = 'app'
 
+
+import uView from "uview-ui";
+Vue.use(uView);
+
 Vue.prototype.$store = store
 Vue.prototype.$api = api
 Vue.prototype.$util = util
+
 
 // 后端api地址
 Vue.prototype.$unishow = "http://unishop:8888/addons/unidrink";
@@ -152,6 +157,23 @@ const wechatMiniLogin = async () => {
 };
 Vue.prototype.$wechatMiniLogin = wechatMiniLogin;
 // #endif
+
+
+// 返回上一页
+const prePage = (page = null) => {
+	let pages = getCurrentPages();
+	console.log(pages);
+	let prePage = pages[pages.length - 2];
+	if (page !== null) {
+		prePage = pages[page];
+	}
+	// #ifdef H5
+	return prePage;
+	// #endif
+	return prePage.$vm;
+}
+Vue.prototype.$api.prePage = prePage;
+
 
 
 const app = new Vue({

@@ -54,7 +54,7 @@
 			}
 		},
 		computed: {
-			...mapState(['addresses'])
+			...mapState(['addresses', 'store'])
 		},
 		async onLoad({
 			is_choose,
@@ -104,15 +104,33 @@
 				}
 
 			},
-			chooseAddress(address) {
+			async chooseAddress(address) {
 				if (!this.is_choose) return
-				this.SET_ADDRESS(address)
-				this.SET_ORDER_TYPE('takeout')
+				
+				console.log(this.store);
+				
 				if (this.scene == 'menu') {
+					let data = await this.$api.request('/shop/getDistanceFromLocation', 'POST',{
+						lat: address.lat,
+						lng: address.lng,
+						lat2: this.store.lat,
+						lng2: this.store.lng
+					});
+					if (!data) {
+						return;
+					}
+					if (data > this.store.distance) {
+						this.$api.msg('不在配送范围');
+						return;
+					}
+					this.SET_ADDRESS(address)
+					this.SET_ORDER_TYPE('takeout')
 					uni.switchTab({
 						url: '/pages/menu/menu'
 					})
 				} else if (this.scene == 'pay') {
+					this.SET_ADDRESS(address)
+					this.SET_ORDER_TYPE('takeout')
 					uni.navigateTo({
 						url: '/pages/pay/pay'
 					})

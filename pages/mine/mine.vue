@@ -22,7 +22,7 @@
 					</view>
 					<view class="d-flex flex-column flex-fill overflow-hidden" style="margin-top: 20rpx;">
 						<view v-if="isLogin" class="font-size-lg font-weight-bold d-flex justify-content-start align-items-center"
-							@tap="userinfo">
+							@tap="serv({type:'pages',pages:'/pages/mine/userinfo'})">
 							<view class="text-truncate">{{ member.username }}</view>
 							<view class="iconfont iconarrow-right line-height-100"></view>
 						</view>
@@ -39,26 +39,26 @@
 						<view class="iconfont iconarrow-right line-height-100"></view>
 					</view> -->
 					
-					<button type="default" size="mini" class="hym-btn" @tap="memberCode">
+					<button type="default" size="mini" class="hym-btn" @tap="serv({type:'pages',pages:'/pages/mine/member-code'})">
 						<image src="/static/images/mine/hym.png"></image>
 						<text>会员码</text>
 					</button>
 				</view>
 				<!-- user grid begin -->
 				<view class="w-100 d-flex align-items-center just-content-center">
-					<view class="user-grid" @tap="coupons">
+					<view class="user-grid" @tap="serv({type:'pages',pages:'/pages/coupons/coupons'})">
 						<view class="value font-size-extra-lg font-weight-bold text-color-base">
 							{{  isLogin ? member.couponNum : 0 }}
 						</view>
 						<view class="font-size-sm text-color-assist">优惠券</view>
 					</view>
-					<view class="user-grid" @tap="integrals">
+					<view class="user-grid" @tap="serv({type:'pages',pages:'/pages/integrals/integrals'})">
 						<view class="value font-size-extra-lg font-weight-bold text-color-base">
 							{{  isLogin ? member.score : 0 }}
 						</view>
 						<view class="font-size-sm text-color-assist">积分商城</view>
 					</view>
-					<view class="user-grid" @tap="balance">
+					<view class="user-grid" @tap="serv({type:'pages',pages:'/pages/balance/balance'})">
 						<view class="value font-size-extra-lg font-weight-bold text-color-base">
 							{{  isLogin ? member.money : 0 }}
 						</view>
@@ -112,37 +112,9 @@
 		<view class="service-box">
 			<view class="font-size-lg text-color-base font-weight-bold" style="margin-bottom: 20rpx;">我的服务</view>
 			<view class="row">
-				<view class="grid" @tap="attendance">
-					<image src="/static/images/mine/jfqd.png"></image>
-					<view>积分签到</view>
-				</view>
-				<!-- <view class="grid">
-					<image src="/static/images/mine/stxy.png"></image>
-					<view>送她心愿</view>
-				</view> -->
-				<view class="grid">
-					<image src="/static/images/mine/nxsc.png"></image>
-					<view>喂喂商城</view>
-				</view>
-				<view class="grid">
-					<image src="/static/images/mine/lxkf.png"></image>
-					<view>联系客服</view>
-				</view>
-				<view class="grid" @tap="orders">
-					<image src="/static/images/mine/wddd.png"></image>
-					<view>我的订单</view>
-				</view>
-				<view class="grid" @tap="userinfo">
-					<image src="/static/images/mine/wdzl.png"></image>
-					<view>我的资料</view>
-				</view>
-				<view class="grid" @tap="addresses">
-					<image src="/static/images/mine/shdz.png"></image>
-					<view>收货地址</view>
-				</view>
-				<view class="grid">
-					<image src="/static/images/mine/gdfw.png"></image>
-					<view>更多服务</view>
+				<view class="grid" v-for="(item, index) in services" :key='index' @tap="serv(item)">
+					<image :src="item.image"></image>
+					<view>{{item.name}}</view>
 				</view>
 			</view>
 		</view>
@@ -160,6 +132,7 @@
 	export default {
 		data() {
 			return {
+				services: []
 			}
 		},
 		computed: {
@@ -172,8 +145,15 @@
 			}
 		},
 		onLoad() {
+			this.getServices();
 		},
 		methods: {
+			async getServices() {
+				let data = await this.$api.request('/mine/service');
+				if (data) {
+					this.services = data;
+				}
+			},
 			login() {
 				uni.navigateTo({
 					url: '/pages/login/login'
@@ -188,77 +168,33 @@
 					url: '/pages/packages/index'
 				})
 			},
-			balance() {
-				if(!this.isLogin) {
-					this.login()
-					return
+			serv(item) {
+				switch(item.type) {
+					case 'pages':
+						if(!this.isLogin) {
+							this.login()
+							return
+						}
+						uni.navigateTo({
+							url: item.pages
+						})
+						break;
+					case 'miniprogram':
+						uni.navigateToMiniProgram({
+							appId: item.app_id
+						})
+						break;
+					case 'menu':
+						uni.navigateTo({
+							url:'/pages/mine/service?id='+item.id+'&name='+item.name
+						})
+						break;
+					case 'content':
+						uni.navigateTo({
+							url:'/pages/mine/content?id='+item.id+'&name='+item.name
+						})
+						break;
 				}
-				uni.navigateTo({
-					url: '/pages/balance/balance'
-				})
-			},
-			addresses() {
-				if(!this.isLogin) {
-					this.login()
-					return
-				}
-				uni.navigateTo({
-					url: '/pages/address/address'
-				})
-			},
-			integrals() {
-				if(!this.isLogin) {
-					this.login()
-					return
-				}
-				uni.navigateTo({
-					url: '/pages/integrals/integrals'
-				})
-			},
-			attendance() {
-				if(!this.isLogin) {
-					this.login()
-					return
-				}
-				uni.navigateTo({
-					url: '/pages/attendance/attendance'
-				})
-			},
-			orders() {
-				if(!this.isLogin) {
-					this.login()
-					return
-				}
-				uni.navigateTo({
-					url: '/pages/orders/orders'
-				})
-			},
-			memberCode() {
-				if(!this.isLogin) {
-					this.login()
-					return
-				}
-				uni.navigateTo({
-					url: '/pages/mine/member-code'
-				})
-			},
-			coupons() {
-				if(!this.isLogin) {
-					this.login()
-					return
-				}
-				uni.navigateTo({
-					url: '/pages/coupons/coupons'
-				})
-			},
-			userinfo() {
-				if(!this.isLogin) {
-					this.login()
-					return
-				}
-				uni.navigateTo({
-					url: '/pages/mine/userinfo'
-				})
 			}
 		}
 	}

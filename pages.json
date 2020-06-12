@@ -28,161 +28,165 @@
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
-		}
-	    ,{
-            "path" : "pages/pay/pay",
-            "style" : {
+		}, {
+			"path": "pages/mine/service",
+			"style": {
+				"navigationBarTitleText": "我的服务",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		}, {
+			"path": "pages/mine/content",
+			"style": {
+				"navigationBarTitleText": "内容",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		}, {
+			"path": "pages/pay/pay",
+			"style": {
 				"navigationBarTitleText": "uniDrink",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
-        }
-        ,{
-            "path" : "pages/remark/remark",
-            "style" : {
+		}, {
+			"path": "pages/remark/remark",
+			"style": {
 				"navigationBarTitleText": "uniDrink",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
-        }
-        ,{
-            "path" : "pages/packages/index",
-            "style" : {
+		}, {
+			"path": "pages/packages/index",
+			"style": {
 				"navigationBarTitleText": "券包商品",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff",
 				"enablePullDownRefresh": true
 			}
-        }
-        ,{
-            "path" : "pages/packages/detail",
-            "style" : {
+		}, {
+			"path": "pages/packages/detail",
+			"style": {
 				"navigationBarTitleText": "购买劵包",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff",
 				"enablePullDownRefresh": true
 			}
-        }
-        ,{
-            "path" : "pages/balance/balance",
-            "style" : {
+		}, {
+			"path": "pages/balance/balance",
+			"style": {
 				"navigationBarTitleText": "会员储值",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
-        }
-        ,{
-            "path" : "pages/login/login",
-            "style" : {
+		}, {
+			"path": "pages/login/login",
+			"style": {
 				"navigationBarTitleText": "登录",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
-        }
-        ,{
-            "path" : "pages/address/address",
-            "style" : {
+		}, {
+			"path": "pages/address/address",
+			"style": {
 				"navigationBarTitleText": "我的地址",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
-        }
-        ,{
-            "path" : "pages/address/add",
-            "style" : {
+		}, {
+			"path": "pages/address/add",
+			"style": {
 				"navigationBarTitleText": "uniDrink",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
-        }
-        ,{
-            "path" : "pages/integrals/integrals",
-            "style" : {
-				"navigationStyle":"custom",
+		}, {
+			"path": "pages/integrals/integrals",
+			"style": {
+				"navigationStyle": "custom",
 				"onReachBottomDistance": 50
 			}
-        }
-        ,{
-            "path" : "pages/attendance/attendance",
-            "style" : {
-				"navigationStyle":"custom"
+		}, {
+			"path": "pages/attendance/attendance",
+			"style": {
+				"navigationStyle": "custom"
 			}
-        }
-        ,{
-            "path" : "pages/orders/orders",
-            "style" : {
+		}, {
+			"path": "pages/orders/orders",
+			"style": {
 				"navigationBarTitleText": "历史订单",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff",
 				"enablePullDownRefresh": true,
 				"onReachBottomDistance": 50
 			}
-        }
-        ,{
-            "path" : "pages/orders/detail",
-            "style" : {
+		}, {
+			"path": "pages/orders/detail",
+			"style": {
 				"navigationBarTitleText": "订单详情",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
-        }
-        ,{
-            "path" : "pages/mine/member-code",
-            "style" : {
+		}, {
+			"path": "pages/mine/member-code",
+			"style": {
 				"navigationBarTitleText": "会员码",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
-        }
-        ,{
-            "path" : "pages/coupons/coupons",
-            "style" : {
+		}, {
+			"path": "pages/coupons/coupons",
+			"style": {
 				"navigationBarTitleText": "我的卡券",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
-        }
-        ,{
-            "path" : "pages/mine/userinfo",
-            "style" : {
+		}, {
+			"path": "pages/mine/userinfo",
+			"style": {
 				"navigationBarTitleText": "用户信息",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
-        },
+		},
 		{
-		    "path" : "pages/integrals/flow",
-		    "style" : {
+			"path": "pages/integrals/flow",
+			"style": {
 				"navigationBarTitleText": "积分明细",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
 		},
 		{
-		    "path" : "pages/integrals/detail",
-		    "style" : {
+			"path": "pages/integrals/detail",
+			"style": {
 				"navigationBarTitleText": "兑换详情",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
+		}, {
+			"path": "pages/review/review",
+			"style": {
+				"navigationBarTitleText": "uniDrink",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		}, {
+			"path": "pages/activities/invite",
+			"style": {
+				"navigationBarTitleText": "uniDrink",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		}, {
+			"path": "pages/shop/shop",
+			"style": {
+				"navigationBarTitleText": "店铺",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
 		}
-        ,{
-            "path" : "pages/review/review",
-            "style" : {
-				"navigationBarTitleText": "uniDrink",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-        }
-        ,{
-            "path" : "pages/activities/invite",
-            "style" : {
-				"navigationBarTitleText": "uniDrink",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-        }
-    ],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
@@ -195,27 +199,34 @@
 		"backgroundColor": "#fff",
 		"borderStyle": "black",
 		"list": [
-		//{
-		//	"pagePath": "pages/index/index",
-		//	"text": "首页",
-		//	"iconPath": "static/images/tabBar/index.png",
-		//	"selectedIconPath": "static/images/tabBar/index_selected.png"
-		//}, 
-		{
-			"pagePath": "pages/menu/menu",
-			"text": "点餐",
-			"iconPath": "static/images/tabBar/drink1.png",
-			"selectedIconPath": "static/images/tabBar/drink_selected1.png"
-		}, {
-			"pagePath": "pages/take-foods/take-foods",
-			"text": "取餐",
-			"iconPath": "static/images/tabBar/take.png",
-			"selectedIconPath": "static/images/tabBar/take_selected.png"
-		}, {
-			"pagePath": "pages/mine/mine",
-			"text": "我的",
-			"iconPath": "static/images/tabBar/mine.png",
-			"selectedIconPath": "static/images/tabBar/mine_selected.png"
-		}]
+			//{
+			//	"pagePath": "pages/index/index",
+			//	"text": "首页",
+			//	"iconPath": "static/images/tabBar/index.png",
+			//	"selectedIconPath": "static/images/tabBar/index_selected.png"
+			//}, 
+			{
+				"pagePath": "pages/menu/menu",
+				"text": "点餐",
+				"iconPath": "static/images/tabBar/drink1.png",
+				"selectedIconPath": "static/images/tabBar/drink_selected1.png"
+			}, {
+				"pagePath": "pages/take-foods/take-foods",
+				"text": "取餐",
+				"iconPath": "static/images/tabBar/take.png",
+				"selectedIconPath": "static/images/tabBar/take_selected.png"
+			}, {
+				"pagePath": "pages/mine/mine",
+				"text": "我的",
+				"iconPath": "static/images/tabBar/mine.png",
+				"selectedIconPath": "static/images/tabBar/mine_selected.png"
+			}
+		]
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom":{
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		}
 	}
 }

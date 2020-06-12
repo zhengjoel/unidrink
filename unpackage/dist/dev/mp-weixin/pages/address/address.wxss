@@ -173,6 +173,7 @@
 .iconaixin1.data-v-7fa0e442:before {
   content: "\e63c";
 }
+/* uni.scss */
 .container.data-v-7fa0e442 {
   width: 100%;
   height: 100%;

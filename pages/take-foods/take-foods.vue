@@ -7,8 +7,8 @@
 				<view>您还没有点单</view>
 				<view>快去犒劳一下自己吧~</view>
 			</view>
-			<button type="primary" class="drink-btn" size="default" @tap="menu">去点餐</button>
-			<view class="font-size-sm text-color-primary" @tap="orders">查看历史订单</view>
+			<button type="primary" class="drink-btn" style="z-index: 3001;" size="default" @tap="menu">去点餐</button>
+			<view class="font-size-sm text-color-primary" style="z-index: 3001;" @tap="orders">查看历史订单</view>
 		</view>
 		<template v-else>
 			<view class="order-box">

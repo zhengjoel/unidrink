@@ -173,6 +173,7 @@
 .iconaixin1:before {
   content: "\e63c";
 }
+/* uni.scss */
 .modal-box {
   position: fixed;
   left: 50%;

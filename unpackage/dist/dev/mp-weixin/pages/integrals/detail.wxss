@@ -173,6 +173,7 @@
 .iconaixin1.data-v-7104a400:before {
   content: "\e63c";
 }
+/* uni.scss */
 .btn-box.data-v-7104a400 {
   position: fixed;
   bottom: 0;

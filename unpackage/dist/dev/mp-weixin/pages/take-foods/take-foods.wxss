@@ -173,6 +173,7 @@
 .iconaixin1.data-v-800f8c90:before {
   content: "\e63c";
 }
+/* uni.scss */
 .order-box.data-v-800f8c90 {
   padding: 20rpx;
 }

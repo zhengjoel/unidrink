@@ -8,7 +8,7 @@
 					<image :src="member.avatar"></image>
 				</view>
 				<view class="nickname">
-					{{ member.nickname }}
+					{{ member.username }}
 				</view>
 				<view class="rule">
 					签到规则

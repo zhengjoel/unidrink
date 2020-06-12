@@ -173,6 +173,7 @@
 .iconaixin1.data-v-24a292d0:before {
   content: "\e63c";
 }
+/* uni.scss */
 .content.data-v-24a292d0 {
   padding-bottom: 120rpx;
 }

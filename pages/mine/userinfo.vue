@@ -6,7 +6,7 @@
 					<view class="label">昵称</view>
 					<view class="input flex-fill">
 						<input type="text" placeholder="请填写昵称" placeholder-class="text-color-assist font-size-base" 
-						v-model="member.nickname">
+						v-model="member.username">
 					</view>
 				</view>
 			</list-cell>
@@ -14,7 +14,7 @@
 				<view class="form-input w-100 d-flex align-items-center">
 					<view class="label">手机号码</view>
 					<view class="input flex-fill">
-						<input type="text" v-model="member.mobilePhone" disabled>
+						<input type="text" v-model="member.mobile" disabled>
 					</view>
 				</view>
 			</list-cell>

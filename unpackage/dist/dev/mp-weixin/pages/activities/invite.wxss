@@ -173,6 +173,7 @@
 .iconaixin1:before {
   content: "\e63c";
 }
+/* uni.scss */
 page {
   background: url("https://img-shop.qmimg.cn/s16/images/2020/04/27/7ba54456f16f48df.jpeg") no-repeat;
   background-size: 100% auto;

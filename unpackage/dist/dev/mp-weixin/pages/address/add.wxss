@@ -173,6 +173,7 @@
 .iconaixin1.data-v-5e6a2522:before {
   content: "\e63c";
 }
+/* uni.scss */
 .form-box.data-v-5e6a2522 {
   width: 100%;
   height: 100%;

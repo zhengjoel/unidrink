@@ -173,6 +173,7 @@
 .iconaixin1:before {
   content: "\e63c";
 }
+/* uni.scss */
 .loading {
   width: 100%;
   height: 100%;

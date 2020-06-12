@@ -173,6 +173,7 @@
 .iconaixin1.data-v-7c06365c:before {
   content: "\e63c";
 }
+/* uni.scss */
 .score.data-v-7c06365c {
   font-size: 56rpx;
   color: #ccc;

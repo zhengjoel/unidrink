@@ -4,6 +4,8 @@
   "navigationBarBackgroundColor": "#ffffff",
   "usingComponents": {
     "list-cell": "/components/list-cell/list-cell",
+    "u-switch": "/node-modules/uview-ui/components/u-switch/u-switch",
+    "u-picker": "/node-modules/uview-ui/components/u-picker/u-picker",
     "modal": "/components/modal/modal"
   }
 }

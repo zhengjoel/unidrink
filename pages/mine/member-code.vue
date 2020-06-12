@@ -4,10 +4,10 @@
 			<view class="d-flex just-content-center align-items-center">
 				<view class="avatar-wrapper">
 					<image :src="member.avatar"></image>
-					<view class="tag">
+					<!-- <view class="tag">
 						<image src="/static/images/mine/level.png" mode="widthFix"></image>
-						<view>{{ member.memberLevel }}</view>
-					</view>
+						<view>{{ member.level }}</view>
+					</view> -->
 				</view>
 			</view>
 			<!-- user box begin -->
@@ -17,20 +17,24 @@
 				<view class="w-100 d-flex font-size-sm text-color-assist mb-30">
 					<view class="user-grid" @tap="coupons">
 						<view class="value">{{ member.couponNum }}</view>
-						<view>奈雪券</view>
+						<view>优惠券</view>
 					</view>
 					<view class="user-grid" @tap="integrals">
-						<view class="value">{{ member.pointNum }}</view>
+						<view class="value">{{ member.score }}</view>
 						<view>积分</view>
 					</view>
 					<view class="user-grid" @tap="balance">
-						<view class="value">{{ member.balance }}</view>
+						<view class="value">{{ member.money }}</view>
 						<view>余额</view>
 					</view>
 					<view class="user-grid">
+						<view class="value">{{ member.level }}</view>
+						<view>等级</view>
+					</view>
+					<!-- <view class="user-grid">
 						<view class="value">{{ member.giftBalance }}</view>
 						<view>礼品卡</view>
-					</view>
+					</view> -->
 				</view>
 				<!-- user grids end -->
 				<!-- qrcode begin -->

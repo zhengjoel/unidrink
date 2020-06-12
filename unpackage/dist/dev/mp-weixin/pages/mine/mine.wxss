@@ -173,6 +173,7 @@
 .iconaixin1.data-v-002075b8:before {
   content: "\e63c";
 }
+/* uni.scss */
 page.data-v-002075b8 {
   height: auto;
   min-height: 100%;

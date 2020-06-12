@@ -173,6 +173,7 @@
 .iconaixin1.data-v-430c9e56:before {
   content: "\e63c";
 }
+/* uni.scss */
 .tui-list-cell.data-v-430c9e56 {
   position: relative;
   width: 100%;

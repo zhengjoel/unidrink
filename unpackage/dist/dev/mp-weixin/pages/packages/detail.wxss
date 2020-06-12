@@ -173,6 +173,7 @@
 .iconaixin1:before {
   content: "\e63c";
 }
+/* uni.scss */
 .pay-box {
   padding: 10rpx 0;
   height: 100rpx;

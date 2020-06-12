@@ -2,8 +2,41 @@
 	<view class="container position-relative">
 		<view style="margin-bottom: 130rpx;">
 			<view class="section-1">
+				<list-cell class="location">
+					<view class="flex-fill d-flex justify-content-between align-items-center">
+						<view class="store-name flex-fill">
+							外卖配送
+						</view>
+						<u-switch active-color="#00b1b7" :value="orderType == 'takeout'" @change="takout"></u-switch>
+					</view>
+				</list-cell>
+
+				<template v-if="orderType == 'takeout'">
+					<list-cell @click="chooseAddress">
+						<view v-if="address.name" class="w-100 d-flex flex-column">
+							<view class="d-flex align-items-center justify-content-between mb-10">
+								<view class="font-size-lg text-color-base">{{ address.address + ' ' + address.door_number }}</view>
+								<image src="/static/images/navigator-1.png" class="arrow"></image>
+							</view>
+							<view class="d-flex text-color-assist font-size-sm align-items-center">
+								<view class="mr-10">{{ address.name }}</view>
+								<view class="mr-10">{{ !address.sex ? '先生' : '女士' }}</view>
+								<view>{{ address.mobile }}</view>
+							</view>
+						</view>
+						<view v-else class="flex-fill d-flex justify-content-between align-items-center">
+							<view class="store-name flex-fill">
+								选择收货地址
+							</view>
+							<image src="/static/images/navigator-1.png" class="arrow"></image>
+						</view>
+					</list-cell>
+				</template>
+			</view>
+
+			<view class="section-1">
 				<template v-if="orderType == 'takein'">
-					<list-cell class="location">
+					<list-cell class="location" @click="goToShop">
 						<view class="flex-fill d-flex justify-content-between align-items-center">
 							<view class="store-name flex-fill">
 								{{ store.name }}
@@ -12,21 +45,8 @@
 						</view>
 					</list-cell>
 				</template>
-				<template v-else>
-					<list-cell @click="chooseAddress">
-						<view class="w-100 d-flex flex-column">
-							<view class="d-flex align-items-center justify-content-between mb-10">
-								<view class="font-size-extra-lg text-color-base">{{ address.street }}</view>
-								<image src="/static/images/navigator-1.png" class="arrow"></image>
-							</view>
-							<view class="d-flex text-color-assist font-size-sm align-items-center">
-								<view class="mr-10">{{ address.accept_name }}</view>
-								<view class="mr-10">{{ !address.sex ? '先生' : '女士' }}</view>
-								<view>{{ address.mobile }}</view>
-							</view>
-						</view>
-					</list-cell>
-				</template>
+
+
 				<template v-if="orderType == 'takein'">
 					<list-cell arrow class="meal-time">
 						<view class="flex-fill d-flex justify-content-between align-items-center">
@@ -38,18 +58,27 @@
 						<view class="flex-fill d-flex justify-content-between align-items-center">
 							<view class="title flex-fill">联系电话</view>
 							<view class="time">
-								<input class="text-right" placeholder="请输入手机号码" value="18666600000"/>
+								<input class="text-right" placeholder="请输入手机号码" :value="member.mobile" />
 							</view>
-							<view class="contact-tip font-size-sm">自动填写</view>
+							<button class="contact-tip font-size-sm">自动填写</button>
 						</view>
 					</list-cell>
 				</template>
 				<template v-else>
 					<list-cell>
-						<view class="w-100 d-flex flex-column">
+						<view class="w-100 d-flex flex-column" @click="showTime = !showTime">
 							<view class="d-flex align-items-center font-size-base text-color-base">
 								<view class="flex-fill">预计送达时间</view>
-								<view class="mr-10">15:18</view>
+								<view class="mr-10">{{defaultTime}}
+									<u-picker 
+									:default-time="defaultTime"
+									v-model="showTime" 
+									:params="paramsTime" 
+									mode="time" 
+									@cancel="cancelTime" 
+									@confirm="choiceTime"
+									></u-picker>
+								</view>
 								<image src="/static/images/navigator-1.png" class="arrow"></image>
 							</view>
 							<view class="font-size-base text-color-primary">
@@ -115,8 +144,7 @@
 				</list-cell>
 			</view>
 			<!-- 购物车列表 end -->
-			<view class="d-flex align-items-center justify-content-start font-size-sm text-color-warning" 
-				style="padding: 20rpx 0;">
+			<view class="d-flex align-items-center justify-content-start font-size-sm text-color-warning" style="padding: 20rpx 0;">
 				<view class="iconfont iconhelp line-height-100"></view>
 				<view>优惠券不与满赠、满减活动共享</view>
 			</view>
@@ -152,11 +180,11 @@
 			<!-- 备注 end -->
 		</view>
 		<!-- 付款栏 begin -->
-		<view class="w-100 pay-box position-fixed fixed-bottom d-flex align-items-center justify-content-between bg-white">
+		<view style="z-index: 1;" class="w-100 pay-box position-fixed fixed-bottom d-flex align-items-center justify-content-between bg-white">
 			<view class="font-size-sm" style="margin-left: 20rpx;">合计：</view>
 			<view class="font-size-lg flex-fill">￥{{ amount }}</view>
-			<view class="bg-primary h-100 d-flex align-items-center just-content-center text-color-white font-size-base"
-				style="padding: 0 60rpx;" @tap="submit">
+			<view class="bg-primary h-100 d-flex align-items-center just-content-center text-color-white font-size-base" style="padding: 0 60rpx;"
+			 @tap="submit">
 				付款
 			</view>
 		</view>
@@ -170,11 +198,11 @@
 					<view class="font-size-extra-lg text-color-base">请再次确认下单地址</view>
 				</view>
 				<view class="d-flex font-size-base text-color-base font-weight-bold align-items-center justify-content-between mb-20">
-					<view>{{ address.accept_name }} {{ address.sex ? '女士' : '先生' }}</view>
+					<view>{{ address.name }} {{ address.sex ? '女士' : '先生' }}</view>
 					<view>{{ address.mobile }}</view>
 				</view>
 				<view class="d-flex font-size-sm text-color-assist align-items-center justify-content-between mb-40">
-					<view>{{ address.street + address.door_number }}</view>
+					<view>{{ address.address + address.door_number }}</view>
 					<button type="primary" size="mini" plain class="change-address-btn">修改地址</button>
 				</view>
 				<button type="primary" class="pay_btn" @tap="pay">确认并付款</button>
@@ -184,11 +212,15 @@
 </template>
 
 <script>
-	import {mapState, mapMutations} from 'vuex'
+	import {
+		mapState,
+		mapMutations,
+		mapGetters
+	} from 'vuex'
 	import listCell from '@/components/list-cell/list-cell'
 	import modal from '@/components/modal/modal'
 	import orders from '@/api/orders'
-	
+
 	export default {
 		components: {
 			listCell,
@@ -200,25 +232,76 @@
 				form: {
 					remark: ''
 				},
-				ensureAddressModalVisible: false
+				ensureAddressModalVisible: false,
+				showTime: false,
+				paramsTime: {
+					year: false,
+					month: false,
+					day: false,
+					hour: true,
+					minute: true,
+					second: false
+				},
+				defaultTime: '00:00'
 			}
 		},
 		computed: {
-			...mapState(['orderType', 'address', 'store']),
+			...mapState(['orderType', 'address', 'store', 'member']),
 			total() {
-				return this.cart.reduce((acc, cur) => acc + cur.number * cur.price, 0)
+				return this.cart.reduce((acc, cur) => acc + cur.number * cur.sales_price, 0)
 			},
 			amount() {
-				return this.cart.reduce((acc, cur) => acc + cur.number * cur.price, 0)
+				return this.cart.reduce((acc, cur) => acc + cur.number * cur.sales_price, 0)
 			}
 		},
+		onShow() {
+			let date = new Date((new Date).getTime() + 3600000); // 一个小时后
+			let hour = date.getHours();
+			let minute = date.getMinutes();
+			if (hour < 10) { hour = '0' + hour}
+			if (minute < 10) {minute = '0' + minute}
+			this.defaultTime = hour +':' + minute;
+		},
 		onLoad(option) {
-			const {remark} = option
+			const {
+				remark
+			} = option
 			this.cart = uni.getStorageSync('cart')
 			remark && this.$set(this.form, 'remark', remark)
 		},
 		methods: {
-			...mapMutations(['SET_ORDER']),
+			...mapMutations(['SET_ORDER', 'SET_ORDER_TYPE']),
+			...mapGetters(['isLogin']),
+			// 选择时间
+			choiceTime(value) {
+				let hour = value.hour;
+				let minute = value.minute;
+				
+				let date = new Date((new Date).getTime() + 3600000); // 一个小时后
+				let nowhour = date.getHours();
+				let nowminute = date.getMinutes();
+				
+				if (((hour*60*60 + minute*60) * 1000 - 3600000) < ((nowhour*60*60 + nowminute*60) * 1000)) {
+					this.$api.msg('请至少选择一个小时之后');
+					return;
+				}
+				
+				if (hour < 10) { hour = '0' + hour}
+				if (minute < 10) {minute = '0' + minute}
+				this.defaultTime = hour + ':' + minute;
+				this.showTime = false;
+			},
+			cancelTime(value) {
+				this.showTime = false;
+			},
+			// 是否外卖开关
+			takout(value) {
+				let type = 'takeout';
+				if (value == true) {
+					type = 'takein';
+				}
+				this.SET_ORDER_TYPE(type);
+			},
 			goToRemark() {
 				uni.navigateTo({
 					url: '/pages/remark/remark?remark=' + this.form.remark
@@ -234,18 +317,27 @@
 					url: '/pages/packages/index'
 				})
 			},
+			goToShop() {
+				uni.navigateTo({
+					url: `/pages/shop/shop`
+				})
+			},
 			submit() {
-				if(this.orderType == 'takeout') {
+				if (this.orderType == 'takeout') {
 					this.ensureAddressModalVisible = true
 				} else {
 					this.pay()
 				}
 			},
 			pay() {
-				uni.showLoading({title: '加载中'})
+				uni.showLoading({
+					title: '加载中'
+				})
 				//测试订单
 				let order = this.orderType == 'takein' ? orders[0] : orders[1]
-				order = Object.assign(order, {status: 1})
+				order = Object.assign(order, {
+					status: 1
+				})
 				this.SET_ORDER(order)
 				uni.removeStorageSync('cart')
 				uni.reLaunch({
@@ -261,28 +353,29 @@
 	.container {
 		padding: 30rpx;
 	}
-	
+
 	.arrow {
-		width: 50rpx; 
+		width: 50rpx;
 		height: 50rpx;
 		position: relative;
 		margin-right: -10rpx;
 	}
-	
+
 	.location {
 		.store-name {
 			font-size: $font-size-lg;
 		}
-		
+
 		.iconfont {
 			font-size: 50rpx;
 			line-height: 100%;
 			color: $color-primary;
 		}
 	}
-	
+
 	.section-1 {
 		margin-bottom: 30rpx;
+
 		.contact {
 			.contact-tip {
 				margin-left: 10rpx;
@@ -292,49 +385,90 @@
 			}
 		}
 	}
-	
+
 	.section-2 {
 		.name-and-props {
 			width: 65%;
 		}
 	}
-	
+
 	.payment {
 		margin-bottom: 30rpx;
-		
+
 		.disabled {
 			color: $text-color-grey;
 		}
-		
+
 		.payment-icon {
-			font-size: 44rpx; 
+			font-size: 44rpx;
 			margin-right: 10rpx;
 		}
-		
+
 		.checkbox {
 			font-size: 36rpx;
 			margin-left: 10rpx;
 		}
-		
+
 		.checked {
 			color: $color-primary;
 		}
 	}
-	
+
 	.pay-box {
 		box-shadow: 0 0 20rpx rgba(0, 0, 0, .1);
 		height: 100rpx;
 	}
-	
+
 	.modal-content {
 		.change-address-btn {
 			line-height: 2;
 			padding: 0 1em;
 		}
+
 		.pay_btn {
 			width: 100%;
 			border-radius: 50rem !important;
 			line-height: 3;
+		}
+	}
+
+	.choice {
+		background-color: $bg-color-grey;
+		border-radius: 38rpx;
+		display: flex;
+		align-items: center;
+		font-size: $font-size-sm;
+		padding: 0 38rpx;
+		color: $text-color-assist;
+
+		.dinein,
+		.takeout {
+			width: 50%;
+			position: relative;
+			display: flex;
+			align-items: center;
+
+			&.active {
+				padding: 14rpx 38rpx;
+				color: #ffffff;
+				background-color: $color-primary;
+				border-radius: 38rpx;
+			}
+		}
+
+		.takeout {
+			margin-left: 20rpx;
+			height: 100%;
+			flex: 1;
+			padding: 14rpx 0;
+		}
+
+		.dinein.active {
+			//margin-left: -38rpx;
+		}
+
+		.takeout.active {
+			//margin-right: -38rpx;
 		}
 	}
 </style>

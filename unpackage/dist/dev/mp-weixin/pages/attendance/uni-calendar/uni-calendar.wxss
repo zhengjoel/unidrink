@@ -173,6 +173,7 @@
 .iconaixin1.data-v-55031350:before {
   content: "\e63c";
 }
+/* uni.scss */
 .uni-calendar.data-v-55031350 {
   display: -webkit-box;
   display: -webkit-flex;

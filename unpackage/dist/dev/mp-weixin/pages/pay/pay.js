@@ -100,7 +100,7 @@ var components = {
     return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-switch/u-switch */ "node-modules/uview-ui/components/u-switch/u-switch").then(__webpack_require__.bind(null, /*! uview-ui/components/u-switch/u-switch.vue */ 284))
   },
   uPicker: function() {
-    return Promise.all(/*! import() | node-modules/uview-ui/components/u-picker/u-picker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-picker/u-picker")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-picker/u-picker.vue */ 461))
+    return Promise.all(/*! import() | node-modules/uview-ui/components/u-picker/u-picker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-picker/u-picker")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-picker/u-picker.vue */ 291))
   },
   modal: function() {
     return __webpack_require__.e(/*! import() | components/modal/modal */ "components/modal/modal").then(__webpack_require__.bind(null, /*! @/components/modal/modal.vue */ 256))
@@ -115,10 +115,18 @@ var render = function() {
 
   if (!_vm._isMounted) {
     _vm.e0 = function($event) {
-      _vm.showTime = !_vm.showTime
+      _vm.takeinTIme = !_vm.takeinTIme
     }
 
     _vm.e1 = function($event) {
+      _vm.payType = 5
+    }
+
+    _vm.e2 = function($event) {
+      _vm.payType = 2
+    }
+
+    _vm.e3 = function($event) {
       _vm.ensureAddressModalVisible = false
     }
   }
@@ -165,7 +173,12 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator */ 4));
+
+
+
+
+
 
 
 
@@ -386,7 +399,10 @@ var _vuex = __webpack_require__(/*! vuex */ 11);
 
 
 
-var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var listCell = function listCell() {__webpack_require__.e(/*! require.ensure | components/list-cell/list-cell */ "components/list-cell/list-cell").then((function () {return resolve(__webpack_require__(/*! @/components/list-cell/list-cell */ 277));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var modal = function modal() {__webpack_require__.e(/*! require.ensure | components/modal/modal */ "components/modal/modal").then((function () {return resolve(__webpack_require__(/*! @/components/modal/modal */ 256));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var listCell = function listCell() {__webpack_require__.e(/*! require.ensure | components/list-cell/list-cell */ "components/list-cell/list-cell").then((function () {return resolve(__webpack_require__(/*! @/components/list-cell/list-cell */ 277));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var modal = function modal() {__webpack_require__.e(/*! require.ensure | components/modal/modal */ "components/modal/modal").then((function () {return resolve(__webpack_require__(/*! @/components/modal/modal */ 256));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
 
 {
   components: {
@@ -400,7 +416,7 @@ var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28)
         remark: '' },
 
       ensureAddressModalVisible: false,
-      showTime: false,
+      takeoutTIme: false, // 外卖取餐时间picker
       paramsTime: {
         year: false,
         month: false,
@@ -409,8 +425,30 @@ var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28)
         minute: true,
         second: false },
 
-      defaultTime: '00:00' };
+      defaultTime: '00:00',
+      takeinTIme: false, // 到店自取时间selector
+      takeinRange: [{
+        name: '立即用餐',
+        value: 0 },
+      {
+        name: '半个小时后',
+        value: 0.5 },
+      {
+        name: '一个小时后',
+        value: 1 },
+      {
+        name: '一个半小时后',
+        value: 1.5 },
+      {
+        name: '两个小时后',
+        value: 2 },
+      {
+        name: '三个小时后',
+        value: 3 }],
 
+      defaultSelector: [0],
+      payType: 2 // 付款方式:5=余额支付,2=微信支付
+    };
   },
   computed: _objectSpread({},
   (0, _vuex.mapState)(['orderType', 'address', 'store', 'member']), {
@@ -425,8 +463,12 @@ var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28)
     var date = new Date(new Date().getTime() + 3600000); // 一个小时后
     var hour = date.getHours();
     var minute = date.getMinutes();
-    if (hour < 10) {hour = '0' + hour;}
-    if (minute < 10) {minute = '0' + minute;}
+    if (hour < 10) {
+      hour = '0' + hour;
+    }
+    if (minute < 10) {
+      minute = '0' + minute;
+    }
     this.defaultTime = hour + ':' + minute;
   },
   onLoad: function onLoad(option) {var
@@ -435,6 +477,8 @@ var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28)
     option.remark;
     this.cart = uni.getStorageSync('cart');
     remark && this.$set(this.form, 'remark', remark);
+
+
   },
   methods: _objectSpread({},
   (0, _vuex.mapMutations)(['SET_ORDER', 'SET_ORDER_TYPE']), {},
@@ -453,13 +497,25 @@ var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28)
         return;
       }
 
-      if (hour < 10) {hour = '0' + hour;}
-      if (minute < 10) {minute = '0' + minute;}
+      if (hour < 10) {
+        hour = '0' + hour;
+      }
+      if (minute < 10) {
+        minute = '0' + minute;
+      }
       this.defaultTime = hour + ':' + minute;
-      this.showTime = false;
+      this.takeoutTIme = false;
     },
     cancelTime: function cancelTime(value) {
-      this.showTime = false;
+      this.takeoutTIme = false;
+    },
+    // 到店自取-取消选择取餐时间
+    takeinCancelTime: function takeinCancelTime(value) {
+      this.takeinTIme = false;
+    },
+    // 到店自取-选择取餐时间
+    takeinConfirmTime: function takeinConfirmTime(value) {
+      this.defaultSelector = value;
     },
     // 是否外卖开关
     takout: function takout(value) {
@@ -491,26 +547,140 @@ var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28)
     },
     submit: function submit() {
       if (this.orderType == 'takeout') {
+        // 外卖类型
+        if (typeof this.address.id == 'undefined') {
+          this.$api.msg('请选择收货地址');
+          return;
+        }
         this.ensureAddressModalVisible = true;
       } else {
         this.pay();
       }
     },
-    pay: function pay() {
-      uni.showLoading({
-        title: '加载中' });
+    pay: function pay() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var that, data, order, _data, pay;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
+                uni.showLoading({
+                  title: '加载中' });
 
-      //测试订单
-      var order = this.orderType == 'takein' ? _orders.default[0] : _orders.default[1];
-      order = Object.assign(order, {
-        status: 1 });
+                that = _this;
+                data = {
+                  type: _this.orderType == 'takeout' ? 2 : 1, // 购买类型:1=自取,2=外卖
+                  address_id: _this.orderType == 'takeout' ? _this.address.id : 0, // 外卖配送地址
+                  shop_id: _this.store.id, // 店铺id
+                  mobile: _this.member.mobile, // 联系电话
+                  takeinTime: _this.takeinRange[_this.defaultSelector[0]].value, // 取餐时间
+                  pay_type: _this.payType, // 支付类型
+                  remark: _this.form.remark, // 备注
+                  product_id: [],
+                  spec: [],
+                  number: [],
+                  coupon_id: 0 // 优惠券id
+                };
 
-      this.SET_ORDER(order);
-      uni.removeStorageSync('cart');
-      uni.reLaunch({
-        url: '/pages/take-foods/take-foods' });
+                _this.cart.forEach(function (item, index) {
+                  data.product_id.push(item.id);
+                  data.spec.push(item.props_text.replace(/,/g, '|'));
+                  data.number.push(item.number);
+                });
 
-      uni.hideLoading();
+                //console.log(data);
+                _context.next = 6;return _this.$api.request('/order/submit', 'POST', data);case 6:order = _context.sent;if (
+                order) {_context.next = 10;break;}
+                uni.hideLoading();return _context.abrupt("return");case 10:if (!(
+
+
+
+                _this.payType == 2)) {_context.next = 20;break;}_context.next = 13;return (
+                  _this.$api.request('/pay/unify?out_trade_no=' + order.out_trade_no));case 13:_data = _context.sent;if (
+                _data) {_context.next = 17;break;}
+                uni.hideLoading();return _context.abrupt("return");case 17:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                uni.requestPayment({
+                  provider: 'wxpay',
+                  timeStamp: _data.timeStamp,
+                  nonceStr: _data.nonce_str,
+                  package: 'prepay_id=' + _data.prepay_id,
+                  signType: 'MD5',
+                  paySign: _data.paySign,
+                  success: function success(res) {
+                    that.SET_ORDER(order);
+                    uni.removeStorageSync('cart');
+                    uni.switchTab({
+                      url: '/pages/take-foods/take-foods' });
+
+                  },
+                  fail: function fail(err) {
+                    //console.log('fail:' + JSON.stringify(err));
+                    //that.$api.msg('fail:' + JSON.stringify(err))
+                    that.$api.msg('支付失败');
+                  } });_context.next = 30;break;case 20:if (!(
+
+
+                _this.payType == 5)) {_context.next = 30;break;}_context.next = 23;return (
+                  _this.$api.request('/pay/balance?out_trade_no=' + order.out_trade_no));case 23:pay = _context.sent;
+
+                uni.hideLoading();if (
+                pay) {_context.next = 27;break;}return _context.abrupt("return");case 27:
+
+
+                _this.SET_ORDER(order);
+                uni.removeStorageSync('cart');
+                uni.switchTab({
+                  url: '/pages/take-foods/take-foods',
+                  fail: function fail(res) {
+                    console.log(res);
+                  } });case 30:
+
+
+                uni.hideLoading();return _context.abrupt("return");case 32:case "end":return _context.stop();}}}, _callee);}))();
+
+
+
+
+
+
+
+
+
+
+
+
+
     } }) };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

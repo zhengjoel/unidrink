@@ -443,6 +443,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
 var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _createForOfIteratorHelper(o) {if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) {var i = 0;var F = function F() {};return { s: F, n: function n() {if (i >= o.length) return { done: true };return { done: false, value: o[i++] };}, e: function e(_e2) {throw _e2;}, f: F };}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}var it,normalCompletion = true,didErr = false,err;return { s: function s() {it = o[Symbol.iterator]();}, n: function n() {var step = it.next();normalCompletion = step.done;return step;}, e: function e(_e3) {didErr = true;err = _e3;}, f: function f() {try {if (!normalCompletion && it.return != null) it.return();} finally {if (didErr) throw err;}} };}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(n);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var modal = function modal() {__webpack_require__.e(/*! require.ensure | components/modal/modal */ "components/modal/modal").then((function () {return resolve(__webpack_require__(/*! @/components/modal/modal */ 256));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var popupLayer = function popupLayer() {__webpack_require__.e(/*! require.ensure | components/popup-layer/popup-layer */ "components/popup-layer/popup-layer").then((function () {return resolve(__webpack_require__(/*! @/components/popup-layer/popup-layer */ 263));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniNoticeBar = function uniNoticeBar() {__webpack_require__.e(/*! require.ensure | components/uni-notice-bar/uni-notice-bar */ "components/uni-notice-bar/uni-notice-bar").then((function () {return resolve(__webpack_require__(/*! @/components/uni-notice-bar/uni-notice-bar.vue */ 249));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var ourLoading = function ourLoading() {__webpack_require__.e(/*! require.ensure | components/our-loading/our-loading */ "components/our-loading/our-loading").then((function () {return resolve(__webpack_require__(/*! @/components/our-loading/our-loading.vue */ 270));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
@@ -513,6 +517,15 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
   methods: _objectSpread({},
   (0, _vuex.mapMutations)(['SET_ORDER_TYPE', 'SET_STORE', 'SET_LOCATION']), {},
   (0, _vuex.mapActions)(['getStore']), {
+    // 模仿php
+    in_array: function in_array(search, array) {
+      for (var i in array) {
+        if (array[i] == search) {
+          return true;
+        }
+      }
+      return false;
+    },
     selectShop: function selectShop() {
 
       uni.navigateTo({
@@ -528,7 +541,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                 if (error) {
                   _this4.$api.msg('获取定位失败');
                 }if (!
-                res) {_context2.next = 26;break;}
+                res) {_context2.next = 27;break;}
                 console.log('当前位置的经度：' + res.longitude);
                 console.log('当前位置的纬度：' + res.latitude);
                 _this4.SET_LOCATION(res);
@@ -543,16 +556,17 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                     lng: res.longitude,
                     shop_id: shop_id }));case 16:shop = _context2.sent;if (!
 
-                shop) {_context2.next = 26;break;}
+                shop) {_context2.next = 27;break;}
                 //广告图
                 _this4.getAds(shop.id);
 
+                shop.notice = shop.status == 1 ? shop.notice : '店铺营业时间为:' + shop.bussines_time + '，不在营业时间内无法下单';
                 // 设置店铺信息
                 _this4.SET_STORE(shop);
                 //await this.getStore()
 
                 //this.goods = await this.$api('goods')
-                _context2.next = 22;return _this4.$api.request('/menu/goods', 'POST', { shop_id: shop.id });case 22:goods = _context2.sent;
+                _context2.next = 23;return _this4.$api.request('/menu/goods', 'POST', { shop_id: shop.id });case 23:goods = _context2.sent;
                 if (goods) {
                   _this4.goods = goods;
 
@@ -577,7 +591,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                 _this4.loading = false;
 
 
-                uni.stopPullDownRefresh();case 26:case "end":return _context2.stop();}}}, _callee2);}))();
+                uni.stopPullDownRefresh();case 27:case "end":return _context2.stop();}}}, _callee2);}))();
 
 
     },
@@ -673,6 +687,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
       this.good = JSON.parse(JSON.stringify(_objectSpread({}, good, { number: 1 })));
       this.category = JSON.parse(JSON.stringify(item));
       this.goodDetailModalVisible = true;
+      this.changePropertyDefault(0, 0);
     },
     closeGoodDetailModal: function closeGoodDetailModal() {//关闭饮品详情模态框
       this.goodDetailModalVisible = false;
@@ -680,13 +695,24 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
       this.good = {};
     },
     changePropertyDefault: function changePropertyDefault(index, key) {//改变默认属性值
+
+      // if (this.in_array(this.good.specList[index].child[key], this.good.specList[index].disable)) {
+      // 	return;
+      // }
+      if (!this.good.specList[index] || !this.good.specList[index].child[key]) {
+        return;
+      }
+
       this.good.specList[index].default = this.good.specList[index].child[key];
       this.good.number = 1;
 
       var specSelectedName = [];var _iterator = _createForOfIteratorHelper(
       this.good.specList),_step;try {for (_iterator.s(); !(_step = _iterator.n()).done;) {var item = _step.value;
-          specSelectedName.push(item.default);
+          if (item.default != '') {
+            specSelectedName.push(item.default);
+          }
         }} catch (err) {_iterator.e(err);} finally {_iterator.f();}var _iterator2 = _createForOfIteratorHelper(
+
       this.good.specTableList),_step2;try {for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {var _item = _step2.value;
           if (_item.value.join(' ') == specSelectedName.join(' ')) {
             this.good.market_price = parseFloat(_item.market_price).toFixed(2);
@@ -704,7 +730,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
             props.push(values.default);
           }
         });
-        return type === 'text' ? props.join('，') : props;
+        return type === 'text' ? props.join(',') : props;
       }
       return '';
     },
@@ -716,6 +742,10 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
       this.good.number -= 1;
     },
     handleAddToCartInModal: function handleAddToCartInModal() {
+      if (this.good.stock <= 0) {
+        this.$api.msg('商品库存不足');
+        return;
+      }
       this.handleAddToCart(this.category, this.good, this.good.number);
       this.closeGoodDetailModal();
     },
@@ -750,6 +780,10 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
     toPay: function toPay() {
       if (!this.isLogin) {
         uni.navigateTo({ url: '/pages/login/login' });
+        return;
+      }
+      if (this.store.status == 0) {
+        this.$api.msg('不在店铺营业时间内');
         return;
       }
 

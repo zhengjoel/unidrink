@@ -2,14 +2,16 @@
 	<view class="container position-relative">
 		<view style="margin-bottom: 130rpx;">
 			<view class="section-1">
-				<list-cell class="location">
-					<view class="flex-fill d-flex justify-content-between align-items-center">
-						<view class="store-name flex-fill">
-							外卖配送
+				<template v-if="store.distance > 0">
+					<list-cell class="location">
+						<view class="flex-fill d-flex justify-content-between align-items-center">
+							<view class="store-name flex-fill">
+								外卖配送
+							</view>
+							<u-switch active-color="#00b1b7" :value="orderType == 'takeout'" @change="takout"></u-switch>
 						</view>
-						<u-switch active-color="#00b1b7" :value="orderType == 'takeout'" @change="takout"></u-switch>
-					</view>
-				</list-cell>
+					</list-cell>
+				</template>
 
 				<template v-if="orderType == 'takeout'">
 					<list-cell @click="chooseAddress">
@@ -35,7 +37,7 @@
 			</view>
 
 			<view class="section-1">
-				<template v-if="orderType == 'takein'">
+				<template>
 					<list-cell class="location" @click="goToShop">
 						<view class="flex-fill d-flex justify-content-between align-items-center">
 							<view class="store-name flex-fill">
@@ -47,11 +49,15 @@
 				</template>
 
 
-				<template v-if="orderType == 'takein'">
-					<list-cell arrow class="meal-time">
-						<view class="flex-fill d-flex justify-content-between align-items-center">
+				<template>
+					<list-cell arrow class="meal-time" v-if="orderType == 'takein'">
+						<view class="flex-fill d-flex justify-content-between align-items-center" @click="takeinTIme = !takeinTIme">
 							<view class="title">取餐时间</view>
-							<view class="time">立即用餐</view>
+							<view class="time">{{takeinRange[defaultSelector[0]].name}}
+								<u-picker v-model="takeinTIme" :range="takeinRange" range-key="name" mode="selector" @cancel="takeinCancelTime"
+								 @confirm="takeinConfirmTime" :default-selector="defaultSelector"></u-picker>
+							</view>
+
 						</view>
 					</list-cell>
 					<list-cell class="contact" last :hover="false">
@@ -64,22 +70,18 @@
 						</view>
 					</list-cell>
 				</template>
-				<template v-else>
+				<template v-if="orderType == 'takeout'">
 					<list-cell>
-						<view class="w-100 d-flex flex-column" @click="showTime = !showTime">
+						<!--先不做指定时间送达，因为没有理赔机制，所以不完美。并且用户完全可以想买的时候再下单-->
+						<!-- <view class="w-100 d-flex flex-column" @click="takeoutTIme = !takeoutTIme"> -->
+						<view class="w-100 d-flex flex-column">
 							<view class="d-flex align-items-center font-size-base text-color-base">
 								<view class="flex-fill">预计送达时间</view>
 								<view class="mr-10">{{defaultTime}}
-									<u-picker 
-									:default-time="defaultTime"
-									v-model="showTime" 
-									:params="paramsTime" 
-									mode="time" 
-									@cancel="cancelTime" 
-									@confirm="choiceTime"
-									></u-picker>
+									<u-picker :default-time="defaultTime" v-model="takeoutTIme" :params="paramsTime" mode="time" @cancel="cancelTime"
+									 @confirm="choiceTime"></u-picker>
 								</view>
-								<image src="/static/images/navigator-1.png" class="arrow"></image>
+								<!-- <image src="/static/images/navigator-1.png" class="arrow"></image> -->
 							</view>
 							<view class="font-size-base text-color-primary">
 								特殊时期减少接触，请修改下方订单备注
@@ -94,6 +96,9 @@
 					<list-cell last v-for="(item, index) in cart" :key="index">
 						<view class="w-100 d-flex flex-column">
 							<view class="d-flex align-items-center mb-10">
+								<view class="d-flex flex-fill justify-content-between align-items-center text-color-base font-size-lg">
+									<image style="width: 80rpx;height: 80rpx;" mode="aspectFill" :src="item.image"></image>
+								</view>
 								<view class="name-and-props overflow-hidden">
 									<view class="text-color-base font-size-lg">
 										{{ item.name }}
@@ -138,15 +143,15 @@
 				</list-cell> -->
 				<list-cell last>
 					<view class="flex-fill d-flex justify-content-end align-items-center">
-						<view>总计￥{{ total }},实付</view>
+						<view>总计￥{{ total }}<text v-if="orderType == 'takeout'">,配送费￥{{store.delivery_price}}</text>,实付</view>
 						<view class="font-size-extra-lg font-weight-bold">￥{{ amount }}</view>
 					</view>
 				</list-cell>
 			</view>
 			<!-- 购物车列表 end -->
 			<view class="d-flex align-items-center justify-content-start font-size-sm text-color-warning" style="padding: 20rpx 0;">
-				<view class="iconfont iconhelp line-height-100"></view>
-				<view>优惠券不与满赠、满减活动共享</view>
+				<!-- <view class="iconfont iconhelp line-height-100"></view> -->
+				<!-- <view>优惠券不与满赠、满减活动共享</view> -->
 			</view>
 			<!-- 支付方式 begin -->
 			<view class="payment">
@@ -154,18 +159,18 @@
 					<text>支付方式</text>
 				</list-cell>
 				<list-cell>
-					<view class="d-flex align-items-center justify-content-between w-100 disabled">
+					<view class="d-flex align-items-center justify-content-between w-100 disabled" @click="payType = 5">
 						<view class="iconfont iconbalance line-height-100 payment-icon"></view>
-						<view class="flex-fill">余额支付（余额￥0）</view>
-						<view class="font-size-sm">余额不足</view>
-						<view class="iconfont iconradio-button-off line-height-100 checkbox"></view>
+						<view class="flex-fill">余额支付（余额￥{{member.money}}）</view>
+						<view class="font-size-sm" v-if="member.money == 0">余额不足</view>
+						<view class="iconfont line-height-100 checkbox" :class="{'checked': payType == 5, 'iconradio-button-on': payType == 5,  'iconradio-button-off': payType == 2}"></view>
 					</view>
 				</list-cell>
 				<list-cell last>
-					<view class="d-flex align-items-center justify-content-between w-100">
+					<view class="d-flex align-items-center justify-content-between w-100" @click="payType = 2">
 						<view class="iconfont iconwxpay line-height-100 payment-icon" style="color: #7EB73A;"></view>
 						<view class="flex-fill">微信支付</view>
-						<view class="iconfont iconradio-button-on line-height-100 checkbox checked"></view>
+						<view class="iconfont line-height-100 checkbox" :class="{'checked': payType == 2, 'iconradio-button-on': payType == 2, 'iconradio-button-off': payType == 5}"></view>
 					</view>
 				</list-cell>
 			</view>
@@ -202,8 +207,8 @@
 					<view>{{ address.mobile }}</view>
 				</view>
 				<view class="d-flex font-size-sm text-color-assist align-items-center justify-content-between mb-40">
-					<view>{{ address.address + address.door_number }}</view>
-					<button type="primary" size="mini" plain class="change-address-btn">修改地址</button>
+					<view style="max-width: 60%;">{{ address.address + address.door_number }}</view>
+					<button type="primary" size="mini" plain class="change-address-btn" style="white-space: nowrap;" @click="chooseAddress">修改地址</button>
 				</view>
 				<button type="primary" class="pay_btn" @tap="pay">确认并付款</button>
 			</view>
@@ -220,6 +225,9 @@
 	import listCell from '@/components/list-cell/list-cell'
 	import modal from '@/components/modal/modal'
 	import orders from '@/api/orders'
+	// #ifdef H5
+	var jweixin = require('jweixin-module');
+	// #endif
 
 	export default {
 		components: {
@@ -233,7 +241,7 @@
 					remark: ''
 				},
 				ensureAddressModalVisible: false,
-				showTime: false,
+				takeoutTIme: false, // 外卖取餐时间picker
 				paramsTime: {
 					year: false,
 					month: false,
@@ -242,7 +250,29 @@
 					minute: true,
 					second: false
 				},
-				defaultTime: '00:00'
+				defaultTime: '00:00',
+				takeinTIme: false, // 到店自取时间selector
+				takeinRange: [{
+					name: '立即用餐',
+					value: 0
+				}, {
+					name: '半个小时后',
+					value: 0.5
+				}, {
+					name: '一个小时后',
+					value: 1
+				}, {
+					name: '一个半小时后',
+					value: 1.5
+				}, {
+					name: '两个小时后',
+					value: 2
+				}, {
+					name: '三个小时后',
+					value: 3
+				}],
+				defaultSelector: [0],
+				payType: 2, // 付款方式:5=余额支付,2=微信支付
 			}
 		},
 		computed: {
@@ -258,16 +288,22 @@
 			let date = new Date((new Date).getTime() + 3600000); // 一个小时后
 			let hour = date.getHours();
 			let minute = date.getMinutes();
-			if (hour < 10) { hour = '0' + hour}
-			if (minute < 10) {minute = '0' + minute}
-			this.defaultTime = hour +':' + minute;
+			if (hour < 10) {
+				hour = '0' + hour
+			}
+			if (minute < 10) {
+				minute = '0' + minute
+			}
+			this.defaultTime = hour + ':' + minute;
 		},
 		onLoad(option) {
 			const {
 				remark
 			} = option
 			this.cart = uni.getStorageSync('cart')
-			remark && this.$set(this.form, 'remark', remark)
+			remark && this.$set(this.form, 'remark', remark);
+
+
 		},
 		methods: {
 			...mapMutations(['SET_ORDER', 'SET_ORDER_TYPE']),
@@ -276,23 +312,35 @@
 			choiceTime(value) {
 				let hour = value.hour;
 				let minute = value.minute;
-				
+
 				let date = new Date((new Date).getTime() + 3600000); // 一个小时后
 				let nowhour = date.getHours();
 				let nowminute = date.getMinutes();
-				
-				if (((hour*60*60 + minute*60) * 1000 - 3600000) < ((nowhour*60*60 + nowminute*60) * 1000)) {
+
+				if (((hour * 60 * 60 + minute * 60) * 1000 - 3600000) < ((nowhour * 60 * 60 + nowminute * 60) * 1000)) {
 					this.$api.msg('请至少选择一个小时之后');
 					return;
 				}
-				
-				if (hour < 10) { hour = '0' + hour}
-				if (minute < 10) {minute = '0' + minute}
+
+				if (hour < 10) {
+					hour = '0' + hour
+				}
+				if (minute < 10) {
+					minute = '0' + minute
+				}
 				this.defaultTime = hour + ':' + minute;
-				this.showTime = false;
+				this.takeoutTIme = false;
 			},
 			cancelTime(value) {
-				this.showTime = false;
+				this.takeoutTIme = false;
+			},
+			// 到店自取-取消选择取餐时间
+			takeinCancelTime(value) {
+				this.takeinTIme = false;
+			},
+			// 到店自取-选择取餐时间
+			takeinConfirmTime(value) {
+				this.defaultSelector = value;
 			},
 			// 是否外卖开关
 			takout(value) {
@@ -324,26 +372,140 @@
 			},
 			submit() {
 				if (this.orderType == 'takeout') {
+					// 外卖类型
+					if (typeof this.address.id == 'undefined') {
+						this.$api.msg('请选择收货地址');
+						return;
+					}
 					this.ensureAddressModalVisible = true
 				} else {
 					this.pay()
 				}
 			},
-			pay() {
+			async pay() {
 				uni.showLoading({
 					title: '加载中'
 				})
-				//测试订单
-				let order = this.orderType == 'takein' ? orders[0] : orders[1]
-				order = Object.assign(order, {
-					status: 1
-				})
-				this.SET_ORDER(order)
-				uni.removeStorageSync('cart')
-				uni.reLaunch({
-					url: '/pages/take-foods/take-foods'
-				})
+				let that = this;
+				let data = {
+					type: this.orderType == 'takeout' ? 2 : 1, // 购买类型:1=自取,2=外卖
+					address_id: this.orderType == 'takeout' ? this.address.id : 0, // 外卖配送地址
+					shop_id: this.store.id, // 店铺id
+					mobile: this.member.mobile, // 联系电话
+					takeinTime: this.takeinRange[this.defaultSelector[0]].value, // 取餐时间
+					pay_type: this.payType, // 支付类型
+					remark: this.form.remark, // 备注
+					product_id: [],
+					spec: [],
+					number: [],
+					coupon_id: 0 // 优惠券id
+				};
+
+				this.cart.forEach((item, index) => {
+					data.product_id.push(item.id);
+					data.spec.push(item.props_text.replace(/,/g, '|'));
+					data.number.push(item.number);
+				});
+
+				//console.log(data);
+				let order = await this.$api.request('/order/submit', 'POST', data);
+				if (!order) {
+					uni.hideLoading();
+					return;
+				}
+				
+				if (this.payType == 2) { // 微信支付
+					let data = await this.$api.request('/pay/unify?out_trade_no='+ order.out_trade_no);
+					if (!data) {
+						uni.hideLoading()
+						return;
+					}
+					// #ifdef H5
+					// 微信内的H5
+					let config = await this.$api.request('/pay/jssdkBuildConfig');
+					if (config) {
+						jweixin.config(config);
+						jweixin.ready(function() {
+							jweixin.chooseWXPay({
+								timestamp: data.timeStamp, // 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符
+								nonceStr: data.nonce_str, // 支付签名随机串，不长于 32 位
+								package: 'prepay_id=' + data.prepay_id, // 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=\*\*\*）
+								signType: 'MD5', // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
+								paySign: data.paySign, // 支付签名
+								success: function(res) {
+									// 支付成功后的回调函数
+									uni.redirectTo({
+										url: '/pages/money/paySuccess'
+									})
+								},
+								fail: function(err) {
+									//console.log('fail:' + JSON.stringify(err));
+									//that.$api.msg('fail:' + JSON.stringify(err))
+									that.$api.msg('支付失败');
+								}
+							})
+						});
+						jweixin.error(function(res) {
+							//that.$api.msg(JSON.stringify(res));
+							that.$api.msg('支付失败');
+						});
+					} else {
+						that.$api.msg('支付失败');
+					}
+					// #endif
+					
+					// #ifdef MP-WEIXIN
+					uni.requestPayment({
+						provider: 'wxpay',
+						timeStamp: data.timeStamp,
+						nonceStr: data.nonce_str,
+						package: 'prepay_id=' + data.prepay_id,
+						signType: 'MD5',
+						paySign: data.paySign,
+						success: function(res) {
+							that.SET_ORDER(order);
+							uni.removeStorageSync('cart');
+							uni.switchTab({
+								url: '/pages/take-foods/take-foods'
+							});
+						},
+						fail: function(err) {
+							//console.log('fail:' + JSON.stringify(err));
+							//that.$api.msg('fail:' + JSON.stringify(err))
+							that.$api.msg('支付失败');
+						}
+					});
+					// #endif
+				} else if(this.payType == 5) { // 余额支付
+					let pay = await this.$api.request('/pay/balance?out_trade_no='+ order.out_trade_no);
+					
+					uni.hideLoading()
+					if (!pay) {
+						return;
+					}
+					this.SET_ORDER(order);
+					uni.removeStorageSync('cart');
+					uni.switchTab({
+						url: '/pages/take-foods/take-foods',
+						fail(res) {
+							console.log(res);
+						}
+					})
+				}
 				uni.hideLoading()
+				return;
+				//测试订单
+				// let order = this.orderType == 'takein' ? orders[0] : orders[1]
+				// order = Object.assign(order, {
+				// 	status: 1
+				// })
+				
+				// this.SET_ORDER(order)
+				// uni.removeStorageSync('cart')
+				// uni.reLaunch({
+				// 	url: '/pages/take-foods/take-foods'
+				// })
+				// uni.hideLoading()
 			}
 		}
 	}

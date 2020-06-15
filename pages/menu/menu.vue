@@ -84,21 +84,21 @@
 								</view>
 								<view class="items">
 									<!-- 商品 begin -->
-									<view class="good" v-for="(good, key) in item.goods_list" :key="key">
+									<view class="good" v-for="(good, key) in item.goods_list" :key="key" :class="{'backgroud-grey': good.stock == 0}">
 										<image :src="good.image" class="image" @tap="showGoodDetailModal(item, good)"></image>
 										<view class="right">
 											<text class="name">{{ good.name }}</text>
 											<text class="tips">{{ good.desc }}</text>
 											<view class="price_and_action">
 												<text class="price">￥{{ good.sales_price }}</text>
-												<view class="btn-group" v-if="good.use_spec">
+												<view class="btn-group" v-if="good.use_spec && good.stock > 0">
 													<button type="primary" class="btn property_btn" hover-class="none"
 													 size="mini" @tap="showGoodDetailModal(item, good)">
 														选规格
 													</button>
 													<view class="dot" v-show="goodCartNum(good.id)">{{ goodCartNum(good.id) }}</view>
 												</view>
-												<view class="btn-group" v-else>
+												<view class="btn-group" v-if="!good.use_spec && good.stock > 0">
 													<button type="default" v-show="goodCartNum(good.id)" plain class="btn reduce_btn"
 													 size="mini" hover-class="none" @tap="handleReduceFromCart(item, good)">
 														<view class="iconfont iconsami-select"></view>
@@ -109,7 +109,10 @@
 														<view class="iconfont iconadd-select"></view>
 													</button>
 												</view>
+												
+												<view  v-if="good.stock == 0">已售罄</view>
 											</view>
+											
 										</view>
 									</view>
 									<!-- 商品 end -->
@@ -176,6 +179,7 @@
 					</view>
 				</view>
 				<view class="btn-group">
+					<text style="margin-right: 20rpx;">库存：{{good.stock}} </text>
 					<button type="default" plain class="btn" size="mini" hover-class="none" 
 						@tap="handlePropertyReduce">
 						<view class="iconfont iconsami-select"></view>
@@ -323,6 +327,15 @@ export default {
 	methods: {
 		...mapMutations(['SET_ORDER_TYPE', 'SET_STORE', 'SET_LOCATION']),
 		...mapActions(['getStore']),
+		// 模仿php
+		in_array(search,array){
+		    for(var i in array){
+		        if(array[i]==search){
+		            return true;
+		        }
+		    }
+		    return false;
+		},
 		selectShop(){
 			
 			uni.navigateTo({
@@ -357,6 +370,7 @@ export default {
 					//广告图
 					this.getAds(shop.id);
 					
+					shop.notice = shop.status == 1 ? shop.notice : '店铺营业时间为:'+shop.bussines_time+'，不在营业时间内无法下单';
 					// 设置店铺信息
 					this.SET_STORE(shop);
 					//await this.getStore()
@@ -482,7 +496,8 @@ export default {
 		showGoodDetailModal(item, good) {
 			this.good = JSON.parse(JSON.stringify({...good, number: 1}))
 			this.category = JSON.parse(JSON.stringify(item))
-			this.goodDetailModalVisible = true
+			this.goodDetailModalVisible = true;
+			this.changePropertyDefault(0,0);
 		},
 		closeGoodDetailModal() { //关闭饮品详情模态框
 			this.goodDetailModalVisible = false
@@ -490,13 +505,24 @@ export default {
 			this.good = {}
 		},
 		changePropertyDefault(index, key) { //改变默认属性值
+			
+			// if (this.in_array(this.good.specList[index].child[key], this.good.specList[index].disable)) {
+			// 	return;
+			// }
+			if (!this.good.specList[index] || !this.good.specList[index].child[key]) {
+				return;
+			}
+			
 			this.good.specList[index].default = this.good.specList[index].child[key];
 			this.good.number = 1;
 			
 			let specSelectedName = [];
 			for (let item of this.good.specList) {
-				specSelectedName.push(item.default);
+				if (item.default != '') {
+					specSelectedName.push(item.default);
+				}
 			}
+			
 			for (let item of this.good.specTableList) {
 				if (item.value.join(' ') == specSelectedName.join(' ')) {
 					this.good.market_price = parseFloat(item.market_price).toFixed(2);
@@ -514,7 +540,7 @@ export default {
 						props.push(values.default)
 					}
 				})
-				return type === 'text' ? props.join('，') : props
+				return type === 'text' ? props.join(',') : props
 			}
 			return ''
 		},
@@ -526,6 +552,10 @@ export default {
 			this.good.number -= 1
 		},
 		handleAddToCartInModal() {
+			if (this.good.stock <= 0) {
+				this.$api.msg('商品库存不足');
+				return;
+			}
 			this.handleAddToCart(this.category, this.good, this.good.number)
 			this.closeGoodDetailModal()
 		},
@@ -561,6 +591,10 @@ export default {
 			if(!this.isLogin) {
 				uni.navigateTo({url: '/pages/login/login'})
 				return
+			}
+			if (this.store.status == 0) {
+				this.$api.msg('不在店铺营业时间内');
+				return;
 			}
 			
 			uni.showLoading({title: '加载中'})

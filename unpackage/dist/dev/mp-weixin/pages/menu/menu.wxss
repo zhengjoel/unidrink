@@ -1066,4 +1066,7 @@
   text-align: center;
   line-height: 46rpx;
 }
+.backgroud-grey.data-v-53397d38 {
+  background-color: #e1e4e4;
+}
 

@@ -174,8 +174,9 @@
 
 <script>
 	import listCell from '@/components/list-cell/list-cell'
-	import {mapState} from 'vuex'
+	import {mapState, mapMutations} from 'vuex'
 	import ourLoading from '@/components/our-loading/our-loading.vue'
+	import orders from '@/api/orders'
 	
 	export default {
 		components: {
@@ -190,7 +191,25 @@
 		computed: {
 			...mapState(['order'])
 		},
+		onLoad() {
+			let order = this.orderType == 'takein' ? orders[0] : orders[1]
+			order = Object.assign(order, {
+				status: 1
+			})
+			
+			this.SET_ORDER(order);
+			
+			this.takeFoods();
+		},
 		methods: {
+			...mapMutations(['SET_ORDER']),
+			// 取餐数据
+			async takeFoods(){
+				let data = this.$api.request('/order/takeFoods');
+				if (data) {
+					
+				}
+			},
 			orders() {
 				if(!this.$store.getters.isLogin) {
 					uni.navigateTo({url: '/pages/login/login'})

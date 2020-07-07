@@ -310,12 +310,12 @@ page {
 					display: flex;
 					flex-direction: column;
 					padding-bottom: -30rpx;
-
+					
 					.good {
 						display: flex;
 						align-items: center;
-						margin-bottom: 30rpx;
-
+						//margin-bottom: 30rpx;
+						padding: 15rpx 0;
 						.image {
 							width: 160rpx;
 							height: 160rpx;

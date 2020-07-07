@@ -19,7 +19,8 @@
 			"style": {
 				"navigationBarTitleText": "uniDrink",
 				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
+				"navigationBarBackgroundColor": "#ffffff",
+				"enablePullDownRefresh": true
 			}
 		}, {
 			"path": "pages/mine/mine",
@@ -186,7 +187,15 @@
 				"navigationBarBackgroundColor": "#ffffff"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/balance/bill",
+            "style": {
+            	"navigationBarTitleText": "账单",
+            	"navigationBarTextStyle": "black",
+            	"navigationBarBackgroundColor": "#ffffff"
+            }
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

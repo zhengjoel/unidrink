@@ -26,7 +26,7 @@
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.9.2",
+	"libVersion": "",
 	"appid": "wx625a2998252acc9b",
 	"projectname": "uniDrink",
 	"simulatorType": "wechat",

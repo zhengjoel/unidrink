@@ -24,7 +24,8 @@
     "pages/integrals/detail",
     "pages/review/review",
     "pages/activities/invite",
-    "pages/shop/shop"
+    "pages/shop/shop",
+    "pages/balance/bill"
   ],
   "subPackages": [],
   "window": {
@@ -64,6 +65,5 @@
       "desc": "定位最近的门店"
     }
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap82.json"
+  "usingComponents": {}
 }

@@ -1,0 +1,1 @@
+<view class="data-v-2dfe715a"><u-cell-group vue-id="3718a413-1" title="设置喜好" class="data-v-2dfe715a" bind:__l="__l" vue-slots="{{['default']}}"><u-cell-item vue-id="{{('3718a413-2')+','+('3718a413-1')}}" icon="integral-fill" title="会员等级" value="新版本" class="data-v-2dfe715a" bind:__l="__l"></u-cell-item></u-cell-group></view>

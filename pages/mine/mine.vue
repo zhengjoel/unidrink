@@ -128,7 +128,7 @@
 </template>
 
 <script>
-	import {mapState, mapGetters} from 'vuex'
+	import {mapState, mapGetters, mapMutations} from 'vuex'
 	export default {
 		data() {
 			return {
@@ -147,7 +147,17 @@
 		onLoad() {
 			this.getServices();
 		},
+		onShow() {
+			this.getUserInfo();
+		},
 		methods: {
+			...mapMutations(['SET_MEMBER']),
+			async getUserInfo() {
+				let data = await this.$api.request('/user/getUserInfo');
+				if (data) {
+					this.SET_MEMBER(data);
+				}
+			},
 			async getServices() {
 				let data = await this.$api.request('/mine/service');
 				if (data) {

@@ -1,6 +1,6 @@
 <template>
 	<view class="container">
-		<view v-if="!Object.keys(order).length" class="d-flex w-100 h-100 flex-column just-content-center align-items-center">
+		<view v-if="!Object.keys(foodsOrders).length" class="d-flex w-100 h-100 flex-column just-content-center align-items-center">
 			<!-- <image src="/static/images/loading.gif" class="drinks-img"></image> -->
 			<ourLoading active background-color="" color="#00b1b7" text=" " />
 			<view class="tips d-flex flex-column align-items-center font-size-base text-color-assist">
@@ -11,68 +11,68 @@
 			<view class="font-size-sm text-color-primary" style="z-index: 3001;" @tap="orders">查看历史订单</view>
 		</view>
 		<template v-else>
-			<view class="order-box">
+			<view class="order-box" v-for="(order, index) in foodsOrders" :key='index'>
 				<view class="bg-white">
 					<view class="section">
 						<!-- store info begin -->
 						<list-cell :hover="false">
 							<view class="w-100 d-flex align-items-center">
 								<view class="d-flex flex-column w-60">
-									<view class="w-100 font-size-lg text-color-base text-truncate">{{ order.store.name }}</view>
+									<view class="w-100 font-size-lg text-color-base text-truncate">{{ order.shop.name }}</view>
 								</view>
 								<view class="d-flex justify-content-end align-items-center w-40">
-									<image src="/static/images/order/mobile.png" style="width: 60rpx; height: 60rpx;margin-right: 30rpx;"></image>
-									<image src="/static/images/order/navigation.png" style="width: 60rpx; height: 60rpx;"></image>
+									<image src="/static/images/order/mobile.png" @click="makePhoneCall(order.shop)" style="width: 60rpx; height: 60rpx;margin-right: 30rpx;"></image>
+									<image src="/static/images/order/navigation.png" @click="openLocation(order.shop)" style="width: 60rpx; height: 60rpx;"></image>
 								</view>
 							</view>
 						</list-cell>
 						<!-- store info end -->
 						<list-cell :hover="false" padding="50rpx 30rpx">
 							<view class="w-100 d-flex flex-column">
-								<view class="d-flex align-items-center just-content-center" v-if="order.typeCate == 1">
-									<view class="sort-num">{{ order.sort_num }}</view>
+								<view class="d-flex align-items-center just-content-center">
+									<view class="sort-num">{{ order.number_id }}</view>
 								</view>
 								<!-- steps begin -->
 								<view class="d-flex just-content-center">
-									<view class="steps d-flex flex-column" :class="{'w-80': order.typeCate == 1, 'w-100': order.typeCate == 2}">
+									<view class="steps d-flex flex-column" :class="{'w-80': order.type == 1, 'w-100': order.type == 2}">
 										<view class="steps__img-column">
 											<view class="steps__img-column-item">
-												<image src="/static/images/order/ordered_selected.png" v-if="order.status >= 1"></image>
+												<image src="/static/images/order/ordered_selected.png" v-if="order.state >= 1"></image>
 												<image src="/static/images/order/ordered_selected.png" v-else></image>
 											</view>
-											<view class="steps__img-column-item" :class="{active: order.status >= 2}">
-												<image src="/static/images/order/production_selected.png" v-if="order.status >= 2"></image>
+											<view class="steps__img-column-item" :class="{active: order.state >= 1.5}">
+												<image src="/static/images/order/production_selected.png" v-if="order.state >= 1.5"></image>
 												<image src="/static/images/order/production.png" v-else></image>
 											</view>
-											<view class="steps__img-column-item" :class="{active: order.status >= 3}" v-if="order.typeCate == 2">
-												<image src="/static/images/order/delivery_selected.png" v-if="order.status >= 3"></image>
+											<view class="steps__img-column-item" :class="{active: order.state >= 2}" v-if="order.type == 2">
+												<image src="/static/images/order/delivery_selected.png" v-if="order.state >= 2"></image>
 												<image src="/static/images/order/delivered.png" v-else></image>
 											</view>
-											<view class="steps__img-column-item" :class="{active: order.status >= 4}">
-												<image src="/static/images/order/delivered_selected.png" v-if="order.status >= 4"></image>
+											<view class="steps__img-column-item" :class="{active: order.state >= 3}">
+												<image src="/static/images/order/delivered_selected.png" v-if="order.state >= 3"></image>
 												<image src="/static/images/order/delivered.png" v-else></image>
 											</view>
 										</view>
 										<view class="steps__text-column">
-											<view class="steps__text-column-item" :class="{active: order.status >= 1}">
+											<view class="steps__text-column-item" :class="{active: order.state >= 1}">
 												<view class="steps__column-item-line bg-transparent"></view>
 												<view class="steps__text-column-item-text">已下单</view>
 												<view class="steps__column-item-line"></view>
 											</view>
-											<view class="steps__text-column-item" :class="{active: order.status >= 2}">
+											<view class="steps__text-column-item" :class="{active: order.state >= 1.5}">
 												<view class="steps__column-item-line"></view>
 												<view class="steps__text-column-item-text">制作中</view>
 												<view class="steps__column-item-line"></view>
 											</view>
-											<view class="steps__text-column-item" :class="{active: order.status >= 3}" v-if="order.typeCate == 2">
+											<view class="steps__text-column-item" :class="{active: order.state >= 2}" v-if="order.type == 2">
 												<view class="steps__column-item-line"></view>
 												<view class="steps__text-column-item-text">配送中</view>
 												<view class="steps__column-item-line"></view>
 											</view>
-											<view class="steps__text-column-item" :class="{active: order.status >= 4}">
+											<view class="steps__text-column-item" :class="{active: order.state >= 3}">
 												<view class="steps__column-item-line"></view>
 												<view class="steps__text-column-item-text">
-													{{ order.typeCate == 2 ? '已送达' : '请取餐' }}
+													{{ order.type == 2 ? '已送达' : '请取餐' }}
 												</view>
 												<view class="steps__column-item-line bg-transparent"></view>
 											</view>
@@ -81,14 +81,14 @@
 								</view>
 								<!-- steps end -->
 								<view v-if="order.status<=1" class="d-flex just-content-center align-items-center font-size-base text-color-assist mb-40">
-									您前面还有 <text class="text-color-primary mr-10 ml-10">4</text> 单待制作
+									您前面还有 <text class="text-color-primary mr-10 ml-10">{{order.prev_num}}</text> 单待制作
 								</view>
 								<!-- goods begin -->
 								<view class="w-100 d-flex flex-column position-relative mt-30" style="margin-bottom: -40rpx;">
-									<view class="w-100 d-flex align-items-center mb-40" v-for="(good, index) in order.goods" :key="index">
+									<view class="w-100 d-flex align-items-center mb-40" v-for="(good, index) in order.products" :key="index">
 										<view class="d-flex flex-column w-60 overflow-hidden">
-											<view class="font-size-lg text-color-base mb-10 text-truncate">{{ good.name }}</view>
-											<view class="font-size-sm text-color-assist text-truncate">{{ good.property }}</view>
+											<view class="font-size-lg text-color-base mb-10 text-truncate">{{ good.title }}</view>
+											<view class="font-size-sm text-color-assist text-truncate">{{ good.spec }}</view>
 										</view>
 										<view class="d-flex w-40 align-items-center justify-content-between pl-30">
 											<view class="font-size-base text-color-base">x{{ good.number }}</view>
@@ -106,11 +106,11 @@
 							<view class="w-100 d-flex flex-column">
 								<view class="pay-cell">
 									<view>支付方式</view>
-									<view class="font-weight-bold">{{ order.pay_mode }}</view>
+									<view class="font-weight-bold">{{ order.pay_type_text }}</view>
 								</view>
 								<view class="pay-cell">
 									<view>金额总计</view>
-									<view class="font-weight-bold">￥{{ order.amount }}</view>
+									<view class="font-weight-bold">￥{{ order.total_price }}</view>
 								</view>
 							</view>
 						</list-cell>
@@ -122,19 +122,19 @@
 							<view class="w-100 d-flex flex-column">
 								<view class="pay-cell">
 									<view>下单时间</view>
-									<view class="font-weight-bold">{{ $util.formatDateTime(order.created_at) }}</view>
+									<view class="font-weight-bold">{{ order.createtime }}</view>
 								</view>
 								<view class="pay-cell">
 									<view>下单门店</view>
-									<view class="font-weight-bold">{{ order.store.name }}</view>
+									<view class="font-weight-bold">{{ order.shop.name }}</view>
 								</view>
 								<view class="pay-cell">
 									<view>支付方式</view>
-									<view class="font-weight-bold">{{ order.pay_mode }}</view>
+									<view class="font-weight-bold">{{ order.pay_type_text }}</view>
 								</view>
 								<view class="pay-cell">
 									<view>订单号</view>
-									<view class="font-weight-bold">{{ order.order_no }}</view>
+									<view class="font-weight-bold">{{ order.out_trade_no }}</view>
 								</view>
 							</view>
 						</list-cell>
@@ -145,11 +145,11 @@
 						<view class="w-100 d-flex flex-column">
 							<view class="pay-cell">
 								<view>取单号</view>
-								<view class="font-weight-bold">{{ order.sort_num }}</view>
+								<view class="font-weight-bold">{{ order.number_id }}</view>
 							</view>
 							<view class="pay-cell">
 								<view>享用方式</view>
-								<view class="font-weight-bold">自取</view>
+								<view class="font-weight-bold">{{order.type_text}}</view>
 							</view>
 							<view class="pay-cell">
 								<view>取餐时间</view>
@@ -157,11 +157,11 @@
 							</view>
 							<view class="pay-cell">
 								<view>完成制作时间</view>
-								<view class="font-weight-bold">{{ order.productioned_time }}</view>
+								<view class="font-weight-bold">{{ order.maketime }}</view>
 							</view>
 							<view class="pay-cell">
 								<view>备注</view>
-								<view class="font-weight-bold">{{ order.postscript }}</view>
+								<view class="font-weight-bold">{{ order.remark }}</view>
 							</view>
 						</view>
 					</list-cell>
@@ -176,7 +176,6 @@
 	import listCell from '@/components/list-cell/list-cell'
 	import {mapState, mapMutations} from 'vuex'
 	import ourLoading from '@/components/our-loading/our-loading.vue'
-	import orders from '@/api/orders'
 	
 	export default {
 		components: {
@@ -185,29 +184,36 @@
 		},
 		data() {
 			return {
-				
+				foodsOrders:[],
+				page:1,
+				pagesize:10
 			}
 		},
 		computed: {
-			...mapState(['order'])
+			//...mapState(['order'])
+		},
+		onPullDownRefresh() {
+			this.takeFoods();
 		},
 		onLoad() {
-			let order = this.orderType == 'takein' ? orders[0] : orders[1]
-			order = Object.assign(order, {
-				status: 1
-			})
+			// let order = this.orderType == 'takein' ? orders[0] : orders[1]
+			// order = Object.assign(order, {
+			// 	status: 1
+			// })
 			
-			this.SET_ORDER(order);
-			
+			// this.SET_ORDER(order);
 			this.takeFoods();
 		},
 		methods: {
 			...mapMutations(['SET_ORDER']),
 			// 取餐数据
 			async takeFoods(){
-				let data = this.$api.request('/order/takeFoods');
+				let data = await this.$api.request('/order/takeFoods', 'POST', {page:this.page, pagesize:this.pagesize});
 				if (data) {
-					
+					for(var i in data) {
+						this.foodsOrders.unshift(data[i]);
+					}
+					console.log(this.foodsOrders);
 				}
 			},
 			orders() {
@@ -222,6 +228,24 @@
 			menu() {
 				uni.switchTab({
 					url: '/pages/menu/menu'
+				})
+			},
+			openLocation(shop){
+				uni.openLocation({
+					address: shop.address_map + shop.address + " " + shop.name,
+					latitude: parseFloat(shop.lat),
+					longitude: parseFloat(shop.lng),
+					fail(res) {
+						console.log(res);
+					}
+				});
+			},
+			makePhoneCall(shop) {
+				uni.makePhoneCall({
+					phoneNumber: shop.mobile,
+					fail(res) {
+						console.log(res)
+					}
 				})
 			}
 		}

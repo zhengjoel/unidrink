@@ -36,7 +36,7 @@ uni.getSystemInfo({
   success: function success(res) {
     //console.log(res)
     if (res.platform != "devtools") {
-      _vue.default.prototype.$unishow = "https://shop.weivee.com/addons/unidrink";
+      //Vue.prototype.$unishow = "https://shop.weivee.com/addons/unidrink";
     }
   } });
 
@@ -236,7 +236,7 @@ var component = Object(_Applications_HBuilderX_app_Contents_HBuilderX_plugins_un
   renderjs
 )
 
-component.options.__file = "Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/App.vue"
+component.options.__file = "App.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),

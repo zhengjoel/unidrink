@@ -28,167 +28,167 @@
   font-family: "iconfont";
   src: url("//at.alicdn.com/t/font_1789197_z1gzlwq7idq.ttf?t=1589441233693") format("truetype");
 }
-.iconfont.data-v-c9c3da44 {
+.iconfont.data-v-21a9d70c {
   font-family: "iconfont" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.iconshoucang.data-v-c9c3da44:before {
+.iconshoucang.data-v-21a9d70c:before {
   content: "\e667";
 }
-.iconshoucangfill.data-v-c9c3da44:before {
+.iconshoucangfill.data-v-21a9d70c:before {
   content: "\e6c9";
 }
-.iconjifen.data-v-c9c3da44:before {
+.iconjifen.data-v-21a9d70c:before {
   content: "\e642";
 }
-.iconradio-button-off.data-v-c9c3da44:before {
+.iconradio-button-off.data-v-21a9d70c:before {
   content: "\e688";
 }
-.iconradio-button-on.data-v-c9c3da44:before {
+.iconradio-button-on.data-v-21a9d70c:before {
   content: "\e689";
 }
-.iconhelp.data-v-c9c3da44:before {
+.iconhelp.data-v-21a9d70c:before {
   content: "\e752";
 }
-.iconwxpay.data-v-c9c3da44:before {
+.iconwxpay.data-v-21a9d70c:before {
   content: "\e611";
 }
-.iconbalance.data-v-c9c3da44:before {
+.iconbalance.data-v-21a9d70c:before {
   content: "\e619";
 }
-.iconadd-select.data-v-c9c3da44:before {
+.iconadd-select.data-v-21a9d70c:before {
   content: "\e7b0";
 }
-.iconsami-select.data-v-c9c3da44:before {
+.iconsami-select.data-v-21a9d70c:before {
   content: "\e7b1";
 }
-.iconmap.data-v-c9c3da44:before {
+.iconmap.data-v-21a9d70c:before {
   content: "\e758";
 }
-.iconsuccess.data-v-c9c3da44:before {
+.iconsuccess.data-v-21a9d70c:before {
   content: "\e767";
 }
-.iconsuccess-fill.data-v-c9c3da44:before {
+.iconsuccess-fill.data-v-21a9d70c:before {
   content: "\e78d";
 }
-.iconiconset0136.data-v-c9c3da44:before {
+.iconiconset0136.data-v-21a9d70c:before {
   content: "\e623";
 }
-.iconzan.data-v-c9c3da44:before {
+.iconzan.data-v-21a9d70c:before {
   content: "\e640";
 }
-.iconjifenqiandao.data-v-c9c3da44:before {
+.iconjifenqiandao.data-v-21a9d70c:before {
   content: "\e6a6";
 }
-.iconshouyeshouye.data-v-c9c3da44:before {
+.iconshouyeshouye.data-v-21a9d70c:before {
   content: "\e606";
 }
-.icondaohang.data-v-c9c3da44:before {
+.icondaohang.data-v-21a9d70c:before {
   content: "\e641";
 }
-.iconwodelianxikefu.data-v-c9c3da44:before {
+.iconwodelianxikefu.data-v-21a9d70c:before {
   content: "\e671";
 }
-.iconwodexinyuan.data-v-c9c3da44:before {
+.iconwodexinyuan.data-v-21a9d70c:before {
   content: "\e675";
 }
-.iconphone.data-v-c9c3da44:before {
+.iconphone.data-v-21a9d70c:before {
   content: "\e6dd";
 }
-.icondingdan.data-v-c9c3da44:before {
+.icondingdan.data-v-21a9d70c:before {
   content: "\e645";
 }
-.iconliwu.data-v-c9c3da44:before {
+.iconliwu.data-v-21a9d70c:before {
   content: "\e61c";
 }
-.iconyinpinyinliao.data-v-c9c3da44:before {
+.iconyinpinyinliao.data-v-21a9d70c:before {
   content: "\e60d";
 }
-.iconyinpin.data-v-c9c3da44:before {
+.iconyinpin.data-v-21a9d70c:before {
   content: "\e70b";
 }
-.iconwaimaixinxi.data-v-c9c3da44:before {
+.iconwaimaixinxi.data-v-21a9d70c:before {
   content: "\e685";
 }
-.iconico.data-v-c9c3da44:before {
+.iconico.data-v-21a9d70c:before {
   content: "\e646";
 }
-.iconwode.data-v-c9c3da44:before {
+.iconwode.data-v-21a9d70c:before {
   content: "\e616";
 }
-.icongengduofuwu.data-v-c9c3da44:before {
+.icongengduofuwu.data-v-21a9d70c:before {
   content: "\e607";
 }
-.iconqucan.data-v-c9c3da44:before {
+.iconqucan.data-v-21a9d70c:before {
   content: "\e625";
 }
-.iconyou.data-v-c9c3da44:before {
+.iconyou.data-v-21a9d70c:before {
   content: "\e618";
 }
-.iconshouhuodizhi.data-v-c9c3da44:before {
+.iconshouhuodizhi.data-v-21a9d70c:before {
   content: "\e666";
 }
-.iconshangcheng.data-v-c9c3da44:before {
+.iconshangcheng.data-v-21a9d70c:before {
   content: "\e63b";
 }
-.iconadd.data-v-c9c3da44:before {
+.iconadd.data-v-21a9d70c:before {
   content: "\e742";
 }
-.iconarrow-right.data-v-c9c3da44:before {
+.iconarrow-right.data-v-21a9d70c:before {
   content: "\e743";
 }
-.iconarrow-lift.data-v-c9c3da44:before {
+.iconarrow-lift.data-v-21a9d70c:before {
   content: "\e744";
 }
-.iconarrow-up.data-v-c9c3da44:before {
+.iconarrow-up.data-v-21a9d70c:before {
   content: "\e745";
 }
-.iconclose.data-v-c9c3da44:before {
+.iconclose.data-v-21a9d70c:before {
   content: "\e747";
 }
-.iconleftbutton.data-v-c9c3da44:before {
+.iconleftbutton.data-v-21a9d70c:before {
   content: "\e755";
 }
-.iconreduce.data-v-c9c3da44:before {
+.iconreduce.data-v-21a9d70c:before {
   content: "\e75e";
 }
-.iconseleted.data-v-c9c3da44:before {
+.iconseleted.data-v-21a9d70c:before {
   content: "\e763";
 }
-.iconRightbutton.data-v-c9c3da44:before {
+.iconRightbutton.data-v-21a9d70c:before {
   content: "\e765";
 }
-.iconleftbutton-fill.data-v-c9c3da44:before {
+.iconleftbutton-fill.data-v-21a9d70c:before {
   content: "\e782";
 }
-.iconRightbutton-fill.data-v-c9c3da44:before {
+.iconRightbutton-fill.data-v-21a9d70c:before {
   content: "\e78a";
 }
-.iconarrow-down.data-v-c9c3da44:before {
+.iconarrow-down.data-v-21a9d70c:before {
   content: "\e7b2";
 }
-.iconaixin1.data-v-c9c3da44:before {
+.iconaixin1.data-v-21a9d70c:before {
   content: "\e63c";
 }
 /* uni.scss */
-page.data-v-c9c3da44 {
+page.data-v-21a9d70c {
   height: 100%;
 }
-.container.data-v-c9c3da44 {
+.container.data-v-21a9d70c {
   padding: 20rpx 30rpx;
 }
-.form.data-v-c9c3da44 {
+.form.data-v-21a9d70c {
   border-radius: 8rpx;
 }
-.form-input .label.data-v-c9c3da44 {
+.form-input .label.data-v-21a9d70c {
   width: 160rpx;
   font-size: 28rpx;
   color: #5A5B5C;
 }
-.form-input .radio-group.data-v-c9c3da44 {
+.form-input .radio-group.data-v-21a9d70c {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -196,22 +196,22 @@ page.data-v-c9c3da44 {
   -webkit-justify-content: flex-start;
           justify-content: flex-start;
 }
-.form-input .radio-group .radio.data-v-c9c3da44 {
+.form-input .radio-group .radio.data-v-21a9d70c {
   padding: 10rpx 30rpx;
   border-radius: 6rpx;
   border: 2rpx solid #919293;
   color: #919293;
   font-size: 28rpx;
 }
-.form-input .radio-group .radio.checked.data-v-c9c3da44 {
+.form-input .radio-group .radio.checked.data-v-21a9d70c {
   background-color: #00b1b7;
   color: #ffffff;
   border: 2rpx solid #00b1b7;
 }
-.btn-box.data-v-c9c3da44 {
+.btn-box.data-v-21a9d70c {
   height: calc((100vh - 40rpx) / 2);
 }
-.save-btn.data-v-c9c3da44 {
+.save-btn.data-v-21a9d70c {
   width: 90%;
   border-radius: 50rem !important;
   font-size: 32rpx;

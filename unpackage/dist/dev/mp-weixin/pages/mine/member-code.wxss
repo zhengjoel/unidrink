@@ -28,153 +28,153 @@
   font-family: "iconfont";
   src: url("//at.alicdn.com/t/font_1789197_z1gzlwq7idq.ttf?t=1589441233693") format("truetype");
 }
-.iconfont.data-v-2977322a {
+.iconfont.data-v-2e070bfd {
   font-family: "iconfont" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.iconshoucang.data-v-2977322a:before {
+.iconshoucang.data-v-2e070bfd:before {
   content: "\e667";
 }
-.iconshoucangfill.data-v-2977322a:before {
+.iconshoucangfill.data-v-2e070bfd:before {
   content: "\e6c9";
 }
-.iconjifen.data-v-2977322a:before {
+.iconjifen.data-v-2e070bfd:before {
   content: "\e642";
 }
-.iconradio-button-off.data-v-2977322a:before {
+.iconradio-button-off.data-v-2e070bfd:before {
   content: "\e688";
 }
-.iconradio-button-on.data-v-2977322a:before {
+.iconradio-button-on.data-v-2e070bfd:before {
   content: "\e689";
 }
-.iconhelp.data-v-2977322a:before {
+.iconhelp.data-v-2e070bfd:before {
   content: "\e752";
 }
-.iconwxpay.data-v-2977322a:before {
+.iconwxpay.data-v-2e070bfd:before {
   content: "\e611";
 }
-.iconbalance.data-v-2977322a:before {
+.iconbalance.data-v-2e070bfd:before {
   content: "\e619";
 }
-.iconadd-select.data-v-2977322a:before {
+.iconadd-select.data-v-2e070bfd:before {
   content: "\e7b0";
 }
-.iconsami-select.data-v-2977322a:before {
+.iconsami-select.data-v-2e070bfd:before {
   content: "\e7b1";
 }
-.iconmap.data-v-2977322a:before {
+.iconmap.data-v-2e070bfd:before {
   content: "\e758";
 }
-.iconsuccess.data-v-2977322a:before {
+.iconsuccess.data-v-2e070bfd:before {
   content: "\e767";
 }
-.iconsuccess-fill.data-v-2977322a:before {
+.iconsuccess-fill.data-v-2e070bfd:before {
   content: "\e78d";
 }
-.iconiconset0136.data-v-2977322a:before {
+.iconiconset0136.data-v-2e070bfd:before {
   content: "\e623";
 }
-.iconzan.data-v-2977322a:before {
+.iconzan.data-v-2e070bfd:before {
   content: "\e640";
 }
-.iconjifenqiandao.data-v-2977322a:before {
+.iconjifenqiandao.data-v-2e070bfd:before {
   content: "\e6a6";
 }
-.iconshouyeshouye.data-v-2977322a:before {
+.iconshouyeshouye.data-v-2e070bfd:before {
   content: "\e606";
 }
-.icondaohang.data-v-2977322a:before {
+.icondaohang.data-v-2e070bfd:before {
   content: "\e641";
 }
-.iconwodelianxikefu.data-v-2977322a:before {
+.iconwodelianxikefu.data-v-2e070bfd:before {
   content: "\e671";
 }
-.iconwodexinyuan.data-v-2977322a:before {
+.iconwodexinyuan.data-v-2e070bfd:before {
   content: "\e675";
 }
-.iconphone.data-v-2977322a:before {
+.iconphone.data-v-2e070bfd:before {
   content: "\e6dd";
 }
-.icondingdan.data-v-2977322a:before {
+.icondingdan.data-v-2e070bfd:before {
   content: "\e645";
 }
-.iconliwu.data-v-2977322a:before {
+.iconliwu.data-v-2e070bfd:before {
   content: "\e61c";
 }
-.iconyinpinyinliao.data-v-2977322a:before {
+.iconyinpinyinliao.data-v-2e070bfd:before {
   content: "\e60d";
 }
-.iconyinpin.data-v-2977322a:before {
+.iconyinpin.data-v-2e070bfd:before {
   content: "\e70b";
 }
-.iconwaimaixinxi.data-v-2977322a:before {
+.iconwaimaixinxi.data-v-2e070bfd:before {
   content: "\e685";
 }
-.iconico.data-v-2977322a:before {
+.iconico.data-v-2e070bfd:before {
   content: "\e646";
 }
-.iconwode.data-v-2977322a:before {
+.iconwode.data-v-2e070bfd:before {
   content: "\e616";
 }
-.icongengduofuwu.data-v-2977322a:before {
+.icongengduofuwu.data-v-2e070bfd:before {
   content: "\e607";
 }
-.iconqucan.data-v-2977322a:before {
+.iconqucan.data-v-2e070bfd:before {
   content: "\e625";
 }
-.iconyou.data-v-2977322a:before {
+.iconyou.data-v-2e070bfd:before {
   content: "\e618";
 }
-.iconshouhuodizhi.data-v-2977322a:before {
+.iconshouhuodizhi.data-v-2e070bfd:before {
   content: "\e666";
 }
-.iconshangcheng.data-v-2977322a:before {
+.iconshangcheng.data-v-2e070bfd:before {
   content: "\e63b";
 }
-.iconadd.data-v-2977322a:before {
+.iconadd.data-v-2e070bfd:before {
   content: "\e742";
 }
-.iconarrow-right.data-v-2977322a:before {
+.iconarrow-right.data-v-2e070bfd:before {
   content: "\e743";
 }
-.iconarrow-lift.data-v-2977322a:before {
+.iconarrow-lift.data-v-2e070bfd:before {
   content: "\e744";
 }
-.iconarrow-up.data-v-2977322a:before {
+.iconarrow-up.data-v-2e070bfd:before {
   content: "\e745";
 }
-.iconclose.data-v-2977322a:before {
+.iconclose.data-v-2e070bfd:before {
   content: "\e747";
 }
-.iconleftbutton.data-v-2977322a:before {
+.iconleftbutton.data-v-2e070bfd:before {
   content: "\e755";
 }
-.iconreduce.data-v-2977322a:before {
+.iconreduce.data-v-2e070bfd:before {
   content: "\e75e";
 }
-.iconseleted.data-v-2977322a:before {
+.iconseleted.data-v-2e070bfd:before {
   content: "\e763";
 }
-.iconRightbutton.data-v-2977322a:before {
+.iconRightbutton.data-v-2e070bfd:before {
   content: "\e765";
 }
-.iconleftbutton-fill.data-v-2977322a:before {
+.iconleftbutton-fill.data-v-2e070bfd:before {
   content: "\e782";
 }
-.iconRightbutton-fill.data-v-2977322a:before {
+.iconRightbutton-fill.data-v-2e070bfd:before {
   content: "\e78a";
 }
-.iconarrow-down.data-v-2977322a:before {
+.iconarrow-down.data-v-2e070bfd:before {
   content: "\e7b2";
 }
-.iconaixin1.data-v-2977322a:before {
+.iconaixin1.data-v-2e070bfd:before {
   content: "\e63c";
 }
 /* uni.scss */
-.avatar-wrapper.data-v-2977322a {
+.avatar-wrapper.data-v-2e070bfd {
   width: 150rpx;
   height: 150rpx;
   border-radius: 100%;
@@ -192,12 +192,12 @@
   position: relative;
   z-index: 10;
 }
-.avatar-wrapper image.data-v-2977322a {
+.avatar-wrapper image.data-v-2e070bfd {
   width: 130rpx;
   height: 130rpx;
   border-radius: 100%;
 }
-.avatar-wrapper .tag.data-v-2977322a {
+.avatar-wrapper .tag.data-v-2e070bfd {
   background-color: #ffffff;
   position: absolute;
   right: -30rpx;
@@ -214,10 +214,10 @@
   border-radius: 50rem !important;
   box-shadow: 2rpx 2rpx 20rpx rgba(0, 0, 0, 0.1);
 }
-.avatar-wrapper .tag image.data-v-2977322a {
+.avatar-wrapper .tag image.data-v-2e070bfd {
   width: 26rpx;
 }
-.user-box.data-v-2977322a {
+.user-box.data-v-2e070bfd {
   width: 100%;
   position: relative;
   border-radius: 8rpx;
@@ -228,7 +228,7 @@
   margin-bottom: 30rpx;
   box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
 }
-.user-grid.data-v-2977322a {
+.user-grid.data-v-2e070bfd {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
@@ -244,7 +244,7 @@
           align-items: center;
   position: relative;
 }
-.user-grid.data-v-2977322a::after {
+.user-grid.data-v-2e070bfd::after {
   content: ' ';
   position: absolute;
   right: 0;
@@ -254,15 +254,15 @@
   -webkit-transform: scaleX(0.2) scaleY(0.5);
           transform: scaleX(0.2) scaleY(0.5);
 }
-.user-grid.data-v-2977322a:nth-last-child(1)::after {
+.user-grid.data-v-2e070bfd:nth-last-child(1)::after {
   border-right: 0;
 }
-.user-grid .value.data-v-2977322a {
+.user-grid .value.data-v-2e070bfd {
   font-size: 28rpx;
   font-weight: bold;
   margin-bottom: 10rpx;
 }
-.wepay-btn.data-v-2977322a {
+.wepay-btn.data-v-2e070bfd {
   background-color: #57b737;
   display: -webkit-box;
   display: -webkit-flex;
@@ -275,7 +275,7 @@
           justify-content: center;
   padding: 5rpx 50rpx;
 }
-.wepay-btn image.data-v-2977322a {
+.wepay-btn image.data-v-2e070bfd {
   width: 36rpx;
   height: 30rpx;
   margin-right: 10rpx;

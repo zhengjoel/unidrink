@@ -57,7 +57,6 @@
 								<u-picker v-model="takeinTIme" :range="takeinRange" range-key="name" mode="selector" @cancel="takeinCancelTime"
 								 @confirm="takeinConfirmTime" :default-selector="defaultSelector"></u-picker>
 							</view>
-
 						</view>
 					</list-cell>
 					<list-cell class="contact" last :hover="false">
@@ -256,20 +255,20 @@
 					name: '立即用餐',
 					value: 0
 				}, {
-					name: '半个小时后',
-					value: 0.5
+					name: '10分钟后',
+					value: 10
 				}, {
-					name: '一个小时后',
-					value: 1
+					name: '20分钟后',
+					value: 20
 				}, {
-					name: '一个半小时后',
-					value: 1.5
+					name: '30分钟后',
+					value: 30
 				}, {
-					name: '两个小时后',
-					value: 2
+					name: '40分钟后',
+					value: 40
 				}, {
-					name: '三个小时后',
-					value: 3
+					name: '50分钟后',
+					value: 50
 				}],
 				defaultSelector: [0],
 				payType: 2, // 付款方式:5=余额支付,2=微信支付
@@ -392,7 +391,7 @@
 					address_id: this.orderType == 'takeout' ? this.address.id : 0, // 外卖配送地址
 					shop_id: this.store.id, // 店铺id
 					mobile: this.member.mobile, // 联系电话
-					takeinTime: this.takeinRange[this.defaultSelector[0]].value, // 取餐时间
+					gettime: this.takeinRange[this.defaultSelector[0]].value, // 取餐时间
 					pay_type: this.payType, // 支付类型
 					remark: this.form.remark, // 备注
 					product_id: [],

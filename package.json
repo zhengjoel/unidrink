@@ -13,6 +13,7 @@
   "author": "joelzheng",
   "license": "ISC",
   "dependencies": {
+    "jweixin-module": "^1.6.0",
     "uview-ui": "^1.3.3"
   }
 }

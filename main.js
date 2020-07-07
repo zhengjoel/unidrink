@@ -27,7 +27,7 @@ uni.getSystemInfo({
 	success(res) { 
 		//console.log(res)
 		if (res.platform != "devtools") {
-			Vue.prototype.$unishow = "https://shop.weivee.com/addons/unidrink";
+			//Vue.prototype.$unishow = "https://shop.weivee.com/addons/unidrink";
 		}
 	}
 });

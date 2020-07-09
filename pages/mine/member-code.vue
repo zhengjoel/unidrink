@@ -28,8 +28,8 @@
 						<view>余额</view>
 					</view>
 					<view class="user-grid">
-						<view class="value">{{ member.level }}</view>
-						<view>等级</view>
+						<view class="value">{{ member.currentValue }}</view>
+						<view>历史消费</view>
 					</view>
 					<!-- <view class="user-grid">
 						<view class="value">{{ member.giftBalance }}</view>
@@ -41,20 +41,12 @@
 				<view class="qrcode d-flex just-content-center align-items-center"><canvas canvas-id="memberCode" style="width: 350rpx; height: 350rpx;"></canvas></view>
 				<!-- qrcode end -->
 				<view class="tips d-flex just-content-center align-items-center" style="margin-bottom: 50rpx;">
-					<view class="font-size-sm text-color-assist">支付前出示可累计积分，会员码每30秒更新</view>
+					<view class="font-size-sm text-color-assist">仅支持余额支付，支付成功可累计积分，会员码每30秒更新</view>
 				</view>
-				<!-- #ifdef MP-WEIXIN -->
-				<view class="d-flex just-content-center align-items-center">
-					<button type="primary" class="wepay-btn" hover-class="none">
-						<image src="/static/images/mine/wechat.png"></image>
-						<view>使用微信支付</view>
-					</button>
-				</view>
-				<!-- #endif -->
+				
 			</view>
 			<!-- user box end -->
 		</view>
-		<image src="https://img-shop.qmimg.cn/s16/images/2020/04/26/4a36d33657677787.png" class="w-100" mode="widthFix"></image>
 	</view>
 </template>
 
@@ -80,6 +72,12 @@ export default {
 		...mapState(['member'])
 	},
 	methods: {
+		async getMemberCode() {
+			let code = await this.$api.request('/user/memberCode');
+			if (code) {
+				
+			}
+		},
 		makeMemberCode(i) {
 			uQRCode.make({
 				canvasId: 'memberCode',

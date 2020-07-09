@@ -94,7 +94,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   listCell: function() {
-    return __webpack_require__.e(/*! import() | components/list-cell/list-cell */ "components/list-cell/list-cell").then(__webpack_require__.bind(null, /*! @/components/list-cell/list-cell.vue */ 277))
+    return __webpack_require__.e(/*! import() | components/list-cell/list-cell */ "components/list-cell/list-cell").then(__webpack_require__.bind(null, /*! @/components/list-cell/list-cell.vue */ 287))
   }
 }
 var render = function() {
@@ -161,7 +161,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _pointsFlow = _interopRequireDefault(__webpack_require__(/*! @/api/points-flow */ 214));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var listCell = function listCell() {__webpack_require__.e(/*! require.ensure | components/list-cell/list-cell */ "components/list-cell/list-cell").then((function () {return resolve(__webpack_require__(/*! @/components/list-cell/list-cell */ 277));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _pointsFlow = _interopRequireDefault(__webpack_require__(/*! @/api/points-flow */ 214));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var listCell = function listCell() {__webpack_require__.e(/*! require.ensure | components/list-cell/list-cell */ "components/list-cell/list-cell").then((function () {return resolve(__webpack_require__(/*! @/components/list-cell/list-cell */ 287));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 {
   components: {

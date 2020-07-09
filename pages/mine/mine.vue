@@ -39,10 +39,10 @@
 						<view class="iconfont iconarrow-right line-height-100"></view>
 					</view> -->
 					
-					<button type="default" size="mini" class="hym-btn" @tap="serv({type:'pages',pages:'/pages/mine/member-code'})">
+					<!-- <button type="default" size="mini" class="hym-btn" @tap="serv({type:'pages',pages:'/pages/mine/member-code'})">
 						<image src="/static/images/mine/hym.png"></image>
 						<text>会员码</text>
-					</button>
+					</button> -->
 				</view>
 				<!-- user grid begin -->
 				<view class="w-100 d-flex align-items-center just-content-center">
@@ -64,7 +64,7 @@
 						</view>
 						<view class="font-size-sm text-color-assist">余额</view>
 					</view>
-					<view class="user-grid">
+					<view class="user-grid" @tap="serv({type:'pages', pages: '/pages/balance/bill'})">
 						<view class="value font-size-extra-lg font-weight-bold text-color-base">
 							{{  isLogin ? member.currentValue : 0 }}
 						</view>

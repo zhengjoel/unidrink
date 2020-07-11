@@ -284,11 +284,13 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
   },
   methods: _objectSpread({},
   (0, _vuex.mapMutations)(['SET_MEMBER']), {
-    getUserInfo: function getUserInfo() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var data;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
-                  _this.$api.request('/user/getUserInfo'));case 2:data = _context.sent;
+    getUserInfo: function getUserInfo() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var data;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:if (!
+                _this.isLogin) {_context.next = 5;break;}_context.next = 3;return (
+                  _this.$api.request('/user/getUserInfo'));case 3:data = _context.sent;
                 if (data) {
                   _this.SET_MEMBER(data);
-                }case 4:case "end":return _context.stop();}}}, _callee);}))();
+                }case 5:case "end":return _context.stop();}}}, _callee);}))();
+
     },
     getServices: function getServices() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var data;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
                   _this2.$api.request('/mine/service'));case 2:data = _context2.sent;

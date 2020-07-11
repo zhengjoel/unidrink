@@ -80,7 +80,7 @@
 					<view class="text-color-base">新用户加入会员，享会员权益</view>
 					<view class="text-color-primary" @tap="login">立即加入</view>
 				</view>
-				<view class="row">
+				<!-- <view class="row">
 					<view class="grid">
 						<image src="/static/images/mine/rhyl.png"></image>
 						<view>入会有礼</view>
@@ -101,7 +101,7 @@
 						<image src="/static/images/mine/nxbz.png"></image>
 						<view>奈雪宝藏</view>
 					</view>
-				</view>
+				</view> -->
 			</view>
 			<!-- level benefit box end -->
 			<!-- banner begin -->
@@ -153,9 +153,11 @@
 		methods: {
 			...mapMutations(['SET_MEMBER']),
 			async getUserInfo() {
-				let data = await this.$api.request('/user/getUserInfo');
-				if (data) {
-					this.SET_MEMBER(data);
+				if (this.isLogin) {
+					let data = await this.$api.request('/user/getUserInfo');
+					if (data) {
+						this.SET_MEMBER(data);
+					}
 				}
 			},
 			async getServices() {

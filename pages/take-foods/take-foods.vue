@@ -174,7 +174,7 @@
 
 <script>
 	import listCell from '@/components/list-cell/list-cell'
-	import {mapState, mapMutations} from 'vuex'
+	import {mapState, mapMutations, mapGetters} from 'vuex'
 	import ourLoading from '@/components/our-loading/our-loading.vue'
 	
 	export default {
@@ -191,6 +191,7 @@
 		},
 		computed: {
 			//...mapState(['order'])
+			...mapGetters(['isLogin'])
 		},
 		onPullDownRefresh() {
 			this.takeFoods();
@@ -208,6 +209,9 @@
 			...mapMutations(['SET_ORDER']),
 			// 取餐数据
 			async takeFoods(){
+				if (!this.isLogin) {
+					return;
+				}
 				let data = await this.$api.request('/order/takeFoods', 'POST', {page:this.page, pagesize:this.pagesize});
 				if (data) {
 					for(var i in data) {

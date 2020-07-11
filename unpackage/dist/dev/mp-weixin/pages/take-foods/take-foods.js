@@ -334,9 +334,10 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
       pagesize: 10 };
 
   },
-  computed: {
-    //...mapState(['order'])
-  },
+  computed: _objectSpread({},
+
+  (0, _vuex.mapGetters)(['isLogin'])),
+
   onPullDownRefresh: function onPullDownRefresh() {
     this.takeFoods();
   },
@@ -352,14 +353,17 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
   methods: _objectSpread({},
   (0, _vuex.mapMutations)(['SET_ORDER']), {
     // 取餐数据
-    takeFoods: function takeFoods() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var data, i;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
-                  _this.$api.request('/order/takeFoods', 'POST', { page: _this.page, pagesize: _this.pagesize }));case 2:data = _context.sent;
+    takeFoods: function takeFoods() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var data, i;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:if (
+                _this.isLogin) {_context.next = 2;break;}return _context.abrupt("return");case 2:_context.next = 4;return (
+
+
+                  _this.$api.request('/order/takeFoods', 'POST', { page: _this.page, pagesize: _this.pagesize }));case 4:data = _context.sent;
                 if (data) {
                   for (i in data) {
                     _this.foodsOrders.unshift(data[i]);
                   }
                   console.log(_this.foodsOrders);
-                }case 4:case "end":return _context.stop();}}}, _callee);}))();
+                }case 6:case "end":return _context.stop();}}}, _callee);}))();
     },
     orders: function orders() {
       if (!this.$store.getters.isLogin) {

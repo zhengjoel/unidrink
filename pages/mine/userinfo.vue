@@ -14,8 +14,11 @@
 				<view class="form-input w-100 d-flex align-items-center">
 					<view class="label">手机号码</view>
 					<view class="input flex-fill">
-						<input type="text" v-model="member.mobile" disabled>
+						<button open-type="getPhoneNumber" @getphonenumber="getPhoneNumber">
+							<input type="text" v-model="member.mobile" disabled>
+						</button>
 					</view>
+					
 				</view>
 			</list-cell>
 			<list-cell :hover="false">
@@ -23,8 +26,8 @@
 					<view class="label">性别</view>
 					<view class="input flex-fill">
 						<view class="radio-group">
-							<view class="radio" :class="{'checked': member.gender == '1'}" style="margin-right: 10rpx;" @tap="member.gender=1">先生</view>
-							<view class="radio" :class="{'checked': member.gender == '2'}" @tap="member.gender=2">女士</view>
+							<view class="radio" :class="{'checked': member.gender == '0'}" style="margin-right: 10rpx;" @tap="member.gender=0">先生</view>
+							<view class="radio" :class="{'checked': member.gender == '1'}" @tap="member.gender=1">女士</view>
 						</view>
 					</view>
 				</view>
@@ -33,10 +36,9 @@
 				<view class="form-input w-100 d-flex align-items-center">
 					<view class="label">生日</view>
 					<view class="input flex-fill">
-						<picker mode="date" :value="date" :start="startDate" :end="endDate" v-if="!member.birthday" @change="handleDateChange">
-							生日当天有惊喜
+						<picker mode="date" :value="member.birthday" :start="startDate" :end="endDate" @change="handleDateChange">
+							{{member.birthday ? member.birthday : '无'}}
 						</picker>
-						<input type="text" v-else :value="member.birthday" disabled>
 					</view>
 				</view>
 			</list-cell>
@@ -44,7 +46,7 @@
 				<view class="form-input w-100 d-flex align-items-center">
 					<view class="label">入会时间</view>
 					<view class="input flex-fill">
-						<input type="text" v-model="member.openingCardDate" disabled>
+						<input type="text" v-model="member.jointime" disabled>
 					</view>
 				</view>
 			</list-cell>
@@ -78,9 +80,13 @@
 			}
 		},
 		onLoad() {
-			this.member = this.$store.state.member
+			this.member = this.$store.state.member;
+			console.log(this.member);
 		},
 		methods: {
+			async getPhoneNumber(e) {
+				console.log(e);
+			},
 			getDate(type) {
 				const date = new Date();
 				let year = date.getFullYear();

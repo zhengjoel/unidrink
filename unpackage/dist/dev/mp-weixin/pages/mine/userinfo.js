@@ -95,6 +95,12 @@ __webpack_require__.r(__webpack_exports__);
 var components = {
   listCell: function() {
     return __webpack_require__.e(/*! import() | components/list-cell/list-cell */ "components/list-cell/list-cell").then(__webpack_require__.bind(null, /*! @/components/list-cell/list-cell.vue */ 287))
+  },
+  uAvatar: function() {
+    return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-avatar/u-avatar */ "node-modules/uview-ui/components/u-avatar/u-avatar").then(__webpack_require__.bind(null, /*! uview-ui/components/u-avatar/u-avatar.vue */ 378))
+  },
+  uButton: function() {
+    return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-button/u-button */ "node-modules/uview-ui/components/u-button/u-button").then(__webpack_require__.bind(null, /*! uview-ui/components/u-button/u-button.vue */ 385))
   }
 }
 var render = function() {
@@ -205,6 +211,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
   components: {
     listCell: listCell },
@@ -229,8 +253,27 @@ __webpack_require__.r(__webpack_exports__);
     console.log(this.member);
   },
   methods: {
-    getPhoneNumber: function getPhoneNumber(e) {return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
-                console.log(e);case 1:case "end":return _context.stop();}}}, _callee);}))();
+    getUserInfo: function getUserInfo(e) {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var data;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:if (!
+                e.hasOwnProperty('detail')) {_context.next = 5;break;}_context.next = 3;return (
+                  _this.$api.request('/user/decryptData', 'POST', {
+                    encryptedData: e.detail.encryptedData,
+                    iv: e.detail.iv }));case 3:data = _context.sent;
+
+                if (data) {
+                  _this.member.avatar = data.avatarUrl;
+                }case 5:case "end":return _context.stop();}}}, _callee);}))();
+
+    },
+    getPhoneNumber: function getPhoneNumber(e) {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var data;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:if (!
+                e.hasOwnProperty('detail')) {_context2.next = 5;break;}_context2.next = 3;return (
+                  _this2.$api.request('/user/decryptData', 'POST', {
+                    encryptedData: e.detail.encryptedData,
+                    iv: e.detail.iv }));case 3:data = _context2.sent;
+
+                if (data) {
+                  _this2.member.mobile = data.phoneNumber;
+                }case 5:case "end":return _context2.stop();}}}, _callee2);}))();
+
     },
     getDate: function getDate(type) {
       var date = new Date();
@@ -250,10 +293,20 @@ __webpack_require__.r(__webpack_exports__);
     handleDateChange: function handleDateChange(e) {
       this.member.birthday = e.target.value;
     },
-    save: function save() {
-      var member = Object.assign(this.$store.state.member, this.member);
-      this.$store.commit('SET_MEMBER', member);
-      uni.navigateBack();
+    save: function save() {var _this3 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3() {var data, member;return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:_context3.next = 2;return (
+                  _this3.$api.request('/user/edit', 'POST', {
+                    username: _this3.member.username,
+                    mobile: _this3.member.mobile,
+                    gender: _this3.member.gender,
+                    birthday: _this3.member.birthday,
+                    avatar: _this3.member.avatar }));case 2:data = _context3.sent;
+
+                if (data) {
+                  member = Object.assign(_this3.$store.state.member, _this3.member);
+                  _this3.$store.commit('SET_MEMBER', member);
+                  uni.navigateBack();
+                }case 4:case "end":return _context3.stop();}}}, _callee3);}))();
+
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

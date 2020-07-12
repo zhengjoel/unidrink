@@ -19,6 +19,7 @@
 							<image src="/static/images/mine/level.png"></image>
 							<view>{{ member.level }}</view>
 						</view> -->
+												
 					</view>
 					<view class="d-flex flex-column flex-fill overflow-hidden" style="margin-top: 20rpx;">
 						<view v-if="isLogin" class="font-size-lg font-weight-bold d-flex justify-content-start align-items-center"
@@ -52,7 +53,7 @@
 						</view>
 						<view class="font-size-sm text-color-assist">优惠券</view>
 					</view>
-					<view class="user-grid" @tap="serv({type:'pages',pages:'/pages/integrals/integrals'})">
+					<view class="user-grid" @tap="serv({type:'miniprogram',app_id:'wx73b3aa7f870c7d5c'})">
 						<view class="value font-size-extra-lg font-weight-bold text-color-base">
 							{{  isLogin ? member.score : 0 }}
 						</view>

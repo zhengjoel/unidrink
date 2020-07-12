@@ -28,7 +28,7 @@ _vue.default.prototype.$util = _util.default;
 
 // 后端api地址
 _vue.default.prototype.$unishow = "http://unishop:8888/addons/unidrink";
-//Vue.prototype.$unishow = "https://shop.weivee.com/addons/unidrink";
+//Vue.prototype.$unishow = "http://shop.weivee.com/addons/unidrink";
 
 
 // 为了方便每次上传的时候忘记修改上面的参数
@@ -62,7 +62,7 @@ _vue.default.prototype.$platform = 'MP-WEIXIN';
 
 
 // 同步网络请求
-var request = /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(url) {var method,data,showMsg,header,_yield$uni$request,_yield$uni$request2,error,res,_args = arguments;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:method = _args.length > 1 && _args[1] !== undefined ? _args[1] : 'GET';data = _args.length > 2 && _args[2] !== undefined ? _args[2] : {};showMsg = _args.length > 3 && _args[3] !== undefined ? _args[3] : true;
+var request = /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(url) {var method,data,showMsg,domain,header,_yield$uni$request,_yield$uni$request2,error,res,_args = arguments;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:method = _args.length > 1 && _args[1] !== undefined ? _args[1] : 'GET';data = _args.length > 2 && _args[2] !== undefined ? _args[2] : {};showMsg = _args.length > 3 && _args[3] !== undefined ? _args[3] : true;domain = _args.length > 4 && _args[4] !== undefined ? _args[4] : _vue.default.prototype.$unishow;
             header = {
               'content-type': 'application/x-www-form-urlencoded',
               'lang': _vue.default.prototype.$store.state.lang,
@@ -73,13 +73,13 @@ var request = /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE_
             }
             if (_vue.default.prototype.$store.state.cookie) {
               header.cookie = _vue.default.prototype.$store.state.cookie;
-            }_context.next = 8;return (
+            }_context.next = 9;return (
               uni.request({
-                url: _vue.default.prototype.$unishow + url,
+                url: domain + url,
                 method: method,
                 header: header,
                 data: data,
-                timeout: 5000 }));case 8:_yield$uni$request = _context.sent;_yield$uni$request2 = _slicedToArray(_yield$uni$request, 2);error = _yield$uni$request2[0];res = _yield$uni$request2[1];return _context.abrupt("return",
+                timeout: 5000 }));case 9:_yield$uni$request = _context.sent;_yield$uni$request2 = _slicedToArray(_yield$uni$request, 2);error = _yield$uni$request2[0];res = _yield$uni$request2[1];return _context.abrupt("return",
 
 
             new Promise(function (revolve) {
@@ -119,7 +119,7 @@ var request = /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE_
                   revolve(false);
                 }
               }
-            }));case 13:case "end":return _context.stop();}}}, _callee);}));return function request(_x) {return _ref.apply(this, arguments);};}();
+            }));case 14:case "end":return _context.stop();}}}, _callee);}));return function request(_x) {return _ref.apply(this, arguments);};}();
 
 
 _vue.default.prototype.$api.request = request;

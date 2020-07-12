@@ -157,7 +157,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator */ 4));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var navbarBackButton = function navbarBackButton() {__webpack_require__.e(/*! require.ensure | components/navbar-back-button */ "components/navbar-back-button").then((function () {return resolve(__webpack_require__(/*! @/components/navbar-back-button */ 354));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniSteps = function uniSteps() {__webpack_require__.e(/*! require.ensure | components/uni-steps/uni-steps */ "components/uni-steps/uni-steps").then((function () {return resolve(__webpack_require__(/*! @/components/uni-steps/uni-steps */ 347));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator */ 4));
 
 
 
@@ -226,6 +226,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var navbarBackButton = function navbarBackButton() {__webpack_require__.e(/*! require.ensure | components/navbar-back-button */ "components/navbar-back-button").then((function () {return resolve(__webpack_require__(/*! @/components/navbar-back-button */ 354));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniSteps = function uniSteps() {__webpack_require__.e(/*! require.ensure | components/uni-steps/uni-steps */ "components/uni-steps/uni-steps").then((function () {return resolve(__webpack_require__(/*! @/components/uni-steps/uni-steps */ 347));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 {
   components: {
@@ -236,42 +237,52 @@ __webpack_require__.r(__webpack_exports__);
     return {
       customPoints: {},
       stepsOption: [],
-      activeDay: 0,
+      activeDay: -1,
       pointsMall: [] };
 
   },
-  onLoad: function onLoad() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
-                _this.getStepsOptions());case 2:_context.next = 4;return (
-                _this.$api('customPoints'));case 4:_this.customPoints = _context.sent;_context.next = 7;return (
-                _this.getPointsMall());case 7:case "end":return _context.stop();}}}, _callee);}))();
+  computed: _objectSpread({},
+  (0, _vuex.mapState)(['member'])),
+
+  onLoad: function onLoad() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
+              _this.getScore();
+              //await this.getStepsOptions()
+              _context.next = 3;return _this.$api('customPoints');case 3:_this.customPoints = _context.sent;_context.next = 6;return (
+                _this.getPointsMall());case 6:case "end":return _context.stop();}}}, _callee);}))();
   },
   methods: {
-    getStepsOptions: function getStepsOptions() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var stepsOptions, attendance;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:
-                stepsOptions = [];_context2.next = 3;return (
+    getScore: function getScore() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var data;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
+                  _this2.$api.request('/score/index'));case 2:data = _context2.sent;
+                if (data) {
 
-                  _this2.$api('attendance'));case 3:attendance = _context2.sent;
-
-                attendance.forEach(function (item, index) {
-                  if (item.is_day) {
-                    _this2.activeDay = index;
+                  if (data.successions > 7) {
+                    _this2.activeDay = 7;
                   }
+                  data.signinscore.forEach(function (item, index) {
+                    if (data.successions - 1 == index) {
+                      _this2.activeDay = index;
+                    }
+                    if (index == data.signinscore.length - 1) {
+                      item.circle = '/static/images/integrals/goal.png';
+                      item.circleStyle = 'width: 47rpx; height: 39rpx;';
+                    }
 
-                  var arr = {
-                    title: item.day_name + '天',
-                    desc: '+' + item.points };
-
-                  if (index == attendance.length - 1) {
-                    arr.circle = '/static/images/integrals/goal.png';
-                    arr.circleStyle = 'width: 47rpx; height: 39rpx;';
-                  }
-
-                  stepsOptions.push(arr);
-                });
-
-                _this2.stepsOption = stepsOptions;case 6:case "end":return _context2.stop();}}}, _callee2);}))();
+                  });
+                  _this2.stepsOption = data.signinscore;
+                }case 4:case "end":return _context2.stop();}}}, _callee2);}))();
     },
-    getPointsMall: function getPointsMall() {var _this3 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3() {return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:_context3.next = 2;return (
-                  _this3.$api('pointsMall'));case 2:_this3.pointsMall = _context3.sent;case 3:case "end":return _context3.stop();}}}, _callee3);}))();
+    // 签到
+    signin: function signin() {var _this3 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3() {var data;return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:_context3.next = 2;return (
+                  _this3.$api.request('/score/dosign', 'POST'));case 2:data = _context3.sent;
+                if (data) {
+                  _this3.member.score = parseInt(_this3.member.score) + parseInt(_this3.scoreInfo.score);
+                  if (_this3.activeDay < 7) {
+                    _this3.activeDay++;
+                  }
+                }case 4:case "end":return _context3.stop();}}}, _callee3);}))();
+    },
+    getPointsMall: function getPointsMall() {var _this4 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee4() {return _regenerator.default.wrap(function _callee4$(_context4) {while (1) {switch (_context4.prev = _context4.next) {case 0:_context4.next = 2;return (
+                  _this4.$api('pointsMall'));case 2:_this4.pointsMall = _context4.sent;case 3:case "end":return _context4.stop();}}}, _callee4);}))();
     },
     attendance: function attendance() {
       uni.navigateTo({

@@ -10,31 +10,33 @@
 				<view class="nickname">
 					{{ member.username }}
 				</view>
-				<view class="rule">
+				<!-- <view class="rule">
 					签到规则
-				</view>
+				</view> -->
 			</view>
 		</view>
 		<view style="padding: 0 30rpx;">
 			<view class="integral-box">
 				<view class="title">当前积分</view>
-				<view class="value">{{ customPoints.totalPoints }}</view>
-				<button type="primary" class="btn" @tap="attendance">签到</button>
+				<view class="value">{{ member.score }}</view>
+				<button type="primary" class="btn" @tap="signin">签到</button>
 			</view>
 			<!-- 为了方便演示，这里设置了startDate和enddate属性 -->
-			<uni-calendar :show-month="false" start-date="2020-05-01" end-date="2020-05-31" 
+			<uni-calendar :show-month="true" startDate="2020-05-01" endDate="2020-07-31" 
 						  :selected="attendanceList"
-						  :continuous="todayAttendance.attendance_continuity_day">
+						  :continuous="scoreInfo.successions"
+						  @monthSwitch="monthSwitch"
+						  >
 			</uni-calendar>
 		</view>
+		
 		<modal custom :show="attendanceModalVisible">
 			<view class="attendance-modal">
 				<view class="modal-header">
 					<image src="/static/images/attendance/cup.png" mode="widthFix"></image>
 				</view>
 				<view class="modal-content d-flex align-items-center just-content-center flex-column font-size-sm text-color-base">
-					<view>赠送的1积分已发到您的账户中</view>
-					<view>连续签到1天可额外获得1积分</view>
+					<view>{{atendanceMsg}}</view>
 				</view>
 				<view class="d-flex align-items-center just-content-center">
 					<button type="primary" class="btn" @tap="attendanceModalVisible=false">我知道了</button>
@@ -58,23 +60,55 @@
 		},
 		data() {
 			return {
-				customPoints: {},
+				
 				attendanceModalVisible: false,
 				attendanceList: [],
-				todayAttendance: {}
+				
+				atendanceMsg: '签到成功',
+				activeDay:0, // 当前连续到那一天 
+				stepsOption: [],
+				scoreInfo:{},
+				date: '', // 当前时间
 			}
 		},
 		async onLoad() {
-			this.customPoints = await this.$api('customPoints'),
-			this.attendanceList = await this.$api('attendanceList')
-			this.todayAttendance = await this.$api('todayAttendance')
+			
+			let timestamp = new Date().getTime();
+			this.date = this.$u.timeFormat(timestamp, 'yyyy-mm-dd');
+			this.getScore(this.date);
+			
+			this.attendanceList = await this.$api('attendanceList');
+			console.log('attendanceList')
+			console.log(this.attendanceList)
+
 		},
 		computed: {
 			...mapState(['member'])
-		},
+		}, 
 		methods: {
-			attendance() {
-				this.attendanceModalVisible = true
+			async getScore(date) {
+				let data = await this.$api.request('/score/index', 'POST', {date:date});
+				if (data) {
+					this.scoreInfo = data;
+					if (data.successions > 7) {
+						this.activeDay = 7;
+					}
+					this.stepsOption = data.signinscore;
+					this.attendanceList = data.list;
+				}
+			},
+			async signin() {
+				let data = await this.$api.request('/score/dosign', 'POST');
+				if (data) {
+					this.atendanceMsg = data;
+					this.attendanceModalVisible = true
+					this.scoreInfo.successions++;
+					this.member.score = parseInt(this.member.score) + parseInt(this.scoreInfo.score);
+				}
+			},
+			monthSwitch(e) {
+				let date = e.year + '-' + e.month + '-01';
+				this.getScore(date);
 			}
 		}
 	}

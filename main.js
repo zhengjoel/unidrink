@@ -19,7 +19,7 @@ Vue.prototype.$util = util
 
 // 后端api地址
 Vue.prototype.$unishow = "http://unishop:8888/addons/unidrink";
-//Vue.prototype.$unishow = "https://shop.weivee.com/addons/unidrink";
+//Vue.prototype.$unishow = "http://shop.weivee.com/addons/unidrink";
 
 
 // 为了方便每次上传的时候忘记修改上面的参数
@@ -53,7 +53,7 @@ Vue.prototype.$platform = 'MP-TOUTIAO';
 // #endif
 
 // 同步网络请求
-const request = async (url, method = 'GET', data = {}, showMsg = true) => {
+const request = async (url, method = 'GET', data = {}, showMsg = true, domain = Vue.prototype.$unishow) => {
 	let header = {
 		'content-type': 'application/x-www-form-urlencoded',
 		'lang': Vue.prototype.$store.state.lang,
@@ -66,7 +66,7 @@ const request = async (url, method = 'GET', data = {}, showMsg = true) => {
 		header.cookie = Vue.prototype.$store.state.cookie;
 	}
 	var [error, res] = await uni.request({
-		url: Vue.prototype.$unishow + url,
+		url: domain + url,
 		method: method,
 		header: header,
 		data: data,

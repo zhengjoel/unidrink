@@ -3,6 +3,24 @@
 		<view class="flex-fill form">
 			<list-cell :hover="false">
 				<view class="form-input w-100 d-flex align-items-center">
+					<view class="label">头像</view>
+					<view class="input flex-fill">
+						<view class="form-input w-100 d-flex align-items-center"  style="position: relative;">
+							<view class="u-flex user-box">
+								<view class="u-m-r-10">
+									<u-avatar :src="member.avatar" size="140"></u-avatar>
+								</view>
+								<view class="u-flex-1" style="position: absolute;right:0;">
+									<u-button size='mini' ripple="true" @getuserinfo="getUserInfo" open-type="getUserInfo" type="success">点击更新头像</u-button>
+								</view>
+							</view>
+						</view>
+					</view>
+				</view>
+				
+			</list-cell>
+			<list-cell :hover="false">
+				<view class="form-input w-100 d-flex align-items-center">
 					<view class="label">昵称</view>
 					<view class="input flex-fill">
 						<input type="text" placeholder="请填写昵称" placeholder-class="text-color-assist font-size-base" 
@@ -11,14 +29,14 @@
 				</view>
 			</list-cell>
 			<list-cell :hover="false">
-				<view class="form-input w-100 d-flex align-items-center">
+				<view class="form-input w-100 d-flex align-items-center" style="position: relative;">
 					<view class="label">手机号码</view>
 					<view class="input flex-fill">
-						<button open-type="getPhoneNumber" @getphonenumber="getPhoneNumber">
-							<input type="text" v-model="member.mobile" disabled>
-						</button>
+						<input type="text" v-model="member.mobile" disabled>
+						<view style="position: absolute;top: -6rpx;z-index: 100;right: 0;">
+							<u-button size='mini' ripple="true" @getphonenumber="getPhoneNumber" open-type="getPhoneNumber" type="success">获取手机号</u-button>
+						</view>
 					</view>
-					
 				</view>
 			</list-cell>
 			<list-cell :hover="false">
@@ -84,8 +102,27 @@
 			console.log(this.member);
 		},
 		methods: {
+			async getUserInfo(e) {
+				if (e.hasOwnProperty('detail')) {
+					let data = await this.$api.request('/user/decryptData', 'POST',{
+						encryptedData: e.detail.encryptedData,
+						iv: e.detail.iv
+					});
+					if (data) {
+						this.member.avatar = data.avatarUrl;
+					}
+				}
+			},
 			async getPhoneNumber(e) {
-				console.log(e);
+				if (e.hasOwnProperty('detail')) {
+					let data = await this.$api.request('/user/decryptData', 'POST',{
+						encryptedData: e.detail.encryptedData,
+						iv: e.detail.iv
+					});
+					if (data) {
+						this.member.mobile = data.phoneNumber;
+					}
+				}
 			},
 			getDate(type) {
 				const date = new Date();
@@ -105,10 +142,20 @@
 			handleDateChange(e) {
 				this.member.birthday = e.target.value
 			},
-			save() {
-				const member = Object.assign(this.$store.state.member, this.member)
-				this.$store.commit('SET_MEMBER', member)
-				uni.navigateBack()
+			async save() {
+				let data = await this.$api.request('/user/edit', 'POST', {
+					username: this.member.username,
+					mobile: this.member.mobile,
+					gender: this.member.gender,
+					birthday: this.member.birthday,
+					avatar: this.member.avatar
+				});
+				if (data) {
+					const member = Object.assign(this.$store.state.member, this.member)
+					this.$store.commit('SET_MEMBER', member)
+					uni.navigateBack()
+				}
+				
 			}
 		}
 	}

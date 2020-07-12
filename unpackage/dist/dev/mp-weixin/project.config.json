@@ -53,6 +53,12 @@
 					"query": "",
 					"id": 0,
 					"pathName": "pages/balance/bill"
+				},
+				{
+					"name": "score",
+					"query": "",
+					"id": 1,
+					"pathName": "pages/integrals/integrals"
 				}
 			]
 		}

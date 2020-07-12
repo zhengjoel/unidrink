@@ -5,7 +5,7 @@
 				<input type="text" placeholder="请输入兑换码" placeholder-class="text-color-assist font-size-base" />
 				<button type="primary">兑换</button>
 			</view>
-			<view class="font-size-sm text-color-primary line-height-2">查看兑换规则</view>
+			<!-- <view class="font-size-sm text-color-primary line-height-2">查看兑换规则</view> -->
 		</view>
 		<view class="tabbar">
 			<view class="tab" :class="{active: activeTabIndex == index}" 

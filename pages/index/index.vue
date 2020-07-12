@@ -13,35 +13,20 @@
 					<image src="/static/images/index/zq.png" class="icon"></image>
 					<view class="title">自取</view>
 				</view>
-				<view class="item" @tap="takeout">
+				<view class="item" @tap="takein">
 					<image src="/static/images/index/wm.png" class="icon"></image>
 					<view class="title">外卖</view>
 				</view>
 			</view>
-			<view class="info">
-				<view class="integral_section" @tap="integrals">
-					<view class="top">
-						<text class="title">我的积分</text>
-						<text class="value">411</text>
-					</view>
-					<view class="bottom">
-						进入积分商城兑换奈雪券及周边好礼
-						<view class="iconfont iconarrow-right"></view>
-					</view>
-				</view>
-				<view class="qrcode_section" @tap="memberCode">
-					<image src="/static/images/index/qrcode.png"></image>
-					<text>会员码</text>
-				</view>
-			</view>
+			
 			<view class="navigators">
 				<view class="left">
 					<view class="grid flex-column just-content-center">
 						<view class="d-flex align-items-center">
 							<image src="/static/images/index/csc.png" class="mark-img"></image>
-							<view class="font-size-sm text-color-base">奈雪的茶商城</view>
+							<view class="font-size-sm text-color-base">喂喂商城</view>
 						</view>
-						<view class="text-color-assist" style="margin-left: 40rpx; font-size: 20rpx;">优质茶礼盒，网红零食</view>
+						<view class="text-color-assist" style="margin-left: 40rpx; font-size: 20rpx;">进入积分商城兑好物</view>
 					</view>
 					<view class="grid justify-content-end align-items-end">
 						<image src="/static/images/index/yzclh.png" class="yzclh-img" mode="heightFix"></image>
@@ -64,7 +49,24 @@
 					</view>
 				</view>
 			</view>
-			<view class="member-news">
+			
+			<view class="info">
+				<view class="integral_section" @tap="integrals">
+					<view class="top">
+						<text class="title">我的积分</text>
+						<text class="value">{{member.score}}</text>
+					</view>
+					<view class="bottom">
+						可兑换优惠券和积分商品
+						<view class="iconfont iconarrow-right"></view>
+					</view>
+				</view>
+				<view class="qrcode_section" @tap="memberCode">
+					<image src="/static/images/mine/hym.png"></image>
+					<text>会员码</text>
+				</view>
+			</view>
+			<!-- <view class="member-news">
 				<view class="header">
 					<view class="title">会员新鲜事</view>
 					<view class="iconfont iconRightbutton"></view>
@@ -75,7 +77,7 @@
 						<view class="title">"梅"你不行 | 霸气杨梅清爽回归</view>
 					</view>
 				</view>
-			</view>
+			</view> -->
 		</view>
 	</view>
 </template>
@@ -97,15 +99,6 @@
 				this.$store.commit('SET_ORDER_TYPE', 'takein')
 				uni.switchTab({
 					url: '/pages/menu/menu'
-				})
-			},
-			takeout() {
-				if(!this.isLogin) {
-					uni.navigateTo({url: '/pages/login/login'})
-					return
-				}
-				uni.navigateTo({
-					url: "/pages/address/address?is_choose=true"	
 				})
 			},
 			integrals() {
@@ -183,7 +176,7 @@ page {
 
 .entrance {
 	position: relative;
-	margin-top: -80rpx;
+	margin-top: 30rpx;
 	margin-bottom: 30rpx;
 	border-radius: 10rpx;
 	background-color: #ffffff;

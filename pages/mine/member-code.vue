@@ -41,7 +41,7 @@
 				<view class="qrcode d-flex just-content-center align-items-center"><canvas canvas-id="memberCode" style="width: 350rpx; height: 350rpx;"></canvas></view>
 				<!-- qrcode end -->
 				<view class="tips d-flex just-content-center align-items-center" style="margin-bottom: 50rpx;">
-					<view class="font-size-sm text-color-assist">仅支持余额支付，支付成功可累计积分，会员码每30秒更新</view>
+					<view class="font-size-sm text-color-assist">此二维码可累计积分(不支持付款)</view>
 				</view>
 				
 			</view>

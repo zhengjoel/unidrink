@@ -118,6 +118,6 @@
 	}
 	
 	.u-border {
-		border: 1rpx solid red;
+		border: 1rpx solid #1296db;
 	}
 </style>

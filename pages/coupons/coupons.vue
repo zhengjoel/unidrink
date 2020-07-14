@@ -65,9 +65,9 @@ export default {
 	data() {
 		return {
 			tabs: [
-				{title: '全部', value: 'all'},
-				{title: '茶饮券', value: '1'},
-				{title: '酒屋券', value: '2'}
+				{title: '我的优惠券', value: '1'},
+				{title: '未领优惠券', value: 'all'},
+				{title: '积分兑换卷', value: '2'}
 			],
 			activeTabIndex: '',
 			coupons: [],

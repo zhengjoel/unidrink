@@ -12033,7 +12033,188 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 189:
+/***/ 19:
+/*!***********************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/level-benefits.js ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [{
+  "picture": "https://images.qmai.cn/s33123/2020/01/20/f6bdc61b9356e87d03.jpg",
+  "cardName": "V1",
+  "benefitsSummaries": [{
+    "benefitsItemSummaries": [{
+      "unitType": 0,
+      "benefitsType": 0,
+      "num": 2 }],
+
+    "benefitsName": "开卡特权",
+    "benefitsType": 0 },
+
+  {
+    "benefitsItemSummaries": [{
+      "unitType": 0,
+      "benefitsType": 0,
+      "num": 1 }],
+
+    "benefitsName": "会员日特权",
+    "benefitsType": 4 }],
+
+
+  "level": 1 },
+
+{
+  "picture": "https://images.qmai.cn/s33123/2020/01/20/fd13fff0e873b8c06d.jpg",
+  "cardName": "V2",
+  "benefitsSummaries": [{
+    "benefitsItemSummaries": [{
+      "unitType": 0,
+      "benefitsType": 0,
+      "num": 2 }],
+
+    "benefitsName": "升级特权",
+    "benefitsType": 1 },
+
+  {
+    "benefitsItemSummaries": [{
+      "unitType": 0,
+      "benefitsType": 0,
+      "num": 1 }],
+
+    "benefitsName": "生日特权",
+    "benefitsType": 3 },
+
+  {
+    "benefitsItemSummaries": [{
+      "unitType": 0,
+      "benefitsType": 0,
+      "num": 1 }],
+
+    "benefitsName": "会员日特权",
+    "benefitsType": 4 }],
+
+
+  "level": 2 },
+
+{
+  "picture": "https://images.qmai.cn/s33123/2020/01/20/a292980f9803aa4504.jpg",
+  "cardName": "V3",
+  "benefitsSummaries": [{
+    "benefitsItemSummaries": [{
+      "unitType": 0,
+      "benefitsType": 0,
+      "num": 3 }],
+
+    "benefitsName": "升级特权",
+    "benefitsType": 1 },
+
+  {
+    "benefitsItemSummaries": [{
+      "unitType": 0,
+      "benefitsType": 0,
+      "num": 1 }],
+
+    "benefitsName": "生日特权",
+    "benefitsType": 3 },
+
+  {
+    "benefitsItemSummaries": [{
+      "unitType": 0,
+      "benefitsType": 0,
+      "num": 1 }],
+
+    "benefitsName": "会员日特权",
+    "benefitsType": 4 }],
+
+
+  "level": 3 },
+
+{
+  "picture": "https://images.qmai.cn/s33123/2020/01/20/6fc9b939b9912c4387.jpg",
+  "cardName": "V4",
+  "benefitsSummaries": [{
+    "benefitsItemSummaries": [{
+      "unitType": 0,
+      "benefitsType": 0,
+      "num": 3 }],
+
+    "benefitsName": "升级特权",
+    "benefitsType": 1 },
+
+  {
+    "benefitsItemSummaries": [{
+      "unitType": 0,
+      "benefitsType": 0,
+      "num": 1 }],
+
+    "benefitsName": "生日特权",
+    "benefitsType": 3 },
+
+  {
+    "benefitsItemSummaries": [{
+      "unitType": 0,
+      "benefitsType": 0,
+      "num": 1 }],
+
+    "benefitsName": "会员日特权",
+    "benefitsType": 4 }],
+
+
+  "level": 4 },
+
+{
+  "picture": "https://images.qmai.cn/s33123/2020/01/20/460bdca3e1e7f87def.jpg",
+  "cardName": "V5",
+  "benefitsSummaries": [{
+    "benefitsItemSummaries": [{
+      "unitType": 0,
+      "benefitsType": 0,
+      "num": 6 }],
+
+    "benefitsName": "升级特权",
+    "benefitsType": 1 },
+
+  {
+    "benefitsItemSummaries": [{
+      "unitType": 0,
+      "benefitsType": 0,
+      "num": 1 }],
+
+    "benefitsName": "生日特权",
+    "benefitsType": 3 }],
+
+
+  "level": 5 },
+
+{
+  "picture": "https://images.qmai.cn/s33123/2020/01/20/508ea53092bcf504f3.jpg",
+  "cardName": "V6",
+  "benefitsSummaries": [{
+    "benefitsItemSummaries": [{
+      "unitType": 0,
+      "benefitsType": 0,
+      "num": 6 }],
+
+    "benefitsName": "升级特权",
+    "benefitsType": 1 },
+
+  {
+    "benefitsItemSummaries": [{
+      "unitType": 0,
+      "benefitsType": 0,
+      "num": 1 }],
+
+    "benefitsName": "生日特权",
+    "benefitsType": 3 }],
+
+
+  "level": 6 }];exports.default = _default;
+
+/***/ }),
+
+/***/ 197:
 /*!*******************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/common/uqrcode.js ***!
   \*******************************************************************************/
@@ -13422,187 +13603,6 @@ var uQRCode = {};
 
 uQRCode;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 19:
-/*!***********************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/level-benefits.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [{
-  "picture": "https://images.qmai.cn/s33123/2020/01/20/f6bdc61b9356e87d03.jpg",
-  "cardName": "V1",
-  "benefitsSummaries": [{
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 2 }],
-
-    "benefitsName": "开卡特权",
-    "benefitsType": 0 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "会员日特权",
-    "benefitsType": 4 }],
-
-
-  "level": 1 },
-
-{
-  "picture": "https://images.qmai.cn/s33123/2020/01/20/fd13fff0e873b8c06d.jpg",
-  "cardName": "V2",
-  "benefitsSummaries": [{
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 2 }],
-
-    "benefitsName": "升级特权",
-    "benefitsType": 1 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "生日特权",
-    "benefitsType": 3 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "会员日特权",
-    "benefitsType": 4 }],
-
-
-  "level": 2 },
-
-{
-  "picture": "https://images.qmai.cn/s33123/2020/01/20/a292980f9803aa4504.jpg",
-  "cardName": "V3",
-  "benefitsSummaries": [{
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 3 }],
-
-    "benefitsName": "升级特权",
-    "benefitsType": 1 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "生日特权",
-    "benefitsType": 3 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "会员日特权",
-    "benefitsType": 4 }],
-
-
-  "level": 3 },
-
-{
-  "picture": "https://images.qmai.cn/s33123/2020/01/20/6fc9b939b9912c4387.jpg",
-  "cardName": "V4",
-  "benefitsSummaries": [{
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 3 }],
-
-    "benefitsName": "升级特权",
-    "benefitsType": 1 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "生日特权",
-    "benefitsType": 3 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "会员日特权",
-    "benefitsType": 4 }],
-
-
-  "level": 4 },
-
-{
-  "picture": "https://images.qmai.cn/s33123/2020/01/20/460bdca3e1e7f87def.jpg",
-  "cardName": "V5",
-  "benefitsSummaries": [{
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 6 }],
-
-    "benefitsName": "升级特权",
-    "benefitsType": 1 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "生日特权",
-    "benefitsType": 3 }],
-
-
-  "level": 5 },
-
-{
-  "picture": "https://images.qmai.cn/s33123/2020/01/20/508ea53092bcf504f3.jpg",
-  "cardName": "V6",
-  "benefitsSummaries": [{
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 6 }],
-
-    "benefitsName": "升级特权",
-    "benefitsType": 1 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "生日特权",
-    "benefitsType": 3 }],
-
-
-  "level": 6 }];exports.default = _default;
 
 /***/ }),
 
@@ -19808,7 +19808,64 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 214:
+/***/ 22:
+/*!******************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/addresses.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [{
+  "id": 1,
+  "name": "隔壁老王",
+  "mobile": "18666600000",
+  "province_name": "广东省",
+  "area": 440306,
+  "city": 440300,
+  "sex": 0,
+  "district": {
+    "districts": "广东省深圳市南山区",
+    "area": "宝安区",
+    "city": "深圳市",
+    "province": "广东省" },
+
+  "address": "有一间公寓八栋",
+  "inner": false,
+  "lat": "",
+  "door_number": "AB1234",
+  "is_default": 0,
+  "province": 440000,
+  "area_name": "南山区",
+  "city_name": "深圳市",
+  "poiname": "" },
+{
+  "id": 2,
+  "name": "黄女士",
+  "mobile": "18666610000",
+  "province_name": "广东省",
+  "area": 440306,
+  "city": 440300,
+  "sex": 1,
+  "district": {
+    "districts": "广东省深圳市南山区",
+    "area": "宝安区",
+    "city": "深圳市",
+    "province": "广东省" },
+
+  "address": "有两间公寓二栋",
+  "inner": false,
+  "lat": "",
+  "door_number": "AB5210",
+  "is_default": 0,
+  "province": 440000,
+  "area_name": "南山区",
+  "city_name": "深圳市",
+  "poiname": "" }];exports.default = _default;
+
+/***/ }),
+
+/***/ 222:
 /*!********************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/points-flow.js ***!
   \********************************************************************************/
@@ -19966,63 +20023,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   "reason": "消费增加",
   "createdAt": "2020-04-10 20:40:44",
   "id": 15 }];exports.default = _default;
-
-/***/ }),
-
-/***/ 22:
-/*!******************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/addresses.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [{
-  "id": 1,
-  "name": "隔壁老王",
-  "mobile": "18666600000",
-  "province_name": "广东省",
-  "area": 440306,
-  "city": 440300,
-  "sex": 0,
-  "district": {
-    "districts": "广东省深圳市南山区",
-    "area": "宝安区",
-    "city": "深圳市",
-    "province": "广东省" },
-
-  "address": "有一间公寓八栋",
-  "inner": false,
-  "lat": "",
-  "door_number": "AB1234",
-  "is_default": 0,
-  "province": 440000,
-  "area_name": "南山区",
-  "city_name": "深圳市",
-  "poiname": "" },
-{
-  "id": 2,
-  "name": "黄女士",
-  "mobile": "18666610000",
-  "province_name": "广东省",
-  "area": 440306,
-  "city": 440300,
-  "sex": 1,
-  "district": {
-    "districts": "广东省深圳市南山区",
-    "area": "宝安区",
-    "city": "深圳市",
-    "province": "广东省" },
-
-  "address": "有两间公寓二栋",
-  "inner": false,
-  "lat": "",
-  "door_number": "AB5210",
-  "is_default": 0,
-  "province": 440000,
-  "area_name": "南山区",
-  "city_name": "深圳市",
-  "poiname": "" }];exports.default = _default;
 
 /***/ }),
 
@@ -22023,7 +22023,100 @@ module.exports = {
 
 /***/ }),
 
-/***/ 306:
+/***/ 31:
+/*!****************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/store/index.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator */ 4));var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ 11));
+var _api = _interopRequireDefault(__webpack_require__(/*! @/api */ 15));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
+
+_vue.default.use(_vuex.default);
+
+var store = new _vuex.default.Store({
+  state: {
+    store: {},
+    cart: [],
+    orderType: 'takein',
+    address: {},
+    addresses: {},
+    member: {
+      avatar: "http://cdn.shop.weivee.com/shop/20200408/6162b21922f336ae9b320bc06582ab7f.png",
+      birthday: null,
+      couponNum: 0,
+      currentValue: "1.00",
+      gender: 0,
+      id: 2,
+      level: 1,
+      mobile: "15975073045",
+      money: "4789.20",
+      openid: "oEY7Y5XYukLQySoKA7sPGWSDtktA",
+      score: 0,
+      token: "87cecec2-6071-431d-afc1-825650711e5a",
+      username: "游客" },
+
+    order: {},
+    lang: 'zh-cn',
+    cookieKey: 'PHPSESSID=e4dk4o2utr3c0n95tp42p745ai',
+    location: {} },
+
+  getters: {
+    isLogin: function isLogin(state) {return Object.keys(state.member).length > 0;} //是否登录
+  },
+  mutations: {
+    SET_ORDER_TYPE: function SET_ORDER_TYPE(state, type) {
+      state.orderType = type;
+    },
+    SET_MEMBER: function SET_MEMBER(state, member) {
+      state.member = member;
+    },
+    SET_ADDRESS: function SET_ADDRESS(state, address) {
+      state.address = address;
+    },
+    SET_ADDRESSES: function SET_ADDRESSES(state, addresses) {
+      state.addresses = addresses;
+    },
+    SET_STORE: function SET_STORE(state, store) {
+      state.store = store;
+    },
+    SET_CART: function SET_CART(state, cart) {
+      state.cart = cart;
+    },
+    REMOVE_CART: function REMOVE_CART(state) {
+      state.cart = [];
+    },
+    SET_ORDER: function SET_ORDER(state, order) {
+      state.order = order;
+    },
+    setCookie: function setCookie(state, provider) {
+      state.cookie = provider;
+      uni.setStorage({
+        key: 'cookieKey',
+        data: provider });
+
+    },
+    SET_LOCATION: function SET_LOCATION(state, location) {
+      state.location = location;
+    } },
+
+  actions: {
+    getStore: function getStore(_ref) {return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var commit, store;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:commit = _ref.commit;_context.next = 3;return (
+                  (0, _api.default)('store'));case 3:store = _context.sent;
+                commit('SET_STORE', store);case 5:case "end":return _context.stop();}}}, _callee);}))();
+    } } });var _default =
+
+
+
+store;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 314:
 /*!*********************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/util/province.js ***!
   \*********************************************************************************************************/
@@ -22173,7 +22266,7 @@ provinceData;exports.default = _default;
 
 /***/ }),
 
-/***/ 307:
+/***/ 315:
 /*!*****************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/util/city.js ***!
   \*****************************************************************************************************/
@@ -23687,7 +23780,7 @@ cityData;exports.default = _default;
 
 /***/ }),
 
-/***/ 308:
+/***/ 316:
 /*!*****************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/util/area.js ***!
   \*****************************************************************************************************/
@@ -36240,99 +36333,6 @@ areaData;exports.default = _default;
 
 /***/ }),
 
-/***/ 31:
-/*!****************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/store/index.js ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator */ 4));var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ 11));
-var _api = _interopRequireDefault(__webpack_require__(/*! @/api */ 15));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
-
-_vue.default.use(_vuex.default);
-
-var store = new _vuex.default.Store({
-  state: {
-    store: {},
-    cart: [],
-    orderType: 'takein',
-    address: {},
-    addresses: {},
-    member: {
-      avatar: "http://cdn.shop.weivee.com/shop/20200408/6162b21922f336ae9b320bc06582ab7f.png",
-      birthday: null,
-      couponNum: 0,
-      currentValue: "1.00",
-      gender: 0,
-      id: 2,
-      level: 1,
-      mobile: "15975073045",
-      money: "4789.20",
-      openid: "oEY7Y5XYukLQySoKA7sPGWSDtktA",
-      score: 0,
-      token: "87cecec2-6071-431d-afc1-825650711e5a",
-      username: "游客" },
-
-    order: {},
-    lang: 'zh-cn',
-    cookieKey: 'PHPSESSID=e4dk4o2utr3c0n95tp42p745ai',
-    location: {} },
-
-  getters: {
-    isLogin: function isLogin(state) {return Object.keys(state.member).length > 0;} //是否登录
-  },
-  mutations: {
-    SET_ORDER_TYPE: function SET_ORDER_TYPE(state, type) {
-      state.orderType = type;
-    },
-    SET_MEMBER: function SET_MEMBER(state, member) {
-      state.member = member;
-    },
-    SET_ADDRESS: function SET_ADDRESS(state, address) {
-      state.address = address;
-    },
-    SET_ADDRESSES: function SET_ADDRESSES(state, addresses) {
-      state.addresses = addresses;
-    },
-    SET_STORE: function SET_STORE(state, store) {
-      state.store = store;
-    },
-    SET_CART: function SET_CART(state, cart) {
-      state.cart = cart;
-    },
-    REMOVE_CART: function REMOVE_CART(state) {
-      state.cart = [];
-    },
-    SET_ORDER: function SET_ORDER(state, order) {
-      state.order = order;
-    },
-    setCookie: function setCookie(state, provider) {
-      state.cookie = provider;
-      uni.setStorage({
-        key: 'cookieKey',
-        data: provider });
-
-    },
-    SET_LOCATION: function SET_LOCATION(state, location) {
-      state.location = location;
-    } },
-
-  actions: {
-    getStore: function getStore(_ref) {return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var commit, store;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:commit = _ref.commit;_context.next = 3;return (
-                  (0, _api.default)('store'));case 3:store = _context.sent;
-                commit('SET_STORE', store);case 5:case "end":return _context.stop();}}}, _callee);}))();
-    } } });var _default =
-
-
-
-store;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
 /***/ 32:
 /*!********************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/index.js ***!
@@ -36521,113 +36521,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ 342:
-/*!*******************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/uni-swipe-action-item/mpwxs.js ***!
-  \*******************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  data: function data() {
-    return {
-      position: [],
-      button: [] };
-
-  },
-  computed: {
-    pos: function pos() {
-      return JSON.stringify(this.position);
-    },
-    btn: function btn() {
-      return JSON.stringify(this.button);
-    } },
-
-  watch: {
-    show: function show(newVal) {
-      if (this.autoClose) return;
-      var valueObj = this.position[0];
-      if (!valueObj) {
-        this.init();
-        return;
-      }
-      valueObj.show = newVal;
-      this.$set(this.position, 0, valueObj);
-    } },
-
-  created: function created() {
-    if (this.swipeaction.children !== undefined) {
-      this.swipeaction.children.push(this);
-    }
-  },
-  mounted: function mounted() {
-    this.init();
-
-  },
-  beforeDestroy: function beforeDestroy() {var _this = this;
-    this.swipeaction.children.forEach(function (item, index) {
-      if (item === _this) {
-        _this.swipeaction.children.splice(index, 1);
-      }
-    });
-  },
-  methods: {
-    init: function init() {var _this2 = this;
-
-      setTimeout(function () {
-        _this2.getSize();
-        _this2.getButtonSize();
-      }, 50);
-    },
-    closeSwipe: function closeSwipe(e) {
-      if (!this.autoClose) return;
-      this.swipeaction.closeOther(this);
-    },
-
-    change: function change(e) {
-      this.$emit('change', e.open);
-      var valueObj = this.position[0];
-      if (valueObj.show !== e.open) {
-        valueObj.show = e.open;
-        this.$set(this.position, 0, valueObj);
-      }
-    },
-    onClick: function onClick(index, item) {
-      this.$emit('click', {
-        content: item,
-        index: index });
-
-    },
-    appTouchStart: function appTouchStart() {},
-    appTouchEnd: function appTouchEnd() {},
-    getSize: function getSize() {var _this3 = this;
-      var views = uni.createSelectorQuery().in(this);
-      views.
-      selectAll('.selector-query-hock').
-      boundingClientRect(function (data) {
-        if (_this3.autoClose) {
-          data[0].show = false;
-        } else {
-          data[0].show = _this3.show;
-        }
-        _this3.position = data;
-      }).
-      exec();
-    },
-    getButtonSize: function getButtonSize() {var _this4 = this;
-      var views = uni.createSelectorQuery().in(this);
-      views.
-      selectAll('.button-hock').
-      boundingClientRect(function (data) {
-        _this4.button = data;
-      }).
-      exec();
-    } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
 /***/ 35:
 /*!*********************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/request/index.js ***!
@@ -36805,6 +36698,113 @@ new Request();exports.default = _default;
 
 /***/ }),
 
+/***/ 350:
+/*!*******************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/uni-swipe-action-item/mpwxs.js ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  data: function data() {
+    return {
+      position: [],
+      button: [] };
+
+  },
+  computed: {
+    pos: function pos() {
+      return JSON.stringify(this.position);
+    },
+    btn: function btn() {
+      return JSON.stringify(this.button);
+    } },
+
+  watch: {
+    show: function show(newVal) {
+      if (this.autoClose) return;
+      var valueObj = this.position[0];
+      if (!valueObj) {
+        this.init();
+        return;
+      }
+      valueObj.show = newVal;
+      this.$set(this.position, 0, valueObj);
+    } },
+
+  created: function created() {
+    if (this.swipeaction.children !== undefined) {
+      this.swipeaction.children.push(this);
+    }
+  },
+  mounted: function mounted() {
+    this.init();
+
+  },
+  beforeDestroy: function beforeDestroy() {var _this = this;
+    this.swipeaction.children.forEach(function (item, index) {
+      if (item === _this) {
+        _this.swipeaction.children.splice(index, 1);
+      }
+    });
+  },
+  methods: {
+    init: function init() {var _this2 = this;
+
+      setTimeout(function () {
+        _this2.getSize();
+        _this2.getButtonSize();
+      }, 50);
+    },
+    closeSwipe: function closeSwipe(e) {
+      if (!this.autoClose) return;
+      this.swipeaction.closeOther(this);
+    },
+
+    change: function change(e) {
+      this.$emit('change', e.open);
+      var valueObj = this.position[0];
+      if (valueObj.show !== e.open) {
+        valueObj.show = e.open;
+        this.$set(this.position, 0, valueObj);
+      }
+    },
+    onClick: function onClick(index, item) {
+      this.$emit('click', {
+        content: item,
+        index: index });
+
+    },
+    appTouchStart: function appTouchStart() {},
+    appTouchEnd: function appTouchEnd() {},
+    getSize: function getSize() {var _this3 = this;
+      var views = uni.createSelectorQuery().in(this);
+      views.
+      selectAll('.selector-query-hock').
+      boundingClientRect(function (data) {
+        if (_this3.autoClose) {
+          data[0].show = false;
+        } else {
+          data[0].show = _this3.show;
+        }
+        _this3.position = data;
+      }).
+      exec();
+    },
+    getButtonSize: function getButtonSize() {var _this4 = this;
+      var views = uni.createSelectorQuery().in(this);
+      views.
+      selectAll('.button-hock').
+      boundingClientRect(function (data) {
+        _this4.button = data;
+      }).
+      exec();
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
 /***/ 36:
 /*!**************************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/deepMerge.js ***!
@@ -36846,7 +36846,47 @@ deepMerge;exports.default = _default;
 
 /***/ }),
 
-/***/ 364:
+/***/ 37:
+/*!**************************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/deepClone.js ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 对象深度克隆
+function deepClone() {var object = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var o, i, j, k;
+  if (typeof object !== "object" || object === null) return object;
+  if (object instanceof Array) {
+    o = [];
+    i = 0;
+    j = object.length;
+    for (; i < j; i++) {
+      if (typeof object[i] === "object" && object[i] != null) {
+        o[i] = deepClone(object[i]);
+      } else {
+        o[i] = object[i];
+      }
+    }
+  } else {
+    o = {};
+    for (i in object) {
+      if (typeof object[i] === "object" && object[i] !== null) {
+        o[i] = deepClone(object[i]);
+      } else {
+        o[i] = object[i];
+      }
+    }
+  }
+  return o;
+}var _default =
+
+deepClone;exports.default = _default;
+
+/***/ }),
+
+/***/ 372:
 /*!***************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/pages/attendance/uni-calendar/util.js ***!
   \***************************************************************************************************/
@@ -36854,7 +36894,7 @@ deepMerge;exports.default = _default;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 365));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 373));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
 
 Calendar = /*#__PURE__*/function () {
   function Calendar()
@@ -37184,7 +37224,7 @@ Calendar;exports.default = _default;
 
 /***/ }),
 
-/***/ 365:
+/***/ 373:
 /*!*******************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/pages/attendance/uni-calendar/calendar.js ***!
   \*******************************************************************************************************/
@@ -37741,47 +37781,192 @@ calendar;exports.default = _default;
 
 /***/ }),
 
-/***/ 37:
-/*!**************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/deepClone.js ***!
-  \**************************************************************************************************************/
+/***/ 38:
+/*!*********************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/test.js ***!
+  \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 对象深度克隆
-function deepClone() {var object = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  var o, i, j, k;
-  if (typeof object !== "object" || object === null) return object;
-  if (object instanceof Array) {
-    o = [];
-    i = 0;
-    j = object.length;
-    for (; i < j; i++) {
-      if (typeof object[i] === "object" && object[i] != null) {
-        o[i] = deepClone(object[i]);
-      } else {
-        o[i] = object[i];
-      }
-    }
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
+                                                                                                      * 验证电子邮箱格式
+                                                                                                      */
+function email(value) {
+  return /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/.test(value);
+}
+
+/**
+   * 验证手机格式
+   */
+function mobile(value) {
+  return /^1[23456789]\d{9}$/.test(value);
+}
+
+/**
+   * 验证URL格式
+   */
+function url(value) {
+  return /^((https|http|ftp|rtsp|mms):\/\/)(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?(([0-9]{1,3}.){3}[0-9]{1,3}|([0-9a-z_!~*'()-]+.)*([0-9a-z][0-9a-z-]{0,61})?[0-9a-z].[a-z]{2,6})(:[0-9]{1,4})?((\/?)|(\/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+\/?)$/.
+  test(value);
+}
+
+/**
+   * 验证日期格式
+   */
+function date(value) {
+  return !/Invalid|NaN/.test(new Date(value).toString());
+}
+
+/**
+   * 验证ISO类型的日期格式
+   */
+function dateISO(value) {
+  return /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/.test(value);
+}
+
+/**
+   * 验证十进制数字
+   */
+function number(value) {
+  return /^(?:-?\d+|-?\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$/.test(value);
+}
+
+/**
+   * 验证整数
+   */
+function digits(value) {
+  return /^\d+$/.test(value);
+}
+
+/**
+   * 验证身份证号码
+   */
+function idCard(value) {
+  return /^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/.test(
+  value);
+}
+
+/**
+   * 是否车牌号
+   */
+function carNo(value) {
+  // 新能源车牌
+  var xreg = /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}(([0-9]{5}[DF]$)|([DF][A-HJ-NP-Z0-9][0-9]{4}$))/;
+  // 旧车牌
+  var creg = /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳]{1}$/;
+  if (value.length === 7) {
+    return creg.test(value);
+  } else if (value.length === 8) {
+    return xreg.test(value);
   } else {
-    o = {};
-    for (i in object) {
-      if (typeof object[i] === "object" && object[i] !== null) {
-        o[i] = deepClone(object[i]);
-      } else {
-        o[i] = object[i];
-      }
-    }
+    return false;
   }
-  return o;
+}
+
+/**
+   * 金额,只允许2位小数
+   */
+function amount(value) {
+  //金额，只允许保留两位小数
+  return /^[1-9]\d*(,\d{3})*(\.\d{1,2})?$|^0.\d{1,2}$/.test(value);
+}
+
+/**
+   * 中文
+   */
+function chinese(value) {
+  var reg = /^[\u4e00-\u9fa5]+$/gi;
+  return reg.test(value);
+}
+
+/**
+   * 只能输入字母
+   */
+function letter(value) {
+  return /^[a-zA-Z]*$/.test(value);
+}
+
+/**
+   * 只能是字母或者数字
+   */
+function enOrNum(value) {
+  //英文或者数字
+  var reg = /^[0-9a-zA-Z]*$/g;
+  return reg.test(value);
+}
+
+/**
+   * 验证是否包含某个值
+   */
+function contains(value, param) {
+  return value.indexOf(param) >= 0;
+}
+
+/**
+   * 验证一个值范围[min, max]
+   */
+function range(value, param) {
+  return value >= param[0] && value <= param[1];
+}
+
+/**
+   * 验证一个长度范围[min, max]
+   */
+function rangeLength(value, param) {
+  return value.length >= param[0] && value.length <= param[1];
+}
+
+/**
+   * 判断是否为空
+   */
+function empty(value) {
+  switch (typeof value) {
+    case 'undefined':
+      return true;
+    case 'string':
+      if (value.replace(/(^[ \t\n\r]*)|([ \t\n\r]*$)/g, '').length == 0) return true;
+      break;
+    case 'boolean':
+      if (!value) return true;
+      break;
+    case 'number':
+      if (0 === value || isNaN(value)) return true;
+      break;
+    case 'object':
+      if (null === value || value.length === 0) return true;
+      for (var i in value) {
+        return false;
+      }
+      return true;}
+
+  return false;
 }var _default =
 
-deepClone;exports.default = _default;
+
+{
+  email: email,
+  mobile: mobile,
+  url: url,
+  date: date,
+  dateISO: dateISO,
+  number: number,
+  digits: digits,
+  idCard: idCard,
+  carNo: carNo,
+  amount: amount,
+  chinese: chinese,
+  letter: letter,
+  enOrNum: enOrNum,
+  contains: contains,
+  range: range,
+  rangeLength: rangeLength,
+  empty: empty,
+  isEmpty: empty };exports.default = _default;
 
 /***/ }),
 
-/***/ 373:
+/***/ 381:
 /*!********************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/jyf-parser/libs/MpHtmlParser.js ***!
   \********************************************************************************************************/
@@ -37795,9 +37980,9 @@ function _classCallCheck(instance, Constructor) {if (!(instance instanceof Const
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           author：JinYufeng
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           update：2020/05/08
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */
-var cfg = __webpack_require__(/*! ./config.js */ 374),
+var cfg = __webpack_require__(/*! ./config.js */ 382),
 blankChar = cfg.blankChar,
-CssHandler = __webpack_require__(/*! ./CssHandler.js */ 375),
+CssHandler = __webpack_require__(/*! ./CssHandler.js */ 383),
 screenWidth = wx.getSystemInfoSync().screenWidth;
 var emoji; // emoji 补丁包 https://jin-yufeng.github.io/Parser/#/instructions?id=emoji
 var MpHtmlParser = /*#__PURE__*/function () {"use strict";
@@ -38308,7 +38493,7 @@ module.exports = MpHtmlParser;
 
 /***/ }),
 
-/***/ 374:
+/***/ 382:
 /*!**************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/jyf-parser/libs/config.js ***!
   \**************************************************************************************************/
@@ -38414,7 +38599,7 @@ function makeMap(str) {
 
 /***/ }),
 
-/***/ 375:
+/***/ 383:
 /*!******************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/jyf-parser/libs/CssHandler.js ***!
   \******************************************************************************************************/
@@ -38428,7 +38613,7 @@ function _classCallCheck(instance, Constructor) {if (!(instance instanceof Const
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           author：JinYufeng
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           update：2020/03/15
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */
-var cfg = __webpack_require__(/*! ./config.js */ 374);var
+var cfg = __webpack_require__(/*! ./config.js */ 382);var
 CssHandler = /*#__PURE__*/function () {"use strict";
   function CssHandler(tagStyle) {var _this = this;_classCallCheck(this, CssHandler);_defineProperty(this, "getStyle",
 
@@ -38522,191 +38707,6 @@ CssParser = /*#__PURE__*/function () {"use strict";
       this.list = [];
       this.state = this.Space;
     } }]);return CssParser;}();
-
-/***/ }),
-
-/***/ 38:
-/*!*********************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/test.js ***!
-  \*********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
-                                                                                                      * 验证电子邮箱格式
-                                                                                                      */
-function email(value) {
-  return /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/.test(value);
-}
-
-/**
-   * 验证手机格式
-   */
-function mobile(value) {
-  return /^1[23456789]\d{9}$/.test(value);
-}
-
-/**
-   * 验证URL格式
-   */
-function url(value) {
-  return /^((https|http|ftp|rtsp|mms):\/\/)(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?(([0-9]{1,3}.){3}[0-9]{1,3}|([0-9a-z_!~*'()-]+.)*([0-9a-z][0-9a-z-]{0,61})?[0-9a-z].[a-z]{2,6})(:[0-9]{1,4})?((\/?)|(\/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+\/?)$/.
-  test(value);
-}
-
-/**
-   * 验证日期格式
-   */
-function date(value) {
-  return !/Invalid|NaN/.test(new Date(value).toString());
-}
-
-/**
-   * 验证ISO类型的日期格式
-   */
-function dateISO(value) {
-  return /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/.test(value);
-}
-
-/**
-   * 验证十进制数字
-   */
-function number(value) {
-  return /^(?:-?\d+|-?\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$/.test(value);
-}
-
-/**
-   * 验证整数
-   */
-function digits(value) {
-  return /^\d+$/.test(value);
-}
-
-/**
-   * 验证身份证号码
-   */
-function idCard(value) {
-  return /^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/.test(
-  value);
-}
-
-/**
-   * 是否车牌号
-   */
-function carNo(value) {
-  // 新能源车牌
-  var xreg = /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}(([0-9]{5}[DF]$)|([DF][A-HJ-NP-Z0-9][0-9]{4}$))/;
-  // 旧车牌
-  var creg = /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳]{1}$/;
-  if (value.length === 7) {
-    return creg.test(value);
-  } else if (value.length === 8) {
-    return xreg.test(value);
-  } else {
-    return false;
-  }
-}
-
-/**
-   * 金额,只允许2位小数
-   */
-function amount(value) {
-  //金额，只允许保留两位小数
-  return /^[1-9]\d*(,\d{3})*(\.\d{1,2})?$|^0.\d{1,2}$/.test(value);
-}
-
-/**
-   * 中文
-   */
-function chinese(value) {
-  var reg = /^[\u4e00-\u9fa5]+$/gi;
-  return reg.test(value);
-}
-
-/**
-   * 只能输入字母
-   */
-function letter(value) {
-  return /^[a-zA-Z]*$/.test(value);
-}
-
-/**
-   * 只能是字母或者数字
-   */
-function enOrNum(value) {
-  //英文或者数字
-  var reg = /^[0-9a-zA-Z]*$/g;
-  return reg.test(value);
-}
-
-/**
-   * 验证是否包含某个值
-   */
-function contains(value, param) {
-  return value.indexOf(param) >= 0;
-}
-
-/**
-   * 验证一个值范围[min, max]
-   */
-function range(value, param) {
-  return value >= param[0] && value <= param[1];
-}
-
-/**
-   * 验证一个长度范围[min, max]
-   */
-function rangeLength(value, param) {
-  return value.length >= param[0] && value.length <= param[1];
-}
-
-/**
-   * 判断是否为空
-   */
-function empty(value) {
-  switch (typeof value) {
-    case 'undefined':
-      return true;
-    case 'string':
-      if (value.replace(/(^[ \t\n\r]*)|([ \t\n\r]*$)/g, '').length == 0) return true;
-      break;
-    case 'boolean':
-      if (!value) return true;
-      break;
-    case 'number':
-      if (0 === value || isNaN(value)) return true;
-      break;
-    case 'object':
-      if (null === value || value.length === 0) return true;
-      for (var i in value) {
-        return false;
-      }
-      return true;}
-
-  return false;
-}var _default =
-
-
-{
-  email: email,
-  mobile: mobile,
-  url: url,
-  date: date,
-  dateISO: dateISO,
-  number: number,
-  digits: digits,
-  idCard: idCard,
-  carNo: carNo,
-  amount: amount,
-  chinese: chinese,
-  letter: letter,
-  enOrNum: enOrNum,
-  contains: contains,
-  range: range,
-  rangeLength: rangeLength,
-  empty: empty,
-  isEmpty: empty };exports.default = _default;
 
 /***/ }),
 
@@ -39094,7 +39094,59 @@ function rgbToHex(rgb) {
 
 /***/ }),
 
-/***/ 432:
+/***/ 44:
+/*!*********************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/guid.js ***!
+  \*********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
+                                                                                                      * 本算法来源于简书开源代码，详见：https://www.jianshu.com/p/fdbf293d0a85
+                                                                                                      * 全局唯一标识符（uuid，Globally Unique Identifier）,也称作 uuid(Universally Unique IDentifier) 
+                                                                                                      * 一般用于多个组件之间,给它一个唯一的标识符,或者v-for循环的时候,如果使用数组的index可能会导致更新列表出现问题
+                                                                                                      * 最可能的情况是左滑删除item或者对某条信息流"不喜欢"并去掉它的时候,会导致组件内的数据可能出现错乱
+                                                                                                      * v-for的时候,推荐使用后端返回的id而不是循环的index
+                                                                                                      * @param {Number} len uuid的长度
+                                                                                                      * @param {Boolean} firstU 将返回的首字母置为"u"
+                                                                                                      * @param {Nubmer} radix 生成uuid的基数(意味着返回的字符串都是这个基数),2-二进制,8-八进制,10-十进制,16-十六进制
+                                                                                                      */
+function guid() {var len = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 32;var firstU = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;var radix = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+  var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
+  var uuid = [];
+  radix = radix || chars.length;
+
+  if (len) {
+    // 如果指定uuid长度,只是取随机的字符,0|x为位运算,能去掉x的小数位,返回整数位
+    for (var i = 0; i < len; i++) {uuid[i] = chars[0 | Math.random() * radix];}
+  } else {
+    var r;
+    // rfc4122标准要求返回的uuid中,某些位为固定的字符
+    uuid[8] = uuid[13] = uuid[18] = uuid[23] = '-';
+    uuid[14] = '4';
+
+    for (var _i = 0; _i < 36; _i++) {
+      if (!uuid[_i]) {
+        r = 0 | Math.random() * 16;
+        uuid[_i] = chars[_i == 19 ? r & 0x3 | 0x8 : r];
+      }
+    }
+  }
+  // 移除第一个字符,并用u替代,因为第一个字符为数值时,该guuid不能用作id或者class
+  if (firstU) {
+    uuid.shift();
+    return 'u' + uuid.join('');
+  } else {
+    return uuid.join('');
+  }
+}var _default =
+
+guid;exports.default = _default;
+
+/***/ }),
+
+/***/ 440:
 /*!*******************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/uni-icons/icons.js ***!
   \*******************************************************************************************/
@@ -39197,58 +39249,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   'closefill': "\uE589",
   'sound': "\uE590",
   'scan': "\uE612" };exports.default = _default;
-
-/***/ }),
-
-/***/ 44:
-/*!*********************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/guid.js ***!
-  \*********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
-                                                                                                      * 本算法来源于简书开源代码，详见：https://www.jianshu.com/p/fdbf293d0a85
-                                                                                                      * 全局唯一标识符（uuid，Globally Unique Identifier）,也称作 uuid(Universally Unique IDentifier) 
-                                                                                                      * 一般用于多个组件之间,给它一个唯一的标识符,或者v-for循环的时候,如果使用数组的index可能会导致更新列表出现问题
-                                                                                                      * 最可能的情况是左滑删除item或者对某条信息流"不喜欢"并去掉它的时候,会导致组件内的数据可能出现错乱
-                                                                                                      * v-for的时候,推荐使用后端返回的id而不是循环的index
-                                                                                                      * @param {Number} len uuid的长度
-                                                                                                      * @param {Boolean} firstU 将返回的首字母置为"u"
-                                                                                                      * @param {Nubmer} radix 生成uuid的基数(意味着返回的字符串都是这个基数),2-二进制,8-八进制,10-十进制,16-十六进制
-                                                                                                      */
-function guid() {var len = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 32;var firstU = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;var radix = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
-  var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
-  var uuid = [];
-  radix = radix || chars.length;
-
-  if (len) {
-    // 如果指定uuid长度,只是取随机的字符,0|x为位运算,能去掉x的小数位,返回整数位
-    for (var i = 0; i < len; i++) {uuid[i] = chars[0 | Math.random() * radix];}
-  } else {
-    var r;
-    // rfc4122标准要求返回的uuid中,某些位为固定的字符
-    uuid[8] = uuid[13] = uuid[18] = uuid[23] = '-';
-    uuid[14] = '4';
-
-    for (var _i = 0; _i < 36; _i++) {
-      if (!uuid[_i]) {
-        r = 0 | Math.random() * 16;
-        uuid[_i] = chars[_i == 19 ? r & 0x3 | 0x8 : r];
-      }
-    }
-  }
-  // 移除第一个字符,并用u替代,因为第一个字符为数值时,该guuid不能用作id或者class
-  if (firstU) {
-    uuid.shift();
-    return 'u' + uuid.join('');
-  } else {
-    return uuid.join('');
-  }
-}var _default =
-
-guid;exports.default = _default;
 
 /***/ }),
 

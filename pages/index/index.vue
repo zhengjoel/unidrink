@@ -21,7 +21,7 @@
 			
 			<view class="navigators">
 				<view class="left">
-					<view class="grid flex-column just-content-center">
+					<view class="grid flex-column just-content-center" @click="goShopping">
 						<view class="d-flex align-items-center">
 							<image src="/static/images/index/csc.png" class="mark-img"></image>
 							<view class="font-size-sm text-color-base">喂喂商城</view>
@@ -33,14 +33,14 @@
 					</view>
 				</view>
 				<view class="right">
-					<view class="tea-activity" @tap="invite">
+					<view class="tea-activity" @tap="integrals">
 						<image src="/static/images/index/mcsb.png" class="mark-img"></image>
-						<view>买茶送包</view>
+						<view>更多积分</view>
 						<view class="right-img">
 							<image src="/static/images/index/mcsb_bg.png" mode="widthFix"></image>
 						</view>
 					</view>
-					<view class="member-gifts" @tap="packages">
+					<view class="member-gifts" @tap="coupons">
 						<image src="/static/images/index/hyjb.png" class="mark-img"></image>
 						<view>会员劵包</view>
 						<view class="right-img">
@@ -110,9 +110,14 @@
 					url: '/pages/integrals/integrals'
 				})
 			},
-			packages() {
+			goShopping() {
+				uni.navigateToMiniProgram({
+					appId: 'wx73b3aa7f870c7d5c'
+				});
+			},
+			coupons() {
 				uni.navigateTo({
-					url: '/pages/packages/index'
+					url: '/pages/coupons/coupons'
 				})
 			},
 			memberCode() {

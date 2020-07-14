@@ -79,7 +79,8 @@
 				customPoints: {},
 				stepsOption: [],
 				activeDay: -1,
-				pointsMall: []
+				pointsMall: [],
+				scoreInfo: {}
 			}
 		},
 		computed:{
@@ -95,7 +96,7 @@
 			async getScore() {
 				let data = await this.$api.request('/score/index');
 				if (data) {
-					
+					this.scoreInfo = data;
 					if (data.successions > 7) {
 						this.activeDay = 7;
 					}

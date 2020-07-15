@@ -32,9 +32,9 @@
 			</scroll-view>
 		</view>
 		<view class="bottom-box d-flex align-items-center just-content-center font-size-sm text-color-primary">
-			<view class="item">历史卡券</view>
-			<view class="item" @tap="showTip1">赠送记录</view>
-			<view class="item" @tap="showTip2">第三方权益</view>
+			<view class="item">兑换记录</view>
+			<!-- <view class="item" @tap="showTip1">赠送记录</view>
+			<view class="item" @tap="showTip2">第三方权益</view> -->
 		</view>
 		<modal custom :show="detailModalVisible" @cancel="closeDetailModal" width="90%">
 			<view class="modal-content">

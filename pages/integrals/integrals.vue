@@ -92,6 +92,9 @@
 			this.customPoints = await this.$api('customPoints')
 			await this.getPointsMall()
 		},
+		onShow() {
+			this.getScore();
+		},
 		methods: {
 			async getScore() {
 				let data = await this.$api.request('/score/index');
@@ -108,7 +111,6 @@
 							item.circle = '/static/images/integrals/goal.png'
 							item.circleStyle = 'width: 47rpx; height: 39rpx;'
 						}
-						
 					});
 					this.stepsOption = data.signinscore;
 				}

@@ -251,6 +251,9 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
               _context.next = 3;return _this.$api('customPoints');case 3:_this.customPoints = _context.sent;_context.next = 6;return (
                 _this.getPointsMall());case 6:case "end":return _context.stop();}}}, _callee);}))();
   },
+  onShow: function onShow() {
+    this.getScore();
+  },
   methods: {
     getScore: function getScore() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var data;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
                   _this2.$api.request('/score/index'));case 2:data = _context2.sent;
@@ -267,7 +270,6 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                       item.circle = '/static/images/integrals/goal.png';
                       item.circleStyle = 'width: 47rpx; height: 39rpx;';
                     }
-
                   });
                   _this2.stepsOption = data.signinscore;
                 }case 4:case "end":return _context2.stop();}}}, _callee2);}))();

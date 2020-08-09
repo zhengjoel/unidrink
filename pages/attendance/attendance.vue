@@ -100,7 +100,8 @@
 			async signin() {
 				let data = await this.$api.request('/score/dosign', 'POST');
 				if (data) {
-					this.atendanceMsg = data;
+					this.atendanceMsg = data.msg;
+					this.attendanceList.push({date: data.date})
 					this.attendanceModalVisible = true
 					this.scoreInfo.successions++;
 					this.member.score = parseInt(this.member.score) + parseInt(this.scoreInfo.score);

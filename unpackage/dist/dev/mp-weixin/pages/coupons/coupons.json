@@ -1,9 +1,11 @@
 {
+  "enablePullDownRefresh": true,
   "navigationBarTitleText": "我的卡券",
   "navigationBarTextStyle": "black",
   "navigationBarBackgroundColor": "#ffffff",
   "usingComponents": {
     "modal": "/components/modal/modal",
-    "jyf-parser": "/components/jyf-parser/jyf-parser"
+    "jyf-parser": "/components/jyf-parser/jyf-parser",
+    "u-toast": "/node-modules/uview-ui/components/u-toast/u-toast"
   }
 }

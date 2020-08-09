@@ -241,7 +241,8 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
     signin: function signin() {var _this3 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3() {var data;return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:_context3.next = 2;return (
                   _this3.$api.request('/score/dosign', 'POST'));case 2:data = _context3.sent;
                 if (data) {
-                  _this3.atendanceMsg = data;
+                  _this3.atendanceMsg = data.msg;
+                  _this3.attendanceList.push({ date: data.date });
                   _this3.attendanceModalVisible = true;
                   _this3.scoreInfo.successions++;
                   _this3.member.score = parseInt(_this3.member.score) + parseInt(_this3.scoreInfo.score);

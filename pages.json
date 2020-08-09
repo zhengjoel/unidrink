@@ -138,6 +138,7 @@
 		}, {
 			"path": "pages/coupons/coupons",
 			"style": {
+				"enablePullDownRefresh": true,
 				"navigationBarTitleText": "我的卡券",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"

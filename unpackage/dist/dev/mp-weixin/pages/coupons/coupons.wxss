@@ -303,10 +303,10 @@
   border-right: 0;
 }
 .coupon-list.data-v-0b776522 {
-  height: calc(100vh - 80rpx - 120rpx - 200rpx);
+  height: calc(100vh - 120rpx - 200rpx);
 }
 .wrapper.data-v-0b776522 {
-  padding: 0 40rpx;
+  padding: 0 20rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -325,7 +325,6 @@
           flex-direction: column;
   background-color: #FFFFFF;
   margin-bottom: 30rpx;
-  padding: 0 30rpx;
   border-radius: 6rpx;
   box-shadow: 0 10rpx 10rpx -10rpx rgba(15, 15, 15, 0.1);
   position: relative;
@@ -372,5 +371,128 @@
 .use-coupon-btn.data-v-0b776522 {
   width: 95%;
   border-radius: 50rem !important;
+}
+.taobao.data-v-0b776522 {
+  background-color: white;
+}
+.taobao .title.data-v-0b776522 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+}
+.taobao .title .left.data-v-0b776522 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.taobao .title .store.data-v-0b776522 {
+  font-weight: 500;
+}
+.taobao .title .buddha.data-v-0b776522 {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  margin-right: 10rpx;
+}
+.taobao .title .entrance.data-v-0b776522 {
+  color: #909399;
+  border: solid 2rpx #909399;
+  line-height: 48rpx;
+  padding: 0 30rpx;
+  background: none;
+  border-radius: 15px;
+}
+.taobao .ticket.data-v-0b776522 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.taobao .ticket .left.data-v-0b776522 {
+  width: 70%;
+  padding: 20rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  border-right: dashed 2rpx #e0d7d3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.taobao .ticket .left .picture.data-v-0b776522 {
+  border-radius: 20rpx;
+  width: 150rpx;
+  height: 190rpx;
+}
+.taobao .ticket .left .introduce.data-v-0b776522 {
+  margin-left: 10rpx;
+}
+.taobao .ticket .left .introduce .top.data-v-0b776522 {
+  color: #ff9900;
+  font-size: 28rpx;
+}
+.taobao .ticket .left .introduce .top .big.data-v-0b776522 {
+  font-size: 60rpx;
+  font-weight: bold;
+  margin-right: 10rpx;
+}
+.taobao .ticket .left .introduce .type.data-v-0b776522 {
+  font-size: 28rpx;
+  color: #82848a;
+}
+.taobao .ticket .left .introduce .date.data-v-0b776522 {
+  margin-top: 10rpx;
+  font-size: 20rpx;
+  color: #82848a;
+}
+.taobao .ticket .right.data-v-0b776522 {
+  width: 30%;
+  padding: 40rpx 20rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.taobao .ticket .right .use.data-v-0b776522 {
+  height: auto;
+  padding: 0 20rpx;
+  font-size: 24rpx;
+  border-radius: 40rpx;
+  color: #ffffff !important;
+  background-color: #ff9900 !important;
+  line-height: 40rpx;
+  color: #758ea5;
+  margin-left: 20rpx;
+}
+.taobao .ticket .right .used.data-v-0b776522 {
+  height: auto;
+  padding: 0 20rpx;
+  font-size: 24rpx;
+  border-radius: 40rpx;
+  line-height: 40rpx;
+  margin-left: 20rpx;
+}
+.taobao .ticket .right_log.data-v-0b776522 {
+  text-align: center;
+  width: 30%;
+  padding: 80rpx 0rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
 

@@ -27,7 +27,7 @@
 							<view class="text-truncate">{{ member.username }}</view>
 							<view class="iconfont iconarrow-right line-height-100"></view>
 						</view>
-						<view v-else class="font-size-lg font-weight-bold" @tap="login">请点击授权登录</view>
+						<view v-else class="font-size-lg font-weight-bold" @tap="login">游客</view>
 						<!-- <view class="font-size-sm text-color-assist">
 							历史消费 ￥{{ isLogin ? member.currentValue : 0 }}
 						</view> -->

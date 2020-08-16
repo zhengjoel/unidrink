@@ -3,6 +3,9 @@
   "onReachBottomDistance": 50,
   "usingComponents": {
     "uni-steps": "/components/uni-steps/uni-steps",
+    "modal": "/components/modal/modal",
+    "jyf-parser": "/components/jyf-parser/jyf-parser",
+    "u-toast": "/node-modules/uview-ui/components/u-toast/u-toast",
     "navbar-back-button": "/components/navbar-back-button"
   }
 }

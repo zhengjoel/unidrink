@@ -162,14 +162,21 @@
 						<view class="iconfont iconbalance line-height-100 payment-icon"></view>
 						<view class="flex-fill">余额支付（余额￥{{member.money}}）</view>
 						<view class="font-size-sm" v-if="member.money == 0">余额不足</view>
-						<view class="iconfont line-height-100 checkbox" :class="{'checked': payType == 5, 'iconradio-button-on': payType == 5,  'iconradio-button-off': payType == 2}"></view>
+						<view class="iconfont line-height-100 checkbox" :class="{'checked': payType == 5, 'iconradio-button-on': payType == 5,  'iconradio-button-off': payType == 2 || payType == 4}"></view>
+					</view>
+				</list-cell>
+				<list-cell>
+					<view class="d-flex align-items-center justify-content-between w-100" @click="payType = 4">
+						<view class="iconfont iconwxpay line-height-100 payment-icon" style="color: #7EB73A;"></view>
+						<view class="flex-fill">支付宝</view>
+						<view class="iconfont line-height-100 checkbox" :class="{'checked': payType == 4, 'iconradio-button-on': payType == 4, 'iconradio-button-off': payType == 5 || payType == 2}"></view>
 					</view>
 				</list-cell>
 				<list-cell last>
 					<view class="d-flex align-items-center justify-content-between w-100" @click="payType = 2">
 						<view class="iconfont iconwxpay line-height-100 payment-icon" style="color: #7EB73A;"></view>
 						<view class="flex-fill">微信支付</view>
-						<view class="iconfont line-height-100 checkbox" :class="{'checked': payType == 2, 'iconradio-button-on': payType == 2, 'iconradio-button-off': payType == 5}"></view>
+						<view class="iconfont line-height-100 checkbox" :class="{'checked': payType == 2, 'iconradio-button-on': payType == 2, 'iconradio-button-off': payType == 5 || payType == 4}"></view>
 					</view>
 				</list-cell>
 			</view>

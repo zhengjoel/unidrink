@@ -2,7 +2,7 @@
 	<view class="container">
 		<view class="masthead d-flex flex-column just-content-center align-items-center">
 			<view class="point-num">{{ pointNum }}</view>
-			<view class="font-size-sm text-color-primary">查看积分规则</view>
+			<view class="font-size-sm text-color-primary">我的积分</view>
 		</view>
 		<view>
 			<list-cell v-for="(item, index) in pointsFlow" :key="index" :hover="false" bgcolor="#F5F9FB">
@@ -41,6 +41,15 @@
 			const member = this.$store.state.member
 			this.pointNum = member.pointNum
 			this.pointsFlow = pointsFlow
+			this.getScoreLog();
+		},
+		methods:{
+			async getScoreLog() {
+				let data = await this.$api.request('/score/log')
+				if (data) {
+					
+				}
+			}
 		}
 	}
 </script>

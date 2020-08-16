@@ -19,6 +19,24 @@
 				</view>
 			</view>
 			
+			
+			<view class="info">
+				<view class="integral_section" @tap="integrals">
+					<view class="top">
+						<text class="title">我的积分</text>
+						<text class="value">{{member.score}}</text>
+					</view>
+					<view class="bottom">
+						可兑换优惠券和积分商品
+						<view class="iconfont iconarrow-right"></view>
+					</view>
+				</view>
+				<view class="qrcode_section" @tap="memberCode">
+					<image src="/static/images/mine/hym.png"></image>
+					<text>会员码</text>
+				</view>
+			</view>
+			
 			<view class="navigators">
 				<view class="left">
 					<view class="grid flex-column just-content-center" @click="goShopping">
@@ -50,22 +68,6 @@
 				</view>
 			</view>
 			
-			<view class="info">
-				<view class="integral_section" @tap="integrals">
-					<view class="top">
-						<text class="title">我的积分</text>
-						<text class="value">{{member.score}}</text>
-					</view>
-					<view class="bottom">
-						可兑换优惠券和积分商品
-						<view class="iconfont iconarrow-right"></view>
-					</view>
-				</view>
-				<view class="qrcode_section" @tap="memberCode">
-					<image src="/static/images/mine/hym.png"></image>
-					<text>会员码</text>
-				</view>
-			</view>
 			<!-- <view class="member-news">
 				<view class="header">
 					<view class="title">会员新鲜事</view>

@@ -12,6 +12,7 @@
     "pages/packages/detail",
     "pages/balance/balance",
     "pages/login/login",
+    "pages/login/logout",
     "pages/address/address",
     "pages/address/add",
     "pages/integrals/integrals",
@@ -22,7 +23,6 @@
     "pages/coupons/coupons",
     "pages/mine/userinfo",
     "pages/integrals/flow",
-    "pages/integrals/detail",
     "pages/review/review",
     "pages/activities/invite",
     "pages/shop/shop",
@@ -73,5 +73,5 @@
     }
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap4.json"
+  "sitemapLocation": "sitemap38.json"
 }

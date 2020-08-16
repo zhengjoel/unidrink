@@ -12,8 +12,8 @@
 						<view class="iconfont iconarrow-right line-height-100"></view>
 					</view>
 				</view>
-				<view class="right">
-					兑换记录
+				<view class="right"  @tap="flow">
+					积分记录
 				</view>
 			</view>
 		</view>
@@ -27,33 +27,33 @@
 				</view>
 			</view>
 			
-			<!-- <view class="banner">
+			<view class="banner">
 				<image src="https://images.qmai.cn/s23107/2020/04/30/aed6cdb1db4712f87e.png" mode="widthFix"></image>
-			</view> -->
+			</view>
 			<!-- 积分商品列表 begin -->
-			<view clas="d-flex flex-column" v-for="(items, cate) in pointsMall" :key="cate">
+			<view clas="d-flex flex-column">
 				<view class="d-flex justify-content-between align-items-center mb-30">
-					<view class="font-size-lg text-color-base">{{ cate }}</view>
-					<image src="/static/images/navigator.png" style="width: 40rpx; height: 40rpx;"></image>
+					<view class="font-size-lg text-color-base">积分兑换好卷</view>
+					<image src="/static/images/navigator.png" style="width: 40rpx; height: 40rpx;" @tap="goCoupon"></image>
 				</view>
 				<view class="d-flex flex-wrap justify-content-between">
-					<block v-for="(item, key) in items" :key="key">
-						<view class="d-flex bg-white flex-column align-items-stretch point-box" @tap="detail(cate, item.id)">
-							<image :src="item.img.length ? item.img[0] : '/static/images/integrals/ticket.png'" class="w-100" mode="widthFix"></image>
+					<block v-for="(item, key) in pointsMall" :key="key">
+						<view class="d-flex bg-white flex-column align-items-stretch point-box" @tap="detail(item, key)">
+							<image :src="item.image ? item.image : '/static/images/integrals/ticket.png'" class="w-100" mode="widthFix"></image>
 							<view class="d-flex flex-column overflow-hidden">
-								<view class="font-size-lg text-color-base text-truncate font-weight-bold" style="margin-bottom: 10rpx;">{{ item.goods_name }}</view>
+								<view class="font-size-lg text-color-base text-truncate font-weight-bold" style="margin-bottom: 10rpx;">{{ item.title }}</view>
 								<view class="d-flex align-items-center">
 									<view class="d-flex align-items-baseline">
-										<view class="font-size-base text-color-primary mr-10">{{ item.points_price }}</view>
+										<view class="font-size-base text-color-primary mr-10">{{ item.score }}</view>
 										<view class="font-size-sm text-color-assist">积分</view>
 									</view>
-									<view v-if="item.amount > 0" class="d-flex align-items-center font-size-sm text-color-assist" style="margin: 0 10rpx;">+</view>
-									<view  v-if="item.amount > 0" class="d-flex align-items-baseline">
-										<view class="font-size-base text-color-primary mr-10">{{ parseFloat(item.amount) }}</view>
+									<view v-if="item.value > 0" class="d-flex align-items-center font-size-sm text-color-assist" style="margin: 0 10rpx;">+</view>
+									<view  v-if="item.value > 0" class="d-flex align-items-baseline">
+										<view class="font-size-base text-color-primary mr-10">{{ parseFloat(item.value) }}</view>
 										<view class="font-size-sm text-color-assist">元</view>
 									</view>
 								</view>
-								<view class="font-size-sm text-color-assist">剩余{{ item.goods_stock }}件</view>
+								<view class="font-size-sm text-color-assist">剩余{{ remains(item.distribute,item.receive) }}件</view>
 							</view>
 						</view>						
 					</block>
@@ -61,41 +61,97 @@
 			</view>
 			<!-- 积分商品列表 end -->
 		</view>
+		
+		
+		
+		<modal custom :show="detailModalVisible" @cancel="closeDetailModal" width="90%">
+			<view class="modal-content">
+				<view class="d-flex font-size-extra-lg text-color-base just-content-center mb-20">{{ coupon.title }}</view>
+				<view class="d-flex font-size-sm text-color-base mb-20">
+					有效期：{{ coupon.starttime_text }}至{{ coupon.endtime_text }}
+				</view>
+				<view class="d-flex font-size-sm text-color-base mb-20">
+					领取时间：{{ coupon.createtime_text }}
+				</view>
+				<view class="d-flex font-size-sm text-color-base mb-20">
+					卷价值：满{{ coupon.least }}减{{ coupon.value }}
+				</view>
+				<view class="d-flex font-size-sm text-color-base mb-20">
+					每人限领：{{ coupon.limit }} 张 {{ coupon.my_receive > 0 ? '(已领'+coupon.my_receive+'张)':''}}
+				</view>
+				<view class="d-flex font-size-sm text-color-base mb-20" v-if="coupon.score > 0">
+					需要积分：{{ coupon.score }} 
+				</view>
+				<view class="d-flex font-size-sm text-color-base mb-20">
+					适用范围：{{typeInfo(coupon.type)}}
+				</view>
+				<view class="d-flex font-size-sm text-color-base mb-20">
+					适用店铺：{{coupon.shop_name}}
+				</view>
+				<pre class="pre-line font-size-sm text-color-assist mb-30" style="max-height: 600rpx;overflow: auto;">
+					<jyf-parser ref="couponExplain"></jyf-parser>
+				</pre>
+				<view class="d-flex align-items-center just-content-center">
+					<button type="primary" @tap="receive(coupon, couponIndex)" class="use-coupon-btn">立即领取</button>
+					<button type="primary" v-if="coupon.my_receive > 0" @tap="useCoupon" class="use-coupon-btn">立即使用</button>
+				</view>
+			</view>
+		</modal>
+		
+		<!--轻提示-->
+		<u-toast ref="uToast"></u-toast>
 	</view>
 </template>
 
 <script>
 	import navbarBackButton from '@/components/navbar-back-button'
 	import uniSteps from '@/components/uni-steps/uni-steps'
-	import {mapState} from 'vuex';
+	import {mapState, mapMutations} from 'vuex';
+	import modal from '@/components/modal/modal'
+	import jyfParser from "@/components/jyf-parser/jyf-parser"
 	
 	export default {
 		components: {
 			navbarBackButton,
-			uniSteps
+			uniSteps,
+			modal,
+			jyfParser
 		},
 		data() {
 			return {
-				customPoints: {},
 				stepsOption: [],
 				activeDay: -1,
 				pointsMall: [],
-				scoreInfo: {}
+				scoreInfo: {},
+				couponIndex: 0,
+				coupon: {},
+				detailModalVisible:false
 			}
 		},
 		computed:{
 			...mapState(['member'])
 		},
-		async onLoad() {
-			this.getScore();
-			//await this.getStepsOptions()
-			this.customPoints = await this.$api('customPoints')
-			await this.getPointsMall()
+		onLoad() {
+			//this.getScore();
 		},
 		onShow() {
 			this.getScore();
+			this.getPointsMall()
 		},
 		methods: {
+			...mapMutations(['SET_MEMBER']),
+			// 使用范围
+			typeInfo(type) {
+				if (type == 0) {
+					return '外卖和自取'
+				}
+				if (type == 1) {
+					return '自取'
+				}
+				if (type == 2) {
+					return '外卖'
+				}
+			},
 			async getScore() {
 				let data = await this.$api.request('/score/index');
 				if (data) {
@@ -126,6 +182,12 @@
 				}
 			},
 			async getPointsMall() {
+				let data = await this.$api.request('/coupon/index', 'POST', {score:1, pagesize: 6});
+				if (data) {
+					this.pointsMall = data;
+				}
+				
+				return 
 				this.pointsMall = await this.$api('pointsMall')
 			},
 			attendance() {
@@ -138,9 +200,56 @@
 					url: '/pages/integrals/flow'
 				})
 			},
-			detail(cate, id) {
+			goCoupon() {
 				uni.navigateTo({
-					url: '/pages/integrals/detail?cate=' + cate + '&id=' + id
+					url: '/pages/coupons/coupons'
+				})
+			},
+			// 开的详情
+			detail(coupon,index) {
+				this.couponIndex = index;
+				this.coupon = coupon
+				this.$refs['couponExplain'].setContent(this.coupon.instructions || '')
+				this.detailModalVisible = true
+			
+			},
+			/**
+			 * 剩余数量
+			 * @param {Object} distribute 发行量
+			 * @param {Object} receive 已兑换
+			 */
+			remains(distribute, receive) {
+				let remains = distribute - receive
+				return remains > 0 ? remains : 0
+			},
+			closeDetailModal() {
+				this.detailModalVisible = false
+				this.coupon = {}
+			},
+			// 领取优惠券
+			async receive(coupon,index) {
+				let data = await this.$api.request('/coupon/receive','POST',{id:coupon.id});
+				if (data) {
+					this.$refs.uToast.show({
+						title: '领取成功',
+						type: 'success'
+					});
+					let coupon = this.pointsMall[index];
+					// 我领取加一
+					coupon.my_receive++;
+					if (coupon.limit == coupon.my_receive) {
+						this.pointsMall.splice(index,1);
+					}
+					if (coupon.score > 0) {
+						let member = this.member;
+						member.score = member.score - coupon.score;
+						this.SET_MEMBER(member)
+					}
+				}
+			},
+			useCoupon() {
+				uni.switchTab({
+					url: '/pages/menu/menu'
 				})
 			}
 		}
@@ -228,5 +337,9 @@
 	margin-bottom: 30rpx;
 	border-radius: 8rpx;
 	padding: 20rpx;
+}
+.use-coupon-btn {
+	width: 95%;
+	border-radius: 50rem !important;
 }
 </style>

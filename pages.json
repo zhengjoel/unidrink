@@ -87,7 +87,14 @@
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
-		}, {
+		}, 
+		{
+			"path": "pages/login/logout",
+			"style": {
+				"navigationBarTitleText": "退出登录"
+			}
+		}, 
+		{
 			"path": "pages/address/address",
 			"style": {
 				"navigationBarTitleText": "我的地址",
@@ -155,14 +162,6 @@
 			"path": "pages/integrals/flow",
 			"style": {
 				"navigationBarTitleText": "积分明细",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		},
-		{
-			"path": "pages/integrals/detail",
-			"style": {
-				"navigationBarTitleText": "兑换详情",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}

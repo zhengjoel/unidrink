@@ -1,13 +1,21 @@
 <template>
 	<view>
-		<list-cell arrow=true class="list" v-for="(item,index) in services" :key='index' @tap="serv(item)">
-			<view>{{item.name}}</view>
-		</list-cell>
+		<block v-for="(item,index) in services" :key='index'>
+			<list-cell v-if="item.pages == '/pages/login/logout'" v-show="isLogin" arrow=true class="list" @tap="serv(item)">
+				<view>{{item.name}}</view>
+			</list-cell>
+			<list-cell v-else arrow=true class="list" @tap="serv(item)">
+				<view>{{item.name}}</view>
+			</list-cell>
+		</block>
+		
 	</view>
 </template>
 
 <script>
 	import listCell from '@/components/list-cell/list-cell'
+	import {mapGetters} from 'vuex'
+	
 	export default {
 		components:{
 			listCell
@@ -27,6 +35,9 @@
 				this.getService(option.id);
 			}
 		},
+		computed:{
+			...mapGetters(['isLogin'])
+		},
 		methods:{
 			async getService(id) {
 				let data = await this.$api.request('/mine/service?pid='+id);
@@ -37,10 +48,6 @@
 			serv(item) {
 				switch(item.type) {
 					case 'pages':
-						if(!this.isLogin) {
-							this.login()
-							return
-						}
 						uni.navigateTo({
 							url: item.pages
 						})

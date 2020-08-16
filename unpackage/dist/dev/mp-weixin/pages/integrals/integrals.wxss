@@ -257,4 +257,8 @@
   border-radius: 8rpx;
   padding: 20rpx;
 }
+.use-coupon-btn {
+  width: 95%;
+  border-radius: 50rem !important;
+}
 

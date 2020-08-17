@@ -60,20 +60,12 @@
 		}, {
 			"path": "pages/packages/index",
 			"style": {
-				"navigationBarTitleText": "券包商品",
+				"navigationBarTitleText": "我的优惠券",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff",
 				"enablePullDownRefresh": true
 			}
-		}, {
-			"path": "pages/packages/detail",
-			"style": {
-				"navigationBarTitleText": "购买劵包",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff",
-				"enablePullDownRefresh": true
-			}
-		}, {
+		},{
 			"path": "pages/balance/balance",
 			"style": {
 				"navigationBarTitleText": "会员储值",

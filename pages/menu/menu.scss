@@ -260,6 +260,10 @@ page {
 					border-radius: 100%;
 					text-align: center;
 				}
+				
+			}
+			.menu:last-child{
+				margin-bottom: 200rpx;
 			}
 		}
 	}
@@ -304,6 +308,9 @@ page {
 							margin-left: 10rpx;
 						}
 					}
+				}
+				.category:last-child{
+					margin-bottom: 200rpx;
 				}
 
 				.items {

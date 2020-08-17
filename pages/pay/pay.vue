@@ -167,14 +167,14 @@
 				</list-cell>
 				<list-cell>
 					<view class="d-flex align-items-center justify-content-between w-100" @click="payType = 4">
-						<view class="iconfont iconwxpay line-height-100 payment-icon" style="color: #7EB73A;"></view>
+						<view class="iconfont-unidrink icon-alipay line-height-100 payment-icon" style="color:#07b4fd" ></view>
 						<view class="flex-fill">支付宝</view>
 						<view class="iconfont line-height-100 checkbox" :class="{'checked': payType == 4, 'iconradio-button-on': payType == 4, 'iconradio-button-off': payType == 5 || payType == 2}"></view>
 					</view>
 				</list-cell>
 				<list-cell last>
 					<view class="d-flex align-items-center justify-content-between w-100" @click="payType = 2">
-						<view class="iconfont iconwxpay line-height-100 payment-icon" style="color: #7EB73A;"></view>
+						<view class="iconfont iconwxpay line-height-100 payment-icon" style="color: #7EB73A"></view>
 						<view class="flex-fill">微信支付</view>
 						<view class="iconfont line-height-100 checkbox" :class="{'checked': payType == 2, 'iconradio-button-on': payType == 2, 'iconradio-button-off': payType == 5 || payType == 4}"></view>
 					</view>

@@ -505,7 +505,7 @@ page {
 			.picture {
 				//width: 172rpx;
 				border-radius: 20rpx;
-				width: 150rpx;
+				width: 190rpx;
 				height: 190rpx;
 			}
 			.introduce {

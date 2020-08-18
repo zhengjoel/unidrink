@@ -19,7 +19,6 @@
 				</view>
 			</view>
 			
-			
 			<view class="info">
 				<view class="integral_section" @tap="integrals">
 					<view class="top">

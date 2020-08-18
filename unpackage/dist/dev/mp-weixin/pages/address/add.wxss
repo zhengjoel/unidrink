@@ -25,6 +25,21 @@
 /* 透明度 */
 /* 文章场景相关 */
 @font-face {
+  font-family: 'iconfont-unidrink';
+  /* project id 2012069 */
+  src: url("//at.alicdn.com/t/font_2012069_s111xbyeudl.ttf") format("truetype");
+}
+.iconfont-unidrink.data-v-0635e51d {
+  font-family: "iconfont-unidrink" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-alipay.data-v-0635e51d:before {
+  content: "\e60a";
+}
+@font-face {
   font-family: "iconfont";
   src: url("//at.alicdn.com/t/font_1789197_z1gzlwq7idq.ttf?t=1589441233693") format("truetype");
 }

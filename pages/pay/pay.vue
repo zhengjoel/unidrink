@@ -131,7 +131,8 @@
 				<list-cell arrow @click="goToPackages">
 					<view class="flex-fill d-flex justify-content-between align-items-center">
 						<view class="text-color-base">优惠券</view>
-						<view class="text-color-primary">超值购买优惠券大礼包</view>
+						<view v-if="coupons.length == 0" class="text-color-base">暂无可用</view>
+						<view v-else class="text-color-primary">可用优惠券{{coupons.length}}张</view>
 					</view>
 				</list-cell>
 				<!-- <list-cell arrow>
@@ -158,25 +159,28 @@
 					<text>支付方式</text>
 				</list-cell>
 				<list-cell>
-					<view class="d-flex align-items-center justify-content-between w-100 disabled" @click="payType = 5">
+					<view class="d-flex align-items-center justify-content-between w-100 disabled" @click="setPayType(5)">
 						<view class="iconfont iconbalance line-height-100 payment-icon"></view>
 						<view class="flex-fill">余额支付（余额￥{{member.money}}）</view>
 						<view class="font-size-sm" v-if="member.money == 0">余额不足</view>
-						<view class="iconfont line-height-100 checkbox" :class="{'checked': payType == 5, 'iconradio-button-on': payType == 5,  'iconradio-button-off': payType == 2 || payType == 4}"></view>
+						<view class="iconfont line-height-100 checkbox checked iconradio-button-on" v-if="payType == 5" ></view>
+						<view class="iconfont line-height-100 checkbox iconradio-button-off" v-else ></view>
 					</view>
 				</list-cell>
 				<list-cell>
-					<view class="d-flex align-items-center justify-content-between w-100" @click="payType = 4">
+					<view class="d-flex align-items-center justify-content-between w-100" @click="setPayType(4)">
 						<view class="iconfont-unidrink icon-alipay line-height-100 payment-icon" style="color:#07b4fd" ></view>
 						<view class="flex-fill">支付宝</view>
-						<view class="iconfont line-height-100 checkbox" :class="{'checked': payType == 4, 'iconradio-button-on': payType == 4, 'iconradio-button-off': payType == 5 || payType == 2}"></view>
+						<view class="iconfont line-height-100 checkbox checked iconradio-button-on" v-if="payType == 4" ></view>
+						<view class="iconfont line-height-100 checkbox iconradio-button-off" v-else ></view>					
 					</view>
 				</list-cell>
 				<list-cell last>
-					<view class="d-flex align-items-center justify-content-between w-100" @click="payType = 2">
+					<view class="d-flex align-items-center justify-content-between w-100" @click="setPayType(2)">
 						<view class="iconfont iconwxpay line-height-100 payment-icon" style="color: #7EB73A"></view>
 						<view class="flex-fill">微信支付</view>
-						<view class="iconfont line-height-100 checkbox" :class="{'checked': payType == 2, 'iconradio-button-on': payType == 2, 'iconradio-button-off': payType == 5 || payType == 4}"></view>
+						<view class="iconfont line-height-100 checkbox checked iconradio-button-on" v-if="payType == 2" ></view>
+						<view class="iconfont line-height-100 checkbox iconradio-button-off" v-else ></view>
 					</view>
 				</list-cell>
 			</view>
@@ -278,7 +282,8 @@
 					value: 50
 				}],
 				defaultSelector: [0],
-				payType: 2, // 付款方式:5=余额支付,2=微信支付
+				payType: 2, // 付款方式:5=余额支付,2=微信支付,4=支付宝
+				coupons: []
 			}
 		},
 		computed: {
@@ -309,11 +314,22 @@
 			this.cart = uni.getStorageSync('cart')
 			remark && this.$set(this.form, 'remark', remark);
 
-
+			this.getCoupons()
 		},
 		methods: {
 			...mapMutations(['SET_ORDER', 'SET_ORDER_TYPE']),
 			...mapGetters(['isLogin']),
+			// 更改支付方式
+			setPayType(paytype) {
+				this.payType = 0;
+				this.payType = paytype;
+			},
+			async getCoupons() {
+				let data = await this.$api.request('/coupon/mine', 'POST', {page:1, pagesize: 999, shop_id:this.store.id})
+				if (data) {
+					this.coupons = data;
+				}
+			},
 			// 选择时间
 			choiceTime(value) {
 				let hour = value.hour;

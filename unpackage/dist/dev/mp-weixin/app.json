@@ -9,7 +9,6 @@
     "pages/pay/pay",
     "pages/remark/remark",
     "pages/packages/index",
-    "pages/packages/detail",
     "pages/balance/balance",
     "pages/login/login",
     "pages/login/logout",
@@ -73,5 +72,5 @@
     }
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap34.json"
+  "sitemapLocation": "sitemap71.json"
 }

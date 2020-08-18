@@ -25,6 +25,21 @@
 /* 透明度 */
 /* 文章场景相关 */
 @font-face {
+  font-family: 'iconfont-unidrink';
+  /* project id 2012069 */
+  src: url("//at.alicdn.com/t/font_2012069_s111xbyeudl.ttf") format("truetype");
+}
+.iconfont-unidrink.data-v-368aef34 {
+  font-family: "iconfont-unidrink" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-alipay.data-v-368aef34:before {
+  content: "\e60a";
+}
+@font-face {
   font-family: "iconfont";
   src: url("//at.alicdn.com/t/font_1789197_z1gzlwq7idq.ttf?t=1589441233693") format("truetype");
 }
@@ -483,6 +498,9 @@
   border-radius: 100%;
   text-align: center;
 }
+.content .menus .wrapper .menu.data-v-368aef34:last-child {
+  margin-bottom: 200rpx;
+}
 .content .goods.data-v-368aef34 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -525,6 +543,9 @@
   width: 38rpx;
   height: 38rpx;
   margin-left: 10rpx;
+}
+.content .goods .wrapper .list .category.data-v-368aef34:last-child {
+  margin-bottom: 200rpx;
 }
 .content .goods .wrapper .list .items.data-v-368aef34 {
   display: -webkit-box;

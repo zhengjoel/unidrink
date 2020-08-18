@@ -8,24 +8,25 @@
 			<list-cell v-for="(item, index) in pointsFlow" :key="index" :hover="false" bgcolor="#F5F9FB">
 				<view class="w-100 d-flex align-items-center">
 					<view class="flex-fill d-flex flex-column">
-						<view class="font-size-lg text-color-base mb-10">{{ item.reason }}</view>
-						<view class="font-size-base text-color-assist">{{ item.createdAt }}</view>
+						<view class="font-size-lg text-color-base mb-10">{{ item.memo }}</view>
+						<view class="font-size-base text-color-assist">{{ item.createtime_text }}</view>
 					</view>
 					<view class="d-flex flex-column align-items-center">
 						<view class="font-size-lg text-color-base font-weight-bold">
-							{{ item.changeType == 1 ? '+' : '-' }}{{ item.changeNum }}
+							{{ item.score >= 1 ? '+' : '-' }}{{ item.score }}
 						</view>
-						<view class="font-size-sm text-color-assist">{{ item.sellerName }}</view>
+						<view class="font-size-sm text-color-assist">变更前:{{ item.before }},变更后:{{ item.after }}</view>
 					</view>
 				</view>
 			</list-cell>
+			<u-loadmore :status="'nomore'" icon-type="iconType" />
 		</view>
+		
 	</view>
 </template>
 
 <script>
 	import listCell from '@/components/list-cell/list-cell'
-	import pointsFlow from '@/api/points-flow'
 	
 	export default {
 		components: {
@@ -34,20 +35,38 @@
 		data() {
 			return {
 				pointNum: 0,
-				pointsFlow: []
+				pointsFlow: [],
+				page:1,
+				pagesize:20,
+				status: 'loadmore'
 			}
 		},
 		onLoad() {
 			const member = this.$store.state.member
-			this.pointNum = member.pointNum
-			this.pointsFlow = pointsFlow
+			this.pointNum = member.score
+			
 			this.getScoreLog();
+		},
+		onReachBottom() {
+			this.getScoreLog()
 		},
 		methods:{
 			async getScoreLog() {
-				let data = await this.$api.request('/score/log')
+				if (this.status == 'nomore') {
+					return;
+				}
+				this.status = 'loading'
+				let data = await this.$api.request('/score/log','POST',{page:this.page, pagesize:this.pagesize})
 				if (data) {
-					
+					for(let i in data) {
+						this.pointsFlow.push(data[i])
+					}
+					if (data.length > 0) {
+						this.page++;
+						this.status = 'loadmore'
+					} else {
+						this.status = 'nomore'
+					}
 				}
 			}
 		}

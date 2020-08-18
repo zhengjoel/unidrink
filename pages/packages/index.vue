@@ -1,8 +1,7 @@
 <template>
 	<view class="container position-relative w-100 h-100 overflow-hidden">
 		<scroll-view scroll-y class="coupon-list">
-			<view class="wrapper" v-for="(itemT, indexT) in tabs" :key="indexT" v-if="indexT == activeTabIndex">
-				<view class="coupon" v-for="(item, index) in itemT.coupons" :key="index" @tap="openDetailModal(item, index)">
+				<view class="coupon" v-for="(item, index) in coupons" :key="index" @tap="openDetailModal(item, index)">
 					<view class="taobao">
 						<view class="ticket">
 							<view class="left">
@@ -31,7 +30,6 @@
 						</view>
 					</view>
 				</view>
-			</view>
 		</scroll-view>
 
 		<!-- <view class="bottom-box d-flex align-items-center just-content-center font-size-sm text-color-primary">
@@ -89,7 +87,8 @@ export default {
 			detailModalVisible: false,
 			coupon: {},
 			couponIndex: 0, //当前选中的第几行
-			exchange_code: ''
+			exchange_code: '',
+			coupons: []
 		};
 	},
 	onShow() {
@@ -138,41 +137,10 @@ export default {
 		handleTab(index) {
 			this.activeTabIndex = index;
 		},
-		async getCoupons(type) {
-			// const coupons = await this.$api('customerCoupons')
-			// if(type == 'all') {
-			// 	this.coupons = coupons
-			// } else {
-			// 	this.coupons = coupons.filter(item => item.couponType == type)
-			// }
-
-			let page = this.tabs[type].page;
-			let pagesize = this.tabs[type].pagesize;
-			// 我的优惠券
-			let data = false;
-			if (type == '0') {
-				data = await this.$api.request('/coupon/mine', 'POST', { page: page, pagesize: pagesize });
-			}
-			// 未领优惠券
-			if (type == '1') {
-				data = await this.$api.request('/coupon/index', 'POST', { page: page, pagesize: pagesize });
-			}
-			// 兑换记录
-			if (type == '2') {
-				data = await this.$api.request('/coupon/exchangeLog', 'POST', { page: page, pagesize: pagesize });
-			}
-			uni.stopPullDownRefresh();
-			if (!data || data.length == 0) {
-				return;
-			}
-			if (page == 1) {
-				this.tabs[type].coupons = data;
-			} else {
-				for (let i in data) {
-					this.tabs[type].coupons.push(data[i]);
-				}
-			}
-			this.tabs[type].page++;
+		getCoupons() {
+			let prePage = this.$api.prePage()
+			
+			this.coupons = prePage.coupons;
 		},
 		openDetailModal(coupon, index) {
 			this.couponIndex = index;

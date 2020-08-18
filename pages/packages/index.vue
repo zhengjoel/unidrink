@@ -1,6 +1,7 @@
 <template>
 	<view class="container position-relative w-100 h-100 overflow-hidden">
 		<scroll-view scroll-y class="coupon-list">
+			<view class="wrapper">
 				<view class="coupon" v-for="(item, index) in coupons" :key="index" @tap="openDetailModal(item, index)">
 					<view class="taobao">
 						<view class="ticket">
@@ -30,14 +31,9 @@
 						</view>
 					</view>
 				</view>
+			</view>
 		</scroll-view>
 
-		<!-- <view class="bottom-box d-flex align-items-center just-content-center font-size-sm text-color-primary">
-			<view class="item">已过期的</view>
-			<view class="item">兑换记录</view>
-			<view class="item" @tap="showTip1">赠送记录</view>
-			<view class="item" @tap="showTip2">第三方权益</view>
-		</view> -->
 		<modal custom :show="detailModalVisible" @cancel="closeDetailModal" width="90%">
 			<view class="modal-content">
 				<view class="d-flex font-size-extra-lg text-color-base just-content-center mb-20">{{ coupon.title }}</view>
@@ -134,9 +130,6 @@ export default {
 				return '外卖';
 			}
 		},
-		handleTab(index) {
-			this.activeTabIndex = index;
-		},
 		getCoupons() {
 			let prePage = this.$api.prePage()
 			
@@ -157,21 +150,9 @@ export default {
 			this.coupon = {};
 		},
 		useCoupon() {
-			uni.switchTab({
-				url: '/pages/menu/menu'
-			});
-		},
-		showTip1() {
-			uni.showToast({
-				title: '您暂时还没有赠送中卡券哦~',
-				icon: 'none'
-			});
-		},
-		showTip2() {
-			uni.showToast({
-				title: '您暂时还没有券码哦~',
-				icon: 'none'
-			});
+			uni.navigateBack({
+				
+			})
 		},
 		// 领取优惠券
 		async receive(coupon, index) {

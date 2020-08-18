@@ -14,7 +14,7 @@
 			</view>
 		</view>
 		<view class="flex-fill">
-			<scroll-view scroll-y class="coupon-list">
+			<scroll-view scroll-y class="coupon-list" @scrolltolower="getCoupons(activeTabIndex)">
 				<view class="wrapper" v-for="(itemT, indexT) in tabs" :key="indexT" v-if="indexT == activeTabIndex">
 					<view class="coupon" v-for="(item, index) in itemT.coupons" :key="index" @tap="openDetailModal(item,index)">
 						<!-- <view class="d-flex align-items-center detail">
@@ -76,6 +76,7 @@
 						</view>
 					</view>
 				</view>
+				<!-- <u-loadmore :status="'nomore'" icon-type="iconType" /> -->
 			</scroll-view>
 		</view>
 		<!-- <view class="bottom-box d-flex align-items-center just-content-center font-size-sm text-color-primary">

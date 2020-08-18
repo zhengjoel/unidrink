@@ -59,7 +59,7 @@
 							</view>
 						</view>
 					</list-cell>
-					<list-cell class="contact" last :hover="false">
+					<list-cell class="contact" last :hover="false" v-if="orderType == 'takein'">
 						<view class="flex-fill d-flex justify-content-between align-items-center">
 							<view class="title flex-fill">联系电话</view>
 							<view class="time">
@@ -283,7 +283,8 @@
 				}],
 				defaultSelector: [0],
 				payType: 2, // 付款方式:5=余额支付,2=微信支付,4=支付宝
-				coupons: []
+				coupons: [], // 可用优惠券列表
+				coupon: {} // 选中的
 			}
 		},
 		computed: {
@@ -325,7 +326,9 @@
 				this.payType = paytype;
 			},
 			async getCoupons() {
-				let data = await this.$api.request('/coupon/mine', 'POST', {page:1, pagesize: 999, shop_id:this.store.id})
+				//0=通用,1=自取,2=外卖
+				let type = this.orderType == 'takein' ? 1 : 2
+				let data = await this.$api.request('/coupon/mine', 'POST', {page:1, pagesize: 999, shop_id:this.store.id, type:type})
 				if (data) {
 					this.coupons = data;
 				}
@@ -371,6 +374,22 @@
 					type = 'takein';
 				}
 				this.SET_ORDER_TYPE(type);
+				
+				// 如果存在优惠券看看需不需要清除
+				if (this.coupon.hasOwnProperty('type')) {
+					//0=通用,1=自取,2=外卖
+					if (this.coupon.type != 0) {
+						if (this.coupon.type == 1 && this.orderType == 'takeout') {
+							this.coupon = {}
+						}
+						if (this.coupon.type == 2 && this.orderType == 'takeint') {
+							this.coupon = {}
+						}
+					}
+				}
+				
+				this.coupons = []
+				this.getCoupons()
 			},
 			goToRemark() {
 				uni.navigateTo({

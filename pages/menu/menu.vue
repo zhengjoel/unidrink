@@ -250,7 +250,7 @@
 	<view class="loading" v-else>
 		<!-- <image src="/static/images/loading.gif"></image> -->
 		<ourLoading active background-color="" color="#00b1b7" text=" " />
-		<button type="primary" style="z-index: 3001;" @click="init">定位最近的门店</button>
+		<button type="primary" style="z-index: 3001;" @click="init" v-if="!store.id">定位最近的门店</button>
 	</view>
 </template>
 

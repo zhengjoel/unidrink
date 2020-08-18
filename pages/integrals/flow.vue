@@ -19,7 +19,7 @@
 					</view>
 				</view>
 			</list-cell>
-			<u-loadmore :status="'nomore'" icon-type="iconType" />
+			<u-loadmore :status="status" icon-type="iconType" />
 		</view>
 		
 	</view>
@@ -67,6 +67,8 @@
 					} else {
 						this.status = 'nomore'
 					}
+				} else {
+					this.status = 'nomore'
 				}
 			}
 		}

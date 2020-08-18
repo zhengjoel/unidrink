@@ -60,7 +60,7 @@
 		}, {
 			"path": "pages/packages/index",
 			"style": {
-				"navigationBarTitleText": "我的优惠券",
+				"navigationBarTitleText": "可用优惠券",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff",
 				"enablePullDownRefresh": true

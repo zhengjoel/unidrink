@@ -6,7 +6,7 @@
 					<list-cell class="location">
 						<view class="flex-fill d-flex justify-content-between align-items-center">
 							<view class="store-name flex-fill">
-								外卖配送
+								{{orderType == 'takeout' ? '外卖配送' : '点餐自取'}}
 							</view>
 							<u-switch active-color="#00b1b7" :value="orderType == 'takeout'" @change="takout"></u-switch>
 						</view>
@@ -132,6 +132,7 @@
 					<view class="flex-fill d-flex justify-content-between align-items-center">
 						<view class="text-color-base">优惠券</view>
 						<view v-if="coupons.length == 0" class="text-color-base">暂无可用</view>
+						<view v-else-if="coupon.title" class="text-color-danger">{{coupon.title}}(满{{coupon.least}}减{{coupon.value}})</view>
 						<view v-else class="text-color-primary">可用优惠券{{coupons.length}}张</view>
 					</view>
 				</list-cell>
@@ -143,7 +144,12 @@
 				</list-cell> -->
 				<list-cell last>
 					<view class="flex-fill d-flex justify-content-end align-items-center">
-						<view>总计￥{{ total }}<text v-if="orderType == 'takeout'">,配送费￥{{store.delivery_price}}</text>,实付</view>
+						<view>
+							总计￥{{ total }}
+							<text v-if="orderType == 'takeout'">,配送费￥{{store.delivery_price}}</text>
+							<text v-if="coupon.value">,￥-{{coupon.value}}</text>
+							,实付
+						</view>
 						<view class="font-size-extra-lg font-weight-bold">￥{{ amount }}</view>
 					</view>
 				</list-cell>
@@ -167,14 +173,14 @@
 						<view class="iconfont line-height-100 checkbox iconradio-button-off" v-else ></view>
 					</view>
 				</list-cell>
-				<list-cell>
+				<!-- <list-cell>
 					<view class="d-flex align-items-center justify-content-between w-100" @click="setPayType(4)">
 						<view class="iconfont-unidrink icon-alipay line-height-100 payment-icon" style="color:#07b4fd" ></view>
 						<view class="flex-fill">支付宝</view>
 						<view class="iconfont line-height-100 checkbox checked iconradio-button-on" v-if="payType == 4" ></view>
 						<view class="iconfont line-height-100 checkbox iconradio-button-off" v-else ></view>					
 					</view>
-				</list-cell>
+				</list-cell> -->
 				<list-cell last>
 					<view class="d-flex align-items-center justify-content-between w-100" @click="setPayType(2)">
 						<view class="iconfont iconwxpay line-height-100 payment-icon" style="color: #7EB73A"></view>
@@ -293,7 +299,16 @@
 				return this.cart.reduce((acc, cur) => acc + cur.number * cur.sales_price, 0)
 			},
 			amount() {
-				return this.cart.reduce((acc, cur) => acc + cur.number * cur.sales_price, 0)
+				let amount = this.cart.reduce((acc, cur) => acc + cur.number * cur.sales_price, 0)
+				// 加配送费
+				if (this.store.distance > 0 && this.orderType == 'takeout') {
+					amount += parseFloat(this.store.delivery_price)
+				}
+				// 减去优惠券
+				if (this.coupon.hasOwnProperty('id')) {
+					amount -= parseFloat(this.coupon.value)
+				}
+				return amount.toFixed(2)
 			}
 		},
 		onShow() {
@@ -402,8 +417,9 @@
 				})
 			},
 			goToPackages() {
+				let amount = this.amount
 				uni.navigateTo({
-					url: '/pages/packages/index'
+					url: '/pages/packages/index?amount=' + amount
 				})
 			},
 			goToShop() {
@@ -439,7 +455,7 @@
 					product_id: [],
 					spec: [],
 					number: [],
-					coupon_id: 0 // 优惠券id
+					coupon_id: this.coupon.id ? this.coupon.id : 0// 优惠券id
 				};
 
 				this.cart.forEach((item, index) => {
@@ -454,6 +470,8 @@
 					uni.hideLoading();
 					return;
 				}
+				console.log('payTYpe:');
+				console.log(this.payType);
 				
 				if (this.payType == 2) { // 微信支付
 					let data = await this.$api.request('/pay/unify?out_trade_no='+ order.out_trade_no);
@@ -532,6 +550,8 @@
 							console.log(res);
 						}
 					})
+				} else if (this.payType == 4) { // 支付宝支付
+					
 				}
 				uni.hideLoading()
 				return;

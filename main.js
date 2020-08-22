@@ -16,7 +16,6 @@ Vue.prototype.$store = store
 Vue.prototype.$api = api
 Vue.prototype.$util = util
 
-
 // 后端api地址
 Vue.prototype.$unishow = "http://unishop:8888/addons/unidrink";
 //Vue.prototype.$unishow = "http://drink.weivee.com/addons/unidrink";

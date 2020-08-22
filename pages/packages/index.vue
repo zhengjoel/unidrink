@@ -17,16 +17,8 @@
 									<view class="date u-line-1">{{ item.starttime_text }}-{{ item.endtime_text }}</view>
 								</view>
 							</view>
-							<view class="right_log" v-if="activeTabIndex == 2">
-								<view>兑换时间</view>
-								<view style="font-size: 22rpx;">{{ item.createtime_text }}</view>
-							</view>
-							<view class="right" @click.stop="" v-if="activeTabIndex == 1">
-								<view class="use immediate-use" :round="true" @tap="receive(item, index)">立即领取</view>
-							</view>
 							<view class="right" @click.stop="" v-if="activeTabIndex == 0">
-								<view v-if="item.status == 0" class="use immediate-use" :round="true" @tap="useCouponWith(item)">立即使用</view>
-								<view v-else class="used">已使用</view>
+								<view class="use immediate-use" :round="true" @tap="useCouponWith(item)">立即使用</view>
 							</view>
 						</view>
 					</view>
@@ -40,9 +32,6 @@
 				<view class="d-flex font-size-sm text-color-base mb-20">有效期：{{ coupon.starttime_text }}至{{ coupon.endtime_text }}</view>
 				<view class="d-flex font-size-sm text-color-base mb-20">领取时间：{{ coupon.createtime_text }}</view>
 				<view class="d-flex font-size-sm text-color-base mb-20">卷价值：满{{ coupon.least }}减{{ coupon.value }}</view>
-				<view class="d-flex font-size-sm text-color-base mb-20" v-if="activeTabIndex == 1">
-					每人限领：{{ coupon.limit }} 张 {{ coupon.my_receive > 0 ? '(已领' + coupon.my_receive + '张)' : '' }}
-				</view>
 				<view class="d-flex font-size-sm text-color-base mb-20" v-if="coupon.score > 0">需要积分：{{ coupon.score }}</view>
 				<view class="d-flex font-size-sm text-color-base mb-20">适用范围：{{ typeInfo(coupon.type) }}</view>
 				<view class="d-flex font-size-sm text-color-base mb-20">适用店铺：{{ coupon.shop_name }}</view>
@@ -51,9 +40,6 @@
 				</pre>
 				<view class="d-flex align-items-center just-content-center" v-if="activeTabIndex == 0">
 					<button type="primary" @tap="useCoupon" class="use-coupon-btn">立即使用</button>
-				</view>
-				<view class="d-flex align-items-center just-content-center" v-if="activeTabIndex == 1">
-					<button type="primary" @tap="receive(coupon, couponIndex)" class="use-coupon-btn">立即领取</button>
 				</view>
 			</view>
 		</modal>
@@ -74,26 +60,25 @@ export default {
 	},
 	data() {
 		return {
-			tabs: [
-				{ title: '我的优惠券', page: 1, pagesize: 10, coupons: [] },
-				{ title: '未领优惠券', page: 1, pagesize: 10, coupons: [] },
-				{ title: '兑换记录', page: 1, pagesize: 10, coupons: [] }
-			],
 			activeTabIndex: '',
 			detailModalVisible: false,
 			coupon: {},
 			couponIndex: 0, //当前选中的第几行
-			exchange_code: '',
-			coupons: []
+			coupons: [],
+			amount: 0 ,// 订单金额
+			buttonLock: false
 		};
 	},
 	onShow() {
 		this.activeTabIndex = 0;
 	},
-	onLoad() {},
+	onLoad(options) {
+		
+		if (options.amount) {
+			this.amount = options.amount;
+		}
+	},
 	onPullDownRefresh() {
-		this.tabs[this.activeTabIndex].coupons = [];
-		this.tabs[this.activeTabIndex].page = 1;
 		this.getCoupons(this.activeTabIndex);
 	},
 	watch: {
@@ -102,22 +87,6 @@ export default {
 		}
 	},
 	methods: {
-		// 兑换
-		async exchange() {
-			let data = await this.$api.request('/coupon/receive', 'POST', { code: this.exchange_code });
-			if (data) {
-				this.$refs.uToast.show({
-					title: '兑换成功',
-					type: 'success'
-				});
-				this.tabs[0].coupons = [];
-				this.tabs[0].page = 1;
-				this.getCoupons(0);
-				this.tabs[1].coupons = [];
-				this.tabs[1].page = 1;
-				this.getCoupons(1);
-			}
-		},
 		// 使用范围
 		typeInfo(type) {
 			if (type == 0) {
@@ -149,26 +118,29 @@ export default {
 			this.detailModalVisible = false;
 			this.coupon = {};
 		},
+		// 使用优惠及
 		useCoupon() {
-			uni.navigateBack({
-				
-			})
-		},
-		// 领取优惠券
-		async receive(coupon, index) {
-			let data = await this.$api.request('/coupon/receive', 'POST', { id: coupon.id });
-			if (data) {
-				this.$refs.uToast.show({
-					title: '领取成功',
-					type: 'success'
-				});
-				let coupon = this.tabs[this.activeTabIndex].coupons[index];
-				// 我领取加一
-				coupon.my_receive++;
-				if (coupon.limit == coupon.my_receive) {
-					this.tabs[this.activeTabIndex].coupons.splice(index, 1);
-				}
+			if (this.buttonLock == true) {
+				return;
 			}
+			this.buttonLock = true
+			
+			if (parseFloat(this.coupon.least) > parseFloat(this.amount)) {
+				this.$refs.uToast.show({
+					title: '订单金额满'+this.coupon.least+'才能使用',
+					type: 'error'
+				});
+				this.buttonLock = false
+			} else {
+				
+				this.$api.prePage().coupon = this.coupon;
+				
+				uni.navigateBack({
+					
+				})
+				
+			}
+			
 		}
 	}
 };

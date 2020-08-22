@@ -317,7 +317,7 @@ export default {
 			return parseFloat(price).toFixed(2);
 		},
 		disabledPay() { //是否达到起送价
-			return this.orderType == 'takeout' && (this.getCartGoodsPrice < this.store.min_price) ? true : false
+			return this.orderType == 'takeout' && (this.getCartGoodsPrice < parseFloat(this.store.min_price)) ? true : false
 		},
 		spread() { //差多少元起送
 			if(this.orderType != 'takeout') return

@@ -79,5 +79,22 @@
     },
     "mp-toutiao" : {
         "usingComponents" : true
+    },
+    "h5" : {
+        "title" : "uniDrink",
+        "domain" : "drink.weivee.com",
+        "router" : {
+            "base" : "/h5/"
+        },
+        "devServer" : {
+            "https" : false
+        },
+        "sdkConfigs" : {
+            "maps" : {
+                "qqmap" : {
+                    "key" : "WEPBZ-HDW3P-YQRDE-V4WIJ-FTMO3-5TFQT"
+                }
+            }
+        }
     }
 }

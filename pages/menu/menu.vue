@@ -53,7 +53,7 @@
 				<uni-notice-bar style="margin-top: 14upx;" backgroundColor="" scrollable="true" single="true" :text="store.notice"></uni-notice-bar>
 			</view>
 			<!-- #ifdef H5 -->
-			<view class="content" :style="{height: 'calc(100vh - 200rpx - 188rpx + '+(store.notice ? '0rpx':'60rpx')+')'}">
+			<view class="content" :style="{height: 'calc(100vh - 200rpx - 100rpx + '+(store.notice ? '0rpx':'60rpx')+')'}">
 			<!-- #endif -->
 			<!-- #ifndef H5 -->
 			<view class="content" :style="{height: 'calc(100vh - 200rpx + '+(store.notice ? '0rpx':'60rpx')+')'}">
@@ -84,7 +84,7 @@
 								</view>
 								<view class="items">
 									<!-- 商品 begin -->
-									<view class="good" v-for="(good, key) in item.goods_list" :key="key" :class="{'backgroud-grey': good.stock == 0}">
+									<view class="good" v-for="(good, key) in item.goods_list" :key="key" :class="{'backgroud-grey': good.stock <= 0}">
 										<image :src="good.image" class="image" @tap="showGoodDetailModal(item, good)"></image>
 										<view class="right">
 											<text class="name">{{ good.name }}</text>
@@ -250,7 +250,7 @@
 	<view class="loading" v-else>
 		<!-- <image src="/static/images/loading.gif"></image> -->
 		<ourLoading active background-color="" color="#00b1b7" text=" " />
-		<button type="primary" style="z-index: 3001;" @click="init" v-if="!store.id">定位最近的门店</button>
+		<button type="primary" style="z-index: 3001;position: absolute;top: 650rpx;" @click="init" v-if="!store.id">定位最近的门店</button>
 	</view>
 </template>
 
@@ -337,7 +337,6 @@ export default {
 		    return false;
 		},
 		selectShop(){
-			
 			uni.navigateTo({
 				url:'/pages/shop/shop'
 			})
@@ -349,7 +348,16 @@ export default {
 			    type: 'wgs84'
 			});
 			if (error) {
-				this.$api.msg('获取定位失败');
+				//this.$api.msg('获取定位失败');
+				uni.showModal({
+					title:'获取位置失败',
+					content:JSON.stringify(error)
+				})
+				// 默认地为你为北京地址
+				res = {
+					latitude: 39.919990,
+					longitude: 116.456270
+				}; 
 			}
 			if (res) {
 				console.log('当前位置的经度：' + res.longitude);

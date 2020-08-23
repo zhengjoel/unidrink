@@ -4,7 +4,7 @@
 			<view class="wrapper">
 				<view class="coupon" v-for="(item, index) in coupons" :key="index" @tap="openDetailModal(item, index)">
 					<view class="taobao">
-						<view class="ticket">
+						<view class="ticket" :style="{border: item.id == coupon_id ? '1rpx solid red':''}">
 							<view class="left">
 								<image class="picture" :src="item.image" mode="aspectFill"></image>
 								<view class="introduce">
@@ -18,7 +18,8 @@
 								</view>
 							</view>
 							<view class="right" @click.stop="" v-if="activeTabIndex == 0">
-								<view class="use immediate-use" :round="true" @tap="useCouponWith(item)">立即使用</view>
+								<view v-if="item.id != coupon_id" class="use immediate-use" :round="true" @tap="useCouponWith(item)">立即使用</view>
+								<view v-else class="use immediate-use" :round="true" @tap="cancelCoupon(item)">取消使用</view>
 							</view>
 						</view>
 					</view>
@@ -66,7 +67,8 @@ export default {
 			couponIndex: 0, //当前选中的第几行
 			coupons: [],
 			amount: 0 ,// 订单金额
-			buttonLock: false
+			buttonLock: false,
+			coupon_id: 0 // 前一页已选择的coupon
 		};
 	},
 	onShow() {
@@ -76,6 +78,9 @@ export default {
 		
 		if (options.amount) {
 			this.amount = options.amount;
+		}
+		if (options.coupon_id) {
+			this.coupon_id = options.coupon_id
 		}
 	},
 	onPullDownRefresh() {
@@ -110,9 +115,16 @@ export default {
 			this.$refs['couponExplain'].setContent(this.coupon.instructions || '');
 			this.detailModalVisible = true;
 		},
+		// 使用优惠券
 		useCouponWith(coupon) {
 			this.coupon = coupon;
 			this.useCoupon();
+		},
+		// 取消优惠券
+		cancelCoupon() {
+			this.coupon = {}
+			this.coupon_id = 0
+			this.$api.prePage().coupon = {}
 		},
 		closeDetailModal() {
 			this.detailModalVisible = false;

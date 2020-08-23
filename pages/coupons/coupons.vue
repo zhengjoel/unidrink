@@ -40,7 +40,6 @@
 						</view> -->
 						
 						<view class="taobao">
-							
 							<view class="ticket">
 								<view class="left">
 									<image
@@ -120,7 +119,6 @@
 				</view>
 			</view>
 		</modal>
-		
 		
 		<!--轻提示-->
 		<u-toast ref="uToast"></u-toast>

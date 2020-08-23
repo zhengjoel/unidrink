@@ -117,6 +117,10 @@
 				});
 			},
 			coupons() {
+				if(!this.isLogin) {
+					uni.navigateTo({url: '/pages/login/login'})
+					return
+				}
 				uni.navigateTo({
 					url: '/pages/coupons/coupons'
 				})

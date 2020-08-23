@@ -9,6 +9,9 @@
 		{
 			"path": "pages/menu/menu",
 			"style": {
+				// #ifdef H5
+				"navigationStyle": "custom",
+				// #endif
 				"enablePullDownRefresh": true,
 				"navigationBarTitleText": "uniDrink",
 				"navigationBarTextStyle": "black",

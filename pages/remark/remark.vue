@@ -20,6 +20,8 @@
 		<view class="d-flex just-content-center align-items-center" style="margin-top: 60rpx;">
 			<button type="primary" class="submit-btn font-size-base" @tap="submit">完成</button>
 		</view>
+		<!--轻提示-->
+		<u-toast ref="uToast"></u-toast>
 	</view>
 </template>
 
@@ -49,6 +51,13 @@
 				this.remark = this.remark.concat(" ", item)
 			},
 			submit() {
+				if (this.remark.length > 50) {
+					this.$refs.uToast.show({
+						title: '不能超过50个字符',
+						type: 'error'
+					});
+					return
+				}
 				uni.navigateTo({
 					url: "/pages/pay/pay?remark=" + this.remark
 				})

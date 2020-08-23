@@ -18,7 +18,7 @@ Vue.prototype.$util = util
 
 // 后端api地址
 Vue.prototype.$unishow = "http://unishop:8888/addons/unidrink";
-//Vue.prototype.$unishow = "http://drink.weivee.com/addons/unidrink";
+Vue.prototype.$unishow = "http://drink.weivee.com/addons/unidrink";
 
 
 // 为了方便每次上传的时候忘记修改上面的参数

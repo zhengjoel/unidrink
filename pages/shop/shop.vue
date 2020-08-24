@@ -8,7 +8,7 @@
 				<view slot="body" class="body">
 					<view class="body-left">
 						<view>距离您 {{item.far_text}}</view>
-						<view v-if="item.distance > 0">配送距离 {{item.distance + 'km'}}</view>
+						<view v-if="item.distance > 0">配送距离：{{item.distance + 'km '}} & 配送费：{{item.delivery_price}}</view>
 						<view v-else>外卖不配送</view>
 						<view>{{item.address_map + ' ' + item.address}}</view>
 						<view>营业时间 {{item.bussines_time}}</view>

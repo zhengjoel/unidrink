@@ -13,7 +13,7 @@
 					</view>
 					<view class="d-flex flex-column align-items-center">
 						<view class="font-size-lg text-color-base font-weight-bold">
-							{{ item.score >= 1 ? '+' : '-' }}{{ item.score }}
+							{{ item.score > 0 ? '+' : '-' }}{{ item.score }}
 						</view>
 						<view class="font-size-sm text-color-assist">变更前:{{ item.before }},变更后:{{ item.after }}</view>
 					</view>

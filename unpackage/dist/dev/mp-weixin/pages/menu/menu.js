@@ -94,13 +94,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   uniNoticeBar: function() {
-    return __webpack_require__.e(/*! import() | components/uni-notice-bar/uni-notice-bar */ "components/uni-notice-bar/uni-notice-bar").then(__webpack_require__.bind(null, /*! @/components/uni-notice-bar/uni-notice-bar.vue */ 260))
+    return __webpack_require__.e(/*! import() | components/uni-notice-bar/uni-notice-bar */ "components/uni-notice-bar/uni-notice-bar").then(__webpack_require__.bind(null, /*! @/components/uni-notice-bar/uni-notice-bar.vue */ 259))
   },
   modal: function() {
-    return __webpack_require__.e(/*! import() | components/modal/modal */ "components/modal/modal").then(__webpack_require__.bind(null, /*! @/components/modal/modal.vue */ 267))
+    return __webpack_require__.e(/*! import() | components/modal/modal */ "components/modal/modal").then(__webpack_require__.bind(null, /*! @/components/modal/modal.vue */ 266))
   },
   popupLayer: function() {
-    return __webpack_require__.e(/*! import() | components/popup-layer/popup-layer */ "components/popup-layer/popup-layer").then(__webpack_require__.bind(null, /*! @/components/popup-layer/popup-layer.vue */ 274))
+    return __webpack_require__.e(/*! import() | components/popup-layer/popup-layer */ "components/popup-layer/popup-layer").then(__webpack_require__.bind(null, /*! @/components/popup-layer/popup-layer.vue */ 273))
   }
 }
 var render = function() {
@@ -465,7 +465,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _createForOfIteratorHelper(o) {if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) {var i = 0;var F = function F() {};return { s: F, n: function n() {if (i >= o.length) return { done: true };return { done: false, value: o[i++] };}, e: function e(_e2) {throw _e2;}, f: F };}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}var it,normalCompletion = true,didErr = false,err;return { s: function s() {it = o[Symbol.iterator]();}, n: function n() {var step = it.next();normalCompletion = step.done;return step;}, e: function e(_e3) {didErr = true;err = _e3;}, f: function f() {try {if (!normalCompletion && it.return != null) it.return();} finally {if (didErr) throw err;}} };}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(n);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var modal = function modal() {__webpack_require__.e(/*! require.ensure | components/modal/modal */ "components/modal/modal").then((function () {return resolve(__webpack_require__(/*! @/components/modal/modal */ 267));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var popupLayer = function popupLayer() {__webpack_require__.e(/*! require.ensure | components/popup-layer/popup-layer */ "components/popup-layer/popup-layer").then((function () {return resolve(__webpack_require__(/*! @/components/popup-layer/popup-layer */ 274));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniNoticeBar = function uniNoticeBar() {__webpack_require__.e(/*! require.ensure | components/uni-notice-bar/uni-notice-bar */ "components/uni-notice-bar/uni-notice-bar").then((function () {return resolve(__webpack_require__(/*! @/components/uni-notice-bar/uni-notice-bar.vue */ 260));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var ourLoading = function ourLoading() {__webpack_require__.e(/*! require.ensure | components/our-loading/our-loading */ "components/our-loading/our-loading").then((function () {return resolve(__webpack_require__(/*! @/components/our-loading/our-loading.vue */ 281));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _createForOfIteratorHelper(o) {if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) {var i = 0;var F = function F() {};return { s: F, n: function n() {if (i >= o.length) return { done: true };return { done: false, value: o[i++] };}, e: function e(_e2) {throw _e2;}, f: F };}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}var it,normalCompletion = true,didErr = false,err;return { s: function s() {it = o[Symbol.iterator]();}, n: function n() {var step = it.next();normalCompletion = step.done;return step;}, e: function e(_e3) {didErr = true;err = _e3;}, f: function f() {try {if (!normalCompletion && it.return != null) it.return();} finally {if (didErr) throw err;}} };}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(n);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var modal = function modal() {__webpack_require__.e(/*! require.ensure | components/modal/modal */ "components/modal/modal").then((function () {return resolve(__webpack_require__(/*! @/components/modal/modal */ 266));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var popupLayer = function popupLayer() {__webpack_require__.e(/*! require.ensure | components/popup-layer/popup-layer */ "components/popup-layer/popup-layer").then((function () {return resolve(__webpack_require__(/*! @/components/popup-layer/popup-layer */ 273));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniNoticeBar = function uniNoticeBar() {__webpack_require__.e(/*! require.ensure | components/uni-notice-bar/uni-notice-bar */ "components/uni-notice-bar/uni-notice-bar").then((function () {return resolve(__webpack_require__(/*! @/components/uni-notice-bar/uni-notice-bar.vue */ 259));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var ourLoading = function ourLoading() {__webpack_require__.e(/*! require.ensure | components/our-loading/our-loading */ "components/our-loading/our-loading").then((function () {return resolve(__webpack_require__(/*! @/components/our-loading/our-loading.vue */ 280));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -499,7 +501,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
               _this.init();case 1:case "end":return _context.stop();}}}, _callee);}))();
   },
   computed: _objectSpread({},
-  (0, _vuex.mapState)(['orderType', 'address', 'store']), {},
+  (0, _vuex.mapState)(['orderType', 'address', 'store', 'location']), {},
   (0, _vuex.mapGetters)(['isLogin']), {
     goodCartNum: function goodCartNum() {var _this2 = this; //计算单个饮品添加到购物车的数量
       return function (id) {return _this2.cart.reduce(function (acc, cur) {
@@ -525,7 +527,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
       return parseFloat(price).toFixed(2);
     },
     disabledPay: function disabledPay() {//是否达到起送价
-      return this.orderType == 'takeout' && this.getCartGoodsPrice < this.store.min_price ? true : false;
+      return this.orderType == 'takeout' && this.getCartGoodsPrice < parseFloat(this.store.min_price) ? true : false;
     },
     spread: function spread() {//差多少元起送
       if (this.orderType != 'takeout') return;
@@ -545,21 +547,33 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
       return false;
     },
     selectShop: function selectShop() {
-
       uni.navigateTo({
         url: '/pages/shop/shop' });
 
     },
-    init: function init() {var _this4 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var _yield$uni$getLocatio, _yield$uni$getLocatio2, error, res, shop_id, shop, goods, cart, tmpCart, i, ii, iii;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0: //页面初始化
-                _this4.loading = true;_context2.next = 3;return (
+    init: function init() {var _this4 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var error, res, _yield$uni$getLocatio, _yield$uni$getLocatio2, shop_id, shop, goods, cart, tmpCart, i, ii, iii;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0: //页面初始化
+                _this4.loading = true;
 
+                error = {}, res = _this4.location;if (
+                _this4.location.hasOwnProperty('latitude')) {_context2.next = 10;break;}_context2.next = 5;return (
                   uni.getLocation({
-                    type: 'wgs84' }));case 3:_yield$uni$getLocatio = _context2.sent;_yield$uni$getLocatio2 = _slicedToArray(_yield$uni$getLocatio, 2);error = _yield$uni$getLocatio2[0];res = _yield$uni$getLocatio2[1];
+                    type: 'wgs84' }));case 5:_yield$uni$getLocatio = _context2.sent;_yield$uni$getLocatio2 = _slicedToArray(_yield$uni$getLocatio, 2);error = _yield$uni$getLocatio2[0];res = _yield$uni$getLocatio2[1];
 
                 if (error) {
-                  _this4.$api.msg('获取定位失败');
-                }if (!
-                res) {_context2.next = 27;break;}
+                  //this.$api.msg('获取定位失败');
+                  uni.showModal({
+                    title: '获取位置失败',
+                    content: JSON.stringify(error) });
+
+                  // 默认地为你为北京地址
+                  res = {
+                    latitude: 39.919990,
+                    longitude: 116.456270 };
+
+                }case 10:if (!
+
+
+                res) {_context2.next = 29;break;}
                 console.log('当前位置的经度：' + res.longitude);
                 console.log('当前位置的纬度：' + res.latitude);
                 _this4.SET_LOCATION(res);
@@ -567,14 +581,14 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                 shop_id = 0;
                 if (_this4.store.id) {
                   shop_id = _this4.store.id;
-                }_context2.next = 16;return (
+                }_context2.next = 18;return (
 
                   _this4.$api.request('/shop/nearby', 'POST', {
                     lat: res.latitude,
                     lng: res.longitude,
-                    shop_id: shop_id }));case 16:shop = _context2.sent;if (!
+                    shop_id: shop_id }));case 18:shop = _context2.sent;if (!
 
-                shop) {_context2.next = 27;break;}
+                shop) {_context2.next = 29;break;}
                 //广告图
                 _this4.getAds(shop.id);
 
@@ -584,7 +598,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                 //await this.getStore()
 
                 //this.goods = await this.$api('goods')
-                _context2.next = 23;return _this4.$api.request('/menu/goods', 'POST', { shop_id: shop.id });case 23:goods = _context2.sent;
+                _context2.next = 25;return _this4.$api.request('/menu/goods', 'POST', { shop_id: shop.id });case 25:goods = _context2.sent;
                 if (goods) {
                   _this4.goods = goods;
 
@@ -609,7 +623,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                 _this4.loading = false;
 
 
-                uni.stopPullDownRefresh();case 27:case "end":return _context2.stop();}}}, _callee2);}))();
+                uni.stopPullDownRefresh();case 29:case "end":return _context2.stop();}}}, _callee2);}))();
 
 
     },
@@ -619,16 +633,20 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                   _this5.ads = data;
                 }case 4:case "end":return _context3.stop();}}}, _callee3);}))();
     },
-    takout: function takout() {
-      if (this.orderType == 'takeout') return;
+    takout: function takout() {var force = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+      if (this.orderType == 'takeout' && force == false) return;
 
       if (!this.isLogin) {
         uni.navigateTo({ url: '/pages/login/login' });
         return;
       }
+      if (!this.address.hasOwnProperty('address') || force == true) {
+        uni.navigateTo({
+          url: '/pages/address/address?is_choose=true' });
 
-      uni.navigateTo({
-        url: '/pages/address/address?is_choose=true' });
+      } else {
+        this.SET_ORDER_TYPE('takeout');
+      }
 
     },
     handleMenuTap: function handleMenuTap(id) {var _this6 = this; //点击菜单项事件
@@ -796,6 +814,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
       }
     },
     toPay: function toPay() {
+
       if (!this.isLogin) {
         uni.navigateTo({ url: '/pages/login/login' });
         return;

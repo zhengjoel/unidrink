@@ -92,7 +92,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
-var components
+var components = {
+  uToast: function() {
+    return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-toast/u-toast */ "node-modules/uview-ui/components/u-toast/u-toast").then(__webpack_require__.bind(null, /*! uview-ui/components/u-toast/u-toast.vue */ 311))
+  }
+}
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -155,6 +159,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 var _default =
 {
   data: function data() {
@@ -181,6 +187,13 @@ var _default =
       this.remark = this.remark.concat(" ", item);
     },
     submit: function submit() {
+      if (this.remark.length > 50) {
+        this.$refs.uToast.show({
+          title: '不能超过50个字符',
+          type: 'error' });
+
+        return;
+      }
       uni.navigateTo({
         url: "/pages/pay/pay?remark=" + this.remark });
 

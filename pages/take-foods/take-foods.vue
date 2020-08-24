@@ -190,7 +190,7 @@
 			}
 		},
 		computed: {
-			//...mapState(['order'])
+			
 			...mapGetters(['isLogin'])
 		},
 		onPullDownRefresh() {
@@ -202,13 +202,16 @@
 			// 	status: 1
 			// })
 			
-			// this.SET_ORDER(order);
+			
+			this.takeFoods();
+		},
+		onShow() {
 			this.takeFoods();
 		},
 		methods: {
-			...mapMutations(['SET_ORDER']),
+			
 			// 取餐数据
-			async takeFoods(){
+			async takeFoods() {
 				if (!this.isLogin) {
 					return;
 				}

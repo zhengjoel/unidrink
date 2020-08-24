@@ -27,9 +27,9 @@
 				</view>
 			</view>
 			
-			<view class="banner">
+			<!-- <view class="banner">
 				<image src="https://images.qmai.cn/s23107/2020/04/30/aed6cdb1db4712f87e.png" mode="widthFix"></image>
-			</view>
+			</view> -->
 			<!-- 积分商品列表 begin -->
 			<view clas="d-flex flex-column">
 				<view class="d-flex justify-content-between align-items-center mb-30">

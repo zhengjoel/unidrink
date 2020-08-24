@@ -329,7 +329,7 @@ export default {
 		this.getCoupons();
 	},
 	methods: {
-		...mapMutations(['SET_ORDER', 'SET_ORDER_TYPE']),
+		...mapMutations(['SET_ORDER_TYPE', 'SET_MEMBER']),
 		...mapGetters(['isLogin']),
 		// 更改支付方式
 		setPayType(paytype) {
@@ -467,8 +467,8 @@ export default {
 				uni.hideLoading();
 				return;
 			}
-			console.log('payTYpe:');
-			console.log(this.payType);
+			//console.log('payTYpe:');
+			//console.log(this.payType);
 
 			if (this.payType == 2) {
 				// 微信支付
@@ -490,7 +490,9 @@ export default {
 			if (!pay) {
 				return;
 			}
-			this.SET_ORDER(order);
+			
+			this.member.money -= amount
+			this.SET_MEMBER(this.member)
 			uni.removeStorageSync('cart');
 			uni.switchTab({
 				url: '/pages/take-foods/take-foods',
@@ -525,7 +527,7 @@ export default {
 							paySign: data.paySign, // 支付签名
 							success: function(res) {
 								// 支付成功后的回调函数
-								that.SET_ORDER(order);
+								
 								uni.removeStorageSync('cart');
 								uni.switchTab({
 									url: '/pages/take-foods/take-foods'
@@ -556,7 +558,7 @@ export default {
 					signType: 'MD5',
 					paySign: data.paySign,
 					success: function(res) {
-						that.SET_ORDER(order);
+						
 						uni.removeStorageSync('cart');
 						uni.switchTab({
 							url: '/pages/take-foods/take-foods'
@@ -579,7 +581,7 @@ export default {
 					success(res) {
 						//console.log('支付成功');
 						//console.log(res);
-						that.SET_ORDER(order);
+						
 						uni.removeStorageSync('cart');
 						uni.switchTab({
 							url: '/pages/take-foods/take-foods'
@@ -606,7 +608,7 @@ export default {
 					confirmText: '是',
 					success: function(res) {
 						if (res.confirm) {
-							that.SET_ORDER(order);
+							
 							uni.removeStorageSync('cart');
 							uni.switchTab({
 								url: '/pages/take-foods/take-foods'
@@ -633,7 +635,7 @@ export default {
 					orderInfo: orderInfo,
 					success: function (res) {
 						console.log('success:' + JSON.stringify(res));
-						that.SET_ORDER(order);
+						
 						uni.removeStorageSync('cart');
 						uni.switchTab({
 							url: '/pages/take-foods/take-foods'

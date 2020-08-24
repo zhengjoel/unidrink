@@ -352,6 +352,10 @@
   font-size: 32rpx;
   margin-bottom: 10rpx;
 }
+.nav .header .left .store-name .small.data-v-368aef34 {
+  font-size: 24rpx;
+  color: #919293;
+}
 .nav .header .left .store-name .iconfont.data-v-368aef34 {
   margin-left: 10rpx;
   line-height: 100%;
@@ -928,7 +932,7 @@
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
           justify-content: space-between;
-  z-index: 9999;
+  z-index: 99;
 }
 .cart-box .cart-img.data-v-368aef34 {
   width: 96rpx;
@@ -1089,5 +1093,6 @@
 }
 .backgroud-grey.data-v-368aef34 {
   background-color: #e1e4e4;
+  padding: 15rpx !important;
 }
 

@@ -25,7 +25,6 @@ _vue.default.prototype.$store = _store.default;
 _vue.default.prototype.$api = _api.default;
 _vue.default.prototype.$util = _util.default;
 
-
 // 后端api地址
 _vue.default.prototype.$unishow = "http://unishop:8888/addons/unidrink";
 //Vue.prototype.$unishow = "http://drink.weivee.com/addons/unidrink";

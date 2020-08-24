@@ -94,13 +94,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   modal: function() {
-    return __webpack_require__.e(/*! import() | components/modal/modal */ "components/modal/modal").then(__webpack_require__.bind(null, /*! @/components/modal/modal.vue */ 267))
+    return __webpack_require__.e(/*! import() | components/modal/modal */ "components/modal/modal").then(__webpack_require__.bind(null, /*! @/components/modal/modal.vue */ 266))
   },
   jyfParser: function() {
-    return Promise.all(/*! import() | components/jyf-parser/jyf-parser */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/jyf-parser/jyf-parser")]).then(__webpack_require__.bind(null, /*! @/components/jyf-parser/jyf-parser.vue */ 312))
+    return Promise.all(/*! import() | components/jyf-parser/jyf-parser */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/jyf-parser/jyf-parser")]).then(__webpack_require__.bind(null, /*! @/components/jyf-parser/jyf-parser.vue */ 318))
   },
   uToast: function() {
-    return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-toast/u-toast */ "node-modules/uview-ui/components/u-toast/u-toast").then(__webpack_require__.bind(null, /*! uview-ui/components/u-toast/u-toast.vue */ 322))
+    return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-toast/u-toast */ "node-modules/uview-ui/components/u-toast/u-toast").then(__webpack_require__.bind(null, /*! uview-ui/components/u-toast/u-toast.vue */ 311))
   }
 }
 var render = function() {
@@ -149,26 +149,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator */ 4));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var modal = function modal() {__webpack_require__.e(/*! require.ensure | components/modal/modal */ "components/modal/modal").then((function () {return resolve(__webpack_require__(/*! @/components/modal/modal */ 267));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var jyfParser = function jyfParser() {Promise.all(/*! require.ensure | components/jyf-parser/jyf-parser */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/jyf-parser/jyf-parser")]).then((function () {return resolve(__webpack_require__(/*! @/components/jyf-parser/jyf-parser */ 312));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator */ 4));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var modal = function modal() {__webpack_require__.e(/*! require.ensure | components/modal/modal */ "components/modal/modal").then((function () {return resolve(__webpack_require__(/*! @/components/modal/modal */ 266));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var jyfParser = function jyfParser() {Promise.all(/*! require.ensure | components/jyf-parser/jyf-parser */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/jyf-parser/jyf-parser")]).then((function () {return resolve(__webpack_require__(/*! @/components/jyf-parser/jyf-parser */ 318));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -231,25 +212,29 @@ __webpack_require__.r(__webpack_exports__);
 
   data: function data() {
     return {
-      tabs: [
-      { title: '我的优惠券', page: 1, pagesize: 10, coupons: [] },
-      { title: '未领优惠券', page: 1, pagesize: 10, coupons: [] },
-      { title: '兑换记录', page: 1, pagesize: 10, coupons: [] }],
-
       activeTabIndex: '',
       detailModalVisible: false,
       coupon: {},
       couponIndex: 0, //当前选中的第几行
-      exchange_code: '' };
-
+      coupons: [],
+      amount: 0, // 订单金额
+      buttonLock: false,
+      coupon_id: 0 // 前一页已选择的coupon
+    };
   },
   onShow: function onShow() {
     this.activeTabIndex = 0;
   },
-  onLoad: function onLoad() {},
+  onLoad: function onLoad(options) {
+
+    if (options.amount) {
+      this.amount = options.amount;
+    }
+    if (options.coupon_id) {
+      this.coupon_id = options.coupon_id;
+    }
+  },
   onPullDownRefresh: function onPullDownRefresh() {
-    this.tabs[this.activeTabIndex].coupons = [];
-    this.tabs[this.activeTabIndex].page = 1;
     this.getCoupons(this.activeTabIndex);
   },
   watch: {
@@ -258,22 +243,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
   methods: {
-    // 兑换
-    exchange: function exchange() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var data;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
-                  _this.$api.request('/coupon/receive', 'POST', { code: _this.exchange_code }));case 2:data = _context2.sent;
-                if (data) {
-                  _this.$refs.uToast.show({
-                    title: '兑换成功',
-                    type: 'success' });
-
-                  _this.tabs[0].coupons = [];
-                  _this.tabs[0].page = 1;
-                  _this.getCoupons(0);
-                  _this.tabs[1].coupons = [];
-                  _this.tabs[1].page = 1;
-                  _this.getCoupons(1);
-                }case 4:case "end":return _context2.stop();}}}, _callee2);}))();
-    },
     // 使用范围
     typeInfo: function typeInfo(type) {
       if (type == 0) {
@@ -286,44 +255,10 @@ __webpack_require__.r(__webpack_exports__);
         return '外卖';
       }
     },
-    handleTab: function handleTab(index) {
-      this.activeTabIndex = index;
-    },
-    getCoupons: function getCoupons(type) {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3() {var page, pagesize, data, i;return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:
-                // const coupons = await this.$api('customerCoupons')
-                // if(type == 'all') {
-                // 	this.coupons = coupons
-                // } else {
-                // 	this.coupons = coupons.filter(item => item.couponType == type)
-                // }
+    getCoupons: function getCoupons() {
+      var prePage = this.$api.prePage();
 
-                page = _this2.tabs[type].page;
-                pagesize = _this2.tabs[type].pagesize;
-                // 我的优惠券
-                data = false;if (!(
-                type == '0')) {_context3.next = 7;break;}_context3.next = 6;return (
-                  _this2.$api.request('/coupon/mine', 'POST', { page: page, pagesize: pagesize }));case 6:data = _context3.sent;case 7:if (!(
-
-
-                type == '1')) {_context3.next = 11;break;}_context3.next = 10;return (
-                  _this2.$api.request('/coupon/index', 'POST', { page: page, pagesize: pagesize }));case 10:data = _context3.sent;case 11:if (!(
-
-
-                type == '2')) {_context3.next = 15;break;}_context3.next = 14;return (
-                  _this2.$api.request('/coupon/exchangeLog', 'POST', { page: page, pagesize: pagesize }));case 14:data = _context3.sent;case 15:
-
-                uni.stopPullDownRefresh();if (!(
-                !data || data.length == 0)) {_context3.next = 18;break;}return _context3.abrupt("return");case 18:
-
-
-                if (page == 1) {
-                  _this2.tabs[type].coupons = data;
-                } else {
-                  for (i in data) {
-                    _this2.tabs[type].coupons.push(data[i]);
-                  }
-                }
-                _this2.tabs[type].page++;case 20:case "end":return _context3.stop();}}}, _callee3);}))();
+      this.coupons = prePage.coupons;
     },
     openDetailModal: function openDetailModal(coupon, index) {
       this.couponIndex = index;
@@ -331,46 +266,44 @@ __webpack_require__.r(__webpack_exports__);
       this.$refs['couponExplain'].setContent(this.coupon.instructions || '');
       this.detailModalVisible = true;
     },
+    // 使用优惠券
     useCouponWith: function useCouponWith(coupon) {
       this.coupon = coupon;
       this.useCoupon();
+    },
+    // 取消优惠券
+    cancelCoupon: function cancelCoupon() {
+      this.coupon = {};
+      this.coupon_id = 0;
+      this.$api.prePage().coupon = {};
     },
     closeDetailModal: function closeDetailModal() {
       this.detailModalVisible = false;
       this.coupon = {};
     },
+    // 使用优惠及
     useCoupon: function useCoupon() {
-      uni.switchTab({
-        url: '/pages/menu/menu' });
+      if (this.buttonLock == true) {
+        return;
+      }
+      this.buttonLock = true;
 
-    },
-    showTip1: function showTip1() {
-      uni.showToast({
-        title: '您暂时还没有赠送中卡券哦~',
-        icon: 'none' });
+      if (parseFloat(this.coupon.least) > parseFloat(this.amount)) {
+        this.$refs.uToast.show({
+          title: '订单金额满' + this.coupon.least + '才能使用',
+          type: 'error' });
 
-    },
-    showTip2: function showTip2() {
-      uni.showToast({
-        title: '您暂时还没有券码哦~',
-        icon: 'none' });
+        this.buttonLock = false;
+      } else {
 
-    },
-    // 领取优惠券
-    receive: function receive(coupon, index) {var _this3 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee4() {var data, _coupon;return _regenerator.default.wrap(function _callee4$(_context4) {while (1) {switch (_context4.prev = _context4.next) {case 0:_context4.next = 2;return (
-                  _this3.$api.request('/coupon/receive', 'POST', { id: coupon.id }));case 2:data = _context4.sent;
-                if (data) {
-                  _this3.$refs.uToast.show({
-                    title: '领取成功',
-                    type: 'success' });
+        this.$api.prePage().coupon = this.coupon;
 
-                  _coupon = _this3.tabs[_this3.activeTabIndex].coupons[index];
-                  // 我领取加一
-                  _coupon.my_receive++;
-                  if (_coupon.limit == _coupon.my_receive) {
-                    _this3.tabs[_this3.activeTabIndex].coupons.splice(index, 1);
-                  }
-                }case 4:case "end":return _context4.stop();}}}, _callee4);}))();
+        uni.navigateBack({});
+
+
+
+      }
+
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

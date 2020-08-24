@@ -10,7 +10,7 @@
 						</view>
 						<view class="store-location">
 							<image src='/static/images/order/location.png' style="width: 30rpx; height: 30rpx;" class="mr-10"></image>
-							<text>距离您 {{ store.far_text }}</text>
+							<text @click="init">距离您 {{ store.far_text }}</text>
 						</view>
 					</view>
 					<view class="left overflow-hidden" v-else>
@@ -24,23 +24,25 @@
 							由<text class="text-color-base" style="margin: 0 10rpx">{{ store.name }}</text>配送
 						</view> -->
 						<view class="store-name" @click="selectShop()">
-							<text>{{ store.name }}</text>
+							<view>{{ store.name }} 
+								<text class="small">{{orderType == 'takeout' ? '(配送距离:'+store.distance+'km)': ''}}</text>
+							</view>
 							<view class="iconfont iconarrow-right"></view>
 						</view>
-						<view class="store-location">
+						<view class="store-location" @tap="takout(true)">
 							<image src='/static/images/order/location.png' style="width: 30rpx; height: 30rpx;" class="mr-10"></image>
 							<text>{{ address.address }} ,距离您 {{ store.far_text }}</text>
 						</view>
 					</view>
 					<view class="right">
-						<!-- <view class="dinein" :class="{active: orderType == 'takein'}" @tap="SET_ORDER_TYPE('takein')">
+						<view class="dinein" :class="{active: orderType == 'takein'}" @tap="SET_ORDER_TYPE('takein')">
 							<text>自取</text>
 						</view>
 						<view class="takeout" :class="{active: orderType == 'takeout'}" @tap="takout">
 							<text>外卖</text>
-						</view> -->
-						<view v-if="store.distance > 0">配送距离:{{store.distance}}km</view>
-						<view v-else>外卖不配送</view>
+						</view>
+						<!-- <view v-if="store.distance > 0">配送距离:{{store.distance}}km</view>
+						<view v-else>外卖不配送</view> -->
 					</view>
 				</view>
 				<!-- <view class="coupon">
@@ -291,7 +293,7 @@ export default {
 		this.init();
 	},
 	computed: {
-		...mapState(['orderType', 'address', 'store']),
+		...mapState(['orderType', 'address', 'store', 'location']),
 		...mapGetters(['isLogin']),
 		goodCartNum() {	//计算单个饮品添加到购物车的数量
 			return (id) => this.cart.reduce((acc, cur) => {
@@ -344,21 +346,25 @@ export default {
 		async init() {	//页面初始化
 			this.loading = true;
 			
-			let [error, res] = await uni.getLocation({
-			    type: 'wgs84'
-			});
-			if (error) {
-				//this.$api.msg('获取定位失败');
-				uni.showModal({
-					title:'获取位置失败',
-					content:JSON.stringify(error)
-				})
-				// 默认地为你为北京地址
-				res = {
-					latitude: 39.919990,
-					longitude: 116.456270
-				}; 
+			let error = {}, res = this.location
+			if (!this.location.hasOwnProperty('latitude')) {
+				[error, res] = await uni.getLocation({
+				    type: 'wgs84'
+				});
+				if (error) {
+					//this.$api.msg('获取定位失败');
+					uni.showModal({
+						title:'获取位置失败',
+						content:JSON.stringify(error)
+					})
+					// 默认地为你为北京地址
+					res = {
+						latitude: 39.919990,
+						longitude: 116.456270
+					}; 
+				}
 			}
+			
 			if (res) {
 				console.log('当前位置的经度：' + res.longitude);
 				console.log('当前位置的纬度：' + res.latitude);
@@ -419,17 +425,21 @@ export default {
 				this.ads = data;
 			}
 		},
-		takout() {
-			if(this.orderType == 'takeout') return
+		takout(force = false) {
+			if(this.orderType == 'takeout' && force == false) return
 			
 			if(!this.isLogin) {
 				uni.navigateTo({url: '/pages/login/login'})
 				return
 			}
+			if (!this.address.hasOwnProperty('address') || force == true) {
+				uni.navigateTo({
+					url: '/pages/address/address?is_choose=true'
+				})
+			} else {
+				this.SET_ORDER_TYPE('takeout');
+			}
 			
-			uni.navigateTo({
-				url: '/pages/address/address?is_choose=true'
-			})
 		},
 		handleMenuTap(id) {	//点击菜单项事件
 			if(!this.sizeCalcState) {
@@ -596,6 +606,7 @@ export default {
 			}
 		},
 		toPay() {
+			
 			if(!this.isLogin) {
 				uni.navigateTo({url: '/pages/login/login'})
 				return

@@ -94,10 +94,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   uniSwipeAction: function() {
-    return __webpack_require__.e(/*! import() | components/uni-swipe-action/uni-swipe-action */ "components/uni-swipe-action/uni-swipe-action").then(__webpack_require__.bind(null, /*! @/components/uni-swipe-action/uni-swipe-action.vue */ 343))
+    return __webpack_require__.e(/*! import() | components/uni-swipe-action/uni-swipe-action */ "components/uni-swipe-action/uni-swipe-action").then(__webpack_require__.bind(null, /*! @/components/uni-swipe-action/uni-swipe-action.vue */ 342))
   },
   uniSwipeActionItem: function() {
-    return Promise.all(/*! import() | components/uni-swipe-action-item/uni-swipe-action-item */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-swipe-action-item/uni-swipe-action-item")]).then(__webpack_require__.bind(null, /*! @/components/uni-swipe-action-item/uni-swipe-action-item.vue */ 348))
+    return Promise.all(/*! import() | components/uni-swipe-action-item/uni-swipe-action-item */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-swipe-action-item/uni-swipe-action-item")]).then(__webpack_require__.bind(null, /*! @/components/uni-swipe-action-item/uni-swipe-action-item.vue */ 347))
   }
 }
 var render = function() {
@@ -168,7 +168,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(n);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var uniSwipeAction = function uniSwipeAction() {__webpack_require__.e(/*! require.ensure | components/uni-swipe-action/uni-swipe-action */ "components/uni-swipe-action/uni-swipe-action").then((function () {return resolve(__webpack_require__(/*! ../../components/uni-swipe-action/uni-swipe-action */ 343));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniSwipeActionItem = function uniSwipeActionItem() {Promise.all(/*! require.ensure | components/uni-swipe-action-item/uni-swipe-action-item */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-swipe-action-item/uni-swipe-action-item")]).then((function () {return resolve(__webpack_require__(/*! ../../components/uni-swipe-action-item/uni-swipe-action-item */ 348));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(n);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var uniSwipeAction = function uniSwipeAction() {__webpack_require__.e(/*! require.ensure | components/uni-swipe-action/uni-swipe-action */ "components/uni-swipe-action/uni-swipe-action").then((function () {return resolve(__webpack_require__(/*! ../../components/uni-swipe-action/uni-swipe-action */ 342));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniSwipeActionItem = function uniSwipeActionItem() {Promise.all(/*! require.ensure | components/uni-swipe-action-item/uni-swipe-action-item */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-swipe-action-item/uni-swipe-action-item")]).then((function () {return resolve(__webpack_require__(/*! ../../components/uni-swipe-action-item/uni-swipe-action-item */ 347));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -205,7 +205,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
               _this.init();case 4:case "end":return _context.stop();}}}, _callee);}))();
   },
   methods: _objectSpread({},
-  (0, _vuex.mapMutations)(['SET_ADDRESS', 'SET_ADDRESSES', 'SET_ORDER_TYPE']), {
+  (0, _vuex.mapMutations)(['SET_ADDRESS', 'SET_ADDRESSES', 'SET_ORDER_TYPE', 'SET_STORE', 'SET_LOCATION']), {
     init: function init() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var data;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
                   _this2.$api.request('/address/all'));case 2:data = _context2.sent;
                 if (data) {
@@ -246,26 +246,34 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
     chooseAddress: function chooseAddress(address) {var _this4 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee4() {var data;return _regenerator.default.wrap(function _callee4$(_context4) {while (1) {switch (_context4.prev = _context4.next) {case 0:if (
                 _this4.is_choose) {_context4.next = 2;break;}return _context4.abrupt("return");case 2:
 
+                console.log('已选中的店铺');
                 console.log(_this4.store);if (!(
 
-                _this4.scene == 'menu')) {_context4.next = 17;break;}_context4.next = 6;return (
+                _this4.scene == 'menu')) {_context4.next = 22;break;}_context4.next = 7;return (
                   _this4.$api.request('/shop/getDistanceFromLocation', 'POST', {
                     lat: address.lat,
                     lng: address.lng,
                     lat2: _this4.store.lat,
-                    lng2: _this4.store.lng }));case 6:data = _context4.sent;if (
+                    lng2: _this4.store.lng }));case 7:data = _context4.sent;if (
 
-                data) {_context4.next = 9;break;}return _context4.abrupt("return");case 9:if (!(
+                data) {_context4.next = 10;break;}return _context4.abrupt("return");case 10:if (!(
 
 
-                data > _this4.store.distance)) {_context4.next = 12;break;}
-                _this4.$api.msg('不在配送范围');return _context4.abrupt("return");case 12:
+                data > _this4.store.distance)) {_context4.next = 13;break;}
+                _this4.$api.msg('不在配送范围');return _context4.abrupt("return");case 13:
 
 
                 _this4.SET_ADDRESS(address);
                 _this4.SET_ORDER_TYPE('takeout');
+                _this4.store.far = data;
+                _this4.store.far_text = data + 'km';
+                _this4.SET_STORE(_this4.store);
+                _this4.SET_LOCATION({
+                  latitude: address.lat,
+                  longitude: address.lng });
+
                 uni.switchTab({
-                  url: '/pages/menu/menu' });_context4.next = 18;break;case 17:
+                  url: '/pages/menu/menu' });_context4.next = 23;break;case 22:
 
                 if (_this4.scene == 'pay') {
                   _this4.SET_ADDRESS(address);
@@ -273,7 +281,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                   uni.navigateTo({
                     url: '/pages/pay/pay' });
 
-                }case 18:case "end":return _context4.stop();}}}, _callee4);}))();
+                }case 23:case "end":return _context4.stop();}}}, _callee4);}))();
     } }) };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

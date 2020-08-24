@@ -129,7 +129,10 @@ page {
 				align-items: center;
 				font-size: $font-size-lg;
 				margin-bottom: 10rpx;
-
+				.small{
+					font-size: $font-size-sm;
+					color: $text-color-assist;
+				}
 				.iconfont {
 					margin-left: 10rpx;
 					line-height: 100%;

@@ -94,10 +94,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   uVerificationCode: function() {
-    return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-verification-code/u-verification-code */ "node-modules/uview-ui/components/u-verification-code/u-verification-code").then(__webpack_require__.bind(null, /*! uview-ui/components/u-verification-code/u-verification-code.vue */ 336))
+    return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-verification-code/u-verification-code */ "node-modules/uview-ui/components/u-verification-code/u-verification-code").then(__webpack_require__.bind(null, /*! uview-ui/components/u-verification-code/u-verification-code.vue */ 335))
   },
   uToast: function() {
-    return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-toast/u-toast */ "node-modules/uview-ui/components/u-toast/u-toast").then(__webpack_require__.bind(null, /*! uview-ui/components/u-toast/u-toast.vue */ 322))
+    return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-toast/u-toast */ "node-modules/uview-ui/components/u-toast/u-toast").then(__webpack_require__.bind(null, /*! uview-ui/components/u-toast/u-toast.vue */ 311))
   }
 }
 var render = function() {

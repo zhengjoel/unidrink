@@ -3,6 +3,7 @@
   "navigationBarTextStyle": "black",
   "navigationBarBackgroundColor": "#ffffff",
   "usingComponents": {
-    "list-cell": "/components/list-cell/list-cell"
+    "list-cell": "/components/list-cell/list-cell",
+    "u-loadmore": "/node-modules/uview-ui/components/u-loadmore/u-loadmore"
   }
 }

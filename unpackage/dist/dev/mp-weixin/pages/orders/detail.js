@@ -94,7 +94,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   listCell: function() {
-    return __webpack_require__.e(/*! import() | components/list-cell/list-cell */ "components/list-cell/list-cell").then(__webpack_require__.bind(null, /*! @/components/list-cell/list-cell.vue */ 288))
+    return __webpack_require__.e(/*! import() | components/list-cell/list-cell */ "components/list-cell/list-cell").then(__webpack_require__.bind(null, /*! @/components/list-cell/list-cell.vue */ 287))
   }
 }
 var render = function() {
@@ -388,7 +388,7 @@ var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28)
 //
 //
 //
-var listCell = function listCell() {__webpack_require__.e(/*! require.ensure | components/list-cell/list-cell */ "components/list-cell/list-cell").then((function () {return resolve(__webpack_require__(/*! @/components/list-cell/list-cell */ 288));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { listCell: listCell }, data: function data() {return { order: {} };}, onLoad: function onLoad(_ref) {var id = _ref.id;this.order = _orders.default.find(function (item) {return item.id == id;});}, methods: { review: function review() {var date = this.order.completed_time.split(' ')[0];uni.navigateTo({ url: '/pages/review/review?storename=' + this.order.store.name + '&typeCate=' + this.order.typeCate + '&date=' + date });} } };exports.default = _default;
+var listCell = function listCell() {__webpack_require__.e(/*! require.ensure | components/list-cell/list-cell */ "components/list-cell/list-cell").then((function () {return resolve(__webpack_require__(/*! @/components/list-cell/list-cell */ 287));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { listCell: listCell }, data: function data() {return { order: {} };}, onLoad: function onLoad(_ref) {var id = _ref.id;this.order = _orders.default.find(function (item) {return item.id == id;});}, methods: { review: function review() {var date = this.order.completed_time.split(' ')[0];uni.navigateTo({ url: '/pages/review/review?storename=' + this.order.store.name + '&typeCate=' + this.order.typeCate + '&date=' + date });} } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

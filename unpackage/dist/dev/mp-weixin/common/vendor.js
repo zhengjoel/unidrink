@@ -1171,11 +1171,11 @@ function handleEvent(event) {var _this = this;
           eventArray[1],
           eventArray[2],
           isCustom,
-          methodName) ||
-          [];
+          methodName);
+
           // 参数尾部增加原始事件对象用于复杂表达式内获取额外数据
           // eslint-disable-next-line no-sparse-arrays
-          ret.push(handler.apply(handlerCtx, params.concat([,,,,,,,,,, event])));
+          ret.push(handler.apply(handlerCtx, (Array.isArray(params) ? params : []).concat([,,,,,,,,,, event])));
         }
       });
     }
@@ -19912,167 +19912,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 223:
-/*!********************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/points-flow.js ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [
-{
-  "happenedDate": "2020-05-11",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-11 00:17:47",
-  "id": 1 },
-
-{
-  "happenedDate": "2020-05-10",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-10 22:23:36",
-  "id": 2 },
-
-{
-  "happenedDate": "2020-05-09",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-09 02:14:24",
-  "id": 3 },
-
-{
-  "happenedDate": "2020-05-08",
-  "sourceType": 1,
-  "sellerName": "奈雪の茶",
-  "changeNum": 50,
-  "changeType": 1,
-  "reason": "消费增加",
-  "createdAt": "2020-05-08 19:25:40",
-  "id": 4 },
-
-{
-  "happenedDate": "2020-05-08",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-08 18:43:14",
-  "id": 5 },
-
-{
-  "happenedDate": "2020-05-07",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-07 16:25:46",
-  "id": 6 },
-
-{
-  "happenedDate": "2020-05-06",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-06 10:38:42",
-  "id": 7 },
-
-{
-  "happenedDate": "2020-05-05",
-  "sourceType": 1,
-  "sellerName": "奈雪の茶",
-  "changeNum": 73,
-  "changeType": 1,
-  "reason": "消费增加",
-  "createdAt": "2020-05-05 20:42:47",
-  "id": 8 },
-
-{
-  "happenedDate": "2020-05-03",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-03 19:37:12",
-  "id": 9 },
-
-{
-  "happenedDate": "2020-05-02",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-05-02 03:30:42",
-  "id": 10 },
-
-{
-  "happenedDate": "2020-04-25",
-  "sourceType": 1,
-  "sellerName": "奈雪の茶",
-  "changeNum": 43,
-  "changeType": 1,
-  "reason": "消费增加",
-  "createdAt": "2020-04-25 20:48:26",
-  "id": 11 },
-
-{
-  "happenedDate": "2020-04-25",
-  "sourceType": 5,
-  "sellerName": "奈雪の茶",
-  "changeNum": 1,
-  "changeType": 1,
-  "reason": "积分签到奖励",
-  "createdAt": "2020-04-25 02:46:36",
-  "id": 12 },
-
-{
-  "happenedDate": "2020-04-24",
-  "sourceType": 1,
-  "sellerName": "奈雪の茶",
-  "changeNum": 57,
-  "changeType": 1,
-  "reason": "消费增加",
-  "createdAt": "2020-04-24 20:23:45",
-  "id": 13 },
-
-{
-  "happenedDate": "2020-04-18",
-  "sourceType": 1,
-  "sellerName": "奈雪の茶",
-  "changeNum": 56,
-  "changeType": 1,
-  "reason": "消费增加",
-  "createdAt": "2020-04-18 20:20:08",
-  "id": 14 },
-
-{
-  "happenedDate": "2020-04-10",
-  "sourceType": 1,
-  "sellerName": "奈雪の茶",
-  "changeNum": 33,
-  "changeType": 1,
-  "reason": "消费增加",
-  "createdAt": "2020-04-10 20:40:44",
-  "id": 15 }];exports.default = _default;
-
-/***/ }),
-
 /***/ 23:
 /*!*******************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/attendance.js ***!
@@ -22070,7 +21909,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 307:
+/***/ 306:
 /*!*********************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/util/province.js ***!
   \*********************************************************************************************************/
@@ -22220,7 +22059,7 @@ provinceData;exports.default = _default;
 
 /***/ }),
 
-/***/ 308:
+/***/ 307:
 /*!*****************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/util/city.js ***!
   \*****************************************************************************************************/
@@ -23734,7 +23573,7 @@ cityData;exports.default = _default;
 
 /***/ }),
 
-/***/ 309:
+/***/ 308:
 /*!*****************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/util/area.js ***!
   \*****************************************************************************************************/
@@ -36336,9 +36175,9 @@ var store = new _vuex.default.Store({
       token: "87cecec2-6071-431d-afc1-825650711e5a",
       username: "游客" },
 
-    order: {},
     lang: 'zh-cn',
     cookieKey: 'PHPSESSID=e4dk4o2utr3c0n95tp42p745ai',
+    // 默认地为你为北京地址
     location: {} },
 
   getters: {
@@ -36366,9 +36205,6 @@ var store = new _vuex.default.Store({
     REMOVE_CART: function REMOVE_CART(state) {
       state.cart = [];
     },
-    SET_ORDER: function SET_ORDER(state, order) {
-      state.order = order;
-    },
     setCookie: function setCookie(state, provider) {
       state.cookie = provider;
       uni.setStorage({
@@ -36393,7 +36229,19 @@ store;exports.default = _default;
 
 /***/ }),
 
-/***/ 317:
+/***/ 32:
+/*!*****************************************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/vuex-persistedstate/dist/vuex-persistedstate.es.js ***!
+  \*****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = _default;var r = function r(_r) {return function (r) {return !!r && "object" == typeof r;}(_r) && !function (r) {var t = Object.prototype.toString.call(r);return "[object RegExp]" === t || "[object Date]" === t || function (r) {return r.$$typeof === e;}(r);}(_r);},e = "function" == typeof Symbol && Symbol.for ? Symbol.for("react.element") : 60103;function t(r, e) {return !1 !== e.clone && e.isMergeableObject(r) ? c(Array.isArray(r) ? [] : {}, r, e) : r;}function n(r, e, n) {return r.concat(e).map(function (r) {return t(r, n);});}function o(r) {return Object.keys(r).concat(function (r) {return Object.getOwnPropertySymbols ? Object.getOwnPropertySymbols(r).filter(function (e) {return r.propertyIsEnumerable(e);}) : [];}(r));}function u(r, e) {try {return e in r;} catch (r) {return !1;}}function c(e, i, a) {(a = a || {}).arrayMerge = a.arrayMerge || n, a.isMergeableObject = a.isMergeableObject || r, a.cloneUnlessOtherwiseSpecified = t;var f = Array.isArray(i);return f === Array.isArray(e) ? f ? a.arrayMerge(e, i, a) : function (r, e, n) {var i = {};return n.isMergeableObject(r) && o(r).forEach(function (e) {i[e] = t(r[e], n);}), o(e).forEach(function (o) {(function (r, e) {return u(r, e) && !(Object.hasOwnProperty.call(r, e) && Object.propertyIsEnumerable.call(r, e));})(r, o) || (i[o] = u(r, o) && n.isMergeableObject(e[o]) ? function (r, e) {if (!e.customMerge) return c;var t = e.customMerge(r);return "function" == typeof t ? t : c;}(o, n)(r[o], e[o], n) : t(e[o], n));}), i;}(e, i, a) : t(i, a);}c.all = function (r, e) {if (!Array.isArray(r)) throw new Error("first argument should be an array");return r.reduce(function (r, t) {return c(r, t, e);}, {});};var i = c;function _default(r) {var e = (r = r || {}).storage || window && window.localStorage,t = r.key || "vuex";(r.assertStorage || function () {e.setItem("@@", 1), e.removeItem("@@");})(e);var n,o = function o() {return (r.getState || function (r, e) {var t;try {return (t = e.getItem(r)) && void 0 !== t ? JSON.parse(t) : void 0;} catch (r) {}})(t, e);};return r.fetchBeforeUse && (n = o()), function (u) {r.fetchBeforeUse || (n = o()), "object" == typeof n && null !== n && (u.replaceState(r.overwrite ? n : i(u.state, n, { arrayMerge: r.arrayMerger || function (r, e) {return e;}, clone: !1 })), (r.rehydrated || function () {})(u)), (r.subscriber || function (r) {return function (e) {return r.subscribe(e);};})(u)(function (n, o) {(r.filter || function () {return !0;})(n) && (r.setState || function (r, e, t) {return t.setItem(r, JSON.stringify(e));})(t, (r.reducer || function (r, e) {return Array.isArray(e) ? e.reduce(function (e, t) {return function (r, e, t, n) {return (e = e.split ? e.split(".") : e).slice(0, -1).reduce(function (r, e) {return r[e] = r[e] || {};}, r)[e.pop()] = t, r;}(e, t, function (r, e, t) {return void 0 === (r = (e.split ? e.split(".") : e).reduce(function (r, e) {return r && r[e];}, r)) ? void 0 : r;}(r, t));}, {}) : r;})(o, r.paths), e);});};}
+
+/***/ }),
+
+/***/ 323:
 /*!********************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/jyf-parser/libs/MpHtmlParser.js ***!
   \********************************************************************************************************/
@@ -36407,9 +36255,9 @@ function _classCallCheck(instance, Constructor) {if (!(instance instanceof Const
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           author：JinYufeng
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           update：2020/05/08
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */
-var cfg = __webpack_require__(/*! ./config.js */ 318),
+var cfg = __webpack_require__(/*! ./config.js */ 324),
 blankChar = cfg.blankChar,
-CssHandler = __webpack_require__(/*! ./CssHandler.js */ 319),
+CssHandler = __webpack_require__(/*! ./CssHandler.js */ 325),
 screenWidth = wx.getSystemInfoSync().screenWidth;
 var emoji; // emoji 补丁包 https://jin-yufeng.github.io/Parser/#/instructions?id=emoji
 var MpHtmlParser = /*#__PURE__*/function () {"use strict";
@@ -36920,7 +36768,7 @@ module.exports = MpHtmlParser;
 
 /***/ }),
 
-/***/ 318:
+/***/ 324:
 /*!**************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/jyf-parser/libs/config.js ***!
   \**************************************************************************************************/
@@ -37026,7 +36874,7 @@ function makeMap(str) {
 
 /***/ }),
 
-/***/ 319:
+/***/ 325:
 /*!******************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/jyf-parser/libs/CssHandler.js ***!
   \******************************************************************************************************/
@@ -37040,7 +36888,7 @@ function _classCallCheck(instance, Constructor) {if (!(instance instanceof Const
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           author：JinYufeng
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           update：2020/03/15
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */
-var cfg = __webpack_require__(/*! ./config.js */ 318);var
+var cfg = __webpack_require__(/*! ./config.js */ 324);var
 CssHandler = /*#__PURE__*/function () {"use strict";
   function CssHandler(tagStyle) {var _this = this;_classCallCheck(this, CssHandler);_defineProperty(this, "getStyle",
 
@@ -37134,18 +36982,6 @@ CssParser = /*#__PURE__*/function () {"use strict";
       this.list = [];
       this.state = this.Space;
     } }]);return CssParser;}();
-
-/***/ }),
-
-/***/ 32:
-/*!*****************************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/vuex-persistedstate/dist/vuex-persistedstate.es.js ***!
-  \*****************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = _default;var r = function r(_r) {return function (r) {return !!r && "object" == typeof r;}(_r) && !function (r) {var t = Object.prototype.toString.call(r);return "[object RegExp]" === t || "[object Date]" === t || function (r) {return r.$$typeof === e;}(r);}(_r);},e = "function" == typeof Symbol && Symbol.for ? Symbol.for("react.element") : 60103;function t(r, e) {return !1 !== e.clone && e.isMergeableObject(r) ? c(Array.isArray(r) ? [] : {}, r, e) : r;}function n(r, e, n) {return r.concat(e).map(function (r) {return t(r, n);});}function o(r) {return Object.keys(r).concat(function (r) {return Object.getOwnPropertySymbols ? Object.getOwnPropertySymbols(r).filter(function (e) {return r.propertyIsEnumerable(e);}) : [];}(r));}function u(r, e) {try {return e in r;} catch (r) {return !1;}}function c(e, i, a) {(a = a || {}).arrayMerge = a.arrayMerge || n, a.isMergeableObject = a.isMergeableObject || r, a.cloneUnlessOtherwiseSpecified = t;var f = Array.isArray(i);return f === Array.isArray(e) ? f ? a.arrayMerge(e, i, a) : function (r, e, n) {var i = {};return n.isMergeableObject(r) && o(r).forEach(function (e) {i[e] = t(r[e], n);}), o(e).forEach(function (o) {(function (r, e) {return u(r, e) && !(Object.hasOwnProperty.call(r, e) && Object.propertyIsEnumerable.call(r, e));})(r, o) || (i[o] = u(r, o) && n.isMergeableObject(e[o]) ? function (r, e) {if (!e.customMerge) return c;var t = e.customMerge(r);return "function" == typeof t ? t : c;}(o, n)(r[o], e[o], n) : t(e[o], n));}), i;}(e, i, a) : t(i, a);}c.all = function (r, e) {if (!Array.isArray(r)) throw new Error("first argument should be an array");return r.reduce(function (r, t) {return c(r, t, e);}, {});};var i = c;function _default(r) {var e = (r = r || {}).storage || window && window.localStorage,t = r.key || "vuex";(r.assertStorage || function () {e.setItem("@@", 1), e.removeItem("@@");})(e);var n,o = function o() {return (r.getState || function (r, e) {var t;try {return (t = e.getItem(r)) && void 0 !== t ? JSON.parse(t) : void 0;} catch (r) {}})(t, e);};return r.fetchBeforeUse && (n = o()), function (u) {r.fetchBeforeUse || (n = o()), "object" == typeof n && null !== n && (u.replaceState(r.overwrite ? n : i(u.state, n, { arrayMerge: r.arrayMerger || function (r, e) {return e;}, clone: !1 })), (r.rehydrated || function () {})(u)), (r.subscriber || function (r) {return function (e) {return r.subscribe(e);};})(u)(function (n, o) {(r.filter || function () {return !0;})(n) && (r.setState || function (r, e, t) {return t.setItem(r, JSON.stringify(e));})(t, (r.reducer || function (r, e) {return Array.isArray(e) ? e.reduce(function (e, t) {return function (r, e, t, n) {return (e = e.split ? e.split(".") : e).slice(0, -1).reduce(function (r, e) {return r[e] = r[e] || {};}, r)[e.pop()] = t, r;}(e, t, function (r, e, t) {return void 0 === (r = (e.split ? e.split(".") : e).reduce(function (r, e) {return r && r[e];}, r)) ? void 0 : r;}(r, t));}, {}) : r;})(o, r.paths), e);});};}
 
 /***/ }),
 
@@ -37337,7 +37173,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 353:
+/***/ 352:
 /*!*******************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/uni-swipe-action-item/mpwxs.js ***!
   \*******************************************************************************************************/
@@ -37662,7 +37498,7 @@ deepMerge;exports.default = _default;
 
 /***/ }),
 
-/***/ 375:
+/***/ 374:
 /*!***************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/pages/attendance/uni-calendar/util.js ***!
   \***************************************************************************************************/
@@ -37670,7 +37506,7 @@ deepMerge;exports.default = _default;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 376));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 375));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
 
 Calendar = /*#__PURE__*/function () {
   function Calendar()
@@ -38000,7 +37836,7 @@ Calendar;exports.default = _default;
 
 /***/ }),
 
-/***/ 376:
+/***/ 375:
 /*!*******************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/pages/attendance/uni-calendar/calendar.js ***!
   \*******************************************************************************************************/
@@ -39056,7 +38892,7 @@ timeFrom;exports.default = _default;
 
 /***/ }),
 
-/***/ 433:
+/***/ 432:
 /*!*******************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/uni-icons/icons.js ***!
   \*******************************************************************************************/

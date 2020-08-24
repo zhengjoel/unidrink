@@ -39,9 +39,9 @@ const store = new Vuex.Store({
 			token: "87cecec2-6071-431d-afc1-825650711e5a",
 			username: "游客"
 		},
-		order: {},
 		lang: 'zh-cn',
 		cookieKey:'PHPSESSID=e4dk4o2utr3c0n95tp42p745ai',
+		// 默认地为你为北京地址
 		location: {}
 	},
 	getters: {
@@ -68,9 +68,6 @@ const store = new Vuex.Store({
 		},
 		REMOVE_CART(state) {
 			state.cart = []
-		},
-		SET_ORDER(state, order) {
-			state.order = order
 		},
 		setCookie(state, provider) {
 			state.cookie = provider;

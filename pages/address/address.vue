@@ -66,7 +66,7 @@
 			this.init();
 		},
 		methods: {
-			...mapMutations(['SET_ADDRESS', 'SET_ADDRESSES', 'SET_ORDER_TYPE']),
+			...mapMutations(['SET_ADDRESS', 'SET_ADDRESSES', 'SET_ORDER_TYPE', 'SET_STORE', 'SET_LOCATION']),
 			async init() {
 				let data = await this.$api.request('/address/all');
 				if (data) {
@@ -107,6 +107,7 @@
 			async chooseAddress(address) {
 				if (!this.is_choose) return
 				
+				console.log('已选中的店铺')
 				console.log(this.store);
 				
 				if (this.scene == 'menu') {
@@ -125,6 +126,13 @@
 					}
 					this.SET_ADDRESS(address)
 					this.SET_ORDER_TYPE('takeout')
+					this.store.far = data
+					this.store.far_text = data + 'km'
+					this.SET_STORE(this.store)
+					this.SET_LOCATION({
+						latitude: address.lat,
+						longitude: address.lng
+					});
 					uni.switchTab({
 						url: '/pages/menu/menu'
 					})

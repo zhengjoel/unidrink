@@ -10,7 +10,7 @@
 						</view>
 						<view class="store-location">
 							<image src='/static/images/order/location.png' style="width: 30rpx; height: 30rpx;" class="mr-10"></image>
-							<text @click="init">距离您 {{ store.far_text }}</text>
+							<text>距离您 {{ store.far_text }}</text>
 						</view>
 					</view>
 					<view class="left overflow-hidden" v-else>

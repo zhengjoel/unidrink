@@ -74,7 +74,7 @@
 					<view class="wrapper">
 						<swiper class="ads" v-if="ads.length > 0" id="ads" autoplay :interval="3000" indicator-dots>
 							<swiper-item v-for="(item, index) in ads" :key='index'>
-								<image :src="item.image"></image>
+								<image mode="aspectFill" :src="item.image"></image>
 							</swiper-item>
 						</swiper>
 						<view class="list">
@@ -82,12 +82,12 @@
 							<view class="category" v-for="(item, index) in goods" :key="index" :id="`cate-${item.id}`">
 								<view class="title">
 									<text>{{ item.name }}</text>
-									<image :src="item.icon" class="icon"></image>
+									<image mode="aspectFill" :src="item.icon" class="icon"></image>
 								</view>
 								<view class="items">
 									<!-- 商品 begin -->
 									<view class="good" v-for="(good, key) in item.goods_list" :key="key" :class="{'backgroud-grey': good.stock <= 0}">
-										<image :src="good.image" class="image" @tap="showGoodDetailModal(item, good)"></image>
+										<image mode="aspectFill" :src="good.image" class="image" @tap="showGoodDetailModal(item, good)"></image>
 										<view class="right">
 											<text class="name">{{ good.name }}</text>
 											<text class="tips">{{ good.desc }}</text>

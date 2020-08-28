@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "double-bounce": "/components/our-loading/loaders/double-bounce"
+  }
+}

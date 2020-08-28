@@ -583,6 +583,7 @@ var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28)
                 uni.hideLoading();return _context2.abrupt("return");case 10:
 
 
+
                 //console.log('payTYpe:');
                 //console.log(this.payType);
 
@@ -629,6 +630,7 @@ var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28)
 
 
                 } else if (data.trade_type == 'JSAPI') {
+
 
 
 

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "店铺",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#ffffff",
+  "usingComponents": {
+    "u-search": "/node-modules/uview-ui/components/u-search/u-search",
+    "u-card": "/node-modules/uview-ui/components/u-card/u-card",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button"
+  }
+}

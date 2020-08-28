@@ -203,7 +203,7 @@
 			// })
 			
 			
-			this.takeFoods();
+			//this.takeFoods();
 		},
 		onShow() {
 			this.takeFoods();

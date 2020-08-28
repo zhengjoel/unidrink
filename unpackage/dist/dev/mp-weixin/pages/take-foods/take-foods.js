@@ -348,7 +348,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
     // })
 
 
-    this.takeFoods();
+    //this.takeFoods();
   },
   onShow: function onShow() {
     this.takeFoods();

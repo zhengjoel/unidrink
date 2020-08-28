@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "uniDrink",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#ffffff",
+  "usingComponents": {
+    "u-toast": "/node-modules/uview-ui/components/u-toast/u-toast"
+  }
+}

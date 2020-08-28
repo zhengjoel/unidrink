@@ -467,6 +467,7 @@ export default {
 				uni.hideLoading();
 				return;
 			}
+			
 			//console.log('payTYpe:');
 			//console.log(this.payType);
 
@@ -517,6 +518,7 @@ export default {
 				// 微信内的H5
 				let config = await this.$api.request('/pay/jssdkBuildConfig');
 				if (config) {
+					
 					jweixin.config(config);
 					jweixin.ready(function() {
 						jweixin.chooseWXPay({

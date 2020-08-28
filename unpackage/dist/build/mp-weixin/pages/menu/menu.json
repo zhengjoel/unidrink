@@ -1,0 +1,12 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "uniDrink",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#ffffff",
+  "usingComponents": {
+    "uni-notice-bar": "/components/uni-notice-bar/uni-notice-bar",
+    "modal": "/components/modal/modal",
+    "popup-layer": "/components/popup-layer/popup-layer",
+    "our-loading": "/components/our-loading/our-loading"
+  }
+}

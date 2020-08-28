@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "uniDrink",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#ffffff",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "list-cell": "/components/list-cell/list-cell",
+    "our-loading": "/components/our-loading/our-loading"
+  }
+}

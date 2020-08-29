@@ -13,7 +13,7 @@
 					<image src="/static/images/index/zq.png" class="icon"></image>
 					<view class="title">自取</view>
 				</view>
-				<view class="item" @tap="takein">
+				<view class="item" @tap="takeout">
 					<image src="/static/images/index/wm.png" class="icon"></image>
 					<view class="title">外卖</view>
 				</view>
@@ -98,6 +98,12 @@
 		methods: {
 			takein() {
 				this.$store.commit('SET_ORDER_TYPE', 'takein')
+				uni.switchTab({
+					url: '/pages/menu/menu'
+				})
+			},
+			takeout() {
+				this.$store.commit('SET_ORDER_TYPE', 'takeout')
 				uni.switchTab({
 					url: '/pages/menu/menu'
 				})

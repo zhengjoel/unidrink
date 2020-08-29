@@ -234,6 +234,12 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function ownKeys(object, enumera
         url: '/pages/menu/menu' });
 
     },
+    takeout: function takeout() {
+      this.$store.commit('SET_ORDER_TYPE', 'takeout');
+      uni.switchTab({
+        url: '/pages/menu/menu' });
+
+    },
     integrals: function integrals() {
       if (!this.isLogin) {
         uni.navigateTo({ url: '/pages/login/login' });

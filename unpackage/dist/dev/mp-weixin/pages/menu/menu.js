@@ -467,7 +467,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _createForOfIteratorHelper(o) {if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) {var i = 0;var F = function F() {};return { s: F, n: function n() {if (i >= o.length) return { done: true };return { done: false, value: o[i++] };}, e: function e(_e2) {throw _e2;}, f: F };}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}var it,normalCompletion = true,didErr = false,err;return { s: function s() {it = o[Symbol.iterator]();}, n: function n() {var step = it.next();normalCompletion = step.done;return step;}, e: function e(_e3) {didErr = true;err = _e3;}, f: function f() {try {if (!normalCompletion && it.return != null) it.return();} finally {if (didErr) throw err;}} };}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(n);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var modal = function modal() {__webpack_require__.e(/*! require.ensure | components/modal/modal */ "components/modal/modal").then((function () {return resolve(__webpack_require__(/*! @/components/modal/modal */ 266));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var popupLayer = function popupLayer() {__webpack_require__.e(/*! require.ensure | components/popup-layer/popup-layer */ "components/popup-layer/popup-layer").then((function () {return resolve(__webpack_require__(/*! @/components/popup-layer/popup-layer */ 273));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniNoticeBar = function uniNoticeBar() {__webpack_require__.e(/*! require.ensure | components/uni-notice-bar/uni-notice-bar */ "components/uni-notice-bar/uni-notice-bar").then((function () {return resolve(__webpack_require__(/*! @/components/uni-notice-bar/uni-notice-bar.vue */ 259));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var ourLoading = function ourLoading() {__webpack_require__.e(/*! require.ensure | components/our-loading/our-loading */ "components/our-loading/our-loading").then((function () {return resolve(__webpack_require__(/*! @/components/our-loading/our-loading.vue */ 280));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _createForOfIteratorHelper(o) {if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) {var i = 0;var F = function F() {};return { s: F, n: function n() {if (i >= o.length) return { done: true };return { done: false, value: o[i++] };}, e: function e(_e2) {throw _e2;}, f: F };}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}var it,normalCompletion = true,didErr = false,err;return { s: function s() {it = o[Symbol.iterator]();}, n: function n() {var step = it.next();normalCompletion = step.done;return step;}, e: function e(_e3) {didErr = true;err = _e3;}, f: function f() {try {if (!normalCompletion && it.return != null) it.return();} finally {if (didErr) throw err;}} };}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(n);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var modal = function modal() {__webpack_require__.e(/*! require.ensure | components/modal/modal */ "components/modal/modal").then((function () {return resolve(__webpack_require__(/*! @/components/modal/modal */ 266));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var popupLayer = function popupLayer() {__webpack_require__.e(/*! require.ensure | components/popup-layer/popup-layer */ "components/popup-layer/popup-layer").then((function () {return resolve(__webpack_require__(/*! @/components/popup-layer/popup-layer */ 273));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniNoticeBar = function uniNoticeBar() {__webpack_require__.e(/*! require.ensure | components/uni-notice-bar/uni-notice-bar */ "components/uni-notice-bar/uni-notice-bar").then((function () {return resolve(__webpack_require__(/*! @/components/uni-notice-bar/uni-notice-bar.vue */ 259));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var ourLoading = function ourLoading() {__webpack_require__.e(/*! require.ensure | components/our-loading/our-loading */ "components/our-loading/our-loading").then((function () {return resolve(__webpack_require__(/*! @/components/our-loading/our-loading.vue */ 280));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -497,22 +497,26 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
   onPullDownRefresh: function onPullDownRefresh() {
     this.init();
   },
-  onLoad: function onLoad() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
-              _this.init();case 1:case "end":return _context.stop();}}}, _callee);}))();
+  onShow: function onShow() {
+    if (this.orderType == 'takeout') {
+      this.SET_ORDER_TYPE('takein');
+      this.takout(true);
+    }
+    this.init();
   },
   computed: _objectSpread({},
   (0, _vuex.mapState)(['orderType', 'address', 'store', 'location']), {},
   (0, _vuex.mapGetters)(['isLogin']), {
-    goodCartNum: function goodCartNum() {var _this2 = this; //计算单个饮品添加到购物车的数量
-      return function (id) {return _this2.cart.reduce(function (acc, cur) {
+    goodCartNum: function goodCartNum() {var _this = this; //计算单个饮品添加到购物车的数量
+      return function (id) {return _this.cart.reduce(function (acc, cur) {
           if (cur.id === id) {
             return acc += cur.number;
           }
           return acc;
         }, 0);};
     },
-    menuCartNum: function menuCartNum() {var _this3 = this;
-      return function (id) {return _this3.cart.reduce(function (acc, cur) {
+    menuCartNum: function menuCartNum() {var _this2 = this;
+      return function (id) {return _this2.cart.reduce(function (acc, cur) {
           if (cur.cate_id === id) {
             return acc += cur.number;
           }
@@ -551,13 +555,13 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
         url: '/pages/shop/shop' });
 
     },
-    init: function init() {var _this4 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var error, res, _yield$uni$getLocatio, _yield$uni$getLocatio2, shop_id, shop, goods, cart, tmpCart, i, ii, iii;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0: //页面初始化
-                _this4.loading = true;
+    init: function init() {var _this3 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var error, res, _yield$uni$getLocatio, _yield$uni$getLocatio2, shop_id, shop, goods, cart, tmpCart, i, ii, iii;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0: //页面初始化
+                _this3.loading = true;
 
-                error = {}, res = _this4.location;if (
-                _this4.location.hasOwnProperty('latitude')) {_context2.next = 10;break;}_context2.next = 5;return (
+                error = {}, res = _this3.location;if (
+                _this3.location.hasOwnProperty('latitude')) {_context.next = 10;break;}_context.next = 5;return (
                   uni.getLocation({
-                    type: 'wgs84' }));case 5:_yield$uni$getLocatio = _context2.sent;_yield$uni$getLocatio2 = _slicedToArray(_yield$uni$getLocatio, 2);error = _yield$uni$getLocatio2[0];res = _yield$uni$getLocatio2[1];
+                    type: 'wgs84' }));case 5:_yield$uni$getLocatio = _context.sent;_yield$uni$getLocatio2 = _slicedToArray(_yield$uni$getLocatio, 2);error = _yield$uni$getLocatio2[0];res = _yield$uni$getLocatio2[1];
 
                 if (error) {
                   //this.$api.msg('获取定位失败');
@@ -573,36 +577,36 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                 }case 10:if (!
 
 
-                res) {_context2.next = 29;break;}
+                res) {_context.next = 29;break;}
                 console.log('当前位置的经度：' + res.longitude);
                 console.log('当前位置的纬度：' + res.latitude);
-                _this4.SET_LOCATION(res);
+                _this3.SET_LOCATION(res);
 
                 shop_id = 0;
-                if (_this4.store.id) {
-                  shop_id = _this4.store.id;
-                }_context2.next = 18;return (
+                if (_this3.store.id) {
+                  shop_id = _this3.store.id;
+                }_context.next = 18;return (
 
-                  _this4.$api.request('/shop/nearby', 'POST', {
+                  _this3.$api.request('/shop/nearby', 'POST', {
                     lat: res.latitude,
                     lng: res.longitude,
-                    shop_id: shop_id }));case 18:shop = _context2.sent;if (!
+                    shop_id: shop_id }));case 18:shop = _context.sent;if (!
 
-                shop) {_context2.next = 29;break;}
+                shop) {_context.next = 29;break;}
                 //广告图
-                _this4.getAds(shop.id);
+                _this3.getAds(shop.id);
 
                 shop.notice = shop.status == 1 ? shop.notice : '店铺营业时间为:' + shop.bussines_time + '，不在营业时间内无法下单';
                 // 设置店铺信息
-                _this4.SET_STORE(shop);
+                _this3.SET_STORE(shop);
                 //await this.getStore()
 
                 //this.goods = await this.$api('goods')
-                _context2.next = 25;return _this4.$api.request('/menu/goods', 'POST', { shop_id: shop.id });case 25:goods = _context2.sent;
+                _context.next = 25;return _this3.$api.request('/menu/goods', 'POST', { shop_id: shop.id });case 25:goods = _context.sent;
                 if (goods) {
-                  _this4.goods = goods;
+                  _this3.goods = goods;
 
-                  _this4.cart = [];
+                  _this3.cart = [];
                   cart = uni.getStorageSync('cart') || [];
                   tmpCart = [];
                   if (cart) {
@@ -615,23 +619,23 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                         }
                       }
                     }
-                    _this4.cart = tmpCart;
-                    _this4.cartPopupVisible = false;
+                    _this3.cart = tmpCart;
+                    _this3.cartPopupVisible = false;
                   }
                 }
 
-                _this4.loading = false;
+                _this3.loading = false;
 
 
-                uni.stopPullDownRefresh();case 29:case "end":return _context2.stop();}}}, _callee2);}))();
+                uni.stopPullDownRefresh();case 29:case "end":return _context.stop();}}}, _callee);}))();
 
 
     },
-    getAds: function getAds(shop_id) {var _this5 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3() {var data;return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:_context3.next = 2;return (
-                  _this5.$api.request('/menu/ads', 'POST', { shop_id: shop_id }));case 2:data = _context3.sent;
+    getAds: function getAds(shop_id) {var _this4 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var data;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:_context2.next = 2;return (
+                  _this4.$api.request('/menu/ads', 'POST', { shop_id: shop_id }));case 2:data = _context2.sent;
                 if (data) {
-                  _this5.ads = data;
-                }case 4:case "end":return _context3.stop();}}}, _callee3);}))();
+                  _this4.ads = data;
+                }case 4:case "end":return _context2.stop();}}}, _callee2);}))();
     },
     takout: function takout() {var force = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
       if (this.orderType == 'takeout' && force == false) return;
@@ -649,13 +653,13 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
       }
 
     },
-    handleMenuTap: function handleMenuTap(id) {var _this6 = this; //点击菜单项事件
+    handleMenuTap: function handleMenuTap(id) {var _this5 = this; //点击菜单项事件
       if (!this.sizeCalcState) {
         this.calcSize();
       }
 
       this.currentCateId = id;
-      this.$nextTick(function () {return _this6.cateScrollTop = _this6.goods.find(function (item) {return item.id == id;}).top;});
+      this.$nextTick(function () {return _this5.cateScrollTop = _this5.goods.find(function (item) {return item.id == id;}).top;});
     },
     handleGoodsScroll: function handleGoodsScroll(_ref) {var detail = _ref.detail; //商品列表滚动事件
       if (!this.sizeCalcState) {
@@ -689,10 +693,10 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
       });
       this.sizeCalcState = true;
     },
-    handleAddToCart: function handleAddToCart(cate, good, num) {var _this7 = this; //添加到购物车
+    handleAddToCart: function handleAddToCart(cate, good, num) {var _this6 = this; //添加到购物车
       var index = this.cart.findIndex(function (item) {
         if (good.use_spec) {
-          return item.id === good.id && item.props_text === _this7.getGoodSelectedProps(good);
+          return item.id === good.id && item.props_text === _this6.getGoodSelectedProps(good);
         } else {
           return item.id === good.id;
         }
@@ -788,14 +792,14 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
     openCartPopup: function openCartPopup() {//打开/关闭购物车列表popup
       this.cartPopupVisible = !this.cartPopupVisible;
     },
-    handleCartClear: function handleCartClear() {var _this8 = this; //清空购物车
+    handleCartClear: function handleCartClear() {var _this7 = this; //清空购物车
       uni.showModal({
         title: '提示',
         content: '确定清空购物车么',
         success: function success(_ref2) {var confirm = _ref2.confirm;
           if (confirm) {
-            _this8.cartPopupVisible = false;
-            _this8.cart = [];
+            _this7.cartPopupVisible = false;
+            _this7.cart = [];
           }
         } });
 

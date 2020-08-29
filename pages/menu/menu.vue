@@ -289,7 +289,11 @@ export default {
 	onPullDownRefresh() {
 		this.init()
 	},
-	async onLoad() {
+	onShow() {
+		if (this.orderType == 'takeout') {
+			this.SET_ORDER_TYPE('takein')
+			this.takout(true)
+		}
 		this.init();
 	},
 	computed: {

@@ -19,7 +19,7 @@
 				</view>
 			</view>
 			
-			<view class="info">
+			<!-- <view class="info">
 				<view class="integral_section" @tap="integrals">
 					<view class="top">
 						<text class="title">我的积分</text>
@@ -34,7 +34,7 @@
 					<image src="/static/images/mine/hym.png"></image>
 					<text>会员码</text>
 				</view>
-			</view>
+			</view> -->
 			
 			<view class="navigators">
 				<view class="left">

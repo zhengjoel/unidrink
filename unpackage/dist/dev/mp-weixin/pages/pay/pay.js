@@ -402,7 +402,7 @@ var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28)
 
 
       defaultSelector: [0],
-      payType: 2, // 付款方式:5=余额支付,2=微信支付,4=支付宝
+      payType: 3, // 付款方式:5=余额支付,3=微信支付,4=支付宝
       coupons: [], // 可用优惠券列表
       coupon: {} // 选中的
     };
@@ -587,7 +587,7 @@ var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28)
                 //console.log('payTYpe:');
                 //console.log(this.payType);
 
-                if (_this2.payType == 2) {
+                if (_this2.payType == 3) {
                   // 微信支付
                   _this2.weixinPay(order);
                 } else if (_this2.payType == 5) {

@@ -180,10 +180,10 @@
 					</view>
 				</list-cell> -->
 				<list-cell last>
-					<view class="d-flex align-items-center justify-content-between w-100" @click="setPayType(2)">
+					<view class="d-flex align-items-center justify-content-between w-100" @click="setPayType(3)">
 						<view class="iconfont iconwxpay line-height-100 payment-icon" style="color: #7EB73A"></view>
 						<view class="flex-fill">微信支付</view>
-						<view class="iconfont line-height-100 checkbox checked iconradio-button-on" v-if="payType == 2"></view>
+						<view class="iconfont line-height-100 checkbox checked iconradio-button-on" v-if="payType == 3"></view>
 						<view class="iconfont line-height-100 checkbox iconradio-button-off" v-else></view>
 					</view>
 				</list-cell>
@@ -286,7 +286,7 @@ export default {
 				}
 			],
 			defaultSelector: [0],
-			payType: 2, // 付款方式:5=余额支付,2=微信支付,4=支付宝
+			payType: 3, // 付款方式:5=余额支付,3=微信支付,4=支付宝
 			coupons: [], // 可用优惠券列表
 			coupon: {} // 选中的
 		};
@@ -471,7 +471,7 @@ export default {
 			//console.log('payTYpe:');
 			//console.log(this.payType);
 
-			if (this.payType == 2) {
+			if (this.payType == 3) {
 				// 微信支付
 				this.weixinPay(order);
 			} else if (this.payType == 5) {

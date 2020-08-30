@@ -32,7 +32,7 @@
 									</view>
 									<view class="total">
 										<view>
-												价值：{{res.type == 1 ? '—':'＋'}}￥{{res.real_price}}元
+												余额：{{res.type == 1 ? '—':'＋'}}￥{{res.real_price}}元
 										</view>
 										<view>
 												支付：{{res.type == 1 ? '—':'＋'}}￥{{res.total_price}}元
@@ -68,7 +68,7 @@ export default {
 					name: '退款'
 				}
 			],
-			payTypeList: {'0': '无', '2':'微信支付', '5': '余额支付'},
+			payTypeList: {'0': '无', '3':'微信支付', '5': '余额支付'},
 			current: 0,
 			swiperCurrent: 0,
 			tabsHeight: 0,

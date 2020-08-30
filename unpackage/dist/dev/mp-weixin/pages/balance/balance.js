@@ -98,6 +98,12 @@ var components = {
   },
   uToast: function() {
     return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-toast/u-toast */ "node-modules/uview-ui/components/u-toast/u-toast").then(__webpack_require__.bind(null, /*! uview-ui/components/u-toast/u-toast.vue */ 311))
+  },
+  uGrid: function() {
+    return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-grid/u-grid */ "node-modules/uview-ui/components/u-grid/u-grid").then(__webpack_require__.bind(null, /*! uview-ui/components/u-grid/u-grid.vue */ 532))
+  },
+  uGridItem: function() {
+    return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-grid-item/u-grid-item */ "node-modules/uview-ui/components/u-grid-item/u-grid-item").then(__webpack_require__.bind(null, /*! uview-ui/components/u-grid-item/u-grid-item.vue */ 539))
   }
 }
 var render = function() {
@@ -199,12 +205,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-
-
 var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default =
 {
   data: function data() {
@@ -212,7 +212,8 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
       agree: false,
       amounts: [],
       show: false, // 是否显示协议
-      agreement: "1. 储值成功后，不可退款，请根据自己的消费情况充值。\n2. 储值余额不可提现，不可转移、转赠。\n3. 储值金额按国家法律、法规开具符合规定的发票，后续凭储值余额消费时，不再开具发票。如需发票请至个人中心联系客服。\n4. 储值不累计会员积分，订单消费时以实际订单支付金额累计会员积分。\n5. 储值余额可在内地线下门店、点餐小程序在线支付使用。" };
+      agreement:
+      '1. 储值成功后，不可退款，请根据自己的消费情况充值。\n2. 储值余额不可提现，不可转移、转赠。\n3. 储值金额按国家法律、法规开具符合规定的发票，后续凭储值余额消费时，不再开具发票。如需发票请至个人中心联系客服。\n4. 储值不累计会员积分，订单消费时以实际订单支付金额累计会员积分。\n5. 储值余额可在内地线下门店、点餐小程序在线支付使用。' };
 
   },
   onLoad: function onLoad() {
@@ -263,9 +264,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                 data) {_context3.next = 14;break;}return _context3.abrupt("return");case 14:_context3.next = 16;return (
 
 
-                  _this3.$api.request('/pay/unify', 'POST', {
-                    out_trade_no: data.out_trade_no }));case 16:pay = _context3.sent;
-
+                  _this3.$api.request('/pay/unify?out_trade_no=' + data.out_trade_no));case 16:pay = _context3.sent;
                 if (pay) {
                   that = _this3;
                   uni.requestPayment({
@@ -305,7 +304,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
     },
     goBill: function goBill() {
       uni.navigateTo({
-        url: "/pages/balance/bill" });
+        url: '/pages/balance/bill' });
 
     } }) };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

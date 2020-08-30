@@ -320,13 +320,14 @@ export default {
 			minute = '0' + minute;
 		}
 		this.defaultTime = hour + ':' + minute;
+		
+		this.getCoupons();
 	},
 	onLoad(option) {
 		const { remark } = option;
 		this.cart = uni.getStorageSync('cart');
 		remark && this.$set(this.form, 'remark', remark);
 
-		this.getCoupons();
 	},
 	methods: {
 		...mapMutations(['SET_ORDER_TYPE', 'SET_MEMBER']),

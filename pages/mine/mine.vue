@@ -113,10 +113,17 @@
 		<view class="service-box">
 			<view class="font-size-lg text-color-base font-weight-bold" style="margin-bottom: 20rpx;">我的服务</view>
 			<view class="row">
-				<view class="grid" v-for="(item, index) in services" :key='index' @tap="serv(item)">
-					<image :src="item.image"></image>
-					<view>{{item.name}}</view>
-				</view>
+				<block  v-for="(item, index) in services" :key='index'>
+					<view class="grid" v-if="item.pages == '/pages/contact/contact'" >
+						<button open-type="contact" class="opacity-0"></button>
+						<image :src="item.image"></image>
+						<view>{{item.name}}</view>
+					</view>
+					<view class="grid" v-else @tap="serv(item)">
+						<image :src="item.image"></image>
+						<view>{{item.name}}</view>
+					</view>
+				</block>
 			</view>
 		</view>
 		<!-- service box end -->
@@ -337,15 +344,17 @@ page {
 			font-size: $font-size-sm;
 			color: $text-color-assist;
 			align-items: center;
-
+			
 			image {
 				width: 80rpx;
 				height: 80rpx;
 				margin-bottom: 10rpx;
 			}
+			
 		}
 	}
 }
+
 
 .banner {
 	width: 100%;
@@ -373,6 +382,7 @@ page {
 			align-items: center;
 			margin-bottom: 40rpx;
 			width: 25%;
+			position:relative;
 			
 			image {
 				width: 80rpx;
@@ -380,6 +390,14 @@ page {
 				margin-bottom: 20rpx;
 			}
 		}
+		.opacity-0 {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			z-index: 10;
+		}
+		
 	}
 }
 </style>

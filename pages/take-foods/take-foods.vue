@@ -80,7 +80,7 @@
 									</view>
 								</view>
 								<!-- steps end -->
-								<view v-if="order.status<=1" class="d-flex just-content-center align-items-center font-size-base text-color-assist mb-40">
+								<view v-if="order.status<=1 && order.have_made > 0" class="d-flex just-content-center align-items-center font-size-base text-color-assist mb-40">
 									您前面还有 <text class="text-color-primary mr-10 ml-10">{{order.prev_num}}</text> 单待制作
 								</view>
 								<!-- goods begin -->
@@ -143,10 +143,10 @@
 					<!-- order other info begin -->
 					<list-cell :hover="false" padding="50rpx 30rpx 20rpx" last>
 						<view class="w-100 d-flex flex-column">
-							<view class="pay-cell">
+							<!-- <view class="pay-cell">
 								<view>取单号</view>
 								<view class="font-weight-bold">{{ order.number_id }}</view>
-							</view>
+							</view> -->
 							<view class="pay-cell">
 								<view>享用方式</view>
 								<view class="font-weight-bold">{{order.type_text}}</view>
@@ -156,8 +156,8 @@
 								<view class="font-weight-bold">立即取餐</view>
 							</view>
 							<view class="pay-cell">
-								<view>完成制作时间</view>
-								<view class="font-weight-bold">{{ order.maketime }}</view>
+								<view>制作完成时间</view>
+								<view class="font-weight-bold">{{ order.madetime }}</view>
 							</view>
 							<view class="pay-cell">
 								<view>备注</view>

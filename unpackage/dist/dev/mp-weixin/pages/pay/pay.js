@@ -436,13 +436,14 @@ var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28)
       minute = '0' + minute;
     }
     this.defaultTime = hour + ':' + minute;
+
+    this.getCoupons();
   },
   onLoad: function onLoad(option) {var
     remark = option.remark;
     this.cart = uni.getStorageSync('cart');
     remark && this.$set(this.form, 'remark', remark);
 
-    this.getCoupons();
   },
   methods: _objectSpread({},
   (0, _vuex.mapMutations)(['SET_ORDER_TYPE', 'SET_MEMBER']), {},

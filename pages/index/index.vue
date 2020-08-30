@@ -92,7 +92,7 @@
 			}
 		},
 		computed: {
-			...mapState(['member']),
+			...mapState(['member', 'address']),
 			...mapGetters(['isLogin'])
 		},
 		methods: {

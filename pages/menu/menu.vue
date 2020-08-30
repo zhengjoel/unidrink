@@ -25,13 +25,14 @@
 						</view> -->
 						<view class="store-name" @click="selectShop()">
 							<view>{{ store.name }} 
-								<text class="small">{{orderType == 'takeout' ? '(配送距离:'+store.distance+'km)': ''}}</text>
+								<text class="small" v-if="store.distance > 0 && orderType == 'takeout'">(配送距离: {{store.distance}}km)</text>
+								<text class="small" v-else-if="orderType == 'takeout'">(本店不支持外卖)</text>
 							</view>
 							<view class="iconfont iconarrow-right"></view>
 						</view>
 						<view class="store-location" @tap="takout(true)">
 							<image src='/static/images/order/location.png' style="width: 30rpx; height: 30rpx;" class="mr-10"></image>
-							<text>{{ address.address }} ,距离您 {{ store.far_text }}</text>
+							<text>{{ address.address ? address.address : '请选择收货地址' }} ,距离您 {{ store.far_text }}</text>
 						</view>
 					</view>
 					<view class="right">
@@ -290,10 +291,6 @@ export default {
 		this.init()
 	},
 	onShow() {
-		if (this.orderType == 'takeout') {
-			this.SET_ORDER_TYPE('takein')
-			this.takout(true)
-		}
 		this.init();
 	},
 	computed: {
@@ -617,6 +614,11 @@ export default {
 			}
 			if (this.store.status == 0) {
 				this.$api.msg('不在店铺营业时间内');
+				return;
+			}
+			// 判断当前是否在配送范围内
+			if (this.orderType == 'takeout' && this.store.distance < this.store.far) {
+				this.$api.msg('选中的地址不在配送范围');
 				return;
 			}
 			

@@ -224,7 +224,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function ownKeys(object, enumera
 
   },
   computed: _objectSpread({},
-  (0, _vuex.mapState)(['member']), {},
+  (0, _vuex.mapState)(['member', 'address']), {},
   (0, _vuex.mapGetters)(['isLogin'])),
 
   methods: {

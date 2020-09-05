@@ -315,10 +315,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
 var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var listCell = function listCell() {__webpack_require__.e(/*! require.ensure | components/list-cell/list-cell */ "components/list-cell/list-cell").then((function () {return resolve(__webpack_require__(/*! @/components/list-cell/list-cell */ 287));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var ourLoading = function ourLoading() {__webpack_require__.e(/*! require.ensure | components/our-loading/our-loading */ "components/our-loading/our-loading").then((function () {return resolve(__webpack_require__(/*! @/components/our-loading/our-loading.vue */ 280));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
@@ -329,9 +325,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
 
   data: function data() {
     return {
-      foodsOrders: [],
-      page: 1,
-      pagesize: 10 };
+      foodsOrders: [] };
 
   },
   computed: _objectSpread({},
@@ -360,13 +354,15 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                 _this.isLogin) {_context.next = 2;break;}return _context.abrupt("return");case 2:_context.next = 4;return (
 
 
-                  _this.$api.request('/order/takeFoods', 'POST', { page: _this.page, pagesize: _this.pagesize }));case 4:data = _context.sent;
+                  _this.$api.request('/order/takeFoods', 'POST'));case 4:data = _context.sent;
+                uni.stopPullDownRefresh();
+                _this.foodsOrders = [];
                 if (data) {
                   for (i in data) {
                     _this.foodsOrders.unshift(data[i]);
                   }
-                  console.log(_this.foodsOrders);
-                }case 6:case "end":return _context.stop();}}}, _callee);}))();
+                  //console.log(this.foodsOrders);
+                }case 8:case "end":return _context.stop();}}}, _callee);}))();
     },
     orders: function orders() {
       if (!this.$store.getters.isLogin) {

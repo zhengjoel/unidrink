@@ -134,7 +134,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var listCell = function listCell() {__webpack_require__.e(/*! require.ensure | components/list-cell/list-cell */ "components/list-cell/list-cell").then((function () {return resolve(__webpack_require__(/*! @/components/list-cell/list-cell */ 287));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var rateFormItem = function rateFormItem() {__webpack_require__.e(/*! require.ensure | pages/review/rate-form-item/index */ "pages/review/rate-form-item/index").then((function () {return resolve(__webpack_require__(/*! ./rate-form-item */ 399));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var listCell = function listCell() {__webpack_require__.e(/*! require.ensure | components/list-cell/list-cell */ "components/list-cell/list-cell").then((function () {return resolve(__webpack_require__(/*! @/components/list-cell/list-cell */ 287));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var rateFormItem = function rateFormItem() {__webpack_require__.e(/*! require.ensure | pages/review/rate-form-item/index */ "pages/review/rate-form-item/index").then((function () {return resolve(__webpack_require__(/*! ./rate-form-item */ 413));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

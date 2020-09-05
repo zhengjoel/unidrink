@@ -129,16 +129,12 @@
 									<view class="font-weight-bold">{{ order.shop.name }}</view>
 								</view>
 								<view class="pay-cell">
-									<view>支付方式</view>
-									<view class="font-weight-bold">{{ order.pay_type_text }}</view>
-								</view>
-								<view class="pay-cell">
 									<view>订单号</view>
 									<view class="font-weight-bold">{{ order.out_trade_no }}</view>
 								</view>
 							</view>
 						</list-cell>
-						<!-- order info end -->
+						<!-- order info end --> 
 					</view>
 					<!-- order other info begin -->
 					<list-cell :hover="false" padding="50rpx 30rpx 20rpx" last>
@@ -184,9 +180,7 @@
 		},
 		data() {
 			return {
-				foodsOrders:[],
-				page:1,
-				pagesize:10
+				foodsOrders:[]
 			}
 		},
 		computed: {
@@ -215,12 +209,14 @@
 				if (!this.isLogin) {
 					return;
 				}
-				let data = await this.$api.request('/order/takeFoods', 'POST', {page:this.page, pagesize:this.pagesize});
+				let data = await this.$api.request('/order/takeFoods', 'POST');
+				uni.stopPullDownRefresh();
+				this.foodsOrders = [];
 				if (data) {
 					for(var i in data) {
 						this.foodsOrders.unshift(data[i]);
 					}
-					console.log(this.foodsOrders);
+					//console.log(this.foodsOrders);
 				}
 			},
 			orders() {

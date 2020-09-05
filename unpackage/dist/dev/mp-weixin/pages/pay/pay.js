@@ -548,6 +548,15 @@ var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28)
           this.$api.msg('请选择收货地址');
           return;
         }
+        // 配送范围 
+        // ...
+
+        // 起送价钱
+        if (this.store.min_price > this.total) {
+          this.$api.msg('本店外卖起送价为￥' + this.store.min_price);
+          return;
+        }
+
         this.ensureAddressModalVisible = true;
       } else {
         this.pay();

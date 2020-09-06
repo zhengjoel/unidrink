@@ -13,7 +13,7 @@
 								<view class="centre" v-if="loadStatus[index] != 'loading'">
 									<image src="https://cdn.uviewui.com/uview/template/taobao-order.png" mode=""></image>
 									<view class="explain">
-										您还没有相关的订单
+										您还没有相关的账单
 										<view class="tips">可以去看看有那些想买的</view>
 									</view>
 									<view class="btn">
@@ -32,7 +32,7 @@
 									</view>
 									<view class="total">
 										<view>
-												余额：{{res.type == 1 ? '—':'＋'}}￥{{res.real_price}}元
+												{{payTypeList[res.pay_type]}}：{{res.type == 1 ? '—':'＋'}}￥{{res.real_price}}元
 										</view>
 										<view>
 												支付：{{res.type == 1 ? '—':'＋'}}￥{{res.total_price}}元
@@ -68,7 +68,7 @@ export default {
 					name: '退款'
 				}
 			],
-			payTypeList: {'0': '无', '3':'微信支付', '5': '余额支付'},
+			payTypeList: {'0': '无', '2':'微信','3':'支付宝', '5': '余额'},
 			current: 0,
 			swiperCurrent: 0,
 			tabsHeight: 0,
@@ -88,11 +88,13 @@ export default {
 		async getBill(){
 			this.loadStatus.splice(this.swiperCurrent,1,"loading")
 			let data = await this.$api.request('/balance/getBillList', 'POST', {type:this.swiperCurrent,page:this.page,pagesize:this.pageSize});
+			if (this.page == 1 ){
+				this.orderList[this.swiperCurrent] = [];
+			}
 			if (data && data.length > 0) {
 				this.page++;
-				for(let i in data) {
-					this.orderList[this.swiperCurrent].push(data[i]);
-				}
+				this.orderList[this.swiperCurrent] = this.orderList[this.swiperCurrent].concat(data);
+				
 				this.loadStatus.splice(this.swiperCurrent,1,"loadmore")
 			} else{
 				this.loadStatus.splice(this.swiperCurrent,1,"nomore")

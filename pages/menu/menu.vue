@@ -145,13 +145,16 @@
 		<modal :show="goodDetailModalVisible" class="good-detail-modal" color="#5A5B5C" 
 				width="90%" custom padding="0rpx" radius="12rpx">
 			<view class="cover">
-				<image v-if="good.image" :src="good.image" class="image"></image>
 				<view class="btn-group">
 					<!-- <image src="/static/images/menu/share-good.png"></image> --> 
 					<image src="/static/images/menu/close.png" @tap="closeGoodDetailModal"></image>
 				</view>
 			</view>
 			<scroll-view class="detail" scroll-y>
+				<view v-if="good.image"  class="image">
+					<image :src="good.image"></image>
+				</view>
+				
 				<view class="wrapper">
 					<view class="basic">
 						<view class="name">{{ good.name }}</view>
@@ -504,6 +507,7 @@ export default {
 					props_text: good.use_spec ? this.getGoodSelectedProps(good) : ''
 				})
 			}
+			uni.setStorageSync('cart', JSON.parse(JSON.stringify(this.cart)))
 		},
 		handleReduceFromCart(item, good) {
 			const index = this.cart.findIndex(item => item.id === good.id)
@@ -511,6 +515,7 @@ export default {
 			if(this.cart[index].number <= 0) {
 				this.cart.splice(index, 1)
 			}
+			uni.setStorageSync('cart', JSON.parse(JSON.stringify(this.cart)))
 		},
 		showGoodDetailModal(item, good) {
 			this.good = JSON.parse(JSON.stringify({...good, number: 1}))
@@ -589,12 +594,14 @@ export default {
 					if(confirm) {
 						this.cartPopupVisible = false
 						this.cart = []
+						uni.setStorageSync('cart', JSON.parse(JSON.stringify(this.cart)))
 					}
 				}
 			})
 		},
 		handleCartItemAdd(index) {
 			this.cart[index].number += 1
+			uni.setStorageSync('cart', JSON.parse(JSON.stringify(this.cart)))
 		},
 		handleCartItemReduce(index) {
 			if(this.cart[index].number === 1) {
@@ -605,6 +612,7 @@ export default {
 			if(!this.cart.length) {
 				this.cartPopupVisible = false
 			}
+			uni.setStorageSync('cart', JSON.parse(JSON.stringify(this.cart)))
 		},
 		toPay() {
 			

@@ -502,7 +502,7 @@ export default {
 				return;
 			}
 			
-			this.member.money -= amount
+			this.member.money -= this.amount
 			this.SET_MEMBER(this.member)
 			uni.removeStorageSync('cart');
 			uni.switchTab({

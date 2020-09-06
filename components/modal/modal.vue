@@ -137,7 +137,7 @@
 		top: 50%;
 		margin: auto;
 		background: #fff;
-		z-index: 99;
+		z-index: 201;
 		transition: all 0.3s ease-in-out;
 		opacity: 0;
 		box-sizing: border-box;

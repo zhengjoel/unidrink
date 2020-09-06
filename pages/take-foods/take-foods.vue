@@ -34,42 +34,42 @@
 								</view>
 								<!-- steps begin -->
 								<view class="d-flex just-content-center">
-									<view class="steps d-flex flex-column" :class="{'w-80': order.type == 1, 'w-100': order.type == 2}">
+									<!-- <view class="steps d-flex flex-column" :class="{'w-80': order.type == 1, 'w-100': order.type == 2}"> -->
+									<view class="steps d-flex flex-column w-80">
 										<view class="steps__img-column">
 											<view class="steps__img-column-item">
-												<image src="/static/images/order/ordered_selected.png" v-if="order.state >= 1"></image>
-												<image src="/static/images/order/ordered_selected.png" v-else></image>
+												<image src="/static/images/order/ordered_selected.png"></image>
 											</view>
-											<view class="steps__img-column-item" :class="{active: order.state >= 1.5}">
-												<image src="/static/images/order/production_selected.png" v-if="order.state >= 1.5"></image>
+											<view class="steps__img-column-item" :class="{active: order.prev_num == 0 || order.have_made > 0}">
+												<image src="/static/images/order/production_selected.png" v-if="order.prev_num == 0 || order.have_made > 0"></image>
 												<image src="/static/images/order/production.png" v-else></image>
 											</view>
-											<view class="steps__img-column-item" :class="{active: order.state >= 2}" v-if="order.type == 2">
-												<image src="/static/images/order/delivery_selected.png" v-if="order.state >= 2"></image>
+											<view class="steps__img-column-item" :class="{active: order.have_made >0}" v-if="order.type == 2">
+												<image src="/static/images/order/delivery_selected.png" v-if="order.have_made > 0"></image>
 												<image src="/static/images/order/delivered.png" v-else></image>
 											</view>
-											<view class="steps__img-column-item" :class="{active: order.state >= 3}">
-												<image src="/static/images/order/delivered_selected.png" v-if="order.state >= 3"></image>
+											<view class="steps__img-column-item" :class="{active: order.have_received > 0}" v-if="order.type == 1">
+												<image src="/static/images/order/delivered_selected.png" v-if="order.have_received > 0"></image>
 												<image src="/static/images/order/delivered.png" v-else></image>
 											</view>
 										</view>
 										<view class="steps__text-column">
-											<view class="steps__text-column-item" :class="{active: order.state >= 1}">
+											<view class="steps__text-column-item active">
 												<view class="steps__column-item-line bg-transparent"></view>
 												<view class="steps__text-column-item-text">已下单</view>
 												<view class="steps__column-item-line"></view>
 											</view>
-											<view class="steps__text-column-item" :class="{active: order.state >= 1.5}">
+											<view class="steps__text-column-item activ" :class="{active: order.prev_num == 0 || order.have_made > 0}">
 												<view class="steps__column-item-line"></view>
 												<view class="steps__text-column-item-text">制作中</view>
 												<view class="steps__column-item-line"></view>
 											</view>
-											<view class="steps__text-column-item" :class="{active: order.state >= 2}" v-if="order.type == 2">
+											<view class="steps__text-column-item" :class="{active: order.have_made > 0}" v-if="order.type == 2">
 												<view class="steps__column-item-line"></view>
 												<view class="steps__text-column-item-text">配送中</view>
-												<view class="steps__column-item-line"></view>
+												<!-- <view class="steps__column-item-line"></view> -->
 											</view>
-											<view class="steps__text-column-item" :class="{active: order.state >= 3}">
+											<view class="steps__text-column-item" :class="{active: order.have_received > 0}" v-if="order.type == 1">
 												<view class="steps__column-item-line"></view>
 												<view class="steps__text-column-item-text">
 													{{ order.type == 2 ? '已送达' : '请取餐' }}
@@ -80,7 +80,7 @@
 									</view>
 								</view>
 								<!-- steps end -->
-								<view v-if="order.status<=1 && order.have_made > 0" class="d-flex just-content-center align-items-center font-size-base text-color-assist mb-40">
+								<view v-if="order.status==1 && order.have_paid > 0 && order.have_made == 0" class="d-flex just-content-center align-items-center font-size-base text-color-assist mb-40">
 									您前面还有 <text class="text-color-primary mr-10 ml-10">{{order.prev_num}}</text> 单待制作
 								</view>
 								<!-- goods begin -->

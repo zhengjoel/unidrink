@@ -110,38 +110,39 @@
 				console.log('已选中的店铺')
 				console.log(this.store);
 				
+				let data = await this.$api.request('/shop/getDistanceFromLocation', 'POST',{
+					lat: address.lat,
+					lng: address.lng,
+					lat2: this.store.lat,
+					lng2: this.store.lng
+				});
+				if (!data) {
+					return;
+				}
+				if (data > this.store.distance) {
+					this.$api.msg('不在配送范围');
+					return;
+				}
+				this.SET_ADDRESS(address)
+				this.SET_ORDER_TYPE('takeout')
+				this.store.far = data
+				this.store.far_text = data + 'km'
+				this.SET_STORE(this.store)
+				this.SET_LOCATION({
+					latitude: address.lat,
+					longitude: address.lng
+				});
+				
 				if (this.scene == 'menu') {
-					let data = await this.$api.request('/shop/getDistanceFromLocation', 'POST',{
-						lat: address.lat,
-						lng: address.lng,
-						lat2: this.store.lat,
-						lng2: this.store.lng
-					});
-					if (!data) {
-						return;
-					}
-					if (data > this.store.distance) {
-						this.$api.msg('不在配送范围');
-						return;
-					}
-					this.SET_ADDRESS(address)
-					this.SET_ORDER_TYPE('takeout')
-					this.store.far = data
-					this.store.far_text = data + 'km'
-					this.SET_STORE(this.store)
-					this.SET_LOCATION({
-						latitude: address.lat,
-						longitude: address.lng
-					});
+					
 					uni.switchTab({
 						url: '/pages/menu/menu'
 					})
 				} else if (this.scene == 'pay') {
-					this.SET_ADDRESS(address)
-					this.SET_ORDER_TYPE('takeout')
-					uni.navigateTo({
-						url: '/pages/pay/pay'
-					})
+					uni.navigateBack();
+					// uni.navigateTo({
+					// 	url: '/pages/pay/pay'
+					// })
 				}
 			}
 		}

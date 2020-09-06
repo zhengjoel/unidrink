@@ -618,7 +618,7 @@ var _orders = _interopRequireDefault(__webpack_require__(/*! @/api/orders */ 28)
 
 
 
-                _this3.member.money -= amount;
+                _this3.member.money -= _this3.amount;
                 _this3.SET_MEMBER(_this3.member);
                 uni.removeStorageSync('cart');
                 uni.switchTab({

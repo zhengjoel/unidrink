@@ -209,7 +209,7 @@ var _default =
         name: '退款' }],
 
 
-      payTypeList: { '0': '无', '3': '微信支付', '5': '余额支付' },
+      payTypeList: { '0': '无', '2': '微信', '3': '支付宝', '5': '余额' },
       current: 0,
       swiperCurrent: 0,
       tabsHeight: 0,
@@ -226,18 +226,20 @@ var _default =
 
 
   methods: {
-    getBill: function getBill() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var data, i;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
+    getBill: function getBill() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var data;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
                 _this.loadStatus.splice(_this.swiperCurrent, 1, "loading");_context.next = 3;return (
                   _this.$api.request('/balance/getBillList', 'POST', { type: _this.swiperCurrent, page: _this.page, pagesize: _this.pageSize }));case 3:data = _context.sent;
+                if (_this.page == 1) {
+                  _this.orderList[_this.swiperCurrent] = [];
+                }
                 if (data && data.length > 0) {
                   _this.page++;
-                  for (i in data) {
-                    _this.orderList[_this.swiperCurrent].push(data[i]);
-                  }
+                  _this.orderList[_this.swiperCurrent] = _this.orderList[_this.swiperCurrent].concat(data);
+
                   _this.loadStatus.splice(_this.swiperCurrent, 1, "loadmore");
                 } else {
                   _this.loadStatus.splice(_this.swiperCurrent, 1, "nomore");
-                }case 5:case "end":return _context.stop();}}}, _callee);}))();
+                }case 6:case "end":return _context.stop();}}}, _callee);}))();
     },
     reachBottom: function reachBottom() {
       if (this.loadStatus[this.swiperCurrent] == 'nomore') {

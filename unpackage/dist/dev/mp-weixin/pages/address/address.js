@@ -247,20 +247,19 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                 _this4.is_choose) {_context4.next = 2;break;}return _context4.abrupt("return");case 2:
 
                 console.log('已选中的店铺');
-                console.log(_this4.store);if (!(
+                console.log(_this4.store);_context4.next = 6;return (
 
-                _this4.scene == 'menu')) {_context4.next = 22;break;}_context4.next = 7;return (
                   _this4.$api.request('/shop/getDistanceFromLocation', 'POST', {
                     lat: address.lat,
                     lng: address.lng,
                     lat2: _this4.store.lat,
-                    lng2: _this4.store.lng }));case 7:data = _context4.sent;if (
+                    lng2: _this4.store.lng }));case 6:data = _context4.sent;if (
 
-                data) {_context4.next = 10;break;}return _context4.abrupt("return");case 10:if (!(
+                data) {_context4.next = 9;break;}return _context4.abrupt("return");case 9:if (!(
 
 
-                data > _this4.store.distance)) {_context4.next = 13;break;}
-                _this4.$api.msg('不在配送范围');return _context4.abrupt("return");case 13:
+                data > _this4.store.distance)) {_context4.next = 12;break;}
+                _this4.$api.msg('不在配送范围');return _context4.abrupt("return");case 12:
 
 
                 _this4.SET_ADDRESS(address);
@@ -272,16 +271,18 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                   latitude: address.lat,
                   longitude: address.lng });
 
-                uni.switchTab({
-                  url: '/pages/menu/menu' });_context4.next = 23;break;case 22:
 
-                if (_this4.scene == 'pay') {
-                  _this4.SET_ADDRESS(address);
-                  _this4.SET_ORDER_TYPE('takeout');
-                  uni.navigateTo({
-                    url: '/pages/pay/pay' });
+                if (_this4.scene == 'menu') {
 
-                }case 23:case "end":return _context4.stop();}}}, _callee4);}))();
+                  uni.switchTab({
+                    url: '/pages/menu/menu' });
+
+                } else if (_this4.scene == 'pay') {
+                  uni.navigateBack();
+                  // uni.navigateTo({
+                  // 	url: '/pages/pay/pay'
+                  // })
+                }case 19:case "end":return _context4.stop();}}}, _callee4);}))();
     } }) };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

@@ -1,9 +1,10 @@
 <template>
 	<view class="container">
 		<view class="banner">
-			<image src="https://img-shop.qmimg.cn/s23107/2020/04/26/3eb7808bf105262604.jpg" mode="" class="bg"></image>
+			<!-- <image src="https://img-shop.qmimg.cn/s23107/2020/04/26/3eb7808bf105262604.jpg" mode="" class="bg"></image> -->
+			<u-swiper class="bg" height="600" :list="listAds" mode="dot" indicator-pos="bottomCenter"></u-swiper>
 			<view class="intro">
-				<view class="greet">您好，{{ isLogin ? member.nickname : '游客' }}</view>
+				<view class="greet">您好，{{ isLogin ? member.username : '游客' }}</view>
 				<view class="note">一杯奶茶，一口软欧包，在奈雪遇见两种美好</view>
 			</view>
 		</view>
@@ -89,6 +90,16 @@
 	export default {
 		data() {
 			return {
+				listAds: [
+					{
+						title: '123',
+						image: 'https://teststatic.zidaoai.com/19ca14e7ea6328a42e0eb13d585e4c22/direct/20200818/cf495d36-9980-4801-abdd-c9eab8e18013.jpg'
+					},
+					{
+						title: '456',
+						image: 'https://teststatic.zidaoai.com/19ca14e7ea6328a42e0eb13d585e4c22/direct/20200818/cf495d36-9980-4801-abdd-c9eab8e18013.jpg'
+					}
+				]
 			}
 		},
 		computed: {

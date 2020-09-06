@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<view class="orders-list d-flex flex-column w-100" style="padding: 20rpx; padding-bottom: 0;">
-			<view class="order-item" v-for="(item, index) in orders" :key="index" style="margin-bottom: 30rpx;" @tap="detail(item.id)">
+			<view class="order-item" v-for="(item, index) in orders" :key="index" style="margin-bottom: 30rpx;" @tap="detail(item.order_id)">
 				<list-cell :hover="false">
 					<view class="w-100 d-flex align-items-center">
 						<view class="flex-fill d-flex flex-column">
@@ -11,7 +11,7 @@
 							<view class="font-size-sm text-color-assist">订单编号：{{ item.out_trade_no }}</view>
 						</view>
 						<view class="font-size-lg text-color-primary">
-							{{ orderStatus(item) }}
+							{{ item.order_status_text }}
 						</view>
 					</view>
 				</list-cell>
@@ -35,7 +35,8 @@
 								<button type="primary" plain size="mini" v-else>开发票</button>
 							</view> -->
 							<view>
-								<button type="primary" plain size="mini" @tap.stop="review(item)">签收并评价</button>
+								<!-- <button class="left-margin" type="primary" plain size="mini" @tap.stop="review(item)">签收并评价</button> -->
+								<button v-if="item.have_paid > 0 && item.status == 1 && item.have_received == 0" class="left-margin" type="primary" plain size="mini" @tap.stop="receive(item)">确认收到餐</button>
 							</view>
 						</view>
 					</view>
@@ -73,13 +74,6 @@
 					goods.forEach(good => num += parseInt(good.number))
 					return num;
 				}
-			},
-			orderStatus() {
-				return (order) {
-					if (order.type == 1) {
-						// 自取
-					}
-				}
 			}
 		},
 		async onLoad() {
@@ -108,7 +102,7 @@
 					this.orders = this.orders.concat(orders)
 					this.page += 1
 				}
-				
+				uni.stopPullDownRefresh();
 				uni.hideLoading()
 			},
 			detail(id) {
@@ -116,16 +110,26 @@
 					url: '/pages/orders/detail?id=' + id
 				})
 			},
+			// 评论
 			review(order) {
 				const date = order.completed_time.split(' ')[0]
 				uni.navigateTo({
 					url: '/pages/review/review?storename=' + order.store.name + '&typeCate=' + order.typeCate + '&date=' + date
 				})
+			},
+			// 确认收到货
+			async receive(order) {
+				let data = await this.$api.request('/order/receive?id='+ order.order_id);
+				if (data) {
+					await this.getOrders(true)
+				}
 			}
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
-
+	.left-margin {
+		margin-left: 10rpx;
+	}
 </style>

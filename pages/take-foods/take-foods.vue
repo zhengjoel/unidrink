@@ -149,7 +149,7 @@
 							</view>
 							<view class="pay-cell">
 								<view>取餐时间</view>
-								<view class="font-weight-bold">立即取餐</view>
+								<view class="font-weight-bold">{{order.gettime_text}}</view>
 							</view>
 							<view class="pay-cell">
 								<view>制作完成时间</view>

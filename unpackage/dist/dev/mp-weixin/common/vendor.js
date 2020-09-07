@@ -8,7 +8,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createComponent = createComponent;exports.createPage = createPage;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(n);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}
+Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createComponent = createComponent;exports.createPage = createPage;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}
 
 var _toString = Object.prototype.toString;
 var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -363,7 +363,144 @@ var baseApi = /*#__PURE__*/Object.freeze({
   upx2px: upx2px,
   addInterceptor: addInterceptor,
   removeInterceptor: removeInterceptor,
-  interceptors: interceptors });
+  interceptors: interceptors });var
+
+
+EventChannel = /*#__PURE__*/function () {
+  function EventChannel(id, events) {var _this = this;_classCallCheck(this, EventChannel);
+    this.id = id;
+    this.listener = {};
+    this.emitCache = {};
+    if (events) {
+      Object.keys(events).forEach(function (name) {
+        _this.on(name, events[name]);
+      });
+    }
+  }_createClass(EventChannel, [{ key: "emit", value: function emit(
+
+    eventName) {for (var _len3 = arguments.length, args = new Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++) {args[_key3 - 1] = arguments[_key3];}
+      var fns = this.listener[eventName];
+      if (!fns) {
+        return (this.emitCache[eventName] || (this.emitCache[eventName] = [])).push(args);
+      }
+      fns.forEach(function (opt) {
+        opt.fn.apply(opt.fn, args);
+      });
+      this.listener[eventName] = fns.filter(function (opt) {return opt.type !== 'once';});
+    } }, { key: "on", value: function on(
+
+    eventName, fn) {
+      this._addListener(eventName, 'on', fn);
+      this._clearCache(eventName);
+    } }, { key: "once", value: function once(
+
+    eventName, fn) {
+      this._addListener(eventName, 'once', fn);
+      this._clearCache(eventName);
+    } }, { key: "off", value: function off(
+
+    eventName, fn) {
+      var fns = this.listener[eventName];
+      if (!fns) {
+        return;
+      }
+      if (fn) {
+        for (var i = 0; i < fns.length;) {
+          if (fns[i].fn === fn) {
+            fns.splice(i, 1);
+            i--;
+          }
+          i++;
+        }
+      } else {
+        delete this.listener[eventName];
+      }
+    } }, { key: "_clearCache", value: function _clearCache(
+
+    eventName) {
+      var cacheArgs = this.emitCache[eventName];
+      if (cacheArgs) {
+        for (; cacheArgs.length > 0;) {
+          this.emit.apply(this, [eventName].concat(cacheArgs.shift()));
+        }
+      }
+    } }, { key: "_addListener", value: function _addListener(
+
+    eventName, type, fn) {
+      (this.listener[eventName] || (this.listener[eventName] = [])).push({
+        fn: fn,
+        type: type });
+
+    } }]);return EventChannel;}();
+
+
+var eventChannels = {};
+
+var eventChannelStack = [];
+
+var id = 0;
+
+function initEventChannel(events) {var cache = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+  id++;
+  var eventChannel = new EventChannel(id, events);
+  if (cache) {
+    eventChannels[id] = eventChannel;
+    eventChannelStack.push(eventChannel);
+  }
+  return eventChannel;
+}
+
+function getEventChannel(id) {
+  if (id) {
+    var eventChannel = eventChannels[id];
+    delete eventChannels[id];
+    return eventChannel;
+  }
+  return eventChannelStack.shift();
+}
+
+var navigateTo = {
+  args: function args(fromArgs, toArgs) {
+    var id = initEventChannel(fromArgs.events).id;
+    if (fromArgs.url) {
+      fromArgs.url = fromArgs.url + (fromArgs.url.indexOf('?') === -1 ? '?' : '&') + '__id__=' + id;
+    }
+  },
+  returnValue: function returnValue(fromRes, toRes) {
+    fromRes.eventChannel = getEventChannel();
+  } };
+
+
+function findExistsPageIndex(url) {
+  var pages = getCurrentPages();
+  var len = pages.length;
+  while (len--) {
+    var page = pages[len];
+    if (page.$page && page.$page.fullPath === url) {
+      return len;
+    }
+  }
+  return -1;
+}
+
+var redirectTo = {
+  name: function name(fromArgs) {
+    if (fromArgs.exists === 'back' && fromArgs.delta) {
+      return 'navigateBack';
+    }
+    return 'redirectTo';
+  },
+  args: function args(fromArgs) {
+    if (fromArgs.exists === 'back' && fromArgs.url) {
+      var existsPageIndex = findExistsPageIndex(fromArgs.url);
+      if (existsPageIndex !== -1) {
+        var delta = getCurrentPages().length - 1 - existsPageIndex;
+        if (delta > 0) {
+          fromArgs.delta = delta;
+        }
+      }
+    }
+  } };
 
 
 var previewImage = {
@@ -412,6 +549,8 @@ function addSafeAreaInsets(result) {
   }
 }
 var protocols = {
+  redirectTo: redirectTo,
+  navigateTo: navigateTo,
   previewImage: previewImage,
   getSystemInfo: {
     returnValue: addSafeAreaInsets },
@@ -499,7 +638,12 @@ function wrapper(methodName, method) {
       if (typeof arg2 !== 'undefined') {
         args.push(arg2);
       }
-      var returnValue = wx[options.name || methodName].apply(wx, args);
+      if (isFn(options.name)) {
+        methodName = options.name(arg1);
+      } else if (isStr(options.name)) {
+        methodName = options.name;
+      }
+      var returnValue = wx[methodName].apply(wx, args);
       if (isSyncApi(methodName)) {// 同步 api
         return processReturnValue(methodName, returnValue, options.returnValue, isContextApi(methodName));
       }
@@ -627,7 +771,7 @@ function initTriggerEvent(mpInstance) {
     }
   }
   var oldTriggerEvent = mpInstance.triggerEvent;
-  mpInstance.triggerEvent = function (event) {for (var _len3 = arguments.length, args = new Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++) {args[_key3 - 1] = arguments[_key3];}
+  mpInstance.triggerEvent = function (event) {for (var _len4 = arguments.length, args = new Array(_len4 > 1 ? _len4 - 1 : 0), _key4 = 1; _key4 < _len4; _key4++) {args[_key4 - 1] = arguments[_key4];}
     return oldTriggerEvent.apply(mpInstance, [customize(event)].concat(args));
   };
 }
@@ -640,7 +784,7 @@ function initHook(name, options) {
     };
   } else {
     options[name] = function () {
-      initTriggerEvent(this);for (var _len4 = arguments.length, args = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {args[_key4] = arguments[_key4];}
+      initTriggerEvent(this);for (var _len5 = arguments.length, args = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {args[_key5] = arguments[_key5];}
       return oldHook.apply(this, args);
     };
   }
@@ -1108,7 +1252,7 @@ function getContextVm(vm) {
   return $parent && $parent.$parent;
 }
 
-function handleEvent(event) {var _this = this;
+function handleEvent(event) {var _this2 = this;
   event = wrapper$1(event);
 
   // [['tap',[['handle',[1,2,a]],['handle1',[1,2,a]]]]]
@@ -1139,14 +1283,14 @@ function handleEvent(event) {var _this = this;
       eventsArray.forEach(function (eventArray) {
         var methodName = eventArray[0];
         if (methodName) {
-          var handlerCtx = _this.$vm;
+          var handlerCtx = _this2.$vm;
           if (handlerCtx.$options.generic) {// mp-weixin,mp-toutiao 抽象节点模拟 scoped slots
             handlerCtx = getContextVm(handlerCtx) || handlerCtx;
           }
           if (methodName === '$emit') {
             handlerCtx.$emit.apply(handlerCtx,
             processEventArgs(
-            _this.$vm,
+            _this2.$vm,
             event,
             eventArray[1],
             eventArray[2],
@@ -1166,7 +1310,7 @@ function handleEvent(event) {var _this = this;
             handler.once = true;
           }
           var params = processEventArgs(
-          _this.$vm,
+          _this2.$vm,
           event,
           eventArray[1],
           eventArray[2],
@@ -1360,8 +1504,65 @@ function parseApp(vm) {
 }
 
 function createApp(vm) {
+  _vue.default.prototype.getOpenerEventChannel = function () {
+    if (!this.__eventChannel__) {
+      this.__eventChannel__ = new EventChannel();
+    }
+    return this.__eventChannel__;
+  };
+  var callHook = _vue.default.prototype.__call_hook;
+  _vue.default.prototype.__call_hook = function (hook, args) {
+    if (hook === 'onLoad' && args && args.__id__) {
+      this.__eventChannel__ = getEventChannel(args.__id__);
+      delete args.__id__;
+    }
+    return callHook.call(this, hook, args);
+  };
   App(parseApp(vm));
   return vm;
+}
+
+var encodeReserveRE = /[!'()*]/g;
+var encodeReserveReplacer = function encodeReserveReplacer(c) {return '%' + c.charCodeAt(0).toString(16);};
+var commaRE = /%2C/g;
+
+// fixed encodeURIComponent which is more conformant to RFC3986:
+// - escapes [!'()*]
+// - preserve commas
+var encode = function encode(str) {return encodeURIComponent(str).
+  replace(encodeReserveRE, encodeReserveReplacer).
+  replace(commaRE, ',');};
+
+function stringifyQuery(obj) {var encodeStr = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : encode;
+  var res = obj ? Object.keys(obj).map(function (key) {
+    var val = obj[key];
+
+    if (val === undefined) {
+      return '';
+    }
+
+    if (val === null) {
+      return encodeStr(key);
+    }
+
+    if (Array.isArray(val)) {
+      var result = [];
+      val.forEach(function (val2) {
+        if (val2 === undefined) {
+          return;
+        }
+        if (val2 === null) {
+          result.push(encodeStr(key));
+        } else {
+          result.push(encodeStr(key) + '=' + encodeStr(val2));
+        }
+      });
+      return result.join('&');
+    }
+
+    return encodeStr(key) + '=' + encodeStr(val);
+  }).filter(function (x) {return x.length > 0;}).join('&') : null;
+  return res ? "?".concat(res) : '';
 }
 
 function parseBaseComponent(vueComponentOptions)
@@ -1486,9 +1687,15 @@ function parseBasePage(vuePageOptions, _ref6)
 
   initHooks(pageOptions.methods, hooks$1, vuePageOptions);
 
-  pageOptions.methods.onLoad = function (args) {
-    this.$vm.$mp.query = args; // 兼容 mpvue
-    this.$vm.__call_hook('onLoad', args);
+  pageOptions.methods.onLoad = function (query) {
+    this.options = query;
+    var copyQuery = Object.assign({}, query);
+    delete copyQuery.__id__;
+    this.$page = {
+      fullPath: '/' + (this.route || this.is) + stringifyQuery(copyQuery) };
+
+    this.$vm.$mp.query = query; // 兼容 mpvue
+    this.$vm.__call_hook('onLoad', query);
   };
 
   return pageOptions;
@@ -1603,24 +1810,24 @@ uni$1;exports.default = _default;
 /*!********************************************!*\
   !*** ./node_modules/vuex/dist/vuex.esm.js ***!
   \********************************************/
-/*! exports provided: Store, install, mapState, mapMutations, mapGetters, mapActions, createNamespacedHelpers, default */
+/*! exports provided: default, Store, createNamespacedHelpers, install, mapActions, mapGetters, mapMutations, mapState */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Store", function() { return Store; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "install", function() { return install; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapState", function() { return mapState; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapMutations", function() { return mapMutations; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapGetters", function() { return mapGetters; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapActions", function() { return mapActions; });
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Store", function() { return Store; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createNamespacedHelpers", function() { return createNamespacedHelpers; });
-/**
- * vuex v3.0.1
- * (c) 2017 Evan You
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "install", function() { return install; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapActions", function() { return mapActions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapGetters", function() { return mapGetters; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapMutations", function() { return mapMutations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapState", function() { return mapState; });
+/*!
+ * vuex v3.4.0
+ * (c) 2020 Evan You
  * @license MIT
  */
-var applyMixin = function (Vue) {
+function applyMixin (Vue) {
   var version = Number(Vue.version.split('.')[0]);
 
   if (version >= 2) {
@@ -1654,11 +1861,14 @@ var applyMixin = function (Vue) {
       this.$store = options.parent.$store;
     }
   }
-};
+}
 
-var devtoolHook =
-  typeof window !== 'undefined' &&
-  window.__VUE_DEVTOOLS_GLOBAL_HOOK__;
+var target = typeof window !== 'undefined'
+  ? window
+  : typeof global !== 'undefined'
+    ? global
+    : {};
+var devtoolHook = target.__VUE_DEVTOOLS_GLOBAL_HOOK__;
 
 function devtoolPlugin (store) {
   if (!devtoolHook) { return }
@@ -1673,7 +1883,11 @@ function devtoolPlugin (store) {
 
   store.subscribe(function (mutation, state) {
     devtoolHook.emit('vuex:mutation', mutation, state);
-  });
+  }, { prepend: true });
+
+  store.subscribeAction(function (action, state) {
+    devtoolHook.emit('vuex:action', action, state);
+  }, { prepend: true });
 }
 
 /**
@@ -1684,16 +1898,6 @@ function devtoolPlugin (store) {
  * @param {Function} f
  * @return {*}
  */
-/**
- * Deep copy the given object considering circular structure.
- * This function caches all nested objects and its copies.
- * If it detects circular structure, use cached copy to avoid infinite loop.
- *
- * @param {*} obj
- * @param {Array<Object>} cache
- * @return {*}
- */
-
 
 /**
  * forEach for object
@@ -1714,17 +1918,28 @@ function assert (condition, msg) {
   if (!condition) { throw new Error(("[vuex] " + msg)) }
 }
 
+function partial (fn, arg) {
+  return function () {
+    return fn(arg)
+  }
+}
+
+// Base data struct for store's module, package with some attribute and method
 var Module = function Module (rawModule, runtime) {
   this.runtime = runtime;
+  // Store some children item
   this._children = Object.create(null);
+  // Store the origin module object which passed by programmer
   this._rawModule = rawModule;
   var rawState = rawModule.state;
+
+  // Store the origin module's state
   this.state = (typeof rawState === 'function' ? rawState() : rawState) || {};
 };
 
-var prototypeAccessors$1 = { namespaced: { configurable: true } };
+var prototypeAccessors = { namespaced: { configurable: true } };
 
-prototypeAccessors$1.namespaced.get = function () {
+prototypeAccessors.namespaced.get = function () {
   return !!this._rawModule.namespaced
 };
 
@@ -1738,6 +1953,10 @@ Module.prototype.removeChild = function removeChild (key) {
 
 Module.prototype.getChild = function getChild (key) {
   return this._children[key]
+};
+
+Module.prototype.hasChild = function hasChild (key) {
+  return key in this._children
 };
 
 Module.prototype.update = function update (rawModule) {
@@ -1775,7 +1994,7 @@ Module.prototype.forEachMutation = function forEachMutation (fn) {
   }
 };
 
-Object.defineProperties( Module.prototype, prototypeAccessors$1 );
+Object.defineProperties( Module.prototype, prototypeAccessors );
 
 var ModuleCollection = function ModuleCollection (rawRootModule) {
   // register root module (Vuex.Store options)
@@ -1804,7 +2023,7 @@ ModuleCollection.prototype.register = function register (path, rawModule, runtim
     var this$1 = this;
     if ( runtime === void 0 ) runtime = true;
 
-  if (true) {
+  if ((true)) {
     assertRawModule(path, rawModule);
   }
 
@@ -1832,8 +2051,15 @@ ModuleCollection.prototype.unregister = function unregister (path) {
   parent.removeChild(key);
 };
 
+ModuleCollection.prototype.isRegistered = function isRegistered (path) {
+  var parent = this.get(path.slice(0, -1));
+  var key = path[path.length - 1];
+
+  return parent.hasChild(key)
+};
+
 function update (path, targetModule, newModule) {
-  if (true) {
+  if ((true)) {
     assertRawModule(path, newModule);
   }
 
@@ -1844,7 +2070,7 @@ function update (path, targetModule, newModule) {
   if (newModule.modules) {
     for (var key in newModule.modules) {
       if (!targetModule.getChild(key)) {
-        if (true) {
+        if ((true)) {
           console.warn(
             "[vuex] trying to add a new module '" + key + "' on hot reloading, " +
             'manual reload is needed'
@@ -1915,19 +2141,14 @@ var Store = function Store (options) {
     install(window.Vue);
   }
 
-  if (true) {
+  if ((true)) {
     assert(Vue, "must call Vue.use(Vuex) before creating a store instance.");
     assert(typeof Promise !== 'undefined', "vuex requires a Promise polyfill in this browser.");
-    assert(this instanceof Store, "Store must be called with the new operator.");
+    assert(this instanceof Store, "store must be called with the new operator.");
   }
 
   var plugins = options.plugins; if ( plugins === void 0 ) plugins = [];
   var strict = options.strict; if ( strict === void 0 ) strict = false;
-
-  var state = options.state; if ( state === void 0 ) state = {};
-  if (typeof state === 'function') {
-    state = state() || {};
-  }
 
   // store internal state
   this._committing = false;
@@ -1939,6 +2160,7 @@ var Store = function Store (options) {
   this._modulesNamespaceMap = Object.create(null);
   this._subscribers = [];
   this._watcherVM = new Vue();
+  this._makeLocalGettersCache = Object.create(null);
 
   // bind commit and dispatch to self
   var store = this;
@@ -1955,6 +2177,8 @@ var Store = function Store (options) {
   // strict mode
   this.strict = strict;
 
+  var state = this._modules.root.state;
+
   // init root module.
   // this also recursively registers all sub-modules
   // and collects all module getters inside this._wrappedGetters
@@ -1967,20 +2191,21 @@ var Store = function Store (options) {
   // apply plugins
   plugins.forEach(function (plugin) { return plugin(this$1); });
 
-  if (Vue.config.devtools) {
+  var useDevtools = options.devtools !== undefined ? options.devtools : Vue.config.devtools;
+  if (useDevtools) {
     devtoolPlugin(this);
   }
 };
 
-var prototypeAccessors = { state: { configurable: true } };
+var prototypeAccessors$1 = { state: { configurable: true } };
 
-prototypeAccessors.state.get = function () {
+prototypeAccessors$1.state.get = function () {
   return this._vm._data.$$state
 };
 
-prototypeAccessors.state.set = function (v) {
-  if (true) {
-    assert(false, "Use store.replaceState() to explicit replace store state.");
+prototypeAccessors$1.state.set = function (v) {
+  if ((true)) {
+    assert(false, "use store.replaceState() to explicit replace store state.");
   }
 };
 
@@ -1996,7 +2221,7 @@ Store.prototype.commit = function commit (_type, _payload, _options) {
   var mutation = { type: type, payload: payload };
   var entry = this._mutations[type];
   if (!entry) {
-    if (true) {
+    if ((true)) {
       console.error(("[vuex] unknown mutation type: " + type));
     }
     return
@@ -2006,10 +2231,13 @@ Store.prototype.commit = function commit (_type, _payload, _options) {
       handler(payload);
     });
   });
-  this._subscribers.forEach(function (sub) { return sub(mutation, this$1.state); });
+
+  this._subscribers
+    .slice() // shallow copy to prevent iterator invalidation if subscriber synchronously calls unsubscribe
+    .forEach(function (sub) { return sub(mutation, this$1.state); });
 
   if (
-     true &&
+    ( true) &&
     options && options.silent
   ) {
     console.warn(
@@ -2030,31 +2258,70 @@ Store.prototype.dispatch = function dispatch (_type, _payload) {
   var action = { type: type, payload: payload };
   var entry = this._actions[type];
   if (!entry) {
-    if (true) {
+    if ((true)) {
       console.error(("[vuex] unknown action type: " + type));
     }
     return
   }
 
-  this._actionSubscribers.forEach(function (sub) { return sub(action, this$1.state); });
+  try {
+    this._actionSubscribers
+      .slice() // shallow copy to prevent iterator invalidation if subscriber synchronously calls unsubscribe
+      .filter(function (sub) { return sub.before; })
+      .forEach(function (sub) { return sub.before(action, this$1.state); });
+  } catch (e) {
+    if ((true)) {
+      console.warn("[vuex] error in before action subscribers: ");
+      console.error(e);
+    }
+  }
 
-  return entry.length > 1
+  var result = entry.length > 1
     ? Promise.all(entry.map(function (handler) { return handler(payload); }))
-    : entry[0](payload)
+    : entry[0](payload);
+
+  return new Promise(function (resolve, reject) {
+    result.then(function (res) {
+      try {
+        this$1._actionSubscribers
+          .filter(function (sub) { return sub.after; })
+          .forEach(function (sub) { return sub.after(action, this$1.state); });
+      } catch (e) {
+        if ((true)) {
+          console.warn("[vuex] error in after action subscribers: ");
+          console.error(e);
+        }
+      }
+      resolve(res);
+    }, function (error) {
+      try {
+        this$1._actionSubscribers
+          .filter(function (sub) { return sub.error; })
+          .forEach(function (sub) { return sub.error(action, this$1.state, error); });
+      } catch (e) {
+        if ((true)) {
+          console.warn("[vuex] error in error action subscribers: ");
+          console.error(e);
+        }
+      }
+      reject(error);
+    });
+  })
 };
 
-Store.prototype.subscribe = function subscribe (fn) {
-  return genericSubscribe(fn, this._subscribers)
+Store.prototype.subscribe = function subscribe (fn, options) {
+  return genericSubscribe(fn, this._subscribers, options)
 };
 
-Store.prototype.subscribeAction = function subscribeAction (fn) {
-  return genericSubscribe(fn, this._actionSubscribers)
+Store.prototype.subscribeAction = function subscribeAction (fn, options) {
+  var subs = typeof fn === 'function' ? { before: fn } : fn;
+  return genericSubscribe(subs, this._actionSubscribers, options)
 };
 
 Store.prototype.watch = function watch (getter, cb, options) {
     var this$1 = this;
 
-  if (true) {
+  if ((true)) {
     assert(typeof getter === 'function', "store.watch only accepts a function.");
   }
   return this._watcherVM.$watch(function () { return getter(this$1.state, this$1.getters); }, cb, options)
@@ -2073,7 +2340,7 @@ Store.prototype.registerModule = function registerModule (path, rawModule, optio
 
   if (typeof path === 'string') { path = [path]; }
 
-  if (true) {
+  if ((true)) {
     assert(Array.isArray(path), "module path must be a string or an Array.");
     assert(path.length > 0, 'cannot register the root module by using registerModule.');
   }
@@ -2089,7 +2356,7 @@ Store.prototype.unregisterModule = function unregisterModule (path) {
 
   if (typeof path === 'string') { path = [path]; }
 
-  if (true) {
+  if ((true)) {
     assert(Array.isArray(path), "module path must be a string or an Array.");
   }
 
@@ -2099,6 +2366,16 @@ Store.prototype.unregisterModule = function unregisterModule (path) {
     Vue.delete(parentState, path[path.length - 1]);
   });
   resetStore(this);
+};
+
+Store.prototype.hasModule = function hasModule (path) {
+  if (typeof path === 'string') { path = [path]; }
+
+  if ((true)) {
+    assert(Array.isArray(path), "module path must be a string or an Array.");
+  }
+
+  return this._modules.isRegistered(path)
 };
 
 Store.prototype.hotUpdate = function hotUpdate (newOptions) {
@@ -2113,11 +2390,13 @@ Store.prototype._withCommit = function _withCommit (fn) {
   this._committing = committing;
 };
 
-Object.defineProperties( Store.prototype, prototypeAccessors );
+Object.defineProperties( Store.prototype, prototypeAccessors$1 );
 
-function genericSubscribe (fn, subs) {
+function genericSubscribe (fn, subs, options) {
   if (subs.indexOf(fn) < 0) {
-    subs.push(fn);
+    options && options.prepend
+      ? subs.unshift(fn)
+      : subs.push(fn);
   }
   return function () {
     var i = subs.indexOf(fn);
@@ -2144,11 +2423,15 @@ function resetStoreVM (store, state, hot) {
 
   // bind store public getters
   store.getters = {};
+  // reset local getters cache
+  store._makeLocalGettersCache = Object.create(null);
   var wrappedGetters = store._wrappedGetters;
   var computed = {};
   forEachValue(wrappedGetters, function (fn, key) {
     // use computed to leverage its lazy-caching mechanism
-    computed[key] = function () { return fn(store); };
+    // direct inline function use will lead to closure preserving oldVm.
+    // using partial to return function with only arguments preserved in closure environment.
+    computed[key] = partial(fn, store);
     Object.defineProperty(store.getters, key, {
       get: function () { return store._vm[key]; },
       enumerable: true // for local getters
@@ -2191,6 +2474,9 @@ function installModule (store, rootState, path, module, hot) {
 
   // register in namespace map
   if (module.namespaced) {
+    if (store._modulesNamespaceMap[namespace] && ("development" !== 'production')) {
+      console.error(("[vuex] duplicate namespace " + namespace + " for the namespaced module " + (path.join('/'))));
+    }
     store._modulesNamespaceMap[namespace] = module;
   }
 
@@ -2199,6 +2485,13 @@ function installModule (store, rootState, path, module, hot) {
     var parentState = getNestedState(rootState, path.slice(0, -1));
     var moduleName = path[path.length - 1];
     store._withCommit(function () {
+      if ((true)) {
+        if (moduleName in parentState) {
+          console.warn(
+            ("[vuex] state field \"" + moduleName + "\" was overridden by a module with the same name at \"" + (path.join('.')) + "\"")
+          );
+        }
+      }
       Vue.set(parentState, moduleName, module.state);
     });
   }
@@ -2242,7 +2535,7 @@ function makeLocalContext (store, namespace, path) {
 
       if (!options || !options.root) {
         type = namespace + type;
-        if ( true && !store._actions[type]) {
+        if (( true) && !store._actions[type]) {
           console.error(("[vuex] unknown local action type: " + (args.type) + ", global type: " + type));
           return
         }
@@ -2259,7 +2552,7 @@ function makeLocalContext (store, namespace, path) {
 
       if (!options || !options.root) {
         type = namespace + type;
-        if ( true && !store._mutations[type]) {
+        if (( true) && !store._mutations[type]) {
           console.error(("[vuex] unknown local mutation type: " + (args.type) + ", global type: " + type));
           return
         }
@@ -2286,26 +2579,28 @@ function makeLocalContext (store, namespace, path) {
 }
 
 function makeLocalGetters (store, namespace) {
-  var gettersProxy = {};
+  if (!store._makeLocalGettersCache[namespace]) {
+    var gettersProxy = {};
+    var splitPos = namespace.length;
+    Object.keys(store.getters).forEach(function (type) {
+      // skip if the target getter is not match this namespace
+      if (type.slice(0, splitPos) !== namespace) { return }
 
-  var splitPos = namespace.length;
-  Object.keys(store.getters).forEach(function (type) {
-    // skip if the target getter is not match this namespace
-    if (type.slice(0, splitPos) !== namespace) { return }
+      // extract local getter type
+      var localType = type.slice(splitPos);
 
-    // extract local getter type
-    var localType = type.slice(splitPos);
-
-    // Add a port to the getters proxy.
-    // Define as getter property because
-    // we do not want to evaluate the getters in this time.
-    Object.defineProperty(gettersProxy, localType, {
-      get: function () { return store.getters[type]; },
-      enumerable: true
+      // Add a port to the getters proxy.
+      // Define as getter property because
+      // we do not want to evaluate the getters in this time.
+      Object.defineProperty(gettersProxy, localType, {
+        get: function () { return store.getters[type]; },
+        enumerable: true
+      });
     });
-  });
+    store._makeLocalGettersCache[namespace] = gettersProxy;
+  }
 
-  return gettersProxy
+  return store._makeLocalGettersCache[namespace]
 }
 
 function registerMutation (store, type, handler, local) {
@@ -2317,7 +2612,7 @@ function registerMutation (store, type, handler, local) {
 
 function registerAction (store, type, handler, local) {
   var entry = store._actions[type] || (store._actions[type] = []);
-  entry.push(function wrappedActionHandler (payload, cb) {
+  entry.push(function wrappedActionHandler (payload) {
     var res = handler.call(store, {
       dispatch: local.dispatch,
       commit: local.commit,
@@ -2325,7 +2620,7 @@ function registerAction (store, type, handler, local) {
       state: local.state,
       rootGetters: store.getters,
       rootState: store.state
-    }, payload, cb);
+    }, payload);
     if (!isPromise(res)) {
       res = Promise.resolve(res);
     }
@@ -2342,7 +2637,7 @@ function registerAction (store, type, handler, local) {
 
 function registerGetter (store, type, rawGetter, local) {
   if (store._wrappedGetters[type]) {
-    if (true) {
+    if ((true)) {
       console.error(("[vuex] duplicate getter key: " + type));
     }
     return
@@ -2359,16 +2654,14 @@ function registerGetter (store, type, rawGetter, local) {
 
 function enableStrictMode (store) {
   store._vm.$watch(function () { return this._data.$$state }, function () {
-    if (true) {
-      assert(store._committing, "Do not mutate vuex store state outside mutation handlers.");
+    if ((true)) {
+      assert(store._committing, "do not mutate vuex store state outside mutation handlers.");
     }
   }, { deep: true, sync: true });
 }
 
 function getNestedState (state, path) {
-  return path.length
-    ? path.reduce(function (state, key) { return state[key]; }, state)
-    : state
+  return path.reduce(function (state, key) { return state[key]; }, state)
 }
 
 function unifyObjectStyle (type, payload, options) {
@@ -2378,8 +2671,8 @@ function unifyObjectStyle (type, payload, options) {
     type = type.type;
   }
 
-  if (true) {
-    assert(typeof type === 'string', ("Expects string as the type, but found " + (typeof type) + "."));
+  if ((true)) {
+    assert(typeof type === 'string', ("expects string as the type, but found " + (typeof type) + "."));
   }
 
   return { type: type, payload: payload, options: options }
@@ -2387,7 +2680,7 @@ function unifyObjectStyle (type, payload, options) {
 
 function install (_Vue) {
   if (Vue && _Vue === Vue) {
-    if (true) {
+    if ((true)) {
       console.error(
         '[vuex] already installed. Vue.use(Vuex) should be called only once.'
       );
@@ -2398,8 +2691,17 @@ function install (_Vue) {
   applyMixin(Vue);
 }
 
+/**
+ * Reduce the code which written in Vue.js for getting the state.
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} states # Object's item can be a function which accept state and getters for param, you can do something for state and getters in it.
+ * @param {Object}
+ */
 var mapState = normalizeNamespace(function (namespace, states) {
   var res = {};
+  if (( true) && !isValidMap(states)) {
+    console.error('[vuex] mapState: mapper parameter must be either an Array or an Object');
+  }
   normalizeMap(states).forEach(function (ref) {
     var key = ref.key;
     var val = ref.val;
@@ -2425,8 +2727,17 @@ var mapState = normalizeNamespace(function (namespace, states) {
   return res
 });
 
+/**
+ * Reduce the code which written in Vue.js for committing the mutation
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} mutations # Object's item can be a function which accept `commit` function as the first param, it can accept anthor params. You can commit mutation and do any other things in this function. specially, You need to pass anthor params from the mapped function.
+ * @return {Object}
+ */
 var mapMutations = normalizeNamespace(function (namespace, mutations) {
   var res = {};
+  if (( true) && !isValidMap(mutations)) {
+    console.error('[vuex] mapMutations: mapper parameter must be either an Array or an Object');
+  }
   normalizeMap(mutations).forEach(function (ref) {
     var key = ref.key;
     var val = ref.val;
@@ -2435,6 +2746,7 @@ var mapMutations = normalizeNamespace(function (namespace, mutations) {
       var args = [], len = arguments.length;
       while ( len-- ) args[ len ] = arguments[ len ];
 
+      // Get the commit method from store
       var commit = this.$store.commit;
       if (namespace) {
         var module = getModuleByNamespace(this.$store, 'mapMutations', namespace);
@@ -2451,18 +2763,28 @@ var mapMutations = normalizeNamespace(function (namespace, mutations) {
   return res
 });
 
+/**
+ * Reduce the code which written in Vue.js for getting the getters
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} getters
+ * @return {Object}
+ */
 var mapGetters = normalizeNamespace(function (namespace, getters) {
   var res = {};
+  if (( true) && !isValidMap(getters)) {
+    console.error('[vuex] mapGetters: mapper parameter must be either an Array or an Object');
+  }
   normalizeMap(getters).forEach(function (ref) {
     var key = ref.key;
     var val = ref.val;
 
+    // The namespace has been mutated by normalizeNamespace
     val = namespace + val;
     res[key] = function mappedGetter () {
       if (namespace && !getModuleByNamespace(this.$store, 'mapGetters', namespace)) {
         return
       }
-      if ( true && !(val in this.$store.getters)) {
+      if (( true) && !(val in this.$store.getters)) {
         console.error(("[vuex] unknown getter: " + val));
         return
       }
@@ -2474,8 +2796,17 @@ var mapGetters = normalizeNamespace(function (namespace, getters) {
   return res
 });
 
+/**
+ * Reduce the code which written in Vue.js for dispatch the action
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} actions # Object's item can be a function which accept `dispatch` function as the first param, it can accept anthor params. You can dispatch action and do any other things in this function. specially, You need to pass anthor params from the mapped function.
+ * @return {Object}
+ */
 var mapActions = normalizeNamespace(function (namespace, actions) {
   var res = {};
+  if (( true) && !isValidMap(actions)) {
+    console.error('[vuex] mapActions: mapper parameter must be either an Array or an Object');
+  }
   normalizeMap(actions).forEach(function (ref) {
     var key = ref.key;
     var val = ref.val;
@@ -2484,6 +2815,7 @@ var mapActions = normalizeNamespace(function (namespace, actions) {
       var args = [], len = arguments.length;
       while ( len-- ) args[ len ] = arguments[ len ];
 
+      // get dispatch function from store
       var dispatch = this.$store.dispatch;
       if (namespace) {
         var module = getModuleByNamespace(this.$store, 'mapActions', namespace);
@@ -2500,6 +2832,11 @@ var mapActions = normalizeNamespace(function (namespace, actions) {
   return res
 });
 
+/**
+ * Rebinding namespace param for mapXXX function in special scoped, and return them by simple object
+ * @param {String} namespace
+ * @return {Object}
+ */
 var createNamespacedHelpers = function (namespace) { return ({
   mapState: mapState.bind(null, namespace),
   mapGetters: mapGetters.bind(null, namespace),
@@ -2507,12 +2844,36 @@ var createNamespacedHelpers = function (namespace) { return ({
   mapActions: mapActions.bind(null, namespace)
 }); };
 
+/**
+ * Normalize the map
+ * normalizeMap([1, 2, 3]) => [ { key: 1, val: 1 }, { key: 2, val: 2 }, { key: 3, val: 3 } ]
+ * normalizeMap({a: 1, b: 2, c: 3}) => [ { key: 'a', val: 1 }, { key: 'b', val: 2 }, { key: 'c', val: 3 } ]
+ * @param {Array|Object} map
+ * @return {Object}
+ */
 function normalizeMap (map) {
+  if (!isValidMap(map)) {
+    return []
+  }
   return Array.isArray(map)
     ? map.map(function (key) { return ({ key: key, val: key }); })
     : Object.keys(map).map(function (key) { return ({ key: key, val: map[key] }); })
 }
 
+/**
+ * Validate whether given map is valid or not
+ * @param {*} map
+ * @return {Boolean}
+ */
+function isValidMap (map) {
+  return Array.isArray(map) || isObject(map)
+}
+
+/**
+ * Return a function expect two param contains namespace and map. it will normalize the namespace and then the param's function will handle the new namespace and the map.
+ * @param {Function} fn
+ * @return {Function}
+ */
 function normalizeNamespace (fn) {
   return function (namespace, map) {
     if (typeof namespace !== 'string') {
@@ -2525,18 +2886,25 @@ function normalizeNamespace (fn) {
   }
 }
 
+/**
+ * Search a special module from store by namespace. if module not exist, print error message.
+ * @param {Object} store
+ * @param {String} helper
+ * @param {String} namespace
+ * @return {Object}
+ */
 function getModuleByNamespace (store, helper, namespace) {
   var module = store._modulesNamespaceMap[namespace];
-  if ( true && !module) {
+  if (( true) && !module) {
     console.error(("[vuex] module namespace not found in " + helper + "(): " + namespace));
   }
   return module
 }
 
-var index_esm = {
+var index = {
   Store: Store,
   install: install,
-  version: '3.0.1',
+  version: '3.4.0',
   mapState: mapState,
   mapMutations: mapMutations,
   mapGetters: mapGetters,
@@ -2544,9 +2912,10 @@ var index_esm = {
   createNamespacedHelpers: createNamespacedHelpers
 };
 
+/* harmony default export */ __webpack_exports__["default"] = (index);
 
-/* harmony default export */ __webpack_exports__["default"] = (index_esm);
 
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ 3)))
 
 /***/ }),
 
@@ -2680,9573 +3049,225 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 15:
-/*!**************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/index.js ***!
-  \**************************************************************************/
+/*!****************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/common/util.js ***!
+  \****************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _packages = _interopRequireDefault(__webpack_require__(/*! ./packages */ 16));
-var _store = _interopRequireDefault(__webpack_require__(/*! ./store */ 17));
-var _goods = _interopRequireDefault(__webpack_require__(/*! ./goods */ 18));
-var _levelBenefits = _interopRequireDefault(__webpack_require__(/*! ./level-benefits */ 19));
-var _member = _interopRequireDefault(__webpack_require__(/*! ./member */ 20));
-var _rechargeCards = _interopRequireDefault(__webpack_require__(/*! ./rechargeCards */ 21));
-var _addresses = _interopRequireDefault(__webpack_require__(/*! ./addresses */ 22));
-var _attendance = _interopRequireDefault(__webpack_require__(/*! ./attendance */ 23));
-var _customPoints = _interopRequireDefault(__webpack_require__(/*! ./custom-points */ 24));
-var _pointsMall = _interopRequireDefault(__webpack_require__(/*! ./points-mall */ 25));
-var _attendanceList = _interopRequireDefault(__webpack_require__(/*! ./attendance-list */ 26));
-var _todayAttendance = _interopRequireDefault(__webpack_require__(/*! ./today-attendance */ 27));
-var _orders = _interopRequireDefault(__webpack_require__(/*! ./orders */ 28));
-var _customerCoupons = _interopRequireDefault(__webpack_require__(/*! ./customer-coupons */ 29));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+function formatTime(time) {
+  if (typeof time !== 'number' || time < 0) {
+    return time;
+  }
 
-var json = {
-  packages: _packages.default,
-  store: _store.default,
-  goods: _goods.default,
-  levelBenefits: _levelBenefits.default,
-  member: _member.default,
-  rechargeCards: _rechargeCards.default,
-  addresses: _addresses.default,
-  attendance: _attendance.default,
-  customPoints: _customPoints.default,
-  pointsMall: _pointsMall.default,
-  attendanceList: _attendanceList.default,
-  todayAttendance: _todayAttendance.default,
-  orders: _orders.default,
-  customerCoupons: _customerCoupons.default };var _default =
+  var hour = parseInt(time / 3600);
+  time = time % 3600;
+  var minute = parseInt(time / 60);
+  time = time % 60;
+  var second = time;
+
+  return [hour, minute, second].map(function (n) {
+    n = n.toString();
+    return n[1] ? n : '0' + n;
+  }).join(':');
+}
+
+function formatDateTime(date) {var fmt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'yyyy-MM-dd hh:mm:ss';
+  if (!date) {
+    return '';
+  }
+  if (typeof date === 'number') {
+    date = new Date(date * 1000);
+  }
+  var o = {
+    "M+": date.getMonth() + 1, //月份
+    "d+": date.getDate(), //日
+    "h+": date.getHours(), //小时
+    "m+": date.getMinutes(), //分
+    "s+": date.getSeconds(), //秒
+    "q+": Math.floor((date.getMonth() + 3) / 3), //季度
+    "S": date.getMilliseconds() //毫秒
+  };
+  if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (date.getFullYear() + "").substr(4 - RegExp.$1.length));
+  for (var k in o) {
+    if (new RegExp("(" + k + ")").test(fmt))
+    fmt = fmt.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));}
+  return fmt;
+}
+
+function formatLocation(longitude, latitude) {
+  if (typeof longitude === 'string' && typeof latitude === 'string') {
+    longitude = parseFloat(longitude);
+    latitude = parseFloat(latitude);
+  }
+
+  longitude = longitude.toFixed(2);
+  latitude = latitude.toFixed(2);
+
+  return {
+    longitude: longitude.toString().split('.'),
+    latitude: latitude.toString().split('.') };
+
+}
+
+var dateUtils = {
+  UNITS: {
+    '年': 31557600000,
+    '月': 2629800000,
+    '天': 86400000,
+    '小时': 3600000,
+    '分钟': 60000,
+    '秒': 1000 },
+
+  humanize: function humanize(milliseconds) {
+    var humanize = '';
+    for (var key in this.UNITS) {
+      if (milliseconds >= this.UNITS[key]) {
+        humanize = Math.floor(milliseconds / this.UNITS[key]) + key + '前';
+        break;
+      }
+    }
+    return humanize || '刚刚';
+  },
+  format: function format(dateStr) {
+    var date = this.parse(dateStr);
+    var diff = Date.now() - date.getTime();
+    if (diff < this.UNITS['天']) {
+      return this.humanize(diff);
+    }
+    var _format = function _format(number) {
+      return number < 10 ? '0' + number : number;
+    };
+    return date.getFullYear() + '/' + _format(date.getMonth() + 1) + '/' + _format(date.getDate()) + '-' +
+    _format(date.getHours()) + ':' + _format(date.getMinutes());
+  },
+  parse: function parse(str) {//将"yyyy-mm-dd HH:MM:ss"格式的字符串，转化为一个Date对象
+    var a = str.split(/[^0-9]/);
+    return new Date(a[0], a[1] - 1, a[2], a[3], a[4], a[5]);
+  } };
 
 
-function _default(name) {return new Promise(function (resolve) {return resolve(json[name]);}, 500);};exports.default = _default;
+module.exports = {
+  formatTime: formatTime,
+  formatDateTime: formatDateTime,
+  formatLocation: formatLocation,
+  dateUtils: dateUtils };
 
 /***/ }),
 
 /***/ 16:
-/*!*****************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/packages.js ***!
-  \*****************************************************************************/
+/*!****************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/store/index.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [
-{
-  "updated_at": "2020-05-03 15:31:59",
-  "id": 187,
-  "has_send_num": 0,
-  "start_at": "2020-03-30 00:00",
-  "end_at": "2020-05-15 23:59",
-  "deleted_at": null,
-  "buy_status": 1,
-  "coupons": [
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585539323",
-      "use_good_category": "限部分商品",
-      "category": 4,
-      "expire_days": 30,
-      "expire": "领券当日开始30天内有效",
-      "min_num": 1,
-      "number": 0,
-      "m_and_n_coupon_of_n": 1,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "买A赠B券",
-      "coupon_title": "第2件半价券(mini卡)",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始30天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585539323",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内购买任意茶饮或软欧包，第二件可获得半价优惠，优惠产品原价不得高于购买产品原价\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "4.5",
-      "title": "第2件半价券(mini卡)",
-      "second_max_num": 0,
-      "total_amount": 5,
-      "min_amount_use": 0,
-      "used": 0,
-      "goods_range_num": 1,
-      "explain_text": "1. 使用条件：在有效期内购买任意茶饮或软欧包，第二件可获得半价优惠，优惠产品原价不得高于购买产品原价\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451347890055233536",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 1,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气mini卡",
-      "multi_range_type": 2,
-      "shop_ids": "7559,5809",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "无订单金额限制",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 1,
-      "amount": "买A赠B券",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:21:51",
-    "deleted_at": null,
-    "id": 401,
-    "coupon_id": "451347890055233536",
-    "created_at": "2020-03-30 23:21:51",
-    "coupon_num": 1,
-    "packages_id": 187 },
-
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585539381",
-      "use_good_category": "",
-      "category": 0,
-      "expire_days": 30,
-      "expire": "领券当日开始30天内有效",
-      "min_num": 0,
-      "number": 0,
-      "m_and_n_coupon_of_n": 0,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "现金券现金券6元元",
-      "coupon_title": "满58元减现金券6元元券",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始30天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585539381",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内，购买任意饮品或软欧包满58元享受6元优惠\n2. 适用商品：任意饮品或软欧包\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "2.5",
-      "title": "58-6元现金券(mini卡)",
-      "discount_categorie_goods": [],
-      "second_max_num": 0,
-      "total_amount": 6,
-      "min_amount_use": 58,
-      "used": 0,
-      "goods_range_num": 1,
-      "explain_text": "1. 使用条件：在有效期内，购买任意饮品或软欧包满58元享受6元优惠\n2. 适用商品：任意饮品或软欧包\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451348136147632128",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "categorie_goods": [],
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 0,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气mini卡",
-      "categorieGoods": [],
-      "multi_range_type": 2,
-      "shop_ids": "7559,5809",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "满58元可用",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 0,
-      "amount": "现金券6元",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discountCategorieGoods": [],
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:21:51",
-    "deleted_at": null,
-    "id": 402,
-    "coupon_id": "451348136147632128",
-    "created_at": "2020-03-30 23:21:51",
-    "coupon_num": 2,
-    "packages_id": 187 },
-
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585539573",
-      "use_good_category": "",
-      "category": 0,
-      "expire_days": 30,
-      "expire": "领券当日开始30天内有效",
-      "min_num": 0,
-      "number": 0,
-      "m_and_n_coupon_of_n": 0,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "现金券现金券10元元",
-      "coupon_title": "满108元减现金券10元元券",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始30天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585539573",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内，购买任意饮品或软欧包满108元享受10元优惠\n2. 适用商品：任意饮品或软欧包\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "3.5",
-      "title": "108-10元现金券(mini卡)",
-      "discount_categorie_goods": [],
-      "second_max_num": 0,
-      "total_amount": 10,
-      "min_amount_use": 108,
-      "used": 0,
-      "goods_range_num": 1,
-      "explain_text": "1. 使用条件：在有效期内，购买任意饮品或软欧包满108元享受10元优惠\n2. 适用商品：任意饮品或软欧包\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451348939155234817",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "categorie_goods": [],
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 0,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气mini卡",
-      "categorieGoods": [],
-      "multi_range_type": 2,
-      "shop_ids": "7559,5809",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "满108元可用",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 0,
-      "amount": "现金券10元",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discountCategorieGoods": [],
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:21:51",
-    "deleted_at": null,
-    "id": 403,
-    "coupon_id": "451348939155234817",
-    "created_at": "2020-03-30 23:21:51",
-    "coupon_num": 3,
-    "packages_id": 187 }],
-
-
-  "image": "https://img-shop.qmimg.cn/s23107/2020/02/29/8b6ffdfb8c8d7ab0e3.jpg",
-  "status": 2,
-  "third_party_name": "",
-  "third_party_id": 0,
-  "send_num": 0,
-  "created_at": "2020-03-30 23:21:51",
-  "third_desc": "",
-  "amount": "20.00",
-  "content": "【基本规则】\n1、成功购买后，优惠券可在奈雪点单小程序内使用或线下门店出示会员码使用。\n2、优惠券规则以优惠券使用详情为准。\n3、单笔订单仅限使用一张优惠券，且不与其他活动共享。\n4、用户购买券包使用的手机号需和小程序登录的会员手机号保持一致。\n5、如逾期未使用优惠券，优惠券将自动失效，请在有效期内使用。\n【注意】\n1、奈雪会员卡包为奈雪的茶公开售卖的一种付费卡包，成功购买，不可转赠、不可退换、不可兑换现金。\n2、此券包有效期30天。",
-  "limit_num": 0,
-  "num": 100000,
-  "store_id": 23107,
-  "title": "霸气mini卡",
-  "sale_num": 16170,
-  "third_status": 0 },
-
-{
-  "updated_at": "2020-05-03 15:37:45",
-  "id": 186,
-  "has_send_num": 0,
-  "start_at": "2020-03-30 00:00",
-  "end_at": "2020-05-15 23:59",
-  "deleted_at": null,
-  "buy_status": 1,
-  "coupons": [
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585539689",
-      "use_good_category": "限部分商品",
-      "category": 4,
-      "expire_days": 90,
-      "expire": "领券当日开始90天内有效",
-      "min_num": 1,
-      "number": 0,
-      "m_and_n_coupon_of_n": 1,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "买A赠B券",
-      "coupon_title": "买3赠1券(心享卡)",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始90天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585539689",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内，购买任意饮品或软欧包满3件赠1件，赠送产品不得高于购买产品价格\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "14",
-      "title": "买3赠1券(心享卡)",
-      "second_max_num": 0,
-      "total_amount": 0,
-      "min_amount_use": 0,
-      "used": 0,
-      "goods_range_num": 3,
-      "explain_text": "1. 使用条件：在有效期内，购买任意饮品或软欧包满3件赠1件，赠送产品不得高于购买产品价格\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451349427363045376",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 1,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气心享卡",
-      "multi_range_type": 2,
-      "shop_ids": "5809,7559",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "无订单金额限制",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 1,
-      "amount": "买A赠B券",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:20:39",
-    "deleted_at": null,
-    "id": 397,
-    "coupon_id": "451349427363045376",
-    "created_at": "2020-03-30 23:20:39",
-    "coupon_num": 1,
-    "packages_id": 186 },
-
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585539716",
-      "use_good_category": "限部分商品",
-      "category": 4,
-      "expire_days": 90,
-      "expire": "领券当日开始90天内有效",
-      "min_num": 1,
-      "number": 0,
-      "m_and_n_coupon_of_n": 1,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "买A赠B券",
-      "coupon_title": "第2件半价券(心享卡)",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始90天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585539716",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内购买任意茶饮或软欧包，第二件可获得半价优惠，优惠产品原价不得高于购买产品原价\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "6",
-      "title": "第2件半价券(心享卡)",
-      "second_max_num": 0,
-      "total_amount": 5,
-      "min_amount_use": 0,
-      "used": 0,
-      "goods_range_num": 1,
-      "explain_text": "1. 使用条件：在有效期内购买任意茶饮或软欧包，第二件可获得半价优惠，优惠产品原价不得高于购买产品原价\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451349537945866241",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 1,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气心享卡",
-      "multi_range_type": 2,
-      "shop_ids": "7559,5809",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "无订单金额限制",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 1,
-      "amount": "买A赠B券",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:20:39",
-    "deleted_at": null,
-    "id": 398,
-    "coupon_id": "451349537945866241",
-    "created_at": "2020-03-30 23:20:39",
-    "coupon_num": 2,
-    "packages_id": 186 },
-
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585539765",
-      "use_good_category": "",
-      "category": 0,
-      "expire_days": 90,
-      "expire": "领券当日开始90天内有效",
-      "min_num": 0,
-      "number": 0,
-      "m_and_n_coupon_of_n": 0,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "现金券现金券6元元",
-      "coupon_title": "满58元减现金券6元元券",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始90天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585539765",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内，购买任意饮品或软欧包满58元享受6元优惠\n2. 适用商品：任意饮品或软欧包\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "2.4",
-      "title": "58-6元现金券(心享卡)",
-      "discount_categorie_goods": [],
-      "second_max_num": 0,
-      "total_amount": 6,
-      "min_amount_use": 58,
-      "used": 0,
-      "goods_range_num": 1,
-      "explain_text": "1. 使用条件：在有效期内，购买任意饮品或软欧包满58元享受6元优惠\n2. 适用商品：任意饮品或软欧包\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451349745320648705",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "categorie_goods": [],
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 0,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气心享卡",
-      "categorieGoods": [],
-      "multi_range_type": 2,
-      "shop_ids": "7559,5809",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "满58元可用",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 0,
-      "amount": "现金券6元",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discountCategorieGoods": [],
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:20:39",
-    "deleted_at": null,
-    "id": 399,
-    "coupon_id": "451349745320648705",
-    "created_at": "2020-03-30 23:20:39",
-    "coupon_num": 5,
-    "packages_id": 186 },
-
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585539788",
-      "use_good_category": "",
-      "category": 0,
-      "expire_days": 90,
-      "expire": "领券当日开始90天内有效",
-      "min_num": 0,
-      "number": 0,
-      "m_and_n_coupon_of_n": 0,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "现金券现金券10元元",
-      "coupon_title": "满108元减现金券10元元券",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始90天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585539788",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内，购买任意饮品或软欧包满108元享受10元优惠\n2. 适用商品：任意饮品或软欧包\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "4",
-      "title": "108-10元现金券(心享卡)",
-      "discount_categorie_goods": [],
-      "second_max_num": 0,
-      "total_amount": 10,
-      "min_amount_use": 108,
-      "used": 0,
-      "goods_range_num": 1,
-      "explain_text": "1. 使用条件：在有效期内，购买任意饮品或软欧包满108元享受10元优惠\n2. 适用商品：任意饮品或软欧包\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451349840803979264",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "categorie_goods": [],
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 0,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气心享卡",
-      "categorieGoods": [],
-      "multi_range_type": 2,
-      "shop_ids": "7559,5809",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "满108元可用",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 0,
-      "amount": "现金券10元",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discountCategorieGoods": [],
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:20:39",
-    "deleted_at": null,
-    "id": 400,
-    "coupon_id": "451349840803979264",
-    "created_at": "2020-03-30 23:20:39",
-    "coupon_num": 5,
-    "packages_id": 186 }],
-
-
-  "image": "https://img-shop.qmimg.cn/s23107/2020/02/29/16c61aad4a84e7c2b5.jpg",
-  "status": 2,
-  "third_party_name": "",
-  "third_party_id": 0,
-  "send_num": 0,
-  "created_at": "2020-03-30 23:20:39",
-  "third_desc": "",
-  "amount": "58.00",
-  "content": "【基本规则】\n1、成功购买后，优惠券可在奈雪点单小程序内使用或线下门店出示会员码使用。\n2、优惠券规则以优惠券使用详情为准。\n3、单笔订单仅限使用一张优惠券，且不与其他活动共享。\n4、用户购买券包使用的手机号需和小程序登录的会员手机号保持一致。\n5、如逾期未使用优惠券，优惠券将自动失效，请在有效期内使用。\n【注意】\n1、奈雪会员卡包为奈雪的茶公开售卖的一种付费卡包，成功购买，不可转赠、不可退换、不可兑换现金。\n2、此券包有效期90天。",
-  "limit_num": 0,
-  "num": 100000,
-  "store_id": 23107,
-  "title": "霸气心享卡",
-  "sale_num": 4388,
-  "third_status": 0 },
-
-{
-  "updated_at": "2020-05-03 15:39:00",
-  "id": 185,
-  "has_send_num": 0,
-  "start_at": "2020-03-30 00:00",
-  "end_at": "2020-05-15 23:59",
-  "deleted_at": null,
-  "buy_status": 1,
-  "coupons": [
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585539833",
-      "use_good_category": "限部分商品",
-      "category": 4,
-      "expire_days": 120,
-      "expire": "领券当日开始120天内有效",
-      "min_num": 1,
-      "number": 0,
-      "m_and_n_coupon_of_n": 1,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "买A赠B券",
-      "multis": [
-      {
-        "name": "奈雪梦工厂海岸城店",
-        "store_id": "23107",
-        "id": "7559" },
-
-      {
-        "name": "上海浦东机场卫星厅S2店",
-        "store_id": "23107",
-        "id": "5809" }],
-
-
-      "coupon_title": "买2赠1券(分享卡)",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始120天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585539833",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内，购买任意饮品或软欧包满2件赠1件，赠送产品不得高于购买产品价格\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "15",
-      "title": "买2赠1券(分享卡)",
-      "discount_categorie_goods": [
-      {
-        "updated_at": "2020-04-19 21:37:47",
-        "id": 4201,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 22,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos茶饮",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:45",
-        "id": 4202,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 23,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos欧包",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:39",
-        "id": 4652,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 26,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的茶",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:37",
-        "id": 4654,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 27,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的欧包",
-        "show_period": 0 }],
-
-
-      "second_max_num": 0,
-      "total_amount": 0,
-      "min_amount_use": 0,
-      "used": 0,
-      "goods_range_num": 2,
-      "explain_text": "1. 使用条件：在有效期内，购买任意饮品或软欧包满2件赠1件，赠送产品不得高于购买产品价格\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451350032483667969",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "categorie_goods": [
-      {
-        "updated_at": "2020-04-19 21:37:47",
-        "id": 4201,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 22,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos茶饮",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:45",
-        "id": 4202,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 23,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos欧包",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:39",
-        "id": 4652,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 26,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的茶",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:37",
-        "id": 4654,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 27,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的欧包",
-        "show_period": 0 }],
-
-
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 1,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气心享卡",
-      "categorieGoods": [
-      {
-        "updated_at": "2020-04-19 21:37:47",
-        "id": 4201,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 22,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos茶饮",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:45",
-        "id": 4202,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 23,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos欧包",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:39",
-        "id": 4652,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 26,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的茶",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:37",
-        "id": 4654,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 27,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的欧包",
-        "show_period": 0 }],
-
-
-      "multi_range_type": 2,
-      "shop_ids": "7559,5809",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "无订单金额限制",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 1,
-      "amount": "买A赠B券",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discountCategorieGoods": [
-      {
-        "updated_at": "2020-04-19 21:37:47",
-        "id": 4201,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 22,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos茶饮",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:45",
-        "id": 4202,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 23,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos欧包",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:39",
-        "id": 4652,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 26,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的茶",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:37",
-        "id": 4654,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 27,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的欧包",
-        "show_period": 0 }],
-
-
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:19:05",
-    "deleted_at": null,
-    "id": 392,
-    "coupon_id": "451350032483667969",
-    "created_at": "2020-03-30 23:19:05",
-    "coupon_num": 1,
-    "packages_id": 185 },
-
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585539870",
-      "use_good_category": "限部分商品",
-      "category": 4,
-      "expire_days": 120,
-      "expire": "领券当日开始120天内有效",
-      "min_num": 1,
-      "number": 0,
-      "m_and_n_coupon_of_n": 1,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "买A赠B券",
-      "multis": [
-      {
-        "name": "奈雪梦工厂海岸城店",
-        "store_id": "23107",
-        "id": "7559" },
-
-      {
-        "name": "上海浦东机场卫星厅S2店",
-        "store_id": "23107",
-        "id": "5809" }],
-
-
-      "coupon_title": "买3赠1券(分享卡)",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始120天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585539870",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内，购买任意饮品或软欧包满3件赠1件，赠送产品不得高于购买产品价格\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "15",
-      "title": "买3赠1券(分享卡)",
-      "discount_categorie_goods": [
-      {
-        "updated_at": "2020-04-19 21:37:47",
-        "id": 4201,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 22,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos茶饮",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:45",
-        "id": 4202,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 23,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos欧包",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:39",
-        "id": 4652,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 26,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的茶",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:37",
-        "id": 4654,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 27,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的欧包",
-        "show_period": 0 }],
-
-
-      "second_max_num": 0,
-      "total_amount": 0,
-      "min_amount_use": 0,
-      "used": 0,
-      "goods_range_num": 3,
-      "explain_text": "1. 使用条件：在有效期内，购买任意饮品或软欧包满3件赠1件，赠送产品不得高于购买产品价格\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451350186289872897",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "categorie_goods": [
-      {
-        "updated_at": "2020-04-19 21:37:47",
-        "id": 4201,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 22,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos茶饮",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:45",
-        "id": 4202,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 23,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos欧包",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:39",
-        "id": 4652,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 26,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的茶",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:37",
-        "id": 4654,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 27,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的欧包",
-        "show_period": 0 }],
-
-
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 1,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气分享卡",
-      "categorieGoods": [
-      {
-        "updated_at": "2020-04-19 21:37:47",
-        "id": 4201,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 22,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos茶饮",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:45",
-        "id": 4202,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 23,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos欧包",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:39",
-        "id": 4652,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 26,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的茶",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:37",
-        "id": 4654,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 27,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的欧包",
-        "show_period": 0 }],
-
-
-      "multi_range_type": 2,
-      "shop_ids": "7559,5809",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "无订单金额限制",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 1,
-      "amount": "买A赠B券",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discountCategorieGoods": [
-      {
-        "updated_at": "2020-04-19 21:37:47",
-        "id": 4201,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 22,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos茶饮",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:45",
-        "id": 4202,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 23,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos欧包",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:39",
-        "id": 4652,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 26,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的茶",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:37",
-        "id": 4654,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 27,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的欧包",
-        "show_period": 0 }],
-
-
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:19:05",
-    "deleted_at": null,
-    "id": 393,
-    "coupon_id": "451350186289872897",
-    "created_at": "2020-03-30 23:19:05",
-    "coupon_num": 2,
-    "packages_id": 185 },
-
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585539930",
-      "use_good_category": "限部分商品",
-      "category": 4,
-      "expire_days": 120,
-      "expire": "领券当日开始120天内有效",
-      "min_num": 1,
-      "number": 0,
-      "m_and_n_coupon_of_n": 1,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "买A赠B券",
-      "multis": [
-      {
-        "name": "奈雪梦工厂海岸城店",
-        "store_id": "23107",
-        "id": "7559" },
-
-      {
-        "name": "上海浦东机场卫星厅S2店",
-        "store_id": "23107",
-        "id": "5809" }],
-
-
-      "coupon_title": "第3件半价券(分享卡)",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始120天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585539930",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内购买任意茶饮或软欧包，第三件可获得半价优惠，优惠产品原价不得高于购买产品原价\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "7.5",
-      "title": "第3件半价券(分享卡)",
-      "discount_categorie_goods": [
-      {
-        "updated_at": "2020-04-19 21:37:47",
-        "id": 4201,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 22,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos茶饮",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:45",
-        "id": 4202,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 23,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos欧包",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:39",
-        "id": 4652,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 26,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的茶",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:37",
-        "id": 4654,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 27,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的欧包",
-        "show_period": 0 }],
-
-
-      "second_max_num": 0,
-      "total_amount": 5,
-      "min_amount_use": 0,
-      "used": 0,
-      "goods_range_num": 2,
-      "explain_text": "1. 使用条件：在有效期内购买任意茶饮或软欧包，第三件可获得半价优惠，优惠产品原价不得高于购买产品原价\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451350439177043969",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "categorie_goods": [
-      {
-        "updated_at": "2020-04-19 21:37:47",
-        "id": 4201,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 22,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos茶饮",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:45",
-        "id": 4202,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 23,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos欧包",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:39",
-        "id": 4652,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 26,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的茶",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:37",
-        "id": 4654,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 27,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的欧包",
-        "show_period": 0 }],
-
-
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 1,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-分享卡",
-      "categorieGoods": [
-      {
-        "updated_at": "2020-04-19 21:37:47",
-        "id": 4201,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 22,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos茶饮",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:45",
-        "id": 4202,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 23,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos欧包",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:39",
-        "id": 4652,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 26,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的茶",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:37",
-        "id": 4654,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 27,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的欧包",
-        "show_period": 0 }],
-
-
-      "multi_range_type": 2,
-      "shop_ids": "7559,5809",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "无订单金额限制",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 1,
-      "amount": "买A赠B券",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discountCategorieGoods": [
-      {
-        "updated_at": "2020-04-19 21:37:47",
-        "id": 4201,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 22,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos茶饮",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:45",
-        "id": 4202,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 23,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 1,
-        "name": "pos欧包",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:39",
-        "id": 4652,
-        "sign": "2",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 26,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的茶",
-        "show_period": 0 },
-
-      {
-        "updated_at": "2020-04-19 21:37:37",
-        "id": 4654,
-        "sign": "1",
-        "pid": 0,
-        "is_prompt_category": 0,
-        "seo_keywords": "",
-        "url": "",
-        "sort": 27,
-        "icon": "",
-        "multi_store_id": 0,
-        "status": 1,
-        "is_show_backstage": 1,
-        "start_time": "00:00:00",
-        "end_time": "23:59:59",
-        "store_id": 23107,
-        "seo_description": null,
-        "type": 3,
-        "name": "奈雪的欧包",
-        "show_period": 0 }],
-
-
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:19:05",
-    "deleted_at": null,
-    "id": 394,
-    "coupon_id": "451350439177043969",
-    "created_at": "2020-03-30 23:19:05",
-    "coupon_num": 2,
-    "packages_id": 185 },
-
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585539965",
-      "use_good_category": "",
-      "category": 0,
-      "expire_days": 120,
-      "expire": "领券当日开始120天内有效",
-      "min_num": 0,
-      "number": 0,
-      "m_and_n_coupon_of_n": 0,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "现金券现金券6元元",
-      "multis": [
-      {
-        "name": "奈雪梦工厂海岸城店",
-        "store_id": "23107",
-        "id": "7559" },
-
-      {
-        "name": "上海浦东机场卫星厅S2店",
-        "store_id": "23107",
-        "id": "5809" }],
-
-
-      "coupon_title": "满58元减现金券6元元券",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始120天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585539965",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内，购买任意饮品或软欧包满58元享受6元优惠\n2. 适用商品：任意饮品或软欧包\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "3",
-      "title": "58-6元现金券(分享卡)",
-      "discount_categorie_goods": [],
-      "second_max_num": 0,
-      "total_amount": 6,
-      "min_amount_use": 58,
-      "used": 0,
-      "goods_range_num": 1,
-      "explain_text": "1. 使用条件：在有效期内，购买任意饮品或软欧包满58元享受6元优惠\n2. 适用商品：任意饮品或软欧包\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451350584189837312",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "categorie_goods": [],
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 0,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气心享卡",
-      "categorieGoods": [],
-      "multi_range_type": 2,
-      "shop_ids": "7559,5809",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "满58元可用",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 0,
-      "amount": "现金券6元",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discountCategorieGoods": [],
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:19:05",
-    "deleted_at": null,
-    "id": 395,
-    "coupon_id": "451350584189837312",
-    "created_at": "2020-03-30 23:19:05",
-    "coupon_num": 6,
-    "packages_id": 185 },
-
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585539987",
-      "use_good_category": "",
-      "category": 0,
-      "expire_days": 120,
-      "expire": "领券当日开始120天内有效",
-      "min_num": 0,
-      "number": 0,
-      "m_and_n_coupon_of_n": 0,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "现金券现金券10元元",
-      "multis": [],
-      "coupon_title": "满108元减现金券10元元券",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始120天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585539987",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内，购买任意饮品或软欧包满108元享受10元优惠\n2. 适用商品：任意饮品或软欧包\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "5",
-      "title": "108-10元现金券(分享卡)",
-      "discount_categorie_goods": [],
-      "second_max_num": 0,
-      "total_amount": 10,
-      "min_amount_use": 108,
-      "used": 0,
-      "goods_range_num": 1,
-      "explain_text": "1. 使用条件：在有效期内，购买任意饮品或软欧包满108元享受10元优惠\n2. 适用商品：任意饮品或软欧包\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451350676553392128",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "categorie_goods": [],
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 0,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气分享卡",
-      "categorieGoods": [],
-      "multi_range_type": 0,
-      "shop_ids": "",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "满108元可用",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 0,
-      "amount": "现金券10元",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discountCategorieGoods": [],
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:19:05",
-    "deleted_at": null,
-    "id": 396,
-    "coupon_id": "451350676553392128",
-    "created_at": "2020-03-30 23:19:05",
-    "coupon_num": 6,
-    "packages_id": 185 }],
-
-
-  "image": "https://img-shop.qmimg.cn/s23107/2020/02/29/73065efbbe87e00753.jpg",
-  "status": 2,
-  "third_party_name": "",
-  "third_party_id": 0,
-  "send_num": 0,
-  "created_at": "2020-03-30 23:19:05",
-  "third_desc": "",
-  "amount": "108.00",
-  "content": "【基本规则】\n1、成功购买后，优惠券可在奈雪点单小程序内使用或线下门店出示会员码使用。\n2、优惠券规则以优惠券使用详情为准。\n3、单笔订单仅限使用一张优惠券，且不与其他活动共享。\n4、用户购买券包使用的手机号需和小程序登录的会员手机号保持一致。\n5、如逾期未使用优惠券，优惠券将自动失效，请在有效期内使用。\n【注意】\n1、奈雪会员卡包为奈雪的茶公开售卖的一种付费卡包，成功购买，不可转赠、不可退换、不可兑换现金。\n2、此券包有效期120天。",
-  "limit_num": 0,
-  "num": 100000,
-  "store_id": 23107,
-  "title": "霸气分享卡",
-  "sale_num": 1213,
-  "third_status": 0 },
-
-{
-  "updated_at": "2020-05-03 15:39:37",
-  "id": 184,
-  "has_send_num": 0,
-  "start_at": "2020-03-30 00:00",
-  "end_at": "2020-05-15 23:59",
-  "deleted_at": null,
-  "buy_status": 1,
-  "coupons": [
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585540048",
-      "use_good_category": "限部分商品",
-      "category": 4,
-      "expire_days": 120,
-      "expire": "领券当日开始120天内有效",
-      "min_num": 1,
-      "number": 0,
-      "m_and_n_coupon_of_n": 1,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "买A赠B券",
-      "coupon_title": "第2件半价券(欢聚卡)",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始120天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585540048",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内购买任意茶饮或软欧包，第二件可获得半价优惠，优惠产品原价不得高于购买产品价格\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "8",
-      "title": "第2件半价券(欢聚卡)",
-      "second_max_num": 0,
-      "total_amount": 5,
-      "min_amount_use": 0,
-      "used": 0,
-      "goods_range_num": 1,
-      "explain_text": "1. 使用条件：在有效期内购买任意茶饮或软欧包，第二件可获得半价优惠，优惠产品原价不得高于购买产品价格\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451350930572234753",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 1,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气欢聚卡",
-      "multi_range_type": 2,
-      "shop_ids": "7559,5809",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "无订单金额限制",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 1,
-      "amount": "买A赠B券",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:17:24",
-    "deleted_at": null,
-    "id": 387,
-    "coupon_id": "451350930572234753",
-    "created_at": "2020-03-30 23:17:24",
-    "coupon_num": 2,
-    "packages_id": 184 },
-
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585540087",
-      "use_good_category": "限部分商品",
-      "category": 4,
-      "expire_days": 120,
-      "expire": "领券当日开始120天内有效",
-      "min_num": 1,
-      "number": 0,
-      "m_and_n_coupon_of_n": 1,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "买A赠B券",
-      "coupon_title": "买2赠1券(欢聚卡)",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始120天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585540087",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内，购买任意饮品或软欧包满2件赠1件，赠送产品不得高于购买产品价格\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "16",
-      "title": "买2赠1券(欢聚卡)",
-      "second_max_num": 0,
-      "total_amount": 0,
-      "min_amount_use": 0,
-      "used": 0,
-      "goods_range_num": 2,
-      "explain_text": "1. 使用条件：在有效期内，购买任意饮品或软欧包满2件赠1件，赠送产品不得高于购买产品价格\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451351095068643328",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 1,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气欢聚卡",
-      "multi_range_type": 2,
-      "shop_ids": "7559,5809",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "无订单金额限制",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 1,
-      "amount": "买A赠B券",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:17:24",
-    "deleted_at": null,
-    "id": 388,
-    "coupon_id": "451351095068643328",
-    "created_at": "2020-03-30 23:17:24",
-    "coupon_num": 2,
-    "packages_id": 184 },
-
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585540128",
-      "use_good_category": "限部分商品",
-      "category": 4,
-      "expire_days": 120,
-      "expire": "领券当日开始120天内有效",
-      "min_num": 1,
-      "number": 0,
-      "m_and_n_coupon_of_n": 1,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "买A赠B券",
-      "coupon_title": "买3赠1券(欢聚卡)",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始120天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585540128",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内，购买任意饮品或软欧包满3件赠1件，赠送产品不得高于购买产品价格\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "16",
-      "title": "买3赠1券(欢聚卡)",
-      "second_max_num": 0,
-      "total_amount": 0,
-      "min_amount_use": 0,
-      "used": 0,
-      "goods_range_num": 3,
-      "explain_text": "1. 使用条件：在有效期内，购买任意饮品或软欧包满3件赠1件，赠送产品不得高于购买产品价格\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451351267828621313",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 1,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气欢聚卡",
-      "multi_range_type": 2,
-      "shop_ids": "7559,5809",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "无订单金额限制",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 1,
-      "amount": "买A赠B券",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:17:24",
-    "deleted_at": null,
-    "id": 389,
-    "coupon_id": "451351267828621313",
-    "created_at": "2020-03-30 23:17:24",
-    "coupon_num": 3,
-    "packages_id": 184 },
-
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585540174",
-      "use_good_category": "限部分商品",
-      "category": 4,
-      "expire_days": 120,
-      "expire": "领券当日开始120天内有效",
-      "min_num": 1,
-      "number": 0,
-      "m_and_n_coupon_of_n": 1,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "买A赠B券",
-      "coupon_title": "买5赠1券(欢聚卡)",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始120天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585540174",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内，购买任意饮品或软欧包满5件赠1件，赠送产品不得高于购买产品价格\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "16",
-      "title": "买5赠1券(欢聚卡)",
-      "second_max_num": 0,
-      "total_amount": 0,
-      "min_amount_use": 0,
-      "used": 0,
-      "goods_range_num": 5,
-      "explain_text": "1. 使用条件：在有效期内，购买任意饮品或软欧包满5件赠1件，赠送产品不得高于购买产品价格\n2. 适用商品：任意饮品或软欧包，菜单上标有红色雪花产品除外\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451351459131113472",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 1,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气欢聚卡",
-      "multi_range_type": 2,
-      "shop_ids": "7559,5809",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "无订单金额限制",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 1,
-      "amount": "买A赠B券",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:17:24",
-    "deleted_at": null,
-    "id": 390,
-    "coupon_id": "451351459131113472",
-    "created_at": "2020-03-30 23:17:24",
-    "coupon_num": 3,
-    "packages_id": 184 },
-
-  {
-    "detail": {
-      "coupon_use_time": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "updated_at": "1585540240",
-      "use_good_category": "",
-      "category": 0,
-      "expire_days": 120,
-      "expire": "领券当日开始120天内有效",
-      "min_num": 0,
-      "number": 0,
-      "m_and_n_coupon_of_n": 0,
-      "property": 3,
-      "total": 99999999,
-      "property_text": "领取券",
-      "max_num": 0,
-      "coupon_amount": "现金券现金券10元元",
-      "coupon_title": "满108元减现金券10元元券",
-      "discountGoods": [],
-      "scene_type_desc": "仅外卖、堂食可用",
-      "expire_ymd": "领券当日开始120天内有效",
-      "couponUseTime": [
-      {
-        "use_time_start": "00:00:00",
-        "use_time_end": "23:59:59" }],
-
-
-      "template_id": "",
-      "created_at": "1585540240",
-      "scene_type": 3,
-      "desc": "1. 使用条件：在有效期内，购买任意饮品或软欧包满108元享受10元优惠\n2. 适用商品：任意饮品或软欧包\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "finance_payment": "5.4",
-      "title": "108-10元现金券(欢聚卡)",
-      "discount_categorie_goods": [],
-      "second_max_num": 0,
-      "total_amount": 10,
-      "min_amount_use": 108,
-      "used": 0,
-      "goods_range_num": 1,
-      "explain_text": "1. 使用条件：在有效期内，购买任意饮品或软欧包满108元享受10元优惠\n2. 适用商品：任意饮品或软欧包\n3. 适用门店：奈雪内地任意门店(上海浦东机场店、奈雪梦工厂除外)\n4. 适用场景：奈雪线下门店出示会员码或“奈雪点单”小程序使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-      "number_of_user": 0,
-      "id": "451351737996726273",
-      "use_per_person_per_day": 0,
-      "goods": [],
-      "categorie_goods": [],
-      "min_num_use": 0,
-      "expire_type": 1,
-      "goods_range_type": 0,
-      "start_at": 0,
-      "image": "https://img-shop.qmimg.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-      "end_at": 0,
-      "coupon_label": "付费券包-霸气分享卡",
-      "categorieGoods": [],
-      "multi_range_type": 2,
-      "shop_ids": "7559,5809",
-      "show_page": 1,
-      "is_koubei": "",
-      "use_category": "满108元可用",
-      "out_biz_no": "",
-      "only_coupon": 1,
-      "status": 1,
-      "coupon_type": 0,
-      "amount": "现金券10元",
-      "is_use_time_range": 0,
-      "store_id": "23107",
-      "coupon_no": "",
-      "type": 1,
-      "discountCategorieGoods": [],
-      "discount_goods": [],
-      "is_receive": 1 },
-
-    "updated_at": "2020-03-30 23:17:24",
-    "deleted_at": null,
-    "id": 391,
-    "coupon_id": "451351737996726273",
-    "created_at": "2020-03-30 23:17:24",
-    "coupon_num": 10,
-    "packages_id": 184 }],
-
-
-  "image": "https://img-shop.qmimg.cn/s23107/2020/02/28/e74279ce48190fd1c7.jpg",
-  "status": 2,
-  "third_party_name": "",
-  "third_party_id": 0,
-  "send_num": 0,
-  "created_at": "2020-03-30 23:17:24",
-  "third_desc": "",
-  "amount": "198.00",
-  "content": "【基本规则】\n1、成功购买后，优惠券可在奈雪点单小程序内使用或线下门店出示会员码使用。\n2、优惠券规则以优惠券使用详情为准。\n3、单笔订单仅限使用一张优惠券，且不与其他活动共享。\n4、用户购买券包使用的手机号需和小程序登录的会员手机号保持一致。\n5、如逾期未使用优惠券，优惠券将自动失效，请在有效期内使用。\n【注意】\n1、奈雪会员卡包为奈雪的茶公开售卖的一种付费卡包，成功购买，不可转赠、不可退换、不可兑换现金。\n2、此券包有效期120天。",
-  "limit_num": 0,
-  "num": 100000,
-  "store_id": 23107,
-  "title": "霸气欢聚卡",
-  "sale_num": 523,
-  "third_status": 0 }];exports.default = _default;
-
-/***/ }),
-
-/***/ 17:
-/*!**************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/store.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  "longitude": "114.065927",
-  "latitude": "22.537361",
-  "area_name": "福田区",
-  "photo": "[\"s23107\\\/2019\\\/03\\\/25\\\/e4a12f9f81bd3e8f4d.jpg\"]",
-  "is_show": 1,
-  "mobile": "0755-82722513",
-  "takeout_server_status": true,
-  "is_open": true,
-  "server_status": true,
-  "created_at": "1568194697",
-  "street": "深圳市福田区海田路与福华一路交汇深圳天元5栋1层N136",
-  "area_id": 440304,
-  "notice": "",
-  "city_name": "深圳市",
-  "id_card": "222222222222222222",
-  "alipay_store_id": "",
-  "takeout_server_time": "10:00-23:59",
-  "id": 1,
-  "forhere_server_time": "10:00-23:59",
-  "province_id": 440000,
-  "forhere_is_open": true,
-  "is_floor_stall": 0,
-  "is_eat": 1,
-  "share_description": "",
-  "distance": 896,
-  "distance_text": "896m",
-  "stalls": [],
-  "tel": "0755-82722513",
-  "is_takeout": 1,
-  "images": [
-  "https:\/\/img-shop.qmimg.cn\/s23107\/2019\/03\/25\/e4a12f9f81bd3e8f4d.jpg?imageView2\/0\/w\/200\/h\/200"],
-
-  "shop_day": "",
-  "image": "https:\/\/img-shop.qmimg.cn\/s23107\/2019\/03\/25\/e4a12f9f81bd3e8f4d.jpg",
-  "server_time": "10:00-23:59",
-  "status": 1,
-  "multi_mark": "NXHNSZ0055",
-  "per_price": "1.00",
-  "balance": "0.00",
-  "name": "卓悦中心ONE AVENUE店",
-  "updated_at": "1578227762",
-  "packing_fee": "2.00",
-  "delivery_cost": "2.00",
-  "min_price": "30.00",
-  "avg_delivery_cost_time": "40" };exports.default = _default;
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ 11));
+
+var _vuexPersistedstate = _interopRequireDefault(__webpack_require__(/*! vuex-persistedstate */ 18));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+_vue.default.use(_vuex.default);
+
+var store = new _vuex.default.Store({
+  plugins: [
+  // 可以有多个持久化实例  
+  (0, _vuexPersistedstate.default)({
+    key: 'app_config_data', // 状态保存到本地的 key   
+    paths: ['member', 'cookieKey'], // 要持久化的状态，在state里面取，如果有嵌套，可以  a.b.c   
+    storage: { // 存储方式定义  
+      getItem: function getItem(key) {return uni.getStorageSync(key);}, // 获取  
+      setItem: function setItem(key, value) {return uni.setStorageSync(key, value);}, // 存储  
+      removeItem: function removeItem(key) {return uni.removeStorageSync(key);} // 删除  
+    } })],
+
+
+  state: {
+    store: {},
+    cart: [],
+    orderType: 'takein',
+    address: {},
+    addresses: {},
+    member: {
+      avatar: "http://cdn.shop.weivee.com/shop/20200408/6162b21922f336ae9b320bc06582ab7f.png",
+      birthday: null,
+      couponNum: 0,
+      currentValue: "1.00",
+      gender: 0,
+      id: 2,
+      level: 1,
+      mobile: "15975073045",
+      money: "4789.20",
+      openid: "oEY7Y5XYukLQySoKA7sPGWSDtktA",
+      score: 0,
+      token: "87cecec2-6071-431d-afc1-825650711e5a",
+      username: "游客" },
+
+    lang: 'zh-cn',
+    cookieKey: 'PHPSESSID=e4dk4o2utr3c0n95tp42p745ai',
+    // 默认地为你为北京地址
+    location: {} },
+
+  getters: {
+    isLogin: function isLogin(state) {return Object.keys(state.member).length > 0;} //是否登录
+  },
+  mutations: {
+    SET_ORDER_TYPE: function SET_ORDER_TYPE(state, type) {
+      state.orderType = type;
+    },
+    SET_MEMBER: function SET_MEMBER(state, member) {
+      state.member = member;
+    },
+    SET_ADDRESS: function SET_ADDRESS(state, address) {
+      state.address = address;
+    },
+    SET_ADDRESSES: function SET_ADDRESSES(state, addresses) {
+      state.addresses = addresses;
+    },
+    SET_STORE: function SET_STORE(state, store) {
+      state.store = store;
+    },
+    SET_CART: function SET_CART(state, cart) {
+      state.cart = cart;
+    },
+    REMOVE_CART: function REMOVE_CART(state) {
+      state.cart = [];
+    },
+    setCookie: function setCookie(state, provider) {
+      state.cookie = provider;
+      uni.setStorage({
+        key: 'cookieKey',
+        data: provider });
+
+    },
+    SET_LOCATION: function SET_LOCATION(state, location) {
+      state.location = location;
+    } },
+
+  actions: {} });var _default =
+
+
+
+
+store;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
 /***/ 18:
-/*!**************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/goods.js ***!
-  \**************************************************************************/
+/*!*****************************************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/vuex-persistedstate/dist/vuex-persistedstate.es.js ***!
+  \*****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [{
-  "sort": 1,
-  "icon": "",
-  "id": 6905,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 65825,
-    "is_sell": true,
-    "pack_cost": "0.00",
-    "sales": 487,
-    "goods_type": 1,
-    "cover_img": "",
-    "property": [],
-    "goods_meals_info": [],
-    "is_add": 1,
-    "use_spec": false,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "11110090",
-      "id": "9ad36aa96636c246",
-      "stock": "9999956.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/19/fda6dd99c83af02353.jpg",
-      "num": 1,
-      "price": 18.5,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 18.5,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "购买三明治,享早餐指定饮品半价",
-    "is_follow_suit": 1,
-    "stock": "9999956.00",
-    "type": 2,
-    "is_label": 0,
-    "name": "奈雪早餐",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400" }],
-
-  "name": "奈雪早餐",
-  "is_show_backstage": 0 },
-{
-  "sort": 2,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/30/458c5a14fb2f190f96.png?imageView2/0/w/200/h/200",
-  "id": 6208,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 24516,
-    "pack_cost": "0.00",
-    "sales": 1278,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000070",
-      "id": "5d79de67251ea00e",
-      "stock": "10485.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/29/4a62ee45dd527609ed.jpg",
-      "num": 1,
-      "price": 18,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 3,
-    "price": 18,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/29/4a62ee45dd527609ed.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "酥软口感,进口奶油搭配特制巧克力内馅",
-    "use_spec": false,
-    "stock": "10485.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "脏脏王",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/29/4a62ee45dd527609ed.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 24517,
-    "pack_cost": "0.00",
-    "sales": 1228,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000071",
-      "id": "2b3f1ea3ecabd22e",
-      "stock": "10308.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/29/99daa7b20061efab10.jpg",
-      "num": 1,
-      "price": 18,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 4,
-    "price": 18,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/29/99daa7b20061efab10.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选北川半兵卫抹茶粉和秘制红豆泥",
-    "use_spec": false,
-    "stock": "10308.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "抹茶王",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/29/99daa7b20061efab10.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 68339,
-    "pack_cost": "0.00",
-    "sales": 44429,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5EA54C3D0E4279185",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5EA54C3D0E9682750",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5EA54C3D0F2A37322",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5EA54C3D0F70A1000",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5EA54C3D0FAFE7320",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010025",
-      "id": "72cf1279c0a422ce",
-      "stock": "9999817.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/26/559a075d81060b23c7.jpg",
-      "num": 1,
-      "price": 30,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 0,
-    "price": 30,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/26/559a075d81060b23c7.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "饱满大颗的新鲜杨梅,满杯手工去核,搭配茉莉初雪茶底,清爽多汁",
-    "use_spec": false,
-    "stock": "9999817.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气杨梅",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/26/559a075d81060b23c7.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 68345,
-    "pack_cost": "0.00",
-    "sales": 16322,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5EA55088766CC7824",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5EA5508876F271659",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5EA55088776843559",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5EA5508877A528469",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5EA5508877E5A6908",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010043",
-      "id": "c7c6f8fd34040338",
-      "stock": "999950.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/26/ea8fc439fddf2f62e3.jpg",
-      "num": 1,
-      "price": 32,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 2,
-    "price": 32,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/26/ea8fc439fddf2f62e3.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "霸气杨梅和酸奶的首次搭配,甘甜可口",
-    "use_spec": false,
-    "stock": "999950.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气酸奶杨梅",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/26/ea8fc439fddf2f62e3.jpg?imageView2/2/w/400/h/400" }],
-
-  "name": "新品推荐",
-  "is_show_backstage": 0 },
-{
-  "sort": 3,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/30/458c5a14fb2f190f96.png?imageView2/0/w/200/h/200",
-  "id": 6387,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 31826,
-    "pack_cost": "0.00",
-    "sales": 70462,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000017",
-      "id": "2e3f40b8f6decb2a",
-      "stock": "1000498.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/be484557ff7cfa4dba.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 2,
-    "price": 28,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/28/be484557ff7cfa4dba.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "马来西亚D24榴莲王果肉+芒果干，爆浆的榴莲馅，这款是榴莲控的最爱。",
-    "use_spec": false,
-    "stock": "1000498.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气榴莲王",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/be484557ff7cfa4dba.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31507,
-    "pack_cost": "0.00",
-    "sales": 199583,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2B483FA903805",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2B484016A8529",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2B48405642832",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2B48409616050",
-        "value": "温" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD789B45391F4495",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD789B453D023182",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD789B4540531795",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010000",
-      "id": "097aad038aeeb0ea",
-      "stock": "998101.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/2a4b2697bec6f7e502.jpg",
-      "num": 1,
-      "price": 25,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 2,
-    "price": 25,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/2a4b2697bec6f7e502.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪明星产品。优选进口新奇士橙，搭配严选茉莉毛尖茶底，橙意满满。",
-    "use_spec": false,
-    "stock": "998101.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气橙子",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/2a4b2697bec6f7e502.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31532,
-    "pack_cost": "0.00",
-    "sales": 5104,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1218,
-        "code": "Z5D612C34C8EF06658",
-        "value": "标准(芝士)" },
-      {
-        "is_default": 0,
-        "id": 1166,
-        "code": "Z5D612C34C93705460",
-        "value": "芝士换酸奶" }],
-
-      "name": "配料",
-      "id": 347 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5EA8DBDA4371C5994",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5EA8DBDA43C415239",
-        "value": "冰沙" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5EA8DBDA4404E3515",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78286916115856",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78286919682277",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7828691CB89112",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010050008",
-      "id": "f8114313a48c5c4a",
-      "stock": "1000314.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/19/a3ee1fa72435259a73.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 4,
-    "price": 28,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/03/19/a3ee1fa72435259a73.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选优质巨峰葡萄、手工去皮去籽、加入带兰桂花香，经中度焙火的金观音茶中，搭配轻盈香甜芝士奶盖",
-    "use_spec": false,
-    "stock": "1000314.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气芝士葡萄",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/19/a3ee1fa72435259a73.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 16808,
-    "pack_cost": "0.00",
-    "sales": 115495,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000024",
-      "id": "2e89b669b329c292",
-      "stock": "10704.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/94d8440ab7b4fed802.jpg",
-      "num": 1,
-      "price": 20,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 5,
-    "price": 20,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/28/94d8440ab7b4fed802.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "大大的一根魔法棒，加入淡奶油和进口酵母，配上经典的草莓鲜果。好看的外表和经典的口味造就的一款奈雪明星产品。",
-    "use_spec": false,
-    "stock": "10704.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "草莓魔法棒",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/94d8440ab7b4fed802.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31424,
-    "pack_cost": "0.00",
-    "sales": 125010,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1218,
-        "code": "Z5D5BA2BB31A145049",
-        "value": "标准(芝士)" },
-      {
-        "is_default": 0,
-        "id": 1166,
-        "code": "Z5D5BA2BB320FA8410",
-        "value": "芝士换酸奶" }],
-
-      "name": "配料",
-      "id": 347 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2BC316DD78061",
-        "value": "标准冰" },
-      {
-        "is_default": 1,
-        "id": 1164,
-        "code": "Z5E5E2BC316A215600",
-        "value": "冰沙" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2BC3171CA8287",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2BC317A175989",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2BC317F896724",
-        "value": "温" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD785286B9689681",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD785286BCF74540",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD785286C0687027",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010050003",
-      "id": "ee375ed5ae7f77eb",
-      "stock": "1002053.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/1cb88e6cd2fbcefb2a.jpg",
-      "num": 1,
-      "price": 29,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 29,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/1cb88e6cd2fbcefb2a.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪明星产品。选用奈雪自有草莓园新鲜草莓，搭配严选茉莉毛尖茶底，淋上轻盈香滑的芝士奶盖。",
-    "use_spec": false,
-    "stock": "1002053.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气芝士草莓",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/1cb88e6cd2fbcefb2a.jpg?imageView2/2/w/400/h/400" }],
-
-  "name": "招牌热卖",
-  "is_show_backstage": 0 },
-{
-  "sort": 8,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/bfeae4de9de15a0f88.png?imageView2/0/w/200/h/200",
-  "id": 2522,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 31826,
-    "pack_cost": "0.00",
-    "sales": 70462,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000017",
-      "id": "2e3f40b8f6decb2a",
-      "stock": "1000498.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/be484557ff7cfa4dba.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 2,
-    "price": 28,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/28/be484557ff7cfa4dba.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "马来西亚D24榴莲王果肉+芒果干，爆浆的榴莲馅，这款是榴莲控的最爱。",
-    "use_spec": false,
-    "stock": "1000498.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气榴莲王",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/be484557ff7cfa4dba.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31544,
-    "pack_cost": "0.00",
-    "sales": 46215,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000018",
-      "id": "08a87a5ad6fa8648",
-      "stock": "100413.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/6e4829e475329d4836.jpg",
-      "num": 1,
-      "price": 20,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 2,
-    "price": 20,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/28/6e4829e475329d4836.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "粉嫩的面包体加入了火龙果果泥，颜值和健康的共存，满满的香浓芝士内陷搭配柔软有嚼劲的软欧包，葡萄干的加缀增添丰富有层次的口感，让你一试喜欢。",
-    "use_spec": false,
-    "stock": "100413.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "蜜蜜芝士火龙果",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/6e4829e475329d4836.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 27016,
-    "pack_cost": "0.00",
-    "sales": 169990,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000093",
-      "id": "85ab649f81d89e90",
-      "stock": "1000106.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/11/e2035bc2f7003ad0e9.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 3,
-    "price": 16,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/10/11/e2035bc2f7003ad0e9.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "紫薯醇香包裹蜜润红豆，麻薯带来超长拉丝惊喜",
-    "use_spec": false,
-    "stock": "1000106.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "紫薯嘟嘟",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/11/e2035bc2f7003ad0e9.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 27014,
-    "pack_cost": "0.00",
-    "sales": 255254,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000090",
-      "id": "7220777710a535e7",
-      "stock": "1000217.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/11/3cf65a33efba914504.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 3,
-    "price": 16,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/10/11/3cf65a33efba914504.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "咸香蛋黄浓郁细腻注入经典芋泥甜咸风味正适宜",
-    "use_spec": false,
-    "stock": "1000217.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "咸蛋黄嘟嘟",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/11/3cf65a33efba914504.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 27009,
-    "pack_cost": "0.00",
-    "sales": 199446,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000092",
-      "id": "82b0391c9f3e987f",
-      "stock": "1000126.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/11/0093e8ec087a074edf.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 3,
-    "price": 16,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/10/11/0093e8ec087a074edf.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "爆浆南瓜泥清甜不腻，麻薯Q弹有活力",
-    "use_spec": false,
-    "stock": "1000126.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "南瓜嘟嘟",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/11/0093e8ec087a074edf.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 27008,
-    "pack_cost": "0.00",
-    "sales": 158438,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000091",
-      "id": "186191c7af8a25e2",
-      "stock": "1000209.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/11/21bad4be51837450a8.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 3,
-    "price": 16,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/10/11/21bad4be51837450a8.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "抹茶卡仕达表皮包裹着软糯红豆和绵密芋泥，拉丝麻薯糯唧唧",
-    "use_spec": false,
-    "stock": "1000209.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "红豆嘟嘟",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/11/21bad4be51837450a8.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 24516,
-    "pack_cost": "0.00",
-    "sales": 1278,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000070",
-      "id": "5d79de67251ea00e",
-      "stock": "10485.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/29/4a62ee45dd527609ed.jpg",
-      "num": 1,
-      "price": 18,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 3,
-    "price": 18,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/29/4a62ee45dd527609ed.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "酥软口感,进口奶油搭配特制巧克力内馅",
-    "use_spec": false,
-    "stock": "10485.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "脏脏王",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/29/4a62ee45dd527609ed.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 24517,
-    "pack_cost": "0.00",
-    "sales": 1228,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000071",
-      "id": "2b3f1ea3ecabd22e",
-      "stock": "10308.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/29/99daa7b20061efab10.jpg",
-      "num": 1,
-      "price": 18,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 4,
-    "price": 18,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/29/99daa7b20061efab10.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选北川半兵卫抹茶粉和秘制红豆泥",
-    "use_spec": false,
-    "stock": "10308.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "抹茶王",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/29/99daa7b20061efab10.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31834,
-    "pack_cost": "0.00",
-    "sales": 94527,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000003",
-      "id": "c8d9d2828e1ff531",
-      "stock": "1000108.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/d8e4330c48ae58c7da.jpg",
-      "num": 1,
-      "price": 15,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 7,
-    "price": 15,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/28/d8e4330c48ae58c7da.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "梅菜扣肉咸香接地气，摊成薄薄饼状增大烘焙面积，撒上香烤的芝麻粒，特色风味独树一帜。",
-    "use_spec": false,
-    "stock": "1000108.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "梅菜肉肉",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/d8e4330c48ae58c7da.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31824,
-    "pack_cost": "0.00",
-    "sales": 143535,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000034",
-      "id": "8996e12e46d28663",
-      "stock": "10000237.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/05/05/30f0463b8b644e8417.jpg",
-      "num": 1,
-      "price": 18,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 8,
-    "price": 18,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/05/05/30f0463b8b644e8417.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "柔软的表皮加上天然新鲜凤梨颗粒与安佳乳酪调制的凤梨果肉馅，每一口都酸甜可口，顺滑满足。",
-    "use_spec": false,
-    "stock": "10000237.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芝士金凤梨",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/05/05/30f0463b8b644e8417.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31820,
-    "pack_cost": "0.00",
-    "sales": 123089,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000022",
-      "id": "e06d86e3db130723",
-      "stock": "10000198.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/8b123558614b56993d.jpg",
-      "num": 1,
-      "price": 14,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 9,
-    "price": 14,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/28/8b123558614b56993d.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "柔软的欧包里藏着一整根脆皮肠，满口都是肉感，一口咸味一口浓郁奶味。",
-    "use_spec": false,
-    "stock": "10000198.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "德式腊肠犬",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/8b123558614b56993d.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31816,
-    "pack_cost": "0.00",
-    "sales": 223377,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000006",
-      "id": "d10644f99c0313a4",
-      "stock": "1000215.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/fc9ef3ae0338ad7b3a.jpg",
-      "num": 1,
-      "price": 29,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 10,
-    "price": 29,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/28/fc9ef3ae0338ad7b3a.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "霸气的外表下包含着软绵甜蜜的榴莲果肉内陷。200度的烘烤热情，以及100分钟以上的制作工艺，这款纯手工软欧包给你大大的甜蜜和满足。",
-    "use_spec": false,
-    "stock": "1000215.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "一颗大榴莲",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/fc9ef3ae0338ad7b3a.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31814,
-    "pack_cost": "0.00",
-    "sales": 184270,
-    "cover_img": "https://img-shop.qmimg.cn/s23107/2019/12/07/0476864cd0b7fd9bc4.jpg?imageView2/2/w/400/h/400",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000038",
-      "id": "0c3cea3467da2817",
-      "stock": "1000207.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/12/07/f0bc53b12b13f1df8d.jpg",
-      "num": 1,
-      "price": 23,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 11,
-    "price": 23,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/12/07/f0bc53b12b13f1df8d.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "切碎的奶酪粒和香芋粒，味道清新，散发着奶酪和芋头的香气。奈雪非常独特的一款软欧包。",
-    "use_spec": false,
-    "stock": "1000207.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奶酪芋头山",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/12/07/f0bc53b12b13f1df8d.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 16852,
-    "pack_cost": "0.00",
-    "sales": 225651,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000026",
-      "id": "8e46d28edac152bd",
-      "stock": "10435.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/417eae192c1dc8b9ab.jpg",
-      "num": 1,
-      "price": 18,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 18,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/28/417eae192c1dc8b9ab.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "菠菜汁入面团，咸香肉松甜脆玉米粒，咸口松软",
-    "use_spec": false,
-    "stock": "10435.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "菠菜肉骨头",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/417eae192c1dc8b9ab.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 17137,
-    "pack_cost": "0.00",
-    "sales": 232976,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000027",
-      "id": "a43a6d40cef6f162",
-      "stock": "10506.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/05/05/9979fa487e2c3e2636.jpg",
-      "num": 1,
-      "price": 15,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 4,
-    "price": 15,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/05/05/9979fa487e2c3e2636.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "香甜浓郁的巧克力奶油与巧克力软欧包，夹着香脆的奥利奥饼干，一口又一口，停不下来。",
-    "use_spec": false,
-    "stock": "10506.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奥利奥魔法棒",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/05/05/9979fa487e2c3e2636.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 17145,
-    "pack_cost": "0.00",
-    "sales": 173762,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000040",
-      "id": "0f90fb60826f6fe0",
-      "stock": "10332.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/05/05/a1202933e01235285a.jpg",
-      "num": 1,
-      "price": 20,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 5,
-    "price": 20,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/05/05/a1202933e01235285a.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪招牌软欧包魔法棒家族之一，满满的新鲜水果看的见，软欧包有淡淡的胡萝卜味，芒果香味十分浓郁。",
-    "use_spec": false,
-    "stock": "10332.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芒果魔法棒",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/05/05/a1202933e01235285a.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 16808,
-    "pack_cost": "0.00",
-    "sales": 115495,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000024",
-      "id": "2e89b669b329c292",
-      "stock": "10704.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/28/94d8440ab7b4fed802.jpg",
-      "num": 1,
-      "price": 20,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 5,
-    "price": 20,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/28/94d8440ab7b4fed802.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "大大的一根魔法棒，加入淡奶油和进口酵母，配上经典的草莓鲜果。好看的外表和经典的口味造就的一款奈雪明星产品。",
-    "use_spec": false,
-    "stock": "10704.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "草莓魔法棒",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/28/94d8440ab7b4fed802.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 17138,
-    "pack_cost": "0.00",
-    "sales": 123169,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000012",
-      "id": "c9bda650c3a9cb7f",
-      "stock": "10138.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/05/05/cc722e14ae7c7973d9.jpg",
-      "num": 1,
-      "price": 15,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 15,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/05/05/cc722e14ae7c7973d9.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "摩卡味熊宝宝脸蛋，熊宝宝耳朵都有Q弹的金珠珠",
-    "use_spec": false,
-    "stock": "10138.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奈雪熊宝宝",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/05/05/cc722e14ae7c7973d9.jpg?imageView2/2/w/400/h/400" }],
-
-  "name": "软欧包",
-  "is_show_backstage": 0 },
-{
-  "sort": 9,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/bfeae4de9de15a0f88.png?imageView2/0/w/200/h/200",
-  "id": 6510,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 57165,
-    "pack_cost": "0.00",
-    "sales": 9436,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000104",
-      "id": "c860d6ad9cba0575",
-      "stock": "999999947.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/19/08b868c6270203c344.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 2,
-    "price": 16,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/03/19/08b868c6270203c344.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "无水工艺制作、只添加鸡蛋和牛奶，面包香味浓郁，口感细腻柔韧、嚼劲十足",
-    "use_spec": false,
-    "stock": "999999947.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "原味吐司",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/19/08b868c6270203c344.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 57167,
-    "pack_cost": "0.00",
-    "sales": 4746,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000106",
-      "id": "d8820703d3bce4d1",
-      "stock": "99999977.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/19/a7e10078ca8d48789f.jpg",
-      "num": 1,
-      "price": 23,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 3,
-    "price": 23,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/03/19/a7e10078ca8d48789f.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "酥软外皮、自制香草风味卡仕达、颗粒饱满的柔软红豆，豆香四溢",
-    "use_spec": false,
-    "stock": "99999977.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "红豆千层吐司",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/19/a7e10078ca8d48789f.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 57166,
-    "pack_cost": "0.00",
-    "sales": 9967,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212000105",
-      "id": "8ddfb6a43f25f987",
-      "stock": "99999922.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/19/576288b90223ac24ae.jpg",
-      "num": 1,
-      "price": 22,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 3,
-    "price": 22,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/03/19/576288b90223ac24ae.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "进口面粉揉制的面团，咸香四溢的肉松搭配自制Q弹麻薯",
-    "use_spec": false,
-    "stock": "99999922.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "肉松麻薯吐司",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/19/576288b90223ac24ae.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 25006,
-    "pack_cost": "0.00",
-    "sales": 12229,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212010005",
-      "id": "fb4c7cf07b1d29cb",
-      "stock": "10102.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/06/13/a74abd2b454461e7ed.jpg",
-      "num": 1,
-      "price": 9,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 1,
-    "price": 9,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/06/13/a74abd2b454461e7ed.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "多种草莓元素汇集，打造专属咩咩包的粉红暴击；以草莓果酱特调淡奶油内馅，享受口腔里肆意的爆浆感，表面撒层酸甜草莓粉搭配草莓干颗粒与草莓巧克力薄层，果香萦绕，充满甜美气息。",
-    "use_spec": false,
-    "stock": "10102.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "草莓咩咩",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/06/13/a74abd2b454461e7ed.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 25003,
-    "pack_cost": "0.00",
-    "sales": 11608,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212010004",
-      "id": "87302f460fa9d0f9",
-      "stock": "10065.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/06/13/836219fa1162d1ab9c.jpg",
-      "num": 1,
-      "price": 9,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 1,
-    "price": 9,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/06/13/836219fa1162d1ab9c.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "小羊角里加入巧克力味淡奶油内馅，表面撒层馥郁可可粉搭配黑巧爆谷米与黑巧克力薄层，多重巧克力风味，一口即享。",
-    "use_spec": false,
-    "stock": "10065.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "巧克力咩咩",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/06/13/836219fa1162d1ab9c.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 25001,
-    "pack_cost": "0.00",
-    "sales": 10548,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212010003",
-      "id": "531b6d578cc1c18e",
-      "stock": "10079.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/06/13/82804b3b87b2b57c44.jpg",
-      "num": 1,
-      "price": 9,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 1,
-    "price": 9,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/06/13/82804b3b87b2b57c44.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "香浓抹茶，特调淡奶油内馅，并轻洒在表面一层薄薄的白巧克力上，成就颜值、内涵、口感的三重惊艳，抹茶控必入。",
-    "use_spec": false,
-    "stock": "10079.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "抹茶咩咩",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/06/13/82804b3b87b2b57c44.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 25000,
-    "pack_cost": "0.00",
-    "sales": 6233,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212010000",
-      "id": "106c52ad2a01ffba",
-      "stock": "10085.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/06/13/a3baf71549f038325d.jpg",
-      "num": 1,
-      "price": 9,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 1,
-    "price": 9,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/06/13/a3baf71549f038325d.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "可爱玲珑的羊角个头，层层酥脆，一口咬下，卡士达淡奶油内馅爆浆感十足,表皮肉松海苔，带来更鲜脆风味",
-    "use_spec": false,
-    "stock": "10085.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "肉松咩咩",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/06/13/a3baf71549f038325d.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 68452,
-    "pack_cost": "0.00",
-    "sales": 741,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212020002",
-      "id": "5efabb63696f2515",
-      "stock": "99998.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/27/98f9e17936370f5c6e.jpg",
-      "num": 1,
-      "price": 10,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 10,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/27/98f9e17936370f5c6e.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "软酥蛋皮，奶香浓郁，布丁口感，外酥内嫩",
-    "use_spec": false,
-    "stock": "99998.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "经典蛋挞",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/27/98f9e17936370f5c6e.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 25011,
-    "pack_cost": "0.00",
-    "sales": 3268,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1298,
-        "code": "Z5D5FA29D6070D7403",
-        "value": "草莓咩咩" },
-      {
-        "is_default": 0,
-        "id": 1299,
-        "code": "Z5D5FA29D60DAE4347",
-        "value": "巧克力咩咩" },
-      {
-        "is_default": 0,
-        "id": 1300,
-        "code": "Z5D5FA29D614794268",
-        "value": "抹茶咩咩" },
-      {
-        "is_default": 0,
-        "id": 1302,
-        "code": "Z5D5FA29D6221E9709",
-        "value": "肉松咩咩" }],
-
-      "name": "选择一",
-      "id": 262 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1303,
-        "code": "Z5D5FA29D62C482120",
-        "value": "草莓咩咩" },
-      {
-        "is_default": 0,
-        "id": 1305,
-        "code": "Z5D5FA29D63A198780",
-        "value": "抹茶咩咩" },
-      {
-        "is_default": 0,
-        "id": 1306,
-        "code": "Z5D5FA29D642F31535",
-        "value": "巧克力咩咩" },
-      {
-        "is_default": 0,
-        "id": 1308,
-        "code": "Z5D5FA29D6518E8070",
-        "value": "肉松咩咩" }],
-
-      "name": "选择二",
-      "id": 263 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1309,
-        "code": "Z5D5FA29D65F0C3220",
-        "value": "肉松咩咩" },
-      {
-        "is_default": 0,
-        "id": 1311,
-        "code": "Z5D5FA29D66BAB8787",
-        "value": "巧克力咩咩" },
-      {
-        "is_default": 0,
-        "id": 1312,
-        "code": "Z5D5FA29D672AF9110",
-        "value": "草莓咩咩" },
-      {
-        "is_default": 0,
-        "id": 1313,
-        "code": "Z5D5FA29D6794A2665",
-        "value": "抹茶咩咩" }],
-
-      "name": "选择三",
-      "id": 366 }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "11110015",
-      "id": "2693ad8a72f32fdf",
-      "stock": "100000080.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/06/13/b92a9d35a43e67ceab.jpg",
-      "num": 1,
-      "price": 24,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 24,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/06/13/b92a9d35a43e67ceab.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "#一口酥脆-满口爆浆的咩咩包#来啦！奈雪首次推出咩咩包系列，六个口味荟萃，任选三只即享优惠组合价~层层酥脆，让美味与分享同在~",
-    "use_spec": false,
-    "stock": "100000080.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "咩咩包组合装",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/06/13/b92a9d35a43e67ceab.jpg?imageView2/2/w/400/h/400" }],
-
-  "name": "手作烘焙",
-  "is_show_backstage": 0 },
-{
-  "sort": 12,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/edd969e6c892853667.png?imageView2/0/w/200/h/200",
-  "id": 2497,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 58708,
-    "pack_cost": "0.00",
-    "sales": 11519,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E7C5F8A51A546188",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 609,
-        "code": "Z5E7C5F8A51F7E8021",
-        "value": "少冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E7C5F8A523892538",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E7C5F8A527A67945",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E7C5F8A52B737106",
-        "value": "温" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5E7C5F8A5340E8233",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5E7C5F8A538459155",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 610,
-        "code": "Z5E7C5F8A53C5A7778",
-        "value": "微糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5E7C5F8A540DF9794",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010000008",
-      "id": "5117d6934f984ddd",
-      "stock": "999999825.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/26/fcece4bb6af2673e37.jpg",
-      "num": 1,
-      "price": 19,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 2,
-    "price": 19,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/03/26/fcece4bb6af2673e37.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选金观音茶叶，汤色金黄清澈、香气馥郁幽长，搭配奈雪芝士奶盖，回甘醇厚。",
-    "use_spec": false,
-    "stock": "999999825.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芝士金观音",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/26/fcece4bb6af2673e37.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31558,
-    "pack_cost": "0.00",
-    "sales": 37172,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2CF50F4767076",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2CF50F8B97969",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2CF50FC797077",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2CF51003F7078",
-        "value": "温" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD783C1026547401",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD783C1029E21469",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD783C102D7B3883",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010000003",
-      "id": "a2b1def8331cd4c4",
-      "stock": "99999752.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/27/369520a40d39e0ac11.jpg",
-      "num": 1,
-      "price": 21,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 3,
-    "price": 21,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/03/27/369520a40d39e0ac11.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "热饮为纸杯包装，茉莉花的香气和绿茶的清新融合，汤色清亮",
-    "use_spec": false,
-    "stock": "99999752.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芝士茉莉初雪",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/27/369520a40d39e0ac11.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31560,
-    "pack_cost": "0.00",
-    "sales": 17293,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2D16A308C7944",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2D16A34E74683",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2D16A38D21680",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2D16A3D2B4114",
-        "value": "温" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD7820B13E2F5968",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD7820B141B57300",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7820B145611482",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010000002",
-      "id": "f213dedd5653800c",
-      "stock": "10000077.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/27/bac6a6e8b23fd3b30e.jpg",
-      "num": 1,
-      "price": 22,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 22,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/03/27/bac6a6e8b23fd3b30e.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪定制茶。选用武夷山金骏眉等三种名优红茶调配而成，有独特的烟熏龙眼木香气，搭配轻盈香滑的芝士奶盖，中和淡淡涩口。",
-    "use_spec": false,
-    "stock": "10000077.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芝士奈雪金色山脉",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/27/bac6a6e8b23fd3b30e.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31557,
-    "pack_cost": "0.00",
-    "sales": 35462,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2CE34D0EA6729",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2CE34D6612524",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2CE34DAE75885",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2CE34F6D97845",
-        "value": "温" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD783375B6983153",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD783375BA6C4391",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD783375BE198735",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010000001",
-      "id": "9e63c54d02eec86b",
-      "stock": "10000137.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/27/8d4a1edb7c9e2d6554.jpg",
-      "num": 1,
-      "price": 22,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 22,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/03/27/8d4a1edb7c9e2d6554.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪名优茶。荣获2018年台湾冬茶比赛头等奖。茶山沾染的花香气、低温烘焙的醇甜香，入口回甘。搭配轻盈香滑的咸芝士奶盖，中和淡淡涩口。",
-    "use_spec": false,
-    "stock": "10000137.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芝士奈雪初露",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/27/8d4a1edb7c9e2d6554.jpg?imageView2/2/w/400/h/400" }],
-
-  "name": "芝士茗优茶",
-  "is_show_backstage": 0 },
-{
-  "sort": 14,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/33fe4d0f9c3b8b7b97.png?imageView2/0/w/200/h/200",
-  "id": 2500,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 58710,
-    "pack_cost": "0.00",
-    "sales": 6064,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E7C60433E1E03482",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 609,
-        "code": "Z5E7C60433E6B51206",
-        "value": "少冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E7C60433EAB73816",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E7C60433EE769255",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E7C60433F22E8316",
-        "value": "温" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5E7C60433FA1A6064",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5E7C60433FEA91288",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 610,
-        "code": "Z5E7C60434031C3451",
-        "value": "微糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5E7C6043407752183",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010030008",
-      "id": "1a5ad9d3d03883ad",
-      "stock": "999999524.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/16/a169f730488a724acc.jpg",
-      "num": 1,
-      "price": 13,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 3,
-    "price": 13,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/16/a169f730488a724acc.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选金观音茶叶，汤色金黄清澈、香气馥郁幽长",
-    "use_spec": false,
-    "stock": "999999524.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "金观音",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/16/a169f730488a724acc.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31431,
-    "pack_cost": "0.00",
-    "sales": 8582,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2D39B2E2C1515",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2D39B32726459",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 609,
-        "code": "Z5E5E2D39B362B1790",
-        "value": "少冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2D39B39E09251",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2D39B3D864768",
-        "value": "温" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD7835D198C73695",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD7835D19C263883",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7835D19F993256",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010030003",
-      "id": "489fc9c35ba35792",
-      "stock": "998479.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/27/0491350e8dca665627.jpg",
-      "num": 1,
-      "price": 15,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 4,
-    "price": 15,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/03/27/0491350e8dca665627.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "热饮为纸杯包装，茉莉花的香气和绿茶的清新融合，汤色清亮",
-    "use_spec": false,
-    "stock": "998479.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "茉莉初雪",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/27/0491350e8dca665627.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31433,
-    "pack_cost": "0.00",
-    "sales": 2696,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2D59A10614619",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2D59A15915459",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2D59A19D98802",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2D59A1E4D5205",
-        "value": "温" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD7880C6EA1B9131",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD7880C6EDDD5553",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7880C6F1A92100",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010030001",
-      "id": "baa902a28fef5352",
-      "stock": "999794.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/27/dfbf560ac141c88213.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 16,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/03/27/dfbf560ac141c88213.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪定制茶,选用武夷山金骏眉等三种名优红茶调配而成，独特的烟熏龙眼木香气，甘醇韵长回味无穷。",
-    "use_spec": false,
-    "stock": "999794.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奈雪金色山脉",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/27/dfbf560ac141c88213.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31430,
-    "pack_cost": "0.00",
-    "sales": 4297,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2D291B76F7651",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2D291BBF32291",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2D291BFE24955",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2D291C4752910",
-        "value": "温" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD782A24282D3131",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD782A242C053219",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD782A2430ED6328",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010030000",
-      "id": "e86191ffd2a27a25",
-      "stock": "99430.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/27/7d0a4993b5926e2bc6.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 16,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/03/27/7d0a4993b5926e2bc6.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪名优茶。荣获2017年台湾冬茶比赛头等奖。清新的花香气、低温烘焙的醇甜香，入口5秒等待回甘。",
-    "use_spec": false,
-    "stock": "99430.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奈雪初露",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/27/7d0a4993b5926e2bc6.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 16719,
-    "pack_cost": "0.00",
-    "sales": 14868,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "793:3068|794:3063",
-      "trade_mark": "1010020000",
-      "id": "2728bc1fd96b4d6a",
-      "stock": "9914.00",
-      "spec_text": {
-        "温度": "冷",
-        "糖度": "无糖" },
-
-      "spec": {
-        "793": 3068,
-        "794": 3063 },
-
-      "image": "s23107/2019/04/26/3afbe376457c893497.jpg",
-      "num": 1,
-      "price": 22,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 22,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/3afbe376457c893497.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [{
-      "values": [{
-        "id": 3068,
-        "image": null,
-        "value": "冷" }],
-
-      "name": "温度",
-      "id": 793 },
-    {
-      "values": [{
-        "id": 3063,
-        "image": null,
-        "value": "无糖" }],
-
-      "name": "糖度",
-      "id": 794 }],
-
-    "content": "奈雪名优茶。严选台湾阿里山优质冻顶乌龙茶，低温冷泡8小时，减少咖啡因释放，降低涩味，茶香更甘醇",
-    "use_spec": true,
-    "stock": "9914.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "冻顶乌龙(冷泡茶)",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/3afbe376457c893497.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 16718,
-    "pack_cost": "0.00",
-    "sales": 14692,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "793:3068|794:3063",
-      "trade_mark": "1010020001",
-      "id": "6334b219fa565cc3",
-      "stock": "9888.00",
-      "spec_text": {
-        "温度": "冷",
-        "糖度": "无糖" },
-
-      "spec": {
-        "793": 3068,
-        "794": 3063 },
-
-      "image": "s23107/2019/04/26/f8e25f045c19df333d.jpg",
-      "num": 1,
-      "price": 22,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 22,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/f8e25f045c19df333d.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [{
-      "values": [{
-        "id": 3068,
-        "image": null,
-        "value": "冷" }],
-
-      "name": "温度",
-      "id": 793 },
-    {
-      "values": [{
-        "id": 3063,
-        "image": null,
-        "value": "无糖" }],
-
-      "name": "糖度",
-      "id": 794 }],
-
-    "content": "来自台湾阿里山的乌龙茶，生长于终年云雾缭绕之地，作为正大名茶的特有品种，甘甜带果胶质口感是其独特魅力。花香气清雅，滋味清醇甘甜",
-    "use_spec": true,
-    "stock": "9888.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "青心乌龙(冷泡茶)",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/f8e25f045c19df333d.jpg?imageView2/2/w/400/h/400" }],
-
-  "name": "无糖茶铺",
-  "is_show_backstage": 0 },
-{
-  "sort": 15,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/6557447a5b85a3bf71.png?imageView2/0/w/200/h/200",
-  "id": 2488,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 31535,
-    "pack_cost": "0.00",
-    "sales": 18309,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2BE2B23BB3413",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2BE2B27F03307",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2BE2B2D002260",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2BE2B30842522",
-        "value": "温" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78350A14958747",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78350A18165102",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78350A1C237554",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010090003",
-      "id": "286cf6b1bc6dedbd",
-      "stock": "1000020.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/612997e450b52ba186.jpg",
-      "num": 1,
-      "price": 24,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 2,
-    "price": 24,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/612997e450b52ba186.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选阿拉比卡咖啡豆与冻顶乌龙茶结合，质感幼滑不苦涩，入口香醇，推荐热饮更好喝。",
-    "use_spec": false,
-    "stock": "1000020.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "大咖鸳鸯",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/612997e450b52ba186.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 65309,
-    "pack_cost": "0.00",
-    "sales": 439,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E952C509B5561077",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E952C509BA997660",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E952C509BE6A2251",
-        "value": "热" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 1959,
-        "code": "Z5E952C509C5816724",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010090008",
-      "id": "c88ebf2110c0a219",
-      "stock": "9999955.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/16/48279ebcd71456ac25.jpg",
-      "num": 1,
-      "price": 19,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 19,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/16/48279ebcd71456ac25.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪拿铁",
-    "use_spec": false,
-    "stock": "9999955.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奈雪拿铁",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/16/48279ebcd71456ac25.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 65307,
-    "pack_cost": "0.00",
-    "sales": 382,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E952A913A5C51731",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E952A913ADE83916",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E952A913B1955053",
-        "value": "热" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 1959,
-        "code": "Z5E952A913B8711256",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010090007",
-      "id": "08a06c749c6f0c91",
-      "stock": "9999965.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/16/456b9428f57f11fc93.jpg",
-      "num": 1,
-      "price": 13,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 13,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/16/456b9428f57f11fc93.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪美式",
-    "use_spec": false,
-    "stock": "9999965.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奈雪美式",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/16/456b9428f57f11fc93.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31534,
-    "pack_cost": "0.00",
-    "sales": 12285,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5D5E3D4D809A35120",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5D5E3D4D80ED58634",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD783E4E22621019",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD783E4E26093700",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD783E4E29D68842",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010090001",
-      "id": "80b1c59b6bf77b0f",
-      "stock": "9999954.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/05/05/2d77f4daaabc3144b2.jpg",
-      "num": 1,
-      "price": 19,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 1,
-    "price": 19,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/05/05/2d77f4daaabc3144b2.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "咖啡与鲜果茶的创新组合，精心挑选拥有更多香甜因子的翡翠柠檬，柠檬的清爽与咖啡的香醇相结合，唇齿留香。",
-    "use_spec": false,
-    "stock": "9999954.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "大咖柠檬",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/05/05/2d77f4daaabc3144b2.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31429,
-    "pack_cost": "0.00",
-    "sales": 3346,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1219,
-        "code": "Z5DEDBF956E3931146",
-        "value": "标准(冰淇淋+水晶)" },
-      {
-        "is_default": 0,
-        "id": 1220,
-        "code": "Z5DEDBF956E7728487",
-        "value": "无配料" },
-      {
-        "is_default": 0,
-        "id": 1257,
-        "code": "Z5DEDBF956EAC25859",
-        "value": "去水晶" },
-      {
-        "is_default": 0,
-        "id": 2066,
-        "code": "Z5DEDBF956EEC87411",
-        "value": "去冰淇淋" },
-      {
-        "is_default": 0,
-        "id": 2067,
-        "code": "Z5DEDBF956F2404144",
-        "value": "换香草冰淇淋" }],
-
-      "name": "配料",
-      "id": 347 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1167,
-        "code": "Z5D676D0DB876D9109",
-        "value": "标准（冰沙）" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD782B18BE101476",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD782B18C1A57165",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD782B18C4EE8451",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010090005",
-      "id": "10ba24d03b9fc7fe",
-      "stock": "10000147.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/776ccac30466e6bd52.jpg",
-      "num": 1,
-      "price": 34,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 34,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/776ccac30466e6bd52.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以现萃咖啡融合茉莉绿茶，加入牛油果、椰子冰淇淋及水晶冻。口感细腻，一口能喝到三重味道，金杯华丽亮相，能量满满。",
-    "use_spec": false,
-    "stock": "10000147.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "大咖牛油果",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/776ccac30466e6bd52.jpg?imageView2/2/w/400/h/400" }],
-
-  "name": "咖啡",
-  "is_show_backstage": 0 },
-{
-  "sort": 18,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/6557447a5b85a3bf71.png?imageView2/0/w/200/h/200",
-  "id": 4365,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 38230,
-    "pack_cost": "0.00",
-    "sales": 52072,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1313030018",
-      "id": "2a8c5a1d486e1e82",
-      "stock": "9999999911.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/11/01/bb339b1b5c2f6fdac4.jpg",
-      "num": 1,
-      "price": 2,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 2,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/11/01/bb339b1b5c2f6fdac4.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "可用于2杯饮品打包使用（保温袋会不定期更换插画图片，以门店正在使用的为准）",
-    "use_spec": false,
-    "stock": "9999999911.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "小保温袋",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/11/01/bb339b1b5c2f6fdac4.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 38229,
-    "pack_cost": "0.00",
-    "sales": 16211,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1313030019",
-      "id": "591339726df9791b",
-      "stock": "999999966.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/11/01/9ea7b5249a2f11a1a1.jpg",
-      "num": 1,
-      "price": 4,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 4,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/11/01/9ea7b5249a2f11a1a1.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "可用于4杯饮品打包使用（保温袋会不定期更换插画图片，以门店正在使用的为准）",
-    "use_spec": false,
-    "stock": "999999966.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "大保温袋",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/11/01/9ea7b5249a2f11a1a1.jpg?imageView2/2/w/400/h/400" }],
-
-  "name": "保温加购",
-  "is_show_backstage": 0 },
-{
-  "sort": 40,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/30/458c5a14fb2f190f96.png?imageView2/0/w/200/h/200",
-  "id": 5658,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 52969,
-    "pack_cost": "0.00",
-    "sales": 27,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "",
-      "id": "1f58bd9127939f42",
-      "stock": "999.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/02/23/28e175507553571969.jpeg",
-      "num": 1,
-      "price": 0,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 0,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/02/23/28e175507553571969.jpeg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "推荐使用奈雪点单小程序下单，降低接触频次。",
-    "use_spec": false,
-    "stock": "999.00",
-    "type": 4,
-    "is_label": 0,
-    "name": "在线下单",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/02/23/28e175507553571969.jpeg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 52968,
-    "pack_cost": "0.00",
-    "sales": 69,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "",
-      "id": "ec3ab81ec6c17f95",
-      "stock": "999.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/02/23/17fe4ee12651c84667.jpeg",
-      "num": 1,
-      "price": 0,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 0,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/02/23/17fe4ee12651c84667.jpeg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "面包柜内所有面包进行装袋或者装盒陈列售卖。",
-    "use_spec": false,
-    "stock": "999.00",
-    "type": 4,
-    "is_label": 0,
-    "name": "面包装袋",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/02/23/17fe4ee12651c84667.jpeg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 52967,
-    "pack_cost": "0.00",
-    "sales": 77,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "",
-      "id": "b027d6132eff660d",
-      "stock": "999.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/02/23/28e11fa60c3c7b952f.jpeg",
-      "num": 1,
-      "price": 0,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 0,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/02/23/28e11fa60c3c7b952f.jpeg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "堂食打包和外卖均提供安心卡，将茶饮制作、面包制作、配餐员以及骑手姓名记录并做好体温测量。做到食品安全可追踪、制作及配送可追踪，请您安心用餐。",
-    "use_spec": false,
-    "stock": "999.00",
-    "type": 4,
-    "is_label": 0,
-    "name": "安心卡片",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/02/23/28e11fa60c3c7b952f.jpeg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 52966,
-    "pack_cost": "0.00",
-    "sales": 66,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "",
-      "id": "7aecf3d9c78a4306",
-      "stock": "999.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/02/23/5761fbd2344ef96307.jpeg",
-      "num": 1,
-      "price": 0,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 0,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/02/23/5761fbd2344ef96307.jpeg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "1. 门店伙伴严格执行每小时1次洗手消毒。2. 门店伙伴上岗前进行体温检测。3. 就餐桌椅以及工作台面每小时清洁1次，再用消毒液进行消毒。4. 与食品接触的所有设备、器具、毛巾等严格执行清洁及消毒工作。5. 门店顾客入口处，提供消毒凝胶进行手部消毒。",
-    "use_spec": false,
-    "stock": "999.00",
-    "type": 4,
-    "is_label": 0,
-    "name": "门店防疫",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/02/23/5761fbd2344ef96307.jpeg?imageView2/2/w/400/h/400" }],
-
-  "name": "共同防疫",
-  "is_show_backstage": 0 },
-{
-  "sort": 41,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/30/458c5a14fb2f190f96.png?imageView2/0/w/200/h/200",
-  "id": 5659,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 52965,
-    "pack_cost": "0.00",
-    "sales": 2,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "",
-      "id": "7acc73c0f76a45b3",
-      "stock": "999.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/02/22/81748e7805a82c0e9d.png",
-      "num": 1,
-      "price": 0,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 0,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/02/22/81748e7805a82c0e9d.png?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "即日起，奈雪支持企业团餐订购啦，全程使用无接触配送，让您饮茶食包更安心\n企业团餐50份起送（包含茶饮和欧包），可根据您的需求按时送达指定位置，为了让您可以准时收到餐食，建议您提前一天订购，更多订购详情可添加团餐客服微信咨询（微信号：nx-digital）",
-    "use_spec": false,
-    "stock": "999.00",
-    "type": 4,
-    "is_label": 0,
-    "name": "企业团餐",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/02/22/81748e7805a82c0e9d.png?imageView2/2/w/400/h/400" }],
-
-  "name": "企业团餐",
-  "is_show_backstage": 0 },
-{
-  "sort": 79,
-  "icon": "",
-  "id": 6806,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 65305,
-    "pack_cost": "0.00",
-    "sales": 213,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212040003",
-      "id": "341052a7d635e243",
-      "stock": "99999985.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/16/24d94bd8d1517503e1.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 16,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/16/24d94bd8d1517503e1.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "特制的STARFIELD 植物肉、酸黄瓜片、紫甘蓝，沙拉酱",
-    "use_spec": false,
-    "stock": "99999985.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "黑椒植物肉三明治",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/16/24d94bd8d1517503e1.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 65302,
-    "pack_cost": "0.00",
-    "sales": 418,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212040002",
-      "id": "0a6d3607987f3666",
-      "stock": "999999965.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/16/20cfe8e412a87e5cbe.jpg",
-      "num": 1,
-      "price": 16,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 16,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/16/20cfe8e412a87e5cbe.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "厚实秘制精致腿排、新鲜切丝紫甘蓝、淋上香甜的沙拉酱、口感层次分明；",
-    "use_spec": false,
-    "stock": "999999965.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "蜜汁鸡腿肉三明治",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/16/20cfe8e412a87e5cbe.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 65300,
-    "pack_cost": "0.00",
-    "sales": 480,
-    "cover_img": "",
-    "property": [],
-    "is_sell": true,
-    "goods_type": 1,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1212040001",
-      "id": "304b27c0e45f3e1c",
-      "stock": "99999967.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/16/62f2aa82f406097c6e.jpg",
-      "num": 1,
-      "price": 12,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 12,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/16/62f2aa82f406097c6e.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 0,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "金黄松软吐司片，铺上特制土豆馅、芝士片和鸡蛋，再挤入香甜的沙拉酱；",
-    "use_spec": false,
-    "stock": "99999967.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "土豆芝士蛋三明治",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/16/62f2aa82f406097c6e.jpg?imageView2/2/w/400/h/400" }],
-
-  "name": "三明治",
-  "is_show_backstage": 0 },
-{
-  "sort": 4,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/949ba26d52c601c007.png?imageView2/0/w/200/h/200",
-  "id": 2469,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 31532,
-    "pack_cost": "0.00",
-    "sales": 5104,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1218,
-        "code": "Z5D612C34C8EF06658",
-        "value": "标准(芝士)" },
-      {
-        "is_default": 0,
-        "id": 1166,
-        "code": "Z5D612C34C93705460",
-        "value": "芝士换酸奶" }],
-
-      "name": "配料",
-      "id": 347 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5EA8DBDA4371C5994",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5EA8DBDA43C415239",
-        "value": "冰沙" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5EA8DBDA4404E3515",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78286916115856",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78286919682277",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7828691CB89112",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010050008",
-      "id": "f8114313a48c5c4a",
-      "stock": "1000314.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/19/a3ee1fa72435259a73.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 4,
-    "price": 28,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/03/19/a3ee1fa72435259a73.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选优质巨峰葡萄、手工去皮去籽、加入带兰桂花香，经中度焙火的金观音茶中，搭配轻盈香甜芝士奶盖",
-    "use_spec": false,
-    "stock": "1000314.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气芝士葡萄",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/19/a3ee1fa72435259a73.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31425,
-    "pack_cost": "0.00",
-    "sales": 166533,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1218,
-        "code": "Z5D5BA41448F494221",
-        "value": "标准(芝士)" },
-      {
-        "is_default": 0,
-        "id": 1166,
-        "code": "Z5D5BA4144931C2200",
-        "value": "芝士换酸奶" }],
-
-      "name": "配料",
-      "id": 347 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1164,
-        "code": "Z5D5BA414499AC5454",
-        "value": "冰沙" },
-      {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5D5BA41449D321738",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5D5BA4144A0C19680",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78377493B92481",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD783774971F6671",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7837749AA21326",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010050001",
-      "id": "be5afa4e3fa70cd7",
-      "stock": "10001214.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/a2aad6ced9aa42e2c6.jpg",
-      "num": 1,
-      "price": 29,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 29,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/a2aad6ced9aa42e2c6.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪人气产品。选用优质台芒，搭配严选茉莉毛尖茶底，淋上轻盈香滑的芝士奶盖。",
-    "use_spec": false,
-    "stock": "10001214.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气芝士芒果",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/a2aad6ced9aa42e2c6.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31424,
-    "pack_cost": "0.00",
-    "sales": 125010,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1218,
-        "code": "Z5D5BA2BB31A145049",
-        "value": "标准(芝士)" },
-      {
-        "is_default": 0,
-        "id": 1166,
-        "code": "Z5D5BA2BB320FA8410",
-        "value": "芝士换酸奶" }],
-
-      "name": "配料",
-      "id": 347 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2BC316DD78061",
-        "value": "标准冰" },
-      {
-        "is_default": 1,
-        "id": 1164,
-        "code": "Z5E5E2BC316A215600",
-        "value": "冰沙" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2BC3171CA8287",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2BC317A175989",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2BC317F896724",
-        "value": "温" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD785286B9689681",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD785286BCF74540",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD785286C0687027",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010050003",
-      "id": "ee375ed5ae7f77eb",
-      "stock": "1002053.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/1cb88e6cd2fbcefb2a.jpg",
-      "num": 1,
-      "price": 29,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 29,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/1cb88e6cd2fbcefb2a.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪明星产品。选用奈雪自有草莓园新鲜草莓，搭配严选茉莉毛尖茶底，淋上轻盈香滑的芝士奶盖。",
-    "use_spec": false,
-    "stock": "1002053.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气芝士草莓",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/1cb88e6cd2fbcefb2a.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31531,
-    "pack_cost": "0.00",
-    "sales": 94538,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1218,
-        "code": "Z5D612BDE5B8BE7438",
-        "value": "标准(芝士)" },
-      {
-        "is_default": 0,
-        "id": 1166,
-        "code": "Z5D612BDE5BEB01741",
-        "value": "芝士换酸奶" }],
-
-      "name": "配料",
-      "id": 347 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1164,
-        "code": "Z5D5E3AAD448821800",
-        "value": "冰沙" },
-      {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5D5E3AAD44E888614",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5D5E3AAD453387851",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78801915838939",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD788019191B8084",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7880191CD17624",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010050002",
-      "id": "4a2db30bedfd6604",
-      "stock": "1001167.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/e4cace0c07eb44e96f.jpg",
-      "num": 1,
-      "price": 33,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 100,
-    "price": 33,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/e4cace0c07eb44e96f.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "草莓、蓝莓、树莓，三种莓果混合搭配，与茉莉毛尖一拍即合，清爽甘醇的茶香搭配浓郁果香，几重滋味在口腔里面碰撞，留下余味。",
-    "use_spec": false,
-    "stock": "1001167.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气芝士莓莓莓",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/e4cace0c07eb44e96f.jpg?imageView2/2/w/400/h/400" }],
-
-  "name": "霸气芝士鲜果茶",
-  "is_show_backstage": 0 },
-{
-  "sort": 5,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/d95284dc7e745f8198.png?imageView2/0/w/200/h/200",
-  "id": 2468,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 68339,
-    "pack_cost": "0.00",
-    "sales": 44429,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5EA54C3D0E4279185",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5EA54C3D0E9682750",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5EA54C3D0F2A37322",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5EA54C3D0F70A1000",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5EA54C3D0FAFE7320",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010025",
-      "id": "72cf1279c0a422ce",
-      "stock": "9999817.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/26/559a075d81060b23c7.jpg",
-      "num": 1,
-      "price": 30,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 0,
-    "price": 30,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/26/559a075d81060b23c7.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "饱满大颗的新鲜杨梅,满杯手工去核,搭配茉莉初雪茶底,清爽多汁",
-    "use_spec": false,
-    "stock": "9999817.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气杨梅",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/26/559a075d81060b23c7.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31419,
-    "pack_cost": "0.00",
-    "sales": 63830,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2B67CF2CD2014",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2B67CF7386076",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2B67CFC6C7297",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2B67CFFFC6344",
-        "value": "温" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78A6BAB6A96008",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78A6BAB9F81083",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78A6BABD425411",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010006",
-      "id": "7ddf70f3db56c238",
-      "stock": "9999416.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/3bef9469d37eac7b06.jpg",
-      "num": 1,
-      "price": 17,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 1,
-    "price": 17,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/3bef9469d37eac7b06.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精心挑选拥有更多香甜因子的翡翠柠檬，清爽水灵遇上金色山脉独特的龙眼木香气，更加醇厚。",
-    "use_spec": false,
-    "stock": "9999416.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气黄柠檬",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/3bef9469d37eac7b06.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 68345,
-    "pack_cost": "0.00",
-    "sales": 16322,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5EA55088766CC7824",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5EA5508876F271659",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5EA55088776843559",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5EA5508877A528469",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5EA5508877E5A6908",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010043",
-      "id": "c7c6f8fd34040338",
-      "stock": "999950.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/26/ea8fc439fddf2f62e3.jpg",
-      "num": 1,
-      "price": 32,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 2,
-    "price": 32,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/26/ea8fc439fddf2f62e3.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "霸气杨梅和酸奶的首次搭配,甘甜可口",
-    "use_spec": false,
-    "stock": "999950.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气酸奶杨梅",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/26/ea8fc439fddf2f62e3.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31507,
-    "pack_cost": "0.00",
-    "sales": 199583,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2B483FA903805",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2B484016A8529",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2B48405642832",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2B48409616050",
-        "value": "温" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD789B45391F4495",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD789B453D023182",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD789B4540531795",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010000",
-      "id": "097aad038aeeb0ea",
-      "stock": "998101.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/2a4b2697bec6f7e502.jpg",
-      "num": 1,
-      "price": 25,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 2,
-    "price": 25,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/2a4b2697bec6f7e502.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪明星产品。优选进口新奇士橙，搭配严选茉莉毛尖茶底，橙意满满。",
-    "use_spec": false,
-    "stock": "998101.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气橙子",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/2a4b2697bec6f7e502.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31420,
-    "pack_cost": "0.00",
-    "sales": 79330,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2B85F17929383",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2B85F1F1B3653",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2B85F22FD7672",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2B85F26FF5081",
-        "value": "温" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78A4713C675763",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78A471400C9869",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78A47143654620",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010004",
-      "id": "944078205e237f86",
-      "stock": "9999096.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/333b43719bd81f4e00.jpg",
-      "num": 1,
-      "price": 17,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 2,
-    "price": 17,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/333b43719bd81f4e00.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "茉莉毛尖与绿柠檬的鲜活组合，清新馥郁的茶香跟柠檬的酸度契合，口感纯净清爽至佳",
-    "use_spec": false,
-    "stock": "9999096.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气绿柠檬",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/333b43719bd81f4e00.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 34254,
-    "pack_cost": "0.00",
-    "sales": 44115,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5D833EF2826151137",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5D833EF282A7E7293",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD7812AC5BC04098",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD7812AC5FA38677",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7812AC64CA3721",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010013",
-      "id": "39d4a2ea969474ff",
-      "stock": "998178.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/09/19/b188394541d392d995.jpg",
-      "num": 1,
-      "price": 19,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 3,
-    "price": 19,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/09/19/b188394541d392d995.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "选用上等茉莉毛尖茶底，纯手工捣碎的百香果，每口都可以喝到满满果肉，浓郁果香中带些酸涩，加入益力多，中和甜味。",
-    "use_spec": false,
-    "stock": "998178.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气百香多多",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/09/19/b188394541d392d995.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31421,
-    "pack_cost": "0.00",
-    "sales": 140108,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E5E2B96160502300",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2B96165206954",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E5E2B961691F4378",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2B9616D5F6916",
-        "value": "温" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78A1C4BBDA9758",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78A1C4BF943434",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78A1C4C30F7434",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010012",
-      "id": "eeb6099df6c2643b",
-      "stock": "999465.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/e467b3c4e665cddc13.jpg",
-      "num": 1,
-      "price": 23,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 4,
-    "price": 23,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/e467b3c4e665cddc13.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "茉莉毛尖茶底，带有花茶特有的香气，加入鲜榨西柚，果粒饱满。西柚糖分较少，搭配茶底清甜爽口。",
-    "use_spec": false,
-    "stock": "999465.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气西柚",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/e467b3c4e665cddc13.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31730,
-    "pack_cost": "0.00",
-    "sales": 1805,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5EA8DC2C386039619",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5EA8DC2C38BE59577",
-        "value": "冰沙" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5EA8DC2C390672147",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD7807C553AA1993",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD7807C557CF4823",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7807C55B668276",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010024",
-      "id": "7d95b01dd69ee729",
-      "stock": "999783.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/03/19/630a810c8c7201c112.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 6,
-    "price": 28,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/03/19/630a810c8c7201c112.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "精选优质巨峰葡萄、手工去皮去籽、加入带兰桂花香，经中度焙火的金观音茶中",
-    "use_spec": false,
-    "stock": "999783.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气葡萄",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/03/19/630a810c8c7201c112.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31508,
-    "pack_cost": "0.00",
-    "sales": 42335,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5D5D4D6F36ABC7392",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5D5D4D6F36F1C6105",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD789E36A0574960",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD789E36A5477015",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD789E36A9581059",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010080001",
-      "id": "ab099692d7651ce7",
-      "stock": "10000130.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/af2554d89e755030c3.jpg",
-      "num": 1,
-      "price": 29,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 29,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/af2554d89e755030c3.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "霸气橙子遇见两株美国益生菌种，助力代谢，促进肠道运动，减少热量吸收。",
-    "use_spec": false,
-    "stock": "10000130.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气燃爆橙子",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/af2554d89e755030c3.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31423,
-    "pack_cost": "0.00",
-    "sales": 63159,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1164,
-        "code": "Z5D5BA1994227C7642",
-        "value": "冰沙" },
-      {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5D5BA199426BD5154",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5D5BA19942A0C6428",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78A9530CD61996",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78A95310979784",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78A953141D8332",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010002",
-      "id": "01ae17591f05925d",
-      "stock": "10000487.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/59b1ee7e3109933ef2.jpg",
-      "num": 1,
-      "price": 29,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 29,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/59b1ee7e3109933ef2.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "选用优质台芒，满满果肉打碎，搭配严选茉莉毛尖茶底，每一口都有热带芒果的香气。",
-    "use_spec": false,
-    "stock": "10000487.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气芒果",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/59b1ee7e3109933ef2.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31422,
-    "pack_cost": "0.00",
-    "sales": 22472,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E9CF8E09B97E7742",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E9CF8E09BDAE9442",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5E9CF8E09C1031898",
-        "value": "冰沙" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E9CF8E09C46D2981",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E9CF8E09C7A12137",
-        "value": "温" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78A7B33E9F1462",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78A7B341F49717",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78A7B345276190",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010008",
-      "id": "4d47173fb5788fa2",
-      "stock": "10000653.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/25d058d6ea2617f58e.jpg",
-      "num": 1,
-      "price": 29,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 29,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/25d058d6ea2617f58e.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪人气天后，选用奈雪自有草莓园采摘的新鲜草莓，搭配茉莉毛尖茶底，每一口都有草莓在舌尖跳跃，唇齿留香。",
-    "use_spec": false,
-    "stock": "10000653.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气草莓",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/25d058d6ea2617f58e.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31509,
-    "pack_cost": "0.00",
-    "sales": 48186,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1164,
-        "code": "Z5D5D4DFB60D275726",
-        "value": "冰沙" },
-      {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5D5D4DFB6117D4323",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5D5D4DFB615623217",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78A8794EBD5601",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78A87952955431",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78A87956405441",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "id": 191 }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010010018",
-      "id": "01f781b43f0f9241",
-      "stock": "10000822.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/1f666aac7e0e710ff0.jpg",
-      "num": 1,
-      "price": 33,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 100,
-    "price": 33,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/1f666aac7e0e710ff0.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "草莓、蓝莓、树莓，三种莓果混合搭配，与茉莉毛尖一拍即合，清爽甘醇的茶香搭配浓郁果香，几重滋味在口腔里面碰撞，留下余味。",
-    "use_spec": false,
-    "stock": "10000822.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气莓莓莓",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/1f666aac7e0e710ff0.jpg?imageView2/2/w/400/h/400" }],
-
-  "name": "霸气鲜果茶",
-  "is_show_backstage": 0 },
-{
-  "sort": 6,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/06/17/80c1d7b602d4a4a611.png?imageView2/0/w/200/h/200",
-  "id": 2844,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 31428,
-    "pack_cost": "0.00",
-    "sales": 43445,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1256,
-        "code": "Z5DEDBF09BB3F13909",
-        "value": "标准" }],
-
-      "name": "配料",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1167,
-        "code": "Z5D5BAD0461C7A7478",
-        "value": "标准（冰沙）" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD788293E0122727",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD788293E3E37828",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD788293E7C22375",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010100003",
-      "id": "ff1500e3c4febc75",
-      "stock": "10001379.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/4aa065559299892ec2.jpg",
-      "num": 1,
-      "price": 30,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 30,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/4aa065559299892ec2.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以霸气芒果打底，加入带椰子果肉的冰淇淋球，冰淇淋加上芒果甜香，每一口都有热带感觉，喝前搅一搅，味道更好。",
-    "use_spec": false,
-    "stock": "10001379.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气冰淇淋芒果",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/4aa065559299892ec2.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31426,
-    "pack_cost": "0.00",
-    "sales": 53637,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1256,
-        "code": "Z5DEDBEDB8A4EB2815",
-        "value": "标准" }],
-
-      "name": "配料",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1167,
-        "code": "Z5D5BA4B2589C68376",
-        "value": "标准（冰沙）" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78057D91AC1512",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD78057D959F8584",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD78057D998B1998",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010100001",
-      "id": "d751af98a431f031",
-      "stock": "10001474.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/04/26/57edf607a7290a450b.jpg",
-      "num": 1,
-      "price": 30,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 30,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/04/26/57edf607a7290a450b.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以霸气草莓打底，加入椰子冰淇淋，搅拌后椰乳慢慢与草莓果肉汁、绿茶单宁、茉莉与椰香融合，口感顺滑、芳香纯美",
-    "use_spec": false,
-    "stock": "10001474.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气冰淇淋草莓",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/04/26/57edf607a7290a450b.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31427,
-    "pack_cost": "0.00",
-    "sales": 37083,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1219,
-        "code": "Z5DEDBE065697C1943",
-        "value": "标准(冰淇淋+水晶)" },
-      {
-        "is_default": 0,
-        "id": 1220,
-        "code": "Z5DEDBE0656D745437",
-        "value": "无配料" },
-      {
-        "is_default": 0,
-        "id": 1257,
-        "code": "Z5DEDBE06570D57681",
-        "value": "去水晶" },
-      {
-        "is_default": 0,
-        "id": 2066,
-        "code": "Z5DEDBE06574555671",
-        "value": "去冰淇淋" }],
-
-      "name": "配料",
-      "id": 347 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1167,
-        "code": "Z5D5BAB4B698953798",
-        "value": "标准（冰沙）" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD78368657E92731",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD7836865B8F3442",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD7836865F2D5309",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1313010004",
-      "id": "73e2eab6e586fe0c",
-      "stock": "1001521.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/07/14/b38864bce8685c4dcd.png",
-      "num": 1,
-      "price": 33,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 100,
-    "price": 33,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/07/14/b38864bce8685c4dcd.png?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "来自墨西哥的珍稀食材牛油果，制成绵细冰沙口感，与招牌茉莉毛尖结合，加入椰子冰淇淋及水晶冻，丰盛呈现，喝前搅一搅，味道更好。",
-    "use_spec": false,
-    "stock": "1001521.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "霸气冰淇淋牛油果",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/07/14/b38864bce8685c4dcd.png?imageView2/2/w/400/h/400" }],
-
-  "name": "霸气冰淇淋鲜果茶",
-  "is_show_backstage": 0 },
-{
-  "sort": 7,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/edd969e6c892853667.png?imageView2/0/w/200/h/200",
-  "id": 2575,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 58706,
-    "pack_cost": "0.00",
-    "sales": 45890,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1256,
-        "code": "Z5E7C5E9A166EE2215",
-        "value": "标准" },
-      {
-        "is_default": 0,
-        "id": 2782,
-        "code": "Z5E7C5E9A16B858986",
-        "value": "奶油顶换奶盖" },
-      {
-        "is_default": 0,
-        "id": 2783,
-        "code": "Z5E7C5E9A1723B4260",
-        "value": "去奶油顶" }],
-
-      "name": "配料",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E7C5E9A17FFF5424",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E7C5E9A1842D8160",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E7C5E9A1882F9233",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E7C5E9A18DEA8109",
-        "value": "温" },
-      {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5E7C5E9A191CA1920",
-        "value": "冰沙" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5E7C5E9A198D68448",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5E7C5E9A19CC31451",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5E7C5E9A1A0A76125",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040032",
-      "id": "25c95dd4ff3ff12e",
-      "stock": "9999142.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/10/ddba4cf4efe4036f3a.jpg",
-      "num": 1,
-      "price": 19,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 1,
-    "price": 19,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/10/ddba4cf4efe4036f3a.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "\"吸“鲜”三部曲\n①、舀起香脆山核桃碎与进口淡奶油一起品尝\n②、插入细吸管，感受清香乌龙与醇香鲜牛乳混合的清爽\n③、搅拌淡奶油和鲜奶茶，收获不同口感体验\"",
-    "use_spec": false,
-    "stock": "9999142.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "奈雪清欢乌龙宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/10/ddba4cf4efe4036f3a.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31537,
-    "pack_cost": "0.00",
-    "sales": 36724,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1215,
-        "code": "Z5D5E436D69F123375",
-        "value": "标准(奶油顶)" },
-      {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5D5E436D6A3C97065",
-        "value": "换奶盖" }],
-
-      "name": "配料",
-      "id": 347 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2C76E802F9971",
-        "value": "标准冰" },
-      {
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2C76E79148820",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2C76E7CB97862",
-        "value": "温" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2C76E839C6537",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DB24D584C3643652",
-        "value": "标准糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040017",
-      "id": "acb74a29da52f86a",
-      "stock": "1000086.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/28/74ae56edf6e8a8a2ea.jpg",
-      "num": 1,
-      "price": 21,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 2,
-    "price": 21,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/10/28/74ae56edf6e8a8a2ea.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以鲜牛奶为底，不含茶，加入手工熬煮Q弹黑糖珍珠。全新升级顶部加盖法国总统稀奶油，撒上香脆烤椰条，一勺加一吸管的装备，等你探索味蕾宝藏（本产品的甜度来源于食材本身，没有额外加糖，不能调整糖度）",
-    "use_spec": false,
-    "stock": "1000086.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "黑糖宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/28/74ae56edf6e8a8a2ea.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31539,
-    "pack_cost": "0.00",
-    "sales": 63462,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1215,
-        "code": "Z5D5E4694899BF3397",
-        "value": "标准(奶油顶)" },
-      {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5D5E469489E271743",
-        "value": "换奶盖" }],
-
-      "name": "配料",
-      "id": 347 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2CBDC1DA03229",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2CBDC223C5568",
-        "value": "温" },
-      {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2CBDC2A978507",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2CBDC2EC06314",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DB24DE85B7C89450",
-        "value": "标准糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040020",
-      "id": "d9bb2e315384e250",
-      "stock": "999422.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/09/10/b5b05d6c7bff587984.jpg",
-      "num": 1,
-      "price": 25,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 3,
-    "price": 25,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/09/10/b5b05d6c7bff587984.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以鲜牛奶为底，加入升级甄选的芋泥和芋圆，从全新加盖的奶油顶开始享用，还有烤椰条的入口，让饮茶更有FUN。 （本产品的甜度来源于食材本身，没有额外加糖，不能调整糖度）",
-    "use_spec": false,
-    "stock": "999422.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芋泥宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/09/10/b5b05d6c7bff587984.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31540,
-    "pack_cost": "0.00",
-    "sales": 34770,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1215,
-        "code": "Z5D5E47A626DFD7089",
-        "value": "标准(奶油顶)" },
-      {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5D5E47A62728E7883",
-        "value": "换奶盖" }],
-
-      "name": "配料",
-      "id": 347 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2CD29798D9088",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2CD297D2C7840",
-        "value": "温" },
-      {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2CD2980E82682",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2CD29845F7461",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DD782765E5D75879",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5DD782765E9927290",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5DD782765ED0A3809",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": "茶饮含糖量较低，推荐标准做法，口味更佳" }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040023",
-      "id": "ea94028944a81ad5",
-      "stock": "9902092.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/12/05/ea97748a1528cac999.jpg",
-      "num": 1,
-      "price": 25,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 4,
-    "price": 25,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/12/05/ea97748a1528cac999.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "金色山脉茶底加入香甜滑口的奶冻，甘冽的茶香搭配浓郁的奶香，还有嚼劲十足的黑糖珍珠配上Q弹滑爽的奶冻，奶油顶表面撒料的椰条，邀您在更香甜的酥脆中，感受宝藏茶的丰盛。",
-    "use_spec": false,
-    "stock": "9902092.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "金色山脉宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/12/05/ea97748a1528cac999.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 64563,
-    "pack_cost": "0.00",
-    "sales": 11528,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1256,
-        "code": "Z5E8EC41DDB7994007",
-        "value": "标准" },
-      {
-        "is_default": 0,
-        "id": 2877,
-        "code": "Z5E8EC41DDBBA71325",
-        "value": "奶油顶换酸奶" },
-      {
-        "is_default": 0,
-        "id": 2782,
-        "code": "Z5E8EC41DDC2A01429",
-        "value": "奶油顶换奶盖" },
-      {
-        "is_default": 0,
-        "id": 2783,
-        "code": "Z5E8EC41DDC6ED3831",
-        "value": "去奶油顶" }],
-
-      "name": "配料",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 1167,
-        "code": "Z5E8EC41DDCE542183",
-        "value": "标准（冰沙）" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5E8EC41DDD6386350",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5E8EC41DDDA5D9881",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5E8EC41DDDE9E9011",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040035",
-      "id": "766a1bdd56089a22",
-      "stock": "99999349.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/26/79187a01f23e6f1e66.jpg",
-      "num": 1,
-      "price": 27,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 5,
-    "price": 27,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/26/79187a01f23e6f1e66.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "①、舀：品尝入口即化进口淡奶油搭配新鲜芒果颗粒；\n②、搅：吸管搅动半杯料；\n③、吸：手工现煮水晶和奶冻、饱满进口红西柚颗粒",
-    "use_spec": false,
-    "stock": "99999349.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "杨枝甘露宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/26/79187a01f23e6f1e66.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 64565,
-    "pack_cost": "0.00",
-    "sales": 1312,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 1167,
-        "code": "Z5E8EC7A280B3B7217",
-        "value": "标准（冰沙）" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5E8EC7A2817EB6840",
-        "value": "标准糖" },
-      {
-        "is_default": 0,
-        "id": 586,
-        "code": "Z5E8EC7A281CEF4540",
-        "value": "少糖" },
-      {
-        "is_default": 0,
-        "id": 1959,
-        "code": "Z5E8EC7A28213C1795",
-        "value": "不另外加糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040036",
-      "id": "54e0be7204fc75b7",
-      "stock": "99999841.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/26/edf9dd62faf1ef59e6.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 6,
-    "price": 28,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/26/edf9dd62faf1ef59e6.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "吸入手工现煮水晶和奶冻,搭配饱满进口红西柚颗粒,顶部加上一颗冰淇淋球",
-    "use_spec": false,
-    "stock": "99999841.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "杨枝甘露冰淇淋宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/26/edf9dd62faf1ef59e6.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 59962,
-    "pack_cost": "0.00",
-    "sales": 5928,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1256,
-        "code": "Z5E868CFF52ECC9249",
-        "value": "标准" },
-      {
-        "is_default": 0,
-        "id": 2782,
-        "code": "Z5E868CFF533E84000",
-        "value": "奶油顶换奶盖" },
-      {
-        "is_default": 0,
-        "id": 2853,
-        "code": "Z5E868CFF539CB2730",
-        "value": "去红豆爆爆珠" },
-      {
-        "is_default": 0,
-        "id": 2854,
-        "code": "Z5E868CFF53DCC3512",
-        "value": "去维他豆奶冻" },
-      {
-        "is_default": 0,
-        "id": 2860,
-        "code": "Z5E868CFF542252778",
-        "value": "去红豆爆爆珠和维他豆奶冻" }],
-
-      "name": "配料",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 582,
-        "code": "Z5E81D4FE3CC801440",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E81D4FE3D0829383",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 584,
-        "code": "Z5E81D4FE3D4744058",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E81D4FE3D8859124",
-        "value": "温" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5E81D4FE3E5616034",
-        "value": "标准糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040034",
-      "id": "f177d3922c20e9ea",
-      "stock": "99999479.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2020/04/03/7a1e4f9543edbbb5fb.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 7,
-    "price": 28,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/03/7a1e4f9543edbbb5fb.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "\"春季限定产品\n①、进口淡奶油加入新鲜火龙果汁调色成粉色，搭配厚厚一层豆粉\n②、插入吸管搅拌超多底料；\n③、吸一口感受清香茉莉初雪茶、顺滑奶冻和红豆爆爆珠的口感\n（产品甜度来源于食材本身，不能调整糖度）\"",
-    "use_spec": false,
-    "stock": "99999479.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "樱花宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2020/04/03/7a1e4f9543edbbb5fb.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 46758,
-    "pack_cost": "0.00",
-    "sales": 9358,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1829,
-        "code": "Z5E19DB100F8ED5977",
-        "value": "标准配料" },
-      {
-        "is_default": 0,
-        "id": 2200,
-        "code": "Z5E19DB10102046574",
-        "value": "红豆沙换红豆爆爆珠" },
-      {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5E19DB101069C2680",
-        "value": "换奶盖" },
-      {
-        "is_default": 0,
-        "id": 2197,
-        "code": "Z5E19DB1010A859752",
-        "value": "去红豆沙" },
-      {
-        "is_default": 0,
-        "id": 2198,
-        "code": "Z5E19DB1010E9D2926",
-        "value": "去维他奶冻" },
-      {
-        "is_default": 0,
-        "id": 2199,
-        "code": "Z5E19DB10112BF3000",
-        "value": "去红豆沙和维他奶冻" }],
-
-      "name": "配料",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2C0D607C51082",
-        "value": "标准冰" },
-      {
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2C0D612ED2717",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2C0D616667150",
-        "value": "温" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2C0D60BEF2246",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5E5E2C0D60F919911",
-        "value": "冰沙" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DFAE77C0E12C8450",
-        "value": "标准糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040031",
-      "id": "e2ba0b52b93189b7",
-      "stock": "9999213.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/12/19/cc5a2e76edcd0c8667.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 28,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/12/19/cc5a2e76edcd0c8667.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "维他奶原味豆奶加入日本精选特质的抹茶粉、泥状红豆沙、入口即化，顶部是醇香奶油和厚厚豆粉",
-    "use_spec": false,
-    "stock": "9999213.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "维他奶豆奶宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/12/19/cc5a2e76edcd0c8667.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 37058,
-    "pack_cost": "0.00",
-    "sales": 18522,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": true,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1215,
-        "code": "Z5DB250C4DD1F98266",
-        "value": "标准(奶油顶)" },
-      {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5DB250C4DD6787331",
-        "value": "换奶盖" },
-      {
-        "is_default": 0,
-        "id": 1794,
-        "code": "Z5DB250C4DDA063068",
-        "value": "去黑糖珍珠" },
-      {
-        "is_default": 0,
-        "id": 1795,
-        "code": "Z5DB250C4DDDAC5510",
-        "value": "去旺仔奶冻" },
-      {
-        "is_default": 0,
-        "id": 1796,
-        "code": "Z5DB250C4DE10C1138",
-        "value": "黑糖珍珠换旺仔奶冻" }],
-
-      "name": "配料",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2C4E57CDF5900",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2C4E580FC8330",
-        "value": "温" },
-      {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2C4E584CC6352",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2C4E5889B2822",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5E5E2C4E58C785990",
-        "value": "冰沙" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DABF3E46547A8514",
-        "value": "标准糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040029",
-      "id": "c4a6c3501d658add",
-      "stock": "99999486.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/20/4b22b689015cf8dbb7.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 28,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/10/20/4b22b689015cf8dbb7.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "黑色爆谷米加费列罗，低温研磨而成的黑芝麻酱混合榛子奶，酱香味浓郁(本产品的甜度来源于食材本身，没有额外加糖，不能调整糖度)",
-    "use_spec": false,
-    "stock": "99999486.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "老佛爷宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/20/4b22b689015cf8dbb7.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 37055,
-    "pack_cost": "0.00",
-    "sales": 90199,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1215,
-        "code": "Z5DB250B32C85D6736",
-        "value": "标准(奶油顶)" },
-      {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5DB250B32CCB22003",
-        "value": "换奶盖" },
-      {
-        "is_default": 0,
-        "id": 1794,
-        "code": "Z5DB250B32D1355967",
-        "value": "去黑糖珍珠" },
-      {
-        "is_default": 0,
-        "id": 1795,
-        "code": "Z5DB250B32D7EE9440",
-        "value": "去旺仔奶冻" },
-      {
-        "is_default": 0,
-        "id": 1796,
-        "code": "Z5DB250B32DE6A2354",
-        "value": "黑糖珍珠换旺仔奶冻" }],
-
-      "name": "配料",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2C2321B238817",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2C2321EF85781",
-        "value": "温" },
-      {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2C23222EB8554",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2C23226911326",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5E5E2C23229FC5210",
-        "value": "冰沙" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DABF370BB8A43330",
-        "value": "标准糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040028",
-      "id": "e27d84349ef37fa9",
-      "stock": "99998959.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/20/9fedfc4418663d1de8.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 28,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/10/20/9fedfc4418663d1de8.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "顶部酥脆山核桃碎搭配费列罗巧克力，加入榛子奶、旺仔奶冻，口感丰富(本产品的甜度来源于食材本身，没有额外加糖，不能调整糖度)",
-    "use_spec": false,
-    "stock": "99998959.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "Miss可可宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/20/9fedfc4418663d1de8.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 46756,
-    "pack_cost": "0.00",
-    "sales": 1494,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1829,
-        "code": "Z5E19DB65BE87A9872",
-        "value": "标准配料" },
-      {
-        "is_default": 0,
-        "id": 2200,
-        "code": "Z5E19DB65BF0B39470",
-        "value": "红豆沙换红豆爆爆珠" },
-      {
-        "is_default": 0,
-        "id": 2197,
-        "code": "Z5E19DB65BF4566485",
-        "value": "去红豆沙" },
-      {
-        "is_default": 0,
-        "id": 2198,
-        "code": "Z5E19DB65BF7BC1240",
-        "value": "去维他奶冻" },
-      {
-        "is_default": 0,
-        "id": 2199,
-        "code": "Z5E19DB65BFB9D1406",
-        "value": "去红豆沙和维他奶冻" }],
-
-      "name": "配料",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 1210,
-        "code": "Z5DFAE6B10829E9708",
-        "value": "标准（去冰）" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DFAE6B1089347085",
-        "value": "标准糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040030",
-      "id": "71f657723173b3dd",
-      "stock": "999999574.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/12/19/83e687b8fa13b44ee4.jpg",
-      "num": 1,
-      "price": 33,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 100,
-    "price": 33,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/12/19/83e687b8fa13b44ee4.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "奈雪以维他奶原味豆奶的经典蓝色利乐包装为创意灵感，等比打造了一个plus版的维他奶限量宝藏瓶（附赠PVC袋）",
-    "use_spec": false,
-    "stock": "999999574.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "维他奶豆奶宝藏瓶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/12/19/83e687b8fa13b44ee4.jpg?imageView2/2/w/400/h/400" }],
-
-  "name": "宝藏鲜奶茶",
-  "is_show_backstage": 0 },
-{
-  "sort": 13,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/30/458c5a14fb2f190f96.png?imageView2/0/w/200/h/200",
-  "id": 4669,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 31539,
-    "pack_cost": "0.00",
-    "sales": 63462,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 1215,
-        "code": "Z5D5E4694899BF3397",
-        "value": "标准(奶油顶)" },
-      {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5D5E469489E271743",
-        "value": "换奶盖" }],
-
-      "name": "配料",
-      "id": 347 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2CBDC1DA03229",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2CBDC223C5568",
-        "value": "温" },
-      {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2CBDC2A978507",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2CBDC2EC06314",
-        "value": "去冰" }],
-
-      "name": "温度",
-      "id": 190 },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DB24DE85B7C89450",
-        "value": "标准糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040020",
-      "id": "d9bb2e315384e250",
-      "stock": "999422.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/09/10/b5b05d6c7bff587984.jpg",
-      "num": 1,
-      "price": 25,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 3,
-    "price": 25,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/09/10/b5b05d6c7bff587984.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以鲜牛奶为底，加入升级甄选的芋泥和芋圆，从全新加盖的奶油顶开始享用，还有烤椰条的入口，让饮茶更有FUN。 （本产品的甜度来源于食材本身，没有额外加糖，不能调整糖度）",
-    "use_spec": false,
-    "stock": "999422.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "芋泥宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/09/10/b5b05d6c7bff587984.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 37055,
-    "pack_cost": "0.00",
-    "sales": 90199,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 347,
-      "values": [{
-        "is_default": 1,
-        "id": 1215,
-        "code": "Z5DB250B32C85D6736",
-        "value": "标准(奶油顶)" },
-      {
-        "is_default": 0,
-        "id": 1216,
-        "code": "Z5DB250B32CCB22003",
-        "value": "换奶盖" },
-      {
-        "is_default": 0,
-        "id": 1794,
-        "code": "Z5DB250B32D1355967",
-        "value": "去黑糖珍珠" },
-      {
-        "is_default": 0,
-        "id": 1795,
-        "code": "Z5DB250B32D7EE9440",
-        "value": "去旺仔奶冻" },
-      {
-        "is_default": 0,
-        "id": 1796,
-        "code": "Z5DB250B32DE6A2354",
-        "value": "黑糖珍珠换旺仔奶冻" }],
-
-      "name": "配料",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 584,
-        "code": "Z5E5E2C2321B238817",
-        "value": "热" },
-      {
-        "is_default": 0,
-        "id": 2544,
-        "code": "Z5E5E2C2321EF85781",
-        "value": "温" },
-      {
-        "is_default": 0,
-        "id": 582,
-        "code": "Z5E5E2C23222EB8554",
-        "value": "标准冰" },
-      {
-        "is_default": 0,
-        "id": 583,
-        "code": "Z5E5E2C23226911326",
-        "value": "去冰" },
-      {
-        "is_default": 0,
-        "id": 1164,
-        "code": "Z5E5E2C23229FC5210",
-        "value": "冰沙" }],
-
-      "name": "温度",
-      "desc": null },
-    {
-      "is_open_checkbox": false,
-      "id": 191,
-      "values": [{
-        "is_default": 1,
-        "id": 585,
-        "code": "Z5DABF370BB8A43330",
-        "value": "标准糖" }],
-
-      "name": "糖度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1010040028",
-      "id": "e27d84349ef37fa9",
-      "stock": "99998959.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/10/20/9fedfc4418663d1de8.jpg",
-      "num": 1,
-      "price": 28,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 28,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/10/20/9fedfc4418663d1de8.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "顶部酥脆山核桃碎搭配费列罗巧克力，加入榛子奶、旺仔奶冻，口感丰富(本产品的甜度来源于食材本身，没有额外加糖，不能调整糖度)",
-    "use_spec": false,
-    "stock": "99998959.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "Miss可可宝藏茶",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/10/20/9fedfc4418663d1de8.jpg?imageView2/2/w/400/h/400" }],
-
-  "name": "热饮推荐",
-  "is_show_backstage": 0 },
-{
-  "sort": 16,
-  "icon": "https://img-shop.qmimg.cn/s23107/2019/04/28/612503f0fb3cd4ca74.png?imageView2/0/w/200/h/200",
-  "id": 2924,
-  "goods_list": [{
-    "sell_time_status": 0,
-    "id": 46760,
-    "pack_cost": "0.00",
-    "sales": 1185,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "id": 190,
-      "values": [{
-        "is_default": 1,
-        "id": 612,
-        "code": "Z5DFAE7EFE9ECD9078",
-        "value": "冷" }],
-
-      "name": "温度",
-      "desc": null }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1313010014",
-      "id": "c54eef36afbc6949",
-      "stock": "999999903.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/12/19/e38b66de6f9521af49.jpg",
-      "num": 1,
-      "price": 15,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 15,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/12/19/e38b66de6f9521af49.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "维他奶原味豆奶和芋圆、芝士的口味碰撞，小小一杯藏着多层惊喜",
-    "use_spec": false,
-    "stock": "999999903.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "维他奶芋圆芝士杯",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/12/19/e38b66de6f9521af49.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31542,
-    "pack_cost": "0.00",
-    "sales": 842,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "id": 1284,
-        "code": "Z5D5E4AE5E42809400",
-        "value": "标准(奥利奥)" },
-      {
-        "id": 1285,
-        "code": "Z5D5E4AE5E49D05653",
-        "value": "换草莓" },
-      {
-        "id": 1282,
-        "code": "Z5D5E4AE5E50B26372",
-        "value": "换芒果" }],
-
-      "name": "配料",
-      "id": 347 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "id": 612,
-        "code": "Z5D5E4AE5E581D2537",
-        "value": "冷" }],
-
-      "name": "温度",
-      "id": 190 }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1313010011",
-      "id": "6a0750fab695d833",
-      "stock": "1000040.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/06/26/665c6e9b5d26ec9050.jpg",
-      "num": 1,
-      "price": 25,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 25,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/06/26/665c6e9b5d26ec9050.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以芬芳绵细的香草冰淇淋雪球，搭配奥利奥饼干碎，清爽中透出深邃气质。",
-    "use_spec": false,
-    "stock": "1000040.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "金酒杯香草雪球",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/06/26/665c6e9b5d26ec9050.jpg?imageView2/2/w/400/h/400" },
-  {
-    "sell_time_status": 0,
-    "id": 31541,
-    "pack_cost": "0.00",
-    "sales": 2417,
-    "cover_img": "",
-    "property": [{
-      "is_open_checkbox": false,
-      "values": [{
-        "id": 1281,
-        "code": "Z5D5E4A463E8055728",
-        "value": "标准(草莓)" },
-      {
-        "id": 1282,
-        "code": "Z5D5E4A463F1912904",
-        "value": "换芒果" },
-      {
-        "id": 1283,
-        "code": "Z5D5E4A463FABD4950",
-        "value": "换奥利奥" }],
-
-      "name": "配料",
-      "id": 347 },
-    {
-      "is_open_checkbox": false,
-      "values": [{
-        "id": 612,
-        "code": "Z5D5E4A46406F16077",
-        "value": "冷" }],
-
-      "name": "温度",
-      "id": 190 }],
-
-    "is_sell": true,
-    "goods_type": 2,
-    "entity": [{
-      "spec_id": "",
-      "trade_mark": "1313010010",
-      "id": "a9730df9826ea5f5",
-      "stock": "1000040.00",
-      "spec_text": [],
-      "spec": [],
-      "image": "s23107/2019/06/27/3ba3f1ebc4f0b52882.jpg",
-      "num": 1,
-      "price": 25,
-      "membership_price": 0 }],
-
-    "stall_code": "",
-    "sort": 99,
-    "price": 25,
-    "unit": "件",
-    "imageArr": [
-    "https://img-shop.qmimg.cn/s23107/2019/06/27/3ba3f1ebc4f0b52882.jpg?imageView2/2/w/600/h/600"],
-
-    "membership_price": 0,
-    "use_property": 1,
-    "unit_type": 0,
-    "min_buy_num": 0,
-    "specs": [],
-    "content": "以浓醇绵柔的椰子冰淇淋雪球，混搭草莓果肉与Q滑晶冻，你会被她的热烈和艳丽感染。",
-    "use_spec": false,
-    "stock": "1000040.00",
-    "type": 1,
-    "is_label": 0,
-    "name": "金酒杯椰子雪球",
-    "images": "https://img-shop.qmimg.cn/s23107/2019/06/27/3ba3f1ebc4f0b52882.jpg?imageView2/2/w/400/h/400" }],
-
-  "name": "美好甜品",
-  "is_show_backstage": 0 }];exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = _default;var r = function r(_r) {return function (r) {return !!r && "object" == typeof r;}(_r) && !function (r) {var t = Object.prototype.toString.call(r);return "[object RegExp]" === t || "[object Date]" === t || function (r) {return r.$$typeof === e;}(r);}(_r);},e = "function" == typeof Symbol && Symbol.for ? Symbol.for("react.element") : 60103;function t(r, e) {return !1 !== e.clone && e.isMergeableObject(r) ? c(Array.isArray(r) ? [] : {}, r, e) : r;}function n(r, e, n) {return r.concat(e).map(function (r) {return t(r, n);});}function o(r) {return Object.keys(r).concat(function (r) {return Object.getOwnPropertySymbols ? Object.getOwnPropertySymbols(r).filter(function (e) {return r.propertyIsEnumerable(e);}) : [];}(r));}function u(r, e) {try {return e in r;} catch (r) {return !1;}}function c(e, i, a) {(a = a || {}).arrayMerge = a.arrayMerge || n, a.isMergeableObject = a.isMergeableObject || r, a.cloneUnlessOtherwiseSpecified = t;var f = Array.isArray(i);return f === Array.isArray(e) ? f ? a.arrayMerge(e, i, a) : function (r, e, n) {var i = {};return n.isMergeableObject(r) && o(r).forEach(function (e) {i[e] = t(r[e], n);}), o(e).forEach(function (o) {(function (r, e) {return u(r, e) && !(Object.hasOwnProperty.call(r, e) && Object.propertyIsEnumerable.call(r, e));})(r, o) || (i[o] = u(r, o) && n.isMergeableObject(e[o]) ? function (r, e) {if (!e.customMerge) return c;var t = e.customMerge(r);return "function" == typeof t ? t : c;}(o, n)(r[o], e[o], n) : t(e[o], n));}), i;}(e, i, a) : t(i, a);}c.all = function (r, e) {if (!Array.isArray(r)) throw new Error("first argument should be an array");return r.reduce(function (r, t) {return c(r, t, e);}, {});};var i = c;function _default(r) {var e = (r = r || {}).storage || window && window.localStorage,t = r.key || "vuex";(r.assertStorage || function () {e.setItem("@@", 1), e.removeItem("@@");})(e);var n,o = function o() {return (r.getState || function (r, e) {var t;try {return (t = e.getItem(r)) && void 0 !== t ? JSON.parse(t) : void 0;} catch (r) {}})(t, e);};return r.fetchBeforeUse && (n = o()), function (u) {r.fetchBeforeUse || (n = o()), "object" == typeof n && null !== n && (u.replaceState(r.overwrite ? n : i(u.state, n, { arrayMerge: r.arrayMerger || function (r, e) {return e;}, clone: !1 })), (r.rehydrated || function () {})(u)), (r.subscriber || function (r) {return function (e) {return r.subscribe(e);};})(u)(function (n, o) {(r.filter || function () {return !0;})(n) && (r.setState || function (r, e, t) {return t.setItem(r, JSON.stringify(e));})(t, (r.reducer || function (r, e) {return Array.isArray(e) ? e.reduce(function (e, t) {return function (r, e, t, n) {return (e = e.split ? e.split(".") : e).slice(0, -1).reduce(function (r, e) {return r[e] = r[e] || {};}, r)[e.pop()] = t, r;}(e, t, function (r, e, t) {return void 0 === (r = (e.split ? e.split(".") : e).reduce(function (r, e) {return r && r[e];}, r)) ? void 0 : r;}(r, t));}, {}) : r;})(o, r.paths), e);});};}
 
 /***/ }),
 
-/***/ 19:
-/*!***********************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/level-benefits.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [{
-  "picture": "https://images.qmai.cn/s33123/2020/01/20/f6bdc61b9356e87d03.jpg",
-  "cardName": "V1",
-  "benefitsSummaries": [{
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 2 }],
-
-    "benefitsName": "开卡特权",
-    "benefitsType": 0 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "会员日特权",
-    "benefitsType": 4 }],
-
-
-  "level": 1 },
-
-{
-  "picture": "https://images.qmai.cn/s33123/2020/01/20/fd13fff0e873b8c06d.jpg",
-  "cardName": "V2",
-  "benefitsSummaries": [{
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 2 }],
-
-    "benefitsName": "升级特权",
-    "benefitsType": 1 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "生日特权",
-    "benefitsType": 3 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "会员日特权",
-    "benefitsType": 4 }],
-
-
-  "level": 2 },
-
-{
-  "picture": "https://images.qmai.cn/s33123/2020/01/20/a292980f9803aa4504.jpg",
-  "cardName": "V3",
-  "benefitsSummaries": [{
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 3 }],
-
-    "benefitsName": "升级特权",
-    "benefitsType": 1 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "生日特权",
-    "benefitsType": 3 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "会员日特权",
-    "benefitsType": 4 }],
-
-
-  "level": 3 },
-
-{
-  "picture": "https://images.qmai.cn/s33123/2020/01/20/6fc9b939b9912c4387.jpg",
-  "cardName": "V4",
-  "benefitsSummaries": [{
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 3 }],
-
-    "benefitsName": "升级特权",
-    "benefitsType": 1 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "生日特权",
-    "benefitsType": 3 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "会员日特权",
-    "benefitsType": 4 }],
-
-
-  "level": 4 },
-
-{
-  "picture": "https://images.qmai.cn/s33123/2020/01/20/460bdca3e1e7f87def.jpg",
-  "cardName": "V5",
-  "benefitsSummaries": [{
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 6 }],
-
-    "benefitsName": "升级特权",
-    "benefitsType": 1 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "生日特权",
-    "benefitsType": 3 }],
-
-
-  "level": 5 },
-
-{
-  "picture": "https://images.qmai.cn/s33123/2020/01/20/508ea53092bcf504f3.jpg",
-  "cardName": "V6",
-  "benefitsSummaries": [{
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 6 }],
-
-    "benefitsName": "升级特权",
-    "benefitsType": 1 },
-
-  {
-    "benefitsItemSummaries": [{
-      "unitType": 0,
-      "benefitsType": 0,
-      "num": 1 }],
-
-    "benefitsName": "生日特权",
-    "benefitsType": 3 }],
-
-
-  "level": 6 }];exports.default = _default;
-
-/***/ }),
-
-/***/ 198:
+/***/ 186:
 /*!*******************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/common/uqrcode.js ***!
   \*******************************************************************************/
@@ -13635,6 +4656,132 @@ var uQRCode = {};
 
 uQRCode;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 19:
+/*!********************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/index.js ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+var _mixin = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mixin.js */ 20));
+
+var _mpShare = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mpShare.js */ 21));
+
+var _request = _interopRequireDefault(__webpack_require__(/*! ./libs/request */ 22));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _queryParams = _interopRequireDefault(__webpack_require__(/*! ./libs/function/queryParams.js */ 26));
+
+var _route = _interopRequireDefault(__webpack_require__(/*! ./libs/function/route.js */ 27));
+
+var _timeFormat = _interopRequireDefault(__webpack_require__(/*! ./libs/function/timeFormat.js */ 28));
+
+var _timeFrom = _interopRequireDefault(__webpack_require__(/*! ./libs/function/timeFrom.js */ 29));
+
+var _colorGradient = _interopRequireDefault(__webpack_require__(/*! ./libs/function/colorGradient.js */ 30));
+
+var _guid = _interopRequireDefault(__webpack_require__(/*! ./libs/function/guid.js */ 31));
+
+var _color = _interopRequireDefault(__webpack_require__(/*! ./libs/function/color.js */ 32));
+
+var _type2icon = _interopRequireDefault(__webpack_require__(/*! ./libs/function/type2icon.js */ 33));
+
+var _randomArray = _interopRequireDefault(__webpack_require__(/*! ./libs/function/randomArray.js */ 34));
+
+var _deepClone = _interopRequireDefault(__webpack_require__(/*! ./libs/function/deepClone.js */ 24));
+
+var _deepMerge = _interopRequireDefault(__webpack_require__(/*! ./libs/function/deepMerge.js */ 23));
+
+
+var _test = _interopRequireDefault(__webpack_require__(/*! ./libs/function/test.js */ 25));
+
+var _random = _interopRequireDefault(__webpack_require__(/*! ./libs/function/random.js */ 35));
+
+var _trim = _interopRequireDefault(__webpack_require__(/*! ./libs/function/trim.js */ 36));
+
+var _toast = _interopRequireDefault(__webpack_require__(/*! ./libs/function/toast.js */ 37));
+
+
+
+var _config = _interopRequireDefault(__webpack_require__(/*! ./libs/config/config.js */ 38));
+
+var _zIndex = _interopRequireDefault(__webpack_require__(/*! ./libs/config/zIndex.js */ 39));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // 引入全局mixin
+// 引入关于是否mixin集成小程序分享的配置
+// 全局挂载引入http相关请求拦截插件
+function wranning(str) {// 开发环境进行信息输出,主要是一些报错信息
+  // 这个环境的来由是在程序编写时候,点击hx编辑器运行调试代码的时候,详见:
+  // 	https://uniapp.dcloud.io/frame?id=%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83%e5%92%8c%e7%94%9f%e4%ba%a7%e7%8e%af%e5%a2%83
+  if (true) {console.warn(str);}} // 尝试判断在根目录的/store中是否有$u.mixin.js，此文件uView默认为需要挂在到全局的vuex的state变量
+// HX2.6.11版本,放到try中,控制台依然会警告,暂时不用此方式，
+// let vuexStore = {};
+// try {
+// 	vuexStore = require("@/store/$u.mixin.js");
+// } catch (e) {
+// 	//TODO handle the exception
+// }
+// post类型对象参数转为get类型url参数
+var $u = { queryParams: _queryParams.default, route: _route.default, timeFormat: _timeFormat.default, date: _timeFormat.default, // 另名date
+  timeFrom: _timeFrom.default, colorGradient: _colorGradient.default.colorGradient, guid: _guid.default, color: _color.default, type2icon: _type2icon.default, randomArray: _randomArray.default, wranning: wranning, get: _request.default.get, post: _request.default.post, put: _request.default.put,
+  'delete': _request.default.delete,
+  hexToRgb: _colorGradient.default.hexToRgb,
+  rgbToHex: _colorGradient.default.rgbToHex,
+  test: _test.default,
+  random: _random.default,
+  deepClone: _deepClone.default,
+  deepMerge: _deepMerge.default,
+  trim: _trim.default,
+  type: ['primary', 'success', 'error', 'warning', 'info'],
+  http: _request.default,
+  toast: _toast.default,
+  config: _config.default, // uView配置信息相关，比如版本号
+  zIndex: _zIndex.default };
+
+
+var install = function install(Vue) {
+  Vue.mixin(_mixin.default);
+  if (Vue.prototype.openShare) {
+    Vue.mixin(mpShare);
+  }
+  // Vue.mixin(vuexStore);
+  // 时间格式化，同时两个名称，date和timeFormat
+  Vue.filter('timeFormat', function (timestamp, format) {
+    return (0, _timeFormat.default)(timestamp, format);
+  });
+  Vue.filter('date', function (timestamp, format) {
+    return (0, _timeFormat.default)(timestamp, format);
+  });
+  // 将多久以前的方法，注入到全局过滤器
+  Vue.filter('timeFrom', function (timestamp, format) {
+    return (0, _timeFrom.default)(timestamp, format);
+  });
+  Vue.prototype.$u = $u;
+};var _default =
+
+{
+  install: install };exports.default = _default;
 
 /***/ }),
 
@@ -19683,2091 +10830,770 @@ internalMixin(Vue);
 /***/ }),
 
 /***/ 20:
-/*!***************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/member.js ***!
-  \***************************************************************************/
+/*!*******************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/mixin/mixin.js ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _storeId$mobilePhone$;function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var _default = (_storeId$mobilePhone$ = {
-  "storeId": null,
-  "mobilePhone": "18666600000",
-  "nickname": "tinypuppet",
-  "avatar": "/static/images/mine/default.png",
-  "country": "",
-  "cardName": "V2",
-  "memberLevel": 2,
-  "city": "",
-  "cardNo": "39390020696322222",
-  "openingCardDate": "2018-10-20 15:10:10",
-  "customerId": "343400246943295100",
-  "district": null,
-  "unionId": "",
-  "address": null,
-  "storeName": null,
-  "gender": 1,
-  "province": "",
-  "memberOrigin": "wechat",
-  "username": "我是新人",
-  "memberLevelName": "VIP2",
-  "birthday": "",
-  "pointNum": 413,
-  "couponNum": 6,
-  "rechargeBalance": null,
-  "balance": 0,
-  "giftBalance": 0,
-  "expenseAmount": null,
-  "conditionType": 3,
-  "ruleList": null,
-  "expiredTime": null,
-  "currentValue": 410,
-  "level": 2,
-  "cardUrl": "https://images.qmai.cn/s33123/2020/01/20/fd13fff0e873b8c06d.jpg",
-  "needValue": 90 }, _defineProperty(_storeId$mobilePhone$, "cardName",
-"V2"), _defineProperty(_storeId$mobilePhone$,
-"max", false), _storeId$mobilePhone$);exports.default = _default;
+/* WEBPACK VAR INJECTION */(function(uni) {module.exports = {
+  data: function data() {
+    return {};
+  },
+  onLoad: function onLoad() {
+    // getRect挂载到$u上，因为这方法需要使用in(this)，所以无法把它独立成一个单独的文件导出
+    this.$u.getRect = this.$uGetRect;
+  },
+  methods: {
+    // 查询节点信息
+    $uGetRect: function $uGetRect(selector, all) {var _this = this;
+      return new Promise(function (resolve) {
+        uni.createSelectorQuery().
+        in(_this)[all ? 'selectAll' : 'select'](selector).
+        boundingClientRect(function (rect) {
+          if (all && Array.isArray(rect) && rect.length) {
+            resolve(rect);
+          }
+          if (!all && rect) {
+            resolve(rect);
+          }
+        }).
+        exec();
+      });
+    } },
+
+  onReachBottom: function onReachBottom() {
+    uni.$emit('uOnReachBottom');
+  } };
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
 /***/ 21:
-/*!**********************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/rechargeCards.js ***!
-  \**********************************************************************************/
+/*!*********************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/mixin/mpShare.js ***!
+  \*********************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [
-{
-  "updated_at": "2020-05-03 20:31:46",
-  "id": 1948,
-  "sales": 314,
-  "image": "/s1000106/2018/07/09/cfbc38cae535a8ad8a.jpeg",
-  "value": "100.00",
-  "deleted_at": null,
-  "sort": 999,
-  "status_text": "启用",
-  "status": 1,
-  "created_at": "2020-01-03 15:46:36",
-  "desc": "1. 储值成功后，不可退款，请根据自己的消费情况充值。\n2. 储值余额不可提现，不可转移、转赠。\n3. 储值金额按国家法律、法规开具符合规定的发票，后续凭储值余额消费时，不再开具发票。如需发票请至奈雪点单小程序个人中心联系客服。\n4. 储值不累计会员成长值、积分与宝石，订单消费时以实际订单支付金额累计会员成长值、积分与宝石。\n5. 储值余额可在奈雪的茶内地线下门店、奈雪酒屋全国门店、奈雪点单小程序在线支付使用。",
-  "store_id": 23107,
-  "gifts": [],
-  "type": 0,
-  "full_image": "https://img-shop.qmimg.cn/s1000106/2018/07/09/cfbc38cae535a8ad8a.jpeg",
-  "name": "100元",
-  "sell_price": "100.00" },
-
-{
-  "updated_at": "2020-05-02 21:59:50",
-  "id": 1972,
-  "sales": 112,
-  "image": "/s1000106/2018/07/09/cfbc38cae535a8ad8a.jpeg",
-  "value": "200.00",
-  "deleted_at": null,
-  "sort": 999,
-  "status_text": "启用",
-  "status": 1,
-  "created_at": "2020-01-09 23:37:52",
-  "desc": "1. 储值成功后，不可退款，请根据自己的消费情况充值。\n2. 储值余额不可提现，不可转移、转赠。\n3. 储值金额按国家法律、法规开具符合规定的发票，后续凭储值余额消费时，不再开具发票。如需发票请至奈雪点单小程序个人中心联系客服。\n4. 储值不累计会员成长值、积分与宝石，订单消费时以实际订单支付金额累计会员成长值、积分与宝石。\n5. 储值余额可在奈雪的茶内地线下门店、奈雪酒屋全国门店、奈雪点单小程序在线支付使用。",
-  "store_id": 23107,
-  "gifts": [],
-  "type": 0,
-  "full_image": "https://img-shop.qmimg.cn/s1000106/2018/07/09/cfbc38cae535a8ad8a.jpeg",
-  "name": "200元",
-  "sell_price": "200.00" },
-
-{
-  "updated_at": "2020-05-01 20:19:41",
-  "id": 1973,
-  "sales": 31,
-  "image": "/s1000106/2018/07/09/cfbc38cae535a8ad8a.jpeg",
-  "value": "300.00",
-  "deleted_at": null,
-  "sort": 999,
-  "status_text": "启用",
-  "status": 1,
-  "created_at": "2020-01-09 23:38:10",
-  "desc": "1. 储值成功后，不可退款，请根据自己的消费情况充值。\n2. 储值余额不可提现，不可转移、转赠。\n3. 储值金额按国家法律、法规开具符合规定的发票，后续凭储值余额消费时，不再开具发票。如需发票请至奈雪点单小程序个人中心联系客服。\n4. 储值不累计会员成长值、积分与宝石，订单消费时以实际订单支付金额累计会员成长值、积分与宝石。\n5. 储值余额可在奈雪的茶内地线下门店、奈雪酒屋全国门店、奈雪点单小程序在线支付使用。",
-  "store_id": 23107,
-  "gifts": [],
-  "type": 0,
-  "full_image": "https://img-shop.qmimg.cn/s1000106/2018/07/09/cfbc38cae535a8ad8a.jpeg",
-  "name": "300元",
-  "sell_price": "300.00" },
-
-{
-  "updated_at": "2020-05-03 13:12:35",
-  "id": 1974,
-  "sales": 14,
-  "image": "/s1000106/2018/07/09/cfbc38cae535a8ad8a.jpeg",
-  "value": "400.00",
-  "deleted_at": null,
-  "sort": 999,
-  "status_text": "启用",
-  "status": 1,
-  "created_at": "2020-01-09 23:38:30",
-  "desc": "1. 储值成功后，不可退款，请根据自己的消费情况充值。\n2. 储值余额不可提现，不可转移、转赠。\n3. 储值金额按国家法律、法规开具符合规定的发票，后续凭储值余额消费时，不再开具发票。如需发票请至奈雪点单小程序个人中心联系客服。\n4. 储值不累计会员成长值、积分与宝石，订单消费时以实际订单支付金额累计会员成长值、积分与宝石。\n5. 储值余额可在奈雪的茶内地线下门店、奈雪酒屋全国门店、奈雪点单小程序在线支付使用。",
-  "store_id": 23107,
-  "gifts": [],
-  "type": 0,
-  "full_image": "https://img-shop.qmimg.cn/s1000106/2018/07/09/cfbc38cae535a8ad8a.jpeg",
-  "name": "400元",
-  "sell_price": "400.00" },
-
-{
-  "updated_at": "2020-04-18 07:43:07",
-  "id": 1975,
-  "sales": 7,
-  "image": "/s1000106/2018/07/09/cfbc38cae535a8ad8a.jpeg",
-  "value": "600.00",
-  "deleted_at": null,
-  "sort": 999,
-  "status_text": "启用",
-  "status": 1,
-  "created_at": "2020-01-09 23:38:44",
-  "desc": "1. 储值成功后，不可退款，请根据自己的消费情况充值。\n2. 储值余额不可提现，不可转移、转赠。\n3. 储值金额按国家法律、法规开具符合规定的发票，后续凭储值余额消费时，不再开具发票。如需发票请至奈雪点单小程序个人中心联系客服。\n4. 储值不累计会员成长值、积分与宝石，订单消费时以实际订单支付金额累计会员成长值、积分与宝石。\n5. 储值余额可在奈雪的茶内地线下门店、奈雪酒屋全国门店、奈雪点单小程序在线支付使用。",
-  "store_id": 23107,
-  "gifts": [],
-  "type": 0,
-  "full_image": "https://img-shop.qmimg.cn/s1000106/2018/07/09/cfbc38cae535a8ad8a.jpeg",
-  "name": "600元",
-  "sell_price": "600.00" },
-
-{
-  "updated_at": "2020-04-29 19:48:32",
-  "id": 1976,
-  "sales": 18,
-  "image": "/s1000106/2018/07/09/cfbc38cae535a8ad8a.jpeg",
-  "value": "800.00",
-  "deleted_at": null,
-  "sort": 999,
-  "status_text": "启用",
-  "status": 1,
-  "created_at": "2020-01-09 23:38:58",
-  "desc": "1. 储值成功后，不可退款，请根据自己的消费情况充值。\n2. 储值余额不可提现，不可转移、转赠。\n3. 储值金额按国家法律、法规开具符合规定的发票，后续凭储值余额消费时，不再开具发票。如需发票请至奈雪点单小程序个人中心联系客服。\n4. 储值不累计会员成长值、积分与宝石，订单消费时以实际订单支付金额累计会员成长值、积分与宝石。\n5. 储值余额可在奈雪的茶内地线下门店、奈雪酒屋全国门店、奈雪点单小程序在线支付使用。",
-  "store_id": 23107,
-  "gifts": [],
-  "type": 0,
-  "full_image": "https://img-shop.qmimg.cn/s1000106/2018/07/09/cfbc38cae535a8ad8a.jpeg",
-  "name": "800元",
-  "sell_price": "800.00" }];exports.default = _default;
+module.exports = {
+  onLoad: function onLoad() {
+    // 设置默认的转发参数
+    this.$u.mpShare = {
+      title: '', // 默认为小程序名称
+      path: '', // 默认为当前页面路径
+      imageUrl: '' // 默认为当前页面的截图
+    };
+  },
+  onShareAppMessage: function onShareAppMessage() {
+    return this.$u.mpShare;
+  } };
 
 /***/ }),
 
 /***/ 22:
-/*!******************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/addresses.js ***!
-  \******************************************************************************/
+/*!*********************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/request/index.js ***!
+  \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [{
-  "id": 1,
-  "name": "隔壁老王",
-  "mobile": "18666600000",
-  "province_name": "广东省",
-  "area": 440306,
-  "city": 440300,
-  "sex": 0,
-  "district": {
-    "districts": "广东省深圳市南山区",
-    "area": "宝安区",
-    "city": "深圳市",
-    "province": "广东省" },
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _deepMerge = _interopRequireDefault(__webpack_require__(/*! ../function/deepMerge */ 23));
+var _test = _interopRequireDefault(__webpack_require__(/*! ../function/test */ 25));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
+Request = /*#__PURE__*/function () {_createClass(Request, [{ key: "setConfig",
+    // 设置全局默认配置
+    value: function setConfig(customConfig) {
+      // 深度合并对象，否则会造成对象深层属性丢失
+      this.config = (0, _deepMerge.default)(this.config, customConfig);
+    }
 
-  "address": "有一间公寓八栋",
-  "inner": false,
-  "lat": "",
-  "door_number": "AB1234",
-  "is_default": 0,
-  "province": 440000,
-  "area_name": "南山区",
-  "city_name": "深圳市",
-  "poiname": "" },
-{
-  "id": 2,
-  "name": "黄女士",
-  "mobile": "18666610000",
-  "province_name": "广东省",
-  "area": 440306,
-  "city": 440300,
-  "sex": 1,
-  "district": {
-    "districts": "广东省深圳市南山区",
-    "area": "宝安区",
-    "city": "深圳市",
-    "province": "广东省" },
+    // 主要请求部分
+  }, { key: "request", value: function request() {var _this = this;var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      // 检查请求拦截
+      if (this.interceptor.request && typeof this.interceptor.request === 'function') {
+        var tmpConfig = {};
+        var interceptorReuest = this.interceptor.request(options);
+        if (interceptorReuest === false) {
+          return false;
+        }
+        this.options = interceptorReuest;
+      }
 
-  "address": "有两间公寓二栋",
-  "inner": false,
-  "lat": "",
-  "door_number": "AB5210",
-  "is_default": 0,
-  "province": 440000,
-  "area_name": "南山区",
-  "city_name": "深圳市",
-  "poiname": "" }];exports.default = _default;
+      options.dataType = options.dataType || this.config.dataType;
+      options.responseType = options.responseType || this.config.responseType;
+      options.url = options.url || '';
+      options.params = options.params || {};
+      options.header = Object.assign(this.config.header, options.header);
+      options.method = options.method || this.config.method;
+
+      return new Promise(function (resolve, reject) {
+        options.complete = function (response) {
+          // 请求返回后，隐藏loading(如果请求返回快的话，可能会没有loading)
+          uni.hideLoading();
+          // 清除定时器，如果请求回来了，就无需loading
+          clearTimeout(_this.config.timer);
+          // 判断用户对拦截返回数据的要求，如果originalData为true，返回所有的数据(response)到拦截器，否则只返回response.data
+          if (_this.config.originalData) {
+            // 判断是否存在拦截器
+            if (_this.interceptor.response && typeof _this.interceptor.response === 'function') {
+              var resInterceptors = _this.interceptor.response(response);
+              // 如果拦截器不返回false，就将拦截器返回的内容给this.$u.post的then回调
+              if (resInterceptors !== false) {
+                resolve(resInterceptors);
+              } else {
+                // 如果拦截器返回false，意味着拦截器定义者认为返回有问题，直接接入catch回调
+                reject(response);
+              }
+            } else {
+              // 如果要求返回原始数据，就算没有拦截器，也返回最原始的数据
+              resolve(response);
+            }
+          } else {
+            if (response.statusCode == 200) {
+              if (_this.interceptor.response && typeof _this.interceptor.response === 'function') {
+                var _resInterceptors = _this.interceptor.response(response.data);
+                if (_resInterceptors !== false) {
+                  resolve(_resInterceptors);
+                } else {
+                  reject(response.data);
+                }
+              } else {
+                // 如果不是返回原始数据(originalData=false)，且没有拦截器的情况下，返回纯数据给then回调
+                resolve(response.data);
+              }
+            } else {
+              // 不返回原始数据的情况下，服务器状态码不为200，modal弹框提示
+              if (response.errMsg) {
+                uni.showModal({
+                  title: response.errMsg });
+
+              }
+              reject(response);
+            }
+          }
+        };
+
+        // 判断用户传递的URL是否/开头,如果不是,加上/，这里使用了uView的test.js验证库的url()方法
+        options.url = _test.default.url(options.url) ? options.url : _this.config.baseUrl + (options.url.indexOf('/') == 0 ?
+        options.url : '/' + options.url);
+
+        // 是否显示loading
+        // 加一个是否已有timer定时器的判断，否则有两个同时请求的时候，后者会清除前者的定时器id
+        // 而没有清除前者的定时器，导致前者超时，一直显示loading
+        if (_this.config.showLoading && !_this.config.timer) {
+          _this.config.timer = setTimeout(function () {
+            uni.showLoading({
+              title: _this.config.loadingText,
+              mask: _this.config.loadingMask });
+
+            _this.config.timer = null;
+          }, _this.config.loadingTime);
+        }
+        uni.request(options);
+      });
+    } }]);
+
+  function Request() {var _this2 = this;_classCallCheck(this, Request);
+    this.config = {
+      baseUrl: '', // 请求的根域名
+      // 默认的请求头
+      header: {
+        'content-type': 'application/json;charset=UTF-8' },
+
+      method: 'POST',
+      // 设置为json，返回后uni.request会对数据进行一次JSON.parse
+      dataType: 'json',
+      // 此参数无需处理，因为5+和支付宝小程序不支持，默认为text即可
+      responseType: 'text',
+      showLoading: true, // 是否显示请求中的loading
+      loadingText: '请求中...',
+      loadingTime: 800, // 在此时间内，请求还没回来的话，就显示加载中动画，单位ms
+      timer: null, // 定时器
+      originalData: false, // 是否在拦截器中返回服务端的原始数据，见文档说明
+      loadingMask: true // 展示loading的时候，是否给一个透明的蒙层，防止触摸穿透
+    };
+
+    // 拦截器
+    this.interceptor = {
+      // 请求前的拦截
+      request: null,
+      // 请求后的拦截
+      response: null };
+
+
+    // get请求
+    this.get = function (url) {var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};var header = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      return _this2.request({
+        method: 'GET',
+        url: url,
+        header: header,
+        data: data });
+
+    };
+
+    // post请求
+    this.post = function (url) {var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};var header = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      return _this2.request({
+        url: url,
+        method: 'POST',
+        header: header,
+        data: data });
+
+    };
+
+    // put请求，不支持支付宝小程序(HX2.6.15)
+    this.put = function (url) {var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};var header = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      return _this2.request({
+        url: url,
+        method: 'PUT',
+        header: header,
+        data: data });
+
+    };
+
+    // delete请求，不支持支付宝和头条小程序(HX2.6.15)
+    this.delete = function (url) {var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};var header = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      return _this2.request({
+        url: url,
+        method: 'DELETE',
+        header: header,
+        data: data });
+
+    };
+  }return Request;}();var _default =
+
+new Request();exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
 /***/ 23:
-/*!*******************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/attendance.js ***!
-  \*******************************************************************************/
+/*!**************************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/deepMerge.js ***!
+  \**************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [{
-  "points": 1,
-  "day_name": 1,
-  "is_day": 1 },
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _deepClone = _interopRequireDefault(__webpack_require__(/*! ./deepClone */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
-{
-  "points": 1,
-  "day_name": 2,
-  "is_day": 0 },
+// JS对象深度合并
+function deepMerge() {var target = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var source = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  target = (0, _deepClone.default)(target);
+  if (typeof target !== 'object' || typeof source !== 'object') return false;
+  for (var prop in source) {
+    if (!source.hasOwnProperty(prop)) continue;
+    if (prop in target) {
+      if (typeof target[prop] !== 'object') {
+        target[prop] = source[prop];
+      } else {
+        if (typeof source[prop] !== 'object') {
+          target[prop] = source[prop];
+        } else {
+          if (target[prop].concat && source[prop].concat) {
+            target[prop] = target[prop].concat(source[prop]);
+          } else {
+            target[prop] = deepMerge(target[prop], source[prop]);
+          }
+        }
+      }
+    } else {
+      target[prop] = source[prop];
+    }
+  }
+  return target;
+}var _default =
 
-{
-  "points": 1,
-  "day_name": 3,
-  "is_day": 0 },
-
-{
-  "points": 1,
-  "day_name": 4,
-  "is_day": 0 },
-
-{
-  "points": 1,
-  "day_name": 5,
-  "is_day": 0 },
-
-{
-  "points": 1,
-  "day_name": 6,
-  "is_day": 0 },
-
-{
-  "points": 10,
-  "day_name": 7,
-  "is_day": 0 }];exports.default = _default;
+deepMerge;exports.default = _default;
 
 /***/ }),
 
 /***/ 24:
-/*!**********************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/custom-points.js ***!
-  \**********************************************************************************/
+/*!**************************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/deepClone.js ***!
+  \**************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  "soonExpiredPoints": 0,
-  "totalPoints": 487,
-  "expiredTime": null,
-  "foreverPoints": 0 };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 对象深度克隆
+function deepClone() {var object = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var o, i, j, k;
+  if (typeof object !== "object" || object === null) return object;
+  if (object instanceof Array) {
+    o = [];
+    i = 0;
+    j = object.length;
+    for (; i < j; i++) {
+      if (typeof object[i] === "object" && object[i] != null) {
+        o[i] = deepClone(object[i]);
+      } else {
+        o[i] = object[i];
+      }
+    }
+  } else {
+    o = {};
+    for (i in object) {
+      if (typeof object[i] === "object" && object[i] !== null) {
+        o[i] = deepClone(object[i]);
+      } else {
+        o[i] = object[i];
+      }
+    }
+  }
+  return o;
+}var _default =
+
+deepClone;exports.default = _default;
 
 /***/ }),
 
 /***/ 25:
-/*!********************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/points-mall.js ***!
-  \********************************************************************************/
+/*!*********************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/test.js ***!
+  \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  "奈雪好券": [{
-    "points_price": 800,
-    "exchange_desc": "<p>兑换规则：会员可凭800积分兑换“任意软欧包免费券”1件，菜单上标有红色雪花产品除外。<p><p>售后服务：虚拟券不支持退换货服务，请先确认后兑换。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "28910",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2020-03-20 14:16:25",
-    "goods_name": "软欧包免费券",
-    "total_num": 0,
-    "sale_time_end": null,
-    "goods_img": "[]",
-    "multi_range_type": 0,
-    "id": 574,
-    "has_send_num": 0,
-    "exchanged_num": 1241,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 1,
-    "exchange_num": 0,
-    "goods_cate_id": 2,
-    "sort": 6,
-    "level_ask": 0,
-    "goods_type": 1,
-    "coupon_data": null,
-    "third_party_id": 0,
-    "img": [],
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "0.00",
-    "goods_stock": 99665,
-    "status": 1,
-    "updated_at": "2020-05-11 09:37:06",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null },
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
+                                                                                                      * 验证电子邮箱格式
+                                                                                                      */
+function email(value) {
+  return /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/.test(value);
+}
 
-  {
-    "points_price": 800,
-    "exchange_desc": "<p>兑换规则：会员可凭800积分兑换“任意茶饮或软欧包买一送一优惠券”1件（菜单上标有红色雪花产品除外）。<p><p>售后服务：虚拟券不支持退换货服务，请先确认后兑换。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "28321",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "5809,7559",
-    "is_open_sale_time": 0,
-    "created_at": "2019-11-15 17:17:43",
-    "goods_name": "买一送一券",
-    "total_num": 0,
-    "sale_time_end": null,
-    "goods_img": "[]",
-    "multi_range_type": 2,
-    "id": 380,
-    "has_send_num": 0,
-    "exchanged_num": 14201,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 1,
-    "exchange_num": 0,
-    "goods_cate_id": 2,
-    "sort": 7,
-    "level_ask": 0,
-    "goods_type": 1,
-    "coupon_data": null,
-    "third_party_id": 0,
-    "img": [],
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "0.00",
-    "goods_stock": 97377,
-    "status": 1,
-    "updated_at": "2020-05-11 10:47:28",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null },
+/**
+   * 验证手机格式
+   */
+function mobile(value) {
+  return /^1[23456789]\d{9}$/.test(value);
+}
 
-  {
-    "points_price": 1000,
-    "exchange_desc": "<p>兑换规则：会员可凭1000积分兑换“任意茶饮免费券”1件，菜单上标有红色雪花产品除外。<p><p>售后服务：虚拟券不支持退换货服务，请先确认后兑换。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "28911",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "5809,7559",
-    "is_open_sale_time": 0,
-    "created_at": "2019-12-21 11:27:56",
-    "goods_name": "茶饮免费券",
-    "total_num": 0,
-    "sale_time_end": null,
-    "goods_img": "[]",
-    "multi_range_type": 2,
-    "id": 433,
-    "has_send_num": 0,
-    "exchanged_num": 3940,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 1,
-    "exchange_num": 0,
-    "goods_cate_id": 2,
-    "sort": 8,
-    "level_ask": 0,
-    "goods_type": 1,
-    "coupon_data": null,
-    "third_party_id": 0,
-    "img": [],
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "0.00",
-    "goods_stock": 99111,
-    "status": 1,
-    "updated_at": "2020-05-11 10:43:23",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null }],
+/**
+   * 验证URL格式
+   */
+function url(value) {
+  return /^((https|http|ftp|rtsp|mms):\/\/)(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?(([0-9]{1,3}.){3}[0-9]{1,3}|([0-9a-z_!~*'()-]+.)*([0-9a-z][0-9a-z-]{0,61})?[0-9a-z].[a-z]{2,6})(:[0-9]{1,4})?((\/?)|(\/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+\/?)$/.
+  test(value);
+}
 
+/**
+   * 验证日期格式
+   */
+function date(value) {
+  return !/Invalid|NaN/.test(new Date(value).toString());
+}
 
-  "奈雪好物": [{
-    "points_price": 100,
-    "exchange_desc": "<p>【夏日宝藏画框】夏日限定周边，奈雪独家定制画框，可盐可甜，可摆可挂。<p><p>【画框材质】油画布采用原装墨水喷绘，外框选用古铜色铝合金；珍藏奈雪宝藏。<p><p>【画框尺寸】宽：30cm，高：42.5cm<p><p><br><p><p>兑换规则：会员可凭上述积分+现金兑换“夏日宝藏画框”一份<p><p>售后服务：积分兑换商品不支持质量问题外的退换货服务，请您先确认后签收。<p><p>温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在10个工作日内寄出。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "641",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2020-04-10 12:29:33",
-    "goods_name": "夏日宝藏挂画",
-    "sale_time_end": null,
-    "goods_img": "[\"https:\\\\images.qmai.cn\\s23107\\2020\\04\\30\\1399a8bee03f3dd13a.jpg\"]",
-    "multi_range_type": 0,
-    "id": 641,
-    "has_send_num": 0,
-    "exchanged_num": 14,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 2,
-    "exchange_num": 0,
-    "sort": 9,
-    "level_ask": 0,
-    "goods_cate_id": 3,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://images.qmai.cn/s23107/2020/04/30/1399a8bee03f3dd13a.jpg"],
+/**
+   * 验证ISO类型的日期格式
+   */
+function dateISO(value) {
+  return /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/.test(value);
+}
 
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "99.00",
-    "goods_stock": 29,
-    "status": 1,
-    "updated_at": "2020-05-08 09:30:42",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null },
+/**
+   * 验证十进制数字
+   */
+function number(value) {
+  return /^(?:-?\d+|-?\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$/.test(value);
+}
 
-  {
-    "points_price": 100,
-    "exchange_desc": "<p>【霸气杨梅主题画框】霸气杨梅回归，梅你不行！<p><p>【画框材质】UV油画布+外框铝合金材质，五里黑板，有机玻璃装裱；珍藏奈雪宝藏。<p><p>【画框尺寸】宽：30cm，高：42.5cm，A3画布。<p><p><br><p><p>兑换规则：会员可凭上述积分+现金兑换【“梅你不行”主题挂画】一份<p><p>售后服务：积分兑换商品不支持质量问题外的退换货服务，请您先确认后签收。<p><p>温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在10个工作日内寄出。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "688",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2020-04-26 21:26:15",
-    "goods_name": "梅你不行挂画",
-    "sale_time_end": null,
-    "goods_img": "[\"https:\\\\img-shop.qmimg.cn\\s23107\\2020\\04\\26\\df31e1d42cc4242327.jpg\"]",
-    "multi_range_type": 0,
-    "id": 688,
-    "has_send_num": 0,
-    "exchanged_num": 7,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 2,
-    "exchange_num": 0,
-    "sort": 10,
-    "level_ask": 0,
-    "goods_cate_id": 3,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://img-shop.qmimg.cn/s23107/2020/04/26/df31e1d42cc4242327.jpg"],
+/**
+   * 验证整数
+   */
+function digits(value) {
+  return /^\d+$/.test(value);
+}
 
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "99.00",
-    "goods_stock": 12,
-    "status": 1,
-    "updated_at": "2020-05-07 22:44:28",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null },
+/**
+   * 验证身份证号码
+   */
+function idCard(value) {
+  return /^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/.test(
+  value);
+}
 
-  {
-    "points_price": 500,
-    "exchange_desc": "<p>【公仔详情】奈雪经典饮品——霸气橙子周边公仔，可在奈雪礼物线下门店限定夹取，现于线上限量积分兑换！可爱橙子形象与霸气水果杯超萌结合，材质亲肤柔软，奈雪出品，品质保证！<p><p>奈雪礼物线下门店信息可在“奈雪的礼物”小程序-我的-全国门店中查看。<p><p><br><p><p>【公仔尺寸】22-25cm<p><p><br><p><p>兑换规则：会员可凭上述积分+现金兑换“霸气橙子公仔”一份<p><p>售后服务：积分商城商品不支持质量问题外的退换货服务，请您先确认后签收。<p><p>温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在10个工作日内寄出。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "664",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2020-04-20 19:11:18",
-    "goods_name": "霸气橙子公仔",
-    "sale_time_end": null,
-    "goods_img": "[\"https:\\\\images.qmai.cn\\s23107\\2020\\04\\30\\e41bb7b1489ec044f7.jpg\"]",
-    "multi_range_type": 0,
-    "id": 664,
-    "has_send_num": 0,
-    "exchanged_num": 10,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 2,
-    "exchange_num": 0,
-    "sort": 11,
-    "level_ask": 0,
-    "goods_cate_id": 3,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://images.qmai.cn/s23107/2020/04/30/e41bb7b1489ec044f7.jpg"],
+/**
+   * 是否车牌号
+   */
+function carNo(value) {
+  // 新能源车牌
+  var xreg = /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}(([0-9]{5}[DF]$)|([DF][A-HJ-NP-Z0-9][0-9]{4}$))/;
+  // 旧车牌
+  var creg = /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳]{1}$/;
+  if (value.length === 7) {
+    return creg.test(value);
+  } else if (value.length === 8) {
+    return xreg.test(value);
+  } else {
+    return false;
+  }
+}
 
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "45.00",
-    "goods_stock": 30,
-    "status": 1,
-    "updated_at": "2020-05-07 11:46:59",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null },
+/**
+   * 金额,只允许2位小数
+   */
+function amount(value) {
+  //金额，只允许保留两位小数
+  return /^[1-9]\d*(,\d{3})*(\.\d{1,2})?$|^0.\d{1,2}$/.test(value);
+}
 
-  {
-    "points_price": 2000,
-    "exchange_desc": "<p>【公仔详情】奈雪经典饮品——霸气橙子周边公仔，可在奈雪礼物线下门店限定夹取，现于线上限量积分兑换！可爱橙子形象与霸气水果杯超萌结合，材质亲肤柔软，奈雪出品，品质保证！<p><p>奈雪礼物线下门店信息可在“奈雪的礼物”小程序-我的-全国门店中查看。<p><p><br><p><p>【公仔尺寸】22-25cm<p><p><br><p><p>兑换规则：会员可凭上述积分兑换“霸气橙子公仔”一份<p><p>售后服务：积分商城商品不支持质量问题外的退换货服务，请您先确认后签收。<p><p>温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在10个工作日内寄出。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "665",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2020-04-20 19:11:52",
-    "goods_name": "霸气橙子公仔",
-    "sale_time_end": null,
-    "goods_img": "[]",
-    "multi_range_type": 0,
-    "id": 665,
-    "has_send_num": 0,
-    "exchanged_num": 6,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 1,
-    "exchange_num": 0,
-    "sort": 12,
-    "level_ask": 0,
-    "goods_cate_id": 3,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://images.qmai.cn/s23107/2020/04/30/e41bb7b1489ec044f7.jpg"],
+/**
+   * 中文
+   */
+function chinese(value) {
+  var reg = /^[\u4e00-\u9fa5]+$/gi;
+  return reg.test(value);
+}
 
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "0.00",
-    "goods_stock": 4,
-    "status": 1,
-    "updated_at": "2020-05-08 16:19:24",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null },
+/**
+   * 只能输入字母
+   */
+function letter(value) {
+  return /^[a-zA-Z]*$/.test(value);
+}
 
-  {
-    "points_price": 500,
-    "exchange_desc": "<p>【公仔详情】奈雪经典饮品——霸气草莓周边公仔，可在奈雪礼物线下门店限定夹取，现于线上限量积分兑换！可爱橙子形象与霸气水果杯超萌结合，材质亲肤柔软，奈雪出品，品质保证！<p><p>奈雪礼物线下门店信息可在“奈雪的礼物”小程序-我的-全国门店中查看。<p><p><br><p><p>【公仔尺寸】22-25cm<p><p><br><p><p>兑换规则：会员可凭上述积分+现金兑换“霸气草莓公仔”一份<p><p>售后服务：积分商城商品不支持质量问题外的退换货服务，请您先确认后签收。<p><p>温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在10个工作日内寄出。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "666",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2020-04-20 19:16:40",
-    "goods_name": "霸气草莓公仔",
-    "sale_time_end": null,
-    "goods_img": "[\"https:\\\\images.qmai.cn\\s23107\\2020\\04\\30\\6ada410b2d50636859.jpg\"]",
-    "multi_range_type": 0,
-    "id": 666,
-    "has_send_num": 0,
-    "exchanged_num": 12,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 2,
-    "exchange_num": 0,
-    "sort": 13,
-    "level_ask": 0,
-    "goods_cate_id": 3,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://images.qmai.cn/s23107/2020/04/30/6ada410b2d50636859.jpg"],
+/**
+   * 只能是字母或者数字
+   */
+function enOrNum(value) {
+  //英文或者数字
+  var reg = /^[0-9a-zA-Z]*$/g;
+  return reg.test(value);
+}
 
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "45.00",
-    "goods_stock": 28,
-    "status": 1,
-    "updated_at": "2020-05-10 10:01:50",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null },
+/**
+   * 验证是否包含某个值
+   */
+function contains(value, param) {
+  return value.indexOf(param) >= 0;
+}
 
-  {
-    "points_price": 2000,
-    "exchange_desc": "<p>【公仔详情】奈雪经典饮品——霸气草莓周边公仔，可在奈雪礼物线下门店限定夹取，现于线上限量积分兑换！可爱橙子形象与霸气水果杯超萌结合，材质亲肤柔软，奈雪出品，品质保证！<p><p>奈雪礼物线下门店信息可在“奈雪的礼物”小程序-我的-全国门店中查看。<p><p><br><p><p>【公仔尺寸】22-25cm<p><p><br><p><p>兑换规则：会员可凭上述积分兑换“霸气草莓公仔”一份<p><p>售后服务：积分商城商品不支持质量问题外的退换货服务，请您先确认后签收。<p><p>温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在10个工作日内寄出。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "667",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2020-04-20 19:17:15",
-    "goods_name": "霸气草莓公仔",
-    "sale_time_end": null,
-    "goods_img": "[\"https:\\\\images.qmai.cn\\s23107\\2020\\04\\30\\6ada410b2d50636859.jpg\"]",
-    "multi_range_type": 0,
-    "id": 667,
-    "has_send_num": 0,
-    "exchanged_num": 7,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 1,
-    "exchange_num": 0,
-    "sort": 14,
-    "level_ask": 0,
-    "goods_cate_id": 3,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://images.qmai.cn/s23107/2020/04/30/6ada410b2d50636859.jpg"],
+/**
+   * 验证一个值范围[min, max]
+   */
+function range(value, param) {
+  return value >= param[0] && value <= param[1];
+}
 
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "0.00",
-    "goods_stock": 3,
-    "status": 1,
-    "updated_at": "2020-05-09 09:58:01",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null },
+/**
+   * 验证一个长度范围[min, max]
+   */
+function rangeLength(value, param) {
+  return value.length >= param[0] && value.length <= param[1];
+}
 
-  {
-    "points_price": 2000,
-    "exchange_desc": "<p>产品说明：奈雪的茶特邀荷兰艺术家工作室，为奈雪的茶创作了5个酷爱夏天的小动物，变身六款T-shirt，带来百搭的季节必备单品！<p><p>尺码说明：本T-shirt仅剩XXL尺码。\n兑换规则：会员可凭2000积分兑换“霸气杨梅[夏日T-shirt]”1件，兑换物品随机发货。\n售后服务：积分兑换商品不支持质量问题外的退换货服务，请您先确认后签收。\n温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在5个工作日内寄出~<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "206",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2019-08-23 18:19:41",
-    "goods_name": "霸气杨梅T恤XXL",
-    "sale_time_end": null,
-    "goods_img": "[\"https:\\\\images.qmai.cn\\s23107\\2020\\04\\30\\c3e522084d9706a96e.jpg\"]",
-    "multi_range_type": 0,
-    "id": 206,
-    "has_send_num": 0,
-    "exchanged_num": 21,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 1,
-    "exchange_num": 0,
-    "sort": 25,
-    "level_ask": 0,
-    "goods_cate_id": 3,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://images.qmai.cn/s23107/2020/04/30/c3e522084d9706a96e.jpg"],
+/**
+   * 判断是否为空
+   */
+function empty(value) {
+  switch (typeof value) {
+    case 'undefined':
+      return true;
+    case 'string':
+      if (value.replace(/(^[ \t\n\r]*)|([ \t\n\r]*$)/g, '').length == 0) return true;
+      break;
+    case 'boolean':
+      if (!value) return true;
+      break;
+    case 'number':
+      if (0 === value || isNaN(value)) return true;
+      break;
+    case 'object':
+      if (null === value || value.length === 0) return true;
+      for (var i in value) {
+        return false;
+      }
+      return true;}
 
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "0.00",
-    "goods_stock": 15,
-    "status": 1,
-    "updated_at": "2020-05-09 15:22:33",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null }],
+  return false;
+}var _default =
 
 
-  "奈雪联名": [{
-    "points_price": 100,
-    "exchange_desc": "<p>礼盒内容：奈雪大红袍*1罐，特仑苏有机纯牛奶*3支，奈雪马克杯*1个<p><p>兑换规则：会员可凭上述积分兑换“奈雪宝藏奶茶DIY礼盒”一份<p><p>售后服务：积分兑换商品不支持质量问题外的退换货服务，请您先确认后签收。<p><p>温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在10个工作日内寄出。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "556",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2020-03-18 17:49:15",
-    "goods_name": "特仑苏奶茶礼盒",
-    "sale_time_end": null,
-    "goods_img": "[\"https:\\\\images.qmai.cn\\s23107\\2020\\04\\30\\b360279d3a9f58d668.jpg\"]",
-    "multi_range_type": 0,
-    "id": 556,
-    "has_send_num": 0,
-    "exchanged_num": 39,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 2,
-    "exchange_num": 0,
-    "sort": 17,
-    "level_ask": 0,
-    "goods_cate_id": 4,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://images.qmai.cn/s23107/2020/04/30/b360279d3a9f58d668.jpg"],
-
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "105.00",
-    "goods_stock": 3,
-    "status": 1,
-    "updated_at": "2020-05-09 07:42:56",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null },
-
-  {
-    "points_price": 2800,
-    "exchange_desc": "<p>礼盒内容：奈雪大红袍*1罐，特仑苏有机纯牛奶*3支，奈雪马克杯*1个<p><p>兑换规则：会员可凭上述积分兑换“奈雪宝藏奶茶DIY礼盒”一份<p><p>售后服务：积分兑换商品不支持质量问题外的退换货服务，请您先确认后签收。<p><p>温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在10个工作日内寄出。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "553",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2020-03-18 17:43:16",
-    "goods_name": "特仑苏奶茶礼盒",
-    "sale_time_end": null,
-    "goods_img": "[\"https:\\\\images.qmai.cn\\s23107\\2020\\04\\30\\b360279d3a9f58d668.jpg\"]",
-    "multi_range_type": 0,
-    "id": 553,
-    "has_send_num": 0,
-    "exchanged_num": 33,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 1,
-    "exchange_num": 0,
-    "sort": 18,
-    "level_ask": 0,
-    "goods_cate_id": 4,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://images.qmai.cn/s23107/2020/04/30/b360279d3a9f58d668.jpg"],
-
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "0.00",
-    "goods_stock": 2,
-    "status": 1,
-    "updated_at": "2020-05-08 16:24:01",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null },
-
-  {
-    "points_price": 2000,
-    "exchange_desc": "<p>兑换规则：会员可凭上述积分兑换“奈雪X人民日报定制保温杯”<p><p>售后服务：积分兑换商品不支持质量问题外的退换货服务，请您先确认后签收。<p><p>温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在10个工作日内寄出。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "430",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2019-12-20 19:51:11",
-    "goods_name": "人民日报保温杯",
-    "sale_time_end": null,
-    "goods_img": "[\"https:\\\\images.qmai.cn\\s23107\\2020\\04\\30\\8d862b032568414c99.jpg\"]",
-    "multi_range_type": 0,
-    "id": 430,
-    "has_send_num": 0,
-    "exchanged_num": 130,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 1,
-    "exchange_num": 0,
-    "sort": 21,
-    "level_ask": 0,
-    "goods_cate_id": 4,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://images.qmai.cn/s23107/2020/04/30/8d862b032568414c99.jpg"],
-
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "0.00",
-    "goods_stock": 20,
-    "status": 1,
-    "updated_at": "2020-05-10 20:26:17",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null },
-
-  {
-    "points_price": 1500,
-    "exchange_desc": "<p>兑换规则：会员可凭上述积分兑换“奈雪x人民日报定制军用水壶”<p><p>售后服务：积分兑换商品不支持质量问题外的退换货服务，请您先确认后签收。<p><p>温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在10个工作日内寄出。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "431",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2019-12-20 19:58:10",
-    "goods_name": "人民日报水壶",
-    "sale_time_end": null,
-    "goods_img": "[\"https:\\\\images.qmai.cn\\s23107\\2020\\04\\30\\85f06751236939431b.jpg\"]",
-    "multi_range_type": 0,
-    "id": 431,
-    "has_send_num": 0,
-    "exchanged_num": 89,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 1,
-    "exchange_num": 0,
-    "sort": 22,
-    "level_ask": 0,
-    "goods_cate_id": 4,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://images.qmai.cn/s23107/2020/04/30/85f06751236939431b.jpg"],
-
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "0.00",
-    "goods_stock": 11,
-    "status": 1,
-    "updated_at": "2020-05-08 21:35:46",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null },
-
-  {
-    "points_price": 1000,
-    "exchange_desc": "<p>兑换规则：会员可凭上述积分兑换“奈雪x人民日报定制搪瓷杯”<p><p>售后服务：积分兑换商品不支持质量问题外的退换货服务，请您先确认后签收。<p><p>温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在10个工作日内寄出。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "432",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2019-12-20 19:59:22",
-    "goods_name": "人民日报搪瓷缸",
-    "sale_time_end": null,
-    "goods_img": "[\"https:\\\\images.qmai.cn\\s23107\\2020\\04\\30\\2a24bda6e1791c00a0.jpg\"]",
-    "multi_range_type": 0,
-    "id": 432,
-    "has_send_num": 0,
-    "exchanged_num": 163,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 1,
-    "exchange_num": 0,
-    "sort": 23,
-    "level_ask": 0,
-    "goods_cate_id": 4,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://images.qmai.cn/s23107/2020/04/30/2a24bda6e1791c00a0.jpg"],
-
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "0.00",
-    "goods_stock": 37,
-    "status": 1,
-    "updated_at": "2020-05-11 00:45:30",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null },
-
-  {
-    "points_price": 500,
-    "exchange_desc": "<p><span style=\"color: rgb(0, 0, 0);\">产品说明：该产品为奈雪生日限定手机壳，适用于iphone 7P&amp;8P系列<span><p><p><span style=\"color: rgb(0, 0, 0);\">售后服务：积分兑换商品不支持质量问题外的退换货服务，请您先确认后签收。<span><p><p><span style=\"color: rgb(0, 0, 0);\">温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在5个工作日内寄出<span><p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "269",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2019-09-29 11:29:44",
-    "goods_name": "生日手机壳 78P",
-    "sale_time_end": null,
-    "goods_img": "[\"https:\\\\images.qmai.cn\\s23107\\2020\\04\\30\\4c81b4d86db88e8f87.jpg\"]",
-    "multi_range_type": 0,
-    "id": 269,
-    "has_send_num": 0,
-    "exchanged_num": 295,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 1,
-    "exchange_num": 0,
-    "sort": 26,
-    "level_ask": 0,
-    "goods_cate_id": 4,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://images.qmai.cn/s23107/2020/04/30/4c81b4d86db88e8f87.jpg"],
-
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "0.00",
-    "goods_stock": 5,
-    "status": 1,
-    "updated_at": "2020-05-10 17:59:53",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null }],
-
-
-  "奈雪好茶": [{
-    "points_price": 2500,
-    "exchange_desc": "<p>产品介绍：冻顶乌龙80g*1<p><p>兑换规则：会员可凭上述积分兑换“冻顶乌龙”一罐<p><p>售后服务：积分兑换商品不支持质量问题外的退换货服务，请您先确认后签收。<p><p>温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在10个工作日内寄出。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "486",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2020-01-09 17:19:02",
-    "goods_name": "奈雪冻顶乌龙",
-    "sale_time_end": null,
-    "goods_img": "[\"https:\\\\images.qmai.cn\\s23107\\2020\\04\\30\\064fd765371de1d8b0.jpg\"]",
-    "multi_range_type": 0,
-    "id": 486,
-    "has_send_num": 0,
-    "exchanged_num": 7,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 1,
-    "exchange_num": 0,
-    "sort": 55,
-    "level_ask": 0,
-    "goods_cate_id": 5,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://images.qmai.cn/s23107/2020/04/30/064fd765371de1d8b0.jpg"],
-
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "0.00",
-    "goods_stock": 23,
-    "status": 1,
-    "updated_at": "2020-05-07 11:54:51",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null },
-
-  {
-    "points_price": 1800,
-    "exchange_desc": "<p>产品介绍：青心乌龙80g*1<p><p>兑换规则：会员可凭上述积分兑换“青心乌龙”一罐<p><p>售后服务：积分兑换商品不支持质量问题外的退换货服务，请您先确认后签收。<p><p>温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在10个工作日内寄出。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "488",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2020-01-09 17:25:08",
-    "goods_name": "奈雪青心乌龙",
-    "sale_time_end": null,
-    "goods_img": "[\"https:\\\\images.qmai.cn\\s23107\\2020\\04\\30\\0b32c3249b8388a403.jpg\"]",
-    "multi_range_type": 0,
-    "id": 488,
-    "has_send_num": 0,
-    "exchanged_num": 14,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 1,
-    "exchange_num": 0,
-    "sort": 55,
-    "level_ask": 0,
-    "goods_cate_id": 5,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://images.qmai.cn/s23107/2020/04/30/0b32c3249b8388a403.jpg"],
-
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "0.00",
-    "goods_stock": 16,
-    "status": 1,
-    "updated_at": "2020-05-08 00:16:21",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null },
-
-  {
-    "points_price": 1200,
-    "exchange_desc": "<p>产品介绍：白鸡冠30g*1<p><p>兑换规则：会员可凭上述积分兑换“白鸡冠”一罐<p><p>售后服务：积分兑换商品不支持质量问题外的退换货服务，请您先确认后签收。<p><p>温馨提示：积分商城仅支持中国大陆地区的兑换邮寄服务，我们将在10个工作日内寄出。<p>",
-    "auto_off_datetime": null,
-    "exchange_num_desc": "不限制",
-    "goods_id": "490",
-    "exchange_limit": 0,
-    "send_num": 0,
-    "deleted_at": null,
-    "multi_store_id": "0",
-    "is_open_sale_time": 0,
-    "created_at": "2020-01-09 17:32:23",
-    "goods_name": "奈雪白鸡冠",
-    "sale_time_end": null,
-    "goods_img": "[\"https:\\\\images.qmai.cn\\s23107\\2020\\04\\30\\1e5e034a3c61bb9ccd.jpg\"]",
-    "multi_range_type": 0,
-    "id": 490,
-    "has_send_num": 0,
-    "exchanged_num": 24,
-    "level_name": "",
-    "is_vip_level": 0,
-    "exchange_type": 1,
-    "exchange_num": 0,
-    "sort": 55,
-    "level_ask": 0,
-    "goods_cate_id": 5,
-    "goods_type": 2,
-    "third_party_id": 0,
-    "img": [
-    "https://images.qmai.cn/s23107/2020/04/30/1e5e034a3c61bb9ccd.jpg"],
-
-    "third_party_name": "",
-    "sale_time_start": null,
-    "amount": "0.00",
-    "goods_stock": 6,
-    "status": 1,
-    "updated_at": "2020-05-09 10:21:48",
-    "store_id": 23107,
-    "level_id": 0,
-    "auto_off_date": null }] };exports.default = _default;
+{
+  email: email,
+  mobile: mobile,
+  url: url,
+  date: date,
+  dateISO: dateISO,
+  number: number,
+  digits: digits,
+  idCard: idCard,
+  carNo: carNo,
+  amount: amount,
+  chinese: chinese,
+  letter: letter,
+  enOrNum: enOrNum,
+  contains: contains,
+  range: range,
+  rangeLength: rangeLength,
+  empty: empty,
+  isEmpty: empty };exports.default = _default;
 
 /***/ }),
 
 /***/ 26:
-/*!************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/attendance-list.js ***!
-  \************************************************************************************/
+/*!****************************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/queryParams.js ***!
+  \****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [{
-  "attendance_id": 1,
-  "updated_at": "2020-04-25 02:46:36",
-  "id": 1,
-  "created_at": "2020-04-25 02:46:36",
-  "attendance_coupon": 0,
-  "nickname": "tinypuppet",
-  "num": 0,
-  "reward_days": 1,
-  "user_id": "1",
-  "date": "2020-04-25",
-  "attendance_point": 1,
-  "store_id": 1 },
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
+                                                                                                      * 对象转url参数
+                                                                                                      * @param {*} data,对象
+                                                                                                      * @param {*} isPrefix,是否自动加上"?"
+                                                                                                      */
+function queryParams() {var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var isPrefix = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;var arrayFormat = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'brackets';
+  var prefix = isPrefix ? '?' : '';
+  var _result = [];
+  if (['indices', 'brackets', 'repeat', 'comma'].indexOf(arrayFormat) == -1) arrayFormat = 'brackets';var _loop = function _loop(
+  key) {
+    var value = data[key];
+    // 去掉为空的参数
+    if (['', undefined, null].indexOf(value) >= 0) {
+      return "continue";
+    }
+    // 如果值为数组，另行处理
+    if (value.constructor === Array) {
+      // e.g. {ids: [1, 2, 3]}
+      switch (arrayFormat) {
+        case 'indices':
+          // 结果: ids[0]=1&ids[1]=2&ids[2]=3
+          for (i = 0; i < value.length; i++) {
+            _result.push(key + '[' + i + ']=' + value[i]);
+          }
+          break;
+        case 'brackets':
+          // 结果: ids[]=1&ids[]=2&ids[]=3
+          value.forEach(function (_value) {
+            _result.push(key + '[]=' + _value);
+          });
+          break;
+        case 'repeat':
+          // 结果: ids=1&ids=2&ids=3
+          value.forEach(function (_value) {
+            _result.push(key + '=' + _value);
+          });
+          break;
+        case 'comma':
+          // 结果: ids=1,2,3
+          var commaStr = "";
+          value.forEach(function (_value) {
+            commaStr += (commaStr ? "," : "") + _value;
+          });
+          _result.push(key + '=' + commaStr);
+          break;
+        default:
+          value.forEach(function (_value) {
+            _result.push(key + '[]=' + _value);
+          });}
 
-{
-  "attendance_id": 1,
-  "updated_at": "2020-05-02 03:30:42",
-  "id": 2,
-  "created_at": "2020-05-02 03:30:42",
-  "attendance_coupon": 0,
-  "nickname": "tinypuppet",
-  "num": 0,
-  "reward_days": 1,
-  "user_id": "1",
-  "date": "2020-05-02",
-  "attendance_point": 1,
-  "store_id": 1 },
+    } else {
+      _result.push(key + '=' + value);
+    }};for (var key in data) {var _ret = _loop(key);if (_ret === "continue") continue;
+  }
+  return _result.length ? prefix + _result.join('&') : '';
+}var _default =
 
-{
-  "attendance_id": 1,
-  "updated_at": "2020-05-03 19:37:12",
-  "id": 3,
-  "created_at": "2020-05-03 19:37:12",
-  "attendance_coupon": 0,
-  "nickname": "tinypuppet",
-  "num": 0,
-  "reward_days": 1,
-  "user_id": "1",
-  "date": "2020-05-03",
-  "attendance_point": 1,
-  "store_id": 1 },
-
-{
-  "attendance_id": 1,
-  "updated_at": "2020-05-06 10:38:42",
-  "id": 4,
-  "created_at": "2020-05-06 10:38:42",
-  "attendance_coupon": 0,
-  "nickname": "tinypuppet",
-  "num": 0,
-  "reward_days": 1,
-  "user_id": "1",
-  "date": "2020-05-06",
-  "attendance_point": 1,
-  "store_id": 1 }];exports.default = _default;
+queryParams;exports.default = _default;
 
 /***/ }),
 
 /***/ 27:
-/*!*************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/today-attendance.js ***!
-  \*************************************************************************************/
+/*!**********************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/route.js ***!
+  \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  "is_attendance": 2,
-  "total_points": 0,
-  "attendance_points": 1,
-  "attendance_category": 1,
-  "attendance_continuity_day": 1,
-  "list": [{
-    "points": 1,
-    "updated_at": "2020-01-15 05:29:25",
-    "attendances_id": 312,
-    "id": 770,
-    "status": 0,
-    "receive_type": 0,
-    "created_at": "2019-10-23 19:17:21",
-    "coupon_name": "",
-    "attendance_category": 1,
-    "coupon_id": "0",
-    "attendance_day": 1,
-    "coupon_num": 0,
-    "deleted_at": null }] };exports.default = _default;
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _queryParams = _interopRequireDefault(__webpack_require__(/*! ../../libs/function/queryParams.js */ 26));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+/**
+                                                                                                                                                                                                                                                                                            * 路由跳转
+                                                                                                                                                                                                                                                                                            * 注意:本方法没有对跳转的回调函数进行封装
+                                                                                                                                                                                                                                                                                            */
+function route() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+  var config = {
+    type: 'navigateTo',
+    url: '',
+    delta: 1, // navigateBack页面后退时,回退的层数
+    params: {}, // 传递的参数
+    animationType: 'pop-in', // 窗口动画,只在APP有效
+    animationDuration: 300 // 窗口动画持续时间,单位毫秒,只在APP有效
+  };
+  config = Object.assign(config, options);
+  // 如果url没有"/"开头，添加上，因为uni的路由跳转需要"/"开头
+  if (config.url[0] != '/') config.url = '/' + config.url;
+  // 判断是否有传递显式的参数,Object.keys转为数组并判断长度,switchTab类型时不能携带参数
+  if (Object.keys(config.params).length && config.type != 'switchTab') {
+    // 判断用户传递的url中，是否带有参数
+    // 使用正则匹配，主要依据是判断是否有"/","?","="等，如“/page/index/index?name=mary"
+    // 如果有url中有get参数，转换后无需带上"?"
+    var query = '';
+    if (/.*\/.*\?.*=.*/.test(config.url)) {
+      // object对象转为get类型的参数
+      query = (0, _queryParams.default)(config.params, false);
+      // 因为已有get参数,所以后面拼接的参数需要带上"&"隔开
+      config.url += "&" + query;
+    } else {
+      query = (0, _queryParams.default)(config.params);
+      config.url += query;
+    }
+  }
+  // 简写形式，把url和参数拼接起来
+  if (typeof options === 'string' && typeof params == 'object') {
+    var _query = '';
+    if (/.*\/.*\?.*=.*/.test(options)) {
+      // object对象转为get类型的参数
+      _query = (0, _queryParams.default)(params, false);
+      // 因为已有get参数,所以后面拼接的参数需要带上"&"隔开
+      options += "&" + _query;
+    } else {
+      _query = (0, _queryParams.default)(params);
+      options += _query;
+    }
+  }
+  // 判断是否一个字符串，如果是，直接跳转(简写法)
+  // 如果是中情形，默认第二个参数为对象形式的参数
+  if (typeof options === 'string') {
+    if (options[0] != '/') options = '/' + options;
+    return uni.navigateTo({
+      url: options });
+
+  }
+  // navigateTo类型的跳转
+  if (config.type == 'navigateTo' || config.type == 'to') {
+    return uni.navigateTo({
+      url: config.url,
+      animationType: config.animationType,
+      animationDuration: config.animationDuration });
+
+  }
+  if (config.type == 'redirectTo' || config.type == 'redirect') {
+    return uni.redirectTo({
+      url: config.url });
+
+  }
+  if (config.type == 'switchTab' || config.type == 'tab') {
+    return uni.switchTab({
+      url: config.url });
+
+  }
+  if (config.type == 'reLaunch') {
+    return uni.reLaunch({
+      url: config.url });
+
+  }
+  if (config.type == 'navigateBack' || config.type == 'back') {
+    return uni.navigateBack({
+      delta: parseInt(config.delta ? config.delta : this.delta) });
+
+  }
+}var _default =
+
+route;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
 /***/ 28:
-/*!***************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/orders.js ***!
-  \***************************************************************************/
+/*!***************************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/timeFormat.js ***!
+  \***************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [
-{
-  "coupon_name": "",
-  "receive_at": 0,
-  "pay_mode": "微信支付",
-  "pay_user_name": "tinypuppet",
-  "updated_at": 1588937139,
-  "goods_num": 2,
-  "completed_at": 1588937139,
-  "created_at": 1588936782,
-  "invoice_status": 1,
-  "sended_time": 0,
-  "status_text": "已完成",
-  "remark": "",
-  "coupon_amount": 0,
-  "mobile": "18666600000",
-  "user_name": "tinypuppet",
-  "payed_at": 1588936805,
-  "total_amount": "50.00",
-  "store": {
-    "address": "广东省深圳市宝安区深圳市宝安区福海街道宝安大道6259号 L1 层55/56号商铺",
-    "longitude": "113.804601",
-    "latitude": "22.678654",
-    "mobile": "075523224859",
-    "name": "福永同泰时代城店" },
-
-  "send_status": 0,
-  "discount": [],
-  "status": 5,
-  "completed_time": "2020-05-08 19:25:39",
-  "amount": "50.00",
-  "multi_store": "福永同泰时代城店",
-  "productioned_time": "2020-05-08 19:24:37",
-  "postscript": "打包",
-  "sort_num": "8093",
-  "order_no": "ABCDEFGHIJKLMN0001",
-  "id": 1,
-  "typeCate": 1,
-  "goods": [
-  {
-    "number": 1,
-    "originAmount": "28.00",
-    "price": "28.00",
-    "unit": "件",
-    "property": "去冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2020/03/19/630a810c8c7201c112.jpg",
-    "amount": "28.00",
-    "name": "霸气葡萄" },
-
-  {
-    "number": 1,
-    "originAmount": "22.00",
-    "price": "22.00",
-    "unit": "件",
-    "property": "标准冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2020/03/27/8d4a1edb7c9e2d6554.jpg",
-    "amount": "28.00",
-    "name": "霸气葡萄" }] },
-
-
-
-{
-  "coupon_name": "",
-  "receive_at": 0,
-  "pay_mode": "微信支付",
-  "pay_user_name": "tinypuppet",
-  "updated_at": 1588682566,
-  "goods_num": 3,
-  "completed_at": 1588682566,
-  "created_at": 1588682001,
-  "invoice_status": 0,
-  "sended_time": 0,
-  "status_text": "已完成",
-  "remark": "",
-  "coupon_amount": 0,
-  "mobile": "18666600000",
-  "user_name": "tinypuppet",
-  "payed_at": 1588682014,
-  "total_amount": "73.00",
-  "store": {
-    "address": "广东省深圳市宝安区深圳市宝安区福海街道宝安大道6259号 L1 层55/56号商铺",
-    "longitude": "113.804601",
-    "latitude": "22.678654",
-    "mobile": "075523224859",
-    "name": "福永同泰时代城店" },
-
-  "send_status": 0,
-  "discount": [],
-  "status": 5,
-  "completed_time": "2020-05-05 20:42:46",
-  "amount": "73.00",
-  "multi_store": "福永同泰时代城店",
-  "productioned_time": "2020-05-05 20:38:49",
-  "postscript": "打包",
-  "sort_num": "8145",
-  "order_no": "ABCDEFGHIJKLMN0002",
-  "id": 2,
-  "typeCate": 2,
-  "goods": [
-  {
-    "number": 1,
-    "originAmount": "27.00",
-    "price": "27.00",
-    "unit": "件",
-    "property": "标准,标准（冰沙）,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2020/04/26/79187a01f23e6f1e66.jpg",
-    "amount": "27.00",
-    "name": "杨枝甘露宝藏茶" },
-
-  {
-    "number": 1,
-    "originAmount": "29.00",
-    "price": "29.00",
-    "unit": "件",
-    "property": "标准(芝士),标准冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/04/26/a2aad6ced9aa42e2c6.jpg",
-    "amount": "29.00",
-    "name": "霸气芝士芒果" },
-
-  {
-    "number": 1,
-    "originAmount": "17.00",
-    "price": "17.00",
-    "unit": "件",
-    "property": "去冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/04/26/333b43719bd81f4e00.jpg",
-    "amount": "17.00",
-    "name": "霸气绿柠檬" }] },
-
-
-
-{
-  "coupon_name": "",
-  "receive_at": 0,
-  "pay_mode": "微信支付",
-  "pay_user_name": "tinypuppet",
-  "updated_at": 1587818906,
-  "goods_num": 2,
-  "completed_at": 1587818906,
-  "created_at": 1587817016,
-  "invoice_status": 0,
-  "sended_time": 0,
-  "status_text": "已完成",
-  "remark": "",
-  "coupon_amount": 0,
-  "mobile": "18666600000",
-  "user_name": "tinypuppet",
-  "payed_at": 1587817024,
-  "total_amount": "43.00",
-  "store": {
-    "address": "广东省深圳市宝安区深圳市宝安区西乡街道码头路新湖路海城路合围处宝安大仟里购物中心一楼L111-L112号铺（奈雪的茶）",
-    "longitude": "113.87243",
-    "latitude": "22.56995",
-    "mobile": "18124071450",
-    "name": "宝安大仟里店" },
-
-  "send_status": 0,
-  "discount": [],
-  "status": 5,
-  "completed_time": "2020-04-25 20:48:26",
-  "amount": "43.00",
-  "multi_store": "福永同泰时代城店",
-  "productioned_time": "2020-04-25 20:20:16",
-  "postscript": "打包",
-  "sort_num": "8025",
-  "order_no": "ABCDEFGHIJKLMN0003",
-  "id": 3,
-  "typeCate": 1,
-  "goods": [
-  {
-    "number": 1,
-    "originAmount": "22.00",
-    "price": "22.00",
-    "unit": "件",
-    "property": "标准冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2020/03/27/bac6a6e8b23fd3b30e.jpg",
-    "amount": "22.00",
-    "name": "芝士奈雪金色山脉" },
-
-  {
-    "number": 1,
-    "originAmount": "21.00",
-    "price": "21.00",
-    "unit": "件",
-    "property": "去冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2020/03/27/369520a40d39e0ac11.jpg",
-    "amount": "21.00",
-    "name": "芝士茉莉初雪" }] },
-
-
-
-{
-  "coupon_name": "优惠券：省28元",
-  "receive_at": 0,
-  "pay_mode": "微信支付",
-  "pay_user_name": "tinypuppet",
-  "updated_at": 1585055587,
-  "goods_num": 3,
-  "completed_at": 1585055587,
-  "created_at": 1585055310,
-  "invoice_status": 0,
-  "sended_time": 0,
-  "status_text": "已完成",
-  "remark": "",
-  "coupon_amount": "28.00",
-  "mobile": "18666600000",
-  "user_name": "tinypuppet",
-  "payed_at": 1587817024,
-  "total_amount": "84.00",
-  "store": {
-    "address": "广东省深圳市宝安区深圳市宝安区福海街道宝安大道6259号 L1 层55/56号商铺",
-    "longitude": "113.804601",
-    "latitude": "22.678654",
-    "mobile": "075523224859",
-    "name": "福永同泰时代城店" },
-
-  "send_status": 0,
-  "discount": [
-  {
-    "summary": "优惠券：省28.00元，茶饮满二赠一券",
-    "amount": "28.00",
-    "method": "coupon",
-    "order_no": "D5E7A064EA50054115",
-    "name": "茶饮满二赠一券",
-    "data_id": "420000007885550000" }],
-
-
-  "status": 5,
-  "completed_time": "2020-03-24 21:13:07",
-  "amount": "56.00",
-  "multi_store": "福永同泰时代城店",
-  "productioned_time": "2020-03-24 21:12:13",
-  "postscript": "打包",
-  "sort_num": "8106",
-  "order_no": "ABCDEFGHIJKLMN0004",
-  "id": 4,
-  "typeCate": 1,
-  "goods": [
-  {
-    "number": 1,
-    "originAmount": "28.00",
-    "price": "28.00",
-    "unit": "件",
-    "property": "标准(芝士),去冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/04/26/a2aad6ced9aa42e2c6.jpg",
-    "amount": "28.00",
-    "name": "霸气芝士芒果" },
-
-  {
-    "number": 1,
-    "originAmount": "28.00",
-    "price": "28.00",
-    "unit": "件",
-    "property": "标准(芝士),冰沙,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/04/26/a2aad6ced9aa42e2c6.jpg",
-    "amount": "28.00",
-    "name": "霸气芝士芒果" },
-
-  {
-    "number": 1,
-    "originAmount": "28.00",
-    "price": "28.00",
-    "unit": "件",
-    "property": "标准(芝士),冰沙,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/04/26/1cb88e6cd2fbcefb2a.jpg",
-    "amount": "28.00",
-    "name": "霸气芝士草莓" }] },
-
-
-
-{
-  "coupon_name": "",
-  "receive_at": 0,
-  "pay_mode": "标记支付",
-  "pay_user_name": "tinypuppet",
-  "updated_at": 1581962231,
-  "goods_num": 2,
-  "completed_at": 1571556377,
-  "created_at": 1571555358,
-  "invoice_status": 0,
-  "sended_time": 0,
-  "status_text": "已完成",
-  "remark": "",
-  "coupon_amount": 0,
-  "mobile": "18666600000",
-  "user_name": "tinypuppet",
-  "payed_at": 1571555358,
-  "total_amount": "48.00",
-  "store": {
-    "address": "广东省深圳市宝安区深圳市宝安区新安街道宝安中心区新湖路99号壹方城B1层017、019号商铺",
-    "longitude": "113.886497",
-    "latitude": "22.55278",
-    "mobile": "17881400084",
-    "name": "壹方城店" },
-
-  "send_status": 0,
-  "discount": [],
-  "status": 5,
-  "completed_time": "2019-10-20 15:26:17",
-  "amount": "48.00",
-  "productioned_time": "2019-10-20 15:17:54",
-  "postscript": "打包",
-  "sort_num": "50347",
-  "order_no": "ABCDEFGHIJKLMN0005",
-  "id": 5,
-  "typeCate": 1,
-  "goods": [
-  {
-    "number": 1,
-    "originAmount": "20.00",
-    "price": "20.00",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/04/28/94d8440ab7b4fed802.jpg",
-    "amount": "20.00",
-    "name": "草莓魔法棒" },
-
-  {
-    "number": 1,
-    "originAmount": "28.00",
-    "price": "28.00",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/09/04/d34eb836a41b6bb856.jpg",
-    "amount": "28.00",
-    "name": "报款红石榴" }] },
-
-
-
-{
-  "coupon_name": "优惠券：省28元",
-  "receive_at": 0,
-  "pay_mode": "微信支付",
-  "pay_user_name": "tinypuppet",
-  "updated_at": 1585055587,
-  "goods_num": 3,
-  "completed_at": 1585055587,
-  "created_at": 1585055310,
-  "invoice_status": 0,
-  "sended_time": 0,
-  "status_text": "已完成",
-  "remark": "",
-  "coupon_amount": "28.00",
-  "mobile": "18666600000",
-  "user_name": "tinypuppet",
-  "payed_at": 1587817024,
-  "total_amount": "84.00",
-  "store": {
-    "address": "广东省深圳市宝安区深圳市宝安区福海街道宝安大道6259号 L1 层55/56号商铺",
-    "longitude": "113.804601",
-    "latitude": "22.678654",
-    "mobile": "075523224859",
-    "name": "福永同泰时代城店" },
-
-  "send_status": 0,
-  "discount": [
-  {
-    "summary": "优惠券：省28.00元，茶饮满二赠一券",
-    "amount": "28.00",
-    "method": "coupon",
-    "order_no": "D5E7A064EA50054115",
-    "name": "茶饮满二赠一券",
-    "data_id": "420000007885550000" }],
-
-
-  "status": 5,
-  "completed_time": "2020-03-24 21:13:07",
-  "amount": "56.00",
-  "multi_store": "福永同泰时代城店",
-  "productioned_time": "2020-03-24 21:12:13",
-  "postscript": "打包",
-  "sort_num": "8106",
-  "order_no": "ABCDEFGHIJKLMN0006",
-  "id": 6,
-  "typeCate": 1,
-  "goods": [
-  {
-    "number": 1,
-    "originAmount": "28.00",
-    "price": "28.00",
-    "unit": "件",
-    "property": "标准(芝士),去冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/04/26/a2aad6ced9aa42e2c6.jpg",
-    "amount": "28.00",
-    "name": "霸气芝士芒果" },
-
-  {
-    "number": 1,
-    "originAmount": "28.00",
-    "price": "28.00",
-    "unit": "件",
-    "property": "标准(芝士),冰沙,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/04/26/a2aad6ced9aa42e2c6.jpg",
-    "amount": "28.00",
-    "name": "霸气芝士芒果" },
-
-  {
-    "number": 1,
-    "originAmount": "28.00",
-    "price": "28.00",
-    "unit": "件",
-    "property": "标准(芝士),冰沙,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/04/26/1cb88e6cd2fbcefb2a.jpg",
-    "amount": "28.00",
-    "name": "霸气芝士草莓" }] },
-
-
-
-{
-  "coupon_name": "",
-  "receive_at": 0,
-  "pay_mode": "微信支付",
-  "pay_user_name": "tinypuppet",
-  "updated_at": 1587818906,
-  "goods_num": 2,
-  "completed_at": 1587818906,
-  "created_at": 1587817016,
-  "invoice_status": 0,
-  "sended_time": 0,
-  "status_text": "已完成",
-  "remark": "",
-  "coupon_amount": 0,
-  "mobile": "18666600000",
-  "user_name": "tinypuppet",
-  "payed_at": 1587817024,
-  "total_amount": 43,
-  "store": {
-    "address": "广东省深圳市宝安区深圳市宝安区西乡街道码头路新湖路海城路合围处宝安大仟里购物中心一楼L111-L112号铺（奈雪的茶）",
-    "longitude": "113.87243",
-    "latitude": "22.56995",
-    "mobile": "18124071450",
-    "name": "宝安大仟里店" },
-
-  "send_status": 0,
-  "discount": [],
-  "status": 5,
-  "completed_time": "2020-04-25 20:48:26",
-  "amount": 43,
-  "multi_store": "福永同泰时代城店",
-  "productioned_time": "2020-04-25 20:20:16",
-  "postscript": "打包",
-  "sort_num": "8025",
-  "order_no": "ABCDEFGHIJKLMN0007",
-  "id": 7,
-  "typeCate": 1,
-  "goods": [
-  {
-    "number": 1,
-    "originAmount": "22.00",
-    "price": "22.00",
-    "unit": "件",
-    "property": "标准冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2020/03/27/bac6a6e8b23fd3b30e.jpg",
-    "amount": "22.00",
-    "name": "芝士奈雪金色山脉" },
-
-  {
-    "number": 1,
-    "originAmount": "21.00",
-    "price": "21.00",
-    "unit": "件",
-    "property": "去冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2020/03/27/369520a40d39e0ac11.jpg",
-    "amount": "21.00",
-    "name": "芝士茉莉初雪" }] },
-
-
-
-{
-  "coupon_name": "",
-  "receive_at": 0,
-  "pay_mode": "微信支付",
-  "pay_user_name": "tinypuppet",
-  "updated_at": 1588682566,
-  "goods_num": 3,
-  "completed_at": 1588682566,
-  "created_at": 1588682001,
-  "invoice_status": 0,
-  "sended_time": 0,
-  "status_text": "已完成",
-  "remark": "",
-  "coupon_amount": 0,
-  "mobile": "18666600000",
-  "user_name": "tinypuppet",
-  "payed_at": 1588682014,
-  "total_amount": 73,
-  "store": {
-    "address": "广东省深圳市宝安区深圳市宝安区福海街道宝安大道6259号 L1 层55/56号商铺",
-    "longitude": "113.804601",
-    "latitude": "22.678654",
-    "mobile": "075523224859",
-    "name": "福永同泰时代城店" },
-
-  "send_status": 0,
-  "discount": [],
-  "status": 5,
-  "completed_time": "2020-05-05 20:42:46",
-  "amount": 73,
-  "multi_store": "福永同泰时代城店",
-  "productioned_time": "2020-05-05 20:38:49",
-  "postscript": "打包",
-  "sort_num": "8145",
-  "order_no": "ABCDEFGHIJKLMN0008",
-  "id": 8,
-  "typeCate": 1,
-  "goods": [
-  {
-    "number": 1,
-    "originAmount": "27.00",
-    "price": "27.00",
-    "unit": "件",
-    "property": "标准,标准（冰沙）,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2020/04/26/79187a01f23e6f1e66.jpg",
-    "amount": "27.00",
-    "name": "杨枝甘露宝藏茶" },
-
-  {
-    "number": 1,
-    "originAmount": "29.00",
-    "price": "29.00",
-    "unit": "件",
-    "property": "标准(芝士),标准冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/04/26/a2aad6ced9aa42e2c6.jpg",
-    "amount": "29.00",
-    "name": "霸气芝士芒果" },
-
-  {
-    "number": 1,
-    "originAmount": "17.00",
-    "price": "17.00",
-    "unit": "件",
-    "property": "去冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/04/26/333b43719bd81f4e00.jpg",
-    "amount": "17.00",
-    "name": "霸气绿柠檬" }] },
-
-
-
-{
-  "coupon_name": "",
-  "receive_at": 0,
-  "pay_mode": "标记支付",
-  "pay_user_name": "tinypuppet",
-  "updated_at": 1581962231,
-  "goods_num": 2,
-  "completed_at": 1571556377,
-  "created_at": 1571555358,
-  "invoice_status": 0,
-  "sended_time": 0,
-  "status_text": "已完成",
-  "remark": "",
-  "coupon_amount": 0,
-  "mobile": "18666600000",
-  "user_name": "tinypuppet",
-  "payed_at": 1571555358,
-  "total_amount": "48.00",
-  "store": {
-    "address": "广东省深圳市宝安区深圳市宝安区新安街道宝安中心区新湖路99号壹方城B1层017、019号商铺",
-    "longitude": "113.886497",
-    "latitude": "22.55278",
-    "mobile": "17881400084",
-    "name": "壹方城店" },
-
-  "send_status": 0,
-  "discount": [],
-  "status": 5,
-  "completed_time": "2019-10-20 15:26:17",
-  "amount": "48.00",
-  "productioned_time": "2019-10-20 15:17:54",
-  "postscript": "打包",
-  "sort_num": "50347",
-  "order_no": "ABCDEFGHIJKLMN0009",
-  "id": 9,
-  "typeCate": 1,
-  "goods": [
-  {
-    "number": 1,
-    "originAmount": "20.00",
-    "price": "20.00",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/04/28/94d8440ab7b4fed802.jpg",
-    "amount": "20.00",
-    "name": "草莓魔法棒" },
-
-  {
-    "number": 1,
-    "originAmount": "28.00",
-    "price": "28.00",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/09/04/d34eb836a41b6bb856.jpg",
-    "amount": "28.00",
-    "name": "报款红石榴" }] },
-
-
-
-{
-  "coupon_name": "",
-  "receive_at": 0,
-  "pay_mode": "微信支付",
-  "pay_user_name": "tinypuppet",
-  "updated_at": 1588937139,
-  "goods_num": 2,
-  "completed_at": 1588937139,
-  "created_at": 1588936782,
-  "invoice_status": 1,
-  "sended_time": 0,
-  "status_text": "已完成",
-  "remark": "",
-  "coupon_amount": 0,
-  "mobile": "18666600000",
-  "user_name": "tinypuppet",
-  "payed_at": 1588936805,
-  "total_amount": 50,
-  "store": {
-    "address": "广东省深圳市宝安区深圳市宝安区福海街道宝安大道6259号 L1 层55/56号商铺",
-    "longitude": "113.804601",
-    "latitude": "22.678654",
-    "mobile": "075523224859",
-    "name": "福永同泰时代城店" },
-
-  "send_status": 0,
-  "discount": [],
-  "status": 5,
-  "completed_time": "2020-05-08 19:25:39",
-  "amount": 50,
-  "multi_store": "福永同泰时代城店",
-  "productioned_time": "2020-05-08 19:24:37",
-  "postscript": "打包",
-  "sort_num": "8093",
-  "order_no": "ABCDEFGHIJKLMN0010",
-  "id": 10,
-  "typeCate": 1,
-  "goods": [
-  {
-    "number": 1,
-    "originAmount": "28.00",
-    "price": "28.00",
-    "unit": "件",
-    "property": "去冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2020/03/19/630a810c8c7201c112.jpg",
-    "amount": "28.00",
-    "name": "霸气葡萄" },
-
-  {
-    "number": 1,
-    "originAmount": "22.00",
-    "price": "22.00",
-    "unit": "件",
-    "property": "标准冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2020/03/27/8d4a1edb7c9e2d6554.jpg",
-    "amount": "28.00",
-    "name": "霸气葡萄" }] },
-
-
-
-{
-  "coupon_name": "",
-  "receive_at": 0,
-  "pay_mode": "微信支付",
-  "pay_user_name": "tinypuppet",
-  "updated_at": 1587818906,
-  "goods_num": 2,
-  "completed_at": 1587818906,
-  "created_at": 1587817016,
-  "invoice_status": 0,
-  "sended_time": 0,
-  "status_text": "已完成",
-  "remark": "",
-  "coupon_amount": 0,
-  "mobile": "18666600000",
-  "user_name": "tinypuppet",
-  "payed_at": 1587817024,
-  "total_amount": 43,
-  "store": {
-    "address": "广东省深圳市宝安区深圳市宝安区西乡街道码头路新湖路海城路合围处宝安大仟里购物中心一楼L111-L112号铺（奈雪的茶）",
-    "longitude": "113.87243",
-    "latitude": "22.56995",
-    "mobile": "18124071450",
-    "name": "宝安大仟里店" },
-
-  "send_status": 0,
-  "discount": [],
-  "status": 5,
-  "completed_time": "2020-04-25 20:48:26",
-  "amount": 43,
-  "multi_store": "福永同泰时代城店",
-  "productioned_time": "2020-04-25 20:20:16",
-  "postscript": "打包",
-  "sort_num": "8025",
-  "order_no": "ABCDEFGHIJKLMN0011",
-  "id": 11,
-  "typeCate": 1,
-  "goods": [
-  {
-    "number": 1,
-    "originAmount": "22.00",
-    "price": "22.00",
-    "unit": "件",
-    "property": "标准冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2020/03/27/bac6a6e8b23fd3b30e.jpg",
-    "amount": "22.00",
-    "name": "芝士奈雪金色山脉" },
-
-  {
-    "number": 1,
-    "originAmount": "21.00",
-    "price": "21.00",
-    "unit": "件",
-    "property": "去冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2020/03/27/369520a40d39e0ac11.jpg",
-    "amount": "21.00",
-    "name": "芝士茉莉初雪" }] },
-
-
-
-{
-  "coupon_name": "优惠券：省28元",
-  "receive_at": 0,
-  "pay_mode": "微信支付",
-  "pay_user_name": "tinypuppet",
-  "updated_at": 1585055587,
-  "goods_num": 3,
-  "completed_at": 1585055587,
-  "created_at": 1585055310,
-  "invoice_status": 0,
-  "sended_time": 0,
-  "status_text": "已完成",
-  "remark": "",
-  "coupon_amount": "28.00",
-  "mobile": "18666600000",
-  "user_name": "tinypuppet",
-  "payed_at": 1587817024,
-  "total_amount": "84.00",
-  "store": {
-    "address": "广东省深圳市宝安区深圳市宝安区福海街道宝安大道6259号 L1 层55/56号商铺",
-    "longitude": "113.804601",
-    "latitude": "22.678654",
-    "mobile": "075523224859",
-    "name": "福永同泰时代城店" },
-
-  "send_status": 0,
-  "discount": [
-  {
-    "summary": "优惠券：省28.00元，茶饮满二赠一券",
-    "amount": "28.00",
-    "method": "coupon",
-    "order_no": "D5E7A064EA50054115",
-    "name": "茶饮满二赠一券",
-    "data_id": "420000007885550000" }],
-
-
-  "status": 5,
-  "completed_time": "2020-03-24 21:13:07",
-  "amount": "56.00",
-  "multi_store": "福永同泰时代城店",
-  "productioned_time": "2020-03-24 21:12:13",
-  "postscript": "打包",
-  "sort_num": "8106",
-  "order_no": "ABCDEFGHIJKLMN0012",
-  "id": 12,
-  "typeCate": 1,
-  "goods": [
-  {
-    "number": 1,
-    "originAmount": "28.00",
-    "price": "28.00",
-    "unit": "件",
-    "property": "标准(芝士),去冰,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/04/26/a2aad6ced9aa42e2c6.jpg",
-    "amount": "28.00",
-    "name": "霸气芝士芒果" },
-
-  {
-    "number": 1,
-    "originAmount": "28.00",
-    "price": "28.00",
-    "unit": "件",
-    "property": "标准(芝士),冰沙,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/04/26/a2aad6ced9aa42e2c6.jpg",
-    "amount": "28.00",
-    "name": "霸气芝士芒果" },
-
-  {
-    "number": 1,
-    "originAmount": "28.00",
-    "price": "28.00",
-    "unit": "件",
-    "property": "标准(芝士),冰沙,标准糖",
-    "image": "https://img-shop.qmimg.cn/s23107/2019/04/26/1cb88e6cd2fbcefb2a.jpg",
-    "amount": "28.00",
-    "name": "霸气芝士草莓" }] }];exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function timeFormat() {var timestamp = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;var fmt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'yyyy-mm-dd';
+  // 其他更多是格式化有如下:
+  // yyyy:mm:dd|yyyy:mm|yyyy年mm月dd日|yyyy年mm月dd日 hh时MM分等,可自定义组合
+  timestamp = parseInt(timestamp);
+  // 如果为null,则格式化当前时间
+  if (timestamp == null) timestamp = Number(new Date());
+  // 判断用户输入的时间戳是秒还是毫秒,一般前端js获取的时间戳是毫秒(13位),后端传过来的为秒(10位)
+  if (timestamp.toString().length == 10) timestamp *= 1000;
+  var date = new Date(timestamp);
+  var ret;
+  var opt = {
+    "y+": date.getFullYear().toString(), // 年
+    "m+": (date.getMonth() + 1).toString(), // 月
+    "d+": date.getDate().toString(), // 日
+    "h+": date.getHours().toString(), // 时
+    "M+": date.getMinutes().toString(), // 分
+    "s+": date.getSeconds().toString() // 秒
+    // 有其他格式化字符需求可以继续添加，必须转化成字符串
+  };
+  for (var k in opt) {
+    ret = new RegExp("(" + k + ")").exec(fmt);
+    if (ret) {
+      fmt = fmt.replace(ret[1], ret[1].length == 1 ? opt[k] : opt[k].padStart(ret[1].length, "0"));
+    };
+  };
+  return fmt;
+}var _default =
+
+timeFormat;exports.default = _default;
 
 /***/ }),
 
 /***/ 29:
-/*!*************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/api/customer-coupons.js ***!
-  \*************************************************************************************/
+/*!*************************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/timeFrom.js ***!
+  \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = [
-{
-  "couponExplain": "<p>1. 在有效期内，凭此券在奈雪内地任意门店(机场店、奈雪梦工厂除外)及“奈雪点单”小程序免费兑换任意饮品或软欧包一份，菜单上标有红色雪花产品除外</p><p>2. 此券不可兑换现金，不设找零，优惠券抵扣金额不予积分</p><p>3. 此券每单仅限使用一张，不得与其他优惠券同时使用</p><p>4. 此券不适用于第三方外送服务</p><p>5. 券面图片仅供参考，产品以实物为准</p>",
-  "discountUnit": 1,
-  "imageUrl": "https://images.qmai.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-  "id": "1",
-  "discountAmount": null,
-  "beginAt": "2020-05-10 00:00:00",
-  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
-  "endAt": "2020-06-08 23:59:59",
-  "createdAt": "2020-05-10 02:06:00",
-  "title": "生日免费券",
-  "couponId": "1",
-  "deletedAt": null,
-  "sellerName": "奈雪の茶",
-  "updatedAt": "2020-05-10 02:06:00",
-  "couponType": 1 },
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _timeFormat = _interopRequireDefault(__webpack_require__(/*! ../../libs/function/timeFormat.js */ 28));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
-{
-  "couponExplain": "1. 适用商品：免费兑换生日特调鸡尾酒一杯\n2. 适用门店：仅限内地奈雪酒屋任意门店堂食使用\n3. 适用场景：线下门店出示会员码使用\n4. 本券仅限消费酒类产品，依法不支持未成年人使用\n5. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n6. 此券不适用于第三方外送服务\n7. 券面图片仅供参考，产品以实物为准",
-  "discountUnit": null,
-  "imageUrl": "https://images.qmai.cn/s34747/2019/12/04/5d97da76e82bfe26d3.png",
-  "id": "2",
-  "discountAmount": null,
-  "beginAt": "2020-05-10 00:00:00",
-  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
-  "endAt": "2020-06-08 23:59:59",
-  "createdAt": "2020-05-10 02:06:00",
-  "title": "生日特调券",
-  "couponId": "2",
-  "deletedAt": null,
-  "sellerName": "奈雪酒屋",
-  "updatedAt": "2020-05-10 02:06:00",
-  "couponType": 2 },
+/**
+                                                                                                                                                                                                                                                                                          * 时间戳转为多久之前
+                                                                                                                                                                                                                                                                                          * @param String timestamp 时间戳
+                                                                                                                                                                                                                                                                                          * @param String | Boolean format 如果为时间格式字符串，超出一定时间范围，返回固定的时间格式；
+                                                                                                                                                                                                                                                                                          * 如果为布尔值false，无论什么时间，都返回多久以前的格式
+                                                                                                                                                                                                                                                                                          */
+function timeFrom() {var timestamp = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;var format = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'yyyy-mm-dd';
+  if (timestamp == null) timestamp = Number(new Date());
+  timestamp = parseInt(timestamp);
+  // 判断用户输入的时间戳是秒还是毫秒,一般前端js获取的时间戳是毫秒(13位),后端传过来的为秒(10位)
+  if (timestamp.toString().length == 10) timestamp *= 1000;
+  var timer = new Date().getTime() - timestamp;
+  timer = parseInt(timer / 1000);
+  // 如果小于5分钟,则返回"刚刚",其他以此类推
+  var tips = '';
+  switch (true) {
+    case timer < 300:
+      tips = '刚刚';
+      break;
+    case timer >= 300 && timer < 3600:
+      tips = parseInt(timer / 60) + '分钟前';
+      break;
+    case timer >= 3600 && timer < 86400:
+      tips = parseInt(timer / 3600) + '小时前';
+      break;
+    case timer >= 86400 && timer < 2592000:
+      tips = parseInt(timer / 86400) + '天前';
+      break;
+    default:
+      // 如果format为false，则无论什么时间戳，都显示xx之前
+      if (format === false) {
+        if (timer >= 2592000 && timer < 365 * 86400) {
+          tips = parseInt(timer / (86400 * 30)) + '个月前';
+        } else {
+          tips = parseInt(timer / (86400 * 365)) + '年前';
+        }
+      } else {
+        tips = (0, _timeFormat.default)(timestamp, format);
+      }}
 
-{
-  "couponExplain": "1. 使用条件：在有效期内，免费兑换鸡尾酒一杯，每周五、周六与法定节假日19点后不支持使用\n2. 适用商品：鸡尾酒/红葡萄酒/白葡萄酒，具体以门店营业信息为准\n3. 适用门店：仅限内地奈雪酒屋任意门店堂食使用\n4. 适用场景：线下门店出示会员码使用\n5. 本券仅限消费酒类产品，依法不支持未成年人使用\n6. 此券每单仅限使用一张，不可兑换现金，不设找零，优惠券抵扣金额不予积分\n7. 此券不适用于第三方外送服务8. 券面图片仅供参考，产品以实物为准",
-  "discountUnit": null,
-  "imageUrl": "https://images.qmai.cn/s34747/2019/12/04/5d97da76e82bfe26d3.png",
-  "id": "3",
-  "discountAmount": null,
-  "beginAt": "2020-05-08 00:00:00",
-  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
-  "endAt": "2020-06-06 23:59:59",
-  "createdAt": "2020-05-08 19:25:41",
-  "title": "酒屋特调券",
-  "couponId": "3",
-  "deletedAt": null,
-  "sellerName": "奈雪酒屋",
-  "updatedAt": "2020-05-08 19:25:41",
-  "couponType": 2 },
+  return tips;
+}var _default =
 
-{
-  "couponExplain": "<p>1. 在有效期内，凭此券可在奈雪内地任意门店(机场店、奈雪梦工厂除外)及“奈雪点单”小程序购买任意茶饮一杯，可免费获得软欧包一个（价格不高于茶饮），菜单上标有红色雪花产品除外</p><p>2. 此券不可兑换现金，不设找零，优惠券抵扣金额不予积分</p><p>3. 此券每单仅限使用一张，不得与其他优惠券同时使用</p><p>4. 此券不适用于第三方外送服务</p><p>5. 券面图片仅供参考，产品以实物为准</p>",
-  "discountUnit": 2,
-  "imageUrl": "https://images.qmai.cn/s23107/2019/10/10/8a8be6ddf7a4140944.jpg",
-  "id": "4",
-  "discountAmount": 0,
-  "beginAt": "2020-05-08 00:00:00",
-  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
-  "endAt": "2020-06-06 23:59:59",
-  "createdAt": "2020-05-08 19:25:41",
-  "title": "升级好友券",
-  "couponId": "4",
-  "deletedAt": null,
-  "sellerName": "奈雪の茶",
-  "updatedAt": "2020-05-08 19:25:41",
-  "couponType": 1 },
-
-{
-  "couponExplain": "<p>1. 在有效期内，凭此券可在奈雪内地任意门店(机场店、奈雪梦工厂除外)及“奈雪点单”小程序享受购买任意茶饮满两杯赠一杯（赠送产品价格不高于购买产品），菜单上标有红色雪花产品除外</p><p>2. 此券不可兑换现金，不设找零，优惠券抵扣金额不予积分</p><p>3. 此券每单仅限使用一张，不得与其他优惠券同时使用</p><p>4. 此券不适用于第三方外送服务</p><p>5. 券面图片仅供参考，产品以实物为准</p>",
-  "discountUnit": 2,
-  "imageUrl": "https://images.qmai.cn/s23107/2019/10/09/ea5b8ed493c0cc310d.jpg",
-  "id": "5",
-  "discountAmount": 0,
-  "beginAt": "2020-05-08 00:00:00",
-  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
-  "endAt": "2020-06-06 23:59:59",
-  "createdAt": "2020-05-08 19:25:41",
-  "title": "茶饮满二赠一券",
-  "couponId": "5",
-  "deletedAt": null,
-  "sellerName": "奈雪の茶",
-  "updatedAt": "2020-05-08 19:25:41",
-  "couponType": 1 },
-
-{
-  "couponExplain": "<p>1.&nbsp;在有效期内，凭此券可在“奈雪点单”小程序外卖(机场店、奈雪梦工厂除外)购买任意茶饮或软欧包减免5元优惠</p><p>2.&nbsp;此券不可兑换现金，不设找零，优惠券抵扣金额不予积分</p><p>3.&nbsp;此券每单仅限使用一张，不得与其他优惠券同时使用</p><p>4.&nbsp;此券不适用于第三方外送服务</p><p>5.&nbsp;券面图片仅供参考，产品以实物为准</p>",
-  "imageUrl": "https://images.qmai.cn/s23107/2019/12/04/fcb80e25ea8b39c1ac.jpg",
-  "id": "6",
-  "discountAmount": 5,
-  "beginAt": "2020-05-08 00:00:00",
-  "useTimeScope": "[{\"begin\":\"00:00:00\",\"end\":\"23:59:59\"}]",
-  "endAt": "2020-06-06 23:59:59",
-  "createdAt": "2020-05-08 19:25:40",
-  "title": "小程序外卖5元现金券",
-  "couponId": "6",
-  "deletedAt": null,
-  "sellerName": "奈雪の茶",
-  "updatedAt": "2020-05-08 19:25:40",
-  "couponType": 1 }];exports.default = _default;
+timeFrom;exports.default = _default;
 
 /***/ }),
 
@@ -21803,113 +11629,116 @@ module.exports = g;
 /***/ }),
 
 /***/ 30:
-/*!****************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/common/util.js ***!
-  \****************************************************************************/
+/*!******************************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/colorGradient.js ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-function formatTime(time) {
-  if (typeof time !== 'number' || time < 0) {
-    return time;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
+                                                                                                      * 求两个颜色之间的渐变值
+                                                                                                      * @param {string} startColor 开始的颜色
+                                                                                                      * @param {string} endColor 结束的颜色
+                                                                                                      * @param {number} step 颜色等分的份额
+                                                                                                      * */
+function colorGradient() {var startColor = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'rgb(0, 0, 0)';var endColor = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'rgb(255, 255, 255)';var step = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 10;
+  var startRGB = hexToRgb(startColor, false); //转换为rgb数组模式
+  var startR = startRGB[0];
+  var startG = startRGB[1];
+  var startB = startRGB[2];
+
+  var endRGB = hexToRgb(endColor, false);
+  var endR = endRGB[0];
+  var endG = endRGB[1];
+  var endB = endRGB[2];
+
+  var sR = (endR - startR) / step; //总差值
+  var sG = (endG - startG) / step;
+  var sB = (endB - startB) / step;
+  var colorArr = [];
+  for (var i = 0; i < step; i++) {
+    //计算每一步的hex值 
+    var hex = rgbToHex('rgb(' + Math.round(sR * i + startR) + ',' + Math.round(sG * i + startG) + ',' + Math.round(sB *
+    i + startB) + ')');
+    colorArr.push(hex);
   }
-
-  var hour = parseInt(time / 3600);
-  time = time % 3600;
-  var minute = parseInt(time / 60);
-  time = time % 60;
-  var second = time;
-
-  return [hour, minute, second].map(function (n) {
-    n = n.toString();
-    return n[1] ? n : '0' + n;
-  }).join(':');
+  return colorArr;
 }
 
-function formatDateTime(date) {var fmt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'yyyy-MM-dd hh:mm:ss';
-  if (!date) {
-    return '';
-  }
-  if (typeof date === 'number') {
-    date = new Date(date * 1000);
-  }
-  var o = {
-    "M+": date.getMonth() + 1, //月份
-    "d+": date.getDate(), //日
-    "h+": date.getHours(), //小时
-    "m+": date.getMinutes(), //分
-    "s+": date.getSeconds(), //秒
-    "q+": Math.floor((date.getMonth() + 3) / 3), //季度
-    "S": date.getMilliseconds() //毫秒
-  };
-  if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (date.getFullYear() + "").substr(4 - RegExp.$1.length));
-  for (var k in o) {
-    if (new RegExp("(" + k + ")").test(fmt))
-    fmt = fmt.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));}
-  return fmt;
-}
-
-function formatLocation(longitude, latitude) {
-  if (typeof longitude === 'string' && typeof latitude === 'string') {
-    longitude = parseFloat(longitude);
-    latitude = parseFloat(latitude);
-  }
-
-  longitude = longitude.toFixed(2);
-  latitude = latitude.toFixed(2);
-
-  return {
-    longitude: longitude.toString().split('.'),
-    latitude: latitude.toString().split('.') };
-
-}
-
-var dateUtils = {
-  UNITS: {
-    '年': 31557600000,
-    '月': 2629800000,
-    '天': 86400000,
-    '小时': 3600000,
-    '分钟': 60000,
-    '秒': 1000 },
-
-  humanize: function humanize(milliseconds) {
-    var humanize = '';
-    for (var key in this.UNITS) {
-      if (milliseconds >= this.UNITS[key]) {
-        humanize = Math.floor(milliseconds / this.UNITS[key]) + key + '前';
-        break;
+// 将hex表示方式转换为rgb表示方式(这里返回rgb数组模式)
+function hexToRgb(sColor) {var str = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+  var reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/;
+  sColor = sColor.toLowerCase();
+  if (sColor && reg.test(sColor)) {
+    if (sColor.length === 4) {
+      var sColorNew = "#";
+      for (var i = 1; i < 4; i += 1) {
+        sColorNew += sColor.slice(i, i + 1).concat(sColor.slice(i, i + 1));
       }
+      sColor = sColorNew;
     }
-    return humanize || '刚刚';
-  },
-  format: function format(dateStr) {
-    var date = this.parse(dateStr);
-    var diff = Date.now() - date.getTime();
-    if (diff < this.UNITS['天']) {
-      return this.humanize(diff);
+    //处理六位的颜色值
+    var sColorChange = [];
+    for (var _i = 1; _i < 7; _i += 2) {
+      sColorChange.push(parseInt("0x" + sColor.slice(_i, _i + 2)));
     }
-    var _format = function _format(number) {
-      return number < 10 ? '0' + number : number;
-    };
-    return date.getFullYear() + '/' + _format(date.getMonth() + 1) + '/' + _format(date.getDate()) + '-' +
-    _format(date.getHours()) + ':' + _format(date.getMinutes());
-  },
-  parse: function parse(str) {//将"yyyy-mm-dd HH:MM:ss"格式的字符串，转化为一个Date对象
-    var a = str.split(/[^0-9]/);
-    return new Date(a[0], a[1] - 1, a[2], a[3], a[4], a[5]);
-  } };
+    if (!str) {
+      return sColorChange;
+    } else {
+      return "rgb(".concat(sColorChange[0], ",").concat(sColorChange[1], ",").concat(sColorChange[2], ")");
+    }
+  } else if (/^(rgb|RGB)/.test(sColor)) {
+    var arr = sColor.replace(/(?:\(|\)|rgb|RGB)*/g, "").split(",");
+    return arr.map(function (val) {return Number(val);});
+  } else {
+    return sColor;
+  }
+};
 
+// 将rgb表示方式转换为hex表示方式
+function rgbToHex(rgb) {
+  var _this = rgb;
+  var reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/;
+  if (/^(rgb|RGB)/.test(_this)) {
+    var aColor = _this.replace(/(?:\(|\)|rgb|RGB)*/g, "").split(",");
+    var strHex = "#";
+    for (var i = 0; i < aColor.length; i++) {
+      var hex = Number(aColor[i]).toString(16);
+      hex = String(hex).length == 1 ? 0 + '' + hex : hex; // 保证每个rgb的值为2位
+      if (hex === "0") {
+        hex += hex;
+      }
+      strHex += hex;
+    }
+    if (strHex.length !== 7) {
+      strHex = _this;
+    }
+    return strHex;
+  } else if (reg.test(_this)) {
+    var aNum = _this.replace(/#/, "").split("");
+    if (aNum.length === 6) {
+      return _this;
+    } else if (aNum.length === 3) {
+      var numHex = "#";
+      for (var _i2 = 0; _i2 < aNum.length; _i2 += 1) {
+        numHex += aNum[_i2] + aNum[_i2];
+      }
+      return numHex;
+    }
+  } else {
+    return _this;
+  }
+}var _default =
 
-module.exports = {
-  formatTime: formatTime,
-  formatDateTime: formatDateTime,
-  formatLocation: formatLocation,
-  dateUtils: dateUtils };
+{
+  colorGradient: colorGradient,
+  hexToRgb: hexToRgb,
+  rgbToHex: rgbToHex };exports.default = _default;
 
 /***/ }),
 
-/***/ 306:
+/***/ 301:
 /*!*********************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/util/province.js ***!
   \*********************************************************************************************************/
@@ -22059,7 +11888,7 @@ provinceData;exports.default = _default;
 
 /***/ }),
 
-/***/ 307:
+/***/ 302:
 /*!*****************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/util/city.js ***!
   \*****************************************************************************************************/
@@ -23573,7 +13402,7 @@ cityData;exports.default = _default;
 
 /***/ }),
 
-/***/ 308:
+/***/ 303:
 /*!*****************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/util/area.js ***!
   \*****************************************************************************************************/
@@ -36127,121 +25956,58 @@ areaData;exports.default = _default;
 /***/ }),
 
 /***/ 31:
-/*!****************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/store/index.js ***!
-  \****************************************************************************/
+/*!*********************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/guid.js ***!
+  \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator */ 4));var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ 11));
-var _api = _interopRequireDefault(__webpack_require__(/*! @/api */ 15));
-var _vuexPersistedstate = _interopRequireDefault(__webpack_require__(/*! vuex-persistedstate */ 32));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
+                                                                                                      * 本算法来源于简书开源代码，详见：https://www.jianshu.com/p/fdbf293d0a85
+                                                                                                      * 全局唯一标识符（uuid，Globally Unique Identifier）,也称作 uuid(Universally Unique IDentifier) 
+                                                                                                      * 一般用于多个组件之间,给它一个唯一的标识符,或者v-for循环的时候,如果使用数组的index可能会导致更新列表出现问题
+                                                                                                      * 最可能的情况是左滑删除item或者对某条信息流"不喜欢"并去掉它的时候,会导致组件内的数据可能出现错乱
+                                                                                                      * v-for的时候,推荐使用后端返回的id而不是循环的index
+                                                                                                      * @param {Number} len uuid的长度
+                                                                                                      * @param {Boolean} firstU 将返回的首字母置为"u"
+                                                                                                      * @param {Nubmer} radix 生成uuid的基数(意味着返回的字符串都是这个基数),2-二进制,8-八进制,10-十进制,16-十六进制
+                                                                                                      */
+function guid() {var len = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 32;var firstU = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;var radix = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+  var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
+  var uuid = [];
+  radix = radix || chars.length;
 
-_vue.default.use(_vuex.default);
+  if (len) {
+    // 如果指定uuid长度,只是取随机的字符,0|x为位运算,能去掉x的小数位,返回整数位
+    for (var i = 0; i < len; i++) {uuid[i] = chars[0 | Math.random() * radix];}
+  } else {
+    var r;
+    // rfc4122标准要求返回的uuid中,某些位为固定的字符
+    uuid[8] = uuid[13] = uuid[18] = uuid[23] = '-';
+    uuid[14] = '4';
 
-var store = new _vuex.default.Store({
-  plugins: [
-  // 可以有多个持久化实例  
-  (0, _vuexPersistedstate.default)({
-    key: 'app_config_data', // 状态保存到本地的 key   
-    paths: ['member', 'cookieKey'], // 要持久化的状态，在state里面取，如果有嵌套，可以  a.b.c   
-    storage: { // 存储方式定义  
-      getItem: function getItem(key) {return uni.getStorageSync(key);}, // 获取  
-      setItem: function setItem(key, value) {return uni.setStorageSync(key, value);}, // 存储  
-      removeItem: function removeItem(key) {return uni.removeStorageSync(key);} // 删除  
-    } })],
+    for (var _i = 0; _i < 36; _i++) {
+      if (!uuid[_i]) {
+        r = 0 | Math.random() * 16;
+        uuid[_i] = chars[_i == 19 ? r & 0x3 | 0x8 : r];
+      }
+    }
+  }
+  // 移除第一个字符,并用u替代,因为第一个字符为数值时,该guuid不能用作id或者class
+  if (firstU) {
+    uuid.shift();
+    return 'u' + uuid.join('');
+  } else {
+    return uuid.join('');
+  }
+}var _default =
 
-
-  state: {
-    store: {},
-    cart: [],
-    orderType: 'takein',
-    address: {},
-    addresses: {},
-    member: {
-      avatar: "http://cdn.shop.weivee.com/shop/20200408/6162b21922f336ae9b320bc06582ab7f.png",
-      birthday: null,
-      couponNum: 0,
-      currentValue: "1.00",
-      gender: 0,
-      id: 2,
-      level: 1,
-      mobile: "15975073045",
-      money: "4789.20",
-      openid: "oEY7Y5XYukLQySoKA7sPGWSDtktA",
-      score: 0,
-      token: "87cecec2-6071-431d-afc1-825650711e5a",
-      username: "游客" },
-
-    lang: 'zh-cn',
-    cookieKey: 'PHPSESSID=e4dk4o2utr3c0n95tp42p745ai',
-    // 默认地为你为北京地址
-    location: {} },
-
-  getters: {
-    isLogin: function isLogin(state) {return Object.keys(state.member).length > 0;} //是否登录
-  },
-  mutations: {
-    SET_ORDER_TYPE: function SET_ORDER_TYPE(state, type) {
-      state.orderType = type;
-    },
-    SET_MEMBER: function SET_MEMBER(state, member) {
-      state.member = member;
-    },
-    SET_ADDRESS: function SET_ADDRESS(state, address) {
-      state.address = address;
-    },
-    SET_ADDRESSES: function SET_ADDRESSES(state, addresses) {
-      state.addresses = addresses;
-    },
-    SET_STORE: function SET_STORE(state, store) {
-      state.store = store;
-    },
-    SET_CART: function SET_CART(state, cart) {
-      state.cart = cart;
-    },
-    REMOVE_CART: function REMOVE_CART(state) {
-      state.cart = [];
-    },
-    setCookie: function setCookie(state, provider) {
-      state.cookie = provider;
-      uni.setStorage({
-        key: 'cookieKey',
-        data: provider });
-
-    },
-    SET_LOCATION: function SET_LOCATION(state, location) {
-      state.location = location;
-    } },
-
-  actions: {
-    getStore: function getStore(_ref) {return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var commit, store;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:commit = _ref.commit;_context.next = 3;return (
-                  (0, _api.default)('store'));case 3:store = _context.sent;
-                commit('SET_STORE', store);case 5:case "end":return _context.stop();}}}, _callee);}))();
-    } } });var _default =
-
-
-
-store;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+guid;exports.default = _default;
 
 /***/ }),
 
-/***/ 32:
-/*!*****************************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/vuex-persistedstate/dist/vuex-persistedstate.es.js ***!
-  \*****************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = _default;var r = function r(_r) {return function (r) {return !!r && "object" == typeof r;}(_r) && !function (r) {var t = Object.prototype.toString.call(r);return "[object RegExp]" === t || "[object Date]" === t || function (r) {return r.$$typeof === e;}(r);}(_r);},e = "function" == typeof Symbol && Symbol.for ? Symbol.for("react.element") : 60103;function t(r, e) {return !1 !== e.clone && e.isMergeableObject(r) ? c(Array.isArray(r) ? [] : {}, r, e) : r;}function n(r, e, n) {return r.concat(e).map(function (r) {return t(r, n);});}function o(r) {return Object.keys(r).concat(function (r) {return Object.getOwnPropertySymbols ? Object.getOwnPropertySymbols(r).filter(function (e) {return r.propertyIsEnumerable(e);}) : [];}(r));}function u(r, e) {try {return e in r;} catch (r) {return !1;}}function c(e, i, a) {(a = a || {}).arrayMerge = a.arrayMerge || n, a.isMergeableObject = a.isMergeableObject || r, a.cloneUnlessOtherwiseSpecified = t;var f = Array.isArray(i);return f === Array.isArray(e) ? f ? a.arrayMerge(e, i, a) : function (r, e, n) {var i = {};return n.isMergeableObject(r) && o(r).forEach(function (e) {i[e] = t(r[e], n);}), o(e).forEach(function (o) {(function (r, e) {return u(r, e) && !(Object.hasOwnProperty.call(r, e) && Object.propertyIsEnumerable.call(r, e));})(r, o) || (i[o] = u(r, o) && n.isMergeableObject(e[o]) ? function (r, e) {if (!e.customMerge) return c;var t = e.customMerge(r);return "function" == typeof t ? t : c;}(o, n)(r[o], e[o], n) : t(e[o], n));}), i;}(e, i, a) : t(i, a);}c.all = function (r, e) {if (!Array.isArray(r)) throw new Error("first argument should be an array");return r.reduce(function (r, t) {return c(r, t, e);}, {});};var i = c;function _default(r) {var e = (r = r || {}).storage || window && window.localStorage,t = r.key || "vuex";(r.assertStorage || function () {e.setItem("@@", 1), e.removeItem("@@");})(e);var n,o = function o() {return (r.getState || function (r, e) {var t;try {return (t = e.getItem(r)) && void 0 !== t ? JSON.parse(t) : void 0;} catch (r) {}})(t, e);};return r.fetchBeforeUse && (n = o()), function (u) {r.fetchBeforeUse || (n = o()), "object" == typeof n && null !== n && (u.replaceState(r.overwrite ? n : i(u.state, n, { arrayMerge: r.arrayMerger || function (r, e) {return e;}, clone: !1 })), (r.rehydrated || function () {})(u)), (r.subscriber || function (r) {return function (e) {return r.subscribe(e);};})(u)(function (n, o) {(r.filter || function () {return !0;})(n) && (r.setState || function (r, e, t) {return t.setItem(r, JSON.stringify(e));})(t, (r.reducer || function (r, e) {return Array.isArray(e) ? e.reduce(function (e, t) {return function (r, e, t, n) {return (e = e.split ? e.split(".") : e).slice(0, -1).reduce(function (r, e) {return r[e] = r[e] || {};}, r)[e.pop()] = t, r;}(e, t, function (r, e, t) {return void 0 === (r = (e.split ? e.split(".") : e).reduce(function (r, e) {return r && r[e];}, r)) ? void 0 : r;}(r, t));}, {}) : r;})(o, r.paths), e);});};}
-
-/***/ }),
-
-/***/ 323:
+/***/ 318:
 /*!********************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/jyf-parser/libs/MpHtmlParser.js ***!
   \********************************************************************************************************/
@@ -36255,9 +26021,9 @@ function _classCallCheck(instance, Constructor) {if (!(instance instanceof Const
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           author：JinYufeng
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           update：2020/05/08
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */
-var cfg = __webpack_require__(/*! ./config.js */ 324),
+var cfg = __webpack_require__(/*! ./config.js */ 319),
 blankChar = cfg.blankChar,
-CssHandler = __webpack_require__(/*! ./CssHandler.js */ 325),
+CssHandler = __webpack_require__(/*! ./CssHandler.js */ 320),
 screenWidth = wx.getSystemInfoSync().screenWidth;
 var emoji; // emoji 补丁包 https://jin-yufeng.github.io/Parser/#/instructions?id=emoji
 var MpHtmlParser = /*#__PURE__*/function () {"use strict";
@@ -36768,7 +26534,7 @@ module.exports = MpHtmlParser;
 
 /***/ }),
 
-/***/ 324:
+/***/ 319:
 /*!**************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/jyf-parser/libs/config.js ***!
   \**************************************************************************************************/
@@ -36874,7 +26640,53 @@ function makeMap(str) {
 
 /***/ }),
 
-/***/ 325:
+/***/ 32:
+/*!**********************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/color.js ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var color = {
+  primary: "#2979ff",
+  primaryDark: "#2b85e4",
+  primaryDisabled: "#a0cfff",
+  primaryLight: "#ecf5ff",
+  bgColor: "#f3f4f6",
+
+  info: "#909399",
+  infoDark: "#82848a",
+  infoDisabled: "#c8c9cc",
+  infoLight: "#f4f4f5",
+
+  warning: "#ff9900",
+  warningDark: "#f29100",
+  warningDisabled: "#fcbd71",
+  warningLight: "#fdf6ec",
+
+  error: "#fa3534",
+  errorDark: "#dd6161",
+  errorDisabled: "#fab6b6",
+  errorLight: "#fef0f0",
+
+  success: "#19be6b",
+  successDark: "#18b566",
+  successDisabled: "#71d5a1",
+  successLight: "#dbf1e1",
+
+  mainColor: "#303133",
+  contentColor: "#606266",
+  tipsColor: "#909399",
+  lightColor: "#c0c4cc",
+  borderColor: "#e4e7ed" };var _default =
+
+
+color;exports.default = _default;
+
+/***/ }),
+
+/***/ 320:
 /*!******************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/jyf-parser/libs/CssHandler.js ***!
   \******************************************************************************************************/
@@ -36888,7 +26700,7 @@ function _classCallCheck(instance, Constructor) {if (!(instance instanceof Const
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           author：JinYufeng
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           update：2020/03/15
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         */
-var cfg = __webpack_require__(/*! ./config.js */ 324);var
+var cfg = __webpack_require__(/*! ./config.js */ 319);var
 CssHandler = /*#__PURE__*/function () {"use strict";
   function CssHandler(tagStyle) {var _this = this;_classCallCheck(this, CssHandler);_defineProperty(this, "getStyle",
 
@@ -36986,371 +26798,117 @@ CssParser = /*#__PURE__*/function () {"use strict";
 /***/ }),
 
 /***/ 33:
-/*!********************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/index.js ***!
-  \********************************************************************************************/
+/*!**************************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/type2icon.js ***!
+  \**************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-var _mixin = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mixin.js */ 34));
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
+                                                                                                      * 根据主题type值,获取对应的图标
+                                                                                                      * @param String type 主题名称,primary|info|error|warning|success
+                                                                                                      * @param String fill 是否使用fill填充实体的图标  
+                                                                                                      */
+function type2icon() {var type = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'success';var fill = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+  // 如果非预置值,默认为success
+  if (['primary', 'info', 'error', 'warning', 'success'].indexOf(type) == -1) type = 'success';
+  var iconName = '';
+  // 目前(2019-12-12),info和primary使用同一个图标
+  switch (type) {
+    case 'primary':
+      iconName = 'info-circle';
+      break;
+    case 'info':
+      iconName = 'info-circle';
+      break;
+    case 'error':
+      iconName = 'close-circle';
+      break;
+    case 'warning':
+      iconName = 'error-circle';
+      break;
+    case 'success':
+      iconName = 'checkmark-circle';
+      break;
+    default:
+      iconName = 'checkmark-circle';}
 
-var _mpShare = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mpShare.js */ 35));
+  // 是否是实体类型,加上-fill,在icon组件库中,实体的类名是后面加-fill的
+  if (fill) iconName += '-fill';
+  return iconName;
+}var _default =
 
-var _request = _interopRequireDefault(__webpack_require__(/*! ./libs/request */ 36));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var _queryParams = _interopRequireDefault(__webpack_require__(/*! ./libs/function/queryParams.js */ 40));
-
-var _route = _interopRequireDefault(__webpack_require__(/*! ./libs/function/route.js */ 41));
-
-var _timeFormat = _interopRequireDefault(__webpack_require__(/*! ./libs/function/timeFormat.js */ 42));
-
-var _timeFrom = _interopRequireDefault(__webpack_require__(/*! ./libs/function/timeFrom.js */ 43));
-
-var _colorGradient = _interopRequireDefault(__webpack_require__(/*! ./libs/function/colorGradient.js */ 44));
-
-var _guid = _interopRequireDefault(__webpack_require__(/*! ./libs/function/guid.js */ 45));
-
-var _color = _interopRequireDefault(__webpack_require__(/*! ./libs/function/color.js */ 46));
-
-var _type2icon = _interopRequireDefault(__webpack_require__(/*! ./libs/function/type2icon.js */ 47));
-
-var _randomArray = _interopRequireDefault(__webpack_require__(/*! ./libs/function/randomArray.js */ 48));
-
-var _deepClone = _interopRequireDefault(__webpack_require__(/*! ./libs/function/deepClone.js */ 38));
-
-var _deepMerge = _interopRequireDefault(__webpack_require__(/*! ./libs/function/deepMerge.js */ 37));
-
-
-var _test = _interopRequireDefault(__webpack_require__(/*! ./libs/function/test.js */ 39));
-
-var _random = _interopRequireDefault(__webpack_require__(/*! ./libs/function/random.js */ 49));
-
-var _trim = _interopRequireDefault(__webpack_require__(/*! ./libs/function/trim.js */ 50));
-
-var _toast = _interopRequireDefault(__webpack_require__(/*! ./libs/function/toast.js */ 51));
-
-
-
-var _config = _interopRequireDefault(__webpack_require__(/*! ./libs/config/config.js */ 52));
-
-var _zIndex = _interopRequireDefault(__webpack_require__(/*! ./libs/config/zIndex.js */ 53));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // 引入全局mixin
-// 引入关于是否mixin集成小程序分享的配置
-// 全局挂载引入http相关请求拦截插件
-function wranning(str) {// 开发环境进行信息输出,主要是一些报错信息
-  // 这个环境的来由是在程序编写时候,点击hx编辑器运行调试代码的时候,详见:
-  // 	https://uniapp.dcloud.io/frame?id=%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83%e5%92%8c%e7%94%9f%e4%ba%a7%e7%8e%af%e5%a2%83
-  if (true) {console.warn(str);}} // 尝试判断在根目录的/store中是否有$u.mixin.js，此文件uView默认为需要挂在到全局的vuex的state变量
-// HX2.6.11版本,放到try中,控制台依然会警告,暂时不用此方式，
-// let vuexStore = {};
-// try {
-// 	vuexStore = require("@/store/$u.mixin.js");
-// } catch (e) {
-// 	//TODO handle the exception
-// }
-// post类型对象参数转为get类型url参数
-var $u = { queryParams: _queryParams.default, route: _route.default, timeFormat: _timeFormat.default, date: _timeFormat.default, // 另名date
-  timeFrom: _timeFrom.default, colorGradient: _colorGradient.default.colorGradient, guid: _guid.default, color: _color.default, type2icon: _type2icon.default, randomArray: _randomArray.default, wranning: wranning, get: _request.default.get, post: _request.default.post, put: _request.default.put,
-  'delete': _request.default.delete,
-  hexToRgb: _colorGradient.default.hexToRgb,
-  rgbToHex: _colorGradient.default.rgbToHex,
-  test: _test.default,
-  random: _random.default,
-  deepClone: _deepClone.default,
-  deepMerge: _deepMerge.default,
-  trim: _trim.default,
-  type: ['primary', 'success', 'error', 'warning', 'info'],
-  http: _request.default,
-  toast: _toast.default,
-  config: _config.default, // uView配置信息相关，比如版本号
-  zIndex: _zIndex.default };
-
-
-var install = function install(Vue) {
-  Vue.mixin(_mixin.default);
-  if (Vue.prototype.openShare) {
-    Vue.mixin(mpShare);
-  }
-  // Vue.mixin(vuexStore);
-  // 时间格式化，同时两个名称，date和timeFormat
-  Vue.filter('timeFormat', function (timestamp, format) {
-    return (0, _timeFormat.default)(timestamp, format);
-  });
-  Vue.filter('date', function (timestamp, format) {
-    return (0, _timeFormat.default)(timestamp, format);
-  });
-  // 将多久以前的方法，注入到全局过滤器
-  Vue.filter('timeFrom', function (timestamp, format) {
-    return (0, _timeFrom.default)(timestamp, format);
-  });
-  Vue.prototype.$u = $u;
-};var _default =
-
-{
-  install: install };exports.default = _default;
+type2icon;exports.default = _default;
 
 /***/ }),
 
 /***/ 34:
-/*!*******************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/mixin/mixin.js ***!
-  \*******************************************************************************************************/
+/*!****************************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/randomArray.js ***!
+  \****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(uni) {module.exports = {
-  data: function data() {
-    return {};
-  },
-  onLoad: function onLoad() {
-    // getRect挂载到$u上，因为这方法需要使用in(this)，所以无法把它独立成一个单独的文件导出
-    this.$u.getRect = this.$uGetRect;
-  },
-  methods: {
-    // 查询节点信息
-    $uGetRect: function $uGetRect(selector, all) {var _this = this;
-      return new Promise(function (resolve) {
-        uni.createSelectorQuery().
-        in(_this)[all ? 'selectAll' : 'select'](selector).
-        boundingClientRect(function (rect) {
-          if (all && Array.isArray(rect) && rect.length) {
-            resolve(rect);
-          }
-          if (!all && rect) {
-            resolve(rect);
-          }
-        }).
-        exec();
-      });
-    } },
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 打乱数组
+function randomArray() {var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  // 原理是sort排序,Math.random()产生0<= x < 1之间的数,会导致x-0.05大于或者小于0
+  return array.sort(function () {return Math.random() - 0.5;});
+}var _default =
 
-  onReachBottom: function onReachBottom() {
-    uni.$emit('uOnReachBottom');
-  } };
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+randomArray;exports.default = _default;
 
 /***/ }),
 
 /***/ 35:
-/*!*********************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/mixin/mpShare.js ***!
-  \*********************************************************************************************************/
+/*!***********************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/random.js ***!
+  \***********************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = {
-  onLoad: function onLoad() {
-    // 设置默认的转发参数
-    this.$u.mpShare = {
-      title: '', // 默认为小程序名称
-      path: '', // 默认为当前页面路径
-      imageUrl: '' // 默认为当前页面的截图
-    };
-  },
-  onShareAppMessage: function onShareAppMessage() {
-    return this.$u.mpShare;
-  } };
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function random(min, max) {
+  if (min >= 0 && max > 0 && max >= min) {
+    var gab = max - min + 1;
+    return Math.floor(Math.random() * gab + min);
+  } else {
+    return 0;
+  }
+}var _default =
+
+random;exports.default = _default;
 
 /***/ }),
 
 /***/ 36:
 /*!*********************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/request/index.js ***!
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/trim.js ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _deepMerge = _interopRequireDefault(__webpack_require__(/*! ../function/deepMerge */ 37));
-var _test = _interopRequireDefault(__webpack_require__(/*! ../function/test */ 39));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
-Request = /*#__PURE__*/function () {_createClass(Request, [{ key: "setConfig",
-    // 设置全局默认配置
-    value: function setConfig(customConfig) {
-      // 深度合并对象，否则会造成对象深层属性丢失
-      this.config = (0, _deepMerge.default)(this.config, customConfig);
-    }
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function trim(str) {var pos = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'both';
+  if (pos == 'both') {
+    return str.replace(/^\s+|\s+$/g, "");
+  } else if (pos == "left") {
+    return str.replace(/^\s*/, '');
+  } else if (pos == 'right') {
+    return str.replace(/(\s*$)/g, "");
+  } else if (pos == 'all') {
+    return str.replace(/\s+/g, "");
+  } else {
+    return str;
+  }
+}var _default =
 
-    // 主要请求部分
-  }, { key: "request", value: function request() {var _this = this;var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      // 检查请求拦截
-      if (this.interceptor.request && typeof this.interceptor.request === 'function') {
-        var tmpConfig = {};
-        var interceptorReuest = this.interceptor.request(options);
-        if (interceptorReuest === false) {
-          return false;
-        }
-        this.options = interceptorReuest;
-      }
-
-      options.dataType = options.dataType || this.config.dataType;
-      options.responseType = options.responseType || this.config.responseType;
-      options.url = options.url || '';
-      options.params = options.params || {};
-      options.header = Object.assign(this.config.header, options.header);
-      options.method = options.method || this.config.method;
-
-      return new Promise(function (resolve, reject) {
-        options.complete = function (response) {
-          // 请求返回后，隐藏loading(如果请求返回快的话，可能会没有loading)
-          uni.hideLoading();
-          // 清除定时器，如果请求回来了，就无需loading
-          clearTimeout(_this.config.timer);
-          // 判断用户对拦截返回数据的要求，如果originalData为true，返回所有的数据(response)到拦截器，否则只返回response.data
-          if (_this.config.originalData) {
-            // 判断是否存在拦截器
-            if (_this.interceptor.response && typeof _this.interceptor.response === 'function') {
-              var resInterceptors = _this.interceptor.response(response);
-              // 如果拦截器不返回false，就将拦截器返回的内容给this.$u.post的then回调
-              if (resInterceptors !== false) {
-                resolve(resInterceptors);
-              } else {
-                // 如果拦截器返回false，意味着拦截器定义者认为返回有问题，直接接入catch回调
-                reject(response);
-              }
-            } else {
-              // 如果要求返回原始数据，就算没有拦截器，也返回最原始的数据
-              resolve(response);
-            }
-          } else {
-            if (response.statusCode == 200) {
-              if (_this.interceptor.response && typeof _this.interceptor.response === 'function') {
-                var _resInterceptors = _this.interceptor.response(response.data);
-                if (_resInterceptors !== false) {
-                  resolve(_resInterceptors);
-                } else {
-                  reject(response.data);
-                }
-              } else {
-                // 如果不是返回原始数据(originalData=false)，且没有拦截器的情况下，返回纯数据给then回调
-                resolve(response.data);
-              }
-            } else {
-              // 不返回原始数据的情况下，服务器状态码不为200，modal弹框提示
-              if (response.errMsg) {
-                uni.showModal({
-                  title: response.errMsg });
-
-              }
-              reject(response);
-            }
-          }
-        };
-
-        // 判断用户传递的URL是否/开头,如果不是,加上/，这里使用了uView的test.js验证库的url()方法
-        options.url = _test.default.url(options.url) ? options.url : _this.config.baseUrl + (options.url.indexOf('/') == 0 ?
-        options.url : '/' + options.url);
-
-        // 是否显示loading
-        // 加一个是否已有timer定时器的判断，否则有两个同时请求的时候，后者会清除前者的定时器id
-        // 而没有清除前者的定时器，导致前者超时，一直显示loading
-        if (_this.config.showLoading && !_this.config.timer) {
-          _this.config.timer = setTimeout(function () {
-            uni.showLoading({
-              title: _this.config.loadingText,
-              mask: _this.config.loadingMask });
-
-            _this.config.timer = null;
-          }, _this.config.loadingTime);
-        }
-        uni.request(options);
-      });
-    } }]);
-
-  function Request() {var _this2 = this;_classCallCheck(this, Request);
-    this.config = {
-      baseUrl: '', // 请求的根域名
-      // 默认的请求头
-      header: {
-        'content-type': 'application/json;charset=UTF-8' },
-
-      method: 'POST',
-      // 设置为json，返回后uni.request会对数据进行一次JSON.parse
-      dataType: 'json',
-      // 此参数无需处理，因为5+和支付宝小程序不支持，默认为text即可
-      responseType: 'text',
-      showLoading: true, // 是否显示请求中的loading
-      loadingText: '请求中...',
-      loadingTime: 800, // 在此时间内，请求还没回来的话，就显示加载中动画，单位ms
-      timer: null, // 定时器
-      originalData: false, // 是否在拦截器中返回服务端的原始数据，见文档说明
-      loadingMask: true // 展示loading的时候，是否给一个透明的蒙层，防止触摸穿透
-    };
-
-    // 拦截器
-    this.interceptor = {
-      // 请求前的拦截
-      request: null,
-      // 请求后的拦截
-      response: null };
-
-
-    // get请求
-    this.get = function (url) {var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};var header = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-      return _this2.request({
-        method: 'GET',
-        url: url,
-        header: header,
-        data: data });
-
-    };
-
-    // post请求
-    this.post = function (url) {var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};var header = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-      return _this2.request({
-        url: url,
-        method: 'POST',
-        header: header,
-        data: data });
-
-    };
-
-    // put请求，不支持支付宝小程序(HX2.6.15)
-    this.put = function (url) {var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};var header = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-      return _this2.request({
-        url: url,
-        method: 'PUT',
-        header: header,
-        data: data });
-
-    };
-
-    // delete请求，不支持支付宝和头条小程序(HX2.6.15)
-    this.delete = function (url) {var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};var header = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-      return _this2.request({
-        url: url,
-        method: 'DELETE',
-        header: header,
-        data: data });
-
-    };
-  }return Request;}();var _default =
-
-new Request();exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+trim;exports.default = _default;
 
 /***/ }),
 
-/***/ 366:
+/***/ 361:
 /*!*******************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/uni-swipe-action-item/mpwxs.js ***!
   \*******************************************************************************************************/
@@ -37458,87 +27016,44 @@ new Request();exports.default = _default;
 /***/ }),
 
 /***/ 37:
-/*!**************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/deepMerge.js ***!
-  \**************************************************************************************************************/
+/*!**********************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/toast.js ***!
+  \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _deepClone = _interopRequireDefault(__webpack_require__(/*! ./deepClone */ 38));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function toast(title) {var duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1500;
+  uni.showToast({
+    title: title,
+    icon: 'none',
+    duration: duration });
 
-// JS对象深度合并
-function deepMerge() {var target = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var source = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  target = (0, _deepClone.default)(target);
-  if (typeof target !== 'object' || typeof source !== 'object') return false;
-  for (var prop in source) {
-    if (!source.hasOwnProperty(prop)) continue;
-    if (prop in target) {
-      if (typeof target[prop] !== 'object') {
-        target[prop] = source[prop];
-      } else {
-        if (typeof source[prop] !== 'object') {
-          target[prop] = source[prop];
-        } else {
-          if (target[prop].concat && source[prop].concat) {
-            target[prop] = target[prop].concat(source[prop]);
-          } else {
-            target[prop] = deepMerge(target[prop], source[prop]);
-          }
-        }
-      }
-    } else {
-      target[prop] = source[prop];
-    }
-  }
-  return target;
 }var _default =
 
-deepMerge;exports.default = _default;
+toast;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
 /***/ 38:
-/*!**************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/deepClone.js ***!
-  \**************************************************************************************************************/
+/*!*********************************************************************************************************!*\
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/config/config.js ***!
+  \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 对象深度克隆
-function deepClone() {var object = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  var o, i, j, k;
-  if (typeof object !== "object" || object === null) return object;
-  if (object instanceof Array) {
-    o = [];
-    i = 0;
-    j = object.length;
-    for (; i < j; i++) {
-      if (typeof object[i] === "object" && object[i] != null) {
-        o[i] = deepClone(object[i]);
-      } else {
-        o[i] = object[i];
-      }
-    }
-  } else {
-    o = {};
-    for (i in object) {
-      if (typeof object[i] === "object" && object[i] !== null) {
-        o[i] = deepClone(object[i]);
-      } else {
-        o[i] = object[i];
-      }
-    }
-  }
-  return o;
-}var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 此版本发布于2020-06-10
+var version = '1.3.3';var _default =
 
-deepClone;exports.default = _default;
+{
+  v: version,
+  version: version };exports.default = _default;
 
 /***/ }),
 
-/***/ 388:
+/***/ 383:
 /*!***************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/pages/attendance/uni-calendar/util.js ***!
   \***************************************************************************************************/
@@ -37546,7 +27061,7 @@ deepClone;exports.default = _default;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 389));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _calendar = _interopRequireDefault(__webpack_require__(/*! ./calendar.js */ 384));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}var
 
 Calendar = /*#__PURE__*/function () {
   function Calendar()
@@ -37876,7 +27391,7 @@ Calendar;exports.default = _default;
 
 /***/ }),
 
-/***/ 389:
+/***/ 384:
 /*!*******************************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/pages/attendance/uni-calendar/calendar.js ***!
   \*******************************************************************************************************/
@@ -38435,193 +27950,37 @@ calendar;exports.default = _default;
 
 /***/ 39:
 /*!*********************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/test.js ***!
+  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/config/zIndex.js ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
-                                                                                                      * 验证电子邮箱格式
-                                                                                                      */
-function email(value) {
-  return /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/.test(value);
-}
-
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // uniapp在H5中各API的z-index值如下：
 /**
-   * 验证手机格式
-   */
-function mobile(value) {
-  return /^1[23456789]\d{9}$/.test(value);
-}
-
-/**
-   * 验证URL格式
-   */
-function url(value) {
-  return /^((https|http|ftp|rtsp|mms):\/\/)(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?(([0-9]{1,3}.){3}[0-9]{1,3}|([0-9a-z_!~*'()-]+.)*([0-9a-z][0-9a-z-]{0,61})?[0-9a-z].[a-z]{2,6})(:[0-9]{1,4})?((\/?)|(\/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+\/?)$/.
-  test(value);
-}
-
-/**
-   * 验证日期格式
-   */
-function date(value) {
-  return !/Invalid|NaN/.test(new Date(value).toString());
-}
-
-/**
-   * 验证ISO类型的日期格式
-   */
-function dateISO(value) {
-  return /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/.test(value);
-}
-
-/**
-   * 验证十进制数字
-   */
-function number(value) {
-  return /^(?:-?\d+|-?\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$/.test(value);
-}
-
-/**
-   * 验证整数
-   */
-function digits(value) {
-  return /^\d+$/.test(value);
-}
-
-/**
-   * 验证身份证号码
-   */
-function idCard(value) {
-  return /^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/.test(
-  value);
-}
-
-/**
-   * 是否车牌号
-   */
-function carNo(value) {
-  // 新能源车牌
-  var xreg = /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}(([0-9]{5}[DF]$)|([DF][A-HJ-NP-Z0-9][0-9]{4}$))/;
-  // 旧车牌
-  var creg = /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳]{1}$/;
-  if (value.length === 7) {
-    return creg.test(value);
-  } else if (value.length === 8) {
-    return xreg.test(value);
-  } else {
-    return false;
-  }
-}
-
-/**
-   * 金额,只允许2位小数
-   */
-function amount(value) {
-  //金额，只允许保留两位小数
-  return /^[1-9]\d*(,\d{3})*(\.\d{1,2})?$|^0.\d{1,2}$/.test(value);
-}
-
-/**
-   * 中文
-   */
-function chinese(value) {
-  var reg = /^[\u4e00-\u9fa5]+$/gi;
-  return reg.test(value);
-}
-
-/**
-   * 只能输入字母
-   */
-function letter(value) {
-  return /^[a-zA-Z]*$/.test(value);
-}
-
-/**
-   * 只能是字母或者数字
-   */
-function enOrNum(value) {
-  //英文或者数字
-  var reg = /^[0-9a-zA-Z]*$/g;
-  return reg.test(value);
-}
-
-/**
-   * 验证是否包含某个值
-   */
-function contains(value, param) {
-  return value.indexOf(param) >= 0;
-}
-
-/**
-   * 验证一个值范围[min, max]
-   */
-function range(value, param) {
-  return value >= param[0] && value <= param[1];
-}
-
-/**
-   * 验证一个长度范围[min, max]
-   */
-function rangeLength(value, param) {
-  return value.length >= param[0] && value.length <= param[1];
-}
-
-/**
-   * 判断是否为空
-   */
-function empty(value) {
-  switch (typeof value) {
-    case 'undefined':
-      return true;
-    case 'string':
-      if (value.replace(/(^[ \t\n\r]*)|([ \t\n\r]*$)/g, '').length == 0) return true;
-      break;
-    case 'boolean':
-      if (!value) return true;
-      break;
-    case 'number':
-      if (0 === value || isNaN(value)) return true;
-      break;
-    case 'object':
-      if (null === value || value.length === 0) return true;
-      for (var i in value) {
-        return false;
-      }
-      return true;}
-
-  return false;
-}var _default =
-
+ * actionsheet: 999
+ * modal: 999
+ * navigate: 998
+ * tabbar: 998
+ */var _default =
 
 {
-  email: email,
-  mobile: mobile,
-  url: url,
-  date: date,
-  dateISO: dateISO,
-  number: number,
-  digits: digits,
-  idCard: idCard,
-  carNo: carNo,
-  amount: amount,
-  chinese: chinese,
-  letter: letter,
-  enOrNum: enOrNum,
-  contains: contains,
-  range: range,
-  rangeLength: rangeLength,
-  empty: empty,
-  isEmpty: empty };exports.default = _default;
+  toast: 10090,
+  noNetwork: 10080,
+  // popup包含popup，actionsheet，keyboard，picker的值
+  popup: 10075,
+  mask: 10070,
+  navbar: 980,
+  topTips: 975,
+  sticky: 970,
+  indexListSticky: 965 };exports.default = _default;
 
 /***/ }),
 
 /***/ 4:
-/*!*********************************************************************************************!*\
-  !*** ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator/index.js ***!
-  \*********************************************************************************************/
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -38629,380 +27988,7 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ 5);
 
 /***/ }),
 
-/***/ 40:
-/*!****************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/queryParams.js ***!
-  \****************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
-                                                                                                      * 对象转url参数
-                                                                                                      * @param {*} data,对象
-                                                                                                      * @param {*} isPrefix,是否自动加上"?"
-                                                                                                      */
-function queryParams() {var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var isPrefix = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;var arrayFormat = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'brackets';
-  var prefix = isPrefix ? '?' : '';
-  var _result = [];
-  if (['indices', 'brackets', 'repeat', 'comma'].indexOf(arrayFormat) == -1) arrayFormat = 'brackets';var _loop = function _loop(
-  key) {
-    var value = data[key];
-    // 去掉为空的参数
-    if (['', undefined, null].indexOf(value) >= 0) {
-      return "continue";
-    }
-    // 如果值为数组，另行处理
-    if (value.constructor === Array) {
-      // e.g. {ids: [1, 2, 3]}
-      switch (arrayFormat) {
-        case 'indices':
-          // 结果: ids[0]=1&ids[1]=2&ids[2]=3
-          for (i = 0; i < value.length; i++) {
-            _result.push(key + '[' + i + ']=' + value[i]);
-          }
-          break;
-        case 'brackets':
-          // 结果: ids[]=1&ids[]=2&ids[]=3
-          value.forEach(function (_value) {
-            _result.push(key + '[]=' + _value);
-          });
-          break;
-        case 'repeat':
-          // 结果: ids=1&ids=2&ids=3
-          value.forEach(function (_value) {
-            _result.push(key + '=' + _value);
-          });
-          break;
-        case 'comma':
-          // 结果: ids=1,2,3
-          var commaStr = "";
-          value.forEach(function (_value) {
-            commaStr += (commaStr ? "," : "") + _value;
-          });
-          _result.push(key + '=' + commaStr);
-          break;
-        default:
-          value.forEach(function (_value) {
-            _result.push(key + '[]=' + _value);
-          });}
-
-    } else {
-      _result.push(key + '=' + value);
-    }};for (var key in data) {var _ret = _loop(key);if (_ret === "continue") continue;
-  }
-  return _result.length ? prefix + _result.join('&') : '';
-}var _default =
-
-queryParams;exports.default = _default;
-
-/***/ }),
-
-/***/ 41:
-/*!**********************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/route.js ***!
-  \**********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _queryParams = _interopRequireDefault(__webpack_require__(/*! ../../libs/function/queryParams.js */ 40));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-/**
-                                                                                                                                                                                                                                                                                            * 路由跳转
-                                                                                                                                                                                                                                                                                            * 注意:本方法没有对跳转的回调函数进行封装
-                                                                                                                                                                                                                                                                                            */
-function route() {var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-  var config = {
-    type: 'navigateTo',
-    url: '',
-    delta: 1, // navigateBack页面后退时,回退的层数
-    params: {}, // 传递的参数
-    animationType: 'pop-in', // 窗口动画,只在APP有效
-    animationDuration: 300 // 窗口动画持续时间,单位毫秒,只在APP有效
-  };
-  config = Object.assign(config, options);
-  // 如果url没有"/"开头，添加上，因为uni的路由跳转需要"/"开头
-  if (config.url[0] != '/') config.url = '/' + config.url;
-  // 判断是否有传递显式的参数,Object.keys转为数组并判断长度,switchTab类型时不能携带参数
-  if (Object.keys(config.params).length && config.type != 'switchTab') {
-    // 判断用户传递的url中，是否带有参数
-    // 使用正则匹配，主要依据是判断是否有"/","?","="等，如“/page/index/index?name=mary"
-    // 如果有url中有get参数，转换后无需带上"?"
-    var query = '';
-    if (/.*\/.*\?.*=.*/.test(config.url)) {
-      // object对象转为get类型的参数
-      query = (0, _queryParams.default)(config.params, false);
-      // 因为已有get参数,所以后面拼接的参数需要带上"&"隔开
-      config.url += "&" + query;
-    } else {
-      query = (0, _queryParams.default)(config.params);
-      config.url += query;
-    }
-  }
-  // 简写形式，把url和参数拼接起来
-  if (typeof options === 'string' && typeof params == 'object') {
-    var _query = '';
-    if (/.*\/.*\?.*=.*/.test(options)) {
-      // object对象转为get类型的参数
-      _query = (0, _queryParams.default)(params, false);
-      // 因为已有get参数,所以后面拼接的参数需要带上"&"隔开
-      options += "&" + _query;
-    } else {
-      _query = (0, _queryParams.default)(params);
-      options += _query;
-    }
-  }
-  // 判断是否一个字符串，如果是，直接跳转(简写法)
-  // 如果是中情形，默认第二个参数为对象形式的参数
-  if (typeof options === 'string') {
-    if (options[0] != '/') options = '/' + options;
-    return uni.navigateTo({
-      url: options });
-
-  }
-  // navigateTo类型的跳转
-  if (config.type == 'navigateTo' || config.type == 'to') {
-    return uni.navigateTo({
-      url: config.url,
-      animationType: config.animationType,
-      animationDuration: config.animationDuration });
-
-  }
-  if (config.type == 'redirectTo' || config.type == 'redirect') {
-    return uni.redirectTo({
-      url: config.url });
-
-  }
-  if (config.type == 'switchTab' || config.type == 'tab') {
-    return uni.switchTab({
-      url: config.url });
-
-  }
-  if (config.type == 'reLaunch') {
-    return uni.reLaunch({
-      url: config.url });
-
-  }
-  if (config.type == 'navigateBack' || config.type == 'back') {
-    return uni.navigateBack({
-      delta: parseInt(config.delta ? config.delta : this.delta) });
-
-  }
-}var _default =
-
-route;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 42:
-/*!***************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/timeFormat.js ***!
-  \***************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function timeFormat() {var timestamp = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;var fmt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'yyyy-mm-dd';
-  // 其他更多是格式化有如下:
-  // yyyy:mm:dd|yyyy:mm|yyyy年mm月dd日|yyyy年mm月dd日 hh时MM分等,可自定义组合
-  timestamp = parseInt(timestamp);
-  // 如果为null,则格式化当前时间
-  if (timestamp == null) timestamp = Number(new Date());
-  // 判断用户输入的时间戳是秒还是毫秒,一般前端js获取的时间戳是毫秒(13位),后端传过来的为秒(10位)
-  if (timestamp.toString().length == 10) timestamp *= 1000;
-  var date = new Date(timestamp);
-  var ret;
-  var opt = {
-    "y+": date.getFullYear().toString(), // 年
-    "m+": (date.getMonth() + 1).toString(), // 月
-    "d+": date.getDate().toString(), // 日
-    "h+": date.getHours().toString(), // 时
-    "M+": date.getMinutes().toString(), // 分
-    "s+": date.getSeconds().toString() // 秒
-    // 有其他格式化字符需求可以继续添加，必须转化成字符串
-  };
-  for (var k in opt) {
-    ret = new RegExp("(" + k + ")").exec(fmt);
-    if (ret) {
-      fmt = fmt.replace(ret[1], ret[1].length == 1 ? opt[k] : opt[k].padStart(ret[1].length, "0"));
-    };
-  };
-  return fmt;
-}var _default =
-
-timeFormat;exports.default = _default;
-
-/***/ }),
-
-/***/ 43:
-/*!*************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/timeFrom.js ***!
-  \*************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _timeFormat = _interopRequireDefault(__webpack_require__(/*! ../../libs/function/timeFormat.js */ 42));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-
-/**
-                                                                                                                                                                                                                                                                                          * 时间戳转为多久之前
-                                                                                                                                                                                                                                                                                          * @param String timestamp 时间戳
-                                                                                                                                                                                                                                                                                          * @param String | Boolean format 如果为时间格式字符串，超出一定时间范围，返回固定的时间格式；
-                                                                                                                                                                                                                                                                                          * 如果为布尔值false，无论什么时间，都返回多久以前的格式
-                                                                                                                                                                                                                                                                                          */
-function timeFrom() {var timestamp = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;var format = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'yyyy-mm-dd';
-  if (timestamp == null) timestamp = Number(new Date());
-  timestamp = parseInt(timestamp);
-  // 判断用户输入的时间戳是秒还是毫秒,一般前端js获取的时间戳是毫秒(13位),后端传过来的为秒(10位)
-  if (timestamp.toString().length == 10) timestamp *= 1000;
-  var timer = new Date().getTime() - timestamp;
-  timer = parseInt(timer / 1000);
-  // 如果小于5分钟,则返回"刚刚",其他以此类推
-  var tips = '';
-  switch (true) {
-    case timer < 300:
-      tips = '刚刚';
-      break;
-    case timer >= 300 && timer < 3600:
-      tips = parseInt(timer / 60) + '分钟前';
-      break;
-    case timer >= 3600 && timer < 86400:
-      tips = parseInt(timer / 3600) + '小时前';
-      break;
-    case timer >= 86400 && timer < 2592000:
-      tips = parseInt(timer / 86400) + '天前';
-      break;
-    default:
-      // 如果format为false，则无论什么时间戳，都显示xx之前
-      if (format === false) {
-        if (timer >= 2592000 && timer < 365 * 86400) {
-          tips = parseInt(timer / (86400 * 30)) + '个月前';
-        } else {
-          tips = parseInt(timer / (86400 * 365)) + '年前';
-        }
-      } else {
-        tips = (0, _timeFormat.default)(timestamp, format);
-      }}
-
-  return tips;
-}var _default =
-
-timeFrom;exports.default = _default;
-
-/***/ }),
-
-/***/ 44:
-/*!******************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/colorGradient.js ***!
-  \******************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
-                                                                                                      * 求两个颜色之间的渐变值
-                                                                                                      * @param {string} startColor 开始的颜色
-                                                                                                      * @param {string} endColor 结束的颜色
-                                                                                                      * @param {number} step 颜色等分的份额
-                                                                                                      * */
-function colorGradient() {var startColor = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'rgb(0, 0, 0)';var endColor = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'rgb(255, 255, 255)';var step = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 10;
-  var startRGB = hexToRgb(startColor, false); //转换为rgb数组模式
-  var startR = startRGB[0];
-  var startG = startRGB[1];
-  var startB = startRGB[2];
-
-  var endRGB = hexToRgb(endColor, false);
-  var endR = endRGB[0];
-  var endG = endRGB[1];
-  var endB = endRGB[2];
-
-  var sR = (endR - startR) / step; //总差值
-  var sG = (endG - startG) / step;
-  var sB = (endB - startB) / step;
-  var colorArr = [];
-  for (var i = 0; i < step; i++) {
-    //计算每一步的hex值 
-    var hex = rgbToHex('rgb(' + Math.round(sR * i + startR) + ',' + Math.round(sG * i + startG) + ',' + Math.round(sB *
-    i + startB) + ')');
-    colorArr.push(hex);
-  }
-  return colorArr;
-}
-
-// 将hex表示方式转换为rgb表示方式(这里返回rgb数组模式)
-function hexToRgb(sColor) {var str = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-  var reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/;
-  sColor = sColor.toLowerCase();
-  if (sColor && reg.test(sColor)) {
-    if (sColor.length === 4) {
-      var sColorNew = "#";
-      for (var i = 1; i < 4; i += 1) {
-        sColorNew += sColor.slice(i, i + 1).concat(sColor.slice(i, i + 1));
-      }
-      sColor = sColorNew;
-    }
-    //处理六位的颜色值
-    var sColorChange = [];
-    for (var _i = 1; _i < 7; _i += 2) {
-      sColorChange.push(parseInt("0x" + sColor.slice(_i, _i + 2)));
-    }
-    if (!str) {
-      return sColorChange;
-    } else {
-      return "rgb(".concat(sColorChange[0], ",").concat(sColorChange[1], ",").concat(sColorChange[2], ")");
-    }
-  } else if (/^(rgb|RGB)/.test(sColor)) {
-    var arr = sColor.replace(/(?:\(|\)|rgb|RGB)*/g, "").split(",");
-    return arr.map(function (val) {return Number(val);});
-  } else {
-    return sColor;
-  }
-};
-
-// 将rgb表示方式转换为hex表示方式
-function rgbToHex(rgb) {
-  var _this = rgb;
-  var reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/;
-  if (/^(rgb|RGB)/.test(_this)) {
-    var aColor = _this.replace(/(?:\(|\)|rgb|RGB)*/g, "").split(",");
-    var strHex = "#";
-    for (var i = 0; i < aColor.length; i++) {
-      var hex = Number(aColor[i]).toString(16);
-      hex = String(hex).length == 1 ? 0 + '' + hex : hex; // 保证每个rgb的值为2位
-      if (hex === "0") {
-        hex += hex;
-      }
-      strHex += hex;
-    }
-    if (strHex.length !== 7) {
-      strHex = _this;
-    }
-    return strHex;
-  } else if (reg.test(_this)) {
-    var aNum = _this.replace(/#/, "").split("");
-    if (aNum.length === 6) {
-      return _this;
-    } else if (aNum.length === 3) {
-      var numHex = "#";
-      for (var _i2 = 0; _i2 < aNum.length; _i2 += 1) {
-        numHex += aNum[_i2] + aNum[_i2];
-      }
-      return numHex;
-    }
-  } else {
-    return _this;
-  }
-}var _default =
-
-{
-  colorGradient: colorGradient,
-  hexToRgb: hexToRgb,
-  rgbToHex: rgbToHex };exports.default = _default;
-
-/***/ }),
-
-/***/ 446:
+/***/ 441:
 /*!*******************************************************************************************!*\
   !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/components/uni-icons/icons.js ***!
   \*******************************************************************************************/
@@ -39108,189 +28094,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 45:
-/*!*********************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/guid.js ***!
-  \*********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
-                                                                                                      * 本算法来源于简书开源代码，详见：https://www.jianshu.com/p/fdbf293d0a85
-                                                                                                      * 全局唯一标识符（uuid，Globally Unique Identifier）,也称作 uuid(Universally Unique IDentifier) 
-                                                                                                      * 一般用于多个组件之间,给它一个唯一的标识符,或者v-for循环的时候,如果使用数组的index可能会导致更新列表出现问题
-                                                                                                      * 最可能的情况是左滑删除item或者对某条信息流"不喜欢"并去掉它的时候,会导致组件内的数据可能出现错乱
-                                                                                                      * v-for的时候,推荐使用后端返回的id而不是循环的index
-                                                                                                      * @param {Number} len uuid的长度
-                                                                                                      * @param {Boolean} firstU 将返回的首字母置为"u"
-                                                                                                      * @param {Nubmer} radix 生成uuid的基数(意味着返回的字符串都是这个基数),2-二进制,8-八进制,10-十进制,16-十六进制
-                                                                                                      */
-function guid() {var len = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 32;var firstU = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;var radix = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
-  var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
-  var uuid = [];
-  radix = radix || chars.length;
-
-  if (len) {
-    // 如果指定uuid长度,只是取随机的字符,0|x为位运算,能去掉x的小数位,返回整数位
-    for (var i = 0; i < len; i++) {uuid[i] = chars[0 | Math.random() * radix];}
-  } else {
-    var r;
-    // rfc4122标准要求返回的uuid中,某些位为固定的字符
-    uuid[8] = uuid[13] = uuid[18] = uuid[23] = '-';
-    uuid[14] = '4';
-
-    for (var _i = 0; _i < 36; _i++) {
-      if (!uuid[_i]) {
-        r = 0 | Math.random() * 16;
-        uuid[_i] = chars[_i == 19 ? r & 0x3 | 0x8 : r];
-      }
-    }
-  }
-  // 移除第一个字符,并用u替代,因为第一个字符为数值时,该guuid不能用作id或者class
-  if (firstU) {
-    uuid.shift();
-    return 'u' + uuid.join('');
-  } else {
-    return uuid.join('');
-  }
-}var _default =
-
-guid;exports.default = _default;
-
-/***/ }),
-
-/***/ 46:
-/*!**********************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/color.js ***!
-  \**********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var color = {
-  primary: "#2979ff",
-  primaryDark: "#2b85e4",
-  primaryDisabled: "#a0cfff",
-  primaryLight: "#ecf5ff",
-  bgColor: "#f3f4f6",
-
-  info: "#909399",
-  infoDark: "#82848a",
-  infoDisabled: "#c8c9cc",
-  infoLight: "#f4f4f5",
-
-  warning: "#ff9900",
-  warningDark: "#f29100",
-  warningDisabled: "#fcbd71",
-  warningLight: "#fdf6ec",
-
-  error: "#fa3534",
-  errorDark: "#dd6161",
-  errorDisabled: "#fab6b6",
-  errorLight: "#fef0f0",
-
-  success: "#19be6b",
-  successDark: "#18b566",
-  successDisabled: "#71d5a1",
-  successLight: "#dbf1e1",
-
-  mainColor: "#303133",
-  contentColor: "#606266",
-  tipsColor: "#909399",
-  lightColor: "#c0c4cc",
-  borderColor: "#e4e7ed" };var _default =
-
-
-color;exports.default = _default;
-
-/***/ }),
-
-/***/ 47:
-/*!**************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/type2icon.js ***!
-  \**************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; /**
-                                                                                                      * 根据主题type值,获取对应的图标
-                                                                                                      * @param String type 主题名称,primary|info|error|warning|success
-                                                                                                      * @param String fill 是否使用fill填充实体的图标  
-                                                                                                      */
-function type2icon() {var type = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'success';var fill = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-  // 如果非预置值,默认为success
-  if (['primary', 'info', 'error', 'warning', 'success'].indexOf(type) == -1) type = 'success';
-  var iconName = '';
-  // 目前(2019-12-12),info和primary使用同一个图标
-  switch (type) {
-    case 'primary':
-      iconName = 'info-circle';
-      break;
-    case 'info':
-      iconName = 'info-circle';
-      break;
-    case 'error':
-      iconName = 'close-circle';
-      break;
-    case 'warning':
-      iconName = 'error-circle';
-      break;
-    case 'success':
-      iconName = 'checkmark-circle';
-      break;
-    default:
-      iconName = 'checkmark-circle';}
-
-  // 是否是实体类型,加上-fill,在icon组件库中,实体的类名是后面加-fill的
-  if (fill) iconName += '-fill';
-  return iconName;
-}var _default =
-
-type2icon;exports.default = _default;
-
-/***/ }),
-
-/***/ 48:
-/*!****************************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/randomArray.js ***!
-  \****************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 打乱数组
-function randomArray() {var array = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-  // 原理是sort排序,Math.random()产生0<= x < 1之间的数,会导致x-0.05大于或者小于0
-  return array.sort(function () {return Math.random() - 0.5;});
-}var _default =
-
-randomArray;exports.default = _default;
-
-/***/ }),
-
-/***/ 49:
-/*!***********************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/random.js ***!
-  \***********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function random(min, max) {
-  if (min >= 0 && max > 0 && max >= min) {
-    var gab = max - min + 1;
-    return Math.floor(Math.random() * gab + min);
-  } else {
-    return 0;
-  }
-}var _default =
-
-random;exports.default = _default;
-
-/***/ }),
-
 /***/ 5:
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
@@ -39336,99 +28139,6 @@ if (hadRuntime) {
   }
 }
 
-
-/***/ }),
-
-/***/ 50:
-/*!*********************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/trim.js ***!
-  \*********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function trim(str) {var pos = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'both';
-  if (pos == 'both') {
-    return str.replace(/^\s+|\s+$/g, "");
-  } else if (pos == "left") {
-    return str.replace(/^\s*/, '');
-  } else if (pos == 'right') {
-    return str.replace(/(\s*$)/g, "");
-  } else if (pos == 'all') {
-    return str.replace(/\s+/g, "");
-  } else {
-    return str;
-  }
-}var _default =
-
-trim;exports.default = _default;
-
-/***/ }),
-
-/***/ 51:
-/*!**********************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/function/toast.js ***!
-  \**********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function toast(title) {var duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1500;
-  uni.showToast({
-    title: title,
-    icon: 'none',
-    duration: duration });
-
-}var _default =
-
-toast;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 52:
-/*!*********************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/config/config.js ***!
-  \*********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 此版本发布于2020-06-10
-var version = '1.3.3';var _default =
-
-{
-  v: version,
-  version: version };exports.default = _default;
-
-/***/ }),
-
-/***/ 53:
-/*!*********************************************************************************************************!*\
-  !*** /Users/zhengmingwei/Desktop/Project/uni-app/uni-drink/node_modules/uview-ui/libs/config/zIndex.js ***!
-  \*********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // uniapp在H5中各API的z-index值如下：
-/**
- * actionsheet: 999
- * modal: 999
- * navigate: 998
- * tabbar: 998
- */var _default =
-
-{
-  toast: 10090,
-  noNetwork: 10080,
-  // popup包含popup，actionsheet，keyboard，picker的值
-  popup: 10075,
-  mask: 10070,
-  navbar: 980,
-  topTips: 975,
-  sticky: 970,
-  indexListSticky: 965 };exports.default = _default;
 
 /***/ }),
 

@@ -90,23 +90,27 @@
 	export default {
 		data() {
 			return {
-				listAds: [
-					{
-						title: '123',
-						image: 'https://teststatic.zidaoai.com/19ca14e7ea6328a42e0eb13d585e4c22/direct/20200818/cf495d36-9980-4801-abdd-c9eab8e18013.jpg'
-					},
-					{
-						title: '456',
-						image: 'https://teststatic.zidaoai.com/19ca14e7ea6328a42e0eb13d585e4c22/direct/20200818/cf495d36-9980-4801-abdd-c9eab8e18013.jpg'
-					}
-				]
+				listAds: []
 			}
 		},
 		computed: {
-			...mapState(['member', 'address']),
+			...mapState(['member', 'address', 'store']),
 			...mapGetters(['isLogin'])
 		},
+		onShow() {
+			this.getAds();
+		},
 		methods: {
+			async getAds () {
+				let shop_id = this.store.id ? this.store.id : 0;
+				let data = await this.$api.request('/menu/ads', 'POST', {
+					shop_id: shop_id
+				});
+				if (data) {
+					this.listAds = [];
+					this.listAds = data;
+				}
+			},
 			takein() {
 				this.$store.commit('SET_ORDER_TYPE', 'takein')
 				uni.switchTab({
@@ -117,7 +121,7 @@
 				this.$store.commit('SET_ORDER_TYPE', 'takeout')
 				uni.switchTab({
 					url: '/pages/menu/menu'
-				})
+				}) 
 			},
 			integrals() {
 				if(!this.isLogin) {
@@ -150,7 +154,7 @@
 				uni.navigateTo({
 					url: '/pages/mine/member-code'
 				})
-			},
+			}, 
 			invite() {
 				uni.navigateTo({
 					url: '/pages/activities/invite'

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App'
-import api from './api'
+
 import util from './common/util'
 import store from './store'
 
@@ -13,12 +13,12 @@ import uView from "uview-ui";
 Vue.use(uView);
 
 Vue.prototype.$store = store
-Vue.prototype.$api = api
+Vue.prototype.$api = {}
 Vue.prototype.$util = util
 
 // 后端api地址
 Vue.prototype.$unishow = "http://unishop:8888/addons/unidrink";
-Vue.prototype.$unishow = "http://drink.weivee.com/addons/unidrink";
+Vue.prototype.$unishow = "https://drink.weivee.com/addons/unidrink";
 
 
 // 为了方便每次上传的时候忘记修改上面的参数

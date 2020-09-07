@@ -231,7 +231,6 @@
 import { mapState, mapMutations, mapGetters } from 'vuex';
 import listCell from '@/components/list-cell/list-cell';
 import modal from '@/components/modal/modal';
-import orders from '@/api/orders';
 // #ifdef H5
 var jweixin = require('jweixin-module');
 // #endif

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import api from '@/api'
+
 import createPersistedState from 'vuex-persistedstate'
 
 Vue.use(Vuex)
@@ -81,10 +81,7 @@ const store = new Vuex.Store({
 		}
 	},
 	actions: {
-		async getStore({commit}) {
-			const store = await api('store')
-			commit('SET_STORE', store)
-		}
+		
 	}
 })
 

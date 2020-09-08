@@ -221,11 +221,11 @@
 			},
 			orders() {
 				if(!this.$store.getters.isLogin) {
-					uni.navigateTo({url: '/pages/login/login'})
+					uni.navigateTo({url: '/pages/components/pages/login/login'})
 					return
 				}
 				uni.navigateTo({
-					url: '/pages/orders/orders'
+					url: '/pages/components/pages/orders/orders'
 				})
 			},
 			menu() {

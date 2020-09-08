@@ -125,11 +125,11 @@
 			},
 			integrals() {
 				if(!this.isLogin) {
-					uni.navigateTo({url: '/pages/login/login'})
+					uni.navigateTo({url: '/pages/components/pages/login/login'})
 					return
 				}
 				uni.navigateTo({
-					url: '/pages/integrals/integrals'
+					url: '/pages/components/pages/integrals/integrals'
 				})
 			},
 			goShopping() {
@@ -139,25 +139,25 @@
 			},
 			coupons() {
 				if(!this.isLogin) {
-					uni.navigateTo({url: '/pages/login/login'})
+					uni.navigateTo({url: '/pages/components/pages/login/login'})
 					return
 				}
 				uni.navigateTo({
-					url: '/pages/coupons/coupons'
+					url: '/pages/components/pages/coupons/coupons'
 				})
 			},
 			memberCode() {
 				if(!this.isLogin) {
-					uni.navigateTo({url: '/pages/login/login'})
+					uni.navigateTo({url: '/pages/components/pages/login/login'})
 					return
 				}
 				uni.navigateTo({
-					url: '/pages/mine/member-code'
+					url: '/pages/components/pages/mine/member-code'
 				})
 			}, 
 			invite() {
 				uni.navigateTo({
-					url: '/pages/activities/invite'
+					url: '/pages/components/pages/activities/invite'
 				})
 			}
 		}

@@ -15,15 +15,11 @@
 				<view class="d-flex align-items-center">
 					<view class="avatar">
 						<image :src="isLogin ? member.avatar : '/static/images/mine/default.png'"></image>
-						<!-- <view class="badge" v-if="isLogin">
-							<image src="/static/images/mine/level.png"></image>
-							<view>{{ member.level }}</view>
-						</view> -->
-												
+							
 					</view>
 					<view class="d-flex flex-column flex-fill overflow-hidden" style="margin-top: 20rpx;">
 						<view v-if="isLogin" class="font-size-lg font-weight-bold d-flex justify-content-start align-items-center"
-							@tap="serv({type:'pages',pages:'/pages/mine/userinfo'})">
+							@tap="serv({type:'pages',pages:'/pages/components/pages/mine/userinfo'})">
 							<view class="text-truncate">{{ member.username }}</view>
 							<view class="iconfont iconarrow-right line-height-100"></view>
 						</view>
@@ -40,14 +36,14 @@
 						<view class="iconfont iconarrow-right line-height-100"></view>
 					</view> -->
 					
-					<!-- <button type="default" size="mini" class="hym-btn" @tap="serv({type:'pages',pages:'/pages/mine/member-code'})">
+					<!-- <button type="default" size="mini" class="hym-btn" @tap="serv({type:'pages',pages:'/pages/components/pages/mine/member-code'})">
 						<image src="/static/images/mine/hym.png"></image>
 						<text>会员码</text>
 					</button> -->
 				</view>
 				<!-- user grid begin -->
 				<view class="w-100 d-flex align-items-center just-content-center">
-					<view class="user-grid" @tap="serv({type:'pages',pages:'/pages/coupons/coupons'})">
+					<view class="user-grid" @tap="serv({type:'pages',pages:'/pages/components/pages/coupons/coupons'})">
 						<view class="value font-size-extra-lg font-weight-bold text-color-base">
 							{{  isLogin ? member.couponNum : 0 }}
 						</view>
@@ -59,13 +55,13 @@
 						</view>
 						<view class="font-size-sm text-color-assist">积分商城</view>
 					</view>
-					<view class="user-grid" @tap="serv({type:'pages',pages:'/pages/balance/balance'})">
+					<view class="user-grid" @tap="serv({type:'pages',pages:'/pages/components/pages/balance/balance'})">
 						<view class="value font-size-extra-lg font-weight-bold text-color-base">
 							{{  isLogin ? member.money : 0 }}
 						</view>
 						<view class="font-size-sm text-color-assist">余额</view>
 					</view>
-					<view class="user-grid" @tap="serv({type:'pages', pages: '/pages/balance/bill'})">
+					<view class="user-grid" @tap="serv({type:'pages', pages: '/pages/components/pages/balance/bill'})">
 						<view class="value font-size-extra-lg font-weight-bold text-color-base">
 							{{  isLogin ? member.currentValue : 0 }}
 						</view>
@@ -81,33 +77,9 @@
 					<view class="text-color-base">新用户加入会员，享会员权益</view>
 					<view class="text-color-primary" @tap="login">立即加入</view>
 				</view>
-				<!-- <view class="row">
-					<view class="grid">
-						<image src="/static/images/mine/rhyl.png"></image>
-						<view>入会有礼</view>
-					</view>
-					<view class="grid">
-						<image src="/static/images/mine/jfdh.png"></image>
-						<view>积分兑换</view>
-					</view>
-					<view class="grid">
-						<image src="/static/images/mine/sjtq.png"></image>
-						<view>升级特权</view>
-					</view>
-					<view class="grid">
-						<image src="/static/images/mine/srtq.png"></image>
-						<view>生日特权</view>
-					</view>
-					<view class="grid">
-						<image src="/static/images/mine/nxbz.png"></image>
-						<view>奈雪宝藏</view>
-					</view>
-				</view> -->
+				
 			</view>
-			<!-- level benefit box end -->
-			<!-- banner begin -->
-			<!-- <image src="/static/images/mine/banner.png" class="banner" mode="widthFix"></image> -->
-			<!-- bennaer end -->
+	
 		</view>
 		<!-- service box begin -->
 		<view class="service-box">
@@ -176,7 +148,7 @@
 			},
 			login() {
 				uni.navigateTo({
-					url: '/pages/login/login'
+					url: '/pages/components/pages/login/login'
 				})
 			},
 			packages() {
@@ -185,7 +157,7 @@
 					return
 				}
 				uni.navigateTo({
-					url: '/pages/packages/index'
+					url: '/pages/components/pages/packages/index'
 				})
 			},
 			serv(item) {
@@ -206,12 +178,12 @@
 						break;
 					case 'menu':
 						uni.navigateTo({
-							url:'/pages/mine/service?id='+item.id+'&name='+item.name
+							url:'/pages/components/pages/mine/service?id='+item.id+'&name='+item.name
 						})
 						break;
 					case 'content':
 						uni.navigateTo({
-							url:'/pages/mine/content?id='+item.id+'&name='+item.name
+							url:'/pages/components/pages/mine/content?id='+item.id+'&name='+item.name
 						})
 						break;
 				}

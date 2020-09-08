@@ -344,7 +344,7 @@ export default {
 		},
 		selectShop(){
 			uni.navigateTo({
-				url:'/pages/shop/shop'
+				url:'/pages/components/pages/shop/shop'
 			})
 		},
 		async init() {	//页面初始化
@@ -433,12 +433,12 @@ export default {
 			if(this.orderType == 'takeout' && force == false) return
 			
 			if(!this.isLogin) {
-				uni.navigateTo({url: '/pages/login/login'})
+				uni.navigateTo({url: '/pages/components/pages/login/login'})
 				return
 			}
 			if (!this.address.hasOwnProperty('address') || force == true) {
 				uni.navigateTo({
-					url: '/pages/address/address?is_choose=true'
+					url: '/pages/components/pages/address/address?is_choose=true'
 				})
 			} else {
 				this.SET_ORDER_TYPE('takeout');
@@ -617,7 +617,7 @@ export default {
 		toPay() {
 			
 			if(!this.isLogin) {
-				uni.navigateTo({url: '/pages/login/login'})
+				uni.navigateTo({url: '/pages/components/pages/login/login'})
 				return
 			}
 			if (this.store.status == 0) {
@@ -634,7 +634,7 @@ export default {
 			uni.setStorageSync('cart', JSON.parse(JSON.stringify(this.cart)))
 			
 			uni.navigateTo({
-				url: '/pages/pay/pay'
+				url: '/pages/components/pages/pay/pay'
 			})
 			uni.hideLoading()
 		}

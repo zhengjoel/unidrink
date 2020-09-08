@@ -5,7 +5,7 @@
 			"style": {
 				"navigationStyle": "custom"
 			}
-		}, 
+		},
 		{
 			"path": "pages/menu/menu",
 			"style": {
@@ -32,165 +32,176 @@
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
-		}, {
-			"path": "pages/mine/service",
-			"style": {
-				"navigationBarTitleText": "我的服务",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		}, {
-			"path": "pages/mine/content",
-			"style": {
-				"navigationBarTitleText": "内容",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		}, {
-			"path": "pages/pay/pay",
-			"style": {
-				"navigationBarTitleText": "uniDrink",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		}, {
-			"path": "pages/remark/remark",
-			"style": {
-				"navigationBarTitleText": "uniDrink",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		}, {
-			"path": "pages/packages/index",
-			"style": {
-				"navigationBarTitleText": "可用优惠券",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff",
-				"enablePullDownRefresh": true
-			}
-		},{
-			"path": "pages/balance/balance",
-			"style": {
-				"navigationBarTitleText": "会员储值",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		}, {
-			"path": "pages/login/login",
-			"style": {
-				"navigationBarTitleText": "登录",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		}, 
-		{
-			"path": "pages/login/logout",
-			"style": {
-				"navigationBarTitleText": "退出登录"
-			}
-		}, 
-		{
-			"path": "pages/address/address",
-			"style": {
-				"navigationBarTitleText": "我的地址",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		}, {
-			"path": "pages/address/add",
-			"style": {
-				"navigationBarTitleText": "uniDrink",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		}, {
-			"path": "pages/integrals/integrals",
-			"style": {
-				"navigationStyle": "custom",
-				"onReachBottomDistance": 50
-			}
-		}, {
-			"path": "pages/attendance/attendance",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		}, {
-			"path": "pages/orders/orders",
-			"style": {
-				"navigationBarTitleText": "历史订单",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff",
-				"enablePullDownRefresh": true,
-				"onReachBottomDistance": 50
-			}
-		}, {
-			"path": "pages/orders/detail",
-			"style": {
-				"navigationBarTitleText": "订单详情",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		}, {
-			"path": "pages/mine/member-code",
-			"style": {
-				"navigationBarTitleText": "会员码",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		}, {
-			"path": "pages/coupons/coupons",
-			"style": {
-				"enablePullDownRefresh": true,
-				"navigationBarTitleText": "我的卡券",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		}, {
-			"path": "pages/mine/userinfo",
-			"style": {
-				"navigationBarTitleText": "用户信息",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		},
-		{
-			"path": "pages/integrals/flow",
-			"style": {
-				"navigationBarTitleText": "积分明细",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		}, {
-			"path": "pages/review/review",
-			"style": {
-				"navigationBarTitleText": "uniDrink",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		}, {
-			"path": "pages/activities/invite",
-			"style": {
-				"navigationBarTitleText": "uniDrink",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
-		}, {
-			"path": "pages/shop/shop",
-			"style": {
-				"navigationBarTitleText": "店铺",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#ffffff"
-			}
 		}
-	    ,{
-            "path" : "pages/balance/bill",
-            "style": {
-            	"navigationBarTitleText": "账单",
-            	"navigationBarTextStyle": "black",
-            	"navigationBarBackgroundColor": "#ffffff"
-            }
-        }
-    ],
+	],
+	"subPackages": [{
+		"root": "pages/components",
+		"pages": [
+			{
+				"path": "pages/mine/service",
+				"style": {
+					"navigationBarTitleText": "我的服务",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			}, {
+				"path": "pages/mine/content",
+				"style": {
+					"navigationBarTitleText": "内容",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			}, {
+				"path": "pages/pay/pay",
+				"style": {
+					"navigationBarTitleText": "uniDrink",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			}, {
+				"path": "pages/remark/remark",
+				"style": {
+					"navigationBarTitleText": "uniDrink",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			}, {
+				"path": "pages/packages/index",
+				"style": {
+					"navigationBarTitleText": "可用优惠券",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff",
+					"enablePullDownRefresh": true
+				}
+			}, {
+				"path": "pages/balance/balance",
+				"style": {
+					"navigationBarTitleText": "会员储值",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			}, {
+				"path": "pages/login/login",
+				"style": {
+					"navigationBarTitleText": "登录",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			},
+			{
+				"path": "pages/login/logout",
+				"style": {
+					"navigationBarTitleText": "退出登录"
+				}
+			},
+			{
+				"path": "pages/address/address",
+				"style": {
+					"navigationBarTitleText": "我的地址",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			}, {
+				"path": "pages/address/add",
+				"style": {
+					"navigationBarTitleText": "uniDrink",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			}, {
+				"path": "pages/integrals/integrals",
+				"style": {
+					"navigationStyle": "custom",
+					"onReachBottomDistance": 50
+				}
+			}, {
+				"path": "pages/attendance/attendance",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "pages/orders/orders",
+				"style": {
+					"navigationBarTitleText": "历史订单",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff",
+					"enablePullDownRefresh": true,
+					"onReachBottomDistance": 50
+				}
+			}, {
+				"path": "pages/orders/detail",
+				"style": {
+					"navigationBarTitleText": "订单详情",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			}, {
+				"path": "pages/mine/member-code",
+				"style": {
+					"navigationBarTitleText": "会员码",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			}, {
+				"path": "pages/coupons/coupons",
+				"style": {
+					"enablePullDownRefresh": true,
+					"navigationBarTitleText": "我的卡券",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			}, {
+				"path": "pages/mine/userinfo",
+				"style": {
+					"navigationBarTitleText": "用户信息",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			},
+			{
+				"path": "pages/integrals/flow",
+				"style": {
+					"navigationBarTitleText": "积分明细",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			}, {
+				"path": "pages/review/review",
+				"style": {
+					"navigationBarTitleText": "uniDrink",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			}, {
+				"path": "pages/activities/invite",
+				"style": {
+					"navigationBarTitleText": "uniDrink",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			}, {
+				"path": "pages/shop/shop",
+				"style": {
+					"navigationBarTitleText": "店铺",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			}, {
+				"path": "pages/balance/bill",
+				"style": {
+					"navigationBarTitleText": "账单",
+					"navigationBarTextStyle": "black",
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			}
+		]
+	}],
+	// "preloadRule": {
+	// 	"pages/example/components": {
+	// 		"network": "all",
+	// 		"packages": ["pages/components"]
+	// 	}
+	// },
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
@@ -202,13 +213,12 @@
 		"selectedColor": "#1296db",
 		"backgroundColor": "#fff",
 		"borderStyle": "black",
-		"list": [
-			{
+		"list": [{
 				"pagePath": "pages/index/index",
-				"text": "首页", 
+				"text": "首页",
 				"iconPath": "static/images/tabBar/index.png",
 				"selectedIconPath": "static/images/tabBar/index_selected.png"
-			}, 
+			},
 			{
 				"pagePath": "pages/menu/menu",
 				"text": "点餐",
@@ -229,14 +239,13 @@
 	},
 	"easycom": {
 		"autoscan": true,
-		"custom":{
+		"custom": {
 			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
 		}
 	},
-	"condition" : { //模式配置，仅开发期间生效
+	"condition": { //模式配置，仅开发期间生效
 		"current": 0, //当前激活的模式(list 的索引项)
-		"list": [
-			{
+		"list": [{
 				"name": "bill", //模式名称
 				"path": "pages/balance/bill", //启动页面，必选
 				"query": "" //启动参数，在页面的onLoad函数里面得到
@@ -244,7 +253,7 @@
 			{
 				"name": "score",
 				"path": "pages/integrals/integrals",
-				"query":""
+				"query": ""
 			}
 		]
 	}

@@ -62,7 +62,8 @@
 		}) {
 			this.is_choose = is_choose || false
 			this.scene = scene || 'menu'
-
+		},
+		onShow() {
 			this.init();
 		},
 		methods: {

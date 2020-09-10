@@ -7,6 +7,7 @@
     "uni-notice-bar": "/components/uni-notice-bar/uni-notice-bar",
     "modal": "/components/modal/modal",
     "popup-layer": "/components/popup-layer/popup-layer",
+    "u-toast": "/node-modules/uview-ui/components/u-toast/u-toast",
     "our-loading": "/components/our-loading/our-loading"
   }
 }

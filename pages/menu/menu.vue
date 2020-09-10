@@ -252,11 +252,14 @@
 			</template>
 		</popup-layer>
 		<!-- 购物车详情popup -->
+		<u-toast ref="uToast"></u-toast>
 	</view>
+	<!--轻提示-->
 	<view class="loading" v-else>
 		<!-- <image src="/static/images/loading.gif"></image> -->
 		<ourLoading active background-color="" color="#00b1b7" text=" " />
 		<button type="primary" style="z-index: 3001;position: absolute;top: 650rpx;" @click="init" v-if="!store.id">定位最近的门店</button>
+		<u-toast ref="uToast"></u-toast>
 	</view>
 </template>
 
@@ -357,10 +360,10 @@ export default {
 				});
 				if (error) {
 					//this.$api.msg('获取定位失败');
-					uni.showModal({
-						title:'获取位置失败',
-						content:JSON.stringify(error)
-					})
+					this.$refs.uToast.show({
+						title: '获取位置失败，请检查是否开启相关权限',
+						type: 'error'
+					});
 					// 默认地为你为北京地址
 					res = {
 						latitude: 39.919990,

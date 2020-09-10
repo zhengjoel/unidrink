@@ -200,9 +200,10 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
 
   {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var is_choose, scene;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:is_choose = _ref.is_choose, scene = _ref.scene;
               _this.is_choose = is_choose || false;
-              _this.scene = scene || 'menu';
-
-              _this.init();case 4:case "end":return _context.stop();}}}, _callee);}))();
+              _this.scene = scene || 'menu';case 3:case "end":return _context.stop();}}}, _callee);}))();
+  },
+  onShow: function onShow() {
+    this.init();
   },
   methods: _objectSpread(_objectSpread({},
   (0, _vuex.mapMutations)(['SET_ADDRESS', 'SET_ADDRESSES', 'SET_ORDER_TYPE', 'SET_STORE', 'SET_LOCATION'])), {}, {

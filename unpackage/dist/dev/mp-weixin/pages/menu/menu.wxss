@@ -719,6 +719,7 @@
           align-items: center;
   -webkit-justify-content: space-around;
           justify-content: space-around;
+  z-index: 210;
 }
 .good-detail-modal .cover .btn-group image.data-v-368aef34 {
   width: 80rpx;

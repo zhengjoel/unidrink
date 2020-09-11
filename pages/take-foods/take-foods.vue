@@ -40,16 +40,16 @@
 											<view class="steps__img-column-item">
 												<image src="/static/images/order/ordered_selected.png"></image>
 											</view>
-											<view class="steps__img-column-item" :class="{active: order.prev_num == 0 || order.have_made > 0}">
-												<image src="/static/images/order/production_selected.png" v-if="order.prev_num == 0 || order.have_made > 0"></image>
+											<view class="steps__img-column-item" :class="{active: order.prev_num < numForMading || order.have_made > 0}">
+												<image src="/static/images/order/production_selected.png" v-if="order.prev_num < numForMading || order.have_made > 0"></image>
 												<image src="/static/images/order/production.png" v-else></image>
 											</view>
 											<view class="steps__img-column-item" :class="{active: order.have_made >0}" v-if="order.type == 2">
 												<image src="/static/images/order/delivery_selected.png" v-if="order.have_made > 0"></image>
 												<image src="/static/images/order/delivered.png" v-else></image>
 											</view>
-											<view class="steps__img-column-item" :class="{active: order.have_received > 0}" v-if="order.type == 1">
-												<image src="/static/images/order/delivered_selected.png" v-if="order.have_received > 0"></image>
+											<view class="steps__img-column-item" :class="{active: order.have_made > 0}" v-if="order.type == 1">
+												<image src="/static/images/order/delivered_selected.png" v-if="order.have_made > 0"></image>
 												<image src="/static/images/order/delivered.png" v-else></image>
 											</view>
 										</view>
@@ -59,7 +59,7 @@
 												<view class="steps__text-column-item-text">已下单</view>
 												<view class="steps__column-item-line"></view>
 											</view>
-											<view class="steps__text-column-item activ" :class="{active: order.prev_num == 0 || order.have_made > 0}">
+											<view class="steps__text-column-item activ" :class="{active: order.prev_num < numForMading || order.have_made > 0}">
 												<view class="steps__column-item-line"></view>
 												<view class="steps__text-column-item-text">制作中</view>
 												<view class="steps__column-item-line"></view>
@@ -69,7 +69,7 @@
 												<view class="steps__text-column-item-text">配送中</view>
 												<!-- <view class="steps__column-item-line"></view> -->
 											</view>
-											<view class="steps__text-column-item" :class="{active: order.have_received > 0}" v-if="order.type == 1">
+											<view class="steps__text-column-item" :class="{active: order.have_made > 0}" v-if="order.type == 1">
 												<view class="steps__column-item-line"></view>
 												<view class="steps__text-column-item-text">
 													{{ order.type == 2 ? '已送达' : '请取餐' }}
@@ -180,7 +180,8 @@
 		},
 		data() {
 			return {
-				foodsOrders:[]
+				foodsOrders:[],
+				numForMading:5 // 前5个代表正在制作中
 			}
 		},
 		computed: {

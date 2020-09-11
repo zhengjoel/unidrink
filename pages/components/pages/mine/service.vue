@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<block v-for="(item,index) in services" :key='index'>
-			<list-cell v-if="item.pages == '/pages/components/pages/login/login'" v-show="isLogin" arrow=true class="list" @tap="serv(item)">
+			<list-cell v-if="item.pages == '/pages/components/pages/login/logout'" v-show="isLogin" arrow=true class="list" @tap="serv(item)">
 				<view>{{item.name}}</view>
 			</list-cell>
 			<list-cell v-else arrow=true class="list" @tap="serv(item)">

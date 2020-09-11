@@ -453,7 +453,8 @@ page {
 			display: flex;
 			align-items: center;
 			justify-content: space-around;
-
+			z-index: 210;
+			 
 			image {
 				width: 80rpx;
 				height: 80rpx;

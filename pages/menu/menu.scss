@@ -257,7 +257,8 @@ page {
 					height: 34rpx;
 					line-height: 34rpx;
 					font-size: 22rpx;
-					background-color: $color-primary;
+					//background-color: $color-primary;
+					background-color: #5A5B5C;
 					color: #ffffff;
 					top: 16rpx;
 					right: 10rpx;
@@ -663,7 +664,8 @@ page {
 		position: relative;
 
 		.tag {
-			background-color: $color-warning;
+			//background-color: $color-warning;
+			background-color: #5A5B5C;;
 			color: $text-color-white;
 			display: flex;
 			justify-content: center;
@@ -689,7 +691,8 @@ page {
 .cart-popup {
 	.top {
 		background-color: $bg-color-primary;
-		color: $color-primary;
+		//color: $color-primary;
+		color: #5A5B5C;
 		padding: 10rpx 30rpx;
 		font-size: 24rpx;
 		text-align: right;

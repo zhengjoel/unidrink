@@ -507,7 +507,7 @@
   height: 34rpx;
   line-height: 34rpx;
   font-size: 22rpx;
-  background-color: #00b1b7;
+  background-color: #5A5B5C;
   color: #ffffff;
   top: 16rpx;
   right: 10rpx;
@@ -982,7 +982,7 @@
   position: relative;
 }
 .cart-box .mark .tag.data-v-368aef34 {
-  background-color: #FAB714;
+  background-color: #5A5B5C;
   color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1011,7 +1011,7 @@
 }
 .cart-popup .top.data-v-368aef34 {
   background-color: #dbe7ea;
-  color: #00b1b7;
+  color: #5A5B5C;
   padding: 10rpx 30rpx;
   font-size: 24rpx;
   text-align: right;

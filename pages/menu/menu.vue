@@ -53,7 +53,7 @@
 			</view>
 			<view style="height: 60rpx" v-if="store.notice">
 				<!-- 文字滚动 -->
-				<uni-notice-bar style="margin-top: 14upx;" backgroundColor="" scrollable="true" single="true" :text="store.notice"></uni-notice-bar>
+				<uni-notice-bar style="margin-top: 14upx;" color="#5A5B5C;" backgroundColor="" scrollable="true" single="true" :text="store.notice"></uni-notice-bar>
 			</view>
 			<!-- #ifdef H5 -->
 			<view class="content" :style="{height: 'calc(100vh - 200rpx - 100rpx + '+(store.notice ? '0rpx':'60rpx')+')'}">

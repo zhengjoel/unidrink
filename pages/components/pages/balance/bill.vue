@@ -34,7 +34,7 @@
 										<view>
 												{{payTypeList[res.pay_type]}}：{{res.type == 1 ? '—':'＋'}}￥{{res.real_price}}元
 										</view>
-										<view>
+										<view v-if="res.type != 3">
 												支付：{{res.type == 1 ? '—':'＋'}}￥{{res.total_price}}元
 										</view>
 									</view>
@@ -68,7 +68,7 @@ export default {
 					name: '退款'
 				}
 			],
-			payTypeList: {'0': '无', '2':'微信','3':'支付宝', '5': '余额'},
+			payTypeList: {'0': '无', '3':'微信','4':'支付宝', '5': '余额'},
 			current: 0,
 			swiperCurrent: 0,
 			tabsHeight: 0,
@@ -78,8 +78,8 @@ export default {
 			pageSize:20
 		};
 	},
-	onLoad() {
-		this.getBill();
+	async onLoad() {
+		await this.getBill();
 	},
 	computed: {
 		
@@ -119,6 +119,8 @@ export default {
 			this.$refs.tabs.setFinishCurrent(current);
 			this.swiperCurrent = current;
 			this.current = current;
+			this.page = 1;
+			this.getBill();
 		}
 	}
 };

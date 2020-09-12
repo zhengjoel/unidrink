@@ -1,7 +1,6 @@
 <template>
 	<view class="container">
 		<view class="banner">
-			<!-- <image src="https://img-shop.qmimg.cn/s23107/2020/04/26/3eb7808bf105262604.jpg" mode="" class="bg"></image> -->
 			<u-swiper class="bg" height="600" :list="listAds" mode="dot" indicator-pos="bottomCenter"></u-swiper>
 			<view class="intro">
 				<view class="greet">您好，{{ isLogin ? member.username : '游客' }}</view>
@@ -11,11 +10,13 @@
 		<view class="content">
 			<view class="entrance">
 				<view class="item" @tap="takein">
-					<image src="/static/images/index/zq.png" class="icon"></image>
+					<!-- <image src="/static/images/index/zq.png" class="icon"></image> -->
+					<view class="iconfont-unidrink icon-takein icon"></view>
 					<view class="title">自取</view>
 				</view>
 				<view class="item" @tap="takeout">
-					<image src="/static/images/index/wm.png" class="icon"></image>
+					<!-- <image src="/static/images/index/wm.png" class="icon"></image> -->
+					<view class="iconfont-unidrink icon-takeout icon"></view>
 					<view class="title">外卖</view>
 				</view>
 			</view>
@@ -40,30 +41,31 @@
 			<view class="navigators">
 				<view class="left">
 					<view class="grid flex-column just-content-center" @click="goShopping">
-						<view class="d-flex align-items-center">
-							<image src="/static/images/index/csc.png" class="mark-img"></image>
+						<view class="align-items-center">
+							<!-- <image src="/static/images/index/csc.png" class="mark-img"></image> -->
+							<view class="iconfont-unidrink icon-shop" ></view>
 							<view class="font-size-sm text-color-base">喂喂商城</view>
-						</view>
-						<view class="text-color-assist" style="margin-left: 40rpx; font-size: 20rpx;">进入积分商城兑好物</view>
+						</view>	
+						<view class="text-color-assist">进入积分商城兑好物</view>
 					</view>
-					<view class="grid justify-content-end align-items-end">
+					<!-- <view class="grid justify-content-end align-items-end">
 						<image src="/static/images/index/yzclh.png" class="yzclh-img" mode="heightFix"></image>
-					</view>
+					</view> -->
 				</view>
 				<view class="right">
 					<view class="tea-activity" @tap="integrals">
-						<image src="/static/images/index/mcsb.png" class="mark-img"></image>
+						<!-- <image src="/static/images/index/mcsb.png" class="mark-img"></image> -->
 						<view>更多积分</view>
-						<view class="right-img">
+						<!-- <view class="right-img">
 							<image src="/static/images/index/mcsb_bg.png" mode="widthFix"></image>
-						</view>
+						</view> -->
 					</view>
 					<view class="member-gifts" @tap="coupons">
-						<image src="/static/images/index/hyjb.png" class="mark-img"></image>
+						<!-- <image src="/static/images/index/hyjb.png" class="mark-img"></image> -->
 						<view>会员劵包</view>
-						<view class="right-img">
+						<!-- <view class="right-img">
 							<image src="/static/images/index/hyjb_bg.png" mode="widthFix"></image>
-						</view>
+						</view> -->
 					</view>
 				</view>
 			</view>
@@ -171,7 +173,9 @@ page {
 	min-height: 100%;
 }
 /* #endif */
-
+page {
+	background-color: #ffffff!important;
+}
 .banner {
 	position: relative;
 	width: 100%;
@@ -216,7 +220,7 @@ page {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
+	border-radius: 200rpx;
 	.item {
 		flex: 1;
 		display: flex;
@@ -236,9 +240,8 @@ page {
 		}
 		
 		.icon {
-			width: 84rpx;
-			height: 84rpx;
-			margin: 20rpx;
+			font-size: 90rpx;
+			color: #5A5B5C;
 		}
 		
 		.title {
@@ -314,26 +317,32 @@ page {
 	padding: 20rpx;
 	display: flex;
 	align-items: stretch;
-	
+	border-radius: 300rpx;
 	.left {
 		width: 340rpx;
 		margin-right: 20rpx;
 		display: flex;
 		padding: 0 20rpx;
-		flex-direction: column;
+		
 		font-size: $font-size-sm;
 		color: $text-color-base;
-		background-color: #F2F2E6;
+		background-color: #F1F8FA;
+		border-radius: 200rpx;
+		text-align: center;;
 		
 		.grid {
-			height: 50%;
+			height: 100%;
+			width: 100%;
 			display: flex;
+		}
+		.icon-shop {
+			font-size: 100rpx;
 		}
 	}
 	
 	.right {
 		width: 290rpx;
-		display: flex;
+		//display: flex;
 		flex-direction: column;
 		
 		.tea-activity, .member-gifts {
@@ -344,15 +353,24 @@ page {
 			color: $text-color-base;
 			align-items: center;
 			position: relative;
+			border-radius: 100rpx;
+			height: 150rpx;
+			text-align: center;
+			view {
+				display: block;
+				width: 100%;
+			}
+			padding-right: 60rpx;
 		}
 		
 		.tea-activity {
-			background-color: #FDF3F2;
+			//background-color: #FDF3F2;
 			margin-bottom: 20rpx;
+			
 		}
 		
 		.member-gifts {
-			background-color: #FCF6D4;
+			//background-color: #FCF6D4;
 		}
 		
 		.right-img {

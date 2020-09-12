@@ -73,11 +73,11 @@
 				<!-- goods list begin -->
 				<scroll-view class="goods" scroll-with-animation scroll-y :scroll-top="cateScrollTop" @scroll="handleGoodsScroll">
 					<view class="wrapper">
-						<swiper class="ads" v-if="ads.length > 0" id="ads" autoplay :interval="3000" indicator-dots>
+						<!-- <swiper class="ads" v-if="ads.length > 0" id="ads" autoplay :interval="3000" indicator-dots>
 							<swiper-item v-for="(item, index) in ads" :key='index'>
 								<image mode="aspectFill" :src="item.image"></image>
 							</swiper-item>
-						</swiper>
+						</swiper> -->
 						<view class="list">
 							<!-- category begin -->
 							<view class="category" v-for="(item, index) in goods" :key="index" :id="`cate-${item.id}`">
@@ -257,7 +257,7 @@
 	<!--轻提示-->
 	<view class="loading" v-else>
 		<!-- <image src="/static/images/loading.gif"></image> -->
-		<ourLoading active background-color="" color="#00b1b7" text=" " />
+		<ourLoading active background-color="" color="#5A5B5C" text=" " />
 		<button type="primary" style="z-index: 3001;position: absolute;top: 650rpx;" @click="init" v-if="!store.id">定位最近的门店</button>
 		<u-toast ref="uToast"></u-toast>
 	</view>

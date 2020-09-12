@@ -209,7 +209,7 @@ var _default =
         name: '退款' }],
 
 
-      payTypeList: { '0': '无', '2': '微信', '3': '支付宝', '5': '余额' },
+      payTypeList: { '0': '无', '3': '微信', '4': '支付宝', '5': '余额' },
       current: 0,
       swiperCurrent: 0,
       tabsHeight: 0,
@@ -219,27 +219,27 @@ var _default =
       pageSize: 20 };
 
   },
-  onLoad: function onLoad() {
-    this.getBill();
+  onLoad: function onLoad() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
+                _this.getBill());case 2:case "end":return _context.stop();}}}, _callee);}))();
   },
   computed: {},
 
 
   methods: {
-    getBill: function getBill() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var data;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
-                _this.loadStatus.splice(_this.swiperCurrent, 1, "loading");_context.next = 3;return (
-                  _this.$api.request('/balance/getBillList', 'POST', { type: _this.swiperCurrent, page: _this.page, pagesize: _this.pageSize }));case 3:data = _context.sent;
-                if (_this.page == 1) {
-                  _this.orderList[_this.swiperCurrent] = [];
+    getBill: function getBill() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var data;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:
+                _this2.loadStatus.splice(_this2.swiperCurrent, 1, "loading");_context2.next = 3;return (
+                  _this2.$api.request('/balance/getBillList', 'POST', { type: _this2.swiperCurrent, page: _this2.page, pagesize: _this2.pageSize }));case 3:data = _context2.sent;
+                if (_this2.page == 1) {
+                  _this2.orderList[_this2.swiperCurrent] = [];
                 }
                 if (data && data.length > 0) {
-                  _this.page++;
-                  _this.orderList[_this.swiperCurrent] = _this.orderList[_this.swiperCurrent].concat(data);
+                  _this2.page++;
+                  _this2.orderList[_this2.swiperCurrent] = _this2.orderList[_this2.swiperCurrent].concat(data);
 
-                  _this.loadStatus.splice(_this.swiperCurrent, 1, "loadmore");
+                  _this2.loadStatus.splice(_this2.swiperCurrent, 1, "loadmore");
                 } else {
-                  _this.loadStatus.splice(_this.swiperCurrent, 1, "nomore");
-                }case 6:case "end":return _context.stop();}}}, _callee);}))();
+                  _this2.loadStatus.splice(_this2.swiperCurrent, 1, "nomore");
+                }case 6:case "end":return _context2.stop();}}}, _callee2);}))();
     },
     reachBottom: function reachBottom() {
       if (this.loadStatus[this.swiperCurrent] == 'nomore') {
@@ -260,6 +260,8 @@ var _default =
       this.$refs.tabs.setFinishCurrent(current);
       this.swiperCurrent = current;
       this.current = current;
+      this.page = 1;
+      this.getBill();
     } } };exports.default = _default;
 
 /***/ }),

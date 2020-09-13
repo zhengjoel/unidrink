@@ -9,7 +9,7 @@
 							<view class="iconfont iconarrow-right"></view>
 						</view>
 						<view class="store-location">
-							<image src='/static/images/order/location.png' style="width: 30rpx; height: 30rpx;" class="mr-10"></image>
+							<!-- <image src='/static/images/order/location.png' style="width: 30rpx; height: 30rpx;" class="mr-10"></image> -->
 							<text>距离您 {{ store.far_text }}</text>
 						</view>
 					</view>
@@ -45,7 +45,7 @@
 						<!-- <view v-if="store.distance > 0">配送距离:{{store.distance}}km</view>
 						<view v-else>外卖不配送</view> -->
 					</view>
-				</view>
+				</view> 
 				<!-- <view class="coupon">
 					<text class="title">"霸气mini卡"超级购券活动，赶紧去购买</text>
 					<view class="iconfont iconarrow-right"></view>

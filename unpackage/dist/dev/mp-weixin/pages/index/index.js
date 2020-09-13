@@ -238,6 +238,11 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
   onShow: function onShow() {
     this.getAds();
   },
+  onShareAppMessage: function onShareAppMessage(e) {
+    return {
+      title: 'uniDrink' };
+
+  },
   methods: {
     getAds: function getAds() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var shop_id, data;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
                 shop_id = _this.store.id ? _this.store.id : 0;_context.next = 3;return (

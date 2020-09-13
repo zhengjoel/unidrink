@@ -107,7 +107,7 @@
 			},
 			detail(id) {
 				uni.navigateTo({
-					url: '/pages/orders/detail?id=' + id
+					url: '/pages/components/pages/orders/detail?id=' + id
 				})
 			},
 			// 评论

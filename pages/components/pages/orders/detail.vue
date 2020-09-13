@@ -9,13 +9,15 @@
 							<view class="d-flex flex-column w-60">
 								<view class="w-100 font-size-lg text-color-base text-truncate mb-10">{{ order.shop.name }}</view>
 								<view class="w-100 d-flex align-items-center overflow-hidden" v-if="order.type == 2">
-									<image src="/static/images/order/location.png" class="flex-shrink-0" style="width: 30rpx; height: 30rpx;"></image>
+									<!-- <image src="/static/images/order/location.png" class="flex-shrink-0" style="width: 30rpx; height: 30rpx;"></image> -->
 									<view class="font-size-sm text-color-assist">{{ order.address.address + order.address.door_number + ' ' + order.address.name + ' ' + order.address.mobile }}</view>
 								</view> 
 							</view>
 							<view class="d-flex justify-content-end align-items-center w-40">
-								<image src="/static/images/order/mobile.png" @click="makePhoneCall" style="width: 60rpx; height: 60rpx;margin-right: 30rpx;"></image>
-								<image src="/static/images/order/navigation.png" @click="openLocation" style="width: 60rpx; height: 60rpx;"></image>
+								<!-- <image src="/static/images/order/mobile.png" @click="makePhoneCall" style="width: 60rpx; height: 60rpx;margin-right: 30rpx;"></image>
+								<image src="/static/images/order/navigation.png" @click="openLocation" style="width: 60rpx; height: 60rpx;"></image> -->
+								<view class="iconfont-unidrink icon-mobile"  @click="makePhoneCall" style="font-size: 45rpx;margin-right: 40rpx;"></view>
+								<view class="iconfont-unidrink icon-location"  @click="openLocation" style="font-size: 45rpx;"></view>
 							</view>
 						</view> 
 					</list-cell>

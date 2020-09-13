@@ -4,7 +4,7 @@
 			<u-swiper class="bg" height="600" :list="listAds" mode="dot" indicator-pos="bottomCenter"></u-swiper>
 			<view class="intro">
 				<view class="greet">您好，{{ isLogin ? member.username : '游客' }}</view>
-				<view class="note">一杯奶茶，一口软欧包，在奈雪遇见两种美好</view>
+				<!-- <view class="note">一杯奶茶，一口软欧包，在奈雪遇见两种美好</view> -->
 			</view>
 		</view>
 		<view class="content">
@@ -102,7 +102,12 @@
 		onShow() {
 			this.getAds();
 		},
-		methods: {
+		onShareAppMessage(e) {
+			return {
+				title: 'uniDrink'
+			};
+		},
+		methods: { 
 			async getAds () {
 				let shop_id = this.store.id ? this.store.id : 0;
 				let data = await this.$api.request('/menu/ads', 'POST', {

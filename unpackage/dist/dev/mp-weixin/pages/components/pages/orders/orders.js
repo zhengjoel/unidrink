@@ -263,7 +263,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     detail: function detail(id) {
       uni.navigateTo({
-        url: '/pages/orders/detail?id=' + id });
+        url: '/pages/components/pages/orders/detail?id=' + id });
 
     },
     // 评论

@@ -21,8 +21,10 @@
 									<view class="w-100 font-size-lg text-color-base text-truncate">{{ order.shop.name }}</view>
 								</view>
 								<view class="d-flex justify-content-end align-items-center w-40">
-									<image src="/static/images/order/mobile.png" @click="makePhoneCall(order.shop)" style="width: 60rpx; height: 60rpx;margin-right: 30rpx;"></image>
-									<image src="/static/images/order/navigation.png" @click="openLocation(order.shop)" style="width: 60rpx; height: 60rpx;"></image>
+									<view class="iconfont-unidrink icon-mobile"  @click="makePhoneCall(order.shop)" style="font-size: 45rpx;margin-right: 40rpx;"></view>
+									<view class="iconfont-unidrink icon-location"  @click="openLocation(order.shop)" style="font-size: 45rpx;"></view>
+									<!-- <image src="/static/images/order/mobile.png" @click="makePhoneCall(order.shop)" style="width: 60rpx; height: 60rpx;margin-right: 30rpx;"></image>
+									<image src="/static/images/order/navigation.png" @click="openLocation(order.shop)" style="width: 60rpx; height: 60rpx;"></image> -->
 								</view>
 							</view>
 						</list-cell>
@@ -38,19 +40,26 @@
 									<view class="steps d-flex flex-column w-80">
 										<view class="steps__img-column">
 											<view class="steps__img-column-item">
-												<image src="/static/images/order/ordered_selected.png"></image>
+												<view class="iconfont-unidrink icon-lamp"></view>
+												<!-- <image src="/static/images/order/ordered_selected.png"></image> -->
 											</view>
-											<view class="steps__img-column-item" :class="{active: order.prev_num < numForMading || order.have_made > 0}">
-												<image src="/static/images/order/production_selected.png" v-if="order.prev_num < numForMading || order.have_made > 0"></image>
-												<image src="/static/images/order/production.png" v-else></image>
+											<view class="steps__img-column-item">
+												<!-- <image src="/static/images/order/production_selected.png" v-if="order.prev_num < numForMading || order.have_made > 0"></image>
+												<image src="/static/images/order/production.png" v-else></image> -->
+												<view class="iconfont-unidrink icon-daojishi" v-if="order.prev_num < numForMading || order.have_made > 0"></view>
+												<view class="iconfont-unidrink icon-daojishi unactive" v-else></view>
 											</view>
-											<view class="steps__img-column-item" :class="{active: order.have_made >0}" v-if="order.type == 2">
-												<image src="/static/images/order/delivery_selected.png" v-if="order.have_made > 0"></image>
-												<image src="/static/images/order/delivered.png" v-else></image>
+											<view class="steps__img-column-item" v-if="order.type == 2">
+												<!-- <image src="/static/images/order/delivery_selected.png" v-if="order.have_made > 0"></image>
+												<image src="/static/images/order/delivered.png" v-else></image> -->
+												<view class="iconfont-unidrink icon-takeout" v-if="order.have_made > 0"></view>
+												<view class="iconfont-unidrink icon-takeout unactive" v-else></view>
 											</view>
-											<view class="steps__img-column-item" :class="{active: order.have_made > 0}" v-if="order.type == 1">
-												<image src="/static/images/order/delivered_selected.png" v-if="order.have_made > 0"></image>
-												<image src="/static/images/order/delivered.png" v-else></image>
+											<view class="steps__img-column-item" v-if="order.type == 1">
+												<!-- <image src="/static/images/order/delivered_selected.png" v-if="order.have_made > 0"></image>
+												<image src="/static/images/order/delivered.png" v-else></image> -->
+												<view class="iconfont-unidrink icon-doorbell" v-if="order.have_made > 0"></view>
+												<view class="iconfont-unidrink icon-doorbell unactive" v-else></view>
 											</view>
 										</view>
 										<view class="steps__text-column">
@@ -67,7 +76,7 @@
 											<view class="steps__text-column-item" :class="{active: order.have_made > 0}" v-if="order.type == 2">
 												<view class="steps__column-item-line"></view>
 												<view class="steps__text-column-item-text">配送中</view>
-												<!-- <view class="steps__column-item-line"></view> -->
+												<view class="steps__column-item-line bg-transparent"></view>
 											</view>
 											<view class="steps__text-column-item" :class="{active: order.have_made > 0}" v-if="order.type == 1">
 												<view class="steps__column-item-line"></view>
@@ -214,8 +223,9 @@
 				uni.stopPullDownRefresh();
 				this.foodsOrders = [];
 				if (data) {
-					for(var i in data) {
-						this.foodsOrders.unshift(data[i]);
+					this.numForMading = data.concurrent; 
+					for(var i in data.list) {
+						this.foodsOrders.unshift(data.list[i]);
 					}
 					//console.log(this.foodsOrders);
 				}
@@ -348,6 +358,9 @@
 				width: 80rpx;
 				height: 80rpx;
 			}
+			.unactive {
+				color: #919293;
+			}
 		}
 	}
 	
@@ -384,5 +397,8 @@
 				margin: 0 8px;
 			}
 		}
+	}
+	.icon-lamp, .icon-daojishi, .icon-takeout, .icon-doorbell{
+		font-size: 60rpx;
 	}
 </style>

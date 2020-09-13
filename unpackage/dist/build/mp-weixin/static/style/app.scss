@@ -25,7 +25,8 @@ button {
 	margin: 0;
 
 	&[type='primary'] {
-		background-color: $color-primary;
+		//background-color: $color-primary;
+		background-color: #5A5B5C;
 		color: #ffffff;
 		font-size: $font-size-base;
 		

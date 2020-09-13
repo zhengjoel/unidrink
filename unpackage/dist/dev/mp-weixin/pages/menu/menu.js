@@ -510,6 +510,10 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
   onShow: function onShow() {
     this.init();
   },
+  onHide: function onHide() {
+    // 重新进入要重新计算页面高度，否则有问题
+    this.sizeCalcState = false;
+  },
   computed: _objectSpread(_objectSpread(_objectSpread({},
   (0, _vuex.mapState)(['orderType', 'address', 'store', 'location'])),
   (0, _vuex.mapGetters)(['isLogin'])), {}, {
@@ -679,13 +683,16 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
     },
     calcSize: function calcSize() {
       var h = 10;
-
       var view = uni.createSelectorQuery().select('#ads');
-      view.fields({
-        size: true },
-      function (data) {
-        h += Math.floor(data.height);
-      }).exec();
+      if (view) {
+        view.fields({
+          size: true },
+        function (data) {
+          if (data) {
+            h += Math.floor(data.height);
+          }
+        }).exec();
+      }
 
       this.goods.forEach(function (item) {
         var view = uni.createSelectorQuery().select("#cate-".concat(item.id));

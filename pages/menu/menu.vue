@@ -299,6 +299,10 @@ export default {
 	onShow() {
 		this.init();
 	},
+	onHide() {
+		// 重新进入要重新计算页面高度，否则有问题
+		this.sizeCalcState = false;
+	},
 	computed: {
 		...mapState(['orderType', 'address', 'store', 'location']),
 		...mapGetters(['isLogin']),
@@ -468,13 +472,16 @@ export default {
 		},
 		calcSize() {
 			let h = 10
-			
 			let view = uni.createSelectorQuery().select('#ads')
-			view.fields({
-				size: true
-			}, data => {
-				h += Math.floor(data.height)
-			}).exec()
+			if (view) {
+				view.fields({
+					size: true
+				}, data => {
+					if (data) {
+						h += Math.floor(data.height)
+					}
+				}).exec()
+			}
 			
 			this.goods.forEach(item => {
 				let view = uni.createSelectorQuery().select(`#cate-${item.id}`)

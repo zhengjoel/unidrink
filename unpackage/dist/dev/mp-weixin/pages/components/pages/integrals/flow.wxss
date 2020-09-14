@@ -240,4 +240,9 @@
   -webkit-transform: scaleY(0.8);
           transform: scaleY(0.8);
 }
+.score-right.data-v-3bc5ce91 {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
 

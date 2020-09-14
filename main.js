@@ -23,7 +23,7 @@ Vue.prototype.$unishow = "https://drink.weivee.com/addons/unidrink";
 
 // 为了方便每次上传的时候忘记修改上面的参数
 uni.getSystemInfo({
-	success(res) { 
+	success(res) {
 		//console.log(res)
 		if (res.platform != "devtools") {
 			//Vue.prototype.$unishow = "https://shop.weivee.com/addons/unidrink";

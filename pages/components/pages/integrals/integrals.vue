@@ -22,7 +22,7 @@
 				<view class="text-color-base font-weight-bold font-size-lg" style="margin: 20rpx 0;">连续签到赚积分</view>
 				<uni-steps :active="activeDay" :options="stepsOption"></uni-steps>
 				<view class="d-flex flex-column align-items-center just-content-center" style="margin: 20rpx 0;">
-					<button type="primary" class="sign-in-btn" @click="signin">签到</button>
+					<button type="primary" class="sign-in-btn" @click="signin">{{scoreInfo.signin == 1 ? '今日已签到' : '签到'}}</button>
 					<view class="font-size-base text-color-primary" style="margin-top: 20rpx;" @tap="attendance">查看签到日历</view>
 				</view>
 			</view>
@@ -61,8 +61,6 @@
 			</view>
 			<!-- 积分商品列表 end -->
 		</view>
-		
-		
 		
 		<modal custom :show="detailModalVisible" @cancel="closeDetailModal" width="90%">
 			<view class="modal-content">

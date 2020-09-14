@@ -52,11 +52,15 @@
 								<view class="font-weight-bold">￥{{ order.delivery_price }}</view>
 							</view>
 							<view class="pay-cell">
+								<view>订单金额</view>
+								<view class="font-weight-bold">￥{{ order.order_price }}</view>
+							</view>
+							<view class="pay-cell">
 								<view>优惠金额</view>
 								<view class="font-weight-bold">￥{{ order.discount_price }}</view>
 							</view>
 							<view class="pay-cell">
-								<view>金额总计</view>
+								<view>实付金额</view>
 								<view class="font-weight-bold">￥{{ order.total_price }}</view>
 							</view>
 						</view>

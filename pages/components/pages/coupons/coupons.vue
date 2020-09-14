@@ -283,6 +283,7 @@ export default {
 				if (coupon.limit == coupon.my_receive) {
 					this.tabs[this.activeTabIndex].coupons.splice(index,1);
 				}
+				this.detailModalVisible = false
 			}
 		}
 	}

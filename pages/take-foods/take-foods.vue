@@ -118,7 +118,19 @@
 									<view class="font-weight-bold">{{ order.pay_type_text }}</view>
 								</view>
 								<view class="pay-cell">
-									<view>金额总计</view>
+									<view>订单金额</view>
+									<view class="font-weight-bold">￥{{ order.order_price }}</view>
+								</view>
+								<view class="pay-cell" v-if="order.type == 2">
+									<view>配送费</view>
+									<view class="font-weight-bold">￥{{ order.delivery_price }}</view>
+								</view>
+								<view class="pay-cell">
+									<view>优惠金额</view>
+									<view class="font-weight-bold">￥{{ order.discount_price }}</view>
+								</view>
+								<view class="pay-cell">
+									<view>实付金额</view>
 									<view class="font-weight-bold">￥{{ order.total_price }}</view>
 								</view>
 							</view>

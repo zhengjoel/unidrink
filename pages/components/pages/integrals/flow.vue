@@ -12,8 +12,8 @@
 						<view class="font-size-base text-color-assist">{{ item.createtime_text }}</view>
 					</view>
 					<view class="d-flex flex-column align-items-center">
-						<view class="font-size-lg text-color-base font-weight-bold">
-							{{ item.score > 0 ? '+' : '-' }}{{ item.score }}
+						<view class="font-size-lg text-color-base font-weight-bold score-right">
+							{{ item.score > 0 ? '+' : '' }}{{ item.score }}
 						</view>
 						<view class="font-size-sm text-color-assist">变更前:{{ item.before }},变更后:{{ item.after }}</view>
 					</view>
@@ -98,5 +98,11 @@
 	
 	/deep/.tui-list-cell:after{
 		transform: scaleY(0.8);
+	}
+	
+	.score-right {
+		display: block;
+		width: 100%;
+		text-align: right;
 	}
 </style>

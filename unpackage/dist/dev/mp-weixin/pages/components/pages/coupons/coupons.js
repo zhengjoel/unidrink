@@ -434,6 +434,7 @@ __webpack_require__.r(__webpack_exports__);
                   if (_coupon.limit == _coupon.my_receive) {
                     _this3.tabs[_this3.activeTabIndex].coupons.splice(index, 1);
                   }
+                  _this3.detailModalVisible = false;
                 }case 4:case "end":return _context4.stop();}}}, _callee4);}))();
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

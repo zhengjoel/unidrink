@@ -86,7 +86,7 @@
 			<view class="font-size-lg text-color-base font-weight-bold" style="margin-bottom: 20rpx;">我的服务</view>
 			<view class="row">
 				<block  v-for="(item, index) in services" :key='index'>
-					<view class="grid" v-if="item.pages == '/pages/contact/contact'" >
+					<view class="grid" v-if="item.pages == '/pages/components/pages/contact/contact'" >
 						<button open-type="contact" class="opacity-0"></button>
 						<image :src="item.image"></image>
 						<view>{{item.name}}</view>

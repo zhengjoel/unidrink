@@ -10,12 +10,10 @@
 		<view class="content">
 			<view class="entrance">
 				<view class="item" @tap="takein">
-					<!-- <image src="/static/images/index/zq.png" class="icon"></image> -->
 					<view class="iconfont-unidrink icon-takein icon"></view>
 					<view class="title">自取</view>
 				</view>
 				<view class="item" @tap="takeout">
-					<!-- <image src="/static/images/index/wm.png" class="icon"></image> -->
 					<view class="iconfont-unidrink icon-takeout icon"></view>
 					<view class="title">外卖</view>
 				</view>
@@ -42,30 +40,19 @@
 				<view class="left">
 					<view class="grid flex-column just-content-center" @click="goShopping">
 						<view class="align-items-center">
-							<!-- <image src="/static/images/index/csc.png" class="mark-img"></image> -->
 							<view class="iconfont-unidrink icon-shop" ></view>
 							<view class="font-size-sm text-color-base">喂喂商城</view>
 						</view>	
 						<view class="text-color-assist">进入积分商城兑好物</view>
 					</view>
-					<!-- <view class="grid justify-content-end align-items-end">
-						<image src="/static/images/index/yzclh.png" class="yzclh-img" mode="heightFix"></image>
-					</view> -->
+					
 				</view>
 				<view class="right">
 					<view class="tea-activity" @tap="integrals">
-						<!-- <image src="/static/images/index/mcsb.png" class="mark-img"></image> -->
 						<view>更多积分</view>
-						<!-- <view class="right-img">
-							<image src="/static/images/index/mcsb_bg.png" mode="widthFix"></image>
-						</view> -->
 					</view>
 					<view class="member-gifts" @tap="coupons">
-						<!-- <image src="/static/images/index/hyjb.png" class="mark-img"></image> -->
 						<view>会员劵包</view>
-						<!-- <view class="right-img">
-							<image src="/static/images/index/hyjb_bg.png" mode="widthFix"></image>
-						</view> -->
 					</view>
 				</view>
 			</view>

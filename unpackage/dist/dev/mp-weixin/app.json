@@ -77,6 +77,5 @@
       "desc": "定位最近的门店"
     }
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap65.json"
+  "usingComponents": {}
 }

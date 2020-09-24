@@ -287,7 +287,13 @@ export default {
 			defaultSelector: [0],
 			payType: 3, // 付款方式:5=余额支付,3=微信支付,4=支付宝
 			coupons: [], // 可用优惠券列表
-			coupon: {} // 选中的
+			coupon: {} ,// 选中的
+			subscribeMss: {
+				'takein' : '',
+				'takeout' : '',
+				'takein_made' : '',
+				'takeout_made' : ''
+			} // 微信订阅信息
 		};
 	},
 	computed: {
@@ -326,11 +332,17 @@ export default {
 		const { remark } = option;
 		this.cart = uni.getStorageSync('cart');
 		remark && this.$set(this.form, 'remark', remark);
-
+		this.getSubscribeMss();
 	},
 	methods: {
 		...mapMutations(['SET_ORDER_TYPE', 'SET_MEMBER']),
 		...mapGetters(['isLogin']),
+		async getSubscribeMss() {
+			let data = await this.$api.request('/sms/subscribeMsg');
+			if (data) {
+				this.subscribeMss = data;
+			}
+		},
 		// 更改支付方式
 		setPayType(paytype) {
 			this.payType = 0;
@@ -446,10 +458,29 @@ export default {
 			}
 		},
 		async pay() {
+			let that = this;
+			await new Promise(function(revolve) {
+				let subscribeMss = [];
+				if (that.orderType == 'takeout') {
+					subscribeMss.push(that.subscribeMss.takeout);
+					subscribeMss.push(that.subscribeMss.takeout_made);
+				} else {
+					subscribeMss.push(that.subscribeMss.takein);
+					subscribeMss.push(that.subscribeMss.takein_made);
+				}
+				console.log(subscribeMss);
+				uni.requestSubscribeMessage({
+					tmplIds: subscribeMss,
+					complete (res) { 
+						revolve(true); 
+					}
+				});
+			});
+			
 			uni.showLoading({
 				title: '加载中'
 			});
-			let that = this;
+			
 			let data = {
 				type: this.orderType == 'takeout' ? 2 : 1, // 购买类型:1=自取,2=外卖
 				address_id: this.orderType == 'takeout' ? this.address.id : 0, // 外卖配送地址
@@ -512,6 +543,7 @@ export default {
 			});
 		},
 		async weixinPay(order) {
+			let that = this;
 			let data = await this.$api.request('/pay/unify?out_trade_no=' + order.out_trade_no);
 			if (!data) {
 				uni.hideLoading();

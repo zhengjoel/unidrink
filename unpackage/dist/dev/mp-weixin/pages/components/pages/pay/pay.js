@@ -460,7 +460,13 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
       defaultSelector: [0],
       payType: 3, // 付款方式:5=余额支付,3=微信支付,4=支付宝
       coupons: [], // 可用优惠券列表
-      coupon: {} // 选中的
+      coupon: {}, // 选中的
+      subscribeMss: {
+        'takein': '',
+        'takeout': '',
+        'takein_made': '',
+        'takeout_made': '' }
+      // 微信订阅信息
     };
   },
   computed: _objectSpread(_objectSpread({},
@@ -499,23 +505,29 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
     remark = option.remark;
     this.cart = uni.getStorageSync('cart');
     remark && this.$set(this.form, 'remark', remark);
-
+    this.getSubscribeMss();
   },
   methods: _objectSpread(_objectSpread(_objectSpread({},
   (0, _vuex.mapMutations)(['SET_ORDER_TYPE', 'SET_MEMBER'])),
   (0, _vuex.mapGetters)(['isLogin'])), {}, {
+    getSubscribeMss: function getSubscribeMss() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var data;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
+                  _this.$api.request('/sms/subscribeMsg'));case 2:data = _context.sent;
+                if (data) {
+                  _this.subscribeMss = data;
+                }case 4:case "end":return _context.stop();}}}, _callee);}))();
+    },
     // 更改支付方式
     setPayType: function setPayType(paytype) {
       this.payType = 0;
       this.payType = paytype;
     },
-    getCoupons: function getCoupons() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var type, data;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
+    getCoupons: function getCoupons() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var type, data;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:
                 //0=通用,1=自取,2=外卖
-                type = _this.orderType == 'takein' ? 1 : 2;_context.next = 3;return (
-                  _this.$api.request('/coupon/mine', 'POST', { page: 1, pagesize: 999, shop_id: _this.store.id, type: type }));case 3:data = _context.sent;
+                type = _this2.orderType == 'takein' ? 1 : 2;_context2.next = 3;return (
+                  _this2.$api.request('/coupon/mine', 'POST', { page: 1, pagesize: 999, shop_id: _this2.store.id, type: type }));case 3:data = _context2.sent;
                 if (data) {
-                  _this.coupons = data;
-                }case 5:case "end":return _context.stop();}}}, _callee);}))();
+                  _this2.coupons = data;
+                }case 5:case "end":return _context2.stop();}}}, _callee2);}))();
     },
     // 选择时间
     choiceTime: function choiceTime(value) {
@@ -618,76 +630,96 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
         this.pay();
       }
     },
-    pay: function pay() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var that, data, order;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:
+    pay: function pay() {var _this3 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3() {var that, data, order;return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:
+                that = _this3;_context3.next = 3;return (
+                  new Promise(function (revolve) {
+                    var subscribeMss = [];
+                    if (that.orderType == 'takeout') {
+                      subscribeMss.push(that.subscribeMss.takeout);
+                      subscribeMss.push(that.subscribeMss.takeout_made);
+                    } else {
+                      subscribeMss.push(that.subscribeMss.takein);
+                      subscribeMss.push(that.subscribeMss.takein_made);
+                    }
+                    console.log(subscribeMss);
+                    uni.requestSubscribeMessage({
+                      tmplIds: subscribeMss,
+                      complete: function complete(res) {
+                        revolve(true);
+                      } });
+
+                  }));case 3:
+
                 uni.showLoading({
                   title: '加载中' });
 
-                that = _this2;
+
                 data = {
-                  type: _this2.orderType == 'takeout' ? 2 : 1, // 购买类型:1=自取,2=外卖
-                  address_id: _this2.orderType == 'takeout' ? _this2.address.id : 0, // 外卖配送地址
-                  shop_id: _this2.store.id, // 店铺id
-                  mobile: _this2.member.mobile, // 联系电话
-                  gettime: _this2.takeinRange[_this2.defaultSelector[0]].value, // 取餐时间
-                  pay_type: _this2.payType, // 支付类型
-                  remark: _this2.form.remark, // 备注
+                  type: _this3.orderType == 'takeout' ? 2 : 1, // 购买类型:1=自取,2=外卖
+                  address_id: _this3.orderType == 'takeout' ? _this3.address.id : 0, // 外卖配送地址
+                  shop_id: _this3.store.id, // 店铺id
+                  mobile: _this3.member.mobile, // 联系电话
+                  gettime: _this3.takeinRange[_this3.defaultSelector[0]].value, // 取餐时间
+                  pay_type: _this3.payType, // 支付类型
+                  remark: _this3.form.remark, // 备注
                   product_id: [],
                   spec: [],
                   number: [],
-                  coupon_id: _this2.coupon.id ? _this2.coupon.id : 0 // 优惠券id
+                  coupon_id: _this3.coupon.id ? _this3.coupon.id : 0 // 优惠券id
                 };
 
-                _this2.cart.forEach(function (item, index) {
+                _this3.cart.forEach(function (item, index) {
                   data.product_id.push(item.id);
                   data.spec.push(item.props_text.replace(/,/g, '|'));
                   data.number.push(item.number);
                 });
 
                 //console.log(data);
-                _context2.next = 6;return _this2.$api.request('/order/submit', 'POST', data);case 6:order = _context2.sent;if (
-                order) {_context2.next = 10;break;}
-                uni.hideLoading();return _context2.abrupt("return");case 10:
+                _context3.next = 8;return _this3.$api.request('/order/submit', 'POST', data);case 8:order = _context3.sent;if (
+                order) {_context3.next = 12;break;}
+                uni.hideLoading();return _context3.abrupt("return");case 12:
 
 
 
                 //console.log('payTYpe:');
                 //console.log(this.payType);
 
-                if (_this2.payType == 3) {
+                if (_this3.payType == 3) {
                   // 微信支付
-                  _this2.weixinPay(order);
-                } else if (_this2.payType == 5) {
+                  _this3.weixinPay(order);
+                } else if (_this3.payType == 5) {
                   // 余额支付
-                  _this2.balancePay(order);
-                } else if (_this2.payType == 4) {
+                  _this3.balancePay(order);
+                } else if (_this3.payType == 4) {
                   // 支付宝支付
-                  _this2.aliPay(order);
+                  _this3.aliPay(order);
                 }
-                uni.hideLoading();return _context2.abrupt("return");case 13:case "end":return _context2.stop();}}}, _callee2);}))();
+                uni.hideLoading();return _context3.abrupt("return");case 15:case "end":return _context3.stop();}}}, _callee3);}))();
 
     },
-    balancePay: function balancePay(order) {var _this3 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee3() {var pay;return _regenerator.default.wrap(function _callee3$(_context3) {while (1) {switch (_context3.prev = _context3.next) {case 0:_context3.next = 2;return (
-                  _this3.$api.request('/pay/balance?out_trade_no=' + order.out_trade_no));case 2:pay = _context3.sent;
+    balancePay: function balancePay(order) {var _this4 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee4() {var pay;return _regenerator.default.wrap(function _callee4$(_context4) {while (1) {switch (_context4.prev = _context4.next) {case 0:_context4.next = 2;return (
+                  _this4.$api.request('/pay/balance?out_trade_no=' + order.out_trade_no));case 2:pay = _context4.sent;
 
                 uni.hideLoading();if (
-                pay) {_context3.next = 6;break;}return _context3.abrupt("return");case 6:
+                pay) {_context4.next = 6;break;}return _context4.abrupt("return");case 6:
 
 
 
-                _this3.member.money -= _this3.amount;
-                _this3.SET_MEMBER(_this3.member);
+                _this4.member.money -= _this4.amount;
+                _this4.SET_MEMBER(_this4.member);
                 uni.removeStorageSync('cart');
                 uni.switchTab({
                   url: '/pages/take-foods/take-foods',
                   fail: function fail(res) {
                     console.log(res);
-                  } });case 10:case "end":return _context3.stop();}}}, _callee3);}))();
+                  } });case 10:case "end":return _context4.stop();}}}, _callee4);}))();
 
     },
-    weixinPay: function weixinPay(order) {var _this4 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee4() {var data;return _regenerator.default.wrap(function _callee4$(_context4) {while (1) {switch (_context4.prev = _context4.next) {case 0:_context4.next = 2;return (
-                  _this4.$api.request('/pay/unify?out_trade_no=' + order.out_trade_no));case 2:data = _context4.sent;if (
-                data) {_context4.next = 6;break;}
-                uni.hideLoading();return _context4.abrupt("return");case 6:
+    weixinPay: function weixinPay(order) {var _this5 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee5() {var that, data;return _regenerator.default.wrap(function _callee5$(_context5) {while (1) {switch (_context5.prev = _context5.next) {case 0:
+                that = _this5;_context5.next = 3;return (
+                  _this5.$api.request('/pay/unify?out_trade_no=' + order.out_trade_no));case 3:data = _context5.sent;if (
+                data) {_context5.next = 7;break;}
+                uni.hideLoading();return _context5.abrupt("return");case 7:
 
 
                 if (data.trade_type == 'MWEB') {
@@ -777,9 +809,9 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
                       that.$api.msg('支付失败');
                     } });
 
-                }case 7:case "end":return _context4.stop();}}}, _callee4);}))();
+                }case 8:case "end":return _context5.stop();}}}, _callee5);}))();
     },
-    alipay: function alipay() {return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee5() {return _regenerator.default.wrap(function _callee5$(_context5) {while (1) {switch (_context5.prev = _context5.next) {case 0:case "end":return _context5.stop();}}}, _callee5);}))();
+    alipay: function alipay() {return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee6() {return _regenerator.default.wrap(function _callee6$(_context6) {while (1) {switch (_context6.prev = _context6.next) {case 0:case "end":return _context6.stop();}}}, _callee6);}))();
 
 
 

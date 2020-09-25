@@ -328,6 +328,10 @@ export default {
 		
 		this.getCoupons();
 	},
+	onHide() {
+		this.subscribeMss = [];
+		this.coupons = [];
+	},
 	onLoad(option) {
 		const { remark } = option;
 		this.cart = uni.getStorageSync('cart');
@@ -410,7 +414,7 @@ export default {
 					}
 				}
 			}
-
+			this.subscribeMss = [];
 			this.coupons = [];
 			this.getCoupons();
 		},

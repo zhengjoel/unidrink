@@ -1,1 +1,0 @@
-<view class="top data-v-774bc1bf"><button class="login-btn data-v-774bc1bf" type="primary" size="default" data-event-opts="{{[['tap',[['logout',['$event']]]]]}}" bindtap="__e">确定退出登录</button><u-toast vue-id="6a7b89ca-1" data-ref="uToast" class="data-v-774bc1bf vue-ref" bind:__l="__l"></u-toast></view>

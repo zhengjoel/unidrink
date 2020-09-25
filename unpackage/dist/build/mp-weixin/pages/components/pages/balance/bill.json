@@ -1,9 +1,0 @@
-{
-  "navigationBarTitleText": "账单",
-  "navigationBarTextStyle": "black",
-  "navigationBarBackgroundColor": "#ffffff",
-  "usingComponents": {
-    "u-tabs-swiper": "/node-modules/uview-ui/components/u-tabs-swiper/u-tabs-swiper",
-    "u-loadmore": "/node-modules/uview-ui/components/u-loadmore/u-loadmore"
-  }
-}

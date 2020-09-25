@@ -1,9 +1,0 @@
-{
-  "navigationBarTitleText": "登录",
-  "navigationBarTextStyle": "black",
-  "navigationBarBackgroundColor": "#ffffff",
-  "usingComponents": {
-    "u-verification-code": "/node-modules/uview-ui/components/u-verification-code/u-verification-code",
-    "u-toast": "/node-modules/uview-ui/components/u-toast/u-toast"
-  }
-}

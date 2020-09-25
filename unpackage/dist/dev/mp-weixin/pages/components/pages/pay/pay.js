@@ -501,6 +501,10 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
 
     this.getCoupons();
   },
+  onHide: function onHide() {
+    this.subscribeMss = [];
+    this.coupons = [];
+  },
   onLoad: function onLoad(option) {var
     remark = option.remark;
     this.cart = uni.getStorageSync('cart');
@@ -583,7 +587,7 @@ var _vuex = __webpack_require__(/*! vuex */ 11);function _interopRequireDefault(
           }
         }
       }
-
+      this.subscribeMss = [];
       this.coupons = [];
       this.getCoupons();
     },

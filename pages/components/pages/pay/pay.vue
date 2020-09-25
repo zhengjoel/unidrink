@@ -463,6 +463,7 @@ export default {
 		},
 		async pay() {
 			let that = this;
+			// #ifdef MP-WEIXIN
 			await new Promise(function(revolve) {
 				let subscribeMss = [];
 				if (that.orderType == 'takeout') {
@@ -480,7 +481,7 @@ export default {
 					}
 				});
 			});
-			
+			// #endif
 			uni.showLoading({
 				title: '加载中'
 			});

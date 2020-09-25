@@ -226,9 +226,12 @@ var _default =
 
 
   methods: {
-    getBill: function getBill() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var data;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:
-                _this2.loadStatus.splice(_this2.swiperCurrent, 1, "loading");_context2.next = 3;return (
-                  _this2.$api.request('/balance/getBillList', 'POST', { type: _this2.swiperCurrent, page: _this2.page, pagesize: _this2.pageSize }));case 3:data = _context2.sent;
+    getBill: function getBill() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee2() {var data;return _regenerator.default.wrap(function _callee2$(_context2) {while (1) {switch (_context2.prev = _context2.next) {case 0:if (!(
+                _this2.loadStatus[_this2.swiperCurrent] == 'loading')) {_context2.next = 2;break;}return _context2.abrupt("return");case 2:
+
+
+                _this2.loadStatus.splice(_this2.swiperCurrent, 1, "loading");_context2.next = 5;return (
+                  _this2.$api.request('/balance/getBillList', 'POST', { type: _this2.swiperCurrent, page: _this2.page, pagesize: _this2.pageSize }));case 5:data = _context2.sent;
                 if (_this2.page == 1) {
                   _this2.orderList[_this2.swiperCurrent] = [];
                 }
@@ -239,7 +242,7 @@ var _default =
                   _this2.loadStatus.splice(_this2.swiperCurrent, 1, "loadmore");
                 } else {
                   _this2.loadStatus.splice(_this2.swiperCurrent, 1, "nomore");
-                }case 6:case "end":return _context2.stop();}}}, _callee2);}))();
+                }case 8:case "end":return _context2.stop();}}}, _callee2);}))();
     },
     reachBottom: function reachBottom() {
       if (this.loadStatus[this.swiperCurrent] == 'nomore') {
@@ -251,7 +254,7 @@ var _default =
     change: function change(index) {
       this.swiperCurrent = index;
       this.page = 1;
-      this.getBill();
+      //this.getBill();
     },
     transition: function transition(_ref) {var dx = _ref.detail.dx;
       this.$refs.tabs.setDx(dx);

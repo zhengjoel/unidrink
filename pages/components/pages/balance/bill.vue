@@ -86,6 +86,9 @@ export default {
 	},
 	methods: {
 		async getBill(){
+			if (this.loadStatus[this.swiperCurrent] == 'loading') {
+				return;
+			}
 			this.loadStatus.splice(this.swiperCurrent,1,"loading")
 			let data = await this.$api.request('/balance/getBillList', 'POST', {type:this.swiperCurrent,page:this.page,pagesize:this.pageSize});
 			if (this.page == 1 ){
@@ -110,7 +113,7 @@ export default {
 		change(index) {
 			this.swiperCurrent = index;
 			this.page = 1;
-			this.getBill();
+			//this.getBill();
 		},
 		transition({ detail: { dx } }) {
 			this.$refs.tabs.setDx(dx);

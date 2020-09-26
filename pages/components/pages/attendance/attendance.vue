@@ -19,7 +19,7 @@
 			<view class="integral-box">
 				<view class="title">当前积分</view>
 				<view class="value">{{ member.score }}</view>
-				<button type="primary" class="btn" @tap="signin">签到</button>
+				<button type="primary" class="btn" @tap="signin">{{scoreInfo.signin == 1 ? '今日已签到' : '签到'}}</button>
 			</view>
 			<!-- 为了方便演示，这里设置了startDate和enddate属性 -->
 			<uni-calendar :show-month="true" startDate="2020-05-01" endDate="2020-07-31" 
@@ -33,7 +33,7 @@
 		<modal custom :show="attendanceModalVisible">
 			<view class="attendance-modal">
 				<view class="modal-header">
-					<image src="/static/images/attendance/cup.png" mode="widthFix"></image>
+					<image src="/static/images/attendance/cup.png" mode="aspectFill"></image>
 				</view>
 				<view class="modal-content d-flex align-items-center just-content-center flex-column font-size-sm text-color-base">
 					<view>{{atendanceMsg}}</view>
@@ -76,10 +76,6 @@
 			let timestamp = new Date().getTime();
 			this.date = this.$u.timeFormat(timestamp, 'yyyy-mm-dd');
 			this.getScore(this.date);
-			
-			this.attendanceList = await this.$api('attendanceList');
-			console.log('attendanceList')
-			console.log(this.attendanceList)
 
 		},
 		computed: {
@@ -104,6 +100,7 @@
 					this.attendanceList.push({date: data.date})
 					this.attendanceModalVisible = true
 					this.scoreInfo.successions++;
+					this.scoreInfo.signin = 1; // 今日已签到
 					this.member.score = parseInt(this.member.score) + parseInt(this.scoreInfo.score);
 				}
 			},

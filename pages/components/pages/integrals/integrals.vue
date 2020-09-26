@@ -177,6 +177,7 @@
 					if (this.activeDay < 7) {
 						this.activeDay++;
 					}
+					this.scoreInfo.signin = 1;
 				}
 			},
 			async getPointsMall() {

@@ -4,22 +4,17 @@
 	 */
 	import {
 		mapMutations,
-		mapState
 	} from 'vuex';
 	export default {
 		methods: {
-			...mapMutations(['login', 'logout', 'setUserInfo']),
+			...mapMutations(['SET_MEMBER']),
 			// #ifdef H5
 			// 检查登录状态
 			async checkLogin() {
-				let user = uni.getStorageSync('userInfo');
-				if (user) {
-					this.login(user);
-				}
 				let result = await this.$api.request('/user/status');
 				if (!result) {
 					// 若没有登录则清空个人信息
-					this.logout();
+					this.SET_MEMBER({});
 				}
 			},
 			// #endif

@@ -442,13 +442,14 @@ export default {
 			if(!this.isLogin) {
 				uni.navigateTo({url: '/pages/components/pages/login/login'})
 				return
-			}
-			if (!this.address.hasOwnProperty('address') || force == true) {
-				uni.navigateTo({
-					url: '/pages/components/pages/address/address?is_choose=true'
-				})
 			} else {
-				this.SET_ORDER_TYPE('takeout');
+				if (!this.address.hasOwnProperty('address') || force == true) {
+					uni.navigateTo({
+						url: '/pages/components/pages/address/address?is_choose=true'
+					})
+				} else {
+					this.SET_ORDER_TYPE('takeout');
+				}
 			}
 			
 		},
@@ -629,23 +630,25 @@ export default {
 			if(!this.isLogin) {
 				uni.navigateTo({url: '/pages/components/pages/login/login'})
 				return
-			}
-			if (this.store.status == 0) {
-				this.$api.msg('不在店铺营业时间内');
-				return;
-			}
-			// 判断当前是否在配送范围内
-			if (this.orderType == 'takeout' && this.store.distance < this.store.far) {
-				this.$api.msg('选中的地址不在配送范围');
-				return;
+			} else {
+				if (this.store.status == 0) {
+					this.$api.msg('不在店铺营业时间内');
+					return;
+				}
+				// 判断当前是否在配送范围内
+				if (this.orderType == 'takeout' && this.store.distance < this.store.far) {
+					this.$api.msg('选中的地址不在配送范围');
+					return;
+				}
+				
+				uni.showLoading({title: '加载中'})
+				uni.setStorageSync('cart', JSON.parse(JSON.stringify(this.cart)))
+				
+				uni.navigateTo({
+					url: '/pages/components/pages/pay/pay'
+				})
 			}
 			
-			uni.showLoading({title: '加载中'})
-			uni.setStorageSync('cart', JSON.parse(JSON.stringify(this.cart)))
-			
-			uni.navigateTo({
-				url: '/pages/components/pages/pay/pay'
-			})
 			uni.hideLoading()
 		}
 	}

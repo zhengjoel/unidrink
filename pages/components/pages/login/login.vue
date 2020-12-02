@@ -57,11 +57,11 @@ import { mapMutations } from 'vuex';
 export default {
 	data() {
 		return {
-			mobile:'',
+			mobile:'13888888888',
 			captcha: '',
 			captchaText: '获取验证码',
-			password: '',
-			type: 'message' ,// 登录类型:message=短信登录,pass=密码登录
+			password: '123456',
+			type: 'pass' ,// 登录类型:message=短信登录,pass=密码登录
 			changePass: false  ,// 是否修改密码
 			seconds:60 // 验证码倒计时
 		};

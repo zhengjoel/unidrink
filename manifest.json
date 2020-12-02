@@ -84,7 +84,7 @@
     },
     "h5" : {
         "title" : "uniDrink",
-        "domain" : "drink.weivee.com",
+        "domain" : "demo.shop.weivee.com",
         "router" : {
             "base" : "/h5/"
         },

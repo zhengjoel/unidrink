@@ -72,7 +72,7 @@ export default {
 		};
 	},
 	onShow() {
-		this.activeTabIndex = 0;
+		
 	},
 	onLoad(options) {
 		
@@ -82,14 +82,21 @@ export default {
 		if (options.coupon_id) {
 			this.coupon_id = options.coupon_id
 		}
+		if (options.shop_id) {
+			this.shop_id = options.shop_id;
+		}
+		if (options.type) {
+			this.type = options.type;
+		}
+		this.activeTabIndex = 0;
+		this.getCoupons();
+		
 	},
 	onPullDownRefresh() {
-		this.getCoupons(this.activeTabIndex);
+		this.getCoupons();
 	},
 	watch: {
-		activeTabIndex: async function() {
-			await this.getCoupons(this.activeTabIndex);
-		}
+		
 	},
 	methods: {
 		// 使用范围
@@ -104,10 +111,12 @@ export default {
 				return '外卖';
 			}
 		},
-		getCoupons() {
-			let prePage = this.$api.prePage()
-			
-			this.coupons = prePage.coupons;
+		async getCoupons() {
+			let data = await this.$api.request('/coupon/mine', 'POST', { shop_id: this.shop_id, type: this.type, page:1, pagesize:10000});
+			uni.stopPullDownRefresh();
+			if (data) {
+				this.coupons = data;
+			}
 		},
 		openDetailModal(coupon, index) {
 			this.couponIndex = index;
@@ -146,6 +155,7 @@ export default {
 			} else {
 				
 				this.$api.prePage().coupon = this.coupon;
+				this.$api.prePage().coupons = 1; // 哨兵
 				
 				uni.navigateBack({
 					

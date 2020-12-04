@@ -131,9 +131,9 @@
 				<list-cell arrow @click="goToPackages">
 					<view class="flex-fill d-flex justify-content-between align-items-center">
 						<view class="text-color-base">优惠券</view>
-						<view v-if="coupons.length == 0" class="text-color-base">暂无可用</view>
+						<view v-if="coupons == 0" class="text-color-base">暂无可用</view>
 						<view v-else-if="coupon.title" class="text-color-danger">{{ coupon.title }}(满{{ coupon.least }}减{{ coupon.value }})</view>
-						<view v-else class="text-color-primary">可用优惠券{{ coupons.length }}张</view>
+						<view v-else class="text-color-primary">可用优惠券{{ coupons }}张</view>
 					</view>
 				</list-cell>
 				<!-- <list-cell arrow>
@@ -205,7 +205,7 @@
 			<view class="bg-primary h-100 d-flex align-items-center just-content-center text-color-white font-size-base" style="padding: 0 60rpx;" @tap="submit">付款</view>
 		</view>
 		<!-- 付款栏 end -->
-		<modal :show="ensureAddressModalVisible" custom :mask-closable="false" :radius="0" width="90%">
+		<modal :show="ensureAddressModalVisible" custom :mask-closable="false" :radius="'0rpx'" width="90%">
 			<view class="modal-content">
 				<view class="d-flex justify-content-end">
 					<image src="/static/images/pay/close.png" style="width: 40rpx; height: 40rpx;" @tap="ensureAddressModalVisible = false"></image>
@@ -286,7 +286,7 @@ export default {
 			],
 			defaultSelector: [0],
 			payType: 3, // 付款方式:5=余额支付,3=微信支付,4=支付宝
-			coupons: [], // 可用优惠券列表
+			coupons: 0, // 可用优惠券数量
 			coupon: {} ,// 选中的
 			subscribeMss: {
 				'takein' : '',
@@ -330,7 +330,7 @@ export default {
 	},
 	onHide() {
 		this.subscribeMss = [];
-		this.coupons = [];
+		this.coupons = 0;
 	},
 	onLoad(option) {
 		const { remark } = option;
@@ -355,7 +355,7 @@ export default {
 		async getCoupons() {
 			//0=通用,1=自取,2=外卖
 			let type = this.orderType == 'takein' ? 1 : 2;
-			let data = await this.$api.request('/coupon/mine', 'POST', { page: 1, pagesize: 999, shop_id: this.store.id, type: type });
+			let data = await this.$api.request('/coupon/count', 'POST', { shop_id: this.store.id, type: type });
 			if (data) {
 				this.coupons = data;
 			}
@@ -415,7 +415,7 @@ export default {
 				}
 			}
 			this.subscribeMss = [];
-			this.coupons = [];
+			this.coupons = 0;
 			this.getCoupons();
 		},
 		goToRemark() {
@@ -431,8 +431,10 @@ export default {
 		goToPackages() {
 			let amount = this.amount;
 			let coupon_id = this.coupon.id ? this.coupon.id : 0;
+			let type = this.orderType == 'takein' ? 1 : 2;
+			let shop_id = this.store.id;
 			uni.navigateTo({
-				url: '/pages/components/pages/packages/index?amount=' + amount + '&coupon_id=' + coupon_id
+				url: '/pages/components/pages/packages/index?amount=' + amount + '&coupon_id=' + coupon_id + '&shop_id=' + shop_id + '&type=' + type
 			});
 		},
 		goToShop() {

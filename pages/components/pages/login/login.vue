@@ -97,12 +97,11 @@ export default {
 		...mapMutations(['SET_MEMBER']),
 		// #ifdef MP-WEIXIN
 		async loginForWechatMini(e) {
-			if (e.detail) {
+			if (e.detail.encryptedData && e.detail.iv) {
 				let data = await this.$api.request('/user/loginForWechatMini', 'POST', {
 					encryptedData: e.detail.encryptedData,
 					iv: e.detail.iv
 				});
-
 				if (data) {
 					this.SET_MEMBER(data);
 					this.$refs.uToast.show({

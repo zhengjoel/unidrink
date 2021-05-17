@@ -11,7 +11,7 @@
 									<u-avatar :src="member.avatar" size="140"></u-avatar>
 								</view>
 								<view class="u-flex-1" style="position: absolute;right:0;">
-									<u-button size='mini' ripple="true" @getuserinfo="getUserInfo" open-type="getUserInfo" type="success">点击更新头像</u-button>
+									<u-button size='mini' ripple="true" @click="getUserInfo" type="success">点击更新头像</u-button>
 								</view>
 							</view>
 						</view>
@@ -102,16 +102,21 @@
 			console.log(this.member);
 		},
 		methods: {
-			async getUserInfo(e) {
-				if (e.hasOwnProperty('detail')) {
-					let data = await this.$api.request('/user/decryptData', 'POST',{
-						encryptedData: e.detail.encryptedData,
-						iv: e.detail.iv
-					});
-					if (data) {
-						this.member.avatar = data.avatarUrl;
+			getUserInfo() {
+				let that = this;
+				uni.getUserProfile({
+					desc:"获取微信头像",
+					async success(res) {
+						console.log(res)
+						let data = await that.$api.request('/user/decryptData', 'POST',{
+							encryptedData: res.encryptedData,
+							iv: res.iv
+						});
+						if (data) {
+							that.member.avatar = data.avatarUrl;
+						}
 					}
-				}
+				});
 			},
 			async getPhoneNumber(e) {
 				if (e.hasOwnProperty('detail')) {

@@ -12,11 +12,11 @@
 			
 			<view style="display: flex;" v-if="type == 'message' || changePass">
 				<view style="width: 50%;">
-					<input style="height: 100%;"  class="u-border-bottom" type="number" v-model="captcha" placeholder="请输入验证码" />
+					<input style="height: 100rpx;"  class="u-border-bottom" type="number" v-model="captcha" placeholder="请输入验证码" />
 					<!-- <view v-if="type == 'message' || changePass" class="tips">必须填对手机号才能收到验证码</view> -->
 				</view>
 				<view style="width: 50%;">
-					<button @tap="getCaptcha" :style="[captchaStyle]" class="getCaptcha">
+					<button style="height: 100rpx;" @tap="getCaptcha" :style="[captchaStyle]" class="getCaptcha">
 						{{captchaText}}
 						<u-verification-code :seconds="seconds" @end="endCaptcha" @change="changeCapcha" @start="startCaptcha" ref="uCode" ></u-verification-code>
 					</button>
@@ -174,7 +174,7 @@ export default {
 		async login() {
 			let data = await this.$api.request('/user/login', 'POST', {
 				mobile: this.mobile,
-				password: this.password,
+				password: this.type == 'pass' ? this.password : '',
 				captcha: this.captcha
 			})
 			if (data) {

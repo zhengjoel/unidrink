@@ -242,19 +242,20 @@
 		"custom": {
 			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
 		}
-	},
-	"condition": { //模式配置，仅开发期间生效
-		"current": 0, //当前激活的模式(list 的索引项)
-		"list": [{
-				"name": "bill", //模式名称
-				"path": "pages/balance/bill", //启动页面，必选
-				"query": "" //启动参数，在页面的onLoad函数里面得到
-			},
-			{
-				"name": "score",
-				"path": "pages/integrals/integrals",
-				"query": ""
-			}
-		]
 	}
+	// ,
+	// "condition": { //模式配置，仅开发期间生效
+	// 	"current": 0, //当前激活的模式(list 的索引项)
+	// 	"list": [{
+	// 			"name": "bill", //模式名称
+	// 			"path": "pages/balance/bill", //启动页面，必选
+	// 			"query": "" //启动参数，在页面的onLoad函数里面得到
+	// 		},
+	// 		{
+	// 			"name": "score",
+	// 			"path": "pages/integrals/integrals",
+	// 			"query": ""
+	// 		}
+	// 	]
+	// }
 }

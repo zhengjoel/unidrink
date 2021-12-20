@@ -57,18 +57,6 @@
 				</view>
 			</view>
 			
-			<!-- <view class="member-news">
-				<view class="header">
-					<view class="title">会员新鲜事</view>
-					<view class="iconfont iconRightbutton"></view>
-				</view>
-				<view class="list">
-					<view class="item">
-						<image src="https://img-shop.qmimg.cn/s23107/2020/04/27/0039bf41c9ebd50a2c.jpg"></image>
-						<view class="title">"梅"你不行 | 霸气杨梅清爽回归</view>
-					</view>
-				</view>
-			</view> -->
 		</view>
 	</view>
 </template>

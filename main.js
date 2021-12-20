@@ -17,7 +17,7 @@ Vue.prototype.$api = {}
 Vue.prototype.$util = util
 
 // 后端api地址
-Vue.prototype.$unishow = "http://drink/addons/unidrink";
+Vue.prototype.$unishow = "http://fastadmin20210401/addons/unidrink";
 //Vue.prototype.$unishow = "https://demo.shop.weivee.com//addons/unidrink";
 
 

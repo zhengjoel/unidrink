@@ -7,11 +7,14 @@
 			</view>
 			<template v-else>
 				<uni-swipe-action>
-					<uni-swipe-action-item class="address-wrapper" :options="swipeOption" @click="handleSwipeClick(address.id)" v-for="(address, index) in addresses"
-					 :key="index">
+					<uni-swipe-action-item class="address-wrapper" :options="swipeOption"
+						@click="handleSwipeClick(address.id)" v-for="(address, index) in addresses" :key="index">
 						<view class="address" @tap="chooseAddress(address)">
 							<view class="left flex-fill overflow-hidden mr-20">
-								<view class="font-size-lg font-weight-bold text-truncate" style="margin-bottom: 10rpx;white-space:normal;">{{ address.address + ' ' + address.door_number }}</view>
+								<view class="font-size-lg font-weight-bold text-truncate"
+									style="margin-bottom: 10rpx;white-space:normal;">
+									{{ address.address + ' ' + address.door_number }}
+								</view>
 								<view class="font-size-sm text-color-assist">
 									{{ address.name }} {{ !address.sex ? '先生' : '女士' }} {{ address.mobile }}
 								</view>
@@ -90,7 +93,9 @@
 					content: '确定要删除？'
 				});
 				if (res && res.confirm) {
-					let data = await this.$api.request('/address/delete', 'POST', {id:id});
+					let data = await this.$api.request('/address/delete', 'POST', {
+						id: id
+					});
 					if (data) {
 						const index = this.addresses.findIndex(item => item.id == id)
 						const addresses = JSON.parse(JSON.stringify(this.addresses))
@@ -101,49 +106,47 @@
 							icon: 'success'
 						})
 					}
-					
 				}
-
 			},
 			async chooseAddress(address) {
-				if (!this.is_choose) return
-				
-				console.log('已选中的店铺')
-				console.log(this.store);
-				
-				let data = await this.$api.request('/shop/getDistanceFromLocation', 'POST',{
-					lat: address.lat,
-					lng: address.lng,
-					lat2: this.store.lat,
-					lng2: this.store.lng
-				});
-				if (!data) {
+				if (!this.is_choose) {
 					return;
 				}
-				if (data > this.store.distance) {
-					this.$api.msg('不在配送范围');
-					return;
-				}
-				this.SET_ADDRESS(address)
-				this.SET_ORDER_TYPE('takeout')
-				this.store.far = data
-				this.store.far_text = data + 'km'
-				this.SET_STORE(this.store)
-				this.SET_LOCATION({
-					latitude: address.lat,
-					longitude: address.lng
-				});
-				
-				if (this.scene == 'menu') {
-					
-					uni.switchTab({
-						url: '/pages/menu/menu'
-					})
-				} else if (this.scene == 'pay') {
-					uni.navigateBack();
-					// uni.navigateTo({
-					// 	url: '/pages/pay/pay'
-					// })
+
+				if (this.scene == 'menu' || this.scene == 'pay') {
+					let data = await this.$api.request('/shop/getDistanceFromLocation', 'POST', {
+						lat: address.lat,
+						lng: address.lng,
+						lat2: this.store.lat,
+						lng2: this.store.lng
+					});
+					if (!data) {
+						return;
+					}
+					if (data > this.store.distance) {
+						this.$api.msg('不在配送范围');
+						return;
+					}
+					this.SET_ADDRESS(address)
+					this.SET_ORDER_TYPE('takeout')
+					this.store.far = data
+					this.store.far_text = data + 'km'
+					this.SET_STORE(this.store)
+					this.SET_LOCATION({
+						latitude: address.lat,
+						longitude: address.lng
+					});
+
+					if (this.scene == 'menu') {
+						uni.switchTab({
+							url: '/pages/menu/menu'
+						})
+					} else if (this.scene == 'pay') {
+						uni.navigateBack();
+					}
+				} else if (this.scene == 'scoreShop') {
+					this.$api.prePage().form.address = address;
+					uni.navigateBack()
 				}
 			}
 		}

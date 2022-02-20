@@ -199,6 +199,13 @@
 					"enablePullDownRefresh": true
 				}
 
+			}, {
+				"path": "pages/scoreproduct/productDetail",
+				"style": {
+					"navigationBarTitleText": "产品详情",
+					"enablePullDownRefresh": true
+				}
+
 			}
 		]
 	}],

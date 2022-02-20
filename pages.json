@@ -36,8 +36,7 @@
 	],
 	"subPackages": [{
 		"root": "pages/components",
-		"pages": [
-			{
+		"pages": [{
 				"path": "pages/mine/service",
 				"style": {
 					"navigationBarTitleText": "我的服务",
@@ -193,6 +192,13 @@
 					"navigationBarTextStyle": "black",
 					"navigationBarBackgroundColor": "#ffffff"
 				}
+			}, {
+				"path": "pages/scoreproduct/scoreproduct",
+				"style": {
+					"navigationBarTitleText": "积分商城",
+					"enablePullDownRefresh": true
+				}
+
 			}
 		]
 	}],

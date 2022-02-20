@@ -145,8 +145,9 @@ const wechatMiniLogin = async () => {
 			code: loginRes.code
 		});
 		if (data) {
+			Vue.prototype.$store.commit('SET_OPENID', data.openid);
 			if (data.hasOwnProperty('userInfo') && data.userInfo.token && data.userInfo.token != '') {
-				Vue.prototype.$store.commit('SET_MEMBER', data.userInfo);
+				Vue.prototype.$store.commit('SET_MEMBER', data.userInfo);	
 			}
 		}
 		return true;

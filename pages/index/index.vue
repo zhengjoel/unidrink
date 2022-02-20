@@ -41,7 +41,7 @@
 					<view class="grid flex-column just-content-center" @click="goShopping">
 						<view class="align-items-center">
 							<view class="iconfont-unidrink icon-shop" ></view>
-							<view class="font-size-sm text-color-base">uniShop商城</view>
+							<view class="font-size-sm text-color-base">积分商城</view>
 						</view>	
 						<view class="text-color-assist">进入积分商城兑好物</view>
 					</view>
@@ -115,9 +115,9 @@
 				})
 			},
 			goShopping() {
-				uni.navigateToMiniProgram({
-					appId: 'wx73b3aa7f870c7d5c'
-				});
+				uni.navigateTo({
+					url: '/pages/components/pages/scoreproduct/scoreproduct'
+				})
 			},
 			coupons() {
 				if(!this.isLogin) {

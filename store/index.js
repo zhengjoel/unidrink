@@ -39,6 +39,7 @@ const store = new Vuex.Store({
 			// token: "87cecec2-6071-431d-afc1-825650711e5a",
 			// username: "游客"
 		},
+		openid:"",
 		lang: 'zh-cn',
 		cookieKey:'PHPSESSID=e4dk4o2utr3c0n95tp42p745ai',
 		// 默认地为你为北京地址
@@ -78,6 +79,9 @@ const store = new Vuex.Store({
 		},
 		SET_LOCATION(state, location) {
 			state.location = location;
+		},
+		SET_OPENID(state, openid) {
+			state.openid = openid;
 		}
 	},
 	actions: {

@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex';
+import { mapMutations, mapState } from 'vuex';
 export default {
 	data() {
 		return {
@@ -67,6 +67,7 @@ export default {
 		};
 	},
 	computed:{
+		...mapState(['openid']),
 		captchaStyle() {
 			let style = {};
 			if(this.mobile && this.captchaText == '获取验证码') {
@@ -100,7 +101,8 @@ export default {
 			if (e.detail.encryptedData && e.detail.iv) {
 				let data = await this.$api.request('/user/loginForWechatMini', 'POST', {
 					encryptedData: e.detail.encryptedData,
-					iv: e.detail.iv
+					iv: e.detail.iv,
+					openid: this.openid
 				});
 				if (data) {
 					this.SET_MEMBER(data);

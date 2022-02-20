@@ -77,7 +77,7 @@
 
 <script>
 	import listCell from '@/components/list-cell/list-cell'
-	
+	import { mapState } from 'vuex';
 	export default {
 		components: {
 			listCell
@@ -90,7 +90,8 @@
 			}
 		},
 		computed: {
-		   startDate() {
+			...mapState(['openid']),
+			startDate() {
 				return this.getDate('start');
 			},
 			endDate() {
@@ -110,7 +111,8 @@
 						console.log(res)
 						let data = await that.$api.request('/user/decryptData', 'POST',{
 							encryptedData: res.encryptedData,
-							iv: res.iv
+							iv: res.iv,
+							openid: that.openid
 						});
 						if (data) {
 							that.member.avatar = data.avatarUrl;
@@ -122,7 +124,8 @@
 				if (e.hasOwnProperty('detail')) {
 					let data = await this.$api.request('/user/decryptData', 'POST',{
 						encryptedData: e.detail.encryptedData,
-						iv: e.detail.iv
+						iv: e.detail.iv,
+						openid: this.openid
 					});
 					if (data) {
 						this.member.mobile = data.phoneNumber;

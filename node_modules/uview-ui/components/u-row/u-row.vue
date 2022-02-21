@@ -1,10 +1,10 @@
 <template>
 	<view class="u-row" :style="{
-		marginLeft: `-${gutter/2 + 'rpx'}`,
-		marginRight: `-${gutter/2 + 'rpx'}`,
-		alignItems: uAlignItem,
-		justifyContent: uJustify
-	}">
+			alignItems: uAlignItem,
+			justifyContent: uJustify
+		}"
+		@tap="click"
+	>
 		<slot />
 	</view>
 </template>
@@ -36,11 +36,11 @@
 			align: {
 				type: String,
 				default: 'center'
-			}
-		},
-		provide() {
-			return {
-				gutter: this.gutter
+			},
+			// 是否阻止事件传播
+			stop: {
+				type: Boolean,
+				default: true
 			}
 		},
 		computed: {
@@ -54,20 +54,28 @@
 				if (this.align == 'bottom') return 'flex-end';
 				else return this.align;
 			}
+		},
+		methods: {
+			click(e) {
+				this.$emit('click');
+			}
 		}
 	}
 </script>
 
 <style lang="scss">
+	@import "../../libs/css/style.components.scss";
+
 	.u-row {
 		// 由于微信小程序编译后奇怪的页面结构，只能使用float布局实现，flex无法实现
-		/* #ifndef MP-WEIXIN */
-		display: flex;
+		/* #ifndef MP-WEIXIN || MP-QQ || MP-TOUTIAO */
+		@include vue-flex;
 		/* #endif */
+		flex-wrap: wrap;
 	}
 
 	.u-row:after {
-		/* #ifdef MP-WEIXIN */
+		/* #ifdef MP-WEIXIN || MP-QQ || MP-TOUTIAO */
 		display: table;
 		clear: both;
 		content: "";

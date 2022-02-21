@@ -193,21 +193,30 @@
 					"navigationBarBackgroundColor": "#ffffff"
 				}
 			}, {
-				"path": "pages/scoreproduct/scoreproduct",
+				"path": "pages/scoreproduct/list",
 				"style": {
 					"navigationBarTitleText": "积分商城",
 					"enablePullDownRefresh": true
 				}
 
 			}, {
-				"path": "pages/scoreproduct/productDetail",
+				"path": "pages/scoreproduct/detail",
 				"style": {
 					"navigationBarTitleText": "产品详情",
 					"enablePullDownRefresh": true
 				}
 
 			}
-		]
+		    ,{
+                    "path" : "pages/scoreproduct/order",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "订单列表",
+                    "enablePullDownRefresh": true
+                }
+                
+                }
+            ]
 	}],
 	// "preloadRule": {
 	// 	"pages/example/components": {

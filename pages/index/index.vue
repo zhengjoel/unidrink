@@ -116,10 +116,10 @@
 			},
 			goShopping() {
 				uni.navigateTo({
-					url: '/pages/components/pages/scoreproduct/scoreproduct'
+					url: '/pages/components/pages/scoreproduct/list'
 				})
 			},
-			coupons() {
+			coupons() { 
 				if(!this.isLogin) {
 					uni.navigateTo({url: '/pages/components/pages/login/login'})
 					return

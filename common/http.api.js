@@ -8,10 +8,14 @@ const install = (Vue, vm) => {
 	let productList = (params = {}) => vm.$u.get('/addons/unidrink/ScoreShop/index', params);
 	// 获取积分商城产品详情
 	let productDetail = (params = {}) => vm.$u.get('/addons/unidrink/ScoreShop/detail', params);
+	// 兑换
+	let productExchange = (params = {}) => vm.$u.get('/addons/unidrink/ScoreShop/exchange', params);
+	
+	
 	
 	// 将各个定义的接口名称，统一放进对象挂载到vm.$u.api(因为vm就是this，也即this.$u.api)下
 	vm.$u.api = {
-		productList, productDetail
+		productList, productDetail, productExchange
 	};
 }
 

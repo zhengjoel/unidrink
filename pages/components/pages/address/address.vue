@@ -72,9 +72,9 @@
 		methods: {
 			...mapMutations(['SET_ADDRESS', 'SET_ADDRESSES', 'SET_ORDER_TYPE', 'SET_STORE', 'SET_LOCATION']),
 			async init() {
-				let data = await this.$api.request('/address/all');
+				let data = await this.$u.api.addressAll();
 				if (data) {
-					this.SET_ADDRESSES(data);
+					this.SET_ADDRESSES(data)
 				}
 			},
 			add() {
@@ -93,7 +93,7 @@
 					content: '确定要删除？'
 				});
 				if (res && res.confirm) {
-					let data = await this.$api.request('/address/delete', 'POST', {
+					let data = await this.$u.api.addressDelete({
 						id: id
 					});
 					if (data) {

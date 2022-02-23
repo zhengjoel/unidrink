@@ -59,7 +59,7 @@
 			}
 			this.page++
 			this.status = 'loading'; // 'nomore'
-			let res = await this.$u.api.productList({
+			let res = await this.$u.api.scoreShopIndex({
 				page: this.page
 			});
 			if (res.code == 1) {
@@ -82,7 +82,7 @@
 			},
 			async getProduct() {
 				this.$refs.uWaterfall.clear();
-				let res = await this.$u.api.productList({
+				let res = await this.$u.api.scoreShopIndex({
 					page: this.page
 				});
 				uni.stopPullDownRefresh();
@@ -97,7 +97,7 @@
 		},
 		onPullDownRefresh() {
 			this.page = 1;
-			this.getProduct()()
+			this.getProduct()
 		}
 	}
 </script>

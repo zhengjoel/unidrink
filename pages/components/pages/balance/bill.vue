@@ -90,7 +90,7 @@ export default {
 				return;
 			}
 			this.loadStatus.splice(this.swiperCurrent,1,"loading")
-			let data = await this.$api.request('/balance/getBillList', 'POST', {type:this.swiperCurrent,page:this.page,pagesize:this.pageSize});
+			let data = await this.$u.api.balanceGetBillList({type:this.swiperCurrent,page:this.page,pagesize:this.pageSize});
 			if (this.page == 1 ){
 				this.orderList[this.swiperCurrent] = [];
 			}

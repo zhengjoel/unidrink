@@ -73,17 +73,17 @@
 		},
 		methods: {
 			async save() {
-				let api = '/address/add';
+				let data = {}
 				if (this.form.hasOwnProperty('id')) {
-					api = '/address/edit';
+					data = await this.$u.api.addressEdit(this.form);
+				} else {
+					data = await this.$u.api.addressAdd(this.form);
 				}
-				let data = await this.$api.request(api, 'POST', this.form);
 				if (data) {
 					setTimeout(function(){
 						uni.navigateBack()
 					}, 2000);
 				}
-				//uni.navigateBack()
 			},
 			async chooseLocation() {
 				let [error, res] = await uni.chooseLocation();

@@ -75,7 +75,7 @@ export default {
 	methods: {
 		...mapMutations(['SET_MEMBER']),
 		async getManeyList() {
-			let amounts = await this.$api.request('/balance/getMoneyList');
+			let amounts = await this.$u.api.balanceGetMoneyList();
 			if (amounts) {
 				this.amounts = amounts;
 			}
@@ -108,7 +108,7 @@ export default {
 				return;
 			}
 
-			let data = await this.$api.request('/balance/recharge', 'POST', {
+			let data = await this.$u.api.balanceRecharge({
 				recharge_id: recharge.id
 			});
 			if (!data) {
@@ -130,16 +130,8 @@ export default {
 							type: 'success'
 						});
 						that.member.money = (parseFloat(that.member.money) + parseFloat(recharge.value)).toFixed(2);
-
-						// let data = await that.$api.request('/user/getUserInfo');
-						// if (data) {
-						// 	console.log(data);
-						// 	that.$store.commit('SET_MEMBER', data);
-						// }
 					},
 					fail: function(err) {
-						//console.log('fail:' + JSON.stringify(err));
-						//that.$api.msg('fail:' + JSON.stringify(err))
 						that.$refs.uToast.show({
 							title: '支付失败',
 							type: 'error'

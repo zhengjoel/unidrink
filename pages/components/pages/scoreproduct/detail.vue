@@ -130,7 +130,7 @@
 			},
 			// 获取商品详情
 			async getDetail(id, flash_id) {
-				let res = await this.$u.api.productDetail({
+				let res = await this.$u.api.scoreShopDetail({
 					id: id
 				});
 				let product = res.data;

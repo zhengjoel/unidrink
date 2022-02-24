@@ -99,7 +99,7 @@ export default {
 		// #ifdef MP-WEIXIN
 		async loginForWechatMini(e) {
 			if (e.detail.encryptedData && e.detail.iv) {
-				let data = await this.$api.request('/user/loginForWechatMini', 'POST', {
+				let data = await this.$u.api.userLoginForWechatMini({
 					encryptedData: e.detail.encryptedData,
 					iv: e.detail.iv,
 					openid: this.openid
@@ -133,7 +133,7 @@ export default {
 				return
 			}
 			
-			let data = await this.$api.request('/sms/send', 'POST', {
+			let data = await this.$u.api.smsSend({
 				mobile: this.mobile,
 				event: this.event
 			});		
@@ -174,7 +174,7 @@ export default {
 		},
 		// 登录
 		async login() {
-			let data = await this.$api.request('/user/login', 'POST', {
+			let data = await this.$u.api.userLogin({
 				mobile: this.mobile,
 				password: this.type == 'pass' ? this.password : '',
 				captcha: this.captcha
@@ -192,7 +192,7 @@ export default {
 		},
 		// 修改密码
 		async repass() {
-			let data = await this.$api.request('/user/resetpwd', 'POST', {
+			let data = await this.$u.api.userResetpwd({
 				mobile:this.mobile,
 				captcha: this.captcha,
 				password: this.password

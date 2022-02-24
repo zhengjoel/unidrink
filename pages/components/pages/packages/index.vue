@@ -112,7 +112,7 @@ export default {
 			}
 		},
 		async getCoupons() {
-			let data = await this.$api.request('/coupon/mine', 'POST', { shop_id: this.shop_id, type: this.type, page:1, pagesize:10000});
+			let data = await this.$u.api.couponMine({shop_id: this.shop_id, type: this.type, page:1, pagesize:10000});
 			uni.stopPullDownRefresh();
 			if (data) {
 				this.coupons = data;
@@ -133,7 +133,7 @@ export default {
 		cancelCoupon() {
 			this.coupon = {}
 			this.coupon_id = 0
-			this.$api.prePage().coupon = {}
+			this.$unit.prePage().coupon = {}
 		},
 		closeDetailModal() {
 			this.detailModalVisible = false;
@@ -154,8 +154,8 @@ export default {
 				this.buttonLock = false
 			} else {
 				
-				this.$api.prePage().coupon = this.coupon;
-				this.$api.prePage().coupons = 1; // 哨兵
+				this.$unit.prePage().coupon = this.coupon;
+				this.$unit.prePage().coupons = 1; // 哨兵
 				
 				uni.navigateBack({
 					

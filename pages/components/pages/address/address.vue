@@ -114,7 +114,7 @@
 				}
 
 				if (this.scene == 'menu' || this.scene == 'pay') {
-					let data = await this.$api.request('/shop/getDistanceFromLocation', 'POST', {
+					let data = await this.$u.api.shopGetDistanceFromLocation({
 						lat: address.lat,
 						lng: address.lng,
 						lat2: this.store.lat,
@@ -145,7 +145,7 @@
 						uni.navigateBack();
 					}
 				} else if (this.scene == 'scoreShop') {
-					this.$api.prePage().form.address = address;
+					this.$unit.prePage().form.address = address;
 					uni.navigateBack()
 				}
 			}

@@ -386,7 +386,7 @@ export default {
 					shop_id = this.store.id;
 				}
 				
-				let shop = await this.$api.request('/shop/nearby', 'POST', {
+				let shop = await this.$u.api.shopNearby({
 					lat : res.latitude,
 					lng : res.longitude,
 					shop_id : shop_id
@@ -401,7 +401,7 @@ export default {
 					//await this.getStore()
 					
 					//this.goods = await this.$api('goods')
-					let goods = await this.$api.request('/menu/goods', 'POST', {shop_id:shop.id});
+					let goods = await this.$u.api.menuGoods({shop_id:shop.id});
 					if (goods) {
 						this.goods = goods;
 						
@@ -431,7 +431,7 @@ export default {
 			}
 		},
 		async getAds(shop_id){
-			let data = await this.$api.request('/menu/ads', 'POST', {shop_id:shop_id});
+			let data = await this.$u.api.menuAds({shop_id:shop_id});
 			if (data) {
 				this.ads = data;
 			}

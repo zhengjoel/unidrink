@@ -173,7 +173,7 @@ export default {
 	methods: {
 		// 兑换
 		async exchange() {
-			let data = await this.$api.request('/coupon/receive', 'POST', {code:this.exchange_code});
+			let data = await this.$u.api.couponReceive({code:this.exchange_code});
 			if (data) {
 				this.$refs.uToast.show({
 					title: '兑换成功',
@@ -215,15 +215,15 @@ export default {
 			// 我的优惠券
 			let data = false;
 			if (type == '0') {
-				data = await this.$api.request('/coupon/mine','POST',{page:page,pagesize:pagesize});
+				data = await this.$u.api.couponMine({page:page,pagesize:pagesize});
 			}
 			// 未领优惠券
 			if (type == '1') {
-				data = await this.$api.request('/coupon/index','POST',{page:page,pagesize:pagesize});
+				data = await this.$u.api.couponIndex({page:page,pagesize:pagesize});
 			}
 			// 兑换记录
 			if (type == '2') {
-				data = await this.$api.request('/coupon/exchangeLog', 'POST', {page:page,pagesize:pagesize});
+				data = await this.$u.api.couponExchangeLog({page:page,pagesize:pagesize});
 			}
 			uni.stopPullDownRefresh();
 			if (!data || data.length == 0) {
@@ -271,7 +271,7 @@ export default {
 		},
 		// 领取优惠券
 		async receive(coupon,index) {
-			let data = await this.$api.request('/coupon/receive','POST',{id:coupon.id});
+			let data = await this.$u.api.couponReceive({id:coupon.id});
 			if (data) {
 				this.$refs.uToast.show({
 					title: '领取成功',

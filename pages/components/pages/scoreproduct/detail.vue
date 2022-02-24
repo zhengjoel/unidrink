@@ -103,17 +103,12 @@
 					})
 					return
 				}
-				let res = await this.$u.api.productExchange({
+				let data = await this.$u.api.productExchange({
 					id: this.id,
 					addressId: this.form.address.id,
 					num: this.form.num
 				})
-				this.$refs.uToast.show({
-					title: res.msg,
-					type: res.code == 1 ? 'success' : 'warning',
-					duration: 2000,
-				})
-				if (res.code == 1) {
+				if (data) {
 					let that = this;
 					setTimeout(function() {
 						that.$u.route('/pages/order/order?current=0')
@@ -130,10 +125,9 @@
 			},
 			// 获取商品详情
 			async getDetail(id, flash_id) {
-				let res = await this.$u.api.scoreShopDetail({
+				let product = await this.$u.api.scoreShopDetail({
 					id: id
 				});
-				let product = res.data;
 				uni.stopPullDownRefresh();
 				this.product = product;
 			},

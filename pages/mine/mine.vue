@@ -141,14 +141,14 @@
 			...mapMutations(['SET_MEMBER']),
 			async getUserInfo() {
 				if (this.isLogin) {
-					let data = await this.$api.request('/user/getUserInfo');
+					let data = await this.$u.api.userGetUserInfo();
 					if (data) {
 						this.SET_MEMBER(data);
 					}
 				}
 			},
 			async getServices() {
-				let data = await this.$api.request('/mine/service');
+				let data = await this.$u.api.mineService();
 				if (data) {
 					this.services = data;
 				}

@@ -56,7 +56,7 @@
 					return;
 				}
 				this.status = 'loading'
-				let data = await this.$api.request('/score/log','POST',{page:this.page, pagesize:this.pagesize})
+				let data = await this.$u.api.scoreLog({page:this.page, pagesize:this.pagesize})
 				if (data) {
 					for(let i in data) {
 						this.pointsFlow.push(data[i])

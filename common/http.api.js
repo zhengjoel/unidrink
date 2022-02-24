@@ -47,7 +47,7 @@ const install = (Vue, vm) => {
 	// 订单-订单列表
 	let orderGetOrders = (params = {}) => vm.$u.post('/addons/unidrink/Order/getOrders', params);
 	// 订单-订单详情
-	let orderGetDetail = (params = {}) => vm.$u.post('/addons/unidrink/Order/detail', params);
+	let orderDetail = (params = {}) => vm.$u.post('/addons/unidrink/Order/detail', params);
 	// 订单-取餐列表
 	let orderTakeFoods = (params = {}) => vm.$u.post('/addons/unidrink/Order/takeFoods', params);
 	// 订单-确认收到
@@ -59,6 +59,8 @@ const install = (Vue, vm) => {
 	let payJssdkBuildConfig = (params = {}) => vm.$u.post('/addons/unidrink/Pay/jssdkBuildConfig', params);
 	// 支付接口-余额支付
 	let payBalance = (params = {}) => vm.$u.post('/addons/unidrink/Pay/balance', params);
+	// 支付接口-支付宝支付（暂时无用）
+	let payAlipay = (params = {}) => vm.$u.post('/addons/unidrink/Pay/alipay', params);
 	
 	// 积分接口-签到的首页
 	let scoreIndex = (params = {}) => vm.$u.post('/addons/unidrink/Score/index', params);
@@ -91,19 +93,19 @@ const install = (Vue, vm) => {
 	// 用户接口-会员登录
 	let userLogin = (params = {}) => vm.$u.post('/addons/unidrink/User/login', params);
 	// 用户接口-重置密码
-	let userResetpwd = (params = {}) => vm.$u.post('/addons/unidrink/User/resetpwd', resetpwd);
+	let userResetpwd = (params = {}) => vm.$u.post('/addons/unidrink/User/resetpwd', params);
 	// 用户接口-更改用户信息
-	let userEdit = (params = {}) => vm.$u.post('/addons/unidrink/User/edit', resetpwd);
+	let userEdit = (params = {}) => vm.$u.post('/addons/unidrink/User/edit', params);
 	// 用户接口-登录状态
-	let userStatus = (params = {}) => vm.$u.post('/addons/unidrink/User/status', resetpwd);
+	let userStatus = (params = {}) => vm.$u.post('/addons/unidrink/User/status', params);
 	// 用户接口-微信小程序登录
-	let userAuthSession = (params = {}) => vm.$u.post('/addons/unidrink/User/authSession', resetpwd);
+	let userAuthSession = (params = {}) => vm.$u.post('/addons/unidrink/User/authSession', params);
 	// 用户接口-微信小程序消息解密
-	let userDecryptData = (params = {}) => vm.$u.post('/addons/unidrink/User/decryptData', resetpwd);
+	let userDecryptData = (params = {}) => vm.$u.post('/addons/unidrink/User/decryptData', params);
 	// 用户接口-微信小程序通过授权手机号登录
-	let userLoginForWechatMini = (params = {}) => vm.$u.post('/addons/unidrink/User/loginForWechatMini', resetpwd);
+	let userLoginForWechatMini = (params = {}) => vm.$u.post('/addons/unidrink/User/loginForWechatMini', params);
 	// 用户接口-获取用户基础信息
-	let userGetUserInfo = (params = {}) => vm.$u.post('/addons/unidrink/User/getUserInfo', resetpwd);
+	let userGetUserInfo = (params = {}) => vm.$u.post('/addons/unidrink/User/getUserInfo', params);
 	
 	// 将各个定义的接口名称，统一放进对象挂载到vm.$u.api(因为vm就是this，也即this.$u.api)下
 	vm.$u.api = {
@@ -112,8 +114,8 @@ const install = (Vue, vm) => {
 		couponMine, couponCount, couponIndex, couponExchangeLog, couponReceive,
 		menuGoods, menuAds,
 		mineService, mineServiceContent,
-		orderSubmit, orderGetOrders, orderGetDetail, orderTakeFoods, orderReceive,
-		payUnify, payJssdkBuildConfig, payBalance,
+		orderSubmit, orderGetOrders, orderDetail, orderTakeFoods, orderReceive,
+		payUnify, payJssdkBuildConfig, payBalance, payAlipay,
 		scoreIndex, scoreDosign, scoreFillup, scoreLog,
 		scoreShopIndex, scoreShopDetail, scoreShopExchange,
 		shopNearby, shopGetList, shopGetDistanceFromLocation,

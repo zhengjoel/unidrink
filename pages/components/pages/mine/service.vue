@@ -40,7 +40,7 @@
 		},
 		methods:{
 			async getService(id) {
-				let data = await this.$api.request('/mine/service?pid='+id);
+				let data = await this.$u.api.mineService({pid:id});
 				if (data) {
 					this.services = data;
 				}

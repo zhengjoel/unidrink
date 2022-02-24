@@ -90,9 +90,24 @@ var dateUtils = {
 	}
 };
 
+// 返回上一页
+function prePage(page = null){
+	let pages = getCurrentPages();
+	console.log(pages);
+	let prePage = pages[pages.length - 2];
+	if (page !== null) {
+		prePage = pages[page];
+	}
+	// #ifdef H5
+	return prePage;
+	// #endif
+	return prePage.$vm;
+}
+
 module.exports = {
 	formatTime,
 	formatDateTime,
 	formatLocation,
-	dateUtils
+	dateUtils,
+	prePage
 }

@@ -83,7 +83,7 @@
 		}, 
 		methods: {
 			async getScore(date) {
-				let data = await this.$api.request('/score/index', 'POST', {date:date});
+				let data = await this.$u.api.scoreIndex({date:date});
 				if (data) {
 					this.scoreInfo = data;
 					if (data.successions > 7) {
@@ -94,7 +94,7 @@
 				}
 			},
 			async signin() {
-				let data = await this.$api.request('/score/dosign', 'POST');
+				let data = await this.$u.api.scoreDosign();
 				if (data) {
 					this.atendanceMsg = data.msg;
 					this.attendanceList.push({date: data.date})

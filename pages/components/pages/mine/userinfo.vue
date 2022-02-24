@@ -122,7 +122,7 @@
 			},
 			async getPhoneNumber(e) {
 				if (e.hasOwnProperty('detail')) {
-					let data = await this.$api.request('/user/decryptData', 'POST',{
+					let data = await this.$u.api.userDecryptData({
 						encryptedData: e.detail.encryptedData,
 						iv: e.detail.iv,
 						openid: this.openid
@@ -151,7 +151,7 @@
 				this.member.birthday = e.target.value
 			},
 			async save() {
-				let data = await this.$api.request('/user/edit', 'POST', {
+				let data = await this.$u.api.userEdit({
 					username: this.member.username,
 					mobile: this.member.mobile,
 					gender: this.member.gender,

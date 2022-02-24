@@ -85,7 +85,7 @@
 		methods: { 
 			async getAds () {
 				let shop_id = this.store.id ? this.store.id : 0;
-				let data = await this.$api.request('/menu/ads', 'POST', {
+				let data = await this.$u.api.menuAds({
 					shop_id: shop_id
 				});
 				if (data) {

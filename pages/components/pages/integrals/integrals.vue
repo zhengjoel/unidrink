@@ -151,7 +151,7 @@
 				}
 			},
 			async getScore() {
-				let data = await this.$api.request('/score/index');
+				let data = await this.$u.api.scoreIndex();
 				if (data) {
 					this.scoreInfo = data;
 					if (data.successions > 7) {
@@ -171,7 +171,7 @@
 			},
 			// 签到
 			async signin() {
-				let data = await this.$api.request('/score/dosign', 'POST');
+				let data = await this.$u.api.scoreDosign();
 				if (data) {
 					this.member.score = parseInt(this.member.score) + parseInt(this.scoreInfo.score);
 					if (this.activeDay < 7) {
@@ -181,7 +181,7 @@
 				}
 			},
 			async getPointsMall() {
-				let data = await this.$api.request('/coupon/index', 'POST', {score:1, pagesize: 6});
+				let data = await this.$u.api.couponIndex({score:1, pagesize: 6});
 				if (data) {
 					this.pointsMall = data;
 				}
@@ -227,7 +227,7 @@
 			},
 			// 领取优惠券
 			async receive(coupon,index) {
-				let data = await this.$api.request('/coupon/receive','POST',{id:coupon.id});
+				let data = await this.$u.api.couponReceive({id:coupon.id});
 				if (data) {
 					this.$refs.uToast.show({
 						title: '领取成功',

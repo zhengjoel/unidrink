@@ -23,7 +23,7 @@
 		},
 		methods:{
 			async getContent(id) {
-				let data = await this.$api.request('/mine/serviceContent?id='+id);
+				let data = await this.$u.api.mineServiceContent({id:id});
 				if (data) {
 					this.content = data.content;
 				}

@@ -39,14 +39,36 @@ const install = (Vue, vm) => {
 		config.header.token = vm.$store.state.member.token;
 		config.header.lang = vm.$store.state.lang;
 
-		// 可以对某个url进行特别处理，此url参数为this.$u.get(url)中的url值
-		if (config.url == '/user/login') config.header.noToken = true;
+
+		let platform = 'MP-WEIXIN';
+		// 平台号
+		// #ifdef APP-PLUS
+		platform = 'APP-PLUS';
+		// #endif
+		// #ifdef H5
+		platform = 'H5';
+		// #endif
+		// #ifdef MP-WEIXIN
+		platform = 'MP-WEIXIN';
+		// #endif
+		// #ifdef MP-ALIPAY
+		platform = 'MP-ALIPAY';
+		// #endif
+		// #ifdef MP-BAIDU
+		platform = 'MP-BAIDU';
+		// #endif
+		// #ifdef MP-TOUTIAO
+		platform = 'MP-TOUTIAO';
+		// #endif
+		config.header.platform = platform;
+		
+
 		// 最后需要将config进行return
 		return config;
 		// 如果return一个false值，则会取消本次请求
 		// if(config.url == '/user/rest') return false; // 取消某次请求
 	}
-	
+
 
 	// 响应拦截，如配置，每次请求结束都会执行本方法
 	Vue.prototype.$u.http.interceptor.response = (res) => {
@@ -56,9 +78,9 @@ const install = (Vue, vm) => {
 			// 如果配置了originalData为true，请留意这里的返回值
 			if (res.hasOwnProperty('data')) {
 				if (res.data.hasOwnProperty('code') && res.data.code == 1) {
-					if (res.data.msg) {
+					if (res.data.msg != "") {
 						vm.$u.toast(res.data.msg);
-					} 
+					}
 					return res.data.data;
 				} else {
 					if (res.data.hasOwnProperty('msg')) {

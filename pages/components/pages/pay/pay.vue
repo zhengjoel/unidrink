@@ -342,7 +342,7 @@ export default {
 		...mapMutations(['SET_ORDER_TYPE', 'SET_MEMBER']),
 		...mapGetters(['isLogin']),
 		async getSubscribeMss() {
-			let data = await this.$api.request('/sms/subscribeMsg');
+			let data = await this.$u.api.smsSubscribeMsg();
 			if (data) {
 				this.subscribeMss = data;
 			}
@@ -355,7 +355,7 @@ export default {
 		async getCoupons() {
 			//0=通用,1=自取,2=外卖
 			let type = this.orderType == 'takein' ? 1 : 2;
-			let data = await this.$api.request('/coupon/count', 'POST', { shop_id: this.store.id, type: type });
+			let data = await this.$u.api.couponCount({ shop_id: this.store.id, type: type });
 			if (data) {
 				this.coupons = data;
 			}
@@ -509,7 +509,7 @@ export default {
 			});
 
 			//console.log(data);
-			let order = await this.$api.request('/order/submit', 'POST', data);
+			let order = await this.$u.api.orderSubmit(data);
 			if (!order) {
 				uni.hideLoading();
 				return;
@@ -532,7 +532,7 @@ export default {
 			return
 		},
 		async balancePay(order) {
-			let pay = await this.$api.request('/pay/balance?out_trade_no=' + order.out_trade_no);
+			let pay = await this.$u.api.payBalance({out_trade_no:order.out_trade_no});
 
 			uni.hideLoading();
 			if (!pay) {
@@ -551,7 +551,7 @@ export default {
 		},
 		async weixinPay(order) {
 			let that = this;
-			let data = await this.$api.request('/pay/unify?out_trade_no=' + order.out_trade_no);
+			let data = await this.$u.api.payUnify({out_trade_no:order.out_trade_no});
 			if (!data) {
 				uni.hideLoading();
 				return;
@@ -564,7 +564,7 @@ export default {
 			} else if (data.trade_type == 'JSAPI') {
 				// #ifdef H5
 				// 微信内的H5
-				let config = await this.$api.request('/pay/jssdkBuildConfig');
+				let config = await this.$u.api.payJssdkBuildConfig();
 				if (config) {
 					
 					jweixin.config(config);
@@ -675,7 +675,7 @@ export default {
 			// #endif
 		
 			// #ifdef APP-PLUS
-			let orderInfo = await this.$api.request('/pay/alipay', 'POST',{
+			let orderInfo = await this.$u.api.payAlipay({
 				order_id : this.orderId
 			});
 			if (orderInfo) {

@@ -45,7 +45,7 @@
 		methods: {
 			...mapMutations(['SET_STORE']),
 			async getShop(keywork = '') {
-				let data = await this.$api.request('/shop/getList', 'POST', {
+				let data = await this.$u.api.shopGetList({
 					lat: this.location.latitude,
 					lng: this.location.longitude,
 					kw: keywork,
@@ -90,8 +90,8 @@
 			// 选中店铺
 			choice(shop) {
 				this.SET_STORE(shop);
-				uni.setStorageSync('cart', JSON.parse(JSON.stringify(this.$api.prePage(0).cart)));
-				this.$api.prePage(0).init();
+				uni.setStorageSync('cart', JSON.parse(JSON.stringify(this.$unit.prePage(0).cart)));
+				this.$unit.prePage(0).init();
 				uni.switchTab({ 
 					url:'/pages/menu/menu',
 					fail(res) {

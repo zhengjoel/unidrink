@@ -97,7 +97,7 @@
 					this.orders = []
 					this.page = 1
 				}
-				let orders = await this.$api.request('/order/getOrders', 'post', {page:this.page, pagesize:this.pageSize});
+				let orders = await this.$u.api.orderGetOrders({page:this.page, pagesize:this.pageSize});
 				if(orders) {
 					this.orders = this.orders.concat(orders)
 					this.page += 1
@@ -119,7 +119,7 @@
 			},
 			// 确认收到货
 			async receive(order) {
-				let data = await this.$api.request('/order/receive?id='+ order.order_id);
+				let data = await this.$u.api.orderReceive({id:order.order_id});
 				if (data) {
 					await this.getOrders(true)
 				}

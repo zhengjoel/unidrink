@@ -114,7 +114,7 @@ export default {
 			if (!data) {
 				return;
 			}
-			let pay = await this.$api.request('/pay/unify?out_trade_no=' + data.out_trade_no);
+			let pay = await this.$u.api.payUnify({out_trade_no: data.out_trade_no});
 			if (pay) {
 				let that = this;
 				uni.requestPayment({

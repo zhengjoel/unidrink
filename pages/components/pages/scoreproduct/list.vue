@@ -59,12 +59,12 @@
 			}
 			this.page++
 			this.status = 'loading'; // 'nomore'
-			let res = await this.$u.api.scoreShopIndex({
+			let data = await this.$u.api.scoreShopIndex({
 				page: this.page
 			});
-			if (res.code == 1) {
-				this.flowList = this.flowList.concat(res.data);
-				if (res.data.length == 0) {
+			if (data) {
+				this.flowList = this.flowList.concat(data);
+				if (data.length == 0) {
 					this.page--;
 					this.status = 'nomore'
 				} else {
@@ -82,16 +82,12 @@
 			},
 			async getProduct() {
 				this.$refs.uWaterfall.clear();
-				let res = await this.$u.api.scoreShopIndex({
+				let data = await this.$u.api.scoreShopIndex({
 					page: this.page
 				});
 				uni.stopPullDownRefresh();
-				if (res.code == 1) {
-					this.flowList = res.data;
-				} else {
-					this.$refs.uToast.show({
-						title: res.msg,
-					})
+				if (data) {
+					this.flowList = data;
 				}
 			}
 		},

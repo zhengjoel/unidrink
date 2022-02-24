@@ -73,10 +73,7 @@ export default {
 	},
 	methods: {
 		async getMemberCode() {
-			let code = await this.$api.request('/user/memberCode');
-			if (code) {
-				
-			}
+			//
 		},
 		makeMemberCode(i) {
 			uQRCode.make({

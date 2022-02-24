@@ -231,7 +231,7 @@
 				if (!this.isLogin) {
 					return;
 				}
-				let data = await this.$api.request('/order/takeFoods', 'POST');
+				let data = await this.$u.api.orderTakeFoods();
 				uni.stopPullDownRefresh();
 				this.foodsOrders = [];
 				if (data) {

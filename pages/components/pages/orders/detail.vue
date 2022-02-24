@@ -147,7 +147,7 @@ export default {
 	},
 	methods: {
 		async detail(id) {
-			let data = await this.$api.request('/order/detail?id='+ id);
+			let data = await this.$u.api.orderDetail({id:id});
 			if (data) {
 				this.order = data;
 			}

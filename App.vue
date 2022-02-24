@@ -31,7 +31,6 @@
 					if (data) {
 						this.SET_OPENID(data.openid)
 						if (data.hasOwnProperty('userInfo') && data.userInfo.token && data.userInfo.token != '') {
-							Vue.prototype.$store.commit('SET_MEMBER', data.userInfo);	
 							this.SET_MEMBER(data.userInfo);
 						}
 					}

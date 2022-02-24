@@ -145,7 +145,7 @@
 						uni.navigateBack();
 					}
 				} else if (this.scene == 'scoreShop') {
-					this.$unit.prePage().form.address = address;
+					this.$util.prePage().form.address = address;
 					uni.navigateBack()
 				}
 			}

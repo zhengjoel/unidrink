@@ -133,7 +133,7 @@ export default {
 		cancelCoupon() {
 			this.coupon = {}
 			this.coupon_id = 0
-			this.$unit.prePage().coupon = {}
+			this.$util.prePage().coupon = {}
 		},
 		closeDetailModal() {
 			this.detailModalVisible = false;
@@ -154,8 +154,8 @@ export default {
 				this.buttonLock = false
 			} else {
 				
-				this.$unit.prePage().coupon = this.coupon;
-				this.$unit.prePage().coupons = 1; // 哨兵
+				this.$util.prePage().coupon = this.coupon;
+				this.$util.prePage().coupons = 1; // 哨兵
 				
 				uni.navigateBack({
 					

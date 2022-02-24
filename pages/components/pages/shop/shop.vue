@@ -90,8 +90,8 @@
 			// 选中店铺
 			choice(shop) {
 				this.SET_STORE(shop);
-				uni.setStorageSync('cart', JSON.parse(JSON.stringify(this.$unit.prePage(0).cart)));
-				this.$unit.prePage(0).init();
+				uni.setStorageSync('cart', JSON.parse(JSON.stringify(this.$util.prePage(0).cart)));
+				this.$util.prePage(0).init();
 				uni.switchTab({ 
 					url:'/pages/menu/menu',
 					fail(res) {

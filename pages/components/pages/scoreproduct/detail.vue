@@ -103,15 +103,15 @@
 					})
 					return
 				}
-				let data = await this.$u.api.productExchange({
+				let data = await this.$u.api.scoreShopExchange({
 					id: this.id,
-					addressId: this.form.address.id,
+					address_id: this.form.address.id,
 					num: this.form.num
 				})
 				if (data) {
 					let that = this;
 					setTimeout(function() {
-						that.$u.route('/pages/order/order?current=0')
+						that.$u.route('/pages/components/pages/scoreproduct/order')
 					}, 1500)
 				}
 			},

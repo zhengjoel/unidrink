@@ -202,7 +202,7 @@
 		<view style="z-index: 1;" class="w-100 pay-box position-fixed fixed-bottom d-flex align-items-center justify-content-between bg-white">
 			<view class="font-size-sm" style="margin-left: 20rpx;">合计：</view>
 			<view class="font-size-lg flex-fill">￥{{ amount }}</view>
-			<view class="bg-primary h-100 d-flex align-items-center just-content-center text-color-white font-size-base" style="padding: 0 60rpx;" @tap="submit">付款</view>
+			<view class="bg-primary h-100 d-flex align-items-center just-content-center text-color-white font-size-base" style="padding: 0 60rpx;" @tap="$u.debounce(submit, 500)">付款</view>
 		</view>
 		<!-- 付款栏 end -->
 		<modal :show="ensureAddressModalVisible" custom :mask-closable="false" :radius="'0rpx'" width="90%">
@@ -221,7 +221,7 @@
 					<view style="max-width: 60%;">{{ address.address + address.door_number }}</view>
 					<button type="primary" size="mini" plain class="change-address-btn" style="white-space: nowrap;" @click="chooseAddress">修改地址</button>
 				</view>
-				<button type="primary" class="pay_btn" @tap="pay">确认并付款</button>
+				<button type="primary" class="pay_btn" @tap="$u.debounce(pay, 500)">确认并付款</button>
 			</view>
 		</modal>
 	</view>

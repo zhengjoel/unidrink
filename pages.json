@@ -206,17 +206,20 @@
 					"enablePullDownRefresh": true
 				}
 
+			}, {
+				"path": "pages/scoreproduct/order",
+				"style": {
+					"navigationBarTitleText": "订单列表",
+					"enablePullDownRefresh": true
+				}
+			}, {
+				"path": "pages/scoreproduct/orderDetail",
+				"style": {
+					"navigationBarTitleText": "订单详情",
+					"enablePullDownRefresh": true
+				}
 			}
-		    ,{
-                    "path" : "pages/scoreproduct/order",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "订单列表",
-                    "enablePullDownRefresh": true
-                }
-                
-                }
-            ]
+		]
 	}],
 	// "preloadRule": {
 	// 	"pages/example/components": {

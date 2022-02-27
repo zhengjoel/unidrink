@@ -77,6 +77,14 @@ const install = (Vue, vm) => {
 	let scoreShopDetail = (params = {}) => vm.$u.post('/addons/unidrink/ScoreShop/detail', params);
 	// 积分兑换产品
 	let scoreShopExchange = (params = {}) => vm.$u.post('/addons/unidrink/ScoreShop/exchange', params);
+	// 积分订单列表
+	let scoreShopOrder = (params = {}) => vm.$u.post('/addons/unidrink/ScoreShop/order', params);
+	// 确认收到
+	let scoreShopReceive = (params = {}) => vm.$u.post('/addons/unidrink/ScoreShop/receive', params);
+	// 订单详情
+	let scoreShopOrderDetail = (params = {}) => vm.$u.post('/addons/unidrink/ScoreShop/orderDetail', params);
+	// 物流接口
+	let scoreShopExpress = (params = {}) => vm.$u.post('/addons/unidrink/ScoreShop/express', params);
 	
 	// 店铺接口-附近最近的门店
 	let shopNearby = (params = {}) => vm.$u.post('/addons/unidrink/Shop/nearby', params);
@@ -117,7 +125,7 @@ const install = (Vue, vm) => {
 		orderSubmit, orderGetOrders, orderDetail, orderTakeFoods, orderReceive,
 		payUnify, payJssdkBuildConfig, payBalance, payAlipay,
 		scoreIndex, scoreDosign, scoreFillup, scoreLog,
-		scoreShopIndex, scoreShopDetail, scoreShopExchange,
+		scoreShopIndex, scoreShopDetail, scoreShopExchange, scoreShopOrder, scoreShopReceive, scoreShopOrderDetail, scoreShopExpress,
 		shopNearby, shopGetList, shopGetDistanceFromLocation,
 		smsSend, smsSubscribeMsg,
 		userLogin, userResetpwd, userEdit, userStatus, userAuthSession, userDecryptData, userLoginForWechatMini, userGetUserInfo

@@ -50,7 +50,7 @@
 						</view>
 						<view class="font-size-sm text-color-assist">优惠券</view>
 					</view>
-					<view class="user-grid" @tap="serv({type:'miniprogram',app_id:'wx73b3aa7f870c7d5c'})">
+					<view class="user-grid" @tap="serv({type:'pages',pages:'/pages/components/pages/scoreproduct/list'})">
 						<view class="value font-size-extra-lg font-weight-bold text-color-base">
 							{{ isLogin ? member.score : 0 }}
 						</view>

@@ -20,7 +20,7 @@
 			// #endif
 			// #ifdef MP-WEIXIN
 			async wechatMiniLogin() {
-				this.$u.toast('登录中');
+				//this.$u.toast('登录中');
 				let [error, loginRes] = await uni.login({
 					provider: 'weixin'
 				});
@@ -35,7 +35,7 @@
 						}
 					}
 				} else {
-					this.$u.toast('登录失败');
+					//this.$u.toast('登录失败');
 				}
 			}
 			// #endif

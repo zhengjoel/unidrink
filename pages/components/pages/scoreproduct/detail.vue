@@ -83,7 +83,8 @@
 						mobile: "",
 					},
 					num: 1 // 兑换数量
-				}
+				},
+				lock: false
 			};
 		},
 		onPullDownRefresh() {
@@ -96,6 +97,9 @@
 		methods: {
 			// 提交
 			async submit() {
+				if (this.lock == true) {
+					return;
+				}
 				if (this.form.address.id == 0) {
 					this.$refs.uToast.show({
 						title: '请选择收货地址',
@@ -110,9 +114,10 @@
 				})
 				if (data) {
 					let that = this;
+					that.lock = true;
 					setTimeout(function() {
 						that.$u.route('/pages/components/pages/scoreproduct/order')
-					}, 1500)
+					}, 1000)
 				}
 			},
 			// 选择地址

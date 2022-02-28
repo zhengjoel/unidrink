@@ -213,13 +213,7 @@
 			this.takeFoods();
 		},
 		onLoad() {
-			// let order = this.orderType == 'takein' ? orders[0] : orders[1]
-			// order = Object.assign(order, {
-			// 	status: 1
-			// })
 			
-			
-			//this.takeFoods();
 		},
 		onShow() {
 			this.takeFoods();

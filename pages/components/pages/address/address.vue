@@ -123,8 +123,9 @@
 					if (!data) {
 						return;
 					}
-					if (data > this.store.distance) {
-						this.$api.msg('不在配送范围');
+					
+					if (parseFloat(data) > this.store.distance) {
+						this.$u.toast('不在配送范围');
 						return;
 					}
 					this.SET_ADDRESS(address)

@@ -307,7 +307,7 @@
 		align-items: center;
 		width: 690upx;
 		height: 100upx;
-		background: #5A5B5C;
+		background: #00b1b7;
 		box-shadow: 0 0 20upx 0 rgba(0, 0, 0, .5);
 		border-radius: 16upx;
 		color: #ffffff;
@@ -371,7 +371,7 @@
 				height: 100rpx;
 				line-height: 100rpx;
 				border-radius: 100rpx;
-				background: #5A5B5C;
+				background: #00b1b7;
 				font-size: 40rpx;
 				color: #fff;
 				margin: 30upx auto 20upx;

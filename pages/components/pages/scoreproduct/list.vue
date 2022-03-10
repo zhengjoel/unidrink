@@ -45,6 +45,7 @@
 				page: 1,
 				pageLimit: 1,
 				status: 'loadmore',
+				pagesize: 16
 			};
 		},
 		onLoad() {
@@ -60,18 +61,21 @@
 			this.page++
 			this.status = 'loading'; // 'nomore'
 			let data = await this.$u.api.scoreShopIndex({
-				page: this.page
+				page: this.page,
+				pagesize: this.pagesize
 			});
 			if (data) {
 				this.flowList = this.flowList.concat(data);
 				if (data.length == 0) {
 					this.page--;
-					this.status = 'nomore'
+					this.status = 'nomore';
+				} else if (data.length < this.pagesize) {
+					this.status = 'nomore';
 				} else {
-					this.status = 'loadmore'
+					this.status = 'loadmore';
 				}
 			} else {
-				this.status = 'loadmore'
+				this.status = 'loadmore';
 			}
 		},
 		methods: {
@@ -81,13 +85,20 @@
 				})
 			},
 			async getProduct() {
+				this.status = 'loading';
 				this.$refs.uWaterfall.clear();
 				let data = await this.$u.api.scoreShopIndex({
-					page: this.page
+					page: this.page,
+					pagesize: this.pagesize
 				});
 				uni.stopPullDownRefresh();
 				if (data) {
 					this.flowList = data;
+					if (data.length < this.pagesize) {
+						this.status = 'nomore';
+					}
+				} else {
+					this.status = 'nomore';
 				}
 			}
 		},
@@ -106,7 +117,7 @@
 	.demo-warter {
 		border-radius: 8px;
 		margin: 5px;
-		background-color: #5A5B5C;
+		background-color: #00b1b7;
 		padding: 8px;
 		position: relative;
 	}

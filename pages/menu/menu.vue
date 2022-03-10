@@ -1,6 +1,6 @@
 <template>
 	<view class="container" v-if="!loading">
-		<view class="main" v-if="goods.length">
+		<view class="main" >
 			<view class="nav">
 				<view class="header">
 					<view class="left" v-if="orderType == 'takein'">

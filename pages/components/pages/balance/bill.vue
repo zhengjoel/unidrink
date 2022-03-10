@@ -32,10 +32,10 @@
 									</view>
 									<view class="total">
 										<view>
-												{{payTypeList[res.pay_type]}}：{{res.type == 1 ? '—':'＋'}}￥{{res.real_price}}元
+												{{payTypeList[res.pay_type]}}：{{res.type == 1 ? '-':'＋'}}￥{{res.real_price}}元
 										</view>
 										<view v-if="res.type != 3">
-												支付：{{res.type == 1 ? '—':'＋'}}￥{{res.total_price}}元
+												支付：{{res.type == 1 ? '-':'＋'}}￥{{res.total_price}}元
 										</view>
 									</view>
 								</view>

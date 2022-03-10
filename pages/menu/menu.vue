@@ -257,7 +257,7 @@
 	<!--轻提示-->
 	<view class="loading" v-else>
 		<!-- <image src="/static/images/loading.gif"></image> -->
-		<ourLoading active background-color="" color="#5A5B5C" text=" " />
+		<ourLoading active background-color="" color="#00b1b7" text=" " />
 		<button type="primary" style="z-index: 3001;position: absolute;top: 650rpx;" @click="init" v-if="!store.id">定位最近的门店</button>
 		<u-toast ref="uToast"></u-toast>
 	</view>

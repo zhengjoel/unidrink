@@ -221,7 +221,8 @@ page {
 		
 		.icon {
 			font-size: 90rpx;
-			color: #5A5B5C;
+			// color: #5A5B5C;
+			color: #00b1b7;
 		}
 		
 		.title {
@@ -317,6 +318,7 @@ page {
 		}
 		.icon-shop {
 			font-size: 100rpx;
+			color: #00b1b7;
 		}
 	}
 	

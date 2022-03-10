@@ -2,10 +2,10 @@
 	<view class="wrap">
 		<view class="top"></view>
 		<view class="content">
-			<view class="title">欢迎登录uniDrink</view>
+			<view class="title">欢迎登录</view>
 			
 			<input class="u-border-bottom" type="number" v-model="mobile" placeholder="请输入手机号" />
-			<view class="tips">未注册的手机号验证后自动创建uniDrink账号</view>
+			<view class="tips">未注册的手机号验证后自动创建账号</view>
 			
 			<input v-if="type == 'pass' || changePass" class="u-border-bottom" type="password" v-model="password" placeholder="请输入密码" />
 			<view v-if="type == 'pass' || changePass" class="tips">密码支持英文大小写数字符号</view>
@@ -23,7 +23,7 @@
 				</view>
 			</view>
 			
-			<button @tap="submit" :style="[submitStyle]" class="login">{{changePass ? '修改' : '登录'}}</button>
+			<button @tap="submit" :style="[submitStyle]" type="primary" class="login">{{changePass ? '修改' : '登录'}}</button>
 			
 			<view class="alternative">
 				<view v-if="!changePass" class="password" @tap="changeType">{{type == 'message' ? '密码登录' : '短信登录'}}</view>
@@ -44,8 +44,8 @@
 			</view>
 			<view class="hint">
 				登录代表同意
-				<text class="link">uniDrink点评用户协议、隐私政策，</text>
-				并授权使用您的uniDrink点评账号信息（如昵称、头像、收获地址）以便您统一管理
+				<text class="link">点评用户协议、隐私政策，</text>
+				并授权使用您的点评账号信息（如昵称、头像、收获地址）以便您统一管理
 			</view>
 		</view>
 		<u-toast ref="uToast"></u-toast>
@@ -57,10 +57,10 @@ import { mapMutations, mapState } from 'vuex';
 export default {
 	data() {
 		return {
-			mobile:'13888888888',
+			mobile:'',
 			captcha: '',
 			captchaText: '获取验证码',
-			password: '123456',
+			password: '',
 			type: 'pass' ,// 登录类型:message=短信登录,pass=密码登录
 			changePass: false  ,// 是否修改密码
 			seconds:60 // 验证码倒计时
@@ -181,10 +181,10 @@ export default {
 			})
 			if (data) {
 				this.SET_MEMBER(data);
-				this.$refs.uToast.show({
-					title: '登录成功',
-					type: 'success'
-				});
+				// this.$refs.uToast.show({
+				// 	title: '登录成功',
+				// 	type: 'success'
+				// });
 				setTimeout(function() {
 					uni.navigateBack();
 				}, 2000);
@@ -273,6 +273,7 @@ export default {
 			//justify-content:space-between;
 			
 			.login-btn {
+				background-color: #1aad19!important;
 				width: 100%;
 				border-radius: 50rem !important;
 				//display: flex;

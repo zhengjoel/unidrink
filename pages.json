@@ -13,14 +13,14 @@
 				"navigationStyle": "custom",
 				// #endif
 				"enablePullDownRefresh": true,
-				"navigationBarTitleText": "uniDrink",
+				"navigationBarTitleText": "点餐",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff"
 			}
 		}, {
 			"path": "pages/take-foods/take-foods",
 			"style": {
-				"navigationBarTitleText": "uniDrink",
+				"navigationBarTitleText": "取餐",
 				"navigationBarTextStyle": "black",
 				"navigationBarBackgroundColor": "#ffffff",
 				"enablePullDownRefresh": true

@@ -407,4 +407,7 @@
 	.icon-lamp, .icon-daojishi, .icon-takeout, .icon-doorbell{
 		font-size: 60rpx;
 	}
+	.iconfont-unidrink {
+		color: #00b1b7;
+	}
 </style>

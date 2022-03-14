@@ -320,6 +320,9 @@
 			// 重新进入要重新计算页面高度，否则有问题
 			this.sizeCalcState = false;
 		},
+		onShow() {
+			this.refreshCart()
+		},
 		computed: {
 			...mapState(['orderType', 'address', 'store', 'location']),
 			...mapGetters(['isLogin']),
@@ -382,7 +385,6 @@
 						type: 'wgs84'
 					});
 					if (error) {
-						//this.$api.msg('获取定位失败');
 						this.$refs.uToast.show({
 							title: '获取位置失败，请检查是否开启相关权限',
 							type: 'error'
@@ -426,29 +428,33 @@
 						});
 						if (goods) {
 							this.goods = goods;
-
-							this.cart = [];
-							let cart = uni.getStorageSync('cart') || [];
-							let tmpCart = [];
-							if (cart) {
-								for (let i in cart) {
-									for (let ii in goods) {
-										for (let iii in goods[ii].goods_list) {
-											if (cart[i].id == goods[ii].goods_list[iii].id) {
-												tmpCart.push(cart[i]);
-											}
-										}
-									}
-								}
-								this.cart = tmpCart;
-								this.cartPopupVisible = false;
-							}
+							this.refreshCart();
 						}
 
-						this.loading = false
-
-
+						this.loading = false;
 						uni.stopPullDownRefresh();
+					}
+				}
+			},
+			refreshCart()
+			{
+				if (this.goods && this.goods.length > 0) {
+					let goods = this.goods;
+					this.cart = [];
+					let cart = uni.getStorageSync('cart') || [];
+					let tmpCart = [];
+					if (cart) {
+						for (let i in cart) {
+							for (let ii in goods) {
+								for (let iii in goods[ii].goods_list) {
+									if (cart[i].id == goods[ii].goods_list[iii].id) {
+										tmpCart.push(cart[i]);
+									}
+								}
+							}
+						}
+						this.cart = tmpCart;
+						this.cartPopupVisible = false;
 					}
 				}
 			},
@@ -621,7 +627,7 @@
 			},
 			handleAddToCartInModal() {
 				if (this.good.stock <= 0) {
-					this.$api.msg('商品库存不足');
+					this.$u.toast('商品库存不足');
 					return;
 				}
 				this.handleAddToCart(this.category, this.good, this.good.number)
@@ -669,12 +675,12 @@
 					return
 				} else {
 					if (this.store.status == 0) {
-						this.$api.msg('不在店铺营业时间内');
+						this.$u.toast('不在店铺营业时间内');
 						return;
 					}
 					// 判断当前是否在配送范围内
 					if (this.orderType == 'takeout' && this.store.distance < this.store.far) {
-						this.$api.msg('选中的地址不在配送范围');
+						this.$u.toast('选中的地址不在配送范围');
 						return;
 					}
 

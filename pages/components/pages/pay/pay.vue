@@ -393,7 +393,7 @@
 				let nowminute = date.getMinutes();
 
 				if ((hour * 60 * 60 + minute * 60) * 1000 - 3600000 < (nowhour * 60 * 60 + nowminute * 60) * 1000) {
-					this.$api.msg('请至少选择一个小时之后');
+					this.$u.toast('请至少选择一个小时之后');
 					return;
 				}
 
@@ -470,7 +470,7 @@
 				if (this.orderType == 'takeout') {
 					// 外卖类型
 					if (typeof this.address.id == 'undefined') {
-						this.$api.msg('请选择收货地址');
+						this.$u.toast('请选择收货地址');
 						return;
 					}
 					// 配送范围 
@@ -478,7 +478,7 @@
 
 					// 起送价钱
 					if (this.store.min_price > this.total) {
-						this.$api.msg('本店外卖起送价为￥' + this.store.min_price);
+						this.$u.toast('本店外卖起送价为￥' + this.store.min_price);
 						return;
 					}
 

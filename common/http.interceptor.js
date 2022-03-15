@@ -7,7 +7,7 @@
 const install = (Vue, vm) => {
 	// 此为自定义配置参数，具体参数见上方说明
 	Vue.prototype.$u.http.setConfig({
-		baseUrl: 'http://fastadmin20220121',
+		baseUrl: 'https://demo.shop.weivee.com',
 		loadingText: '努力加载中~',
 		loadingTime: 800,
 		originalData: true, // 是否在拦截器中返回服务端的原始数据

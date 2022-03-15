@@ -72,19 +72,19 @@ const install = (Vue, vm) => {
 	let scoreLog = (params = {}) => vm.$u.post('/addons/unidrink/Score/log', params);
 	
 	// 获取积分商城产品列表
-	let scoreShopIndex = (params = {}) => vm.$u.post('/addons/unidrink/ScoreShop/index', params);
+	let scoreShopIndex = (params = {}) => vm.$u.post('/addons/unidrink/score_shop/index', params);
 	// 获取积分商城产品详情
-	let scoreShopDetail = (params = {}) => vm.$u.post('/addons/unidrink/ScoreShop/detail', params);
+	let scoreShopDetail = (params = {}) => vm.$u.post('/addons/unidrink/score_shop/detail', params);
 	// 积分兑换产品
-	let scoreShopExchange = (params = {}) => vm.$u.post('/addons/unidrink/ScoreShop/exchange', params);
+	let scoreShopExchange = (params = {}) => vm.$u.post('/addons/unidrink/score_shop/exchange', params);
 	// 积分订单列表
-	let scoreShopOrder = (params = {}) => vm.$u.post('/addons/unidrink/ScoreShop/order', params);
+	let scoreShopOrder = (params = {}) => vm.$u.post('/addons/unidrink/score_shop/order', params);
 	// 确认收到
-	let scoreShopReceive = (params = {}) => vm.$u.post('/addons/unidrink/ScoreShop/receive', params);
+	let scoreShopReceive = (params = {}) => vm.$u.post('/addons/unidrink/score_shop/receive', params);
 	// 订单详情
-	let scoreShopOrderDetail = (params = {}) => vm.$u.post('/addons/unidrink/ScoreShop/orderDetail', params);
+	let scoreShopOrderDetail = (params = {}) => vm.$u.post('/addons/unidrink/score_shop/orderDetail', params);
 	// 物流接口
-	let scoreShopExpress = (params = {}) => vm.$u.post('/addons/unidrink/ScoreShop/express', params);
+	let scoreShopExpress = (params = {}) => vm.$u.post('/addons/unidrink/score_shop/express', params);
 	
 	// 店铺接口-附近最近的门店
 	let shopNearby = (params = {}) => vm.$u.post('/addons/unidrink/Shop/nearby', params);

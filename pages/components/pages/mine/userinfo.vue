@@ -109,7 +109,7 @@
 					desc:"获取微信头像",
 					async success(res) {
 						console.log(res)
-						let data = await that.$api.request('/user/decryptData', 'POST',{
+						let data = await that.$u.api.userDecryptData({
 							encryptedData: res.encryptedData,
 							iv: res.iv,
 							openid: that.openid

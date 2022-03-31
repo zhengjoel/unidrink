@@ -86,7 +86,7 @@
 			},
 			async getProduct() {
 				this.status = 'loading';
-				this.$refs.uWaterfall.clear();
+				this.$refs.uWaterfall && this.$refs.uWaterfall.clear();
 				let data = await this.$u.api.scoreShopIndex({
 					page: this.page,
 					pagesize: this.pagesize

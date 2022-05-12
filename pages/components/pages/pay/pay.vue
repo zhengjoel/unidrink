@@ -368,7 +368,7 @@
 				this.payType = 0;
 				this.payType = paytype;
 				uni.setStorage({
-					key:'paytype',
+					key: 'paytype',
 					data: paytype
 				})
 			},
@@ -499,14 +499,29 @@
 						subscribeMss.push(that.subscribeMss.takein);
 						subscribeMss.push(that.subscribeMss.takein_made);
 					}
-					//console.log(subscribeMss);
-					uni.requestSubscribeMessage({
-						tmplIds: subscribeMss,
-						complete(res) {
-							revolve(true);
+					
+					wx.showModal({
+						title: '温馨提示',
+						content: '为更好的促进您与商家的交流，小程序需要在您成交时向您发送消息',
+						confirmText: "同意",
+						cancelText: "拒绝",
+						success: function(res) {
+							if (res.confirm) {
+								uni.requestSubscribeMessage({
+									tmplIds: subscribeMss,
+									complete(res) {
+										console.log(res)
+										revolve(true)
+									}
+								});
+							} else {
+								revolve(true)
+							}
 						}
-					});
+					})
 				});
+				
+
 				// #endif
 				uni.showLoading({
 					title: '加载中'

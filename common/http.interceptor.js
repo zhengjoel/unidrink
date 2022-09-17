@@ -7,6 +7,7 @@
 const install = (Vue, vm) => {
 	// 此为自定义配置参数，具体参数见上方说明
 	Vue.prototype.$u.http.setConfig({
+		// baseUrl: 'https://demo.shop.weivee.com',
 		baseUrl: 'https://demo.shop.weivee.com',
 		loadingText: '努力加载中~',
 		loadingTime: 800,
